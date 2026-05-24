@@ -90,6 +90,14 @@ REQUIRED_MANUSCRIPT_FILES = [
     "tables/publication/table_3_hyperparameters_feature_dimensionality.html",
     "tables/publication/table_4_label_mapping.csv",
     "tables/publication/table_4_label_mapping.html",
+    "tables/publication/table_s0_source_inventory.csv",
+    "tables/publication/table_s0_source_inventory.html",
+    "tables/publication/table_s1_class_distribution_baselines.csv",
+    "tables/publication/table_s1_class_distribution_baselines.html",
+    "tables/publication/table_s2_sensitivity_analyses.csv",
+    "tables/publication/table_s2_sensitivity_analyses.html",
+    "tables/publication/table_s3_completeness_and_na_reasons.csv",
+    "tables/publication/table_s3_completeness_and_na_reasons.html",
     "tables/technical/table_1_datasets_endpoints_technical.csv",
     "tables/technical/table_1_datasets_endpoints_technical.html",
     "tables/technical/table_2_full_performance_metrics_technical.csv",
@@ -100,6 +108,14 @@ REQUIRED_MANUSCRIPT_FILES = [
     "tables/technical/table_4_label_mapping_technical.html",
     "text/manuscript_captions_and_results.md",
     "text/label_mapping_notes.md",
+    "tables/table_s0_source_inventory.csv",
+    "tables/table_s0_source_inventory.html",
+    "tables/table_s1_class_distribution_baselines.csv",
+    "tables/table_s1_class_distribution_baselines.html",
+    "tables/table_s2_sensitivity_analyses.csv",
+    "tables/table_s2_sensitivity_analyses.html",
+    "tables/table_s3_completeness_and_na_reasons.csv",
+    "tables/table_s3_completeness_and_na_reasons.html",
     "supplement/table_s0_source_inventory.csv",
     "supplement/table_s0_source_inventory.html",
     "supplement/table_s1_class_distribution_baselines.csv",
@@ -154,6 +170,32 @@ TABLE_TITLES = {
     "table_s1_class_distribution_baselines": "Supplementary Table S1. Supplementary endpoint inventory",
     "table_s2_sensitivity_analyses": "Supplementary Table S2. Headline supplementary results",
     "table_s3_completeness_and_na_reasons": "Supplementary Table S3. Non-applicability summary",
+}
+TABLE_NOTES = {
+    "table_1_datasets_endpoints": [
+        "Main endpoints are evaluated with single 5-fold out-of-fold predictions where model-based.",
+    ],
+    "table_2_full_performance_metrics": [
+        "EN = elastic net; XGB = XGBoost. Values are endpoint-specific primary out-of-fold scores.",
+    ],
+    "table_3_hyperparameters_feature_dimensionality": [
+        "Feature dimensionality is shown as the observed range across main endpoints and model families.",
+    ],
+    "table_4_label_mapping": [
+        "AUROC = area under the receiver operating characteristic curve; HRD = homologous recombination deficiency; KME = kernel mean embedding; MAF = mutation annotation format.",
+    ],
+    "table_s0_source_inventory": [
+        "Rows summarize regenerated source artifacts used to build the manuscript tables and figures.",
+    ],
+    "table_s1_class_distribution_baselines": [
+        "Supplementary endpoints are listed separately from the five main manuscript endpoints.",
+    ],
+    "table_s2_sensitivity_analyses": [
+        "Headline rows summarize the best baseline or event-level result, best geometry or sensitivity result, and best overall supplementary result.",
+    ],
+    "table_s3_completeness_and_na_reasons": [
+        "Counts summarize unavailable or intentionally omitted supplementary analysis combinations; endpoint-level details are retained in the technical table.",
+    ],
 }
 HTML_COLUMN_LABELS = {
     "endpoint_display": "Endpoint",
@@ -322,7 +364,6 @@ BASELINE_REPRESENTATION_FAMILIES = {
 }
 SENSITIVITY_REPRESENTATION_FAMILIES = {
     "UGA_geometry",
-    "channel_KME",
     "COSMIC_NNLS_exposures",
     "mechanistic_control",
 }
@@ -421,7 +462,26 @@ def _publication_column_order(df: pd.DataFrame) -> list[str]:
 
 
 def _html_table_title(path: Path) -> str:
-    return TABLE_TITLES.get(path.stem, path.stem.replace("_", " ").title())
+    stem = path.stem
+    if stem.endswith("_technical"):
+        base = stem.removesuffix("_technical")
+        return f"{TABLE_TITLES.get(base, base.replace('_', ' ').title())} (technical detail)"
+    return TABLE_TITLES.get(stem, stem.replace("_", " ").title())
+
+
+def _html_table_note(path: Path) -> list[str]:
+    stem = path.stem.removesuffix("_technical")
+    notes = TABLE_NOTES.get(stem, [])
+    if path.stem.endswith("_technical"):
+        return notes + ["Technical detail table retained for reproducibility; manuscript-facing summary tables omit run, cache, and source provenance columns."]
+    return notes
+
+
+def _split_table_heading(title: str) -> tuple[str, str]:
+    match = re.match(r"^(Supplementary\s+Table\s+\S+|Table\s+\S+)\.\s*(.+)$", title)
+    if match:
+        return match.group(1), match.group(2)
+    return "", title
 
 
 def _html_column_label(column: str) -> str:
@@ -483,6 +543,8 @@ def _is_numeric_html_column(frame: pd.DataFrame, column: str) -> bool:
 def _write_html_table(df: pd.DataFrame, path: Path, *, title: str | None = None) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     title = title or _html_table_title(path)
+    table_number, table_title = _split_table_heading(title)
+    notes = _html_table_note(path)
     numeric_columns = {column for column in df.columns if _is_numeric_html_column(df, column)}
     header = "".join(f"<th>{html.escape(_html_column_label(str(column)))}</th>" for column in df.columns)
     body_rows: list[str] = []
@@ -496,15 +558,27 @@ def _write_html_table(df: pd.DataFrame, path: Path, *, title: str | None = None)
             class_attr = f' class="{" ".join(classes)}"' if classes else ""
             cells.append(f"<td{class_attr}>{html.escape(value)}</td>")
         body_rows.append("<tr>" + "".join(cells) + "</tr>")
+    table_number_html = f'<div class="table-number">{html.escape(table_number)}</div>\n' if table_number else ""
+    note_html = ""
+    if notes:
+        note_rows = []
+        for index, note in enumerate(notes):
+            prefix = '<span class="note-label">Note.</span> ' if index == 0 else ""
+            note_rows.append(f"<p>{prefix}{html.escape(note)}</p>")
+        note_html = '<div class="table-notes">\n' + "\n".join(note_rows) + "\n</div>"
     table = (
+        '<div class="manuscript-table-block">\n'
+        f"{table_number_html}"
+        f'<div class="table-title">{html.escape(table_title)}</div>\n'
         '<div class="table-wrap">\n'
         '<table class="manuscript-table">\n'
-        f"<caption>{html.escape(title)}</caption>\n"
         "<thead><tr>"
         + header
         + "</tr></thead>\n<tbody>\n"
         + "\n".join(body_rows)
-        + "\n</tbody>\n</table>\n</div>"
+        + "\n</tbody>\n</table>\n</div>\n"
+        + note_html
+        + "\n</div>"
     )
     document = f"""<!doctype html>
 <html lang="en">
@@ -513,50 +587,84 @@ def _write_html_table(df: pd.DataFrame, path: Path, *, title: str | None = None)
 <title>{html.escape(title)}</title>
 <style>
 body {{
-  color: #1f2933;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 24px;
+  background: #ffffff;
+  color: #111111;
+  font-family: "Times New Roman", Times, serif;
+  margin: 28px auto;
+  max-width: 940px;
+  padding: 0 18px;
+}}
+.manuscript-table-block {{
+  margin: 0 auto;
+}}
+.table-number {{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 22px;
+  text-align: center;
+}}
+.table-title {{
+  font-size: 15px;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  margin: 0 0 24px;
+  text-align: center;
 }}
 .table-wrap {{
   overflow-x: auto;
 }}
 table.manuscript-table {{
+  border-top: 1.5px solid #111111;
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 12px;
-  line-height: 1.35;
+  font-size: 14px;
+  line-height: 1.12;
   width: 100%;
 }}
-table.manuscript-table caption {{
-  caption-side: top;
-  color: #111827;
-  font-size: 14px;
-  font-weight: 700;
-  margin: 0 0 8px;
-  text-align: left;
-}}
-table.manuscript-table th,
-table.manuscript-table td {{
-  border: 1px solid #cfd6df;
-  padding: 6px 8px;
-  vertical-align: top;
+table.manuscript-table thead {{
+  border-bottom: 1.5px solid #111111;
 }}
 table.manuscript-table th {{
-  background: #eef2f6;
-  color: #111827;
-  font-weight: 700;
-  text-align: left;
+  font-weight: 400;
+  padding: 8px 10px 10px;
+  text-align: center;
+  vertical-align: bottom;
 }}
-table.manuscript-table tbody tr:nth-child(even) td {{
-  background: #f8fafc;
+table.manuscript-table td {{
+  border: 0;
+  padding: 2px 10px;
+  vertical-align: top;
+}}
+table.manuscript-table tbody tr:last-child td {{
+  border-bottom: 1.5px solid #111111;
+  padding-bottom: 7px;
+}}
+table.manuscript-table td:first-child {{
+  padding-left: 0;
+  text-align: left;
 }}
 table.manuscript-table td.numeric {{
   font-variant-numeric: tabular-nums;
-  text-align: right;
+  text-align: center;
   white-space: nowrap;
 }}
 table.manuscript-table td.long-text {{
-  min-width: 18rem;
+  min-width: 12rem;
+}}
+.table-notes {{
+  font-size: 13px;
+  line-height: 1.18;
+  margin-top: 14px;
+  text-align: left;
+}}
+.table-notes p {{
+  margin: 0 0 5px;
+}}
+.note-label {{
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
 }}
 </style>
 </head>
@@ -577,6 +685,13 @@ def _write_table_csv_html(df: pd.DataFrame, path: Path, *, title: str | None = N
 def _write_publication_copy(df: pd.DataFrame, path: Path, public_dir: Path) -> None:
     public_dir.mkdir(parents=True, exist_ok=True)
     _write_table_csv_html(df, public_dir / path.name, title=_html_table_title(path))
+
+
+def _write_supplement_public_table(df: pd.DataFrame, supplement_path: Path, tables_dir: Path, public_dir: Path) -> None:
+    _write_table_csv_html(df, supplement_path)
+    table_path = tables_dir / supplement_path.name
+    _write_table_csv_html(df, table_path)
+    _write_publication_copy(df, table_path, public_dir)
 
 
 def _format_manuscript_count(value: object) -> str:
@@ -1244,9 +1359,13 @@ def _write_tables(df: pd.DataFrame, side_tables: dict[str, pd.DataFrame], manusc
         :, ["Endpoint", "N", "Task", "Source", "Primary metric", "Representation families"]
     ].rename(columns={"Primary metric": "Metric(s)"})
     s1 = s1.reset_index(drop=True)
-    _write_table_csv_html(s1, s1_path)
+    _write_supplement_public_table(s1, s1_path, tables_dir, public_dir)
 
-    sensitivity_technical = df[df["endpoint_tier"].eq("supplement") | df["representation_family"].isin(["UGA_geometry", "channel_KME", "COSMIC_NNLS_exposures", "mechanistic_control"])].copy()
+    s2_sensitivity_families = ["UGA_geometry", "COSMIC_NNLS_exposures", "mechanistic_control"]
+    sensitivity_technical = df[
+        (df["endpoint_tier"].eq("supplement") | df["representation_family"].isin(s2_sensitivity_families))
+        & ~df["representation_family"].eq("channel_KME")
+    ].copy()
     sensitivity_technical = _add_display_columns(sensitivity_technical)
     s2_path = supp_dir / "table_s2_sensitivity_analyses.csv"
     _write_table_csv_html(sensitivity_technical, _technical_path(technical_dir, s2_path))
@@ -1267,7 +1386,7 @@ def _write_tables(df: pd.DataFrame, side_tables: dict[str, pd.DataFrame], manusc
             }
         )
     sensitivity = pd.DataFrame(sensitivity_rows).sort_values("Endpoint", kind="mergesort").reset_index(drop=True)
-    _write_table_csv_html(sensitivity, s2_path)
+    _write_supplement_public_table(sensitivity, s2_path, tables_dir, public_dir)
 
     source_inventory = pd.DataFrame(
         [{"source_table": name, "rows": len(frame), "columns": len(frame.columns)} for name, frame in side_tables.items()]
@@ -1291,7 +1410,7 @@ def _write_tables(df: pd.DataFrame, side_tables: dict[str, pd.DataFrame], manusc
         .rename(columns={"source_group": "Source group"})
         .sort_values("Source group", kind="mergesort")
     )
-    _write_table_csv_html(source_inventory_public, s0_path)
+    _write_supplement_public_table(source_inventory_public, s0_path, tables_dir, public_dir)
 
 
 def _source_label(endpoint: str) -> str:
@@ -1552,6 +1671,16 @@ def _comparison_arrays(oof: pd.DataFrame, candidate: pd.Series, baseline: pd.Ser
     merged = cand.merge(base, on="sample", suffixes=("_candidate", "_baseline"))
     if merged.empty:
         raise ValueError("No paired OOF samples after merging candidate and baseline predictions")
+    if merged["sample"].astype(str).duplicated().any():
+        raise ValueError("Paired OOF merge produced duplicate samples")
+    true_candidate = pd.to_numeric(merged["true_value_candidate"], errors="coerce")
+    true_baseline = pd.to_numeric(merged["true_value_baseline"], errors="coerce")
+    if true_candidate.notna().all() and true_baseline.notna().all():
+        mismatch = ~np.isclose(true_candidate.to_numpy(dtype=float), true_baseline.to_numpy(dtype=float), equal_nan=True)
+    else:
+        mismatch = merged["true_value_candidate"].astype(str).to_numpy() != merged["true_value_baseline"].astype(str).to_numpy()
+    if bool(np.any(mismatch)):
+        raise ValueError(f"Paired OOF true labels differ for {int(np.sum(mismatch))} samples")
     y = merged["true_value_candidate"].to_numpy()
     metric = str(candidate.get("metric") or baseline.get("metric") or "").lower()
     if metric == "spearman":
@@ -1914,7 +2043,8 @@ def _write_plot_data(
             .reset_index()
             .rename(columns={"representation_family_display": "Representation/analysis family", "na_reason": "Reason"})
         )
-        _write_table_csv_html(s3_public, s3_path)
+        tables_dir = manuscript_dir / "tables"
+        _write_supplement_public_table(s3_public, s3_path, tables_dir, tables_dir / "publication")
     atomic_write_json(
         plot_dir / "plot_data_manifest.json",
         {
@@ -2494,7 +2624,14 @@ def _validate_manuscript_ready_tables(manuscript_dir: Path, df: pd.DataFrame) ->
     if not s2_technical_path.exists():
         raise FileNotFoundError("Technical Supplementary Table S2 is missing")
     s2_technical = pd.read_csv(s2_technical_path)
-    expected_s2_rows = int((df["endpoint_tier"].astype(str).eq("supplement") | df["representation_family"].isin(["UGA_geometry", "channel_KME", "COSMIC_NNLS_exposures", "mechanistic_control"])).sum())
+    expected_s2_rows = int(
+        (
+            df["endpoint_tier"].astype(str).eq("supplement")
+            | df["representation_family"].isin(["UGA_geometry", "COSMIC_NNLS_exposures", "mechanistic_control"])
+        )
+        .loc[~df["representation_family"].eq("channel_KME")]
+        .sum()
+    )
     if len(s2_technical) != expected_s2_rows:
         raise ValueError(f"Technical Supplementary Table S2 should contain {expected_s2_rows} rows, found {len(s2_technical)}")
     if len(s2) >= len(s2_technical):

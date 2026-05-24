@@ -1,7 +1,7 @@
 Source group,Files,Total source rows,Max columns
-MAF event-gene/locus stack,7,80,15
+MAF event-gene/locus stack,7,95,15
 Main complete panel,4,139441,19
-Mechanistic controls,15,8736,26
+Mechanistic controls,15,8763,26
 One-hot event KME scout,7,508007,43
-UGA/KME variants,11,988372,19
-Unified locked benchmark,36,1001161,20
+UGA/KME variants,11,988382,19
+Unified locked benchmark,36,1001233,20

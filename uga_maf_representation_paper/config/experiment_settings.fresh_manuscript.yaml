@@ -4,7 +4,7 @@ xgb_n_jobs: 32
 xgb_estimators: 160
 cv_folds: 5
 cv_repeats: 1
-bootstrap: 200
+bootstrap: 500
 optuna_trials: 10
 
 feature_cache:
@@ -40,7 +40,7 @@ experiments:
     confirmation_folds: 5
     confirmation_repeats: 1
     confirmation_estimators: 160
-    bootstrap: 200
+    bootstrap: 500
     max_candidates: 0
     model_ids:
       - maf_only_best_gene_locus_multiscale_stack

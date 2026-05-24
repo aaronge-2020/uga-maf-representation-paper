@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1650" height="590" viewBox="0 0 1650 590">
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="628" viewBox="0 0 2200 628">
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
     <linearGradient id="heat" x1="0" x2="1"><stop offset="0%" stop-color="#EFF6FF"/><stop offset="100%" stop-color="#1D4ED8"/></linearGradient>
   </defs>
   <style>
   text{font-family:Inter,Arial,sans-serif;fill:#111827;letter-spacing:0}.title{font-size:30px;font-weight:760}.subtitle{font-size:15px;fill:#475569}.panel-title{font-size:17px;font-weight:760}.label{font-size:14px}.small{font-size:12px;fill:#475569}.tiny{font-size:10px;fill:#64748B}.value{font-size:14px;font-weight:700}.sig{font-size:16px;font-weight:800;fill:#111827}.axis{stroke:#CBD5E1;stroke-width:1}.grid{stroke:#E2E8F0;stroke-width:1}.rule{stroke:#334155;stroke-width:1.8}.card{fill:#FFFFFF;stroke:#CBD5E1;stroke-width:1.2}.soft{fill:#F8FAFC}.shadow{filter:drop-shadow(0 2px 3px rgba(15,23,42,.10))}
-  </style><rect width="1650" height="590" fill="#FFFFFF"/>
+  </style><rect width="2200" height="628" fill="#FFFFFF"/>
 <text x="44" y="50" class="title">Figure 4. Event-level MAF biology</text>
-<text x="44" y="78" class="subtitle">Single 5-fold OOF results. Metrics: macro-AUROC, Spearman r, AUROC. Significance markers show BH-adjusted q-values for declared comparisons.</text>
+<text x="44" y="78" class="subtitle">Bars show canonical 5-fold OOF performance. Right panels show declared pairwise contrasts as delta metric and BH-adjusted q markers.</text>
 <text x="44" y="165" class="label">Kucab damage class</text>
 <text x="44" y="239" class="label">HRD score</text>
 <text x="44" y="313" class="label">HRD33 high/low</text>
@@ -16,86 +16,164 @@
 <text x="44" y="477" class="label">event</text>
 <text x="210" y="110" class="panel-title">Elastic net</text>
 <line x1="210" y1="114" x2="210" y2="510" class="grid"/>
-<text x="210" y="548" text-anchor="middle" class="tiny">0.00</text>
-<line x1="372.5" y1="114" x2="372.5" y2="510" class="grid"/>
-<text x="372.5" y="548" text-anchor="middle" class="tiny">0.25</text>
-<line x1="535" y1="114" x2="535" y2="510" class="grid"/>
-<text x="535" y="548" text-anchor="middle" class="tiny">0.50</text>
-<line x1="697.5" y1="114" x2="697.5" y2="510" class="grid"/>
-<text x="697.5" y="548" text-anchor="middle" class="tiny">0.75</text>
-<line x1="860" y1="114" x2="860" y2="510" class="grid"/>
-<text x="860" y="548" text-anchor="middle" class="tiny">1.00</text>
-<rect x="210" y="144" width="387.41246130854324" height="12" rx="2" fill="#2F6FDB"><title>Kucab damage class | Elastic net | Mutational signatures: 0.596; q=0.00e+0</title></rect>
-<text x="604.4124613085432" y="155" class="tiny">0.60</text>
-<rect x="210" y="162" width="367.9915312257925" height="12" rx="2" fill="#159A74"><title>Kucab damage class | Elastic net | Event-level MAF stack: 0.566; q=1.95e-1</title></rect>
-<text x="584.9915312257925" y="173" class="tiny">0.57</text>
-<rect x="210" y="180" width="362.9866274935755" height="12" rx="2" fill="#D9822B"><title>Kucab damage class | Elastic net | Signatures + MAF stack: 0.558; q=1.95e-1</title></rect>
-<text x="579.9866274935755" y="191" class="tiny">0.56</text>
-<rect x="210" y="218" width="331.6354865609881" height="12" rx="2" fill="#2F6FDB"><title>HRD score | Elastic net | Mutational signatures: 0.510; q=0.00e+0</title></rect>
-<text x="548.635486560988" y="229" class="tiny">0.51</text>
-<rect x="210" y="236" width="302.0272698052112" height="12" rx="2" fill="#159A74"><title>HRD score | Elastic net | Event-level MAF stack: 0.465; q=3.36e-1</title></rect>
-<text x="519.0272698052112" y="247" class="tiny">0.46</text>
-<rect x="210" y="254" width="365.5493451392521" height="12" rx="2" fill="#D9822B"><title>HRD score | Elastic net | Signatures + MAF stack: 0.562; q=1.36e-1</title></rect>
-<text x="582.5493451392522" y="265" class="tiny">0.56</text>
-<rect x="210" y="292" width="473.45621643948783" height="12" rx="2" fill="#2F6FDB"><title>HRD33 high/low | Elastic net | Mutational signatures: 0.728; q=0.00e+0</title></rect>
-<text x="690.4562164394879" y="303" class="tiny">0.73</text>
-<rect x="210" y="310" width="475.0206526228831" height="12" rx="2" fill="#159A74"><title>HRD33 high/low | Elastic net | Event-level MAF stack: 0.731; q=9.53e-1</title></rect>
-<text x="692.0206526228831" y="321" class="tiny">0.73</text>
-<rect x="210" y="328" width="489.75113589425854" height="12" rx="2" fill="#D9822B"><title>HRD33 high/low | Elastic net | Signatures + MAF stack: 0.753; q=3.48e-1</title></rect>
-<text x="706.7511358942586" y="339" class="tiny">0.75</text>
-<rect x="210" y="366" width="565.2125602964069" height="12" rx="2" fill="#2F6FDB"><title>Cancer type (top 10) | Elastic net | Mutational signatures: 0.870; q=0.00e+0</title></rect>
-<text x="782.2125602964069" y="377" class="tiny">0.87</text>
-<rect x="210" y="384" width="550.0542455747396" height="12" rx="2" fill="#159A74"><title>Cancer type (top 10) | Elastic net | Event-level MAF stack: 0.846; q=2.24e-2</title></rect>
-<text x="767.0542455747396" y="395" class="tiny">0.85 *</text>
-<rect x="210" y="402" width="565.9397439663043" height="12" rx="2" fill="#D9822B"><title>Cancer type (top 10) | Elastic net | Signatures + MAF stack: 0.871; q=8.21e-1</title></rect>
-<text x="782.9397439663043" y="413" class="tiny">0.87</text>
-<rect x="210" y="440" width="373.0828992903675" height="12" rx="2" fill="#2F6FDB"><title>Overall survival event | Elastic net | Mutational signatures: 0.574; q=0.00e+0</title></rect>
-<text x="590.0828992903675" y="451" class="tiny">0.57</text>
-<rect x="210" y="458" width="370.6573126430308" height="12" rx="2" fill="#159A74"><title>Overall survival event | Elastic net | Event-level MAF stack: 0.570; q=7.41e-1</title></rect>
-<text x="587.6573126430308" y="469" class="tiny">0.57</text>
-<rect x="210" y="476" width="374.6257805032706" height="12" rx="2" fill="#D9822B"><title>Overall survival event | Elastic net | Signatures + MAF stack: 0.576; q=8.21e-1</title></rect>
-<text x="591.6257805032706" y="487" class="tiny">0.58</text>
-<text x="930" y="110" class="panel-title">XGBoost</text>
-<line x1="930" y1="114" x2="930" y2="510" class="grid"/>
-<text x="930" y="548" text-anchor="middle" class="tiny">0.00</text>
-<line x1="1092.5" y1="114" x2="1092.5" y2="510" class="grid"/>
-<text x="1092.5" y="548" text-anchor="middle" class="tiny">0.25</text>
-<line x1="1255" y1="114" x2="1255" y2="510" class="grid"/>
-<text x="1255" y="548" text-anchor="middle" class="tiny">0.50</text>
-<line x1="1417.5" y1="114" x2="1417.5" y2="510" class="grid"/>
-<text x="1417.5" y="548" text-anchor="middle" class="tiny">0.75</text>
-<line x1="1580" y1="114" x2="1580" y2="510" class="grid"/>
-<text x="1580" y="548" text-anchor="middle" class="tiny">1.00</text>
-<rect x="930" y="144" width="423.29626731278603" height="12" rx="2" fill="#2F6FDB"><title>Kucab damage class | XGBoost | Mutational signatures: 0.651; q=0.00e+0</title></rect>
-<text x="1360.296267312786" y="155" class="tiny">0.65</text>
-<rect x="930" y="162" width="380.2268435897064" height="12" rx="2" fill="#159A74"><title>Kucab damage class | XGBoost | Event-level MAF stack: 0.585; q=2.24e-2</title></rect>
-<text x="1317.2268435897063" y="173" class="tiny">0.58 *</text>
-<rect x="930" y="180" width="417.71546340834385" height="12" rx="2" fill="#D9822B"><title>Kucab damage class | XGBoost | Signatures + MAF stack: 0.643; q=6.93e-1</title></rect>
-<text x="1354.7154634083438" y="191" class="tiny">0.64</text>
-<rect x="930" y="218" width="451.04599978014187" height="12" rx="2" fill="#2F6FDB"><title>HRD score | XGBoost | Mutational signatures: 0.694; q=0.00e+0</title></rect>
-<text x="1388.0459997801418" y="229" class="tiny">0.69</text>
-<rect x="930" y="236" width="467.9426115225836" height="12" rx="2" fill="#159A74"><title>HRD score | XGBoost | Event-level MAF stack: 0.720; q=3.13e-1</title></rect>
-<text x="1404.9426115225835" y="247" class="tiny">0.72</text>
-<rect x="930" y="254" width="504.01531937527585" height="12" rx="2" fill="#D9822B"><title>HRD score | XGBoost | Signatures + MAF stack: 0.775; q=2.24e-2</title></rect>
-<text x="1441.0153193752758" y="265" class="tiny">0.78 *</text>
-<rect x="930" y="292" width="574.3236266005782" height="12" rx="2" fill="#2F6FDB"><title>HRD33 high/low | XGBoost | Mutational signatures: 0.884; q=0.00e+0</title></rect>
-<text x="1511.3236266005783" y="303" class="tiny">0.88</text>
-<rect x="930" y="310" width="562.7271788517141" height="12" rx="2" fill="#159A74"><title>HRD33 high/low | XGBoost | Event-level MAF stack: 0.866; q=2.57e-1</title></rect>
-<text x="1499.7271788517141" y="321" class="tiny">0.87</text>
-<rect x="930" y="328" width="586.4828583230071" height="12" rx="2" fill="#D9822B"><title>HRD33 high/low | XGBoost | Signatures + MAF stack: 0.902; q=6.59e-2</title></rect>
-<text x="1523.4828583230071" y="339" class="tiny">0.90 .</text>
-<rect x="930" y="366" width="601.8244665270229" height="12" rx="2" fill="#2F6FDB"><title>Cancer type (top 10) | XGBoost | Mutational signatures: 0.926; q=0.00e+0</title></rect>
-<text x="1538.8244665270229" y="377" class="tiny">0.93</text>
-<rect x="930" y="384" width="608.8950465120352" height="12" rx="2" fill="#159A74"><title>Cancer type (top 10) | XGBoost | Event-level MAF stack: 0.937; q=2.24e-2</title></rect>
-<text x="1545.8950465120352" y="395" class="tiny">0.94 *</text>
-<rect x="930" y="402" width="622.524931343389" height="12" rx="2" fill="#D9822B"><title>Cancer type (top 10) | XGBoost | Signatures + MAF stack: 0.958; q=2.24e-2</title></rect>
-<text x="1559.524931343389" y="413" class="tiny">0.96 *</text>
-<rect x="930" y="440" width="423.56828227629836" height="12" rx="2" fill="#2F6FDB"><title>Overall survival event | XGBoost | Mutational signatures: 0.652; q=0.00e+0</title></rect>
-<text x="1360.5682822762983" y="451" class="tiny">0.65</text>
-<rect x="930" y="458" width="425.02671565066504" height="12" rx="2" fill="#159A74"><title>Overall survival event | XGBoost | Event-level MAF stack: 0.654; q=7.41e-1</title></rect>
-<text x="1362.026715650665" y="469" class="tiny">0.65</text>
-<rect x="930" y="476" width="433.6110996858474" height="12" rx="2" fill="#D9822B"><title>Overall survival event | XGBoost | Signatures + MAF stack: 0.667; q=7.79e-5</title></rect>
-<text x="1370.6110996858474" y="487" class="tiny">0.67 ***</text>
-<rect x="44" y="559" width="14" height="14" rx="2" fill="#2F6FDB"/><text x="65" y="572" class="small">Mutational signatures</text>
-<rect x="214" y="559" width="14" height="14" rx="2" fill="#159A74"/><text x="235" y="572" class="small">Event-level MAF stack</text>
-<rect x="384" y="559" width="14" height="14" rx="2" fill="#D9822B"/><text x="405" y="572" class="small">Signatures + MAF stack</text></svg>
+<text x="210" y="586" text-anchor="middle" class="tiny">0.00</text>
+<line x1="352.75" y1="114" x2="352.75" y2="510" class="grid"/>
+<text x="352.75" y="586" text-anchor="middle" class="tiny">0.25</text>
+<line x1="495.5" y1="114" x2="495.5" y2="510" class="grid"/>
+<text x="495.5" y="586" text-anchor="middle" class="tiny">0.50</text>
+<line x1="638.25" y1="114" x2="638.25" y2="510" class="grid"/>
+<text x="638.25" y="586" text-anchor="middle" class="tiny">0.75</text>
+<line x1="781" y1="114" x2="781" y2="510" class="grid"/>
+<text x="781" y="586" text-anchor="middle" class="tiny">1.00</text>
+<rect x="210" y="144" width="340.3269467802741" height="12" rx="2" fill="#2F6FDB"><title>Kucab damage class | Elastic net | Mutational signatures: 0.596</title></rect>
+<text x="557.326946780274" y="155" class="tiny">0.60</text>
+<rect x="210" y="162" width="323.26640666142697" height="12" rx="2" fill="#159A74"><title>Kucab damage class | Elastic net | Event-level MAF stack: 0.566</title></rect>
+<text x="540.266406661427" y="173" class="tiny">0.57</text>
+<rect x="210" y="180" width="318.8697912289717" height="12" rx="2" fill="#D9822B"><title>Kucab damage class | Elastic net | Signatures + MAF stack: 0.558</title></rect>
+<text x="535.8697912289717" y="191" class="tiny">0.56</text>
+<rect x="210" y="218" width="291.32901973280644" height="12" rx="2" fill="#2F6FDB"><title>HRD score | Elastic net | Mutational signatures: 0.510</title></rect>
+<text x="508.32901973280644" y="229" class="tiny">0.51</text>
+<rect x="210" y="236" width="265.319340090424" height="12" rx="2" fill="#159A74"><title>HRD score | Elastic net | Event-level MAF stack: 0.465</title></rect>
+<text x="482.319340090424" y="247" class="tiny">0.46</text>
+<rect x="210" y="254" width="321.1210401146353" height="12" rx="2" fill="#D9822B"><title>HRD score | Elastic net | Signatures + MAF stack: 0.562</title></rect>
+<text x="538.1210401146353" y="265" class="tiny">0.56</text>
+<rect x="210" y="292" width="415.9130762876116" height="12" rx="2" fill="#2F6FDB"><title>HRD33 high/low | Elastic net | Mutational signatures: 0.728</title></rect>
+<text x="632.9130762876116" y="303" class="tiny">0.73</text>
+<rect x="210" y="310" width="417.2873733041019" height="12" rx="2" fill="#159A74"><title>HRD33 high/low | Elastic net | Event-level MAF stack: 0.731</title></rect>
+<text x="634.287373304102" y="321" class="tiny">0.73</text>
+<rect x="210" y="328" width="430.22753630095633" height="12" rx="2" fill="#D9822B"><title>HRD33 high/low | Elastic net | Signatures + MAF stack: 0.753</title></rect>
+<text x="647.2275363009563" y="339" class="tiny">0.75</text>
+<rect x="210" y="366" width="496.51749527576663" height="12" rx="2" fill="#2F6FDB"><title>Cancer type (top 10) | Elastic net | Mutational signatures: 0.870</title></rect>
+<text x="713.5174952757666" y="377" class="tiny">0.87</text>
+<rect x="210" y="384" width="483.2014988048866" height="12" rx="2" fill="#159A74"><title>Cancer type (top 10) | Elastic net | Event-level MAF stack: 0.846</title></rect>
+<text x="700.2014988048866" y="395" class="tiny">0.85</text>
+<rect x="210" y="402" width="497.15629816116876" height="12" rx="2" fill="#D9822B"><title>Cancer type (top 10) | Elastic net | Signatures + MAF stack: 0.871</title></rect>
+<text x="714.1562981611687" y="413" class="tiny">0.87</text>
+<rect x="210" y="440" width="327.73897768430743" height="12" rx="2" fill="#2F6FDB"><title>Overall survival event | Elastic net | Mutational signatures: 0.574</title></rect>
+<text x="544.7389776843074" y="451" class="tiny">0.57</text>
+<rect x="210" y="458" width="325.6081931064163" height="12" rx="2" fill="#159A74"><title>Overall survival event | Elastic net | Event-level MAF stack: 0.570</title></rect>
+<text x="542.6081931064164" y="469" class="tiny">0.57</text>
+<rect x="210" y="476" width="329.09433948825773" height="12" rx="2" fill="#D9822B"><title>Overall survival event | Elastic net | Signatures + MAF stack: 0.576</title></rect>
+<text x="546.0943394882577" y="487" class="tiny">0.58</text>
+<text x="815" y="104" class="small">Declared contrasts: Δ metric, q</text>
+<text x="857" y="122" class="tiny" text-anchor="middle">MAF - Sig</text>
+<title>Event-level MAF stack vs mutational signatures</title>
+<text x="958" y="122" class="tiny" text-anchor="middle">Sig+MAF -</text>
+<text x="958" y="134" class="tiny" text-anchor="middle">Sig</text>
+<title>Signatures + MAF stack vs mutational signatures</title>
+<text x="1059" y="122" class="tiny" text-anchor="middle">Sig+MAF -</text>
+<text x="1059" y="134" class="tiny" text-anchor="middle">MAF</text>
+<title>Signatures + MAF stack vs event-level MAF stack</title>
+<rect x="815" y="159" width="86" height="22" rx="5" fill="#FEF2F2" stroke="#FECACA"><title>Kucab damage class | Elastic net | Event-level MAF stack vs mutational signatures: delta=-0.0299; p=1.40e-1; q=2.25e-1</title></rect>
+<text x="858" y="175" text-anchor="middle" class="tiny">-0.030</text>
+<rect x="916" y="159" width="86" height="22" rx="5" fill="#FEF2F2" stroke="#FECACA"><title>Kucab damage class | Elastic net | Signatures + MAF stack vs mutational signatures: delta=-0.0376; p=1.28e-1; q=2.09e-1</title></rect>
+<text x="959" y="175" text-anchor="middle" class="tiny">-0.038</text>
+<rect x="1017" y="159" width="86" height="22" rx="5" fill="#FEF2F2" stroke="#FECACA"><title>Kucab damage class | Elastic net | Signatures + MAF stack vs event-level MAF stack: delta=-0.0077; p=6.35e-1; q=7.41e-1</title></rect>
+<text x="1060" y="175" text-anchor="middle" class="tiny">-0.008</text>
+<rect x="815" y="233" width="86" height="22" rx="5" fill="#FEF2F2" stroke="#FECACA"><title>HRD score | Elastic net | Event-level MAF stack vs mutational signatures: delta=-0.0456; p=2.63e-1; q=3.49e-1</title></rect>
+<text x="858" y="249" text-anchor="middle" class="tiny">-0.046</text>
+<rect x="916" y="233" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>HRD score | Elastic net | Signatures + MAF stack vs mutational signatures: delta=0.0522; p=8.78e-2; q=1.61e-1</title></rect>
+<text x="959" y="249" text-anchor="middle" class="tiny">+0.052</text>
+<rect x="1017" y="233" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>HRD score | Elastic net | Signatures + MAF stack vs event-level MAF stack: delta=0.0977; p=3.99e-3; q=9.21e-3</title></rect>
+<text x="1060" y="249" text-anchor="middle" class="tiny">+0.098 **</text>
+<rect x="815" y="307" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>HRD33 high/low | Elastic net | Event-level MAF stack vs mutational signatures: delta=0.0024; p=9.22e-1; q=9.64e-1</title></rect>
+<text x="858" y="323" text-anchor="middle" class="tiny">+0.002</text>
+<rect x="916" y="307" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>HRD33 high/low | Elastic net | Signatures + MAF stack vs mutational signatures: delta=0.0251; p=2.55e-1; q=3.43e-1</title></rect>
+<text x="959" y="323" text-anchor="middle" class="tiny">+0.025</text>
+<rect x="1017" y="307" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>HRD33 high/low | Elastic net | Signatures + MAF stack vs event-level MAF stack: delta=0.0227; p=8.28e-2; q=1.55e-1</title></rect>
+<text x="1060" y="323" text-anchor="middle" class="tiny">+0.023</text>
+<rect x="815" y="381" width="86" height="22" rx="5" fill="#FEF2F2" stroke="#FECACA"><title>Cancer type (top 10) | Elastic net | Event-level MAF stack vs mutational signatures: delta=-0.0233; p=3.99e-3; q=9.21e-3</title></rect>
+<text x="858" y="397" text-anchor="middle" class="tiny">-0.023 **</text>
+<rect x="916" y="381" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>Cancer type (top 10) | Elastic net | Signatures + MAF stack vs mutational signatures: delta=0.0011; p=7.31e-1; q=8.02e-1</title></rect>
+<text x="959" y="397" text-anchor="middle" class="tiny">+0.001</text>
+<rect x="1017" y="381" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>Cancer type (top 10) | Elastic net | Signatures + MAF stack vs event-level MAF stack: delta=0.0244; p=3.99e-3; q=9.21e-3</title></rect>
+<text x="1060" y="397" text-anchor="middle" class="tiny">+0.024 **</text>
+<rect x="815" y="455" width="86" height="22" rx="5" fill="#FEF2F2" stroke="#FECACA"><title>Overall survival event | Elastic net | Event-level MAF stack vs mutational signatures: delta=-0.0037; p=6.44e-1; q=7.41e-1</title></rect>
+<text x="858" y="471" text-anchor="middle" class="tiny">-0.004</text>
+<rect x="916" y="455" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>Overall survival event | Elastic net | Signatures + MAF stack vs mutational signatures: delta=0.0024; p=7.63e-1; q=8.17e-1</title></rect>
+<text x="959" y="471" text-anchor="middle" class="tiny">+0.002</text>
+<rect x="1017" y="455" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>Overall survival event | Elastic net | Signatures + MAF stack vs event-level MAF stack: delta=0.0061; p=1.27e-1; q=2.09e-1</title></rect>
+<text x="1060" y="471" text-anchor="middle" class="tiny">+0.006</text>
+<text x="1215" y="110" class="panel-title">XGBoost</text>
+<line x1="1215" y1="114" x2="1215" y2="510" class="grid"/>
+<text x="1215" y="586" text-anchor="middle" class="tiny">0.00</text>
+<line x1="1357.75" y1="114" x2="1357.75" y2="510" class="grid"/>
+<text x="1357.75" y="586" text-anchor="middle" class="tiny">0.25</text>
+<line x1="1500.5" y1="114" x2="1500.5" y2="510" class="grid"/>
+<text x="1500.5" y="586" text-anchor="middle" class="tiny">0.50</text>
+<line x1="1643.25" y1="114" x2="1643.25" y2="510" class="grid"/>
+<text x="1643.25" y="586" text-anchor="middle" class="tiny">0.75</text>
+<line x1="1786" y1="114" x2="1786" y2="510" class="grid"/>
+<text x="1786" y="586" text-anchor="middle" class="tiny">1.00</text>
+<rect x="1215" y="144" width="371.84949020861666" height="12" rx="2" fill="#2F6FDB"><title>Kucab damage class | XGBoost | Mutational signatures: 0.651</title></rect>
+<text x="1593.8494902086168" y="155" class="tiny">0.65</text>
+<rect x="1215" y="162" width="334.01465798418826" height="12" rx="2" fill="#159A74"><title>Kucab damage class | XGBoost | Event-level MAF stack: 0.585</title></rect>
+<text x="1556.0146579841883" y="173" class="tiny">0.58</text>
+<rect x="1215" y="180" width="366.9469686248682" height="12" rx="2" fill="#D9822B"><title>Kucab damage class | XGBoost | Signatures + MAF stack: 0.643</title></rect>
+<text x="1588.946968624868" y="191" class="tiny">0.64</text>
+<rect x="1215" y="218" width="396.22656288378613" height="12" rx="2" fill="#2F6FDB"><title>HRD score | XGBoost | Mutational signatures: 0.694</title></rect>
+<text x="1618.226562883786" y="229" class="tiny">0.69</text>
+<rect x="1215" y="236" width="411.0695864298388" height="12" rx="2" fill="#159A74"><title>HRD score | XGBoost | Event-level MAF stack: 0.720</title></rect>
+<text x="1633.0695864298389" y="247" class="tiny">0.72</text>
+<rect x="1215" y="254" width="442.75807286658846" height="12" rx="2" fill="#D9822B"><title>HRD score | XGBoost | Signatures + MAF stack: 0.775</title></rect>
+<text x="1664.7580728665885" y="265" class="tiny">0.78</text>
+<rect x="1215" y="292" width="504.5212165983541" height="12" rx="2" fill="#2F6FDB"><title>HRD33 high/low | XGBoost | Mutational signatures: 0.884</title></rect>
+<text x="1726.5212165983542" y="303" class="tiny">0.88</text>
+<rect x="1215" y="310" width="494.3341832681981" height="12" rx="2" fill="#159A74"><title>HRD33 high/low | XGBoost | Event-level MAF stack: 0.866</title></rect>
+<text x="1716.334183268198" y="321" class="tiny">0.87</text>
+<rect x="1215" y="328" width="515.2026340037493" height="12" rx="2" fill="#D9822B"><title>HRD33 high/low | XGBoost | Signatures + MAF stack: 0.902</title></rect>
+<text x="1737.2026340037492" y="339" class="tiny">0.90</text>
+<rect x="1215" y="366" width="528.6796467491232" height="12" rx="2" fill="#2F6FDB"><title>Cancer type (top 10) | XGBoost | Mutational signatures: 0.926</title></rect>
+<text x="1750.679646749123" y="377" class="tiny">0.93</text>
+<rect x="1215" y="384" width="534.8908793205724" height="12" rx="2" fill="#159A74"><title>Cancer type (top 10) | XGBoost | Event-level MAF stack: 0.937</title></rect>
+<text x="1756.8908793205724" y="395" class="tiny">0.94</text>
+<rect x="1215" y="402" width="546.8642089185771" height="12" rx="2" fill="#D9822B"><title>Cancer type (top 10) | XGBoost | Signatures + MAF stack: 0.958</title></rect>
+<text x="1768.864208918577" y="413" class="tiny">0.96</text>
+<rect x="1215" y="440" width="372.08844489194826" height="12" rx="2" fill="#2F6FDB"><title>Overall survival event | XGBoost | Mutational signatures: 0.652</title></rect>
+<text x="1594.0884448919483" y="451" class="tiny">0.65</text>
+<rect x="1215" y="458" width="373.3696225177381" height="12" rx="2" fill="#159A74"><title>Overall survival event | XGBoost | Event-level MAF stack: 0.654</title></rect>
+<text x="1595.3696225177382" y="469" class="tiny">0.65</text>
+<rect x="1215" y="476" width="380.91067372402904" height="12" rx="2" fill="#D9822B"><title>Overall survival event | XGBoost | Signatures + MAF stack: 0.667</title></rect>
+<text x="1602.910673724029" y="487" class="tiny">0.67</text>
+<text x="1820" y="104" class="small">Declared contrasts: Δ metric, q</text>
+<text x="1862" y="122" class="tiny" text-anchor="middle">MAF - Sig</text>
+<title>Event-level MAF stack vs mutational signatures</title>
+<text x="1963" y="122" class="tiny" text-anchor="middle">Sig+MAF -</text>
+<text x="1963" y="134" class="tiny" text-anchor="middle">Sig</text>
+<title>Signatures + MAF stack vs mutational signatures</title>
+<text x="2064" y="122" class="tiny" text-anchor="middle">Sig+MAF -</text>
+<text x="2064" y="134" class="tiny" text-anchor="middle">MAF</text>
+<title>Signatures + MAF stack vs event-level MAF stack</title>
+<rect x="1820" y="159" width="86" height="22" rx="5" fill="#FEF2F2" stroke="#FECACA"><title>Kucab damage class | XGBoost | Event-level MAF stack vs mutational signatures: delta=-0.0663; p=3.99e-3; q=9.21e-3</title></rect>
+<text x="1863" y="175" text-anchor="middle" class="tiny">-0.066 **</text>
+<rect x="1921" y="159" width="86" height="22" rx="5" fill="#FEF2F2" stroke="#FECACA"><title>Kucab damage class | XGBoost | Signatures + MAF stack vs mutational signatures: delta=-0.0086; p=5.31e-1; q=6.37e-1</title></rect>
+<text x="1964" y="175" text-anchor="middle" class="tiny">-0.009</text>
+<rect x="2022" y="159" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>Kucab damage class | XGBoost | Signatures + MAF stack vs event-level MAF stack: delta=0.0577; p=3.99e-3; q=9.21e-3</title></rect>
+<text x="2065" y="175" text-anchor="middle" class="tiny">+0.058 **</text>
+<rect x="1820" y="233" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>HRD score | XGBoost | Event-level MAF stack vs mutational signatures: delta=0.0260; p=2.20e-1; q=3.09e-1</title></rect>
+<text x="1863" y="249" text-anchor="middle" class="tiny">+0.026</text>
+<rect x="1921" y="233" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>HRD score | XGBoost | Signatures + MAF stack vs mutational signatures: delta=0.0815; p=3.99e-3; q=9.21e-3</title></rect>
+<text x="1964" y="249" text-anchor="middle" class="tiny">+0.081 **</text>
+<rect x="2022" y="233" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>HRD score | XGBoost | Signatures + MAF stack vs event-level MAF stack: delta=0.0555; p=3.99e-3; q=9.21e-3</title></rect>
+<text x="2065" y="249" text-anchor="middle" class="tiny">+0.055 **</text>
+<rect x="1820" y="307" width="86" height="22" rx="5" fill="#FEF2F2" stroke="#FECACA"><title>HRD33 high/low | XGBoost | Event-level MAF stack vs mutational signatures: delta=-0.0178; p=1.69e-1; q=2.53e-1</title></rect>
+<text x="1863" y="323" text-anchor="middle" class="tiny">-0.018</text>
+<rect x="1921" y="307" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>HRD33 high/low | XGBoost | Signatures + MAF stack vs mutational signatures: delta=0.0187; p=3.29e-2; q=6.59e-2</title></rect>
+<text x="1964" y="323" text-anchor="middle" class="tiny">+0.019 .</text>
+<rect x="2022" y="307" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>HRD33 high/low | XGBoost | Signatures + MAF stack vs event-level MAF stack: delta=0.0365; p=5.48e-7; q=9.86e-6</title></rect>
+<text x="2065" y="323" text-anchor="middle" class="tiny">+0.037 ***</text>
+<rect x="1820" y="381" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>Cancer type (top 10) | XGBoost | Event-level MAF stack vs mutational signatures: delta=0.0109; p=3.99e-3; q=9.21e-3</title></rect>
+<text x="1863" y="397" text-anchor="middle" class="tiny">+0.011 **</text>
+<rect x="1921" y="381" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>Cancer type (top 10) | XGBoost | Signatures + MAF stack vs mutational signatures: delta=0.0318; p=3.99e-3; q=9.21e-3</title></rect>
+<text x="1964" y="397" text-anchor="middle" class="tiny">+0.032 **</text>
+<rect x="2022" y="381" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>Cancer type (top 10) | XGBoost | Signatures + MAF stack vs event-level MAF stack: delta=0.0210; p=3.99e-3; q=9.21e-3</title></rect>
+<text x="2065" y="397" text-anchor="middle" class="tiny">+0.021 **</text>
+<rect x="1820" y="455" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>Overall survival event | XGBoost | Event-level MAF stack vs mutational signatures: delta=0.0022; p=6.59e-1; q=7.41e-1</title></rect>
+<text x="1863" y="471" text-anchor="middle" class="tiny">+0.002</text>
+<rect x="1921" y="455" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>Overall survival event | XGBoost | Signatures + MAF stack vs mutational signatures: delta=0.0155; p=6.93e-6; q=7.79e-5</title></rect>
+<text x="1964" y="471" text-anchor="middle" class="tiny">+0.015 ***</text>
+<rect x="2022" y="455" width="86" height="22" rx="5" fill="#ECFDF5" stroke="#A7F3D0"><title>Overall survival event | XGBoost | Signatures + MAF stack vs event-level MAF stack: delta=0.0132; p=1.01e-6; q=1.52e-5</title></rect>
+<text x="2065" y="471" text-anchor="middle" class="tiny">+0.013 ***</text>
+<rect x="44" y="597" width="14" height="14" rx="2" fill="#2F6FDB"/><text x="65" y="610" class="small">Mutational signatures</text>
+<rect x="214" y="597" width="14" height="14" rx="2" fill="#159A74"/><text x="235" y="610" class="small">Event-level MAF stack</text>
+<rect x="384" y="597" width="14" height="14" rx="2" fill="#D9822B"/><text x="405" y="610" class="small">Signatures + MAF stack</text></svg>

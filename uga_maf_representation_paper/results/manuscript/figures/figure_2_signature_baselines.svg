@@ -27,23 +27,23 @@
 <text x="860" y="518" text-anchor="middle" class="tiny">1.00</text>
 <rect x="210" y="144" width="298.6555016247797" height="12" rx="2" fill="#6B7280"><title>Kucab damage class | Elastic net | Mutational burden: 0.459; q=0.00e+0</title></rect>
 <text x="515.6555016247796" y="155" class="tiny">0.46</text>
-<rect x="210" y="162" width="387.41246130854324" height="12" rx="2" fill="#2F6FDB"><title>Kucab damage class | Elastic net | Mutational signatures: 0.596; q=2.24e-2</title></rect>
-<text x="604.4124613085432" y="173" class="tiny">0.60 *</text>
+<rect x="210" y="162" width="387.41246130854324" height="12" rx="2" fill="#2F6FDB"><title>Kucab damage class | Elastic net | Mutational signatures: 0.596; q=9.21e-3</title></rect>
+<text x="604.4124613085432" y="173" class="tiny">0.60 **</text>
 <rect x="210" y="212" width="356.0559775360198" height="12" rx="2" fill="#6B7280"><title>HRD score | Elastic net | Mutational burden: 0.548; q=0.00e+0</title></rect>
 <text x="573.0559775360198" y="223" class="tiny">0.55</text>
-<rect x="210" y="230" width="331.6354865609881" height="12" rx="2" fill="#2F6FDB"><title>HRD score | Elastic net | Mutational signatures: 0.510; q=2.69e-1</title></rect>
+<rect x="210" y="230" width="331.6354865609881" height="12" rx="2" fill="#2F6FDB"><title>HRD score | Elastic net | Mutational signatures: 0.510; q=2.77e-1</title></rect>
 <text x="548.635486560988" y="241" class="tiny">0.51</text>
 <rect x="210" y="280" width="516.602127220157" height="12" rx="2" fill="#6B7280"><title>HRD33 high/low | Elastic net | Mutational burden: 0.795; q=0.00e+0</title></rect>
 <text x="733.602127220157" y="291" class="tiny">0.79</text>
-<rect x="210" y="298" width="473.45621643948783" height="12" rx="2" fill="#2F6FDB"><title>HRD33 high/low | Elastic net | Mutational signatures: 0.728; q=1.06e-2</title></rect>
-<text x="690.4562164394879" y="309" class="tiny">0.73 *</text>
+<rect x="210" y="298" width="473.45621643948783" height="12" rx="2" fill="#2F6FDB"><title>HRD33 high/low | Elastic net | Mutational signatures: 0.728; q=9.21e-3</title></rect>
+<text x="690.4562164394879" y="309" class="tiny">0.73 **</text>
 <rect x="210" y="348" width="517.3552821019608" height="12" rx="2" fill="#6B7280"><title>Cancer type (top 10) | Elastic net | Mutational burden: 0.796; q=0.00e+0</title></rect>
 <text x="734.3552821019608" y="359" class="tiny">0.80</text>
-<rect x="210" y="366" width="565.2125602964069" height="12" rx="2" fill="#2F6FDB"><title>Cancer type (top 10) | Elastic net | Mutational signatures: 0.870; q=2.24e-2</title></rect>
-<text x="782.2125602964069" y="377" class="tiny">0.87 *</text>
+<rect x="210" y="366" width="565.2125602964069" height="12" rx="2" fill="#2F6FDB"><title>Cancer type (top 10) | Elastic net | Mutational signatures: 0.870; q=9.21e-3</title></rect>
+<text x="782.2125602964069" y="377" class="tiny">0.87 **</text>
 <rect x="210" y="416" width="384.01038707612446" height="12" rx="2" fill="#6B7280"><title>Overall survival event | Elastic net | Mutational burden: 0.591; q=0.00e+0</title></rect>
 <text x="601.0103870761245" y="427" class="tiny">0.59</text>
-<rect x="210" y="434" width="373.0828992903675" height="12" rx="2" fill="#2F6FDB"><title>Overall survival event | Elastic net | Mutational signatures: 0.574; q=3.01e-2</title></rect>
+<rect x="210" y="434" width="373.0828992903675" height="12" rx="2" fill="#2F6FDB"><title>Overall survival event | Elastic net | Mutational signatures: 0.574; q=2.94e-2</title></rect>
 <text x="590.0828992903675" y="445" class="tiny">0.57 *</text>
 <text x="930" y="110" class="panel-title">XGBoost</text>
 <line x1="930" y1="114" x2="930" y2="480" class="grid"/>
@@ -58,20 +58,20 @@
 <text x="1580" y="518" text-anchor="middle" class="tiny">1.00</text>
 <rect x="930" y="144" width="298.19973959809585" height="12" rx="2" fill="#6B7280"><title>Kucab damage class | XGBoost | Mutational burden: 0.459; q=0.00e+0</title></rect>
 <text x="1235.199739598096" y="155" class="tiny">0.46</text>
-<rect x="930" y="162" width="423.29626731278603" height="12" rx="2" fill="#2F6FDB"><title>Kucab damage class | XGBoost | Mutational signatures: 0.651; q=2.24e-2</title></rect>
-<text x="1360.296267312786" y="173" class="tiny">0.65 *</text>
+<rect x="930" y="162" width="423.29626731278603" height="12" rx="2" fill="#2F6FDB"><title>Kucab damage class | XGBoost | Mutational signatures: 0.651; q=9.21e-3</title></rect>
+<text x="1360.296267312786" y="173" class="tiny">0.65 **</text>
 <rect x="930" y="212" width="399.6764483938309" height="12" rx="2" fill="#6B7280"><title>HRD score | XGBoost | Mutational burden: 0.615; q=0.00e+0</title></rect>
 <text x="1336.676448393831" y="223" class="tiny">0.61</text>
-<rect x="930" y="230" width="451.04599978014187" height="12" rx="2" fill="#2F6FDB"><title>HRD score | XGBoost | Mutational signatures: 0.694; q=2.24e-2</title></rect>
-<text x="1388.0459997801418" y="241" class="tiny">0.69 *</text>
+<rect x="930" y="230" width="451.04599978014187" height="12" rx="2" fill="#2F6FDB"><title>HRD score | XGBoost | Mutational signatures: 0.694; q=9.21e-3</title></rect>
+<text x="1388.0459997801418" y="241" class="tiny">0.69 **</text>
 <rect x="930" y="280" width="537.141160677406" height="12" rx="2" fill="#6B7280"><title>HRD33 high/low | XGBoost | Mutational burden: 0.826; q=0.00e+0</title></rect>
 <text x="1474.1411606774059" y="291" class="tiny">0.83</text>
 <rect x="930" y="298" width="574.3236266005782" height="12" rx="2" fill="#2F6FDB"><title>HRD33 high/low | XGBoost | Mutational signatures: 0.884; q=2.12e-6</title></rect>
 <text x="1511.3236266005783" y="309" class="tiny">0.88 ***</text>
 <rect x="930" y="348" width="545.7280399936175" height="12" rx="2" fill="#6B7280"><title>Cancer type (top 10) | XGBoost | Mutational burden: 0.840; q=0.00e+0</title></rect>
 <text x="1482.7280399936176" y="359" class="tiny">0.84</text>
-<rect x="930" y="366" width="601.8244665270229" height="12" rx="2" fill="#2F6FDB"><title>Cancer type (top 10) | XGBoost | Mutational signatures: 0.926; q=2.24e-2</title></rect>
-<text x="1538.8244665270229" y="377" class="tiny">0.93 *</text>
+<rect x="930" y="366" width="601.8244665270229" height="12" rx="2" fill="#2F6FDB"><title>Cancer type (top 10) | XGBoost | Mutational signatures: 0.926; q=9.21e-3</title></rect>
+<text x="1538.8244665270229" y="377" class="tiny">0.93 **</text>
 <rect x="930" y="416" width="405.1773353081075" height="12" rx="2" fill="#6B7280"><title>Overall survival event | XGBoost | Mutational burden: 0.623; q=0.00e+0</title></rect>
 <text x="1342.1773353081076" y="427" class="tiny">0.62</text>
 <rect x="930" y="434" width="423.56828227629836" height="12" rx="2" fill="#2F6FDB"><title>Overall survival event | XGBoost | Mutational signatures: 0.652; q=1.56e-8</title></rect>

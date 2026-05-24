@@ -1,6 +1,6 @@
 {
   "canonical_main_rows": 50,
-  "created_utc": "2026-05-24T19:48:35+00:00",
+  "created_utc": "2026-05-24T23:15:44+00:00",
   "main_endpoint_rows": 50,
   "main_endpoints": [
     "damage_class",
@@ -41,6 +41,14 @@
     "tables/publication/table_3_hyperparameters_feature_dimensionality.html",
     "tables/publication/table_4_label_mapping.csv",
     "tables/publication/table_4_label_mapping.html",
+    "tables/publication/table_s0_source_inventory.csv",
+    "tables/publication/table_s0_source_inventory.html",
+    "tables/publication/table_s1_class_distribution_baselines.csv",
+    "tables/publication/table_s1_class_distribution_baselines.html",
+    "tables/publication/table_s2_sensitivity_analyses.csv",
+    "tables/publication/table_s2_sensitivity_analyses.html",
+    "tables/publication/table_s3_completeness_and_na_reasons.csv",
+    "tables/publication/table_s3_completeness_and_na_reasons.html",
     "tables/technical/table_1_datasets_endpoints_technical.csv",
     "tables/technical/table_1_datasets_endpoints_technical.html",
     "tables/technical/table_2_full_performance_metrics_technical.csv",
@@ -51,6 +59,14 @@
     "tables/technical/table_4_label_mapping_technical.html",
     "text/manuscript_captions_and_results.md",
     "text/label_mapping_notes.md",
+    "tables/table_s0_source_inventory.csv",
+    "tables/table_s0_source_inventory.html",
+    "tables/table_s1_class_distribution_baselines.csv",
+    "tables/table_s1_class_distribution_baselines.html",
+    "tables/table_s2_sensitivity_analyses.csv",
+    "tables/table_s2_sensitivity_analyses.html",
+    "tables/table_s3_completeness_and_na_reasons.csv",
+    "tables/table_s3_completeness_and_na_reasons.html",
     "supplement/table_s0_source_inventory.csv",
     "supplement/table_s0_source_inventory.html",
     "supplement/table_s1_class_distribution_baselines.csv",
@@ -76,6 +92,6 @@
     "supplement/figure_s2_calibration_thresholds.png",
     "supplement/figure_s3_feature_importance.png"
   ],
-  "run_id": "20260524T194601Z",
+  "run_id": "20260524T231119Z",
   "strict": true
 }

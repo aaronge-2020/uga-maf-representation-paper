@@ -92,6 +92,11 @@ function readCsv(name) {
   return parseCsv(fs.readFileSync(file, "utf8"));
 }
 
+function readCsvFile(file) {
+  if (!fs.existsSync(file)) return [];
+  return parseCsv(fs.readFileSync(file, "utf8"));
+}
+
 function esc(value) {
   return String(value ?? "").replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
 }
@@ -185,12 +190,16 @@ function barFigure(stem, title, csvName, outDir, options = {}) {
   const models = ["elastic_net", "XGBoost"].filter(m => rows.some(r => r.model_family === m));
   const reps = unique(rows.map(r => r.representation_family));
   const deltaPanel = Boolean(options.deltaPanel);
-  const width = deltaPanel ? 1880 : 1650, margin = { left: 210, right: 70, top: 132, bottom: 88 };
+  const contrastPanel = Boolean(options.contrastPanel);
+  const showSigOnBars = options.showSigOnBars !== false;
+  const width = deltaPanel ? 1880 : (contrastPanel ? 2200 : 1650), margin = { left: 210, right: 70, top: 132, bottom: contrastPanel ? 126 : 88 };
   const deltaW = deltaPanel ? 170 : 0;
   const deltaGap = deltaPanel ? 38 : 0;
-  const facetGap = 70;
+  const contrastW = contrastPanel ? 310 : 0;
+  const contrastGap = contrastPanel ? 34 : 0;
+  const facetGap = contrastPanel ? 90 : 70;
   const facetW = (width - margin.left - margin.right - facetGap * (models.length - 1)) / Math.max(models.length, 1);
-  const barW = Math.max(320, facetW - deltaW - deltaGap);
+  const barW = Math.max(320, facetW - deltaW - deltaGap - contrastW - contrastGap);
   const groupH = Math.max(68, reps.length * 18 + 20);
   const height = margin.top + margin.bottom + endpoints.length * groupH;
   const vals = rows.map(r => num(r.primary_score)).filter(Number.isFinite);
@@ -208,7 +217,15 @@ function barFigure(stem, title, csvName, outDir, options = {}) {
   const body = [
     `<rect width="${width}" height="${height}" fill="#FFFFFF"/>`,
     `<text x="44" y="50" class="title">${esc(title)}</text>`,
-    `<text x="44" y="78" class="subtitle">${esc(metricSubtitle(rows))}</text>`,
+    `<text x="44" y="78" class="subtitle">${esc(options.subtitle || metricSubtitle(rows))}</text>`,
+  ];
+  const contrastRows = contrastPanel
+    ? readCsvFile(path.join(manuscriptDir, "canonical", "main_panel_pairwise_tests.csv")).filter(r => r.figure_id === "figure_4" && r.test_status === "tested")
+    : [];
+  const contrastDefs = [
+    ["maf_stack_vs_signatures", "MAF - Sig", "Event-level MAF stack vs mutational signatures"],
+    ["sig_maf_vs_signatures", "Sig+MAF - Sig", "Signatures + MAF stack vs mutational signatures"],
+    ["sig_maf_vs_maf_stack", "Sig+MAF - MAF", "Signatures + MAF stack vs event-level MAF stack"],
   ];
   endpoints.forEach((ep, i) => {
     const y = margin.top + i * groupH + groupH / 2 + 5;
@@ -233,10 +250,36 @@ function barFigure(stem, title, csvName, outDir, options = {}) {
         const w = Math.max(2, num(r.primary_score) / max * barW);
         const q = num(r.q_value);
         const sig = String(r.significance_label || "");
-        body.push(`<rect x="${x0}" y="${y}" width="${w}" height="12" rx="2" fill="${palette[rep] || "#334155"}"><title>${esc(labelEndpoint(ep))} | ${esc(labelModel(model))} | ${esc(labelRep(rep))}: ${num(r.primary_score).toFixed(3)}${Number.isFinite(q) ? `; q=${q.toExponential(2)}` : ""}</title></rect>`);
-        body.push(`<text x="${x0 + w + 7}" y="${y + 11}" class="tiny">${num(r.primary_score).toFixed(2)}${sig ? ` ${sig}` : ""}</text>`);
+        const titleBits = [`${labelEndpoint(ep)} | ${labelModel(model)} | ${labelRep(rep)}: ${num(r.primary_score).toFixed(3)}`];
+        if (showSigOnBars && Number.isFinite(q)) titleBits.push(`q=${q.toExponential(2)}`);
+        body.push(`<rect x="${x0}" y="${y}" width="${w}" height="12" rx="2" fill="${palette[rep] || "#334155"}"><title>${esc(titleBits.join("; "))}</title></rect>`);
+        body.push(`<text x="${x0 + w + 7}" y="${y + 11}" class="tiny">${num(r.primary_score).toFixed(2)}${showSigOnBars && sig ? ` ${sig}` : ""}</text>`);
       });
     });
+    if (contrastPanel) {
+      const cx0 = x0 + barW + contrastGap;
+      body.push(`<text x="${cx0}" y="104" class="small">Declared contrasts: Δ metric, q</text>`);
+      contrastDefs.forEach(([id, short, long], ci) => {
+        const hx = cx0 + ci * 101;
+        body.push(textBlock(hx + 42, 122, wrapWords(short, 10), { cls: "tiny", anchor: "middle", lineHeight: 12 }));
+        body.push(`<title>${esc(long)}</title>`);
+      });
+      endpoints.forEach((ep, ei) => {
+        const cy = margin.top + ei * groupH + groupH / 2 + 2;
+        contrastDefs.forEach(([id, short, long], ci) => {
+          const test = contrastRows.find(d => d.endpoint === ep && d.model_family === model && d.comparison_name === id);
+          if (!test) return;
+          const delta = num(test.delta), qv = num(test.q_value);
+          const sig = String(test.significance_label || "");
+          const tx = cx0 + ci * 101;
+          const fill = Number.isFinite(delta) && delta >= 0 ? "#ECFDF5" : "#FEF2F2";
+          const stroke = Number.isFinite(delta) && delta >= 0 ? "#A7F3D0" : "#FECACA";
+          const text = `${Number.isFinite(delta) ? (delta >= 0 ? "+" : "") + delta.toFixed(3) : "n/a"}${sig ? ` ${sig}` : ""}`;
+          body.push(`<rect x="${tx}" y="${cy - 12}" width="86" height="22" rx="5" fill="${fill}" stroke="${stroke}"><title>${esc(labelEndpoint(ep))} | ${esc(labelModel(model))} | ${long}: delta=${Number.isFinite(delta) ? delta.toFixed(4) : "n/a"}; p=${Number.isFinite(num(test.p_value)) ? num(test.p_value).toExponential(2) : "n/a"}; q=${Number.isFinite(qv) ? qv.toExponential(2) : "n/a"}</title></rect>`);
+          body.push(`<text x="${tx + 43}" y="${cy + 4}" text-anchor="middle" class="tiny">${esc(text)}</text>`);
+        });
+      });
+    }
     if (deltaPanel) {
       const dx0 = x0 + barW + deltaGap;
       const zero = dx0 + deltaW / 2;
@@ -527,7 +570,17 @@ const assets = [];
 assets.push(conceptualOverview("figure_1_conceptual_overview", figuresDir));
 assets.push(barFigure("figure_2_signature_baselines", "Figure 2. Burden and signature baselines", "figure_2_signature_baselines.csv", figuresDir));
 assets.push(barFigure("figure_3_geometry_vs_signatures", "Figure 3. One-hot sequence KME v2 vs signatures", "figure_3_geometry_vs_signatures.csv", figuresDir, { deltaPanel: true }));
-assets.push(barFigure("figure_4_maf_stack_vs_signatures", "Figure 4. Event-level MAF biology", "figure_4_maf_stack_vs_signatures.csv", figuresDir));
+assets.push(barFigure(
+  "figure_4_maf_stack_vs_signatures",
+  "Figure 4. Event-level MAF biology",
+  "figure_4_maf_stack_vs_signatures.csv",
+  figuresDir,
+  {
+    contrastPanel: true,
+    showSigOnBars: false,
+    subtitle: "Bars show canonical 5-fold OOF performance. Right panels show declared pairwise contrasts as delta metric and BH-adjusted q markers.",
+  },
+));
 assets.push(heatFacetFigure("figure_5_cross_endpoint_summary", "Figure 5. Cross-endpoint representation summary", "figure_5_cross_endpoint_summary.csv", figuresDir));
 assets.push(representationConstruction("figure_s1_representation_construction", supplementDir));
 assets.push(calibrationFigure("figure_s2_calibration_thresholds", "Supplementary Figure S2. Calibration and reliability", "figure_s2_calibration_thresholds.csv", supplementDir));
