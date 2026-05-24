@@ -1,0 +1,122 @@
+{
+  "created_utc": "2026-05-22T00:09:54+00:00",
+  "kept_rows": 3599273,
+  "maf": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\projects\\cgr_validation\\uga_maf_representation_paper\\results\\work\\cgr_validation\\cgr_validation_results\\research\\experiments\\supporting\\2026_05_14_unified_uga_locked_manuscript_benchmark\\data\\mc3_source\\raw\\mc3.v0.2.8.PUBLIC.maf.gz",
+  "pathway_sets": {
+    "breast_hrd_relevant": [
+      "ATM",
+      "BARD1",
+      "BRCA1",
+      "BRCA2",
+      "BRIP1",
+      "CHEK2",
+      "PALB2",
+      "RAD51C",
+      "RAD51D"
+    ],
+    "cell_cycle": [
+      "CCND1",
+      "CCNE1",
+      "CDK4",
+      "CDK6",
+      "CDKN2A",
+      "MYC",
+      "RB1",
+      "TP53"
+    ],
+    "chromatin": [
+      "ARID1A",
+      "ARID1B",
+      "CREBBP",
+      "EP300",
+      "EZH2",
+      "KDM6A",
+      "KMT2A",
+      "KMT2B",
+      "KMT2D",
+      "PBRM1",
+      "SETD2",
+      "SMARCA4",
+      "SMARCB1"
+    ],
+    "ddr_checkpoint": [
+      "ATM",
+      "ATR",
+      "CHEK1",
+      "CHEK2",
+      "MDM2",
+      "TP53"
+    ],
+    "ddr_hr": [
+      "BARD1",
+      "BRCA1",
+      "BRCA2",
+      "BRIP1",
+      "FANCA",
+      "FANCC",
+      "FANCD2",
+      "FANCE",
+      "FANCF",
+      "FANCG",
+      "FANCI",
+      "FANCL",
+      "PALB2",
+      "RAD51",
+      "RAD51B",
+      "RAD51C",
+      "RAD51D"
+    ],
+    "ddr_mmr": [
+      "EPCAM",
+      "MLH1",
+      "MSH2",
+      "MSH6",
+      "PMS2"
+    ],
+    "lung_smoking_relevant": [
+      "BRAF",
+      "KEAP1",
+      "KRAS",
+      "NFE2L2",
+      "RBM10",
+      "SMARCA4",
+      "STK11",
+      "TP53"
+    ],
+    "pi3k": [
+      "AKT1",
+      "AKT2",
+      "MTOR",
+      "PIK3CA",
+      "PIK3R1",
+      "PTEN",
+      "TSC1",
+      "TSC2"
+    ],
+    "polymerase": [
+      "POLD1",
+      "POLD2",
+      "POLD3",
+      "POLD4",
+      "POLE"
+    ],
+    "ras_rtk": [
+      "ALK",
+      "BRAF",
+      "EGFR",
+      "ERBB2",
+      "FGFR1",
+      "FGFR2",
+      "FGFR3",
+      "HRAS",
+      "KRAS",
+      "MET",
+      "NRAS",
+      "RET",
+      "ROS1"
+    ]
+  },
+  "patient_count": 10224,
+  "target_gene_excluded": "KMT2C",
+  "total_rows": 3600963
+}

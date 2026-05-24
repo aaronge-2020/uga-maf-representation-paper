@@ -1,0 +1,5 @@
+Coordinate_System,Pairs,Mean_Top1_Accuracy,Mean_MRR,Median_True_Rank
+UGA clean context 40D,6,1.0,1.0,1.0
+UGA full 48D,6,1.0,1.0,1.0
+Standard separate catalogs,6,0.08333333333333333,0.25860088985088986,6.5
+UGA payload 8D,6,0.08333333333333333,0.25113285634118965,6.25

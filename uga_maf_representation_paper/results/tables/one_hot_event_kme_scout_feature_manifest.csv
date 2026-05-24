@@ -1,0 +1,15 @@
+benchmark,representation,n_features,n_samples,cache_key,construction,n_landmarks,kernel_sigma
+mc3_main,standard_sbs96_dbs78_id83,261,10146,one_hot_event_inventory_mc3_main_0ef666426351560e50c45848,same-inventory SBS96+DBS78+ID83 frequencies plus burden/modality covariates,,
+mc3_main,burden_only,1,10146,one_hot_event_inventory_mc3_main_0ef666426351560e50c45848,log total eligible event burden,,
+kucab_damage_class,standard_sbs96_dbs78_id83,261,259,one_hot_event_inventory_kucab_damage_class_d1b2510099145a6fb4d350fe,same-inventory SBS96+DBS78+ID83 frequencies plus burden/modality covariates,,
+kucab_damage_class,burden_only,1,259,one_hot_event_inventory_kucab_damage_class_d1b2510099145a6fb4d350fe,log total eligible event burden,,
+mc3_main,one_hot_event_kme_oracle_linear,68,772,,FASTA one-hot d_context=6 d_payload=6 endpoint-oracle KME,64.0,8.9442720413208
+mc3_main,one_hot_event_kme_oracle_xgboost,132,772,,FASTA one-hot d_context=6 d_payload=6 endpoint-oracle KME,128.0,2.2360680103302
+mc3_main,one_hot_event_kme_oracle_linear,132,772,,FASTA one-hot d_context=6 d_payload=6 endpoint-oracle KME,128.0,8.9442720413208
+mc3_main,one_hot_event_kme_oracle_xgboost,132,772,,FASTA one-hot d_context=6 d_payload=6 endpoint-oracle KME,128.0,1.1180340051651
+mc3_main,one_hot_event_kme_oracle_linear,68,5462,,FASTA one-hot d_context=6 d_payload=6 endpoint-oracle KME,64.0,2.2360680103302
+mc3_main,one_hot_event_kme_oracle_xgboost,132,5462,,FASTA one-hot d_context=6 d_payload=6 endpoint-oracle KME,128.0,4.4721360206604
+mc3_main,one_hot_event_kme_oracle_linear,68,10139,,FASTA one-hot d_context=6 d_payload=6 endpoint-oracle KME,64.0,17.8885440826416
+mc3_main,one_hot_event_kme_oracle_xgboost,68,10139,,FASTA one-hot d_context=6 d_payload=6 endpoint-oracle KME,64.0,2.2360680103302
+kucab_damage_class,one_hot_event_kme_oracle_linear,132,259,,FASTA one-hot d_context=6 d_payload=6 endpoint-oracle KME,128.0,17.8885440826416
+kucab_damage_class,one_hot_event_kme_oracle_xgboost,132,259,,FASTA one-hot d_context=6 d_payload=6 endpoint-oracle KME,128.0,8.9442720413208

@@ -1,0 +1,6 @@
+Candidate,Signature_Count,Feature_Dim,Signature_Matrix_Rank,Rank_Deficit,Min_Signature_Distance,Min_Nonzero_Signature_Distance
+legacy_zero,16,8,5,11,1.962615573354719e-17,0.94
+fractional_pad,16,8,6,10,0.5515432893255076,0.5515432893255076
+out_of_range_pad,16,8,6,10,0.94,0.94
+masked_presence,16,12,8,8,0.7799999999999998,0.7799999999999998
+length_code,16,12,8,8,0.94,0.94

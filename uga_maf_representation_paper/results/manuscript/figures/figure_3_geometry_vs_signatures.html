@@ -1,0 +1,80 @@
+<!doctype html><html><head><meta charset="utf-8"><title>figure_3_geometry_vs_signatures</title><script></script><style>body{margin:0;background:white}.wrap{padding:24px}</style></head><body><div class="wrap"><svg xmlns="http://www.w3.org/2000/svg" width="1650" height="560" viewBox="0 0 1650 560">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <linearGradient id="heat" x1="0" x2="1"><stop offset="0%" stop-color="#EFF6FF"/><stop offset="100%" stop-color="#1D4ED8"/></linearGradient>
+  </defs>
+  <style>
+  text{font-family:Inter,Arial,sans-serif;fill:#111827;letter-spacing:0}.title{font-size:30px;font-weight:760}.subtitle{font-size:15px;fill:#475569}.panel-title{font-size:17px;font-weight:760}.label{font-size:14px}.small{font-size:12px;fill:#475569}.tiny{font-size:10px;fill:#64748B}.value{font-size:14px;font-weight:700}.sig{font-size:16px;font-weight:800;fill:#111827}.axis{stroke:#CBD5E1;stroke-width:1}.grid{stroke:#E2E8F0;stroke-width:1}.rule{stroke:#334155;stroke-width:1.8}.card{fill:#FFFFFF;stroke:#CBD5E1;stroke-width:1.2}.soft{fill:#F8FAFC}.shadow{filter:drop-shadow(0 2px 3px rgba(15,23,42,.10))}
+  </style><rect width="1650" height="560" fill="#FFFFFF"/>
+<text x="44" y="50" class="title">Figure 3. One-hot event KME vs signatures</text>
+<text x="44" y="78" class="subtitle">Single 5-fold OOF results. Metrics: macro-AUROC, Spearman r, AUROC. Significance markers show BH-adjusted q-values for declared comparisons.</text>
+<text x="44" y="162" class="label">Kucab damage class</text>
+<text x="44" y="230" class="label">HRD score</text>
+<text x="44" y="298" class="label">HRD33 high/low</text>
+<text x="44" y="366" class="label">Cancer type (top 10)</text>
+<text x="44" y="434" class="label">Overall survival</text>
+<text x="44" y="450" class="label">event</text>
+<text x="210" y="110" class="panel-title">Elastic net</text>
+<line x1="210" y1="114" x2="210" y2="480" class="grid"/>
+<text x="210" y="518" text-anchor="middle" class="tiny">0.00</text>
+<line x1="372.5" y1="114" x2="372.5" y2="480" class="grid"/>
+<text x="372.5" y="518" text-anchor="middle" class="tiny">0.25</text>
+<line x1="535" y1="114" x2="535" y2="480" class="grid"/>
+<text x="535" y="518" text-anchor="middle" class="tiny">0.50</text>
+<line x1="697.5" y1="114" x2="697.5" y2="480" class="grid"/>
+<text x="697.5" y="518" text-anchor="middle" class="tiny">0.75</text>
+<line x1="860" y1="114" x2="860" y2="480" class="grid"/>
+<text x="860" y="518" text-anchor="middle" class="tiny">1.00</text>
+<rect x="210" y="144" width="387.41246130854324" height="12" rx="2" fill="#2F6FDB"><title>Kucab damage class | Elastic net | Mutational signatures: 0.596; q=0.00e+0</title></rect>
+<text x="604.4124613085432" y="155" class="tiny">0.60</text>
+<rect x="210" y="162" width="404.7267381123539" height="12" rx="2" fill="#A855C7"><title>Kucab damage class | Elastic net | One-hot sequence KME: 0.623; q=8.78e-2</title></rect>
+<text x="621.7267381123539" y="173" class="tiny">0.62 .</text>
+<rect x="210" y="212" width="331.6354865609881" height="12" rx="2" fill="#2F6FDB"><title>HRD score | Elastic net | Mutational signatures: 0.510; q=0.00e+0</title></rect>
+<text x="548.635486560988" y="223" class="tiny">0.51</text>
+<rect x="210" y="230" width="389.80694443619973" height="12" rx="2" fill="#A855C7"><title>HRD score | Elastic net | One-hot sequence KME: 0.600; q=1.16e-1</title></rect>
+<text x="606.8069444361997" y="241" class="tiny">0.60</text>
+<rect x="210" y="280" width="473.45621643948783" height="12" rx="2" fill="#2F6FDB"><title>HRD33 high/low | Elastic net | Mutational signatures: 0.728; q=0.00e+0</title></rect>
+<text x="690.4562164394879" y="291" class="tiny">0.73</text>
+<rect x="210" y="298" width="494.40830235439904" height="12" rx="2" fill="#A855C7"><title>HRD33 high/low | Elastic net | One-hot sequence KME: 0.761; q=6.33e-1</title></rect>
+<text x="711.408302354399" y="309" class="tiny">0.76</text>
+<rect x="210" y="348" width="565.2125602964069" height="12" rx="2" fill="#2F6FDB"><title>Cancer type (top 10) | Elastic net | Mutational signatures: 0.870; q=0.00e+0</title></rect>
+<text x="782.2125602964069" y="359" class="tiny">0.87</text>
+<rect x="210" y="366" width="555.4858880107906" height="12" rx="2" fill="#A855C7"><title>Cancer type (top 10) | Elastic net | One-hot sequence KME: 0.855; q=2.08e-2</title></rect>
+<text x="772.4858880107906" y="377" class="tiny">0.85 *</text>
+<rect x="210" y="416" width="373.0828992903675" height="12" rx="2" fill="#2F6FDB"><title>Overall survival event | Elastic net | Mutational signatures: 0.574; q=0.00e+0</title></rect>
+<text x="590.0828992903675" y="427" class="tiny">0.57</text>
+<rect x="210" y="434" width="364.07962539507236" height="12" rx="2" fill="#A855C7"><title>Overall survival event | Elastic net | One-hot sequence KME: 0.560; q=6.70e-3</title></rect>
+<text x="581.0796253950723" y="445" class="tiny">0.56 **</text>
+<text x="930" y="110" class="panel-title">XGBoost</text>
+<line x1="930" y1="114" x2="930" y2="480" class="grid"/>
+<text x="930" y="518" text-anchor="middle" class="tiny">0.00</text>
+<line x1="1092.5" y1="114" x2="1092.5" y2="480" class="grid"/>
+<text x="1092.5" y="518" text-anchor="middle" class="tiny">0.25</text>
+<line x1="1255" y1="114" x2="1255" y2="480" class="grid"/>
+<text x="1255" y="518" text-anchor="middle" class="tiny">0.50</text>
+<line x1="1417.5" y1="114" x2="1417.5" y2="480" class="grid"/>
+<text x="1417.5" y="518" text-anchor="middle" class="tiny">0.75</text>
+<line x1="1580" y1="114" x2="1580" y2="480" class="grid"/>
+<text x="1580" y="518" text-anchor="middle" class="tiny">1.00</text>
+<rect x="930" y="144" width="423.29626731278603" height="12" rx="2" fill="#2F6FDB"><title>Kucab damage class | XGBoost | Mutational signatures: 0.651; q=0.00e+0</title></rect>
+<text x="1360.296267312786" y="155" class="tiny">0.65</text>
+<rect x="930" y="162" width="426.400963189515" height="12" rx="2" fill="#A855C7"><title>Kucab damage class | XGBoost | One-hot sequence KME: 0.656; q=8.04e-1</title></rect>
+<text x="1363.400963189515" y="173" class="tiny">0.66</text>
+<rect x="930" y="212" width="451.04599978014187" height="12" rx="2" fill="#2F6FDB"><title>HRD score | XGBoost | Mutational signatures: 0.694; q=0.00e+0</title></rect>
+<text x="1388.0459997801418" y="223" class="tiny">0.69</text>
+<rect x="930" y="230" width="441.34574446989996" height="12" rx="2" fill="#A855C7"><title>HRD score | XGBoost | One-hot sequence KME: 0.679; q=2.38e-1</title></rect>
+<text x="1378.3457444699" y="241" class="tiny">0.68</text>
+<rect x="930" y="280" width="574.3236266005782" height="12" rx="2" fill="#2F6FDB"><title>HRD33 high/low | XGBoost | Mutational signatures: 0.884; q=0.00e+0</title></rect>
+<text x="1511.3236266005783" y="291" class="tiny">0.88</text>
+<rect x="930" y="298" width="561.3073110285005" height="12" rx="2" fill="#A855C7"><title>HRD33 high/low | XGBoost | One-hot sequence KME: 0.864; q=1.54e-2</title></rect>
+<text x="1498.3073110285004" y="309" class="tiny">0.86 *</text>
+<rect x="930" y="348" width="601.8244665270229" height="12" rx="2" fill="#2F6FDB"><title>Cancer type (top 10) | XGBoost | Mutational signatures: 0.926; q=0.00e+0</title></rect>
+<text x="1538.8244665270229" y="359" class="tiny">0.93</text>
+<rect x="930" y="366" width="589.1714227285045" height="12" rx="2" fill="#A855C7"><title>Cancer type (top 10) | XGBoost | One-hot sequence KME: 0.906; q=2.08e-2</title></rect>
+<text x="1526.1714227285045" y="377" class="tiny">0.91 *</text>
+<rect x="930" y="416" width="423.56828227629836" height="12" rx="2" fill="#2F6FDB"><title>Overall survival event | XGBoost | Mutational signatures: 0.652; q=0.00e+0</title></rect>
+<text x="1360.5682822762983" y="427" class="tiny">0.65</text>
+<rect x="930" y="434" width="418.54367309817906" height="12" rx="2" fill="#A855C7"><title>Overall survival event | XGBoost | One-hot sequence KME: 0.644; q=2.29e-2</title></rect>
+<text x="1355.5436730981792" y="445" class="tiny">0.64 *</text>
+<rect x="44" y="529" width="14" height="14" rx="2" fill="#2F6FDB"/><text x="65" y="542" class="small">Mutational signatures</text>
+<rect x="214" y="529" width="14" height="14" rx="2" fill="#A855C7"/><text x="235" y="542" class="small">One-hot sequence KME</text></svg></div></body></html>

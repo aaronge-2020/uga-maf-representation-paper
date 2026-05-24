@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1020" viewBox="0 0 1900 1020">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <linearGradient id="heat" x1="0" x2="1"><stop offset="0%" stop-color="#EFF6FF"/><stop offset="100%" stop-color="#1D4ED8"/></linearGradient>
+  </defs>
+  <style>
+  text{font-family:Inter,Arial,sans-serif;fill:#111827;letter-spacing:0}.title{font-size:30px;font-weight:760}.subtitle{font-size:15px;fill:#475569}.panel-title{font-size:17px;font-weight:760}.label{font-size:14px}.small{font-size:12px;fill:#475569}.tiny{font-size:10px;fill:#64748B}.value{font-size:14px;font-weight:700}.sig{font-size:16px;font-weight:800;fill:#111827}.axis{stroke:#CBD5E1;stroke-width:1}.grid{stroke:#E2E8F0;stroke-width:1}.rule{stroke:#334155;stroke-width:1.8}.card{fill:#FFFFFF;stroke:#CBD5E1;stroke-width:1.2}.soft{fill:#F8FAFC}.shadow{filter:drop-shadow(0 2px 3px rgba(15,23,42,.10))}
+  </style><rect width="1900" height="1020" fill="#FFFFFF"/>
+<text x="56" y="54" class="title">Figure 1. Mutation catalogues to representations</text>
+<text x="56" y="84" class="subtitle">The benchmark asks whether spectra, sequence-context geometry, event-level biology, or their combination is the most useful tabular view of a</text>
+<text x="56" y="104" class="subtitle">mutation catalogue.</text>
+<text x="72" y="150" class="panel-title">A. One sample catalogue</text>
+<text x="550" y="150" class="panel-title">B. Candidate feature views</text>
+<text x="1080" y="150" class="panel-title">C. Combined tabular view</text>
+<text x="1540" y="150" class="panel-title">D. Model comparison</text>
+<rect x="70" y="178" width="410" height="525" rx="10" class="card shadow"/>
+<text x="100" y="220" class="label" font-weight="700">MAF / VCF event rows</text>
+<text x="100" y="254" class="tiny" font-weight="700">chr</text>
+<text x="170" y="254" class="tiny" font-weight="700">pos</text>
+<text x="260" y="254" class="tiny" font-weight="700">ref</text>
+<text x="320" y="254" class="tiny" font-weight="700">alt</text>
+<text x="380" y="254" class="tiny" font-weight="700">gene</text>
+<line x1="100" y1="310" x2="438" y2="310" class="grid"/>
+<text x="100" y="292" class="label">3</text>
+<text x="170" y="292" class="label">41.2M</text>
+<text x="260" y="292" class="label">C</text>
+<text x="320" y="292" class="label">T</text>
+<text x="380" y="292" class="label">BRCA1</text>
+<circle cx="440" cy="287" r="6" fill="#2F6FDB" opacity=".92"/>
+<line x1="100" y1="368" x2="438" y2="368" class="grid"/>
+<text x="100" y="350" class="label">8</text>
+<text x="170" y="350" class="label">128M</text>
+<text x="260" y="350" class="label">T</text>
+<text x="320" y="350" class="label">G</text>
+<text x="380" y="350" class="label">MYC</text>
+<circle cx="440" cy="345" r="7" fill="#D9822B" opacity=".92"/>
+<line x1="100" y1="426" x2="438" y2="426" class="grid"/>
+<text x="100" y="408" class="label">17</text>
+<text x="170" y="408" class="label">7.6M</text>
+<text x="260" y="408" class="label">G</text>
+<text x="320" y="408" class="label">-</text>
+<text x="380" y="408" class="label">TP53</text>
+<circle cx="440" cy="403" r="8" fill="#159A74" opacity=".92"/>
+<line x1="100" y1="484" x2="438" y2="484" class="grid"/>
+<text x="100" y="466" class="label">2</text>
+<text x="170" y="466" class="label">90.1M</text>
+<text x="260" y="466" class="label">A</text>
+<text x="320" y="466" class="label">C</text>
+<text x="380" y="466" class="label">ALK</text>
+<circle cx="440" cy="461" r="9" fill="#A855C7" opacity=".92"/>
+<line x1="100" y1="542" x2="438" y2="542" class="grid"/>
+<text x="100" y="524" class="label">12</text>
+<text x="170" y="524" class="label">25.4M</text>
+<text x="260" y="524" class="label">+</text>
+<text x="320" y="524" class="label">T</text>
+<text x="380" y="524" class="label">KRAS</text>
+<circle cx="440" cy="519" r="10" fill="#6B7280" opacity=".92"/>
+<text x="100" y="615" class="small">Each row keeps genomic locus,</text>
+<text x="100" y="635" class="small">allele change, consequence,</text>
+<text x="100" y="655" class="small">VAF, gene and FASTA context.</text>
+<path d="M480 440 C520 440 520 246 550 246" fill="none" class="rule" marker-end="url(#arrow)"/>
+<path d="M480 440 C520 440 520 430 550 430" fill="none" class="rule" marker-end="url(#arrow)"/>
+<path d="M480 440 C520 440 520 614 550 614" fill="none" class="rule" marker-end="url(#arrow)"/>
+<rect x="550" y="178" width="390" height="138" rx="10" fill="#F8FAFC" stroke="#2F6FDB" stroke-width="2"/>
+<text x="572" y="212" class="panel-title">Mutational signatures</text>
+<text x="572" y="240" class="small">SBS96, DBS78 and ID83 exposure spectra</text>
+<rect x="574" y="280" width="11" height="14" fill="#2F6FDB" opacity="0.42"/>
+<rect x="592" y="259" width="11" height="35" fill="#2F6FDB" opacity="0.4477777777777778"/>
+<rect x="610" y="238" width="11" height="56" fill="#2F6FDB" opacity="0.4755555555555555"/>
+<rect x="628" y="266" width="11" height="28" fill="#2F6FDB" opacity="0.5033333333333333"/>
+<rect x="646" y="245" width="11" height="49" fill="#2F6FDB" opacity="0.5311111111111111"/>
+<rect x="664" y="273" width="11" height="21" fill="#2F6FDB" opacity="0.5588888888888889"/>
+<rect x="682" y="252" width="11" height="42" fill="#2F6FDB" opacity="0.5866666666666667"/>
+<rect x="700" y="280" width="11" height="14" fill="#2F6FDB" opacity="0.6144444444444445"/>
+<rect x="718" y="259" width="11" height="35" fill="#2F6FDB" opacity="0.6422222222222222"/>
+<rect x="736" y="238" width="11" height="56" fill="#2F6FDB" opacity="0.6699999999999999"/>
+<rect x="754" y="266" width="11" height="28" fill="#2F6FDB" opacity="0.6977777777777778"/>
+<rect x="772" y="245" width="11" height="49" fill="#2F6FDB" opacity="0.7255555555555555"/>
+<rect x="790" y="273" width="11" height="21" fill="#2F6FDB" opacity="0.7533333333333333"/>
+<rect x="808" y="252" width="11" height="42" fill="#2F6FDB" opacity="0.7811111111111111"/>
+<rect x="826" y="280" width="11" height="14" fill="#2F6FDB" opacity="0.8088888888888889"/>
+<rect x="844" y="259" width="11" height="35" fill="#2F6FDB" opacity="0.8366666666666667"/>
+<rect x="550" y="362" width="390" height="138" rx="10" fill="#F8FAFC" stroke="#A855C7" stroke-width="2"/>
+<text x="572" y="396" class="panel-title">One-hot sequence KME</text>
+<text x="572" y="424" class="small">FASTA windows summarized by kernel means</text>
+<text x="574" y="474" class="tiny">A C G T C T A G</text>
+<circle cx="855" cy="466" r="5" fill="#A855C7" opacity=".74"/>
+<circle cx="823.1178877238336" cy="489.7999554508592" r="5" fill="#A855C7" opacity=".74"/>
+<circle cx="768.1303142229377" cy="459.867013551356" r="5" fill="#A855C7" opacity=".74"/>
+<circle cx="760.1620791832927" cy="443.7804476241344" r="5" fill="#A855C7" opacity=".74"/>
+<circle cx="809.3749491719723" cy="477.8587204273266" r="5" fill="#A855C7" opacity=".74"/>
+<circle cx="853.0085143325183" cy="485.1636907029638" r="5" fill="#A855C7" opacity=".74"/>
+<circle cx="835.4175657266128" cy="449.203007497755" r="5" fill="#A855C7" opacity=".74"/>
+<circle cx="779.0355672941657" cy="451.1647093063112" r="5" fill="#A855C7" opacity=".74"/>
+<circle cx="755.7656072102936" cy="486.6198835565559" r="5" fill="#A855C7" opacity=".74"/>
+<circle cx="795.2835046772332" cy="475.52177375513475" r="5" fill="#A855C7" opacity=".74"/>
+<circle cx="847.1926979366247" cy="442.92646019489064" r="5" fill="#A855C7" opacity=".74"/>
+<circle cx="845.2941978820226" cy="462.42402338045923" r="5" fill="#A855C7" opacity=".74"/>
+<rect x="550" y="546" width="390" height="156" rx="10" fill="#F8FAFC" stroke="#159A74" stroke-width="2"/>
+<text x="572" y="580" class="panel-title">Event-level MAF stack</text>
+<text x="572" y="608" class="small">Aggregated gene, locus, consequence and VAF</text>
+<text x="572" y="625" class="small">features</text>
+<rect x="574" y="634" width="92" height="22" rx="11" fill="#159A74" opacity=".17"/><text x="620" y="649" text-anchor="middle" class="tiny">TP53</text>
+<rect x="686" y="634" width="92" height="22" rx="11" fill="#159A74" opacity=".17"/><text x="732" y="649" text-anchor="middle" class="tiny">chr8</text>
+<rect x="798" y="634" width="92" height="22" rx="11" fill="#159A74" opacity=".17"/><text x="844" y="649" text-anchor="middle" class="tiny">missense</text>
+<rect x="574" y="664" width="92" height="22" rx="11" fill="#159A74" opacity=".17"/><text x="620" y="679" text-anchor="middle" class="tiny">VAF</text>
+<rect x="686" y="664" width="92" height="22" rx="11" fill="#159A74" opacity=".17"/><text x="732" y="679" text-anchor="middle" class="tiny">splice</text>
+<rect x="798" y="664" width="92" height="22" rx="11" fill="#159A74" opacity=".17"/><text x="844" y="679" text-anchor="middle" class="tiny">burden</text>
+<rect x="1080" y="338" width="390" height="180" rx="10" fill="#F8FAFC" stroke="#D9822B" stroke-width="2"/>
+<text x="1102" y="372" class="panel-title">Signatures + MAF stack</text>
+<text x="1102" y="400" class="small">Process spectra joined with event-level</text>
+<text x="1102" y="417" class="small">biology</text>
+<circle cx="1152" cy="458" r="28" fill="#2F6FDB" opacity=".72"/><circle cx="1192" cy="458" r="28" fill="#159A74" opacity=".72"/><circle cx="1232" cy="458" r="28" fill="#D9822B" opacity=".72"/>
+<rect x="1300" y="424" width="112" height="20" rx="5" fill="#FFF7ED" stroke="#FDBA74"/><text x="1312" y="439" class="tiny">spectra</text>
+<rect x="1300" y="452" width="112" height="20" rx="5" fill="#FFF7ED" stroke="#FDBA74"/><text x="1312" y="467" class="tiny">genes</text>
+<rect x="1300" y="480" width="112" height="20" rx="5" fill="#FFF7ED" stroke="#FDBA74"/><text x="1312" y="495" class="tiny">VAF</text>
+<path d="M940 247 C990 247 1005 390 1080 390" fill="none" class="rule" marker-end="url(#arrow)"/>
+<path d="M940 431 C1000 431 1010 428 1080 428" fill="none" class="rule" marker-end="url(#arrow)"/>
+<path d="M940 615 C990 615 1005 468 1080 468" fill="none" class="rule" marker-end="url(#arrow)"/>
+<path d="M1470 428 C1500 428 1510 296 1540 296" fill="none" class="rule" marker-end="url(#arrow)"/>
+<rect x="1540" y="204" width="300" height="185" rx="10" class="card shadow"/>
+<text x="1564" y="244" class="panel-title">Tabular models</text>
+<text x="1564" y="276" class="small">Elastic net and XGBoost</text>
+<text x="1564" y="298" class="small">5-fold out-of-fold predictions</text>
+<text x="1564" y="320" class="small">Endpoint-level metrics</text>
+<rect x="1564" y="342" width="96" height="24" rx="12" fill="#DBEAFE"/><text x="1612" y="359" text-anchor="middle" class="tiny">AUROC</text>
+<rect x="1674" y="342" width="116" height="24" rx="12" fill="#DCFCE7"/><text x="1732" y="359" text-anchor="middle" class="tiny">Spearman r</text>
+<rect x="1540" y="604" width="300" height="155" rx="10" fill="#FFF7ED" stroke="#D9822B" stroke-width="1.8"/>
+<text x="1564" y="644" class="panel-title">End-to-end alternatives</text>
+<text x="1564" y="676" class="small">MuAt and ATGC operate directly</text>
+<text x="1564" y="696" class="small">on event sets as conceptual</text>
+<text x="1564" y="716" class="small">comparators outside the tabular path.</text>
+<path d="M480 680 C770 890 1280 890 1540 682" fill="none" stroke="#D9822B" stroke-width="2.4" stroke-dasharray="9,9" marker-end="url(#arrow)"/>
+<rect x="72" y="910" width="1768" height="52" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+<line x1="100" y1="936" x2="158" y2="936" class="rule" marker-end="url(#arrow)"/><text x="174" y="941" class="small">Solid arrows: feature extraction and tabular benchmarking</text>
+<line x1="560" y1="936" x2="618" y2="936" stroke="#D9822B" stroke-width="2.4" stroke-dasharray="9,9" marker-end="url(#arrow)"/><text x="634" y="941" class="small">Dashed arrow: direct event-set models used only as conceptual comparators</text></svg>

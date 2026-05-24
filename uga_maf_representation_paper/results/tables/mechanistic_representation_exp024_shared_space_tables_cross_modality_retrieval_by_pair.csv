@@ -1,0 +1,25 @@
+Source,Target,Coordinate_System,Top1_Accuracy,MRR,Median_True_Rank,Note
+SBS,DBS,UGA full 48D,1.0,1.0,1.0,direct cross-modality distances
+SBS,DBS,UGA clean context 40D,1.0,1.0,1.0,direct cross-modality distances
+SBS,DBS,UGA payload 8D,0.16666666666666666,0.3300925925925926,5.0,direct cross-modality distances
+SBS,DBS,Standard separate catalogs,0.08333333333333333,0.25860088985088986,6.5,undefined across unequal SBS/DBS/ID axes; chance/tie expectation shown
+SBS,ID,UGA full 48D,1.0,1.0,1.0,direct cross-modality distances
+SBS,ID,UGA clean context 40D,1.0,1.0,1.0,direct cross-modality distances
+SBS,ID,UGA payload 8D,0.08333333333333333,0.26207311207311207,6.5,direct cross-modality distances
+SBS,ID,Standard separate catalogs,0.08333333333333333,0.25860088985088986,6.5,undefined across unequal SBS/DBS/ID axes; chance/tie expectation shown
+DBS,SBS,UGA full 48D,1.0,1.0,1.0,direct cross-modality distances
+DBS,SBS,UGA clean context 40D,1.0,1.0,1.0,direct cross-modality distances
+DBS,SBS,UGA payload 8D,0.08333333333333333,0.27086940836940837,4.0,direct cross-modality distances
+DBS,SBS,Standard separate catalogs,0.08333333333333333,0.25860088985088986,6.5,undefined across unequal SBS/DBS/ID axes; chance/tie expectation shown
+DBS,ID,UGA full 48D,1.0,1.0,1.0,direct cross-modality distances
+DBS,ID,UGA clean context 40D,1.0,1.0,1.0,direct cross-modality distances
+DBS,ID,UGA payload 8D,0.0,0.18832972582972582,6.0,direct cross-modality distances
+DBS,ID,Standard separate catalogs,0.08333333333333333,0.25860088985088986,6.5,undefined across unequal SBS/DBS/ID axes; chance/tie expectation shown
+ID,SBS,UGA full 48D,1.0,1.0,1.0,direct cross-modality distances
+ID,SBS,UGA clean context 40D,1.0,1.0,1.0,direct cross-modality distances
+ID,SBS,UGA payload 8D,0.08333333333333333,0.22450998075998074,7.5,direct cross-modality distances
+ID,SBS,Standard separate catalogs,0.08333333333333333,0.25860088985088986,6.5,undefined across unequal SBS/DBS/ID axes; chance/tie expectation shown
+ID,DBS,UGA full 48D,1.0,1.0,1.0,direct cross-modality distances
+ID,DBS,UGA clean context 40D,1.0,1.0,1.0,direct cross-modality distances
+ID,DBS,UGA payload 8D,0.08333333333333333,0.2309223184223184,6.5,direct cross-modality distances
+ID,DBS,Standard separate catalogs,0.08333333333333333,0.25860088985088986,6.5,undefined across unequal SBS/DBS/ID axes; chance/tie expectation shown

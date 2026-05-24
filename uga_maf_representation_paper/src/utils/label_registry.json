@@ -1,0 +1,410 @@
+{
+  "analysis_family": {
+    "Alternative geometry": {
+      "description": "Supplementary analyses of UGA and channel-KME geometry variants.",
+      "display": "Alternative geometry"
+    },
+    "COSMIC/NNLS exposure checks": {
+      "description": "Supplementary checks using COSMIC reference signature exposure features.",
+      "display": "COSMIC/NNLS exposure checks"
+    },
+    "Mechanistic controls": {
+      "description": "Supplementary mechanistic or diagnostic control analyses.",
+      "display": "Mechanistic controls"
+    }
+  },
+  "atlas_status": {
+    "no UGA atlas": {
+      "description": "Representation does not use the UGA channel atlas.",
+      "display": "No UGA atlas"
+    },
+    "not applicable": {
+      "description": "Atlas status is not applicable for this analysis.",
+      "display": "Not applicable"
+    },
+    "uses COSMIC reference signatures; no UGA atlas for standard exposures": {
+      "description": "COSMIC reference signatures are used for exposure estimation; no UGA atlas is used.",
+      "display": "COSMIC reference signatures"
+    },
+    "uses GRCh37 FASTA windows; no UGA atlas": {
+      "description": "Sequence context is fetched from GRCh37 FASTA windows; no UGA atlas is used.",
+      "display": "GRCh37 FASTA windows"
+    },
+    "uses UGA channel atlas for SBS/DBS; ID payload encoder for ID83": {
+      "description": "SBS/DBS channels use the UGA channel atlas and ID channels use the ID payload encoder.",
+      "display": "UGA channel atlas"
+    }
+  },
+  "calibration_mode": {
+    "binary_positive_probability": {
+      "description": "Binary reliability plot using the predicted probability of the positive class.",
+      "display": "Positive-class probability"
+    },
+    "multiclass_confidence_accuracy": {
+      "description": "Multiclass reliability plot using maximum predicted confidence versus correctness.",
+      "display": "Confidence versus correctness"
+    }
+  },
+  "comparison_name": {
+    "maf_stack_vs_signatures": {
+      "description": "Event-level MAF stack compared with mutational signatures.",
+      "display": "MAF stack vs signatures"
+    },
+    "one_hot_kme_vs_signatures": {
+      "description": "One-hot sequence KME compared with mutational signatures.",
+      "display": "One-hot KME vs signatures"
+    },
+    "sig_maf_vs_maf_stack": {
+      "description": "Signatures plus MAF stack compared with MAF stack alone.",
+      "display": "Signatures + MAF vs MAF stack"
+    },
+    "sig_maf_vs_signatures": {
+      "description": "Signatures plus MAF stack compared with mutational signatures alone.",
+      "display": "Signatures + MAF vs signatures"
+    },
+    "signatures_vs_burden": {
+      "description": "Mutational signatures compared with mutational burden.",
+      "display": "Signatures vs burden"
+    }
+  },
+  "endpoint": {
+    "DBS": {
+      "description": "Double-base substitution signature attribution task.",
+      "display": "DBS attribution"
+    },
+    "HRD_LOH": {
+      "description": "Loss-of-heterozygosity component of homologous recombination deficiency.",
+      "display": "HRD LOH"
+    },
+    "HRD_LST": {
+      "description": "Large-scale transition component of homologous recombination deficiency.",
+      "display": "HRD LST"
+    },
+    "HRD_Score": {
+      "description": "Continuous homologous recombination deficiency score.",
+      "display": "HRD score"
+    },
+    "HRD_TAI": {
+      "description": "Telomeric allelic imbalance component of homologous recombination deficiency.",
+      "display": "HRD TAI"
+    },
+    "ID": {
+      "description": "Small insertion/deletion signature attribution task.",
+      "display": "ID attribution"
+    },
+    "Low-burden downsample": {
+      "description": "Kucab low-burden downsampled benchmark.",
+      "display": "Low-burden Kucab"
+    },
+    "Original data": {
+      "description": "Original Kucab benchmark without low-burden downsampling.",
+      "display": "Original Kucab"
+    },
+    "PARPi7": {
+      "description": "Continuous PARPi7 HRD-related score.",
+      "display": "PARPi7"
+    },
+    "SBS": {
+      "description": "Single-base substitution signature attribution task.",
+      "display": "SBS attribution"
+    },
+    "brca_gene_mutated": {
+      "description": "Indicator for mutation in BRCA-pathway genes.",
+      "display": "BRCA-pathway mutated"
+    },
+    "cancer_type_top10": {
+      "description": "Classification among the ten most frequent TCGA cancer types.",
+      "display": "Cancer type (top 10)"
+    },
+    "damage_class": {
+      "description": "Kucab DNA damage class from mutagen-treated clone catalogues.",
+      "display": "Kucab damage class"
+    },
+    "eCARD": {
+      "description": "Continuous eCARD HRD-related endpoint.",
+      "display": "eCARD"
+    },
+    "high_purity": {
+      "description": "High tumor purity clinical endpoint.",
+      "display": "High tumor purity"
+    },
+    "high_stage": {
+      "description": "High tumor stage clinical endpoint.",
+      "display": "High stage"
+    },
+    "hrd_binary_24": {
+      "description": "HRD-high versus HRD-low using threshold 24.",
+      "display": "HRD24 high/low"
+    },
+    "hrd_binary_33": {
+      "description": "HRD-high versus HRD-low using threshold 33.",
+      "display": "HRD33 high/low"
+    },
+    "hrd_binary_42": {
+      "description": "HRD-high versus HRD-low using threshold 42.",
+      "display": "HRD42 high/low"
+    },
+    "kmt2c_mutated": {
+      "description": "LUAD KMT2C mutation status endpoint.",
+      "display": "LUAD KMT2C mutated"
+    },
+    "luad_kmt2c_mutated": {
+      "description": "LUAD KMT2C mutation status endpoint.",
+      "display": "LUAD KMT2C mutated"
+    },
+    "mmr_gene_mutated": {
+      "description": "Indicator for mutation in mismatch repair genes.",
+      "display": "MMR-pathway mutated"
+    },
+    "os_event": {
+      "description": "Overall-survival event indicator.",
+      "display": "Overall survival event"
+    },
+    "parpi7_binary": {
+      "description": "Binary PARPi7 HRD-related endpoint.",
+      "display": "PARPi7 binary"
+    },
+    "pole_pold1_mutated": {
+      "description": "Indicator for POLE or POLD1 mutation.",
+      "display": "POLE/POLD1 mutated"
+    },
+    "smoking_ever": {
+      "description": "Ever-smoker clinical endpoint.",
+      "display": "Ever smoker"
+    }
+  },
+  "endpoint_tier": {
+    "main": {
+      "description": "Endpoint belongs to the main manuscript panel.",
+      "display": "Main"
+    },
+    "supplement": {
+      "description": "Endpoint belongs to the supplementary panel.",
+      "display": "Supplement"
+    }
+  },
+  "metric": {
+    "accuracy": {
+      "description": "Classification accuracy.",
+      "display": "Accuracy"
+    },
+    "auprc": {
+      "description": "Area under the precision-recall curve.",
+      "display": "AUPRC"
+    },
+    "auroc": {
+      "description": "Area under the receiver operating characteristic curve.",
+      "display": "AUROC"
+    },
+    "balanced_accuracy": {
+      "description": "Balanced classification accuracy.",
+      "display": "Balanced accuracy"
+    },
+    "macro_auroc": {
+      "description": "Macro-averaged multiclass AUROC.",
+      "display": "macro-AUROC"
+    },
+    "score": {
+      "description": "Primary score reported by the source analysis.",
+      "display": "Score"
+    },
+    "spearman": {
+      "description": "Spearman rank correlation.",
+      "display": "Spearman r"
+    }
+  },
+  "model_family": {
+    "XGBoost": {
+      "description": "Gradient-boosted tree model implemented with XGBoost.",
+      "display": "XGBoost"
+    },
+    "elastic_net": {
+      "description": "Elastic-net regularized linear or generalized linear model.",
+      "display": "Elastic net"
+    },
+    "unspecified": {
+      "description": "Model family was not specified by the source analysis.",
+      "display": "Source model"
+    }
+  },
+  "model_label": {
+    "XGBoost": {
+      "description": "Gradient-boosted tree model implemented with XGBoost.",
+      "display": "XGBoost"
+    },
+    "elastic_net": {
+      "description": "Elastic-net regularized linear or generalized linear model.",
+      "display": "Elastic net"
+    },
+    "locked_uga_sbs": {
+      "description": "Locked UGA SBS model reported by the source analysis.",
+      "display": "Locked UGA SBS"
+    },
+    "locked_uga_sbs_id_pooled": {
+      "description": "Locked UGA pooled SBS+ID model reported by the source analysis.",
+      "display": "Locked UGA SBS+ID pooled"
+    },
+    "locked_uga_sbs_id_separate": {
+      "description": "Locked UGA separate SBS+ID model reported by the source analysis.",
+      "display": "Locked UGA SBS+ID separate"
+    },
+    "unified_locked": {
+      "description": "Unified locked benchmark model reported by the source analysis.",
+      "display": "Unified locked model"
+    }
+  },
+  "representation": {
+    "MAF_stack_only": {
+      "description": "Event-level MAF-stack feature set.",
+      "display": "Event-level MAF stack"
+    },
+    "Standard_SBS96_DBS78_ID83_C0p5": {
+      "description": "Standard SBS96, DBS78, and ID83 mutation spectra.",
+      "display": "SBS96 + DBS78 + ID83 spectra"
+    },
+    "UGA_unified_d10dp5_IDpayload_unweighted_frac_C0p1": {
+      "description": "Unified UGA geometry representation with ID payload encoding.",
+      "display": "Unified UGA geometry"
+    },
+    "burden_only": {
+      "description": "Mutation burden summary features.",
+      "display": "Mutational burden"
+    },
+    "id_plus_best_gene_locus_multiscale_stack": {
+      "description": "Combined signature and event-level gene/locus multiscale stack.",
+      "display": "Signatures + MAF stack"
+    },
+    "locked_uga_sbs": {
+      "description": "Locked UGA SBS representation.",
+      "display": "Locked UGA SBS"
+    },
+    "locked_uga_sbs_exposure": {
+      "description": "Locked UGA SBS exposure representation.",
+      "display": "Locked UGA SBS exposures"
+    },
+    "locked_uga_sbs_id_exposure": {
+      "description": "Locked UGA SBS+ID exposure representation.",
+      "display": "Locked UGA SBS+ID exposures"
+    },
+    "locked_uga_sbs_id_pooled": {
+      "description": "Locked UGA pooled SBS+ID representation.",
+      "display": "Locked UGA SBS+ID pooled"
+    },
+    "locked_uga_sbs_id_separate": {
+      "description": "Locked UGA separate SBS+ID representation.",
+      "display": "Locked UGA SBS+ID separate"
+    },
+    "maf_only_best_gene_locus_multiscale_stack": {
+      "description": "Event-level gene/locus multiscale MAF stack without signature identity features.",
+      "display": "Event-level MAF stack"
+    },
+    "one_hot_event_kme_oracle": {
+      "description": "One-hot sequence-window kernel mean embedding derived from event contexts.",
+      "display": "One-hot sequence KME"
+    },
+    "previous_uga_mean_pooled": {
+      "description": "Previous pooled UGA mean representation.",
+      "display": "Previous pooled UGA"
+    },
+    "signatures_plus_MAF_stack": {
+      "description": "Combined mutational signatures and event-level MAF-stack features.",
+      "display": "Signatures + MAF stack"
+    },
+    "standard_sbs": {
+      "description": "Standard SBS mutation spectrum.",
+      "display": "SBS spectra"
+    },
+    "standard_sbs96_dbs78_id83": {
+      "description": "Standard SBS96, DBS78, and ID83 mutation spectra.",
+      "display": "SBS96 + DBS78 + ID83 spectra"
+    },
+    "standard_sbs96_id83": {
+      "description": "Standard SBS96 and ID83 mutation spectra.",
+      "display": "SBS96 + ID83 spectra"
+    },
+    "standard_sbs_exposure": {
+      "description": "Standard SBS signature exposure representation.",
+      "display": "SBS exposures"
+    },
+    "standard_sbs_id": {
+      "description": "Standard SBS and ID mutation spectra.",
+      "display": "SBS + ID spectra"
+    },
+    "standard_sbs_id_exposure": {
+      "description": "Standard SBS+ID signature exposure representation.",
+      "display": "SBS + ID exposures"
+    },
+    "uga_rbf_kernel_mean": {
+      "description": "UGA channel kernel mean embedding representation.",
+      "display": "UGA kernel mean"
+    }
+  },
+  "representation_family": {
+    "COSMIC_NNLS_exposures": {
+      "description": "COSMIC NNLS signature exposure features.",
+      "display": "COSMIC NNLS exposures"
+    },
+    "MAF_stack_only": {
+      "description": "Event-level gene, locus, consequence, VAF, and burden summaries without signature identity features.",
+      "display": "Event-level MAF stack"
+    },
+    "UGA_geometry": {
+      "description": "UGA geometry features using the channel atlas.",
+      "display": "UGA geometry"
+    },
+    "burden_only": {
+      "description": "Minimal mutational burden summaries.",
+      "display": "Mutational burden"
+    },
+    "channel_KME": {
+      "description": "Kernel mean embedding over UGA mutation channels.",
+      "display": "Channel KME"
+    },
+    "mechanistic_control": {
+      "description": "Mechanistic or diagnostic control representation.",
+      "display": "Mechanistic controls"
+    },
+    "one_hot_event_KME": {
+      "description": "FASTA-derived one-hot sequence-window kernel mean embedding.",
+      "display": "One-hot sequence KME"
+    },
+    "other": {
+      "description": "Other source representation.",
+      "display": "Other representation"
+    },
+    "signatures_only": {
+      "description": "Canonical mutational spectra such as SBS96, DBS78, and ID83.",
+      "display": "Mutational signatures"
+    },
+    "signatures_plus_MAF_stack": {
+      "description": "Combined mutational signatures and event-level MAF-stack features.",
+      "display": "Signatures + MAF stack"
+    }
+  },
+  "task": {
+    "binary": {
+      "description": "Binary classification task.",
+      "display": "Binary classification"
+    },
+    "binary; classification": {
+      "description": "Binary classification task.",
+      "display": "Binary classification"
+    },
+    "classification": {
+      "description": "Classification task.",
+      "display": "Classification"
+    },
+    "multiclass": {
+      "description": "Multiclass classification task.",
+      "display": "Multiclass classification"
+    },
+    "multiclass_grouped": {
+      "description": "Grouped multiclass classification task.",
+      "display": "Grouped multiclass"
+    },
+    "regression": {
+      "description": "Continuous regression task.",
+      "display": "Regression"
+    }
+  }
+}

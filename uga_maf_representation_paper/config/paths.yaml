@@ -1,0 +1,18 @@
+# Default local path template.
+# Relative paths are resolved from the bundle root.
+
+raw_data:
+  mc3_source_dir: ${repro_root}/cgr_validation_results/research/experiments/supporting/2026_05_14_unified_uga_locked_manuscript_benchmark/data/mc3_source
+  hrd_assets_dir: ${repro_root}/cgr_validation_results/research/assets/EXP023_tcga_brca_hrd/TCGA-BRCA
+  kucab_raw_dir: ${repro_root}/cgr_validation_results/research/experiments/supporting/2026_05_14_unified_uga_locked_manuscript_benchmark/data/raw
+  pcawg_dir: ${repro_root}/cgr_validation_results/research/data/pancan_pcawg_2020
+  grch37_dir: ${repro_root}/data/GRCH37
+
+processed_helpers:
+  mc3_standard_features_dir: null
+
+workspace:
+  work_dir: results/work
+  results_tables_dir: results/tables
+  results_figures_dir: results/figures
+  results_logs_dir: results/logs

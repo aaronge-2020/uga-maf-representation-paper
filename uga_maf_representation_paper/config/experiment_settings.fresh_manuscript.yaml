@@ -1,0 +1,111 @@
+runtime_profile: fresh-manuscript-gpu-efficient
+tree_method: gpu_hist
+xgb_n_jobs: 32
+xgb_estimators: 160
+cv_folds: 5
+cv_repeats: 1
+bootstrap: 200
+optuna_trials: 10
+
+feature_cache:
+  enabled: true
+  dir: results/cache/features
+  validate_fasta: true
+  snapshot_legacy_features: true
+
+experiments:
+  unified_locked:
+    enabled: true
+    scripts:
+      - run_locked_hrd_cross_validation.py
+      - run_locked_kucab_low_burden_benchmark.py
+      - run_locked_mc3_luad_kmt2c_validation.py
+      - run_locked_mc3_clinical_endpoints.py
+      - run_locked_pcawg_signature_attribution.py
+      - run_locked_tcga_signature_endpoint_prediction.py
+  uga_variants_kme:
+    enabled: true
+    run_linear_kme: true
+    run_xgboost_sensitivity: true
+    # Avoid the older Cartesian grid tuner in the efficient manuscript run.
+    # Geometry results use fixed 5-fold OOF UGA/KME and the FASTA one-hot KME scout.
+    run_tuned_kme: false
+    run_standard_plus_tuned_kme_subset: false
+    run_signal_recovery_linear: false
+  maf_event_gene_locus:
+    enabled: true
+    run_discovery: false
+    discovery_folds: 5
+    discovery_estimators: 160
+    confirmation_folds: 5
+    confirmation_repeats: 1
+    confirmation_estimators: 160
+    bootstrap: 200
+    max_candidates: 0
+    model_ids:
+      - maf_only_best_gene_locus_multiscale_stack
+      - id_plus_best_gene_locus_multiscale_stack
+    model_id: id_plus_best_gene_locus_multiscale_stack
+  one_hot_event_kme_scout:
+    enabled: true
+    tuning_strategy: optuna
+    optuna_trials: 10
+    d_context: 6
+    d_payload: 6
+    main_mc3_endpoints:
+      - HRD_Score
+      - hrd_binary_33
+      - cancer_type_top10
+      - os_event
+    sigma_multipliers:
+      - 0.25
+      - 0.5
+      - 1.0
+      - 2.0
+      - 4.0
+    landmark_modes:
+      - 64
+      - 128
+    maf_chunksize: 200000
+    kernel_chunk_size: 512
+    cache_fasta_sequences: true
+    kme_max_events_per_sample: 200
+    xgb_estimators: 160
+    xgb_max_depth: 2
+    xgb_learning_rate: 0.05
+    kucab_min_total_events: 20
+  main_manuscript_complete_panel:
+    enabled: true
+    main_mc3_endpoints:
+      - HRD_Score
+      - hrd_binary_33
+      - cancer_type_top10
+      - os_event
+    learners:
+      - linear
+      - xgboost
+    representations:
+      - burden_only
+      - signatures_only
+      - MAF_stack_only
+      - signatures_plus_MAF_stack
+  mechanistic_representation:
+    enabled: true
+    run_exp024: true
+    run_exp025: true
+
+outputs:
+  normalize_tables: true
+  make_figures_after_run: true
+  strict_manuscript: true
+  cleanup_work_dir_after_run: false
+  visualization_renderer: d3
+  strict_plot_completeness: true
+  write_interactive_html: true
+  required_experiments:
+    - unified_locked
+    - uga_kme
+    - maf_event_gene_locus
+    - main_manuscript_complete_panel
+    - one_hot_event_kme_scout
+    - mechanistic_representation

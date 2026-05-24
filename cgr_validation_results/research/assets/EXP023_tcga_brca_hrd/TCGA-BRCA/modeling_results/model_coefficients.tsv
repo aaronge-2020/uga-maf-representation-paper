@@ -1,0 +1,2411 @@
+suite	subset	endpoint	task	model	feature	coefficient	abs_coef
+main	all	HRD_Score	regression	Baseline	log10_burden	9.106729718933702	9.106729718933702
+main	all	HRD_Score	regression	Baseline+Standard	log10_burden	6.062811106536876	6.062811106536876
+main	all	HRD_Score	regression	Baseline+Standard	SBS1	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS2	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS3	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS4	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS5	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS6	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS7a	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS7b	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS7c	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS7d	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS8	2.0519919391989876	2.0519919391989876
+main	all	HRD_Score	regression	Baseline+Standard	SBS9	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS10a	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS10b	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS10c	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS10d	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS11	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS12	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS13	-0.4431815939336117	0.4431815939336117
+main	all	HRD_Score	regression	Baseline+Standard	SBS14	0.48594882696750885	0.48594882696750885
+main	all	HRD_Score	regression	Baseline+Standard	SBS15	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS16	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS17a	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS17b	-1.5976419117816831	1.5976419117816831
+main	all	HRD_Score	regression	Baseline+Standard	SBS18	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS19	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS20	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS21	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS22a	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS22b	0.0016902308603656407	0.0016902308603656407
+main	all	HRD_Score	regression	Baseline+Standard	SBS23	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS24	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS25	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS26	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS27	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS28	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS29	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS30	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS31	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS32	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS33	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS34	-0.5103597891966876	0.5103597891966876
+main	all	HRD_Score	regression	Baseline+Standard	SBS35	0.6241739783952377	0.6241739783952377
+main	all	HRD_Score	regression	Baseline+Standard	SBS36	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS37	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS38	0.42838215316980965	0.42838215316980965
+main	all	HRD_Score	regression	Baseline+Standard	SBS39	5.992275413845779	5.992275413845779
+main	all	HRD_Score	regression	Baseline+Standard	SBS40a	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS40b	1.014012905970962	1.014012905970962
+main	all	HRD_Score	regression	Baseline+Standard	SBS40c	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS41	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS42	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS43	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS44	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS45	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS46	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS47	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS48	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS49	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS50	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS51	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS52	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS53	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS54	-0.08197246064869507	0.08197246064869507
+main	all	HRD_Score	regression	Baseline+Standard	SBS55	-0.03811279242743781	0.03811279242743781
+main	all	HRD_Score	regression	Baseline+Standard	SBS56	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS57	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS58	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS59	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS60	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS84	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS85	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS86	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS87	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS88	0.19628166460072943	0.19628166460072943
+main	all	HRD_Score	regression	Baseline+Standard	SBS89	0.2988454872449782	0.2988454872449782
+main	all	HRD_Score	regression	Baseline+Standard	SBS90	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS91	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS92	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS93	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS94	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS95	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS96	0.6917486109479799	0.6917486109479799
+main	all	HRD_Score	regression	Baseline+Standard	SBS97	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS98	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS99	-2.085183938873274	2.085183938873274
+main	all	HRD_Score	regression	Baseline+Standard	SBS100	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS101	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS102	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS103	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS104	-0.26711281949099974	0.26711281949099974
+main	all	HRD_Score	regression	Baseline+Standard	SBS105	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS106	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS107	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS108	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS109	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	SBS110	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS1	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS2	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS3	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS4	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS5	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS6	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS7	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS8	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS9	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS10	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS11	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS12	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS13	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS14	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS15	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS16	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS17	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS18	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS19	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS20	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS21	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Standard	DBS22	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	log10_burden	4.156011403310243	4.156011403310243
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS1	-0.9000217133095805	0.9000217133095805
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS2	-1.8465707967774379	1.8465707967774379
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS3	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS4	0.46576567820347753	0.46576567820347753
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS5	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS6	-0.21051677727517173	0.21051677727517173
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS7a	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS7b	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS7c	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS7d	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS8	-0.01589077868765253	0.01589077868765253
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS9	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS10a	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS10b	-0.984703695724022	0.984703695724022
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS10c	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS10d	0.7878615246417251	0.7878615246417251
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS11	0.21438732362442672	0.21438732362442672
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS12	-0.4525581878035885	0.4525581878035885
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS13	0.27870819006376646	0.27870819006376646
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS14	-0.41453165550069	0.41453165550069
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS15	-0.8206487700621614	0.8206487700621614
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS16	-0.7493827047410091	0.7493827047410091
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS17a	0.016909002527257532	0.016909002527257532
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS17b	0.9759119393484993	0.9759119393484993
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS18	0.4740098063762512	0.4740098063762512
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS19	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS20	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS21	-0.4066957930955839	0.4066957930955839
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS22a	1.8122228152417803	1.8122228152417803
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS22b	-0.1604628850776829	0.1604628850776829
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS23	-0.6963718448599487	0.6963718448599487
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS24	-0.08885307813625007	0.08885307813625007
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS25	-0.0921412206341481	0.0921412206341481
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS26	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS27	-0.3858099006481155	0.3858099006481155
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS28	0.4347700336930432	0.4347700336930432
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS29	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS30	-0.3841338746589002	0.3841338746589002
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS31	0.039501848186408846	0.039501848186408846
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS32	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS33	-0.26201706974415345	0.26201706974415345
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS34	0.012270666976967595	0.012270666976967595
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS35	1.1776473048619849	1.1776473048619849
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS36	-0.5636416455817361	0.5636416455817361
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS37	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS38	1.0738992863871295	1.0738992863871295
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS39	2.0294573134663842	2.0294573134663842
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS40a	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS40b	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS40c	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS41	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS42	-0.1147954901733662	0.1147954901733662
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS43	0.7948011779681127	0.7948011779681127
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS44	-0.30836960976957045	0.30836960976957045
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS45	0.8445315442442182	0.8445315442442182
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS46	-0.5743754651071629	0.5743754651071629
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS47	0.16074501139131098	0.16074501139131098
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS48	-0.26357132154289536	0.26357132154289536
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS49	-0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS50	0.7670768031884688	0.7670768031884688
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS51	0.9040443750707795	0.9040443750707795
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS52	-0.10886963778337445	0.10886963778337445
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS53	0.35352229112769534	0.35352229112769534
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS54	-0.41906459179830097	0.41906459179830097
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS55	0.20795344441760702	0.20795344441760702
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS56	0.08398734672931851	0.08398734672931851
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS57	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS58	0.468708054766344	0.468708054766344
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS59	0.28606753647882494	0.28606753647882494
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS60	-0.14448045580429875	0.14448045580429875
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS84	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS85	-0.1999723012600728	0.1999723012600728
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS86	2.353617308963903	2.353617308963903
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS87	0.26987332670159075	0.26987332670159075
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS88	-0.280553211134588	0.280553211134588
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS89	0.7903811659271376	0.7903811659271376
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS90	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS91	0.3103054595210338	0.3103054595210338
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS92	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS93	0.205840674718064	0.205840674718064
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS94	0.31550337160321223	0.31550337160321223
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS95	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS96	1.588987347723373	1.588987347723373
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS97	-0.48969551168287434	0.48969551168287434
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS98	0.5451836714078353	0.5451836714078353
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS99	0.09680057349433392	0.09680057349433392
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS100	0.10488463047781574	0.10488463047781574
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS101	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS102	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS103	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS104	0.5438382365893469	0.5438382365893469
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS105	0.17906239076383323	0.17906239076383323
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS106	0.2681204139052614	0.2681204139052614
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS107	-0.4621418741334696	0.4621418741334696
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS108	-0.08690247048651456	0.08690247048651456
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS109	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	SBS110	0.5118533609297369	0.5118533609297369
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS1	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS2	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS3	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS4	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS5	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS6	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS7	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS8	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS9	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS10	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS11	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS12	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS13	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS14	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS15	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS16	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS17	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS18	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS19	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS20	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS21	0.0	0.0
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	DBS22	0.0	0.0
+main	all	PARPi7	regression	Baseline	log10_burden	0.18157787801242667	0.18157787801242667
+main	all	PARPi7	regression	Baseline+Standard	log10_burden	0.04298482133092797	0.04298482133092797
+main	all	PARPi7	regression	Baseline+Standard	SBS1	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS2	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS3	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS4	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS5	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS6	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS7a	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS7b	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS7c	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS7d	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS8	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS9	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS10a	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS10b	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS10c	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS10d	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS11	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS12	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS13	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS14	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS15	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS16	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS17a	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS17b	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS18	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS19	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS20	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS21	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS22a	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS22b	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS23	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS24	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS25	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS26	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS27	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS28	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS29	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS30	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS31	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS32	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS33	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS34	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS35	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS36	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS37	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS38	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS39	0.04631029621167502	0.04631029621167502
+main	all	PARPi7	regression	Baseline+Standard	SBS40a	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS40b	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS40c	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS41	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS42	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS43	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS44	-0.0036924589381344556	0.0036924589381344556
+main	all	PARPi7	regression	Baseline+Standard	SBS45	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS46	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS47	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS48	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS49	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS50	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS51	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS52	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS53	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS54	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS55	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS56	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS57	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS58	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS59	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS60	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS84	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS85	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS86	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS87	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS88	0.00033291718305646166	0.00033291718305646166
+main	all	PARPi7	regression	Baseline+Standard	SBS89	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS90	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS91	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS92	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS93	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS94	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS95	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS96	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS97	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS98	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS99	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS100	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS101	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS102	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS103	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS104	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS105	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS106	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS107	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS108	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS109	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	SBS110	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS1	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS2	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS3	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS4	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS5	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS6	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS7	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS8	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS9	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS10	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS11	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS12	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS13	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS14	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS15	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS16	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS17	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS18	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS19	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS20	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS21	0.0	0.0
+main	all	PARPi7	regression	Baseline+Standard	DBS22	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	log10_burden	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS1	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS2	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS3	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS4	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS5	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS6	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS7a	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS7b	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS7c	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS7d	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS8	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS9	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS10a	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS10b	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS10c	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS10d	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS11	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS12	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS13	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS14	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS15	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS16	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS17a	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS17b	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS18	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS19	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS20	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS21	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS22a	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS22b	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS23	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS24	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS25	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS26	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS27	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS28	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS29	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS30	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS31	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS32	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS33	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS34	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS35	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS36	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS37	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS38	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS39	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS40a	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS40b	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS40c	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS41	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS42	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS43	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS44	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS45	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS46	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS47	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS48	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS49	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS50	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS51	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS52	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS53	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS54	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS55	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS56	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS57	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS58	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS59	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS60	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS84	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS85	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS86	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS87	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS88	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS89	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS90	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS91	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS92	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS93	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS94	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS95	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS96	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS97	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS98	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS99	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS100	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS101	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS102	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS103	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS104	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS105	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS106	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS107	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS108	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS109	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	SBS110	-0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS1	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS2	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS3	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS4	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS5	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS6	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS7	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS8	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS9	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS10	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS11	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS12	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS13	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS14	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS15	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS16	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS17	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS18	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS19	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS20	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS21	0.0	0.0
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	DBS22	0.0	0.0
+main	all	eCARD	regression	Baseline	log10_burden	0.15943246338666495	0.15943246338666495
+main	all	eCARD	regression	Baseline+Standard	log10_burden	0.10245131388906287	0.10245131388906287
+main	all	eCARD	regression	Baseline+Standard	SBS1	-0.004777047567363405	0.004777047567363405
+main	all	eCARD	regression	Baseline+Standard	SBS2	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS3	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS4	0.0071209471442631265	0.0071209471442631265
+main	all	eCARD	regression	Baseline+Standard	SBS5	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS6	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS7a	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS7b	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS7c	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS7d	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS8	0.008420067578816927	0.008420067578816927
+main	all	eCARD	regression	Baseline+Standard	SBS9	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS10a	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS10b	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS10c	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS10d	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS11	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS12	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS13	-0.010806700698317327	0.010806700698317327
+main	all	eCARD	regression	Baseline+Standard	SBS14	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS15	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS16	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS17a	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS17b	-0.01114323833842943	0.01114323833842943
+main	all	eCARD	regression	Baseline+Standard	SBS18	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS19	-0.006162608440003436	0.006162608440003436
+main	all	eCARD	regression	Baseline+Standard	SBS20	0.003950612036920402	0.003950612036920402
+main	all	eCARD	regression	Baseline+Standard	SBS21	-0.027947945876404232	0.027947945876404232
+main	all	eCARD	regression	Baseline+Standard	SBS22a	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS22b	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS23	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS24	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS25	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS26	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS27	-0.014666062434834856	0.014666062434834856
+main	all	eCARD	regression	Baseline+Standard	SBS28	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS29	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS30	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS31	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS32	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS33	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS34	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS35	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS36	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS37	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS38	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS39	0.042072260086155604	0.042072260086155604
+main	all	eCARD	regression	Baseline+Standard	SBS40a	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS40b	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS40c	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS41	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS42	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS43	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS44	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS45	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS46	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS47	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS48	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS49	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS50	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS51	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS52	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS53	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS54	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS55	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS56	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS57	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS58	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS59	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS60	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS84	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS85	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS86	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS87	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS88	0.007246445436062366	0.007246445436062366
+main	all	eCARD	regression	Baseline+Standard	SBS89	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS90	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS91	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS92	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS93	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS94	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS95	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS96	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS97	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS98	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS99	-0.009165448511287179	0.009165448511287179
+main	all	eCARD	regression	Baseline+Standard	SBS100	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS101	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS102	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS103	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS104	-0.02501879768036115	0.02501879768036115
+main	all	eCARD	regression	Baseline+Standard	SBS105	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS106	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS107	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS108	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS109	-0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	SBS110	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS1	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS2	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS3	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS4	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS5	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS6	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS7	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS8	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS9	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS10	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS11	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS12	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS13	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS14	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS15	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS16	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS17	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS18	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS19	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS20	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS21	0.0	0.0
+main	all	eCARD	regression	Baseline+Standard	DBS22	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	log10_burden	0.12398880710501671	0.12398880710501671
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS1	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS2	-0.0433285616687148	0.0433285616687148
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS3	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS4	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS5	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS6	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS7a	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS7b	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS7c	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS7d	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS8	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS9	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS10a	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS10b	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS10c	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS10d	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS11	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS12	-0.01110622378350263	0.01110622378350263
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS13	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS14	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS15	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS16	-0.01757075913063875	0.01757075913063875
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS17a	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS17b	0.004967065519402373	0.004967065519402373
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS18	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS19	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS20	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS21	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS22a	0.0010759674455810986	0.0010759674455810986
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS22b	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS23	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS24	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS25	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS26	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS27	-0.01261812540979223	0.01261812540979223
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS28	0.016178114743836867	0.016178114743836867
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS29	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS30	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS31	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS32	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS33	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS34	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS35	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS36	-0.007256964619431701	0.007256964619431701
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS37	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS38	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS39	0.0032646274127691014	0.0032646274127691014
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS40a	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS40b	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS40c	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS41	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS42	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS43	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS44	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS45	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS46	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS47	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS48	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS49	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS50	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS51	0.0024828705630267735	0.0024828705630267735
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS52	-0.00624668114787381	0.00624668114787381
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS53	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS54	-0.0035896847869614987	0.0035896847869614987
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS55	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS56	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS57	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS58	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS59	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS60	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS84	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS85	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS86	0.03603607778776389	0.03603607778776389
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS87	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS88	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS89	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS90	-0.006152672010059066	0.006152672010059066
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS91	0.00425635814105335	0.00425635814105335
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS92	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS93	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS94	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS95	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS96	0.03343516442478326	0.03343516442478326
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS97	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS98	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS99	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS100	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS101	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS102	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS103	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS104	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS105	-0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS106	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS107	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS108	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS109	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	SBS110	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS1	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS2	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS3	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS4	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS5	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS6	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS7	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS8	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS9	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS10	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS11	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS12	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS13	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS14	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS15	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS16	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS17	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS18	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS19	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS20	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS21	0.0	0.0
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	DBS22	0.0	0.0
+main	all	HRD_TAI	regression	Baseline	log10_burden	3.3520070934428623	3.3520070934428623
+main	all	HRD_TAI	regression	Baseline+Standard	log10_burden	2.5645802125690635	2.5645802125690635
+main	all	HRD_TAI	regression	Baseline+Standard	SBS1	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS2	-0.08777077765106833	0.08777077765106833
+main	all	HRD_TAI	regression	Baseline+Standard	SBS3	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS4	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS5	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS6	-0.08950627705803395	0.08950627705803395
+main	all	HRD_TAI	regression	Baseline+Standard	SBS7a	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS7b	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS7c	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS7d	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS8	0.6654516596680095	0.6654516596680095
+main	all	HRD_TAI	regression	Baseline+Standard	SBS9	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS10a	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS10b	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS10c	-0.0723271314886893	0.0723271314886893
+main	all	HRD_TAI	regression	Baseline+Standard	SBS10d	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS11	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS12	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS13	-0.3453484526495087	0.3453484526495087
+main	all	HRD_TAI	regression	Baseline+Standard	SBS14	0.15256000069213296	0.15256000069213296
+main	all	HRD_TAI	regression	Baseline+Standard	SBS15	-0.011818459180255229	0.011818459180255229
+main	all	HRD_TAI	regression	Baseline+Standard	SBS16	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS17a	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS17b	-0.7287632498565167	0.7287632498565167
+main	all	HRD_TAI	regression	Baseline+Standard	SBS18	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS19	-0.07744642271600655	0.07744642271600655
+main	all	HRD_TAI	regression	Baseline+Standard	SBS20	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS21	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS22a	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS22b	0.014921341955774176	0.014921341955774176
+main	all	HRD_TAI	regression	Baseline+Standard	SBS23	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS24	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS25	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS26	0.008447457904343588	0.008447457904343588
+main	all	HRD_TAI	regression	Baseline+Standard	SBS27	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS28	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS29	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS30	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS31	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS32	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS33	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS34	-0.315496479101199	0.315496479101199
+main	all	HRD_TAI	regression	Baseline+Standard	SBS35	0.2837598873643524	0.2837598873643524
+main	all	HRD_TAI	regression	Baseline+Standard	SBS36	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS37	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS38	0.14309653438161246	0.14309653438161246
+main	all	HRD_TAI	regression	Baseline+Standard	SBS39	1.9547402080538188	1.9547402080538188
+main	all	HRD_TAI	regression	Baseline+Standard	SBS40a	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS40b	0.3241040708579882	0.3241040708579882
+main	all	HRD_TAI	regression	Baseline+Standard	SBS40c	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS41	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS42	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS43	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS44	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS45	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS46	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS47	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS48	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS49	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS50	-0.002316114261931909	0.002316114261931909
+main	all	HRD_TAI	regression	Baseline+Standard	SBS51	0.04982763137660996	0.04982763137660996
+main	all	HRD_TAI	regression	Baseline+Standard	SBS52	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS53	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS54	-0.11809217771861247	0.11809217771861247
+main	all	HRD_TAI	regression	Baseline+Standard	SBS55	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS56	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS57	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS58	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS59	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS60	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS84	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS85	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS86	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS87	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS88	0.2592636718270458	0.2592636718270458
+main	all	HRD_TAI	regression	Baseline+Standard	SBS89	0.22038974272081063	0.22038974272081063
+main	all	HRD_TAI	regression	Baseline+Standard	SBS90	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS91	-0.11982481830734248	0.11982481830734248
+main	all	HRD_TAI	regression	Baseline+Standard	SBS92	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS93	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS94	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS95	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS96	0.1369699129919482	0.1369699129919482
+main	all	HRD_TAI	regression	Baseline+Standard	SBS97	0.08103986363915693	0.08103986363915693
+main	all	HRD_TAI	regression	Baseline+Standard	SBS98	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS99	-0.9467741845808563	0.9467741845808563
+main	all	HRD_TAI	regression	Baseline+Standard	SBS100	-0.06268193646409721	0.06268193646409721
+main	all	HRD_TAI	regression	Baseline+Standard	SBS101	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS102	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS103	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS104	-0.2685243239127201	0.2685243239127201
+main	all	HRD_TAI	regression	Baseline+Standard	SBS105	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS106	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS107	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS108	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS109	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	SBS110	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS1	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS2	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS3	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS4	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS5	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS6	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS7	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS8	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS9	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS10	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS11	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS12	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS13	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS14	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS15	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS16	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS17	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS18	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS19	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS20	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS21	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Standard	DBS22	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	log10_burden	2.0257992762892	2.0257992762892
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS1	-0.0841960475141982	0.0841960475141982
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS2	-0.8478309525157258	0.8478309525157258
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS3	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS4	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS5	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS6	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS7a	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS7b	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS7c	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS7d	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS8	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS9	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS10a	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS10b	-0.33916968399119185	0.33916968399119185
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS10c	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS10d	0.11259433121986456	0.11259433121986456
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS11	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS12	-0.09416170233319215	0.09416170233319215
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS13	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS14	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS15	-0.12936086988572348	0.12936086988572348
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS16	-0.28991191751726675	0.28991191751726675
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS17a	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS17b	0.2032169673447108	0.2032169673447108
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS18	0.007308163464683485	0.007308163464683485
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS19	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS20	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS21	-0.056258895598549026	0.056258895598549026
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS22a	0.6990529077145958	0.6990529077145958
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS22b	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS23	-0.23025038504848386	0.23025038504848386
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS24	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS25	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS26	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS27	-0.07500857771248852	0.07500857771248852
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS28	0.04102287973184654	0.04102287973184654
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS29	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS30	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS31	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS32	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS33	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS34	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS35	0.35125907244956317	0.35125907244956317
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS36	-0.06345661020577116	0.06345661020577116
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS37	-0.0040076565263684905	0.0040076565263684905
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS38	0.2529696203717873	0.2529696203717873
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS39	0.6698054109557253	0.6698054109557253
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS40a	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS40b	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS40c	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS41	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS42	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS43	0.16383434086855148	0.16383434086855148
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS44	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS45	0.1129984292465508	0.1129984292465508
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS46	-0.1244540798353272	0.1244540798353272
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS47	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS48	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS49	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS50	0.12853541192270432	0.12853541192270432
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS51	0.26081824912217727	0.26081824912217727
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS52	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS53	0.13382669917119205	0.13382669917119205
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS54	-0.1542000423071205	0.1542000423071205
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS55	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS56	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS57	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS58	0.03811454177235439	0.03811454177235439
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS59	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS60	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS84	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS85	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS86	0.9724799045422623	0.9724799045422623
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS87	0.017396545446353707	0.017396545446353707
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS88	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS89	0.2279348834104922	0.2279348834104922
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS90	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS91	0.08878976213829166	0.08878976213829166
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS92	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS93	0.06180461252016747	0.06180461252016747
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS94	0.02499888251597447	0.02499888251597447
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS95	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS96	0.4984059760331119	0.4984059760331119
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS97	-0.0736618394568036	0.0736618394568036
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS98	0.22161072740019813	0.22161072740019813
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS99	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS100	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS101	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS102	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS103	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS104	0.10936523565990912	0.10936523565990912
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS105	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS106	0.04397068800970073	0.04397068800970073
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS107	-0.15353999166801466	0.15353999166801466
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS108	-0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS109	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	SBS110	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS1	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS2	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS3	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS4	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS5	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS6	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS7	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS8	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS9	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS10	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS11	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS12	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS13	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS14	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS15	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS16	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS17	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS18	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS19	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS20	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS21	0.0	0.0
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	DBS22	0.0	0.0
+main	all	HRD_LST	regression	Baseline	log10_burden	3.6700316481734223	3.6700316481734223
+main	all	HRD_LST	regression	Baseline+Standard	log10_burden	2.2191494145882427	2.2191494145882427
+main	all	HRD_LST	regression	Baseline+Standard	SBS1	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS2	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS3	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS4	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS5	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS6	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS7a	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS7b	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS7c	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS7d	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS8	1.0068814538273183	1.0068814538273183
+main	all	HRD_LST	regression	Baseline+Standard	SBS9	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS10a	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS10b	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS10c	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS10d	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS11	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS12	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS13	-0.062259349156749653	0.062259349156749653
+main	all	HRD_LST	regression	Baseline+Standard	SBS14	0.19483159048422255	0.19483159048422255
+main	all	HRD_LST	regression	Baseline+Standard	SBS15	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS16	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS17a	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS17b	-0.5346267252487591	0.5346267252487591
+main	all	HRD_LST	regression	Baseline+Standard	SBS18	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS19	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS20	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS21	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS22a	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS22b	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS23	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS24	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS25	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS26	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS27	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS28	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS29	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS30	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS31	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS32	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS33	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS34	-0.08254899482959865	0.08254899482959865
+main	all	HRD_LST	regression	Baseline+Standard	SBS35	0.10222452774579499	0.10222452774579499
+main	all	HRD_LST	regression	Baseline+Standard	SBS36	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS37	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS38	0.004278501367177268	0.004278501367177268
+main	all	HRD_LST	regression	Baseline+Standard	SBS39	2.2941914618689587	2.2941914618689587
+main	all	HRD_LST	regression	Baseline+Standard	SBS40a	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS40b	0.5616409207600568	0.5616409207600568
+main	all	HRD_LST	regression	Baseline+Standard	SBS40c	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS41	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS42	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS43	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS44	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS45	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS46	0.03531166937710439	0.03531166937710439
+main	all	HRD_LST	regression	Baseline+Standard	SBS47	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS48	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS49	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS50	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS51	0.04298830895973717	0.04298830895973717
+main	all	HRD_LST	regression	Baseline+Standard	SBS52	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS53	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS54	-0.010289732364840425	0.010289732364840425
+main	all	HRD_LST	regression	Baseline+Standard	SBS55	-0.06429977294228927	0.06429977294228927
+main	all	HRD_LST	regression	Baseline+Standard	SBS56	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS57	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS58	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS59	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS60	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS84	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS85	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS86	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS87	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS88	0.26921391675433354	0.26921391675433354
+main	all	HRD_LST	regression	Baseline+Standard	SBS89	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS90	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS91	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS92	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS93	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS94	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS95	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS96	0.3955739678411985	0.3955739678411985
+main	all	HRD_LST	regression	Baseline+Standard	SBS97	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS98	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS99	-0.784507762138967	0.784507762138967
+main	all	HRD_LST	regression	Baseline+Standard	SBS100	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS101	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS102	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS103	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS104	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS105	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS106	0.08958774552083178	0.08958774552083178
+main	all	HRD_LST	regression	Baseline+Standard	SBS107	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS108	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS109	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	SBS110	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS1	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS2	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS3	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS4	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS5	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS6	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS7	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS8	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS9	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS10	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS11	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS12	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS13	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS14	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS15	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS16	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS17	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS18	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS19	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS20	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS21	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Standard	DBS22	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	log10_burden	2.398834513750566	2.398834513750566
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS1	-0.1545770058081672	0.1545770058081672
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS2	-0.8211546879386534	0.8211546879386534
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS3	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS4	0.14961647068756265	0.14961647068756265
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS5	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS6	-0.0223895337948493	0.0223895337948493
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS7a	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS7b	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS7c	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS7d	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS8	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS9	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS10a	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS10b	-0.2285323735578962	0.2285323735578962
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS10c	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS10d	0.04166813682572428	0.04166813682572428
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS11	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS12	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS13	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS14	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS15	-0.0900313936333751	0.0900313936333751
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS16	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS17a	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS17b	0.3292552684755409	0.3292552684755409
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS18	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS19	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS20	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS21	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS22a	0.7226119414673509	0.7226119414673509
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS22b	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS23	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS24	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS25	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS26	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS27	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS28	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS29	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS30	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS31	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS32	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS33	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS34	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS35	0.6008693117398047	0.6008693117398047
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS36	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS37	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS38	0.32008966339907263	0.32008966339907263
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS39	0.8591015353087845	0.8591015353087845
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS40a	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS40b	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS40c	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS41	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS42	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS43	0.1735878552116411	0.1735878552116411
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS44	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS45	0.14777120207537617	0.14777120207537617
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS46	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS47	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS48	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS49	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS50	0.28138368569986755	0.28138368569986755
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS51	0.18624143592642808	0.18624143592642808
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS52	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS53	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS54	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS55	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS56	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS57	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS58	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS59	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS60	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS84	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS85	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS86	1.3017926975854983	1.3017926975854983
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS87	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS88	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS89	0.047804924463352376	0.047804924463352376
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS90	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS91	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS92	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS93	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS94	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS95	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS96	0.7284601050130876	0.7284601050130876
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS97	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS98	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS99	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS100	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS101	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS102	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS103	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS104	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS105	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS106	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS107	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS108	-0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS109	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	SBS110	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS1	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS2	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS3	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS4	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS5	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS6	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS7	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS8	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS9	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS10	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS11	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS12	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS13	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS14	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS15	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS16	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS17	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS18	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS19	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS20	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS21	0.0	0.0
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	DBS22	0.0	0.0
+main	all	HRD_LOH	regression	Baseline	log10_burden	2.0846909773174183	2.0846909773174183
+main	all	HRD_LOH	regression	Baseline+Standard	log10_burden	0.9986020508290736	0.9986020508290736
+main	all	HRD_LOH	regression	Baseline+Standard	SBS1	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS2	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS3	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS4	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS5	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS6	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS7a	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS7b	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS7c	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS7d	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS8	0.3431895066824323	0.3431895066824323
+main	all	HRD_LOH	regression	Baseline+Standard	SBS9	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS10a	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS10b	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS10c	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS10d	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS11	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS12	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS13	-0.06867993443414455	0.06867993443414455
+main	all	HRD_LOH	regression	Baseline+Standard	SBS14	0.1526404251895437	0.1526404251895437
+main	all	HRD_LOH	regression	Baseline+Standard	SBS15	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS16	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS17a	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS17b	-0.2668021611383596	0.2668021611383596
+main	all	HRD_LOH	regression	Baseline+Standard	SBS18	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS19	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS20	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS21	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS22a	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS22b	0.06497002624905486	0.06497002624905486
+main	all	HRD_LOH	regression	Baseline+Standard	SBS23	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS24	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS25	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS26	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS27	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS28	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS29	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS30	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS31	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS32	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS33	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS34	-0.021126219025440447	0.021126219025440447
+main	all	HRD_LOH	regression	Baseline+Standard	SBS35	0.21616228529976503	0.21616228529976503
+main	all	HRD_LOH	regression	Baseline+Standard	SBS36	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS37	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS38	0.26435680958747215	0.26435680958747215
+main	all	HRD_LOH	regression	Baseline+Standard	SBS39	1.3372091867604423	1.3372091867604423
+main	all	HRD_LOH	regression	Baseline+Standard	SBS40a	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS40b	0.14408627089639814	0.14408627089639814
+main	all	HRD_LOH	regression	Baseline+Standard	SBS40c	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS41	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS42	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS43	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS44	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS45	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS46	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS47	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS48	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS49	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS50	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS51	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS52	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS53	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS54	-0.024286162575362664	0.024286162575362664
+main	all	HRD_LOH	regression	Baseline+Standard	SBS55	-0.05211688202874872	0.05211688202874872
+main	all	HRD_LOH	regression	Baseline+Standard	SBS56	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS57	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS58	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS59	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS60	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS84	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS85	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS86	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS87	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS88	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS89	0.12484667954566397	0.12484667954566397
+main	all	HRD_LOH	regression	Baseline+Standard	SBS90	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS91	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS92	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS93	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS94	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS95	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS96	0.15010710465769442	0.15010710465769442
+main	all	HRD_LOH	regression	Baseline+Standard	SBS97	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS98	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS99	-0.035919366869103186	0.035919366869103186
+main	all	HRD_LOH	regression	Baseline+Standard	SBS100	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS101	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS102	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS103	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS104	-0.1424949965820423	0.1424949965820423
+main	all	HRD_LOH	regression	Baseline+Standard	SBS105	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS106	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS107	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS108	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS109	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	SBS110	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS1	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS2	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS3	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS4	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS5	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS6	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS7	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS8	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS9	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS10	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS11	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS12	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS13	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS14	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS15	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS16	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS17	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS18	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS19	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS20	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS21	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Standard	DBS22	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	log10_burden	1.3149877598253228	1.3149877598253228
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS1	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS2	-0.31367030251718786	0.31367030251718786
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS3	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS4	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS5	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS6	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS7a	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS7b	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS7c	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS7d	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS8	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS9	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS10a	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS10b	-0.09736087945008436	0.09736087945008436
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS10c	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS10d	0.13917275597541526	0.13917275597541526
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS11	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS12	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS13	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS14	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS15	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS16	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS17a	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS17b	0.01056255737472634	0.01056255737472634
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS18	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS19	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS20	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS21	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS22a	0.47528496952530275	0.47528496952530275
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS22b	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS23	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS24	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS25	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS26	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS27	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS28	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS29	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS30	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS31	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS32	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS33	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS34	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS35	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS36	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS37	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS38	0.11868783642902012	0.11868783642902012
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS39	0.5618471031046232	0.5618471031046232
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS40a	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS40b	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS40c	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS41	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS42	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS43	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS44	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS45	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS46	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS47	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS48	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS49	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS50	0.02616551769996265	0.02616551769996265
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS51	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS52	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS53	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS54	-0.003162573793499811	0.003162573793499811
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS55	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS56	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS57	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS58	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS59	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS60	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS84	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS85	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS86	0.6445738801460914	0.6445738801460914
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS87	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS88	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS89	0.017259423564887532	0.017259423564887532
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS90	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS91	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS92	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS93	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS94	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS95	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS96	0.20579149829006554	0.20579149829006554
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS97	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS98	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS99	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS100	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS101	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS102	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS103	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS104	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS105	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS106	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS107	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS108	-0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS109	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	SBS110	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS1	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS2	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS3	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS4	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS5	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS6	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS7	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS8	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS9	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS10	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS11	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS12	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS13	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS14	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS15	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS16	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS17	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS18	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS19	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS20	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS21	0.0	0.0
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	DBS22	0.0	0.0
+main	all	parpi7_binary	classification	Baseline	log10_burden	0.32167275957856284	0.32167275957856284
+main	all	parpi7_binary	classification	Baseline+Standard	log10_burden	0.07899109277670695	0.07899109277670695
+main	all	parpi7_binary	classification	Baseline+Standard	SBS1	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS2	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS3	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS4	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS5	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS6	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS7a	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS7b	0.008647561821526846	0.008647561821526846
+main	all	parpi7_binary	classification	Baseline+Standard	SBS7c	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS7d	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS8	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS9	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS10a	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS10b	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS10c	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS10d	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS11	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS12	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS13	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS14	0.039493988963575956	0.039493988963575956
+main	all	parpi7_binary	classification	Baseline+Standard	SBS15	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS16	0.008972284348936946	0.008972284348936946
+main	all	parpi7_binary	classification	Baseline+Standard	SBS17a	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS17b	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS18	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS19	-0.04822478512025599	0.04822478512025599
+main	all	parpi7_binary	classification	Baseline+Standard	SBS20	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS21	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS22a	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS22b	0.028380842009793922	0.028380842009793922
+main	all	parpi7_binary	classification	Baseline+Standard	SBS23	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS24	0.019013252358404502	0.019013252358404502
+main	all	parpi7_binary	classification	Baseline+Standard	SBS25	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS26	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS27	-0.09105684495365772	0.09105684495365772
+main	all	parpi7_binary	classification	Baseline+Standard	SBS28	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS29	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS30	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS31	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS32	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS33	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS34	-0.03465350231790524	0.03465350231790524
+main	all	parpi7_binary	classification	Baseline+Standard	SBS35	0.06725230055766081	0.06725230055766081
+main	all	parpi7_binary	classification	Baseline+Standard	SBS36	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS37	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS38	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS39	0.15083075061699638	0.15083075061699638
+main	all	parpi7_binary	classification	Baseline+Standard	SBS40a	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS40b	0.039816826642899976	0.039816826642899976
+main	all	parpi7_binary	classification	Baseline+Standard	SBS40c	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS41	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS42	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS43	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS44	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS45	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS46	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS47	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS48	-0.025212587392700055	0.025212587392700055
+main	all	parpi7_binary	classification	Baseline+Standard	SBS49	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS50	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS51	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS52	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS53	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS54	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS55	-0.025385097708739684	0.025385097708739684
+main	all	parpi7_binary	classification	Baseline+Standard	SBS56	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS57	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS58	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS59	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS60	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS84	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS85	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS86	-0.010710287360099458	0.010710287360099458
+main	all	parpi7_binary	classification	Baseline+Standard	SBS87	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS88	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS89	0.05008728974678727	0.05008728974678727
+main	all	parpi7_binary	classification	Baseline+Standard	SBS90	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS91	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS92	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS93	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS94	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS95	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS96	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS97	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS98	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS99	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS100	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS101	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS102	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS103	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS104	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS105	0.0593688879947752	0.0593688879947752
+main	all	parpi7_binary	classification	Baseline+Standard	SBS106	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS107	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS108	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS109	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	SBS110	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS1	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS2	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS3	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS4	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS5	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS6	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS7	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS8	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS9	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS10	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS11	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS12	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS13	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS14	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS15	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS16	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS17	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS18	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS19	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS20	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS21	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Standard	DBS22	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	log10_burden	0.052855238577794214	0.052855238577794214
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS1	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS2	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS3	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS4	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS5	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS6	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS7a	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS7b	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS7c	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS7d	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS8	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS9	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS10a	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS10b	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS10c	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS10d	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS11	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS12	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS13	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS14	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS15	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS16	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS17a	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS17b	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS18	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS19	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS20	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS21	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS22a	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS22b	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS23	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS24	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS25	0.012002912342221625	0.012002912342221625
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS26	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS27	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS28	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS29	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS30	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS31	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS32	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS33	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS34	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS35	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS36	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS37	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS38	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS39	0.19102175228356733	0.19102175228356733
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS40a	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS40b	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS40c	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS41	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS42	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS43	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS44	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS45	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS46	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS47	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS48	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS49	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS50	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS51	0.06340166559383342	0.06340166559383342
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS52	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS53	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS54	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS55	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS56	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS57	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS58	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS59	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS60	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS84	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS85	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS86	0.19339824903397895	0.19339824903397895
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS87	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS88	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS89	0.10273888191836132	0.10273888191836132
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS90	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS91	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS92	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS93	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS94	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS95	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS96	0.05851677881595995	0.05851677881595995
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS97	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS98	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS99	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS100	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS101	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS102	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS103	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS104	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS105	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS106	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS107	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS108	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS109	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	SBS110	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS1	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS2	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS3	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS4	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS5	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS6	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS7	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS8	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS9	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS10	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS11	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS12	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS13	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS14	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS15	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS16	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS17	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS18	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS19	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS20	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS21	0.0	0.0
+main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	DBS22	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline	log10_burden	0.9339989525129051	0.9339989525129051
+main	all	hrd_binary_42	classification	Baseline+Standard	log10_burden	0.658837236723191	0.658837236723191
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS1	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS2	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS3	-0.01782993624570912	0.01782993624570912
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS4	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS5	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS6	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS7a	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS7b	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS7c	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS7d	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS8	0.2380441489728295	0.2380441489728295
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS9	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS10a	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS10b	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS10c	-0.040092242702643145	0.040092242702643145
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS10d	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS11	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS12	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS13	-0.01651689558600535	0.01651689558600535
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS14	0.03183828559239825	0.03183828559239825
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS15	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS16	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS17a	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS17b	-0.3497915754637962	0.3497915754637962
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS18	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS19	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS20	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS21	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS22a	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS22b	0.010088576528551784	0.010088576528551784
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS23	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS24	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS25	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS26	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS27	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS28	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS29	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS30	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS31	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS32	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS33	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS34	-0.06247789094101989	0.06247789094101989
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS35	0.1471870882302254	0.1471870882302254
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS36	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS37	0.04032780603662536	0.04032780603662536
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS38	0.10483838018943617	0.10483838018943617
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS39	0.699896022985647	0.699896022985647
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS40a	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS40b	0.1318559654312431	0.1318559654312431
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS40c	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS41	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS42	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS43	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS44	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS45	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS46	0.026738179871269255	0.026738179871269255
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS47	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS48	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS49	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS50	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS51	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS52	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS53	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS54	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS55	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS56	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS57	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS58	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS59	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS60	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS84	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS85	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS86	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS87	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS88	0.015827733021948957	0.015827733021948957
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS89	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS90	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS91	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS92	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS93	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS94	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS95	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS96	0.1517274895250669	0.1517274895250669
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS97	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS98	0.031119141195468294	0.031119141195468294
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS99	-0.21622088010135623	0.21622088010135623
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS100	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS101	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS102	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS103	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS104	-0.054593347435426605	0.054593347435426605
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS105	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS106	0.08433304495997365	0.08433304495997365
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS107	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS108	0.02003971545584211	0.02003971545584211
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS109	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	SBS110	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS1	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS2	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS3	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS4	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS5	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS6	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS7	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS8	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS9	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS10	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS11	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS12	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS13	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS14	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS15	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS16	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS17	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS18	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS19	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS20	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS21	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Standard	DBS22	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	log10_burden	0.8824987670366056	0.8824987670366056
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS1	-0.10936310121622542	0.10936310121622542
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS2	-0.5815479579285161	0.5815479579285161
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS3	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS4	0.010163817172716515	0.010163817172716515
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS5	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS6	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS7a	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS7b	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS7c	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS7d	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS8	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS9	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS10a	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS10b	-0.07214213366245559	0.07214213366245559
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS10c	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS10d	0.04227110435959762	0.04227110435959762
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS11	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS12	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS13	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS14	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS15	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS16	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS17a	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS17b	0.10788282766773612	0.10788282766773612
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS18	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS19	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS20	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS21	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS22a	0.16929455834031368	0.16929455834031368
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS22b	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS23	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS24	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS25	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS26	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS27	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS28	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS29	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS30	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS31	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS32	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS33	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS34	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS35	0.09293654371729237	0.09293654371729237
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS36	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS37	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS38	0.029627113036159905	0.029627113036159905
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS39	0.1321082721559583	0.1321082721559583
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS40a	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS40b	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS40c	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS41	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS42	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS43	8.08452546398805e-05	8.08452546398805e-05
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS44	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS45	0.03446178905376044	0.03446178905376044
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS46	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS47	0.03553986422185728	0.03553986422185728
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS48	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS49	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS50	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS51	0.0200385479007294	0.0200385479007294
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS52	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS53	0.02025183400337563	0.02025183400337563
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS54	-0.012248320073421921	0.012248320073421921
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS55	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS56	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS57	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS58	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS59	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS60	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS84	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS85	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS86	0.2940744265399323	0.2940744265399323
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS87	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS88	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS89	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS90	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS91	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS92	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS93	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS94	0.02153754215953291	0.02153754215953291
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS95	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS96	0.10993126434245733	0.10993126434245733
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS97	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS98	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS99	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS100	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS101	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS102	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS103	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS104	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS105	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS106	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS107	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS108	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS109	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	SBS110	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS1	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS2	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS3	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS4	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS5	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS6	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS7	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS8	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS9	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS10	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS11	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS12	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS13	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS14	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS15	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS16	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS17	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS18	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS19	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS20	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS21	0.0	0.0
+main	all	hrd_binary_42	classification	Baseline+Universal-BiCGR d=10	DBS22	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline	log10_burden	0.8621617748387791	0.8621617748387791
+main	all	hrd_binary_33	classification	Baseline+Standard	log10_burden	0.6773996684911936	0.6773996684911936
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS1	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS2	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS3	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS4	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS5	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS6	-0.07887271171432737	0.07887271171432737
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS7a	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS7b	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS7c	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS7d	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS8	0.10389628677554767	0.10389628677554767
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS9	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS10a	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS10b	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS10c	-0.054805519670250664	0.054805519670250664
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS10d	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS11	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS12	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS13	-0.08855251524857272	0.08855251524857272
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS14	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS15	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS16	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS17a	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS17b	-0.20450680889945547	0.20450680889945547
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS18	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS19	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS20	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS21	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS22a	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS22b	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS23	-0.0048589022160497606	0.0048589022160497606
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS24	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS25	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS26	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS27	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS28	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS29	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS30	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS31	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS32	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS33	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS34	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS35	0.059660365988509906	0.059660365988509906
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS36	0.039019134791763305	0.039019134791763305
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS37	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS38	0.008612909361253246	0.008612909361253246
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS39	0.4277128232104116	0.4277128232104116
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS40a	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS40b	0.09194374345657237	0.09194374345657237
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS40c	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS41	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS42	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS43	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS44	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS45	0.0202219298637124	0.0202219298637124
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS46	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS47	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS48	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS49	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS50	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS51	0.044927521610680754	0.044927521610680754
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS52	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS53	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS54	-0.004933668158510858	0.004933668158510858
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS55	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS56	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS57	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS58	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS59	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS60	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS84	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS85	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS86	0.01910002345015268	0.01910002345015268
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS87	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS88	0.037984034476716215	0.037984034476716215
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS89	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS90	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS91	-0.04514386239766127	0.04514386239766127
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS92	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS93	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS94	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS95	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS96	0.09286991877953699	0.09286991877953699
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS97	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS98	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS99	-0.19207946916403518	0.19207946916403518
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS100	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS101	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS102	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS103	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS104	-0.08855132343879059	0.08855132343879059
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS105	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS106	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS107	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS108	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS109	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	SBS110	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS1	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS2	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS3	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS4	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS5	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS6	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS7	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS8	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS9	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS10	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS11	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS12	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS13	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS14	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS15	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS16	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS17	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS18	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS19	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS20	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS21	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Standard	DBS22	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	log10_burden	0.7203046819557507	0.7203046819557507
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS1	-0.02046912960803909	0.02046912960803909
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS2	-0.33217777847670166	0.33217777847670166
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS3	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS4	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS5	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS6	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS7a	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS7b	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS7c	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS7d	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS8	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS9	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS10a	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS10b	-0.15515216548135768	0.15515216548135768
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS10c	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS10d	0.011870687607361041	0.011870687607361041
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS11	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS12	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS13	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS14	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS15	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS16	-0.014788645799397588	0.014788645799397588
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS17a	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS17b	0.004268650318260627	0.004268650318260627
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS18	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS19	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS20	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS21	-0.04899841635284092	0.04899841635284092
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS22a	0.14044737142675998	0.14044737142675998
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS22b	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS23	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS24	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS25	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS26	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS27	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS28	0.014609840440423186	0.014609840440423186
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS29	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS30	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS31	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS32	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS33	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS34	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS35	0.020686371216816407	0.020686371216816407
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS36	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS37	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS38	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS39	0.11857243265498349	0.11857243265498349
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS40a	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS40b	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS40c	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS41	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS42	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS43	0.0001616169565443373	0.0001616169565443373
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS44	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS45	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS46	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS47	0.00019737137207946582	0.00019737137207946582
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS48	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS49	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS50	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS51	0.047256626496731007	0.047256626496731007
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS52	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS53	0.03928851743020445	0.03928851743020445
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS54	-0.05954281117985176	0.05954281117985176
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS55	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS56	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS57	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS58	0.006148158895529292	0.006148158895529292
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS59	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS60	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS84	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS85	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS86	0.2897837507790519	0.2897837507790519
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS87	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS88	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS89	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS90	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS91	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS92	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS93	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS94	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS95	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS96	0.05960804898979669	0.05960804898979669
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS97	-0.05768137784148938	0.05768137784148938
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS98	0.028689857452289323	0.028689857452289323
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS99	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS100	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS101	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS102	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS103	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS104	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS105	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS106	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS107	-0.04712978497845003	0.04712978497845003
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS108	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS109	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	SBS110	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS1	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS2	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS3	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS4	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS5	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS6	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS7	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS8	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS9	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS10	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS11	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS12	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS13	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS14	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS15	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS16	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS17	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS18	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS19	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS20	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS21	0.0	0.0
+main	all	hrd_binary_33	classification	Baseline+Universal-BiCGR d=10	DBS22	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline	log10_burden	0.8682815266300854	0.8682815266300854
+main	all	hrd_binary_24	classification	Baseline+Standard	log10_burden	0.40127981476383623	0.40127981476383623
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS1	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS2	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS3	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS4	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS5	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS6	-0.05211837037945195	0.05211837037945195
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS7a	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS7b	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS7c	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS7d	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS8	0.05381055788572721	0.05381055788572721
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS9	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS10a	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS10b	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS10c	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS10d	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS11	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS12	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS13	-0.059987094565862806	0.059987094565862806
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS14	0.011844404647092037	0.011844404647092037
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS15	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS16	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS17a	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS17b	-0.13055623833595234	0.13055623833595234
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS18	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS19	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS20	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS21	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS22a	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS22b	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS23	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS24	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS25	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS26	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS27	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS28	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS29	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS30	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS31	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS32	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS33	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS34	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS35	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS36	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS37	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS38	0.03144828349745188	0.03144828349745188
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS39	0.3662956012752003	0.3662956012752003
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS40a	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS40b	0.028443786693775393	0.028443786693775393
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS40c	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS41	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS42	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS43	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS44	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS45	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS46	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS47	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS48	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS49	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS50	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS51	0.002959835921664243	0.002959835921664243
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS52	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS53	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS54	-0.006459037253703899	0.006459037253703899
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS55	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS56	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS57	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS58	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS59	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS60	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS84	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS85	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS86	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS87	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS88	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS89	0.012469357435261902	0.012469357435261902
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS90	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS91	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS92	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS93	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS94	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS95	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS96	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS97	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS98	0.0033582405620090935	0.0033582405620090935
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS99	-0.0047836240847546506	0.0047836240847546506
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS100	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS101	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS102	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS103	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS104	-0.08618870990485725	0.08618870990485725
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS105	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS106	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS107	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS108	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS109	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	SBS110	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS1	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS2	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS3	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS4	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS5	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS6	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS7	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS8	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS9	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS10	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS11	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS12	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS13	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS14	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS15	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS16	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS17	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS18	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS19	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS20	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS21	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Standard	DBS22	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	log10_burden	0.5621333253714811	0.5621333253714811
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS1	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS2	-0.23307131139547926	0.23307131139547926
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS3	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS4	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS5	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS6	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS7a	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS7b	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS7c	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS7d	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS8	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS9	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS10a	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS10b	-0.0332341136781415	0.0332341136781415
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS10c	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS10d	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS11	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS12	-0.01706527095165251	0.01706527095165251
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS13	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS14	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS15	-0.02237268412585097	0.02237268412585097
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS16	-0.010086641173756109	0.010086641173756109
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS17a	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS17b	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS18	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS19	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS20	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS21	-0.04484629689157721	0.04484629689157721
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS22a	0.057573335083146215	0.057573335083146215
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS22b	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS23	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS24	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS25	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS26	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS27	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS28	0.003359193920892382	0.003359193920892382
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS29	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS30	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS31	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS32	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS33	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS34	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS35	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS36	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS37	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS38	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS39	0.06124575169710728	0.06124575169710728
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS40a	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS40b	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS40c	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS41	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS42	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS43	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS44	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS45	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS46	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS47	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS48	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS49	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS50	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS51	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS52	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS53	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS54	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS55	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS56	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS57	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS58	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS59	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS60	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS84	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS85	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS86	0.19441989103718088	0.19441989103718088
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS87	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS88	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS89	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS90	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS91	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS92	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS93	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS94	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS95	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS96	0.022611192414173406	0.022611192414173406
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS97	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS98	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS99	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS100	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS101	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS102	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS103	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS104	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS105	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS106	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS107	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS108	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS109	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	SBS110	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS1	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS2	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS3	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS4	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS5	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS6	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS7	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS8	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS9	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS10	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS11	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS12	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS13	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS14	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS15	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS16	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS17	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS18	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS19	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS20	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS21	0.0	0.0
+main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	DBS22	0.0	0.0

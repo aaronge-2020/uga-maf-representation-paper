@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Table 1. TCGA-BRCA HRD continuous endpoint prediction: Standard SBS96+ID83 versus locked UGA SBS+ID.</title>
+<style>
+body { font-family: Arial, Helvetica, sans-serif; margin: 24px; color: #111; }
+table { border-collapse: collapse; width: 100%; font-size: 12px; }
+caption { caption-side: top; text-align: left; font-weight: 700; margin-bottom: 8px; }
+thead th { border-top: 1px solid #111; border-bottom: 1px solid #111; padding: 6px 8px; text-align: left; }
+tbody td { border-bottom: 0.5px solid #bbb; padding: 5px 8px; text-align: left; }
+tfoot td { border-top: 1px solid #111; padding: 6px 8px; font-size: 11px; line-height: 1.35; }
+</style>
+</head>
+<body>
+<table>
+<caption>Table 1. TCGA-BRCA HRD continuous endpoint prediction: Standard SBS96+ID83 versus locked UGA SBS+ID.</caption>
+<thead><tr><th>Outcome</th><th>Standard Spearman</th><th>UGA Spearman</th><th>Delta rho</th><th>95% CI lower</th><th>95% CI upper</th><th>p value</th><th>q value</th><th>Standard R^2</th><th>UGA R^2</th><th>Delta R^2</th></tr></thead>
+<tbody><tr><td>HRD_Score</td><td>0.688521</td><td>0.642916</td><td>-0.0456055</td><td>-0.0750222</td><td>-0.0160246</td><td>0.000539214</td><td>0.00107843</td><td>0.598775</td><td>0.537276</td><td>-0.0614984</td></tr><tr><td>eCARD</td><td>0.407709</td><td>0.299302</td><td>-0.108407</td><td>-0.1617</td><td>-0.0531724</td><td>5.27217e-05</td><td>0.000211665</td><td>0.159494</td><td>0.0680238</td><td>-0.0914698</td></tr><tr><td>HRD_TAI</td><td>0.681589</td><td>0.639601</td><td>-0.0419882</td><td>-0.0694189</td><td>-0.0129533</td><td>0.00293448</td><td>0.00489081</td><td>0.535838</td><td>0.490026</td><td>-0.0458126</td></tr><tr><td>HRD_LST</td><td>0.677563</td><td>0.61168</td><td>-0.0658829</td><td>-0.0964827</td><td>-0.0368067</td><td>6.6969e-06</td><td>6.6969e-05</td><td>0.606339</td><td>0.570924</td><td>-0.0354151</td></tr><tr><td>HRD_LOH</td><td>0.585002</td><td>0.519225</td><td>-0.0657766</td><td>-0.104332</td><td>-0.030928</td><td>0.000190042</td><td>0.000475105</td><td>0.421553</td><td>0.354136</td><td>-0.067417</td></tr><tr><td>PARPi7</td><td>0.21928</td><td>0.184488</td><td>-0.0347918</td><td>-0.0960616</td><td>0.0314264</td><td>0.296811</td><td>0.371014</td><td>0.0426854</td><td>0.00340739</td><td>-0.039278</td></tr></tbody>
+<tfoot><tr><td colspan="11">Spearman correlation and R^2 are computed from averaged repeated out-of-fold predictions. Positive delta values favor UGA. Confidence intervals are bootstrap intervals for the paired metric difference; q values use Benjamini-Hochberg correction across primary endpoint tests.</td></tr></tfoot>
+</table>
+</body>
+</html>

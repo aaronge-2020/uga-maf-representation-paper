@@ -1,0 +1,30 @@
+﻿# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local environments and editor noise
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+desktop.ini
+.DS_Store
+Thumbs.db
+
+# Regenerable runtime artifacts intentionally excluded from the public repo
+uga_maf_representation_paper/results/work/
+uga_maf_representation_paper/results/cache/
+uga_maf_representation_paper/results/checkpoints/
+data/GRCH37/GCF_000001405.13/GCF_000001405.13_GRCh37_genomic.fna
+scratch/
+.benchmarks/
+
+# Large obsolete or historical archives intentionally excluded
+cgr_validation_results/research/data/EXP030_islam2022_sigprofiler_benchmark/raw/Benchmark.tar.gz
+
+uga_maf_representation_paper/results/logs/

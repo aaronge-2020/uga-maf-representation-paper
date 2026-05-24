@@ -1,0 +1,28 @@
+{
+  "benchmark_completeness": "benchmark_completeness.csv",
+  "canonical_pairwise_tests": "canonical/main_panel_pairwise_tests.csv",
+  "canonical_results": "canonical/main_panel_results.csv",
+  "created_utc": "2026-05-24T16:26:28+00:00",
+  "files": [
+    "figure_2_signature_baselines.csv",
+    "figure_3_geometry_vs_signatures.csv",
+    "figure_4_maf_stack_vs_signatures.csv",
+    "figure_5_cross_endpoint_summary.csv",
+    "figure_s2_calibration_thresholds.csv",
+    "figure_s3_feature_importance.csv"
+  ],
+  "main_endpoints": [
+    "damage_class",
+    "HRD_Score",
+    "hrd_binary_33",
+    "cancer_type_top10",
+    "os_event"
+  ],
+  "main_representations": [
+    "burden_only",
+    "signatures_only",
+    "MAF_stack_only",
+    "signatures_plus_MAF_stack",
+    "one_hot_event_KME"
+  ]
+}

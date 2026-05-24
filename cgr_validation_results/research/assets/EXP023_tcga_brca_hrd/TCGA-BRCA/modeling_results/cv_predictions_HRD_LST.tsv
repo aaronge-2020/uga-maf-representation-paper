@@ -1,0 +1,2317 @@
+suite	subset	endpoint	task	model	patient_id	fold	true_value	pred_value
+main	all	HRD_LST	regression	Baseline	TCGA-5L-AAT0	0	3.0	14.197617781456287
+main	all	HRD_LST	regression	Baseline	TCGA-A1-A0SF	0	8.0	8.873890155553978
+main	all	HRD_LST	regression	Baseline	TCGA-A1-A0SJ	0	3.0	6.118952603681853
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0CM	0	14.0	8.873890155553978
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0CW	0	13.0	9.041847605369803
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0CX	0	5.0	16.507044739183748
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0D1	0	6.0	8.873890155553978
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0EU	0	0.0	8.230453922212586
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0T0	0	35.0	14.223416950530392
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0T5	0	0.0	2.3481854834353477
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0T6	0	1.0	4.152644776372506
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0YJ	0	6.0	10.50380377511551
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0YL	0	2.0	6.850157735348532
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0YM	0	13.0	10.735042497997425
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0YT	0	11.0	9.282465350062186
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A1G1	0	2.0	6.118952603681853
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A25C	0	3.0	6.4259946292754275
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A25D	0	14.0	8.787472989748059
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A25E	0	24.0	9.123507588251456
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A3KD	0	4.0	1.9609549063512368
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A3Y0	0	17.0	14.171668179059475
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A0CE	0	21.0	11.915634862408904
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A0CH	0	0.0	5.614600946118213
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A26J	0	1.0	5.2435240862321955
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A5ZW	0	0.0	5.045698442411371
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A06U	0	19.0	9.584299248435396
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A07J	0	4.0	6.713213262618461
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A07O	0	6.0	7.9234118966190135
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A08R	0	35.0	15.790115862726875
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A090	0	2.0	6.9830136968108985
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A09C	0	5.0	6.275121055340545
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A09V	0	0.0	5.432929019495482
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A3OD	0	7.0	5.789146619493842
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A62Y	0	8.0	9.510738165335564
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A03X	0	1.0	6.4259946292754275
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A03Y	0	1.0	7.359323178348403
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A049	0	13.0	6.571920627156668
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0AJ	0	13.0	10.678349448491137
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0AT	0	24.0	12.595481701395698
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0FS	0	3.0	10.13272691522949
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0FW	0	7.0	12.167608429036942
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0FY	0	12.0	8.609435480805383
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0XN	0	35.0	13.313180466999363
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0XR	0	2.0	5.957104069309667
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0XT	0	9.0	3.898270160750765
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A03R	0	2.0	8.328267622292332
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0J3	0	16.0	11.008155432679148
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0J7	0	0.0	3.898270160750765
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0JD	0	16.0	12.558240109994562
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0JJ	0	2.0	3.034209067621717
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A128	0	4.0	21.977657094301087
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A12F	0	19.0	6.9830136968108985
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A1KT	0	5.0	8.230453922212586
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A0TP	0	29.0	9.20369613974199
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A0TX	0	6.0	17.015793970427232
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A1AO	0	0.0	10.678349448491137
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A1AX	0	0.0	5.045698442411371
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A24P	0	0.0	4.152644776372506
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A24W	0	2.0	3.034209067621717
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A24Z	0	12.0	7.706278872398407
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A256	0	19.0	14.325143532783105
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A2LH	0	0.0	9.282465350062186
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A2LN	0	2.0	7.593605912431
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0RO	0	5.0	6.4259946292754275
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0RU	0	12.0	8.230453922212586
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0WS	0	6.0	4.3932625210648855
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0WY	0	8.0	5.2435240862321955
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0X1	0	28.0	10.322131848492777
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A1KN	0	7.0	9.282465350062186
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A401	0	9.0	5.2435240862321955
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0B5	0	1.0	9.35986459140068
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0BF	0	10.0	6.4259946292754275
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0BP	0	13.0	13.588547311175647
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0BR	0	14.0	8.328267622292332
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0C1	0	3.0	7.478006057125021
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0C7	0	11.0	8.517672555555619
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0DE	0	4.0	5.957104069309667
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0DT	0	0.0	1.9609549063512368
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0E1	0	0.0	6.571920627156668
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0EE	0	3.0	12.595481701395698
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0HB	0	8.0	6.713213262618461
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0HI	0	4.0	5.614600946118213
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0HK	0	1.0	12.167608429036942
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0HP	0	4.0	16.5224172733009
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0W3	0	0.0	4.152644776372506
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0W4	0	0.0	6.275121055340545
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18H	0	10.0	8.423977638002066
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18Q	0	27.0	10.900913033729575
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1EO	0	3.0	6.9830136968108985
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1EV	0	5.0	11.555815202965107
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1F0	0	15.0	10.001825001746658
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1FC	0	13.0	11.648534060814802
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1FE	0	9.0	-8.710504417682222
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1FJ	0	2.0	6.118952603681853
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A2L8	0	0.0	18.85673169876574
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A8FY	0	2.0	7.706278872398407
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A12M	0	8.0	9.35986459140068
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A12N	0	1.0	4.838668360558877
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A137	0	11.0	8.423977638002066
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A1HL	0	5.0	5.614600946118213
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A26V	0	8.0	10.791022408458542
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A275	0	6.0	12.705372326666735
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A278	0	10.0	7.81616949766944
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JN	0	2.0	14.171668179059475
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JS	0	2.0	5.045698442411371
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JT	0	4.0	6.713213262618461
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XF	0	3.0	7.593605912431
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XY	0	10.0	8.517672555555619
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XZ	0	9.0	10.620924855595035
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A27L	0	2.0	8.028130709336015
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A27T	0	2.0	5.432929019495482
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A14Z	0	12.0	9.866955765333925
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A153	0	0.0	5.045698442411371
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A159	0	8.0	13.763092984551275
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15H	0	4.0	6.4259946292754275
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15K	0	4.0	7.81616949766944
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15T	0	6.0	6.4259946292754275
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1IF	0	1.0	2.7044030834337054
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1L8	0	4.0	6.275121055340545
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A570	0	0.0	4.152644776372506
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A576	0	4.0	8.328267622292332
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A9RU	0	25.0	10.322131848492777
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1NC	0	30.0	10.13272691522949
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1ND	0	21.0	10.678349448491137
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1NE	0	3.0	8.873890155553978
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1R6	0	5.0	5.789146619493842
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1RB	0	7.0	6.850157735348532
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1RG	0	15.0	7.112018213461799
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A226	0	6.0	9.35986459140068
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A22G	0	33.0	11.413011158352472
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A6HE	0	2.0	4.152644776372506
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1J3	0	3.0	5.2435240862321955
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1J6	0	8.0	7.706278872398407
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1OV	0	11.0	11.958633691614114
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1OZ	0	20.0	9.20369613974199
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1P1	0	0.0	-5.625760881622085
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1P8	0	8.0	6.9830136968108985
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A2FV	0	4.0	4.152644776372506
+main	all	HRD_LST	regression	Baseline	TCGA-GM-A2DA	0	2.0	6.4259946292754275
+main	all	HRD_LST	regression	Baseline	TCGA-GM-A2DB	0	12.0	12.327998551401354
+main	all	HRD_LST	regression	Baseline	TCGA-GM-A2DF	0	17.0	8.028130709336015
+main	all	HRD_LST	regression	Baseline	TCGA-LL-A6FR	0	14.0	6.850157735348532
+main	all	HRD_LST	regression	Baseline	TCGA-LL-A7T0	0	10.0	8.517672555555619
+main	all	HRD_LST	regression	Baseline	TCGA-LL-A9Q3	0	3.0	8.13044197847151
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A5S0	0	19.0	5.957104069309667
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A66I	0	19.0	8.028130709336015
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A66J	0	1.0	8.69934448217835
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A66K	0	2.0	5.614600946118213
+main	all	HRD_LST	regression	Baseline	TCGA-PE-A5DE	0	4.0	18.467849481580323
+main	all	HRD_LST	regression	Baseline	TCGA-S3-A6ZF	0	13.0	6.275121055340545
+main	all	HRD_LST	regression	Baseline	TCGA-S3-AA0Z	0	8.0	8.787472989748059
+main	all	HRD_LST	regression	Baseline	TCGA-S3-AA14	0	7.0	2.7044030834337054
+main	all	HRD_LST	regression	Baseline	TCGA-WT-AB41	0	5.0	8.028130709336015
+main	all	HRD_LST	regression	Baseline	TCGA-WT-AB44	0	0.0	6.275121055340545
+main	all	HRD_LST	regression	Baseline	TCGA-XX-A89A	0	0.0	14.274570895362015
+main	all	HRD_LST	regression	Baseline	TCGA-A1-A0SE	1	1.0	6.388463915580253
+main	all	HRD_LST	regression	Baseline	TCGA-A1-A0SK	1	14.0	9.630254825870008
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A04P	1	33.0	12.225961044978094
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A04T	1	24.0	11.062696612593351
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0CP	1	0.0	7.004246645730484
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0CU	1	9.0	7.434831354740349
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0CV	1	0.0	5.138920255559941
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0EW	1	2.0	3.8363446402184893
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0EX	1	1.0	5.813889676001736
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0EY	1	15.0	14.250502375054879
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0SU	1	5.0	5.655856623510848
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0T2	1	8.0	5.965723732454005
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0T7	1	6.0	4.950040249429886
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0YF	1	3.0	5.965723732454005
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0YG	1	11.0	9.13800253006468
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A1FX	1	3.0	6.111826814952271
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A1FZ	1	1.0	5.138920255559941
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A1G4	1	4.0	6.111826814952271
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A259	1	2.0	4.950040249429886
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A4S1	1	10.0	9.572039109297835
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A4S3	1	22.0	9.572039109297835
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A0DA	1	34.0	12.565267628105202
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A0DB	1	0.0	10.168798350558319
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A13E	1	8.0	11.40618729981216
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A6VX	1	28.0	12.013367199313409
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A06R	1	23.0	9.071825325444463
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A06X	1	21.0	14.052853911724425
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A076	1	10.0	9.96228153852959
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A08L	1	28.0	14.250502375054879
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A08O	1	6.0	5.813889676001736
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A08X	1	10.0	6.388463915580253
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A08Z	1	3.0	7.004246645730484
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A092	1	1.0	10.268067179304568
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A093	1	0.0	11.514229815355456
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A099	1	3.0	6.519706050082701
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A09Z	1	5.0	20.761454940196103
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A0A7	1	6.0	14.40503042757893
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A0AB	1	6.0	5.655856623510848
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A0AD	1	1.0	6.888677699433624
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A23E	1	1.0	4.75146994487614
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A23H	1	6.0	26.358268994983842
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A3YI	1	3.0	3.5692544549071235
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A4ZE	1	1.0	8.257714555654923
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A5EH	1	15.0	12.750278296382977
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A6IV	1	3.0	4.542161014299454
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A04D	1	29.0	10.982042191176419
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0FT	1	22.0	11.257273856247508
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0FV	1	11.0	10.729478372623987
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0FX	1	28.0	10.685734718509233
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0XW	1	5.0	15.743506815190344
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0J8	1	0.0	5.813889676001736
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A12A	1	1.0	4.086190822858033
+main	all	HRD_LST	regression	Baseline	TCGA-AQ-A04J	1	23.0	9.391947466076967
+main	all	HRD_LST	regression	Baseline	TCGA-AQ-A1H2	1	10.0	6.388463915580253
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A0TQ	1	5.0	7.331591311217147
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A0TV	1	12.0	9.391947466076967
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A0TW	1	25.0	8.722825889947947
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A24U	1	6.0	7.633401659294097
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A24V	1	4.0	5.319011898780807
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A251	1	29.0	13.048215435333507
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A5QN	1	3.0	6.888677699433624
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0I2	1	11.0	8.866222735216873
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0I9	1	6.0	9.7998267012074
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0IE	1	5.0	6.646644379584986
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0RN	1	0.0	6.769552232722244
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0RS	1	33.0	12.776001129884317
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0RV	1	5.0	8.174458181278654
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0WW	1	5.0	7.1164652913431885
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0WZ	1	1.0	9.854739284303642
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0X0	1	1.0	4.542161014299454
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A1KC	1	3.0	6.111826814952271
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A40C	1	3.0	6.888677699433624
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0B3	1	14.0	7.434831354740349
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0B7	1	9.0	6.769552232722244
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0BC	1	3.0	7.004246645730484
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0BJ	1	2.0	5.655856623510848
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0BO	1	2.0	5.813889676001736
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0BT	1	3.0	7.1164652913431885
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0DQ	1	7.0	6.519706050082701
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0DZ	1	4.0	15.381675540809782
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0E0	1	10.0	7.331591311217147
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0E2	1	7.0	8.174458181278654
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18J	1	6.0	10.218750942971031
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18T	1	15.0	10.64149112609728
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1ET	1	0.0	5.813889676001736
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1FG	1	1.0	4.542161014299454
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1FM	1	12.0	8.649085142318217
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A201	1	2.0	4.320885235866275
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A208	1	6.0	9.391947466076967
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A209	1	10.0	10.982042191176419
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A28Q	1	2.0	4.950040249429886
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A6R9	1	0.0	1.8587996044352417
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A8G0	1	1.0	2.9724952136466385
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A12W	1	7.0	9.13800253006468
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A12Z	1	7.0	8.573912446383302
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A130	1	18.0	8.089371850735516
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A133	1	0.0	6.111826814952271
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A1HF	1	8.0	6.769552232722244
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A1HM	1	19.0	16.041443954140874
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A26X	1	12.0	9.203067459946912
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A26Y	1	14.0	18.91840931483226
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A8HQ	1	6.0	14.712307190357238
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A13Z	1	17.0	10.412354893798211
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A140	1	7.0	11.332446552182425
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A141	1	0.0	4.542161014299454
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JA	1	14.0	19.846764097375946
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JG	1	5.0	12.166401836392113
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JH	1	0.0	4.75146994487614
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JM	1	10.0	7.8222816654241525
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JP	1	31.0	11.619338684499754
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1X7	1	1.0	5.138920255559941
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1X9	1	24.0	10.685734718509233
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XA	1	1.0	5.138920255559941
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XJ	1	13.0	10.459279979840211
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XK	1	28.0	20.238928286509967
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XQ	1	28.0	19.373213636004696
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XV	1	1.0	6.519706050082701
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XW	1	24.0	10.941075965519131
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1Y2	1	2.0	4.320885235866275
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1Y3	1	8.0	8.649085142318217
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A27R	1	9.0	5.965723732454005
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A73U	1	4.0	12.166401836392113
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A73W	1	4.0	7.728993483934001
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A158	1	34.0	10.412354893798211
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15J	1	0.0	5.319011898780807
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15R	1	5.0	7.434831354740349
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1BC	1	1.0	6.769552232722244
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1IL	1	4.0	5.965723732454005
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1L6	1	2.0	4.320885235866275
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1LA	1	24.0	10.64149112609728
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1LH	1	29.0	13.412839782488199
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1N5	1	2.0	6.646644379584986
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1N9	1	18.0	9.13800253006468
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1NA	1	13.0	10.551457482166548
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1NH	1	5.0	6.252615864771336
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1RA	1	1.0	5.319011898780807
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1RE	1	14.0	8.419040906684637
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A227	1	0.0	3.282362322589793
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1IW	1	6.0	10.505643075288361
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1IZ	1	2.0	15.743506815190344
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1P4	1	24.0	9.391947466076967
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A2FS	1	5.0	6.252615864771336
+main	all	HRD_LST	regression	Baseline	TCGA-GM-A2DC	1	4.0	4.75146994487614
+main	all	HRD_LST	regression	Baseline	TCGA-GM-A2DM	1	2.0	4.950040249429886
+main	all	HRD_LST	regression	Baseline	TCGA-GM-A3NW	1	6.0	9.854739284303642
+main	all	HRD_LST	regression	Baseline	TCGA-HN-A2OB	1	3.0	3.282362322589793
+main	all	HRD_LST	regression	Baseline	TCGA-LL-A5YN	1	11.0	5.319011898780807
+main	all	HRD_LST	regression	Baseline	TCGA-LL-A6FQ	1	1.0	8.257714555654923
+main	all	HRD_LST	regression	Baseline	TCGA-LL-A8F5	1	32.0	12.370969465458902
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A5DA	1	5.0	9.96228153852959
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A5RU	1	1.0	5.965723732454005
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A5RW	1	35.0	13.142641389704421
+main	all	HRD_LST	regression	Baseline	TCGA-PE-A5DD	1	9.0	8.573912446383302
+main	all	HRD_LST	regression	Baseline	TCGA-PL-A8LX	1	4.0	6.646644379584986
+main	all	HRD_LST	regression	Baseline	TCGA-S3-AA10	1	26.0	11.619338684499754
+main	all	HRD_LST	regression	Baseline	TCGA-3C-AALI	2	12.0	20.56782058369356
+main	all	HRD_LST	regression	Baseline	TCGA-A1-A0SI	2	3.0	16.13508270423616
+main	all	HRD_LST	regression	Baseline	TCGA-A1-A0SO	2	29.0	17.291361783333215
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A04R	2	12.0	11.702246259470087
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A04U	2	17.0	9.261342775333539
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A04Y	2	6.0	7.263811802492633
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0CR	2	1.0	13.430200381938315
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0ES	2	1.0	1.6918584321314931
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0SW	2	14.0	9.351326310345874
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0YC	2	1.0	4.804707998156385
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0YE	2	10.0	6.832420756123466
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A1FV	2	12.0	7.263811802492633
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A25A	2	1.0	17.274199629831227
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A0D9	2	4.0	4.804707998156385
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A13F	2	1.0	7.399425811456338
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A26E	2	1.0	10.93273797657217
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A5ZV	2	16.0	15.279124142357823
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A06Q	2	15.0	16.471567507816026
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A075	2	22.0	11.059428945059665
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A079	2	9.0	11.303226809235404
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A07B	2	10.0	10.389742841128712
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A07I	2	7.0	8.025498834346593
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A07Z	2	1.0	4.3229083345565975
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A081	2	11.0	12.863195326605435
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A082	2	3.0	4.804707998156385
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A083	2	2.0	6.358532316914902
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A094	2	15.0	15.581672628169171
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A095	2	2.0	14.458341606880552
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A097	2	23.0	12.171003436201035
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A09D	2	7.0	8.5794401667137
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A09Q	2	18.0	14.427383436145305
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A09T	2	2.0	3.7874704674762176
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A2B8	2	7.0	12.171003436201035
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A2FO	2	6.0	5.242644224267503
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A2QH	2	11.0	5.644041535236437
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A5XS	2	11.0	19.99756174049864
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A6IX	2	3.0	8.784321255013
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A6NO	2	2.0	6.014530367899675
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A8OP	2	14.0	14.139418458863341
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A8OR	2	0.0	6.014530367899675
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A046	2	2.0	31.99632899065317
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0AS	2	4.0	7.399425811456338
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0XU	2	31.0	12.94840071833853
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0XV	2	1.0	6.832420756123466
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A03T	2	15.0	11.702246259470087
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0J9	2	2.0	13.274897270032682
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0JB	2	27.0	11.810430114682122
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0JM	2	14.0	8.254779260021248
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A12D	2	5.0	9.611604775892335
+main	all	HRD_LST	regression	Baseline	TCGA-AQ-A04H	2	9.0	10.243853526324406
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A0TR	2	3.0	6.832420756123466
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A0TZ	2	7.0	9.439658677803475
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A1AI	2	15.0	10.736221753902534
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A1AJ	2	1.0	7.399425811456338
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A1AN	2	8.0	5.644041535236437
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A1AQ	2	11.0	6.679583190473325
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A1AR	2	9.0	9.076166908811949
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A1AW	2	2.0	7.531323896685844
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A24N	2	2.0	7.784749721988156
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A24Q	2	26.0	14.956278347466666
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A24S	2	12.0	8.254779260021248
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A254	2	6.0	7.263811802492633
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A2LQ	2	1.0	0.15882887123107103
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A5QM	2	1.0	5.832849223098622
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A5QP	2	6.0	4.569833174456853
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0I5	2	0.0	5.242644224267503
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0IB	2	10.0	10.461062352368613
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0RE	2	12.0	14.396224887505864
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0RG	2	11.0	9.695328259361096
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0RH	2	6.0	6.980554873467225
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0RI	2	4.0	3.184937730900189
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0RL	2	4.0	9.526399384159244
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0X4	2	1.0	4.804707998156385
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A2IU	2	2.0	8.47363417223592
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0AV	2	26.0	10.317350815913423
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0AZ	2	15.0	9.526399384159244
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0B9	2	12.0	7.659704277002794
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0BA	2	1.0	7.784749721988156
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0BM	2	1.0	5.242644224267503
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0DG	2	9.0	6.832420756123466
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0DI	2	8.0	8.025498834346593
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0H0	2	1.0	5.028654374577689
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0HA	2	1.0	17.4926724650618
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0HQ	2	1.0	7.124266409922414
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18F	2	0.0	8.784321255013
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18G	2	3.0	24.720473554688702
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18K	2	8.0	9.076166908811949
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18P	2	1.0	18.021187477871813
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1EU	2	7.0	3.7874704674762176
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1EW	2	8.0	2.496053280652424
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1EY	2	9.0	8.5794401667137
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1F2	2	12.0	9.076166908811949
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A202	2	1.0	5.832849223098622
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A5IZ	2	18.0	10.389742841128712
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A6R8	2	3.0	6.358532316914902
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A132	2	6.0	10.243853526324406
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A26Z	2	3.0	7.784749721988156
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A27A	2	15.0	5.832849223098622
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A145	2	3.0	7.531323896685844
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1J8	2	2.0	22.106366696349404
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1J9	2	8.0	15.749758793704345
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JL	2	19.0	12.77645462024967
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XB	2	2.0	6.832420756123466
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XG	2	4.0	4.3229083345565975
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XL	2	23.0	11.420646751345412
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XM	2	4.0	9.439658677803475
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XO	2	5.0	4.062629869010139
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XR	2	4.0	5.242644224267503
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XT	2	8.0	7.124266409922414
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A27M	2	16.0	9.858529615792586
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A27N	2	5.0	8.883582069748826
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A14Y	2	7.0	7.531323896685844
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15C	2	0.0	7.399425811456338
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15D	2	1.0	6.521733673346387
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15E	2	7.0	6.980554873467225
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15G	2	2.0	9.938101327586482
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15M	2	13.0	11.535270713148197
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1B4	2	0.0	7.124266409922414
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1IE	2	10.0	4.569833174456853
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1IJ	2	1.0	2.8528074992668486
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1IK	2	0.0	3.184937730900189
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1IU	2	0.0	6.014530367899675
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1L9	2	1.0	6.014530367899675
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1NG	2	5.0	4.3229083345565975
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1R3	2	1.0	5.4475253125668015
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1RC	2	7.0	8.883582069748826
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A228	2	6.0	8.141503940602583
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A22B	2	7.0	10.093404439492117
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A22D	2	13.0	4.569833174456853
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A22E	2	28.0	13.155040980404388
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A24A	2	0.0	4.804707998156385
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1IY	2	0.0	5.644041535236437
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1OX	2	3.0	3.184937730900189
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1P0	2	8.0	4.3229083345565975
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1P3	2	2.0	5.028654374577689
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1PB	2	18.0	14.073017696348735
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A6SD	2	11.0	8.47363417223592
+main	all	HRD_LST	regression	Baseline	TCGA-LD-A74U	2	1.0	16.264036279643225
+main	all	HRD_LST	regression	Baseline	TCGA-LD-A7W5	2	11.0	7.531323896685844
+main	all	HRD_LST	regression	Baseline	TCGA-LD-A7W6	2	4.0	6.1896034417130465
+main	all	HRD_LST	regression	Baseline	TCGA-LL-A5YL	2	11.0	10.243853526324406
+main	all	HRD_LST	regression	Baseline	TCGA-LL-A73Y	2	6.0	13.353175075365723
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A5D8	2	8.0	5.4475253125668015
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A5RV	2	1.0	1.2330372320106546
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A5RY	2	2.0	0.15882887123107103
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A5RZ	2	9.0	12.552508243828367
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A66L	2	1.0	10.461062352368613
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A66O	2	2.0	5.028654374577689
+main	all	HRD_LST	regression	Baseline	TCGA-S3-A6ZG	2	7.0	7.531323896685844
+main	all	HRD_LST	regression	Baseline	TCGA-S3-AA12	2	6.0	6.832420756123466
+main	all	HRD_LST	regression	Baseline	TCGA-S3-AA17	2	33.0	11.863623793580599
+main	all	HRD_LST	regression	Baseline	TCGA-UU-A93S	2	14.0	14.005688221772086
+main	all	HRD_LST	regression	Baseline	TCGA-W8-A86G	2	2.0	3.495624813677267
+main	all	HRD_LST	regression	Baseline	TCGA-Z7-A8R6	2	4.0	10.461062352368613
+main	all	HRD_LST	regression	Baseline	TCGA-5T-A9QA	3	2.0	8.128298805283224
+main	all	HRD_LST	regression	Baseline	TCGA-A1-A0SD	3	7.0	6.223263249935657
+main	all	HRD_LST	regression	Baseline	TCGA-A1-A0SG	3	5.0	6.223263249935657
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A04Q	3	5.0	8.128298805283224
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0CS	3	0.0	7.07955820085377
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0EM	3	2.0	5.9388800266505894
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0EN	3	1.0	6.488017696818284
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0SV	3	6.0	6.968320921900695
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0SY	3	2.0	12.259790499860365
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0T1	3	11.0	5.788373778781154
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0T4	3	1.0	6.613845934109758
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A26I	3	9.0	7.395140111595467
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A6VW	3	20.0	9.4550700427003
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A06Y	3	0.0	6.488017696818284
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A06Z	3	8.0	10.154713960737427
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A07L	3	27.0	10.788193870414823
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A07U	3	8.0	9.4550700427003
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A07W	3	7.0	12.173552771342136
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A08G	3	7.0	7.7792021188909
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A096	3	2.0	6.223263249935657
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A09A	3	33.0	13.900071608325304
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A09B	3	6.0	7.8694984595481685
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A09G	3	3.0	15.045513802283434
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A09M	3	21.0	12.114965107831896
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A09N	3	3.0	9.95269798081977
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A09X	3	10.0	9.083416833346796
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A0A6	3	2.0	6.613845934109758
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A2FG	3	2.0	6.968320921900695
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A3QQ	3	4.0	5.9388800266505894
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A5XU	3	7.0	9.083416833346796
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A6IW	3	12.0	12.58657655701322
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A7VB	3	9.0	5.468403740151626
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A041	3	3.0	6.613845934109758
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A04C	3	11.0	10.055035176727069
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0AR	3	30.0	11.473908853305005
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0FN	3	0.0	7.187661614855415
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0XS	3	2.0	5.788373778781154
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A03L	3	9.0	5.9388800266505894
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A03O	3	10.0	10.154713960737427
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A03P	3	9.0	7.7792021188909
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A03V	3	12.0	8.598775091782187
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0J4	3	22.0	11.543053380198845
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0J6	3	31.0	10.951512876163367
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0JA	3	11.0	5.788373778781154
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A124	3	27.0	12.114965107831896
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A1KR	3	17.0	9.7938856313963
+main	all	HRD_LST	regression	Baseline	TCGA-AQ-A1H3	3	2.0	5.2978237721237
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A0TS	3	18.0	10.055035176727069
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A0TT	3	15.0	8.951078980550713
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A0TY	3	13.0	9.395574007208124
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A1AU	3	7.0	5.119307053759304
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A1AY	3	12.0	8.883158315067256
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A24L	3	16.0	7.686729754688081
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A24O	3	0.0	4.9320788278630445
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A24X	3	0.0	5.788373778781154
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A252	3	0.0	1.8678714845922206
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A2LK	3	0.0	7.591973892994641
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A2LO	3	5.0	3.8281226316866874
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0IJ	3	23.0	12.453780696527895
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0IN	3	5.0	6.613845934109758
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0RP	3	0.0	5.631722745900173
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0AW	3	13.0	12.911764023257835
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0AY	3	3.0	8.29161781103177
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0BL	3	20.0	8.743600483810656
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0BZ	3	8.0	14.304383886464528
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0DH	3	9.0	7.395140111595467
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0DL	3	3.0	8.524259790855938
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0DO	3	0.0	5.119307053759304
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0DS	3	4.0	7.686729754688081
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0E7	3	0.0	7.187661614855415
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0EA	3	0.0	6.08370541867906
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0HU	3	11.0	6.968320921900695
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0HX	3	15.0	9.4550700427003
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0HY	3	19.0	8.883158315067256
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18I	3	2.0	4.9320788278630445
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18M	3	4.0	3.5633681848040615
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18N	3	1.0	7.292802915688176
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18S	3	2.0	6.488017696818284
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18U	3	17.0	12.426661025917715
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1FN	3	26.0	11.473908853305005
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1FU	3	10.0	9.628215987032291
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A203	3	20.0	9.84755667998701
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A204	3	11.0	7.187661614855415
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A42V	3	4.0	7.292802915688176
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A8FZ	3	17.0	9.4550700427003
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A12Y	3	4.0	7.591973892994641
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A135	3	6.0	9.273740999241355
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A1HE	3	6.0	8.210827091830875
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A26W	3	6.0	8.743600483810656
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A27B	3	22.0	12.480710052092551
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A143	3	10.0	7.957718837255297
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JC	3	6.0	10.746254464772912
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JJ	3	12.0	10.203598920166383
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JU	3	0.0	4.075783876944933
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1X5	3	8.0	8.448268843912752
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1Y0	3	17.0	9.4550700427003
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A27E	3	0.0	2.272183762731448
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A27F	3	23.0	9.083416833346796
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A27H	3	31.0	12.144370749191072
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A27P	3	1.0	5.788373778781154
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A27W	3	5.0	6.968320921900695
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A73X	3	0.0	7.395140111595467
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A150	3	17.0	10.105198210246021
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A152	3	4.0	12.114965107831896
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A154	3	1.0	8.043956565773525
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15I	3	1.0	6.223263249935657
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15O	3	7.0	6.223263249935657
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15P	3	5.0	5.2978237721237
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1AZ	3	15.0	8.67187096697753
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1B5	3	6.0	7.292802915688176
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1BD	3	2.0	7.395140111595467
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1IG	3	2.0	7.591973892994641
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1IO	3	6.0	1.8678714845922206
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1LG	3	1.0	12.911764023257835
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1LL	3	25.0	7.591973892994641
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A573	3	11.0	8.29161781103177
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1N8	3	11.0	5.788373778781154
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1NI	3	10.0	5.9388800266505894
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1R0	3	1.0	6.735678942076529
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1R5	3	3.0	7.957718837255297
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1R7	3	8.0	8.210827091830875
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1RD	3	0.0	4.9320788278630445
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1RF	3	20.0	12.453780696527895
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A22H	3	2.0	4.527766549723818
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A243	3	13.0	9.7938856313963
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A244	3	33.0	10.746254464772912
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A295	3	7.0	10.299539352765896
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A2JS	3	21.0	9.571364318765296
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1J1	3	6.0	4.735245046463872
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1OY	3	14.0	9.14791276194988
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1PA	3	8.0	7.187661614855415
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1PG	3	0.0	2.272183762731448
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1PH	3	13.0	7.8694984595481685
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A6SC	3	5.0	5.468403740151626
+main	all	HRD_LST	regression	Baseline	TCGA-GM-A2DL	3	6.0	7.686729754688081
+main	all	HRD_LST	regression	Baseline	TCGA-GM-A2DN	3	0.0	5.2978237721237
+main	all	HRD_LST	regression	Baseline	TCGA-GM-A5PX	3	3.0	6.08370541867906
+main	all	HRD_LST	regression	Baseline	TCGA-HN-A2NL	3	20.0	10.004207712867993
+main	all	HRD_LST	regression	Baseline	TCGA-LD-A66U	3	3.0	5.468403740151626
+main	all	HRD_LST	regression	Baseline	TCGA-LL-A50Y	3	2.0	7.07955820085377
+main	all	HRD_LST	regression	Baseline	TCGA-LL-A5YP	3	31.0	9.95269798081977
+main	all	HRD_LST	regression	Baseline	TCGA-LL-A73Z	3	13.0	6.613845934109758
+main	all	HRD_LST	regression	Baseline	TCGA-OK-A5Q2	3	3.0	5.9388800266505894
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A5D7	3	8.0	8.598775091782187
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A5RX	3	1.0	5.119307053759304
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A66H	3	0.0	4.3084258567691
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A66N	3	2.0	7.07955820085377
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A66P	3	15.0	10.203598920166383
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A6VO	3	16.0	5.119307053759304
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A6VQ	3	1.0	8.67187096697753
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A6VR	3	4.0	1.8678714845922206
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A97C	3	5.0	8.598775091782187
+main	all	HRD_LST	regression	Baseline	TCGA-PL-A8LY	3	0.0	-3.903901318449856
+main	all	HRD_LST	regression	Baseline	TCGA-S3-A6ZH	3	3.0	5.9388800266505894
+main	all	HRD_LST	regression	Baseline	TCGA-3C-AALJ	4	11.0	6.074938795228896
+main	all	HRD_LST	regression	Baseline	TCGA-A1-A0SB	4	0.0	3.093817532812783
+main	all	HRD_LST	regression	Baseline	TCGA-A1-A0SQ	4	1.0	5.921004717980076
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A04N	4	1.0	7.973047960018933
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A04V	4	1.0	5.921004717980076
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A04W	4	8.0	13.014455949567592
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0CT	4	10.0	11.41540686202572
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0D0	4	28.0	10.453949931550811
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0D3	4	0.0	5.761032491691131
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0D4	4	4.0	7.133424996803258
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0EV	4	8.0	9.399286381551201
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0SX	4	10.0	6.504679993122527
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0T3	4	6.0	7.574803203822341
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0YD	4	2.0	9.399286381551201
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0YH	4	4.0	10.605971338691099
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A0YK	4	0.0	16.79565227217188
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A1G0	4	2.0	4.641668011727485
+main	all	HRD_LST	regression	Baseline	TCGA-A2-A3XU	4	3.0	4.641668011727485
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A0CG	4	5.0	8.588219676858424
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A0CJ	4	15.0	8.74819190314737
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A13D	4	11.0	14.09727902189777
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A26H	4	5.0	12.192903262548045
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A4SE	4	16.0	2.0236943221129673
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A56D	4	10.0	12.485530072725535
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A5ZX	4	3.0	6.366403397411143
+main	all	HRD_LST	regression	Baseline	TCGA-A7-A6VY	4	29.0	11.163031387703633
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A06P	4	2.0	6.89342819338369
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A07P	4	7.0	8.588219676858424
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A08B	4	6.0	7.877072498234654
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A08H	4	0.0	10.453949931550811
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A08T	4	3.0	8.158478478964792
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A091	4	0.0	4.421140309386628
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A09W	4	26.0	10.453949931550811
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A0A1	4	7.0	7.973047960018933
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A0A2	4	4.0	7.574803203822341
+main	all	HRD_LST	regression	Baseline	TCGA-A8-A0A4	4	10.0	4.850881507280262
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A23C	4	7.0	11.94984086790434
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A2FB	4	3.0	2.412442522374131
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A7VC	4	2.0	4.188004346830672
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A8OQ	4	29.0	10.75252970157613
+main	all	HRD_LST	regression	Baseline	TCGA-AC-A8OS	4	1.0	8.158478478964792
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0AL	4	29.0	10.296042382062074
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0AM	4	13.0	10.704259683401945
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0FJ	4	9.0	11.248903379046242
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0FK	4	2.0	8.335844202536345
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0FZ	4	5.0	9.960612181970552
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0XO	4	10.0	6.638422103729075
+main	all	HRD_LST	regression	Baseline	TCGA-AN-A0XP	4	0.0	6.223274012392387
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0J2	4	30.0	9.658342887558241
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0JE	4	9.0	8.335844202536345
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0JF	4	1.0	5.04988531306736
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0JG	4	4.0	3.6774928079552325
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A0JI	4	1.0	3.94073052286939
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A12H	4	0.0	5.04988531306736
+main	all	HRD_LST	regression	Baseline	TCGA-AO-A1KP	4	6.0	4.641668011727485
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A0U0	4	10.0	7.015191531997964
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A1AH	4	12.0	11.075312546009487
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A1AK	4	2.0	9.53087098407692
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A1AP	4	4.0	6.504679993122527
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A24R	4	4.0	4.641668011727485
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A250	4	7.0	11.653072274166206
+main	all	HRD_LST	regression	Baseline	TCGA-AR-A5QQ	4	4.0	9.465609288896369
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0IC	4	0.0	7.015191531997964
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0IH	4	8.0	7.248327494553922
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0WT	4	10.0	4.850881507280262
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A0X5	4	1.0	7.360081579233009
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A1KF	4	5.0	8.902125980396189
+main	all	HRD_LST	regression	Baseline	TCGA-B6-A409	4	16.0	7.248327494553922
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0AU	4	13.0	4.850881507280262
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0C3	4	4.0	2.7673418235443634
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0DK	4	6.0	10.847389068420702
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0DV	4	1.0	2.0236943221129673
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0DX	4	9.0	9.901923846684456
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0E9	4	3.0	5.420938175674897
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0EB	4	2.0	7.877072498234654
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0GY	4	11.0	6.767917708036683
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0H6	4	2.0	4.421140309386628
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0H7	4	10.0	9.53087098407692
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0HO	4	0.0	4.641668011727485
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0HW	4	5.0	6.638422103729075
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A0WA	4	26.0	11.333004687082678
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18L	4	4.0	8.668990017840231
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A18R	4	11.0	5.761032491691131
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1EX	4	1.0	4.641668011727485
+main	all	HRD_LST	regression	Baseline	TCGA-BH-A1FL	4	4.0	4.421140309386628
+main	all	HRD_LST	regression	Baseline	TCGA-BH-AB28	4	4.0	5.761032491691131
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A12L	4	26.0	9.842378717165257
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A12O	4	8.0	7.015191531997964
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A12P	4	19.0	13.627422330353518
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A12Q	4	14.0	11.877648382726967
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A12U	4	18.0	7.877072498234654
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A131	4	5.0	9.193590582578434
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A138	4	10.0	7.877072498234654
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A1HG	4	8.0	8.505817501915383
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A1HJ	4	25.0	11.61441066781282
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A1HK	4	7.0	9.33186717828982
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A273	4	6.0	4.421140309386628
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A8HP	4	8.0	13.507095936947596
+main	all	HRD_LST	regression	Baseline	TCGA-C8-A8HR	4	11.0	7.015191531997964
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A13Y	4	24.0	10.018468030483328
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A147	4	32.0	13.176547567399007
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JB	4	16.0	7.877072498234654
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JD	4	15.0	11.119407774738635
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JF	4	8.0	7.877072498234654
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JI	4	4.0	6.767917708036683
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1JK	4	19.0	14.283179147537107
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1X8	4	4.0	5.761032491691131
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1XC	4	0.0	6.504679993122527
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A1Y1	4	2.0	13.990218572870932
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A27K	4	0.0	4.641668011727485
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A27V	4	6.0	13.507095936947596
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A3Z6	4	3.0	5.04988531306736
+main	all	HRD_LST	regression	Baseline	TCGA-D8-A4Z1	4	3.0	8.668990017840231
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A10A	4	4.0	4.641668011727485
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A10C	4	9.0	16.997770831017334
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A14O	4	0.0	6.223274012392387
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A14Q	4	4.0	6.223274012392387
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A14R	4	33.0	11.69137085538191
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A14T	4	11.0	6.89342819338369
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A14X	4	4.0	6.638422103729075
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A155	4	3.0	9.399286381551201
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A156	4	1.0	5.04988531306736
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A15A	4	20.0	8.74819190314737
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1B0	4	6.0	8.588219676858424
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1IH	4	8.0	9.465609288896369
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A1LK	4	7.0	7.678068692447555
+main	all	HRD_LST	regression	Baseline	TCGA-E2-A56Z	4	13.0	7.4688551968947765
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1N3	4	3.0	5.594529008711655
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A1RH	4	11.0	10.75252970157613
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A229	4	8.0	5.420938175674897
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A22A	4	5.0	6.074938795228896
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A245	4	1.0	4.188004346830672
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A247	4	15.0	7.360081579233009
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A248	4	4.0	3.94073052286939
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A2JT	4	0.0	4.850881507280262
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A3X8	4	0.0	6.504679993122527
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A5FL	4	22.0	11.119407774738635
+main	all	HRD_LST	regression	Baseline	TCGA-E9-A5UO	4	5.0	5.420938175674897
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1P5	4	5.0	4.188004346830672
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1P6	4	1.0	4.850881507280262
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1P7	4	5.0	3.093817532812783
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A1PE	4	0.0	6.223274012392387
+main	all	HRD_LST	regression	Baseline	TCGA-EW-A6SB	4	9.0	9.193590582578434
+main	all	HRD_LST	regression	Baseline	TCGA-GM-A2DD	4	15.0	8.97696787711959
+main	all	HRD_LST	regression	Baseline	TCGA-GM-A2DH	4	13.0	13.744300497279024
+main	all	HRD_LST	regression	Baseline	TCGA-GM-A2DK	4	2.0	5.594529008711655
+main	all	HRD_LST	regression	Baseline	TCGA-LL-A5YM	4	4.0	5.239629707541423
+main	all	HRD_LST	regression	Baseline	TCGA-LL-A7SZ	4	18.0	8.335844202536345
+main	all	HRD_LST	regression	Baseline	TCGA-OL-A5D6	4	8.0	7.015191531997964
+main	all	HRD_LST	regression	Baseline	TCGA-PL-A8LV	4	17.0	11.729313165563482
+main	all	HRD_LST	regression	Baseline	TCGA-PL-A8LZ	4	28.0	10.75252970157613
+main	all	HRD_LST	regression	Baseline	TCGA-S3-AA11	4	3.0	9.658342887558241
+main	all	HRD_LST	regression	Baseline	TCGA-V7-A7HQ	4	2.0	4.641668011727485
+main	all	HRD_LST	regression	Baseline	TCGA-XX-A899	4	5.0	6.89342819338369
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-5L-AAT0	0	3.0	8.75795913957176
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A1-A0SF	0	8.0	3.1416614194968577
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A1-A0SJ	0	3.0	4.515750590560383
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0CM	0	14.0	10.4305377054092
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0CW	0	13.0	9.52080299250379
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0CX	0	5.0	10.907737972790553
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0D1	0	6.0	6.685727365427707
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0EU	0	0.0	6.550849477979823
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0T0	0	35.0	18.937160964758114
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0T5	0	0.0	2.8879819414519385
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0T6	0	1.0	3.406832015866999
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0YJ	0	6.0	14.220826456662477
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0YL	0	2.0	2.538076723349315
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0YM	0	13.0	7.750796648923251
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0YT	0	11.0	8.971145689064842
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A1G1	0	2.0	8.498342730373974
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A25C	0	3.0	4.573058189832905
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A25D	0	14.0	7.9042714445659055
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A25E	0	24.0	10.730748151939665
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A3KD	0	4.0	2.9875932583706177
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A3Y0	0	17.0	18.026871463028776
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A0CE	0	21.0	14.693666532170834
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A0CH	0	0.0	3.7787508915706507
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A26J	0	1.0	5.412211243420288
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A5ZW	0	0.0	4.992422868894255
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A06U	0	19.0	10.543924660248049
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A07J	0	4.0	9.789772052954909
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A07O	0	6.0	5.610824557687706
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A08R	0	35.0	22.57522629279629
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A090	0	2.0	6.361301692367494
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A09C	0	5.0	4.048320733528848
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A09V	0	0.0	7.635828093638109
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A3OD	0	7.0	4.017503932500814
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A62Y	0	8.0	12.116165653530512
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A03X	0	1.0	6.2485550794602265
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A03Y	0	1.0	5.713698881295262
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A049	0	13.0	4.635511585870282
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0AJ	0	13.0	11.982502094876033
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0AT	0	24.0	19.685400745477025
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0FS	0	3.0	7.738417320930716
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0FW	0	7.0	12.077262276271039
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0FY	0	12.0	5.910037364404463
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0XN	0	35.0	18.266058945928293
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0XR	0	2.0	8.353328150954212
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0XT	0	9.0	4.048352184634554
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A03R	0	2.0	7.110859263093166
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0J3	0	16.0	8.121379068956795
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0J7	0	0.0	2.1277772494290303
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0JD	0	16.0	18.014365915538264
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0JJ	0	2.0	1.7643038848982133
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A128	0	4.0	16.036597587685943
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A12F	0	19.0	5.867347362963331
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A1KT	0	5.0	7.502523792628496
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A0TP	0	29.0	14.716622775451622
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A0TX	0	6.0	12.801657495565191
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A1AO	0	0.0	19.18218172617282
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A1AX	0	0.0	2.8937773109982263
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A24P	0	0.0	3.4006736674429376
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A24W	0	2.0	3.593278372977175
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A24Z	0	12.0	8.447207751460851
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A256	0	19.0	16.382831666653228
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A2LH	0	0.0	5.785449108735518
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A2LN	0	2.0	3.375107442328944
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0RO	0	5.0	5.6972493557926205
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0RU	0	12.0	7.601633687818031
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0WS	0	6.0	4.01350323073034
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0WY	0	8.0	7.09213799826562
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0X1	0	28.0	16.014459036393923
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A1KN	0	7.0	8.04667472682383
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A401	0	9.0	8.608453206575653
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0B5	0	1.0	10.01252891374429
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0BF	0	10.0	6.29848828838333
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0BP	0	13.0	13.639225233232139
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0BR	0	14.0	4.561150064428625
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0C1	0	3.0	6.323542873977212
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0C7	0	11.0	7.907642987782222
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0DE	0	4.0	5.903932971805289
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0DT	0	0.0	1.1037628341619428
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0E1	0	0.0	6.661179301765185
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0EE	0	3.0	6.9479860879333835
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0HB	0	8.0	9.595073689968967
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0HI	0	4.0	4.1855542842116815
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0HK	0	1.0	6.325329269639449
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0HP	0	4.0	11.722446114669332
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0W3	0	0.0	4.388461807441004
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0W4	0	0.0	5.045428650678942
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18H	0	10.0	6.615777013109151
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18Q	0	27.0	13.486773401028163
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1EO	0	3.0	6.413335358505028
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1EV	0	5.0	10.980675502975897
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1F0	0	15.0	9.338536308496398
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1FC	0	13.0	11.805563943937198
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1FE	0	9.0	-4.756820126277688
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1FJ	0	2.0	4.320639043046667
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A2L8	0	0.0	12.398224259956152
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A8FY	0	2.0	8.54846629789945
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A12M	0	8.0	7.91952925661846
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A12N	0	1.0	5.557785200473946
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A137	0	11.0	7.597531790020224
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A1HL	0	5.0	4.771657198528384
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A26V	0	8.0	11.351990802716788
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A275	0	6.0	10.618710313013588
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A278	0	10.0	6.44412358792711
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JN	0	2.0	7.544806737321088
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JS	0	2.0	6.139323340505619
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JT	0	4.0	6.265671077168775
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XF	0	3.0	7.343193014593859
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XY	0	10.0	6.006907080085147
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XZ	0	9.0	8.59872624433976
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A27L	0	2.0	2.7240065241702656
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A27T	0	2.0	3.1982363428406835
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A14Z	0	12.0	7.342956414326806
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A153	0	0.0	3.983809814723063
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A159	0	8.0	11.366659366841104
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15H	0	4.0	5.860196703150501
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15K	0	4.0	6.737080886596303
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15T	0	6.0	6.149314997359527
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1IF	0	1.0	4.103912007386199
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1L8	0	4.0	7.701109627244558
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A570	0	0.0	4.955489931231973
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A576	0	4.0	6.69985136750619
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A9RU	0	25.0	8.272074236638064
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1NC	0	30.0	15.374342712112014
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1ND	0	21.0	17.2290511028639
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1NE	0	3.0	14.522856703295366
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1R6	0	5.0	4.4396519141055615
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1RB	0	7.0	5.195163596667281
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1RG	0	15.0	7.790415097188121
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A226	0	6.0	9.378588634943693
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A22G	0	33.0	17.22186131065593
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A6HE	0	2.0	4.295372351384448
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1J3	0	3.0	5.517897155469493
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1J6	0	8.0	6.7343912010769476
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1OV	0	11.0	6.165078524671533
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1OZ	0	20.0	8.76239585896188
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1P1	0	0.0	-2.6398282984250354
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1P8	0	8.0	4.733776982955523
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A2FV	0	4.0	3.965032819206571
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-GM-A2DA	0	2.0	5.9605620391572725
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-GM-A2DB	0	12.0	15.186926892313464
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-GM-A2DF	0	17.0	9.096273500880713
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LL-A6FR	0	14.0	5.5796596157084615
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LL-A7T0	0	10.0	7.327106435229579
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LL-A9Q3	0	3.0	6.233426116685125
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A5S0	0	19.0	4.706679893191955
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A66I	0	19.0	11.872434020090626
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A66J	0	1.0	8.147833452645958
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A66K	0	2.0	4.820539018104429
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-PE-A5DE	0	4.0	9.476011064088041
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-S3-A6ZF	0	13.0	6.112575511255533
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-S3-AA0Z	0	8.0	9.061809368422038
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-S3-AA14	0	7.0	1.1234489038934372
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-WT-AB41	0	5.0	4.2464134975573575
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-WT-AB44	0	0.0	4.69609816950883
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-XX-A89A	0	0.0	10.662903749503784
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A1-A0SE	1	1.0	5.704831156353238
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A1-A0SK	1	14.0	9.52568011074222
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A04P	1	33.0	13.85326348831886
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A04T	1	24.0	12.129730757714302
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0CP	1	0.0	7.422283247158808
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0CU	1	9.0	7.916595330148645
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0CV	1	0.0	6.844804600717301
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0EW	1	2.0	2.550739727444366
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0EX	1	1.0	4.562354940865252
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0EY	1	15.0	5.830717789531947
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0SU	1	5.0	5.681246763781822
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0T2	1	8.0	5.239930268283009
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0T7	1	6.0	5.546731553231211
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0YF	1	3.0	3.8393941157749714
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0YG	1	11.0	6.556971247231315
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A1FX	1	3.0	7.627513365829045
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A1FZ	1	1.0	4.803284289365695
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A1G4	1	4.0	5.834192116925118
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A259	1	2.0	3.550283948919927
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A4S1	1	10.0	13.155105147358952
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A4S3	1	22.0	9.623105853885054
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A0DA	1	34.0	21.113429359503222
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A0DB	1	0.0	13.507997595656999
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A13E	1	8.0	8.502222834570805
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A6VX	1	28.0	13.190236557117416
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A06R	1	23.0	7.878974325025606
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A06X	1	21.0	17.819147151390048
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A076	1	10.0	6.81045530710446
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A08L	1	28.0	18.81664533969014
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A08O	1	6.0	7.352685243623516
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A08X	1	10.0	6.047001921110819
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A08Z	1	3.0	5.485553648077529
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A092	1	1.0	7.523048090682201
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A093	1	0.0	5.578677779539537
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A099	1	3.0	12.50374242047575
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A09Z	1	5.0	13.243043340136651
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A0A7	1	6.0	7.2791795765662375
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A0AB	1	6.0	5.353144142829527
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A0AD	1	1.0	6.299145374903248
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A23E	1	1.0	5.430049078293784
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A23H	1	6.0	18.100279598793392
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A3YI	1	3.0	5.701468179319431
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A4ZE	1	1.0	6.769824408102442
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A5EH	1	15.0	18.156540560906414
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A6IV	1	3.0	5.640517682935293
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A04D	1	29.0	14.603311049183244
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0FT	1	22.0	7.9101283853749464
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0FV	1	11.0	8.103533574248807
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0FX	1	28.0	11.438074187037682
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0XW	1	5.0	11.403810778339011
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0J8	1	0.0	3.864115265862468
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A12A	1	1.0	4.568784157929201
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AQ-A04J	1	23.0	8.526226585832132
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AQ-A1H2	1	10.0	5.2137396586075075
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A0TQ	1	5.0	6.00376985680127
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A0TV	1	12.0	6.792323428311814
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A0TW	1	25.0	9.6521944859508
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A24U	1	6.0	5.846527213220237
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A24V	1	4.0	3.9842182916216835
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A251	1	29.0	20.504997104503765
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A5QN	1	3.0	5.065949326291427
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0I2	1	11.0	8.477644174682009
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0I9	1	6.0	8.293154791633574
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0IE	1	5.0	8.6867455864827
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0RN	1	0.0	5.507855495346434
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0RS	1	33.0	13.717570311851482
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0RV	1	5.0	4.971760147217771
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0WW	1	5.0	8.958320888993676
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0WZ	1	1.0	3.8075159704918233
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0X0	1	1.0	6.674299256145229
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A1KC	1	3.0	13.25811464382054
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A40C	1	3.0	4.684777367427754
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0B3	1	14.0	9.026925228176822
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0B7	1	9.0	10.978094504250262
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0BC	1	3.0	4.927832160424574
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0BJ	1	2.0	4.224471572045472
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0BO	1	2.0	4.332487047418301
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0BT	1	3.0	5.773291423660314
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0DQ	1	7.0	5.113183886298883
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0DZ	1	4.0	10.857400579368857
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0E0	1	10.0	6.969417692837391
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0E2	1	7.0	6.110711486061291
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18J	1	6.0	5.240528043360756
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18T	1	15.0	17.11948057154779
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1ET	1	0.0	7.474060230821607
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1FG	1	1.0	3.306297445890917
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1FM	1	12.0	6.814555958432282
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A201	1	2.0	0.7066521029562534
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A208	1	6.0	9.444245976665332
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A209	1	10.0	8.722829699311777
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A28Q	1	2.0	4.791447333299252
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A6R9	1	0.0	9.350651883291125
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A8G0	1	1.0	4.766798081969415
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A12W	1	7.0	7.2290197289468265
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A12Z	1	7.0	7.840490964662157
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A130	1	18.0	6.501947328734737
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A133	1	0.0	8.730144999473435
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A1HF	1	8.0	6.482576652835704
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A1HM	1	19.0	14.40643386708133
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A26X	1	12.0	8.21894843996485
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A26Y	1	14.0	14.328152730266744
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A8HQ	1	6.0	8.547958542962377
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A13Z	1	17.0	13.610749717052789
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A140	1	7.0	7.041135828994797
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A141	1	0.0	4.541914903178979
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JA	1	14.0	14.45271070207194
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JG	1	5.0	7.70833504975046
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JH	1	0.0	4.313793811978362
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JM	1	10.0	8.22843981411469
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JP	1	31.0	14.776009827669665
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1X7	1	1.0	4.206272825069064
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1X9	1	24.0	15.496477465129711
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XA	1	1.0	3.6864600483065546
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XJ	1	13.0	6.004460957439383
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XK	1	28.0	13.664010760188338
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XQ	1	28.0	14.556476556699726
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XV	1	1.0	5.644915175851423
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XW	1	24.0	14.298597776472642
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1Y2	1	2.0	2.229063850754316
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1Y3	1	8.0	7.037442385973447
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A27R	1	9.0	8.179815905557001
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A73U	1	4.0	3.9195347267823104
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A73W	1	4.0	6.3613221525868235
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A158	1	34.0	18.013025778010167
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15J	1	0.0	6.917730687120212
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15R	1	5.0	6.046547900784104
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1BC	1	1.0	8.713157387773268
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1IL	1	4.0	6.177696832667994
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1L6	1	2.0	4.45636368267664
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1LA	1	24.0	12.757397430931047
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1LH	1	29.0	16.66164167492984
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1N5	1	2.0	5.429703989836918
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1N9	1	18.0	6.8180128840871514
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1NA	1	13.0	17.076333199500674
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1NH	1	5.0	7.001530286609409
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1RA	1	1.0	5.795310066118927
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1RE	1	14.0	5.7978573830720554
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A227	1	0.0	7.6779728926623605
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1IW	1	6.0	9.718604694687604
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1IZ	1	2.0	10.700079851659508
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1P4	1	24.0	15.214385987253813
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A2FS	1	5.0	4.594382353327411
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-GM-A2DC	1	4.0	4.4624862536662935
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-GM-A2DM	1	2.0	7.564803905021833
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-GM-A3NW	1	6.0	8.725940313169604
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-HN-A2OB	1	3.0	5.802444704961638
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LL-A5YN	1	11.0	5.589196728365293
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LL-A6FQ	1	1.0	6.408163831165251
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LL-A8F5	1	32.0	15.753272902879472
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A5DA	1	5.0	8.647340346384107
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A5RU	1	1.0	5.363017159524237
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A5RW	1	35.0	15.83135405426776
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-PE-A5DD	1	9.0	5.7429183561619
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-PL-A8LX	1	4.0	7.265662390710935
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-S3-AA10	1	26.0	15.125102920083334
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-3C-AALI	2	12.0	17.92916329773466
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A1-A0SI	2	3.0	12.33731843827604
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A1-A0SO	2	29.0	21.12314574966924
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A04R	2	12.0	19.52173170187617
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A04U	2	17.0	11.273027226354635
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A04Y	2	6.0	11.921491987875884
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0CR	2	1.0	9.592112354006598
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0ES	2	1.0	3.0422701722208405
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0SW	2	14.0	6.000645945671993
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0YC	2	1.0	5.056335918901387
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0YE	2	10.0	5.290951741447938
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A1FV	2	12.0	6.007809154343496
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A25A	2	1.0	21.894051575659205
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A0D9	2	4.0	6.779883858131599
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A13F	2	1.0	7.07389616814461
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A26E	2	1.0	7.750641704037838
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A5ZV	2	16.0	17.716619685259882
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A06Q	2	15.0	11.749553640488816
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A075	2	22.0	12.075839521830913
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A079	2	9.0	9.174795856640092
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A07B	2	10.0	9.405579815925055
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A07I	2	7.0	10.915283123610676
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A07Z	2	1.0	4.066160656376423
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A081	2	11.0	10.794584070107637
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A082	2	3.0	5.056335918901387
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A083	2	2.0	12.162753688441455
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A094	2	15.0	15.838527171223776
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A095	2	2.0	13.731416559202973
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A097	2	23.0	20.28017296259225
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A09D	2	7.0	6.149366994203344
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A09Q	2	18.0	12.282203262486004
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A09T	2	2.0	3.7900568604870983
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A2B8	2	7.0	8.614696610419903
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A2FO	2	6.0	3.426760980248374
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A2QH	2	11.0	5.587501549978956
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A5XS	2	11.0	14.590337075454563
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A6IX	2	3.0	5.890580745142112
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A6NO	2	2.0	6.627823352809979
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A8OP	2	14.0	14.500711754884144
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A8OR	2	0.0	5.82196249537782
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A046	2	2.0	22.53476968079257
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0AS	2	4.0	7.3898024752871585
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0XU	2	31.0	15.513401599990628
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0XV	2	1.0	7.017901879566119
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A03T	2	15.0	15.332750786880636
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0J9	2	2.0	7.022381198800604
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0JB	2	27.0	11.481554926706416
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0JM	2	14.0	6.736005298558403
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A12D	2	5.0	6.691087612632716
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AQ-A04H	2	9.0	8.498456410169876
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A0TR	2	3.0	6.167248057647764
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A0TZ	2	7.0	11.165029484808848
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A1AI	2	15.0	12.661785837856415
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A1AJ	2	1.0	6.568990775289885
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A1AN	2	8.0	4.108092232920393
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A1AQ	2	11.0	6.754653251887936
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A1AR	2	9.0	10.263665920299191
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A1AW	2	2.0	6.931381593332682
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A24N	2	2.0	8.030437238021754
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A24Q	2	26.0	16.831322155461294
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A24S	2	12.0	8.409390096979049
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A254	2	6.0	6.92674532753101
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A2LQ	2	1.0	3.1903366908574524
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A5QM	2	1.0	5.7069870110562135
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A5QP	2	6.0	4.234943744853016
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0I5	2	0.0	4.694020475999583
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0IB	2	10.0	9.329472631313637
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0RE	2	12.0	16.81881824106683
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0RG	2	11.0	14.566590234280328
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0RH	2	6.0	3.5116909839799266
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0RI	2	4.0	8.108603225573976
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0RL	2	4.0	7.574587214580047
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0X4	2	1.0	5.042258786195657
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A2IU	2	2.0	6.9701839883840595
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0AV	2	26.0	11.9635232873568
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0AZ	2	15.0	6.641755911264625
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0B9	2	12.0	9.460183782746778
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0BA	2	1.0	8.181092614237148
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0BM	2	1.0	4.143139758466326
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0DG	2	9.0	8.405583865355496
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0DI	2	8.0	6.803076725084999
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0H0	2	1.0	5.198058622813803
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0HA	2	1.0	13.80641176578455
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0HQ	2	1.0	5.15750895876784
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18F	2	0.0	6.444980441538433
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18G	2	3.0	17.659871596779915
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18K	2	8.0	9.080923804173759
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18P	2	1.0	13.7265447638146
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1EU	2	7.0	3.6812895893182933
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1EW	2	8.0	-0.019153460244579534
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1EY	2	9.0	7.148285209418306
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1F2	2	12.0	10.591109766932421
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A202	2	1.0	5.886358344802385
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A5IZ	2	18.0	17.111008839200046
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A6R8	2	3.0	4.5884757379288805
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A132	2	6.0	11.786830295235548
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A26Z	2	3.0	11.057736071960925
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A27A	2	15.0	7.503139720593345
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A145	2	3.0	6.725327276551922
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1J8	2	2.0	17.077333814729542
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1J9	2	8.0	12.129705317439985
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JL	2	19.0	20.426857407609774
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XB	2	2.0	6.695608678494869
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XG	2	4.0	8.176255528381452
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XL	2	23.0	15.731783103687032
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XM	2	4.0	5.2188313900596865
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XO	2	5.0	3.688157100558932
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XR	2	4.0	3.965457710863755
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XT	2	8.0	9.158399367180053
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A27M	2	16.0	15.12097996476567
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A27N	2	5.0	8.417572501676338
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A14Y	2	7.0	6.2078091265555635
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15C	2	0.0	6.313737008821029
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15D	2	1.0	6.77982826916582
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15E	2	7.0	11.936455539089348
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15G	2	2.0	8.497160258124557
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15M	2	13.0	8.463359113300498
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1B4	2	0.0	7.347626352043529
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1IE	2	10.0	5.27252565404598
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1IJ	2	1.0	3.82109103174945
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1IK	2	0.0	6.876190983282755
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1IU	2	0.0	8.80617765967704
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1L9	2	1.0	8.522420902210154
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1NG	2	5.0	9.69267208016764
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1R3	2	1.0	8.158907015528854
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1RC	2	7.0	8.62313040188527
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A228	2	6.0	9.73239665097026
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A22B	2	7.0	6.672520575999416
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A22D	2	13.0	4.9676735544635875
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A22E	2	28.0	20.812635137331508
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A24A	2	0.0	5.184075056249123
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1IY	2	0.0	3.3700802213479006
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1OX	2	3.0	5.815294412844641
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1P0	2	8.0	12.635636381774564
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1P3	2	2.0	3.2259355348382988
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1PB	2	18.0	17.912184719340488
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A6SD	2	11.0	8.461526111507201
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LD-A74U	2	1.0	7.18210479746428
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LD-A7W5	2	11.0	5.4894123717806975
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LD-A7W6	2	4.0	5.392985030485143
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LL-A5YL	2	11.0	6.1678278834639615
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LL-A73Y	2	6.0	12.025323064687111
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A5D8	2	8.0	5.463137803244336
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A5RV	2	1.0	3.898870060247856
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A5RY	2	2.0	3.7509857722695212
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A5RZ	2	9.0	15.020482661466348
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A66L	2	1.0	4.871404198340665
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A66O	2	2.0	5.198058622813803
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-S3-A6ZG	2	7.0	6.70232349067761
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-S3-AA12	2	6.0	5.923961852469906
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-S3-AA17	2	33.0	15.787546843208405
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-UU-A93S	2	14.0	16.821473063100335
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-W8-A86G	2	2.0	5.42981032895494
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-Z7-A8R6	2	4.0	5.7803815054750345
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-5T-A9QA	3	2.0	6.902227587668275
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A1-A0SD	3	7.0	8.166102045224074
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A1-A0SG	3	5.0	4.410189976212401
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A04Q	3	5.0	12.75324765036805
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0CS	3	0.0	4.267291930225802
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0EM	3	2.0	7.5080730899499715
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0EN	3	1.0	9.187087955796748
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0SV	3	6.0	6.494982830935486
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0SY	3	2.0	11.40469520298158
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0T1	3	11.0	8.620357467815694
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0T4	3	1.0	8.971291073715072
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A26I	3	9.0	6.47727919915522
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A6VW	3	20.0	13.043636508335009
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A06Y	3	0.0	7.746199331860961
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A06Z	3	8.0	20.077560959679943
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A07L	3	27.0	14.530177766233251
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A07U	3	8.0	10.02384547945926
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A07W	3	7.0	14.414306664381247
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A08G	3	7.0	10.910505991312508
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A096	3	2.0	6.862180918679779
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A09A	3	33.0	20.205038485014583
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A09B	3	6.0	7.300584999857632
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A09G	3	3.0	9.853391553524034
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A09M	3	21.0	13.891048642746828
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A09N	3	3.0	6.860609175800461
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A09X	3	10.0	7.08267238341924
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A0A6	3	2.0	7.814729232037165
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A2FG	3	2.0	4.944392544605679
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A3QQ	3	4.0	5.686123806148214
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A5XU	3	7.0	5.9830280082153315
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A6IW	3	12.0	12.129381641471815
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A7VB	3	9.0	4.353930259591305
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A041	3	3.0	4.120870121338621
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A04C	3	11.0	11.116537434038559
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0AR	3	30.0	18.04497884099938
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0FN	3	0.0	7.134044184868372
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0XS	3	2.0	4.445710888523395
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A03L	3	9.0	8.023411950988377
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A03O	3	10.0	9.42148804839484
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A03P	3	9.0	6.357737938987145
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A03V	3	12.0	8.214135296401224
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0J4	3	22.0	13.564873700478996
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0J6	3	31.0	15.098823192495765
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0JA	3	11.0	1.7890963066225511
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A124	3	27.0	12.064019377243216
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A1KR	3	17.0	10.069009971719627
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AQ-A1H3	3	2.0	4.824310130848348
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A0TS	3	18.0	13.902264362199205
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A0TT	3	15.0	11.154076369069122
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A0TY	3	13.0	8.334431226166867
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A1AU	3	7.0	3.6519083441889864
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A1AY	3	12.0	8.65389517890277
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A24L	3	16.0	23.144273088400485
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A24O	3	0.0	4.2770504740095046
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A24X	3	0.0	10.26500453727816
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A252	3	0.0	-4.156271582641596
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A2LK	3	0.0	5.176978585723046
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A2LO	3	5.0	5.218237320933886
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0IJ	3	23.0	22.278565805057163
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0IN	3	5.0	2.3675387397689702
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0RP	3	0.0	1.365051025120561
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0AW	3	13.0	10.92663168364398
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0AY	3	3.0	8.494515373904928
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0BL	3	20.0	9.174696842380294
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0BZ	3	8.0	23.555255617194753
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0DH	3	9.0	4.779398231878501
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0DL	3	3.0	5.438445658095844
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0DO	3	0.0	3.9270122921371806
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0DS	3	4.0	6.490672597469007
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0E7	3	0.0	5.75353401375429
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0EA	3	0.0	8.484589960469288
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0HU	3	11.0	8.248128811075135
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0HX	3	15.0	8.671206873576317
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0HY	3	19.0	7.281426338634942
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18I	3	2.0	3.3178289169470734
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18M	3	4.0	11.676265653134237
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18N	3	1.0	5.974696182725632
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18S	3	2.0	6.834261620999405
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18U	3	17.0	7.574113909381133
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1FN	3	26.0	11.847226503543144
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1FU	3	10.0	14.947737097103069
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A203	3	20.0	8.208865829239228
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A204	3	11.0	7.256691706623547
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A42V	3	4.0	2.1440800946152176
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A8FZ	3	17.0	11.106497573736645
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A12Y	3	4.0	5.314904655977793
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A135	3	6.0	9.347041882637038
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A1HE	3	6.0	2.605974439425774
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A26W	3	6.0	5.855508941900099
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A27B	3	22.0	22.004214476642314
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A143	3	10.0	9.514364137591263
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JC	3	6.0	7.132168727423675
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JJ	3	12.0	4.376989120323071
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JU	3	0.0	1.862966439244003
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1X5	3	8.0	5.102394441525577
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1Y0	3	17.0	16.55055583200467
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A27E	3	0.0	4.15764941889454
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A27F	3	23.0	14.754513518944481
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A27H	3	31.0	20.936753619501335
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A27P	3	1.0	3.747595256931385
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A27W	3	5.0	5.716197427577616
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A73X	3	0.0	5.865313031897938
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A150	3	17.0	13.631219457870841
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A152	3	4.0	7.653426163413564
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A154	3	1.0	6.027929625808076
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15I	3	1.0	3.394017921737536
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15O	3	7.0	4.20928765420112
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15P	3	5.0	4.663001338941218
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1AZ	3	15.0	7.499584296927236
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1B5	3	6.0	2.4161623245213555
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1BD	3	2.0	6.032019740018425
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1IG	3	2.0	6.602863702150514
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1IO	3	6.0	3.4405820870290116
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1LG	3	1.0	13.01833495784136
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1LL	3	25.0	15.43693937436748
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A573	3	11.0	8.443290215454512
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1N8	3	11.0	8.277867842494148
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1NI	3	10.0	3.1564369269239494
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1R0	3	1.0	2.9506162490860923
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1R5	3	3.0	6.3122324047779035
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1R7	3	8.0	7.728755384943173
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1RD	3	0.0	12.945055409106317
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1RF	3	20.0	21.517769180430392
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A22H	3	2.0	4.11899811924149
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A243	3	13.0	16.736450546825115
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A244	3	33.0	13.990043354793801
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A295	3	7.0	9.634556215260126
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A2JS	3	21.0	8.34897711316014
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1J1	3	6.0	8.24756377818111
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1OY	3	14.0	7.189582645306837
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1PA	3	8.0	8.818374759368933
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1PG	3	0.0	1.0932529053934577
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1PH	3	13.0	4.9411480753008785
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A6SC	3	5.0	5.330368765522109
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-GM-A2DL	3	6.0	5.6822866338029145
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-GM-A2DN	3	0.0	4.433877618848793
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-GM-A5PX	3	3.0	6.404485570487522
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-HN-A2NL	3	20.0	15.652037002081991
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LD-A66U	3	3.0	52.01275965723032
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LL-A50Y	3	2.0	4.454801364323498
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LL-A5YP	3	31.0	15.345215005701384
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LL-A73Z	3	13.0	6.267243202120198
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OK-A5Q2	3	3.0	4.893847040888532
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A5D7	3	8.0	14.565306844705827
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A5RX	3	1.0	5.376139202108233
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A66H	3	0.0	3.3286595790395452
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A66N	3	2.0	4.738653173351274
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A66P	3	15.0	11.471453583880358
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A6VO	3	16.0	3.2724587208548908
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A6VQ	3	1.0	3.175135226705251
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A6VR	3	4.0	1.5504740575074143
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A97C	3	5.0	10.075418052483911
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-PL-A8LY	3	0.0	-1.8983260811387055
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-S3-A6ZH	3	3.0	5.789506652248187
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-3C-AALJ	4	11.0	4.510127023723584
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A1-A0SB	4	0.0	2.928726890149547
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A1-A0SQ	4	1.0	4.261696779406243
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A04N	4	1.0	11.608889040803454
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A04V	4	1.0	5.4954828246205025
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A04W	4	8.0	9.023804044450431
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0CT	4	10.0	7.9189977323961775
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0D0	4	28.0	19.297267948405654
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0D3	4	0.0	3.7910345359936075
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0D4	4	4.0	11.647830017017377
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0EV	4	8.0	32.241444239846004
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0SX	4	10.0	3.6245189083123925
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0T3	4	6.0	7.032113442193888
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0YD	4	2.0	4.695428973183256
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0YH	4	4.0	11.127793763833774
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A0YK	4	0.0	11.474455529275149
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A1G0	4	2.0	5.387553904706319
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A2-A3XU	4	3.0	3.1552681667269606
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A0CG	4	5.0	7.441199824665069
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A0CJ	4	15.0	6.554820948663682
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A13D	4	11.0	14.612053688504853
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A26H	4	5.0	9.529637106117214
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A4SE	4	16.0	11.952463577599003
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A56D	4	10.0	7.119204975151844
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A5ZX	4	3.0	5.710830593762046
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A7-A6VY	4	29.0	16.617150786749992
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A06P	4	2.0	6.0822643849234765
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A07P	4	7.0	7.0081659648751415
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A08B	4	6.0	4.597909628581327
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A08H	4	0.0	4.475567239881917
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A08T	4	3.0	6.942537890201768
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A091	4	0.0	2.5842076513035703
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A09W	4	26.0	10.444764975126043
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A0A1	4	7.0	5.829190713110428
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A0A2	4	4.0	2.4234902192238295
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-A8-A0A4	4	10.0	3.4160185806382666
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A23C	4	7.0	12.206104006757641
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A2FB	4	3.0	8.108976620908788
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A7VC	4	2.0	4.058038759122687
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A8OQ	4	29.0	12.542350106076144
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AC-A8OS	4	1.0	6.581307671514663
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0AL	4	29.0	19.05064671675899
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0AM	4	13.0	16.770086771141777
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0FJ	4	9.0	10.872360299610063
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0FK	4	2.0	5.42281048149943
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0FZ	4	5.0	8.183287646774785
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0XO	4	10.0	7.421498195530171
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AN-A0XP	4	0.0	4.052875916898175
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0J2	4	30.0	19.190931957971408
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0JE	4	9.0	10.183527102911729
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0JF	4	1.0	3.419506106764822
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0JG	4	4.0	4.018425744022035
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A0JI	4	1.0	3.5660597588189997
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A12H	4	0.0	4.427379549472222
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AO-A1KP	4	6.0	0.9420811035923808
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A0U0	4	10.0	3.9276525414784134
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A1AH	4	12.0	13.600988494508076
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A1AK	4	2.0	9.958891512953322
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A1AP	4	4.0	3.188021825764203
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A24R	4	4.0	5.663455921783803
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A250	4	7.0	11.715778657495536
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-AR-A5QQ	4	4.0	17.99776948617845
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0IC	4	0.0	9.248819308382576
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0IH	4	8.0	4.625972981089228
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0WT	4	10.0	2.9106910660571828
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A0X5	4	1.0	3.3610179754188625
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A1KF	4	5.0	9.870243721520541
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-B6-A409	4	16.0	5.3237780569829845
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0AU	4	13.0	5.162425385236432
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0C3	4	4.0	4.545089185749626
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0DK	4	6.0	17.616516682289955
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0DV	4	1.0	6.792610688116519
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0DX	4	9.0	4.486576153543967
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0E9	4	3.0	7.024979570263681
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0EB	4	2.0	6.969578665385319
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0GY	4	11.0	4.804802010718918
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0H6	4	2.0	2.416171391655759
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0H7	4	10.0	6.310359626464666
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0HO	4	0.0	3.2092735733734186
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0HW	4	5.0	5.210315326450064
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A0WA	4	26.0	13.516117666710699
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18L	4	4.0	6.571983103845906
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A18R	4	11.0	6.276964171407415
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1EX	4	1.0	1.6019438983330598
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-A1FL	4	4.0	5.20273440418192
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-BH-AB28	4	4.0	5.257811178296231
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A12L	4	26.0	10.308215491384862
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A12O	4	8.0	5.193310173758453
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A12P	4	19.0	7.184164578614281
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A12Q	4	14.0	7.020063688781432
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A12U	4	18.0	9.218054892570452
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A131	4	5.0	11.57005607378188
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A138	4	10.0	6.356716437677504
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A1HG	4	8.0	8.52055796220621
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A1HJ	4	25.0	19.893825740619153
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A1HK	4	7.0	8.6613974967812
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A273	4	6.0	4.153728112594491
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A8HP	4	8.0	7.727781102112797
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-C8-A8HR	4	11.0	25.147392520861104
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A13Y	4	24.0	9.421589438538803
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A147	4	32.0	21.503492050221908
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JB	4	16.0	14.15259595515607
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JD	4	15.0	73.20267448150634
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JF	4	8.0	7.082857219055393
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JI	4	4.0	3.8142991875934538
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1JK	4	19.0	18.486017143832488
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1X8	4	4.0	8.705758375167244
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1XC	4	0.0	4.147279540090123
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A1Y1	4	2.0	9.894917246204871
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A27K	4	0.0	4.312801318874973
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A27V	4	6.0	7.648698113005348
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A3Z6	4	3.0	4.640196688643357
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-D8-A4Z1	4	3.0	2.8067679026717105
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A10A	4	4.0	12.57788162672519
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A10C	4	9.0	9.625781620143133
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A14O	4	0.0	5.069809260665806
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A14Q	4	4.0	5.437733375196933
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A14R	4	33.0	16.581964419221393
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A14T	4	11.0	6.141273660692481
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A14X	4	4.0	3.815572298300377
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A155	4	3.0	7.840280070514236
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A156	4	1.0	3.9166030621668817
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A15A	4	20.0	5.852825544171658
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1B0	4	6.0	8.640872264908513
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1IH	4	8.0	8.61964762499627
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A1LK	4	7.0	5.529583120722535
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E2-A56Z	4	13.0	9.72579695279591
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1N3	4	3.0	9.244272807985142
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A1RH	4	11.0	11.852800794307626
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A229	4	8.0	3.302376959473172
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A22A	4	5.0	10.510747737658033
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A245	4	1.0	2.680377846353979
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A247	4	15.0	4.883567719355658
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A248	4	4.0	2.3265301478640428
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A2JT	4	0.0	-2.078497022902047
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A3X8	4	0.0	9.199581213930148
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A5FL	4	22.0	17.570702530356527
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-E9-A5UO	4	5.0	4.812056550087074
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1P5	4	5.0	2.7802301581450273
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1P6	4	1.0	3.306781325932116
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1P7	4	5.0	5.83981981847889
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A1PE	4	0.0	4.4984421135597525
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-EW-A6SB	4	9.0	10.138826473336657
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-GM-A2DD	4	15.0	10.53905540812379
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-GM-A2DH	4	13.0	14.894489922292548
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-GM-A2DK	4	2.0	5.823254831126185
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LL-A5YM	4	4.0	7.306797985073981
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-LL-A7SZ	4	18.0	5.272239391329988
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-OL-A5D6	4	8.0	4.555429079337111
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-PL-A8LV	4	17.0	13.026346213784015
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-PL-A8LZ	4	28.0	10.196590859678842
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-S3-AA11	4	3.0	15.030658460852361
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-V7-A7HQ	4	2.0	3.5534480703599085
+main	all	HRD_LST	regression	Baseline+Standard	TCGA-XX-A899	4	5.0	9.088136693153643
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-5L-AAT0	0	3.0	9.046074677804931
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SF	0	8.0	3.17724112311378
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SJ	0	3.0	5.662511042688776
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CM	0	14.0	5.679699305332274
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CW	0	13.0	7.492831685207006
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CX	0	5.0	10.166926725580955
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0D1	0	6.0	7.219653623610057
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EU	0	0.0	7.201936789258048
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T0	0	35.0	23.00472363410524
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T5	0	0.0	2.4139075326047337
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T6	0	1.0	2.125459425059889
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YJ	0	6.0	15.438151282314434
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YL	0	2.0	3.6289389745068927
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YM	0	13.0	8.383297560431261
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YT	0	11.0	9.726885133030853
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1G1	0	2.0	11.80958716031098
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A25C	0	3.0	6.519358484879394
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A25D	0	14.0	10.7988971397828
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A25E	0	24.0	16.81818727732195
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A3KD	0	4.0	-39.0164496412207
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A3Y0	0	17.0	26.69537649472938
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0CE	0	21.0	17.533759981634695
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0CH	0	0.0	3.5327121952673446
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A26J	0	1.0	11.974743578216534
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A5ZW	0	0.0	1.9544729702843222
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06U	0	19.0	7.4402788560126485
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07J	0	4.0	5.738086434404325
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07O	0	6.0	6.230620003330727
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08R	0	35.0	20.12436782882279
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A090	0	2.0	5.07729733430963
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09C	0	5.0	4.631335397859773
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09V	0	0.0	11.286251685102004
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A3OD	0	7.0	3.0636943827977916
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A62Y	0	8.0	9.969934060580101
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A03X	0	1.0	6.990681221506785
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A03Y	0	1.0	8.114107634568715
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A049	0	13.0	8.523995383120894
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AJ	0	13.0	13.723054038858596
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AT	0	24.0	25.06459801830615
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FS	0	3.0	8.314493615950461
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FW	0	7.0	13.41153955694956
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FY	0	12.0	6.388662606610454
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XN	0	35.0	16.466084729297954
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XR	0	2.0	16.52953489526353
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XT	0	9.0	3.111925746848285
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03R	0	2.0	8.900238413996318
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J3	0	16.0	8.117059544253404
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J7	0	0.0	1.8170316365938408
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JD	0	16.0	14.060213445728152
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JJ	0	2.0	7.778546753638738
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A128	0	4.0	17.118920219318454
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A12F	0	19.0	8.501371734549044
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A1KT	0	5.0	7.047106635466138
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TP	0	29.0	14.696346064726674
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TX	0	6.0	9.946023624897665
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AO	0	0.0	20.725325484340637
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AX	0	0.0	4.669065965140332
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24P	0	0.0	2.5959992924383606
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24W	0	2.0	2.4092868044751476
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24Z	0	12.0	8.691548681335442
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A256	0	19.0	21.15415503317096
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LH	0	0.0	5.602501910856157
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LN	0	2.0	4.366256742465714
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RO	0	5.0	5.463704997632962
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RU	0	12.0	8.952035331775605
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WS	0	6.0	3.625013237024289
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WY	0	8.0	7.968725468917114
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0X1	0	28.0	13.620796360006953
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A1KN	0	7.0	14.663150181864212
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A401	0	9.0	5.844634366260612
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0B5	0	1.0	3.8241546916661626
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BF	0	10.0	6.418164699516575
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BP	0	13.0	15.362725933223098
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BR	0	14.0	3.611898321426491
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0C1	0	3.0	5.127651798027168
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0C7	0	11.0	8.08447886016599
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DE	0	4.0	5.533438031719293
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DT	0	0.0	2.135126610736533
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E1	0	0.0	2.524817258937632
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0EE	0	3.0	10.863033311496716
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HB	0	8.0	5.100842586431607
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HI	0	4.0	3.1437487017088257
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HK	0	1.0	6.6641527035476065
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HP	0	4.0	9.350361794492446
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0W3	0	0.0	3.8478000496512745
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0W4	0	0.0	5.651959523301608
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18H	0	10.0	5.645628520605856
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18Q	0	27.0	19.83251868006196
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EO	0	3.0	5.029052316220432
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EV	0	5.0	10.863205123343818
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1F0	0	15.0	12.015368010177642
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FC	0	13.0	9.906169348937212
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FE	0	9.0	-7.220970427046632
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FJ	0	2.0	4.5498671995244795
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A2L8	0	0.0	11.063848244807032
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A8FY	0	2.0	11.305529233564393
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12M	0	8.0	6.83177056421843
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12N	0	1.0	1.2500319540320568
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A137	0	11.0	7.895370984585296
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HL	0	5.0	4.72653067742692
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26V	0	8.0	10.166798683403782
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A275	0	6.0	7.978768167131692
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A278	0	10.0	6.0811283205168
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JN	0	2.0	8.678708079914449
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JS	0	2.0	5.709395437732918
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JT	0	4.0	5.8063224152441535
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XF	0	3.0	4.626153900603009
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XY	0	10.0	7.336136139917652
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XZ	0	9.0	12.698245398875063
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27L	0	2.0	2.7981841033611428
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27T	0	2.0	3.0963597345787086
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14Z	0	12.0	8.488844695013919
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A153	0	0.0	3.3272379988665186
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A159	0	8.0	10.635817175347746
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15H	0	4.0	6.012770599351979
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15K	0	4.0	11.039058032823437
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15T	0	6.0	4.965095111972125
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IF	0	1.0	-33.2537955490579
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1L8	0	4.0	7.8551854541476835
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A570	0	0.0	3.609489645100619
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A576	0	4.0	7.954270623208238
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A9RU	0	25.0	5.647906127604065
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NC	0	30.0	12.715159630194565
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1ND	0	21.0	11.327598436211794
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NE	0	3.0	19.292150060617303
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R6	0	5.0	4.639112979586307
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RB	0	7.0	14.250317108637518
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RG	0	15.0	12.616650799832811
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A226	0	6.0	5.605029019803927
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22G	0	33.0	14.449196522025993
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A6HE	0	2.0	1.761278988576807
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1J3	0	3.0	5.252171618637277
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1J6	0	8.0	7.738934888285004
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1OV	0	11.0	6.305509223659878
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1OZ	0	20.0	8.235918890757931
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P1	0	0.0	-2.4975764201575075
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P8	0	8.0	6.74464235307944
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A2FV	0	4.0	3.4626696785513174
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DA	0	2.0	6.431757786486362
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DB	0	12.0	12.866464917627479
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DF	0	17.0	8.590213568484952
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A6FR	0	14.0	5.741965456283784
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A7T0	0	10.0	5.377285072156954
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A9Q3	0	3.0	7.98821010387199
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5S0	0	19.0	6.036133789276477
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66I	0	19.0	9.789103150559676
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66J	0	1.0	9.316988458033014
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66K	0	2.0	4.327628605269256
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-PE-A5DE	0	4.0	9.874960731044812
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-A6ZF	0	13.0	6.07335368614724
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA0Z	0	8.0	7.000250318735956
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA14	0	7.0	0.7043831535935752
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-WT-AB41	0	5.0	2.3833246884138175
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-WT-AB44	0	0.0	4.673057196599109
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-XX-A89A	0	0.0	8.667572951993025
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SE	1	1.0	7.074394647012623
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SK	1	14.0	15.256520709567797
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04P	1	33.0	23.404761518574322
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04T	1	24.0	11.830856224815122
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CP	1	0.0	8.490290363532694
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CU	1	9.0	13.953231098178911
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CV	1	0.0	1.924401880696628
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EW	1	2.0	2.7747427109381944
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EX	1	1.0	6.752537480981578
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EY	1	15.0	7.618659569011937
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SU	1	5.0	7.697373478337529
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T2	1	8.0	5.715244358445619
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T7	1	6.0	2.234742164550421
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YF	1	3.0	2.1687835708612315
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YG	1	11.0	6.892073826864568
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1FX	1	3.0	6.752169161600141
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1FZ	1	1.0	5.760163881767422
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1G4	1	4.0	9.119478988949467
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A259	1	2.0	4.466996940019997
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A4S1	1	10.0	18.317294095478097
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A4S3	1	22.0	28.884159749949347
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0DA	1	34.0	19.405508988836722
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0DB	1	0.0	8.063097584537363
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A13E	1	8.0	9.678354423460691
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A6VX	1	28.0	18.09907400176995
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06R	1	23.0	16.104421406576897
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06X	1	21.0	19.331690714141267
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A076	1	10.0	9.818633941015204
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08L	1	28.0	17.970773074082977
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08O	1	6.0	3.310918854894765
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08X	1	10.0	4.183168306819496
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08Z	1	3.0	7.4745580022600375
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A092	1	1.0	5.821772187390366
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A093	1	0.0	4.750853337370677
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A099	1	3.0	12.8463421426507
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09Z	1	5.0	14.45737632863522
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A7	1	6.0	7.773788193092567
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0AB	1	6.0	4.400309957615436
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0AD	1	1.0	8.843557890516792
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A23E	1	1.0	5.63331463680006
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A23H	1	6.0	16.270154660042138
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A3YI	1	3.0	3.72429231847351
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A4ZE	1	1.0	7.703504511984915
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A5EH	1	15.0	19.206197148627496
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A6IV	1	3.0	9.286675642180107
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A04D	1	29.0	14.271178529544708
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FT	1	22.0	8.505204768468642
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FV	1	11.0	8.798704918293213
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FX	1	28.0	10.760768649800077
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XW	1	5.0	8.970384064083918
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J8	1	0.0	3.3701504786621364
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A12A	1	1.0	2.644011693865041
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AQ-A04J	1	23.0	11.759401246302431
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AQ-A1H2	1	10.0	5.656887871931371
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TQ	1	5.0	5.833733952672014
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TV	1	12.0	11.231174608940421
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TW	1	25.0	9.288600279408332
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24U	1	6.0	6.008174589861815
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24V	1	4.0	3.795991699576218
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A251	1	29.0	21.915035065722897
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A5QN	1	3.0	3.540616782549023
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0I2	1	11.0	7.138992187613412
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0I9	1	6.0	9.614096442211443
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IE	1	5.0	14.727790301539862
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RN	1	0.0	7.692464517189945
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RS	1	33.0	19.12618506276778
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RV	1	5.0	4.495468543452574
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WW	1	5.0	4.8887275761211875
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WZ	1	1.0	4.360455940233554
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0X0	1	1.0	5.459498010494424
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A1KC	1	3.0	5.167109353525532
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A40C	1	3.0	4.853710225668735
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0B3	1	14.0	10.085631453469723
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0B7	1	9.0	5.9692242915906135
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BC	1	3.0	5.132539468725887
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BJ	1	2.0	4.755547783027504
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BO	1	2.0	4.049392836968548
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BT	1	3.0	7.8793638852537145
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DQ	1	7.0	5.606750258639085
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DZ	1	4.0	8.139073728861945
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E0	1	10.0	9.761470629792157
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E2	1	7.0	8.54545932380507
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18J	1	6.0	4.795020688321765
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18T	1	15.0	12.457588262675184
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1ET	1	0.0	6.089271316986534
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FG	1	1.0	5.599328569726474
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FM	1	12.0	5.8014817211258745
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A201	1	2.0	-0.836280538299734
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A208	1	6.0	8.556672843635617
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A209	1	10.0	6.678397782970174
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A28Q	1	2.0	7.3475426800681465
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A6R9	1	0.0	12.004083371471618
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A8G0	1	1.0	2.0208084113805773
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12W	1	7.0	9.02319575504336
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12Z	1	7.0	7.301750039515762
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A130	1	18.0	6.129392248675076
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A133	1	0.0	7.048046069018037
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HF	1	8.0	10.493185895730198
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HM	1	19.0	10.555170112734807
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26X	1	12.0	14.76461896819664
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26Y	1	14.0	13.603117150420452
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A8HQ	1	6.0	8.19546674397099
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A13Z	1	17.0	14.605350389614648
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A140	1	7.0	7.605805499939721
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A141	1	0.0	4.8892754918533345
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JA	1	14.0	12.085146312056992
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JG	1	5.0	10.540482864489016
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JH	1	0.0	3.972881976024529
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JM	1	10.0	8.130352207533608
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JP	1	31.0	10.61373464572514
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1X7	1	1.0	4.458084448783029
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1X9	1	24.0	24.517412418816356
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XA	1	1.0	4.593288732258709
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XJ	1	13.0	6.151865737266138
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XK	1	28.0	12.048770484448097
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XQ	1	28.0	15.767998338796506
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XV	1	1.0	6.501812043884619
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XW	1	24.0	11.582845920385255
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1Y2	1	2.0	1.4754410925918586
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1Y3	1	8.0	10.73045341658588
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27R	1	9.0	10.152280694638693
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A73U	1	4.0	6.856938205972082
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A73W	1	4.0	7.093095634618348
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A158	1	34.0	17.19261660773065
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15J	1	0.0	7.844734872956584
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15R	1	5.0	4.680479513916281
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1BC	1	1.0	6.113216576432787
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IL	1	4.0	4.351359260358825
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1L6	1	2.0	3.5034272872946124
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LA	1	24.0	18.885867701604113
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LH	1	29.0	17.368685332561327
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1N5	1	2.0	5.633135051474556
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1N9	1	18.0	8.323825910512287
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NA	1	13.0	13.843628033288145
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NH	1	5.0	3.2959194649783488
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RA	1	1.0	3.2065027835872275
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RE	1	14.0	5.287293709930248
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A227	1	0.0	4.612267725527415
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1IW	1	6.0	7.700633364995002
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1IZ	1	2.0	10.180814951535979
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P4	1	24.0	10.133418088502285
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A2FS	1	5.0	6.017751737432892
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DC	1	4.0	4.194875096322898
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DM	1	2.0	3.4908072107432417
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A3NW	1	6.0	6.956372892029442
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-HN-A2OB	1	3.0	4.212887647248108
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A5YN	1	11.0	6.550199591262613
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A6FQ	1	1.0	6.513452282680066
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A8F5	1	32.0	17.769561871490197
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5DA	1	5.0	5.6450157942804715
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RU	1	1.0	4.545573095503423
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RW	1	35.0	15.003001214157504
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-PE-A5DD	1	9.0	3.6704874364145104
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-PL-A8LX	1	4.0	5.321791114822527
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA10	1	26.0	12.964602247154918
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-3C-AALI	2	12.0	14.774078059599638
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SI	2	3.0	10.799243615043341
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SO	2	29.0	22.087779320136875
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04R	2	12.0	12.619605909041617
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04U	2	17.0	21.12493731508743
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04Y	2	6.0	7.942280910825487
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CR	2	1.0	9.135236557616636
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0ES	2	1.0	2.453002578062862
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SW	2	14.0	10.82788292001074
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YC	2	1.0	6.831678494361507
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YE	2	10.0	4.276907533503508
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1FV	2	12.0	5.546461315127786
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A25A	2	1.0	17.023002910395796
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0D9	2	4.0	3.800747096857214
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A13F	2	1.0	6.014230354176982
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A26E	2	1.0	5.6311024260039675
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A5ZV	2	16.0	18.99385472802319
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06Q	2	15.0	10.3432546422033
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A075	2	22.0	14.966703861715331
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A079	2	9.0	13.78052316958878
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07B	2	10.0	7.643854254131378
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07I	2	7.0	8.374906659973238
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07Z	2	1.0	3.1588484636436682
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A081	2	11.0	12.126668789663192
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A082	2	3.0	1.8503666565903778
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A083	2	2.0	6.834043313706927
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A094	2	15.0	11.489448946501646
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A095	2	2.0	8.07245698086584
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A097	2	23.0	15.624623094466338
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09D	2	7.0	8.590179722537638
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09Q	2	18.0	16.499843153216077
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09T	2	2.0	2.5401753268597886
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2B8	2	7.0	6.075893362954613
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2FO	2	6.0	3.33177713323275
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2QH	2	11.0	7.449678249794243
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A5XS	2	11.0	12.589301679171662
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A6IX	2	3.0	6.621153672009973
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A6NO	2	2.0	5.217711847906784
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A8OP	2	14.0	14.505324499558581
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A8OR	2	0.0	8.209229702761586
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A046	2	2.0	25.666079849781838
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AS	2	4.0	5.8216585662588995
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XU	2	31.0	16.974044944171542
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XV	2	1.0	9.800273726076604
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03T	2	15.0	19.682816558794464
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J9	2	2.0	6.133952863766956
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JB	2	27.0	14.690959403060951
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JM	2	14.0	12.756468448859398
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A12D	2	5.0	4.67783046428554
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AQ-A04H	2	9.0	11.104041052959921
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TR	2	3.0	6.270095334457575
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TZ	2	7.0	7.483026158086287
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AI	2	15.0	14.613529216016534
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AJ	2	1.0	6.943659673478621
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AN	2	8.0	4.256209785882849
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AQ	2	11.0	9.715410938596275
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AR	2	9.0	11.879708083189836
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AW	2	2.0	12.550029665898975
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24N	2	2.0	6.140878056197678
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24Q	2	26.0	22.32231355738101
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24S	2	12.0	7.67314105972136
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A254	2	6.0	7.089055771747087
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LQ	2	1.0	1.0812301632842534
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A5QM	2	1.0	11.20360430877725
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A5QP	2	6.0	2.560828860433208
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0I5	2	0.0	4.315170622061958
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IB	2	10.0	10.106750917853304
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RE	2	12.0	19.77211444610872
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RG	2	11.0	13.385997806159462
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RH	2	6.0	6.409352789097481
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RI	2	4.0	6.797814220412113
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RL	2	4.0	6.357207636433714
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0X4	2	1.0	1.7327928081823067
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A2IU	2	2.0	5.083395201472851
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AV	2	26.0	18.153997401869077
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AZ	2	15.0	16.683221870367333
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0B9	2	12.0	7.202058638523976
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BA	2	1.0	6.064630370586709
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BM	2	1.0	7.9992660385352865
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DG	2	9.0	11.30375524577633
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DI	2	8.0	8.611891874283229
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0H0	2	1.0	10.583006687314223
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HA	2	1.0	13.728964332003962
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HQ	2	1.0	3.980964473304926
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18F	2	0.0	5.973909180306851
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18G	2	3.0	19.985877622152216
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18K	2	8.0	13.843285925318563
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18P	2	1.0	11.091795938149415
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EU	2	7.0	3.045134939678568
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EW	2	8.0	-0.9619995397512202
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EY	2	9.0	6.410985303022336
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1F2	2	12.0	7.049296115633489
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A202	2	1.0	6.108950586132545
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A5IZ	2	18.0	11.595738078257678
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A6R8	2	3.0	8.181877497308417
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A132	2	6.0	9.185575680798431
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26Z	2	3.0	6.94509042771625
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A27A	2	15.0	5.580082218412329
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A145	2	3.0	8.643959186229647
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1J8	2	2.0	16.12147086593003
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1J9	2	8.0	9.009477487048484
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JL	2	19.0	17.33550051859463
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XB	2	2.0	5.1134533484337465
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XG	2	4.0	4.910090168654547
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XL	2	23.0	19.276628836126328
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XM	2	4.0	6.454517740364206
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XO	2	5.0	0.07255070404059616
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XR	2	4.0	4.5969221281210935
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XT	2	8.0	6.754951656583319
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27M	2	16.0	11.354421257700253
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27N	2	5.0	10.156779214372397
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14Y	2	7.0	6.93565345661695
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15C	2	0.0	5.18917530921662
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15D	2	1.0	6.196066666955958
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15E	2	7.0	5.124241392444307
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15G	2	2.0	7.479964773369674
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15M	2	13.0	12.770882246752047
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1B4	2	0.0	8.665275300161984
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IE	2	10.0	6.5747536488416465
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IJ	2	1.0	5.26295814891343
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IK	2	0.0	5.395746368855434
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IU	2	0.0	5.607227292104884
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1L9	2	1.0	5.665208355405908
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NG	2	5.0	3.6841555636042935
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R3	2	1.0	3.3880179190021256
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RC	2	7.0	8.789434868995535
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A228	2	6.0	7.392538124005014
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22B	2	7.0	9.608262333583117
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22D	2	13.0	3.013699519191851
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22E	2	28.0	18.399521606163006
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A24A	2	0.0	2.7325085870572696
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1IY	2	0.0	1.3785472118318154
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1OX	2	3.0	-0.3906443002562643
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P0	2	8.0	7.548663685029026
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P3	2	2.0	3.5141921201185493
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PB	2	18.0	17.340583612346073
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A6SD	2	11.0	5.7733852442881
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LD-A74U	2	1.0	8.05292622809145
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LD-A7W5	2	11.0	7.005209660661204
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LD-A7W6	2	4.0	8.157963657814022
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A5YL	2	11.0	6.050165151082515
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A73Y	2	6.0	10.100844868542183
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5D8	2	8.0	5.446157838974054
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RV	2	1.0	5.939719004656324
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RY	2	2.0	-0.14758782190159714
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RZ	2	9.0	12.515171804112509
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66L	2	1.0	4.734384350736336
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66O	2	2.0	7.695873063575276
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-A6ZG	2	7.0	6.090372610920298
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA12	2	6.0	6.401378292968988
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA17	2	33.0	15.925900489463197
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-UU-A93S	2	14.0	20.61780012591896
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-W8-A86G	2	2.0	4.6618730373942014
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-Z7-A8R6	2	4.0	4.194029791345146
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-5T-A9QA	3	2.0	5.137486545659966
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SD	3	7.0	5.346139321765562
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SG	3	5.0	4.814958143783287
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04Q	3	5.0	11.807348137026636
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CS	3	0.0	6.02937225277454
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EM	3	2.0	4.011050721502729
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EN	3	1.0	6.367016806898252
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SV	3	6.0	5.614442913531801
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SY	3	2.0	7.868226636868307
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T1	3	11.0	7.445589194928823
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T4	3	1.0	11.404192271960639
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A26I	3	9.0	15.299933145997443
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A6VW	3	20.0	15.279954083067206
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06Y	3	0.0	10.304316048169717
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06Z	3	8.0	17.379296263639297
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07L	3	27.0	17.74614019944736
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07U	3	8.0	8.496885901251481
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07W	3	7.0	15.590286848663432
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08G	3	7.0	7.747083527942957
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A096	3	2.0	5.849347971185655
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09A	3	33.0	17.382341424182705
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09B	3	6.0	6.68689647448522
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09G	3	3.0	8.677106654703463
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09M	3	21.0	12.145812002037871
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09N	3	3.0	6.9717299512232636
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09X	3	10.0	8.307396121289024
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A6	3	2.0	7.385927103125834
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2FG	3	2.0	5.583689611624041
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A3QQ	3	4.0	14.136581321171697
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A5XU	3	7.0	6.296871450321921
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A6IW	3	12.0	10.91544377446537
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A7VB	3	9.0	3.302412873732777
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A041	3	3.0	10.739610414408318
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A04C	3	11.0	9.2467461294931
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AR	3	30.0	19.057913290940327
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FN	3	0.0	6.316484975767752
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XS	3	2.0	6.849286701626891
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03L	3	9.0	8.299656495097029
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03O	3	10.0	14.674293219706335
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03P	3	9.0	8.213392749430197
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03V	3	12.0	9.31600614604763
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J4	3	22.0	12.108712512776012
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J6	3	31.0	18.58285976462349
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JA	3	11.0	2.26245787218141
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A124	3	27.0	18.889777536229303
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A1KR	3	17.0	11.705361859615845
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AQ-A1H3	3	2.0	5.048764647750038
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TS	3	18.0	15.492116796035003
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TT	3	15.0	9.543739623592906
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TY	3	13.0	8.233661609846662
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AU	3	7.0	12.999930551084617
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AY	3	12.0	7.569475876093948
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24L	3	16.0	10.694568844072796
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24O	3	0.0	5.846538268816259
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24X	3	0.0	6.503159218412536
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A252	3	0.0	-0.33626482741681407
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LK	3	0.0	6.1861484186992195
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LO	3	5.0	10.041689438416725
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IJ	3	23.0	18.612493152692302
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IN	3	5.0	4.454921871205007
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RP	3	0.0	5.026950382695992
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AW	3	13.0	9.050461474186609
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AY	3	3.0	9.601310454823334
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BL	3	20.0	14.07476889823835
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BZ	3	8.0	22.3434591344491
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DH	3	9.0	5.998225070044414
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DL	3	3.0	7.392273169788117
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DO	3	0.0	4.124881700534564
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DS	3	4.0	6.985954642807161
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E7	3	0.0	9.144249603923448
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0EA	3	0.0	5.898135594557722
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HU	3	11.0	8.045709932341007
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HX	3	15.0	12.766758852747207
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HY	3	19.0	8.534161835538393
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18I	3	2.0	2.1943699266568553
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18M	3	4.0	4.707076681645239
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18N	3	1.0	5.999169046009727
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18S	3	2.0	12.526959916217265
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18U	3	17.0	7.747469961169638
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FN	3	26.0	10.477839283145695
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FU	3	10.0	11.857111376560317
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A203	3	20.0	10.112033895790397
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A204	3	11.0	9.147454118244532
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A42V	3	4.0	3.0102679618186263
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A8FZ	3	17.0	15.20708196126586
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12Y	3	4.0	5.687446106991225
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A135	3	6.0	7.1208506644013365
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HE	3	6.0	4.5131875239266765
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26W	3	6.0	7.24042924115362
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A27B	3	22.0	12.2027973384306
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A143	3	10.0	11.384439998207057
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JC	3	6.0	8.340409296118647
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JJ	3	12.0	7.170511095069765
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JU	3	0.0	4.161112703761345
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1X5	3	8.0	6.688437893883305
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1Y0	3	17.0	16.61016237883485
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27E	3	0.0	6.592568918341293
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27F	3	23.0	14.39677812669234
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27H	3	31.0	17.26526323329957
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27P	3	1.0	8.326601802571394
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27W	3	5.0	5.447385665289394
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A73X	3	0.0	6.255113374193934
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A150	3	17.0	8.57669126761232
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A152	3	4.0	6.985133474085011
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A154	3	1.0	7.384382377678076
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15I	3	1.0	5.237432843897667
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15O	3	7.0	8.476906092016442
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15P	3	5.0	11.610726539059126
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1AZ	3	15.0	6.967918181685816
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1B5	3	6.0	3.4170840291792253
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1BD	3	2.0	5.801109319142595
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IG	3	2.0	7.326390633562481
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IO	3	6.0	1.6750741360692052
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LG	3	1.0	7.994073886820223
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LL	3	25.0	11.772408260915444
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A573	3	11.0	7.101783672722161
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1N8	3	11.0	7.553720465479139
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NI	3	10.0	5.342668977777819
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R0	3	1.0	3.876787261775374
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R5	3	3.0	6.559859565872472
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R7	3	8.0	7.831889976742187
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RD	3	0.0	8.765238058167903
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RF	3	20.0	20.909584294696558
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22H	3	2.0	5.260006686982648
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A243	3	13.0	9.588645447575875
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A244	3	33.0	13.682981932931318
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A295	3	7.0	9.617754651135204
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A2JS	3	21.0	7.857606138874129
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1J1	3	6.0	7.576022347672296
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1OY	3	14.0	10.832333195365365
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PA	3	8.0	9.32695824883412
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PG	3	0.0	0.34314671432680477
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PH	3	13.0	4.524855350789823
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A6SC	3	5.0	4.061131412973755
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DL	3	6.0	7.478061674397357
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DN	3	0.0	8.289736411621929
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A5PX	3	3.0	5.07512214590445
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-HN-A2NL	3	20.0	13.433246954350352
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LD-A66U	3	3.0	5.3891282910578155
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A50Y	3	2.0	6.05539068999889
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A5YP	3	31.0	15.322904089936014
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A73Z	3	13.0	6.45251300055819
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OK-A5Q2	3	3.0	5.7792441404837955
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5D7	3	8.0	11.807769320307958
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RX	3	1.0	4.73065360667154
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66H	3	0.0	7.145128240078561
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66N	3	2.0	5.394015039596672
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66P	3	15.0	7.617173431191455
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A6VO	3	16.0	5.5148903562211835
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A6VQ	3	1.0	5.125396587086627
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A6VR	3	4.0	0.2856636876894658
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A97C	3	5.0	7.7552502266832555
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-PL-A8LY	3	0.0	-4.2650292226837685
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-A6ZH	3	3.0	6.842048811554271
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-3C-AALJ	4	11.0	5.936277837821796
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SB	4	0.0	2.313009479186568
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SQ	4	1.0	4.590640208881017
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04N	4	1.0	6.249505563219607
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04V	4	1.0	7.747503440607824
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04W	4	8.0	7.360824394965053
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CT	4	10.0	8.378269665091842
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0D0	4	28.0	15.060753994223877
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0D3	4	0.0	4.628227161855037
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0D4	4	4.0	9.06776655802048
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EV	4	8.0	9.715925160563934
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SX	4	10.0	6.388859247077158
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T3	4	6.0	5.5966408372003
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YD	4	2.0	4.741035772072649
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YH	4	4.0	8.256216552447842
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YK	4	0.0	9.849731310583433
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1G0	4	2.0	5.386114796860326
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A3XU	4	3.0	7.063410381960987
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0CG	4	5.0	6.331918082325482
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0CJ	4	15.0	8.428535585408532
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A13D	4	11.0	18.259019071648417
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A26H	4	5.0	9.278030738878316
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A4SE	4	16.0	3.3936313136214054
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A56D	4	10.0	8.811378914129453
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A5ZX	4	3.0	5.782173035908701
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A6VY	4	29.0	11.326492808102527
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06P	4	2.0	5.882133022797586
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07P	4	7.0	6.557178238742242
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08B	4	6.0	7.9952230238967985
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08H	4	0.0	3.82523814232927
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08T	4	3.0	6.157746643729361
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A091	4	0.0	2.758706764612638
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09W	4	26.0	18.861552140453448
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A1	4	7.0	6.245219607030123
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A2	4	4.0	5.283149762318895
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A4	4	10.0	4.014228058028006
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A23C	4	7.0	10.350879343881322
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2FB	4	3.0	4.275500066523907
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A7VC	4	2.0	3.6160860362568936
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A8OQ	4	29.0	9.445500942708687
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A8OS	4	1.0	7.308796278106444
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AL	4	29.0	14.626163189267192
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AM	4	13.0	11.422637402577713
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FJ	4	9.0	9.57390518982166
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FK	4	2.0	6.766701978259982
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FZ	4	5.0	8.212738706061918
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XO	4	10.0	9.063059434932612
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XP	4	0.0	6.899313513894999
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J2	4	30.0	17.79002871293982
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JE	4	9.0	4.720162485228848
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JF	4	1.0	4.752347233304006
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JG	4	4.0	4.564657071042655
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JI	4	1.0	5.393966247204116
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A12H	4	0.0	5.746205058772218
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A1KP	4	6.0	5.82126440457442
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0U0	4	10.0	6.318941339408948
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AH	4	12.0	13.97985638764493
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AK	4	2.0	5.723016943312968
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AP	4	4.0	3.593306985929898
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24R	4	4.0	6.264450613680983
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A250	4	7.0	10.269170514785184
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A5QQ	4	4.0	9.745323049267096
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IC	4	0.0	5.743424409237149
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IH	4	8.0	6.566253098794147
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WT	4	10.0	2.4423976187207135
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0X5	4	1.0	4.830870074079435
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A1KF	4	5.0	10.749124172788921
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A409	4	16.0	9.228237997275853
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AU	4	13.0	5.429016182889885
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0C3	4	4.0	2.2349097147596817
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DK	4	6.0	12.20813927482228
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DV	4	1.0	2.919931005895447
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DX	4	9.0	5.949354616203139
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E9	4	3.0	4.495018050958177
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0EB	4	2.0	8.348246745668177
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0GY	4	11.0	9.664762341212604
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0H6	4	2.0	5.906128925010433
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0H7	4	10.0	6.995848410163117
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HO	4	0.0	3.790879060018373
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HW	4	5.0	7.483347871240081
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0WA	4	26.0	12.948020781516654
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18L	4	4.0	8.078258294121511
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18R	4	11.0	5.835172903079984
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EX	4	1.0	2.8608105117422635
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FL	4	4.0	2.8951857257615963
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-AB28	4	4.0	4.157741044875866
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12L	4	26.0	14.419077756441911
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12O	4	8.0	7.260397386647467
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12P	4	19.0	9.792879212767891
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12Q	4	14.0	7.0655299374905844
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12U	4	18.0	10.429338723606811
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A131	4	5.0	8.993003482350453
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A138	4	10.0	6.799774968502275
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HG	4	8.0	8.11797623613813
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HJ	4	25.0	22.62898254518889
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HK	4	7.0	8.416533058093622
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A273	4	6.0	3.798716695384684
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A8HP	4	8.0	8.257656369679555
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A8HR	4	11.0	9.290754370834055
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A13Y	4	24.0	11.573627203716752
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A147	4	32.0	13.225730374283724
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JB	4	16.0	13.022233901417206
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JD	4	15.0	15.160199161265464
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JF	4	8.0	8.10535519340346
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JI	4	4.0	5.530477868309591
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JK	4	19.0	13.047280648610357
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1X8	4	4.0	5.852463814495925
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XC	4	0.0	5.217749440494182
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1Y1	4	2.0	8.983679073558609
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27K	4	0.0	5.201736059175525
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27V	4	6.0	7.380262650666479
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A3Z6	4	3.0	5.1387806399706735
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A4Z1	4	3.0	3.8384127721522683
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A10A	4	4.0	5.235049449548592
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A10C	4	9.0	9.653092870580927
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14O	4	0.0	7.118532854587402
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14Q	4	4.0	5.542431369826481
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14R	4	33.0	19.61132329273621
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14T	4	11.0	5.05899355069553
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14X	4	4.0	3.5428416895020547
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A155	4	3.0	6.090303438151502
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A156	4	1.0	8.192220283632773
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15A	4	20.0	8.553576885380071
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1B0	4	6.0	7.5194086126778
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IH	4	8.0	9.001375602813866
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LK	4	7.0	4.153873724025538
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A56Z	4	13.0	5.096426293936095
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1N3	4	3.0	7.912326829220004
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RH	4	11.0	10.22829260400874
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A229	4	8.0	4.966084344953974
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22A	4	5.0	5.2665448034195395
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A245	4	1.0	4.517542412365435
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A247	4	15.0	6.315494352483224
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A248	4	4.0	3.0842463895248624
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A2JT	4	0.0	0.8461150414212479
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A3X8	4	0.0	12.025988195825207
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A5FL	4	22.0	15.033722115792033
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A5UO	4	5.0	4.484575488970976
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P5	4	5.0	3.146861540152001
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P6	4	1.0	3.3503792072762533
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P7	4	5.0	6.741507546846876
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PE	4	0.0	5.097102093098539
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A6SB	4	9.0	8.915826538851052
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DD	4	15.0	8.728423292424516
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DH	4	13.0	14.650239810083637
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DK	4	2.0	5.2932024786176255
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A5YM	4	4.0	4.237495883722363
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A7SZ	4	18.0	8.755762094666272
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5D6	4	8.0	8.068665235759951
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-PL-A8LV	4	17.0	18.14157083210339
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-PL-A8LZ	4	28.0	8.769269317647604
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA11	4	3.0	11.039534406854607
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-V7-A7HQ	4	2.0	8.190049930502347
+main	all	HRD_LST	regression	Baseline+Universal-BiCGR d=10	TCGA-XX-A899	4	5.0	5.835401678988031

@@ -1,0 +1,13 @@
+suite	subset	endpoint	task	model	fold	scope	study_name	best_value	best_params_json	n_trials
+main	all	PARPi7	regression	Baseline+Standard	0	outer	main__all__PARPi7__Baseline_Standard__fold_0	0.7879267688909618	"{""alpha"": 0.0918681117137576, ""l1_ratio"": 0.7346205407088309}"	40
+main	all	PARPi7	regression	Baseline+Standard	1	outer	main__all__PARPi7__Baseline_Standard__fold_1	0.7639709339695474	"{""alpha"": 0.19144693007078847, ""l1_ratio"": 0.7703124361624201}"	40
+main	all	PARPi7	regression	Baseline+Standard	2	outer	main__all__PARPi7__Baseline_Standard__fold_2	0.7718529296906868	"{""alpha"": 0.13747215044198854, ""l1_ratio"": 0.760584007246431}"	40
+main	all	PARPi7	regression	Baseline+Standard	3	outer	main__all__PARPi7__Baseline_Standard__fold_3	0.7500988813315326	"{""alpha"": 0.1292129257936409, ""l1_ratio"": 0.5350008097561643}"	40
+main	all	PARPi7	regression	Baseline+Standard	4	outer	main__all__PARPi7__Baseline_Standard__fold_4	0.7645925859916991	"{""alpha"": 0.1863365498387719, ""l1_ratio"": 0.6519673181974728}"	40
+main	all	PARPi7	regression	Baseline+Standard	-1	full	main__all__PARPi7__Baseline_Standard__full	0.7694102813973602	"{""alpha"": 0.26882533552895543, ""l1_ratio"": 0.40146627875211166}"	40
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	0	outer	main__all__PARPi7__Baseline_Universal-BiCGR_d_10__fold_0	0.7967130848783484	"{""alpha"": 0.4570563099801455, ""l1_ratio"": 0.6187255599871848}"	40
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	1	outer	main__all__PARPi7__Baseline_Universal-BiCGR_d_10__fold_1	0.754905294864984	"{""alpha"": 0.11101184411738418, ""l1_ratio"": 0.732803174901424}"	40
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	2	outer	main__all__PARPi7__Baseline_Universal-BiCGR_d_10__fold_2	0.7751904653344645	"{""alpha"": 0.4570563099801455, ""l1_ratio"": 0.6187255599871848}"	40
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	3	outer	main__all__PARPi7__Baseline_Universal-BiCGR_d_10__fold_3	0.7615437369073428	"{""alpha"": 0.4570563099801455, ""l1_ratio"": 0.6187255599871848}"	40
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	4	outer	main__all__PARPi7__Baseline_Universal-BiCGR_d_10__fold_4	0.7658604433984877	"{""alpha"": 0.1863365498387719, ""l1_ratio"": 0.6519673181974728}"	40
+main	all	PARPi7	regression	Baseline+Universal-BiCGR d=10	-1	full	main__all__PARPi7__Baseline_Universal-BiCGR_d_10__full	0.7739779420282974	"{""alpha"": 0.4570563099801455, ""l1_ratio"": 0.6187255599871848}"	40

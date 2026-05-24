@@ -1,0 +1,20 @@
+name: uga-maf
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=1.26.4
+  - pandas=2.3.1
+  - scipy=1.15.3
+  - scikit-learn=1.7.2
+  - xgboost=1.6.2
+  - matplotlib=3.9.2
+  - pyyaml=6.0.2
+  - openpyxl=3.1.5
+  - statsmodels=0.14.4
+  - optuna=4.1.0
+  - setuptools<81
+  - tabulate=0.9.0
+  - pip
+  - pip:
+      - pysam==0.22.1

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Table 2. TCGA-BRCA HRD binary endpoint prediction: Standard SBS96+ID83 versus locked UGA SBS+ID.</title>
+<style>
+body { font-family: Arial, Helvetica, sans-serif; margin: 24px; color: #111; }
+table { border-collapse: collapse; width: 100%; font-size: 12px; }
+caption { caption-side: top; text-align: left; font-weight: 700; margin-bottom: 8px; }
+thead th { border-top: 1px solid #111; border-bottom: 1px solid #111; padding: 6px 8px; text-align: left; }
+tbody td { border-bottom: 0.5px solid #bbb; padding: 5px 8px; text-align: left; }
+tfoot td { border-top: 1px solid #111; padding: 6px 8px; font-size: 11px; line-height: 1.35; }
+</style>
+</head>
+<body>
+<table>
+<caption>Table 2. TCGA-BRCA HRD binary endpoint prediction: Standard SBS96+ID83 versus locked UGA SBS+ID.</caption>
+<thead><tr><th>Outcome</th><th>Standard AUROC</th><th>UGA AUROC</th><th>Delta AUROC</th><th>95% CI lower</th><th>95% CI upper</th><th>p value</th><th>q value</th><th>Standard AUPRC</th><th>UGA AUPRC</th></tr></thead>
+<tbody><tr><td>hrd_binary_24</td><td>0.846451</td><td>0.80388</td><td>-0.0425707</td><td>-0.0623499</td><td>-0.0217327</td><td>6.34996e-05</td><td>0.000211665</td><td>0.83334</td><td>0.804072</td></tr><tr><td>hrd_binary_33</td><td>0.873733</td><td>0.867791</td><td>-0.0059416</td><td>-0.0242364</td><td>0.0129278</td><td>0.527174</td><td>0.585748</td><td>0.775236</td><td>0.775105</td></tr><tr><td>hrd_binary_42</td><td>0.911726</td><td>0.89634</td><td>-0.0153859</td><td>-0.0345996</td><td>0.00198371</td><td>0.120555</td><td>0.172222</td><td>0.761165</td><td>0.770042</td></tr><tr><td>parpi7_binary</td><td>0.649752</td><td>0.651613</td><td>0.00186111</td><td>-0.0653357</td><td>0.0654353</td><td>0.953797</td><td>0.953797</td><td>0.226803</td><td>0.216621</td></tr></tbody>
+<tfoot><tr><td colspan="10">AUROC and AUPRC are computed from averaged repeated out-of-fold predictions. Positive delta values favor UGA. Confidence intervals are bootstrap intervals for the paired AUROC difference; q values use Benjamini-Hochberg correction across primary endpoint tests.</td></tr></tfoot>
+</table>
+</body>
+</html>

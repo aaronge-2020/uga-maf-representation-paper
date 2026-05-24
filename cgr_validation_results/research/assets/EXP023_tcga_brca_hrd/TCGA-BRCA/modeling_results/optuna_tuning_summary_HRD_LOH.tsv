@@ -1,0 +1,13 @@
+suite	subset	endpoint	task	model	fold	scope	study_name	best_value	best_params_json	n_trials
+main	all	HRD_LOH	regression	Baseline+Standard	0	outer	main__all__HRD_LOH__Baseline_Standard__fold_0	3.7949518735056045	"{""alpha"": 0.4570563099801455, ""l1_ratio"": 0.6187255599871848}"	40
+main	all	HRD_LOH	regression	Baseline+Standard	1	outer	main__all__HRD_LOH__Baseline_Standard__fold_1	3.762635773039823	"{""alpha"": 0.3219449302954963, ""l1_ratio"": 0.7784328161274696}"	40
+main	all	HRD_LOH	regression	Baseline+Standard	2	outer	main__all__HRD_LOH__Baseline_Standard__fold_2	3.904335828101752	"{""alpha"": 0.5196763431065089, ""l1_ratio"": 0.8849721347314388}"	40
+main	all	HRD_LOH	regression	Baseline+Standard	3	outer	main__all__HRD_LOH__Baseline_Standard__fold_3	3.6785187948964584	"{""alpha"": 0.15848861045641924, ""l1_ratio"": 0.9052596092973866}"	40
+main	all	HRD_LOH	regression	Baseline+Standard	4	outer	main__all__HRD_LOH__Baseline_Standard__fold_4	3.8511246133983765	"{""alpha"": 0.4570563099801455, ""l1_ratio"": 0.6187255599871848}"	40
+main	all	HRD_LOH	regression	Baseline+Standard	-1	full	main__all__HRD_LOH__Baseline_Standard__full	3.742414179143129	"{""alpha"": 0.4405632804390598, ""l1_ratio"": 0.670047140213732}"	40
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	0	outer	main__all__HRD_LOH__Baseline_Universal-BiCGR_d_10__fold_0	3.735098241059488	"{""alpha"": 0.4570563099801455, ""l1_ratio"": 0.6187255599871848}"	40
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	1	outer	main__all__HRD_LOH__Baseline_Universal-BiCGR_d_10__fold_1	3.706178035948625	"{""alpha"": 0.2879092535066308, ""l1_ratio"": 0.7291426982871712}"	40
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	2	outer	main__all__HRD_LOH__Baseline_Universal-BiCGR_d_10__fold_2	3.7034492277477384	"{""alpha"": 0.5078856659327249, ""l1_ratio"": 0.8191899510980392}"	40
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	3	outer	main__all__HRD_LOH__Baseline_Universal-BiCGR_d_10__fold_3	3.7398805281683445	"{""alpha"": 0.41233867612440245, ""l1_ratio"": 0.8666673814357739}"	40
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	4	outer	main__all__HRD_LOH__Baseline_Universal-BiCGR_d_10__fold_4	3.7137001890853067	"{""alpha"": 0.33860550288793867, ""l1_ratio"": 0.7562227233198718}"	40
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	-1	full	main__all__HRD_LOH__Baseline_Universal-BiCGR_d_10__full	3.715063499919816	"{""alpha"": 0.5559999354801751, ""l1_ratio"": 0.7833096802463191}"	40

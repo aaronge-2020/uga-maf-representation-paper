@@ -1,0 +1,25 @@
+{
+  "bootstrap": 200,
+  "completed_local": "2026-05-21T20:12:50",
+  "completed_utc": "2026-05-22T00:12:50+00:00",
+  "fdr_significant_positive": 6,
+  "folds": 5,
+  "max_delta": 0.2792936259955779,
+  "mean_delta": 0.03817779076066242,
+  "min_delta": -0.0309110396570202,
+  "model_id": "maf_only_best_gene_locus_multiscale_stack",
+  "n_endpoints": 16,
+  "package_versions": {
+    "numpy": "2.4.3",
+    "pandas": "2.3.2",
+    "scipy": "1.16.1",
+    "sklearn": "1.7.1",
+    "xgboost": "3.0.4"
+  },
+  "positive_endpoints": 11,
+  "python_version": "3.13.5",
+  "repeats": 1,
+  "runtime_seconds": 289.435,
+  "tree_method": "gpu_hist",
+  "xgb_estimators": 160
+}

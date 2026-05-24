@@ -1,0 +1,7 @@
+scenario,scenario_label,endpoint,cancer_type,feature_set,n,positive,negative,n_features,repeats,folds,n_estimators,oof_auroc,oof_balanced_accuracy
+within_cancer_type_LUAD,Within LUAD,kmt2c_mutated,LUAD,burden_only,515,67,448,3,1,5,160,0.6955623667377399,0.6428238272921108
+within_cancer_type_LUAD,Within LUAD,kmt2c_mutated,LUAD,locked_uga_sbs,515,67,448,73,1,5,160,0.7161847014925373,0.6475712953091685
+within_cancer_type_LUAD,Within LUAD,kmt2c_mutated,LUAD,locked_uga_sbs_id_pooled,515,67,448,73,1,5,160,0.7408715351812366,0.6203025053304905
+within_cancer_type_LUAD,Within LUAD,kmt2c_mutated,LUAD,locked_uga_sbs_id_separate,515,67,448,143,1,5,160,0.7021255330490405,0.6262993070362474
+within_cancer_type_LUAD,Within LUAD,kmt2c_mutated,LUAD,standard_sbs,515,67,448,99,1,5,160,0.7094549573560768,0.5717617270788913
+within_cancer_type_LUAD,Within LUAD,kmt2c_mutated,LUAD,standard_sbs_id,515,67,448,182,1,5,160,0.7028917910447761,0.5751099413646056

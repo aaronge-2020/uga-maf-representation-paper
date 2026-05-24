@@ -1,0 +1,2317 @@
+suite	subset	endpoint	task	model	patient_id	fold	true_value	pred_value
+main	all	HRD_LOH	regression	Baseline	TCGA-5L-AAT0	0	3.0	10.44990345320685
+main	all	HRD_LOH	regression	Baseline	TCGA-A1-A0SF	0	7.0	7.410461062401388
+main	all	HRD_LOH	regression	Baseline	TCGA-A1-A0SJ	0	7.0	5.83760186155849
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0CM	0	7.0	7.410461062401388
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0CW	0	12.0	7.506351954778752
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0CX	0	5.0	11.768410087474422
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0D1	0	12.0	7.410461062401388
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0EU	0	2.0	7.043108053227377
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0T0	0	16.0	10.464632810837745
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0T5	0	1.0	3.6847814626767645
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0T6	0	2.0	4.714990078300011
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0YJ	0	3.0	8.341017412531498
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0YL	0	3.0	6.255064216835449
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0YM	0	3.0	8.473037084857218
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0YT	0	13.0	7.6437263331447145
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A1G1	0	3.0	5.83760186155849
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A25C	0	5.0	6.01289943760413
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A25D	0	7.0	7.36112345245947
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A25E	0	13.0	7.5529735761395695
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A3KD	0	4.0	3.4637023403567104
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A3Y0	0	21.0	10.435088209623451
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A0CE	0	9.0	9.147065271647731
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A0CH	0	1.0	5.549655536052757
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A26J	0	6.0	5.337798954078696
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A5ZW	0	2.0	5.224855601212202
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A06U	0	21.0	7.816050465813338
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A07J	0	4.0	6.176879368764501
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A07O	0	7.0	6.867810477181738
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A08R	0	21.0	11.359098384957292
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A090	0	4.0	6.3309148368362225
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A09C	0	9.0	5.926762135229972
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A09V	0	1.0	5.445934723532256
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A3OD	0	8.0	5.649307801545895
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A62Y	0	2.0	7.774052698459623
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A03X	0	4.0	6.01289943760413
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A03Y	0	3.0	6.5457588466390835
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A049	0	10.0	6.096212051443134
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0AJ	0	7.0	8.440669678024634
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0AT	0	20.0	9.535205959315114
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0FS	0	5.0	8.129160830557435
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0FW	0	5.0	9.290922958138951
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0FY	0	12.0	7.259477615207971
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0XN	0	7.0	9.944957209809417
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0XR	0	4.0	5.745198693923259
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0XT	0	14.0	4.569761575980731
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A03R	0	5.0	7.098952214934189
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0J3	0	10.0	8.628963738037228
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0J7	0	2.0	4.569761575980731
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0JD	0	17.0	9.513943851341194
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0JJ	0	2.0	4.076448600702998
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A128	0	2.0	14.891712454580322
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A12F	0	10.0	6.3309148368362225
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A1KT	0	9.0	7.043108053227377
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A0TP	0	19.0	7.598755122413982
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A0TX	0	5.0	12.058867092112981
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A1AO	0	0.0	8.440669678024634
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A1AX	0	2.0	5.224855601212202
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A24P	0	2.0	4.714990078300011
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A24W	0	3.0	4.076448600702998
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A24Z	0	8.0	6.743844082836376
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A256	0	20.0	10.522710929798283
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A2LH	0	0.0	7.6437263331447145
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A2LN	0	2.0	6.6795164171691415
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0RO	0	7.0	6.01289943760413
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0RU	0	6.0	7.043108053227377
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0WS	0	6.0	4.852364456665972
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0WY	0	8.0	5.337798954078696
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0X1	0	24.0	8.237296600010994
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A1KN	0	12.0	7.6437263331447145
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A401	0	9.0	5.337798954078696
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0B5	0	3.0	7.687915396085463
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0BF	0	7.0	6.01289943760413
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0BP	0	22.0	10.10217067338699
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0BR	0	14.0	7.098952214934189
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0C1	0	3.0	6.6135177175214634
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0C7	0	11.0	7.207087984387748
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0DE	0	7.0	5.745198693923259
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0DT	0	1.0	3.4637023403567104
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0E1	0	2.0	6.096212051443134
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0EE	0	6.0	9.535205959315114
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0HB	0	8.0	6.176879368764501
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0HI	0	2.0	5.549655536052757
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0HK	0	4.0	9.290922958138951
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0HP	0	2.0	11.777186631868322
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0W3	0	3.0	4.714990078300011
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0W4	0	2.0	5.926762135229972
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18H	0	8.0	7.153595333330675
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18Q	0	11.0	8.56773650847855
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1EO	0	9.0	6.3309148368362225
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1EV	0	8.0	8.941635692448834
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1F0	0	11.0	8.054425822902
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1FC	0	6.0	8.99457108786694
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1FE	0	6.0	-2.6288869355129583
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1FJ	0	1.0	5.83760186155849
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A2L8	0	1.0	13.109902111846322
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A8FY	0	3.0	6.743844082836376
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A12M	0	5.0	7.687915396085463
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A12N	0	3.0	5.106657216326246
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A137	0	11.0	7.153595333330675
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A1HL	0	4.0	5.549655536052757
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A26V	0	9.0	8.504997343691867
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A275	0	5.0	9.597945124101797
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A278	0	6.0	6.806583247623058
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JN	0	2.0	10.435088209623451
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JS	0	2.0	5.224855601212202
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JT	0	4.0	6.176879368764501
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XF	0	12.0	6.6795164171691415
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XY	0	8.0	7.207087984387748
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XZ	0	6.0	8.407884615717172
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A27L	0	3.0	6.9275969314958665
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A27T	0	3.0	5.445934723532256
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A14Z	0	12.0	7.977425776473262
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A153	0	2.0	5.224855601212202
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A159	0	9.0	10.201822938880127
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15H	0	5.0	6.01289943760413
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15K	0	2.0	6.806583247623058
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15T	0	6.0	6.01289943760413
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1IF	0	2.0	3.888154540690403
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1L8	0	4.0	5.926762135229972
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A570	0	2.0	4.714990078300011
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A576	0	12.0	7.098952214934189
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A9RU	0	8.0	8.237296600010994
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1NC	0	20.0	8.129160830557435
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1ND	0	3.0	8.440669678024634
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1NE	0	0.0	7.410461062401388
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1R6	0	2.0	5.649307801545895
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1RB	0	9.0	6.255064216835449
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1RG	0	12.0	6.404566575630365
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A226	0	8.0	7.687915396085463
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A22G	0	20.0	8.860105475789682
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A6HE	0	5.0	4.714990078300011
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1J3	0	4.0	5.337798954078696
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1J6	0	13.0	6.743844082836376
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1OV	0	12.0	9.171614323256879
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1OZ	0	12.0	7.598755122413982
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1P1	0	0.0	-0.8677336746574662
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1P8	0	12.0	6.3309148368362225
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A2FV	0	3.0	4.714990078300011
+main	all	HRD_LOH	regression	Baseline	TCGA-GM-A2DA	0	4.0	6.01289943760413
+main	all	HRD_LOH	regression	Baseline	TCGA-GM-A2DB	0	7.0	9.382493483762573
+main	all	HRD_LOH	regression	Baseline	TCGA-GM-A2DF	0	13.0	6.9275969314958665
+main	all	HRD_LOH	regression	Baseline	TCGA-LL-A6FR	0	15.0	6.255064216835449
+main	all	HRD_LOH	regression	Baseline	TCGA-LL-A7T0	0	9.0	7.207087984387748
+main	all	HRD_LOH	regression	Baseline	TCGA-LL-A9Q3	0	5.0	6.986008862067694
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A5S0	0	11.0	5.745198693923259
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A66I	0	11.0	6.9275969314958665
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A66J	0	4.0	7.310808796908249
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A66K	0	3.0	5.549655536052757
+main	all	HRD_LOH	regression	Baseline	TCGA-PE-A5DE	0	5.0	12.887880029012315
+main	all	HRD_LOH	regression	Baseline	TCGA-S3-A6ZF	0	9.0	5.926762135229972
+main	all	HRD_LOH	regression	Baseline	TCGA-S3-AA0Z	0	12.0	7.36112345245947
+main	all	HRD_LOH	regression	Baseline	TCGA-S3-AA14	0	7.0	3.888154540690403
+main	all	HRD_LOH	regression	Baseline	TCGA-WT-AB41	0	10.0	6.9275969314958665
+main	all	HRD_LOH	regression	Baseline	TCGA-WT-AB44	0	6.0	5.926762135229972
+main	all	HRD_LOH	regression	Baseline	TCGA-XX-A89A	0	7.0	10.493837811413222
+main	all	HRD_LOH	regression	Baseline	TCGA-A1-A0SE	1	6.0	6.053469932631586
+main	all	HRD_LOH	regression	Baseline	TCGA-A1-A0SK	1	6.0	7.95985885647335
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A04P	1	22.0	9.486306959572184
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A04T	1	23.0	8.802230012364278
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0CP	1	2.0	6.41559118250162
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0CU	1	4.0	6.668803663734306
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0CV	1	1.0	5.318655054300489
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0EW	1	3.0	4.552653854879715
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0EX	1	4.0	5.71558201926231
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0EY	1	13.0	10.676872074449776
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0SU	1	5.0	5.622648061087135
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0T2	1	11.0	5.8048705549799635
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0T7	1	9.0	5.207581033308395
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0YF	1	5.0	5.8048705549799635
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0YG	1	4.0	7.67038172780342
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A1FX	1	6.0	5.890788896391112
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A1FZ	1	1.0	5.318655054300489
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A1G4	1	3.0	5.890788896391112
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A259	1	3.0	5.207581033308395
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A4S1	1	8.0	7.925624138585026
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A4S3	1	22.0	7.925624138585026
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A0DA	1	9.0	9.68584182463919
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A0DB	1	1.0	8.276558310227058
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A13E	1	10.0	9.004225409253772
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A6VX	1	14.0	9.361287621845724
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A06R	1	10.0	7.63146512479292
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A06X	1	12.0	10.56064161673841
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A076	1	4.0	8.155112672943963
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A08L	1	23.0	10.676872074449776
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A08O	1	9.0	5.71558201926231
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A08X	1	9.0	6.053469932631586
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A08Z	1	4.0	6.41559118250162
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A092	1	4.0	8.33493499177179
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A093	1	2.0	9.067761602868842
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A099	1	5.0	6.130649047041051
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A09Z	1	3.0	14.505745742534344
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A0A7	1	9.0	10.767744859248953
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A0AB	1	6.0	5.622648061087135
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A0AD	1	4.0	6.347628946423691
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A23E	1	3.0	5.090808471572972
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A23H	1	4.0	17.797045094686453
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A3YI	1	0.0	4.395587040567833
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A4ZE	1	7.0	7.152713781089402
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A5EH	1	12.0	9.794640417317638
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A6IV	1	3.0	4.9677208826584565
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A04D	1	12.0	8.754799841849561
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0FT	1	10.0	8.916654388395608
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0FV	1	9.0	8.606275498492542
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0FX	1	12.0	8.580551317013708
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0XW	1	11.0	11.554858103371803
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0J8	1	1.0	5.71558201926231
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A12A	1	2.0	4.6995800473544795
+main	all	HRD_LOH	regression	Baseline	TCGA-AQ-A04J	1	17.0	7.81971826019448
+main	all	HRD_LOH	regression	Baseline	TCGA-AQ-A1H2	1	9.0	6.053469932631586
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A0TQ	1	0.0	6.608091643460307
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A0TV	1	11.0	7.81971826019448
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A0TW	1	12.0	7.426230217092436
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A24U	1	7.0	6.785576225469731
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A24V	1	7.0	5.424560932691034
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A251	1	18.0	9.969847294446438
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A5QN	1	7.0	6.347628946423691
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0I2	1	9.0	7.510557110806287
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0I9	1	11.0	8.05957841084442
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0IE	1	8.0	6.2052972375230535
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0RN	1	1.0	6.277575239515815
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0RS	1	15.0	9.809767156281936
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0RV	1	5.0	7.103753488972365
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0WW	1	11.0	6.481583218683085
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0WZ	1	2.0	8.091870666295547
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0X0	1	2.0	4.9677208826584565
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A1KC	1	3.0	5.890788896391112
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A40C	1	4.0	6.347628946423691
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0B3	1	12.0	6.668803663734306
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0B7	1	8.0	6.277575239515815
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0BC	1	4.0	6.41559118250162
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0BJ	1	1.0	5.622648061087135
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0BO	1	1.0	5.71558201926231
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0BT	1	5.0	6.481583218683085
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0DQ	1	8.0	6.130649047041051
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0DZ	1	9.0	11.342077219944315
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0E0	1	7.0	6.608091643460307
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0E2	1	9.0	7.103753488972365
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18J	1	9.0	8.305933760873955
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18T	1	17.0	8.554533138525578
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1ET	1	1.0	5.71558201926231
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1FG	1	4.0	4.9677208826584565
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1FM	1	5.0	7.382865747141299
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A201	1	3.0	4.8375959903402865
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A208	1	7.0	7.81971826019448
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A209	1	7.0	8.754799841849561
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A28Q	1	4.0	5.207581033308395
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A6R9	1	0.0	3.3897256904971202
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A8G0	1	1.0	4.0446528689258
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A12W	1	8.0	7.67038172780342
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A12Z	1	11.0	7.338659196234277
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A130	1	10.0	7.053717060773707
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A133	1	0.0	5.890788896391112
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A1HF	1	9.0	6.277575239515815
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A1HM	1	17.0	11.7300649805006
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A26X	1	8.0	7.708644239202386
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A26Y	1	9.0	13.421912187700114
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A8HQ	1	9.0	10.94844405710751
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A13Z	1	3.0	8.419785775912134
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A140	1	5.0	8.960860939302634
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A141	1	1.0	4.9677208826584565
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JA	1	6.0	13.967846618332047
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JG	1	11.0	9.451282178917547
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JH	1	0.0	5.090808471572972
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JM	1	15.0	6.8966502464618245
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JP	1	19.0	9.129572617051835
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1X7	1	1.0	5.318655054300489
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1X9	1	12.0	8.580551317013708
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XA	1	5.0	5.318655054300489
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XJ	1	9.0	8.447380851213518
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XK	1	18.0	14.198465275482166
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XQ	1	15.0	13.68936741365144
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XV	1	0.0	6.130649047041051
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XW	1	6.0	8.730708973250735
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1Y2	1	5.0	4.8375959903402865
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1Y3	1	10.0	7.382865747141299
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A27R	1	13.0	5.8048705549799635
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A73U	1	5.0	9.451282178917547
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A73W	1	5.0	6.841790583750799
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A158	1	15.0	8.419785775912134
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15J	1	2.0	5.424560932691034
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15R	1	8.0	6.668803663734306
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1BC	1	4.0	6.277575239515815
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1IL	1	4.0	5.8048705549799635
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1L6	1	3.0	4.8375959903402865
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1LA	1	17.0	8.554533138525578
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1LH	1	17.0	10.184270690653879
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1N5	1	5.0	6.2052972375230535
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1N9	1	9.0	7.67038172780342
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1NA	1	11.0	8.501587360616872
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1NH	1	2.0	5.973582232729168
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1RA	1	1.0	5.424560932691034
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1RE	1	12.0	7.247584418103857
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A227	1	1.0	4.226875362818628
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1IW	1	10.0	8.47464543862316
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1IZ	1	2.0	11.554858103371803
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1P4	1	20.0	7.81971826019448
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A2FS	1	9.0	5.973582232729168
+main	all	HRD_LOH	regression	Baseline	TCGA-GM-A2DC	1	8.0	5.090808471572972
+main	all	HRD_LOH	regression	Baseline	TCGA-GM-A2DM	1	1.0	5.207581033308395
+main	all	HRD_LOH	regression	Baseline	TCGA-GM-A3NW	1	3.0	8.091870666295547
+main	all	HRD_LOH	regression	Baseline	TCGA-HN-A2OB	1	1.0	4.226875362818628
+main	all	HRD_LOH	regression	Baseline	TCGA-LL-A5YN	1	12.0	5.424560932691034
+main	all	HRD_LOH	regression	Baseline	TCGA-LL-A6FQ	1	4.0	7.152713781089402
+main	all	HRD_LOH	regression	Baseline	TCGA-LL-A8F5	1	23.0	9.571581566824289
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A5DA	1	6.0	8.155112672943963
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A5RU	1	0.0	5.8048705549799635
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A5RW	1	18.0	10.025376043374854
+main	all	HRD_LOH	regression	Baseline	TCGA-PE-A5DD	1	7.0	7.338659196234277
+main	all	HRD_LOH	regression	Baseline	TCGA-PL-A8LX	1	3.0	6.2052972375230535
+main	all	HRD_LOH	regression	Baseline	TCGA-S3-AA10	1	16.0	9.129572617051835
+main	all	HRD_LOH	regression	Baseline	TCGA-3C-AALI	2	8.0	13.867800739659062
+main	all	HRD_LOH	regression	Baseline	TCGA-A1-A0SI	2	4.0	11.412987658363175
+main	all	HRD_LOH	regression	Baseline	TCGA-A1-A0SO	2	26.0	12.05332532013885
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A04R	2	11.0	8.958119992425543
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A04U	2	14.0	7.606368103190762
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A04Y	2	5.0	6.500152194249223
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0CR	2	1.0	9.915046501293101
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0ES	2	0.0	3.4144511232877384
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0SW	2	6.0	7.656200230615487
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0YC	2	1.0	5.13832112024761
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0YE	2	10.0	6.261251448800548
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A1FV	2	11.0	6.500152194249223
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A25A	2	2.0	12.043821063387028
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A0D9	2	4.0	5.13832112024761
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A13F	2	3.0	6.575254095661863
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A26E	2	2.0	8.531972755572781
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A5ZV	2	13.0	10.938964981659502
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A06Q	2	9.0	11.59933012208364
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A075	2	13.0	8.60213315196491
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A079	2	6.0	8.73714636556911
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A07B	2	5.0	8.231266601088906
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A07I	2	9.0	6.921968087833577
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A07Z	2	4.0	4.871504505114595
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A081	2	12.0	9.601043854431785
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A082	2	4.0	5.13832112024761
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A083	2	2.0	5.998816003421478
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A094	2	17.0	11.106513797062696
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A095	2	2.0	10.48442249352225
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A097	2	11.0	9.217713787656068
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A09D	2	7.0	7.228736154419933
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A09Q	2	12.0	10.46727811806841
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A09T	2	2.0	4.574983502503231
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A2B8	2	4.0	9.217713787656068
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A2FO	2	6.0	5.380846531373999
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A2QH	2	9.0	5.603136997573221
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A5XS	2	7.0	13.551996172353832
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A6IX	2	12.0	7.342197583754172
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A6NO	2	2.0	5.8083106075695525
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A8OP	2	6.0	10.307805527446073
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A8OR	2	3.0	5.8083106075695525
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A046	2	2.0	20.19681289873999
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0AS	2	5.0	6.575254095661863
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0XU	2	22.0	9.64822988616009
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0XV	2	3.0	6.261251448800548
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A03T	2	11.0	8.958119992425543
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0J9	2	2.0	9.829040939710342
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0JB	2	19.0	9.0180313046171
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0JM	2	8.0	7.048941665684774
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A12D	2	9.0	7.8003402631141565
+main	all	HRD_LOH	regression	Baseline	TCGA-AQ-A04H	2	4.0	8.150474321431995
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A0TR	2	6.0	6.261251448800548
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A0TZ	2	10.0	7.7051179552889115
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A1AI	2	14.0	8.423143718707795
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A1AJ	2	5.0	6.575254095661863
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A1AN	2	8.0	5.603136997573221
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A1AQ	2	8.0	6.176611286067238
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A1AR	2	10.0	7.503819260502789
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A1AW	2	6.0	6.64829814965833
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A24N	2	2.0	6.788643247430381
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A24Q	2	16.0	10.760175686625166
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A24S	2	7.0	7.048941665684774
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A254	2	7.0	6.500152194249223
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A2LQ	2	0.0	2.56547220270868
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A5QM	2	8.0	5.707697112476756
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A5QP	2	4.0	5.008249411663918
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0I5	2	1.0	5.380846531373999
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0IB	2	6.0	8.270762748595098
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0RE	2	8.0	10.450022775010847
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0RG	2	6.0	7.846705626467411
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0RH	2	7.0	6.3432868812872965
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0RI	2	3.0	4.241305923571607
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0RL	2	7.0	7.753154231385854
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0X4	2	0.0	5.13832112024761
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A2IU	2	3.0	7.170141681571165
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0AV	2	19.0	8.191176504333232
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0AZ	2	11.0	7.753154231385854
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0B9	2	12.0	6.719394128160529
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0BA	2	12.0	6.788643247430381
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0BM	2	3.0	5.380846531373999
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0DG	2	2.0	6.261251448800548
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0DI	2	10.0	6.921968087833577
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0H0	2	9.0	5.262340746333672
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0HA	2	4.0	12.164809488242291
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0HQ	2	1.0	6.422873125549164
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18F	2	3.0	7.342197583754172
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18G	2	2.0	16.167505146392205
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18K	2	10.0	7.503819260502789
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18P	2	4.0	12.45749667218787
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1EU	2	5.0	4.574983502503231
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1EW	2	6.0	3.859807489430822
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1EY	2	14.0	7.228736154419933
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1F2	2	11.0	7.503819260502789
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A202	2	4.0	5.707697112476756
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A5IZ	2	18.0	8.231266601088906
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A6R8	2	6.0	5.998816003421478
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A132	2	15.0	8.150474321431995
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A26Z	2	6.0	6.788643247430381
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A27A	2	14.0	5.707697112476756
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A145	2	2.0	6.64829814965833
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1J8	2	1.0	14.719834680359119
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1J9	2	10.0	11.199598506594658
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JL	2	8.0	9.553007578334844
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XB	2	2.0	6.261251448800548
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XG	2	3.0	4.871504505114595
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XL	2	7.0	8.802172545265513
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XM	2	6.0	7.7051179552889115
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XO	2	3.0	4.727364472615927
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XR	2	5.0	5.380846531373999
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XT	2	12.0	6.422873125549164
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A27M	2	15.0	7.937085169663476
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A27N	2	6.0	7.397167390925224
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A14Y	2	4.0	6.64829814965833
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15C	2	2.0	6.575254095661863
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15D	2	2.0	6.089195546617542
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15E	2	8.0	6.3432868812872965
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15G	2	1.0	7.981151316664407
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15M	2	11.0	8.865650334504403
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1B4	2	1.0	6.422873125549164
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1IE	2	9.0	5.008249411663918
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1IJ	2	2.0	4.057374985293984
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1IK	2	0.0	4.241305923571607
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1IU	2	2.0	5.8083106075695525
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1L9	2	2.0	5.8083106075695525
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1NG	2	3.0	4.871504505114595
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1R3	2	3.0	5.4943079607082375
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1RC	2	2.0	7.397167390925224
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A228	2	12.0	6.986210743293544
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A22B	2	8.0	8.067156878247168
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A22D	2	5.0	5.008249411663918
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A22E	2	16.0	9.762665531180403
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A24A	2	2.0	5.13832112024761
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1IY	2	1.0	5.603136997573221
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1OX	2	4.0	4.241305923571607
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1P0	2	5.0	4.871504505114595
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1P3	2	3.0	5.262340746333672
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1PB	2	29.0	10.271033341753732
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A6SD	2	17.0	7.170141681571165
+main	all	HRD_LOH	regression	Baseline	TCGA-LD-A74U	2	3.0	11.484401067501611
+main	all	HRD_LOH	regression	Baseline	TCGA-LD-A7W5	2	13.0	6.64829814965833
+main	all	HRD_LOH	regression	Baseline	TCGA-LD-A7W6	2	4.0	5.90526460833992
+main	all	HRD_LOH	regression	Baseline	TCGA-LL-A5YL	2	11.0	8.150474321431995
+main	all	HRD_LOH	regression	Baseline	TCGA-LL-A73Y	2	8.0	9.872390532159107
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A5D8	2	6.0	5.4943079607082375
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A5RV	2	2.0	3.160359788617983
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A5RY	2	0.0	2.56547220270868
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A5RZ	2	4.0	9.428987952248782
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A66L	2	2.0	8.270762748595098
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A66O	2	4.0	5.262340746333672
+main	all	HRD_LOH	regression	Baseline	TCGA-S3-A6ZG	2	4.0	6.64829814965833
+main	all	HRD_LOH	regression	Baseline	TCGA-S3-AA12	2	6.0	6.261251448800548
+main	all	HRD_LOH	regression	Baseline	TCGA-S3-AA17	2	16.0	9.047489518107998
+main	all	HRD_LOH	regression	Baseline	TCGA-UU-A93S	2	13.0	10.233746843106136
+main	all	HRD_LOH	regression	Baseline	TCGA-W8-A86G	2	3.0	4.413361825754613
+main	all	HRD_LOH	regression	Baseline	TCGA-Z7-A8R6	2	5.0	8.270762748595098
+main	all	HRD_LOH	regression	Baseline	TCGA-5T-A9QA	3	6.0	7.0523056351817175
+main	all	HRD_LOH	regression	Baseline	TCGA-A1-A0SD	3	9.0	5.971042261993279
+main	all	HRD_LOH	regression	Baseline	TCGA-A1-A0SG	3	3.0	5.971042261993279
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A04Q	3	4.0	7.0523056351817175
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0CS	3	1.0	6.457059630264929
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0EM	3	2.0	5.80963154059007
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0EN	3	2.0	6.121312048559399
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0SV	3	15.0	6.393923383213015
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0SY	3	3.0	9.397264832105193
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0T1	3	8.0	5.724206944287693
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0T4	3	7.0	6.192729856964194
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A26I	3	10.0	6.636178156618924
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A6VW	3	12.0	7.805356747320802
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A06Y	3	2.0	6.121312048559399
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A06Z	3	10.0	8.202461851592508
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A07L	3	20.0	8.5620134736408
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A07U	3	9.0	7.805356747320802
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A07W	3	5.0	9.348317873098585
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A08G	3	6.0	6.854164734536636
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A096	3	2.0	5.971042261993279
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A09A	3	11.0	10.328258418727511
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A09B	3	1.0	6.90541528763607
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A09G	3	4.0	10.978390478969068
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A09M	3	12.0	9.315064585779885
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A09N	3	9.0	8.087801272544217
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A09X	3	4.0	7.594413176386474
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A0A6	3	5.0	6.192729856964194
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A2FG	3	3.0	6.393923383213015
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A3QQ	3	4.0	5.80963154059007
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A5XU	3	6.0	7.594413176386474
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A6IW	3	4.0	9.582742627244603
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A7VB	3	7.0	5.542597796722635
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A041	3	4.0	6.192729856964194
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A04C	3	8.0	8.14588599507801
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0AR	3	20.0	8.951212768826878
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0FN	3	2.0	6.5184171528311055
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0XS	3	3.0	5.724206944287693
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A03L	3	10.0	5.80963154059007
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A03O	3	13.0	8.202461851592508
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A03P	3	4.0	6.854164734536636
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A03V	3	7.0	7.319339379049152
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0J4	3	10.0	8.99045793891144
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0J6	3	20.0	8.654710357205913
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0JA	3	16.0	5.724206944287693
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A124	3	26.0	9.315064585779885
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A1KR	3	8.0	7.997662284765444
+main	all	HRD_LOH	regression	Baseline	TCGA-AQ-A1H3	3	3.0	5.445779723637065
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A0TS	3	13.0	8.14588599507801
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A0TT	3	9.0	7.519300629162283
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A0TY	3	11.0	7.771587884662557
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A1AU	3	6.0	5.344456896077554
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A1AY	3	11.0	7.4807501004523616
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A24L	3	17.0	6.801679110232155
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A24O	3	2.0	5.238189576016044
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A24X	3	1.0	5.724206944287693
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A252	3	1.0	3.499001475912941
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A2LK	3	3.0	6.747897414475126
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A2LO	3	8.0	4.6116042101003165
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0IJ	3	21.0	9.507370123224526
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0IN	3	5.0	6.192729856964194
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0RP	3	1.0	5.635294680287749
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0AW	3	8.0	9.76731309139329
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0AY	3	4.0	7.145002518746831
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0BL	3	1.0	7.401539625374461
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0BZ	3	5.0	10.557738680371532
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0DH	3	9.0	6.636178156618924
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0DL	3	6.0	7.277045855756372
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0DO	3	1.0	5.344456896077554
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0DS	3	3.0	6.801679110232155
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0E7	3	2.0	6.5184171528311055
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0EA	3	1.0	5.891831786915379
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0HU	3	11.0	6.393923383213015
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0HX	3	13.0	7.805356747320802
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0HY	3	11.0	7.4807501004523616
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18I	3	5.0	5.238189576016044
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18M	3	2.0	4.461334423534197
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18N	3	1.0	6.578093434085137
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18S	3	4.0	6.121312048559399
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18U	3	10.0	9.491977493705665
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1FN	3	13.0	8.951212768826878
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1FU	3	4.0	7.903631221672097
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A203	3	12.0	8.028124991290186
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A204	3	8.0	6.5184171528311055
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A42V	3	4.0	6.578093434085137
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A8FZ	3	12.0	7.805356747320802
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A12Y	3	6.0	6.747897414475126
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A135	3	12.0	7.702437695423276
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A1HE	3	5.0	7.099147182703226
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A26W	3	13.0	7.401539625374461
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A27B	3	17.0	9.522654733400906
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A143	3	7.0	6.955487562096146
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JC	3	13.0	8.53820943329804
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JJ	3	3.0	8.230208061358493
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JU	3	2.0	4.752172207744394
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1X5	3	10.0	7.233914782746775
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1Y0	3	9.0	7.805356747320802
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A27E	3	0.0	3.7284817375569617
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A27F	3	29.0	7.594413176386474
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A27H	3	19.0	9.331754690527559
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A27P	3	1.0	5.724206944287693
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A27W	3	6.0	6.393923383213015
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A73X	3	1.0	6.636178156618924
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A150	3	12.0	8.17435761634503
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A152	3	6.0	9.315064585779885
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A154	3	1.0	7.0044345211027546
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15I	3	2.0	5.971042261993279
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15O	3	7.0	5.971042261993279
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15P	3	6.0	5.445779723637065
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1AZ	3	12.0	7.360827262232235
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1B5	3	5.0	6.578093434085137
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1BD	3	1.0	6.636178156618924
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1IG	3	4.0	6.747897414475126
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1IO	3	11.0	3.499001475912941
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1LG	3	4.0	9.76731309139329
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1LL	3	11.0	6.747897414475126
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A573	3	15.0	7.145002518746831
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1N8	3	6.0	5.724206944287693
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1NI	3	5.0	5.80963154059007
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1R0	3	2.0	6.261880046203475
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1R5	3	4.0	6.955487562096146
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1R7	3	14.0	7.099147182703226
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1RD	3	1.0	5.238189576016044
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1RF	3	11.0	9.507370123224526
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A22H	3	3.0	5.008709314372023
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A243	3	12.0	7.997662284765444
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A244	3	14.0	8.53820943329804
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A295	3	5.0	8.284662097917815
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A2JS	3	14.0	7.871363253534072
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1J1	3	6.0	5.126470318159844
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1OY	3	9.0	7.631019887018481
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1PA	3	9.0	6.5184171528311055
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1PG	3	0.0	3.7284817375569617
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1PH	3	9.0	6.90541528763607
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A6SC	3	5.0	5.542597796722635
+main	all	HRD_LOH	regression	Baseline	TCGA-GM-A2DL	3	6.0	6.801679110232155
+main	all	HRD_LOH	regression	Baseline	TCGA-GM-A2DN	3	1.0	5.445779723637065
+main	all	HRD_LOH	regression	Baseline	TCGA-GM-A5PX	3	5.0	5.891831786915379
+main	all	HRD_LOH	regression	Baseline	TCGA-HN-A2NL	3	21.0	8.117037255290132
+main	all	HRD_LOH	regression	Baseline	TCGA-LD-A66U	3	4.0	5.542597796722635
+main	all	HRD_LOH	regression	Baseline	TCGA-LL-A50Y	3	3.0	6.457059630264929
+main	all	HRD_LOH	regression	Baseline	TCGA-LL-A5YP	3	19.0	8.087801272544217
+main	all	HRD_LOH	regression	Baseline	TCGA-LL-A73Z	3	7.0	6.192729856964194
+main	all	HRD_LOH	regression	Baseline	TCGA-OK-A5Q2	3	3.0	5.80963154059007
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A5D7	3	19.0	7.319339379049152
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A5RX	3	2.0	5.344456896077554
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A66H	3	0.0	4.884215544753934
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A66N	3	1.0	6.457059630264929
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A66P	3	5.0	8.230208061358493
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A6VO	3	7.0	5.344456896077554
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A6VQ	3	1.0	7.360827262232235
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A6VR	3	4.0	3.499001475912941
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A97C	3	3.0	7.319339379049152
+main	all	HRD_LOH	regression	Baseline	TCGA-PL-A8LY	3	0.0	0.22304869236714886
+main	all	HRD_LOH	regression	Baseline	TCGA-S3-A6ZH	3	8.0	5.80963154059007
+main	all	HRD_LOH	regression	Baseline	TCGA-3C-AALJ	4	6.0	5.8857116889388434
+main	all	HRD_LOH	regression	Baseline	TCGA-A1-A0SB	4	0.0	4.203923649650806
+main	all	HRD_LOH	regression	Baseline	TCGA-A1-A0SQ	4	2.0	5.798870374155799
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A04N	4	2.0	6.9565226387824906
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A04V	4	4.0	5.798870374155799
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A04W	4	6.0	9.800613472954879
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0CT	4	8.0	8.89851610993691
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0D0	4	10.0	8.356113898276194
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0D3	4	1.0	5.708622660926925
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0D4	4	12.0	6.482852588908954
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0EV	4	6.0	7.761129532418879
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0SX	4	12.0	6.128148524943652
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0T3	4	12.0	6.731854398639255
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0YD	4	2.0	7.761129532418879
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0YH	4	7.0	8.441876187609255
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A0YK	4	3.0	11.933760765461148
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A1G0	4	2.0	5.077137515474977
+main	all	HRD_LOH	regression	Baseline	TCGA-A2-A3XU	4	3.0	5.077137515474977
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A0CG	4	3.0	7.303569385431918
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A0CJ	4	12.0	7.393817098660792
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A13D	4	11.0	10.411483924509099
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A26H	4	6.0	9.337137699562618
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A4SE	4	18.0	3.600217775955202
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A56D	4	14.0	9.502221983632516
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A5ZX	4	2.0	6.050140317859719
+main	all	HRD_LOH	regression	Baseline	TCGA-A7-A6VY	4	28.0	8.75613946143368
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A06P	4	3.0	6.3474593197565055
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A07P	4	7.0	7.303569385431918
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A08B	4	8.0	6.902378452925681
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A08H	4	0.0	8.356113898276194
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A08T	4	3.0	7.061132549427108
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A091	4	4.0	4.952727664455385
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A09W	4	12.0	8.356113898276194
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A0A1	4	6.0	6.9565226387824906
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A0A2	4	3.0	6.731854398639255
+main	all	HRD_LOH	regression	Baseline	TCGA-A8-A0A4	4	11.0	5.195164500460194
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A23C	4	8.0	9.200014988968421
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A2FB	4	3.0	3.8195285707680555
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A7VC	4	3.0	4.821204912161593
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A8OQ	4	17.0	8.52455652163831
+main	all	HRD_LOH	regression	Baseline	TCGA-AC-A8OS	4	3.0	7.061132549427108
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0AL	4	17.0	8.267030964484963
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0AM	4	10.0	8.497325177430671
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0FJ	4	7.0	8.804583813486905
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0FK	4	3.0	7.161192736928689
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0FZ	4	10.0	8.077799313413946
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0XO	4	5.0	6.2035986197797595
+main	all	HRD_LOH	regression	Baseline	TCGA-AN-A0XP	4	2.0	5.9693944284422225
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0J2	4	22.0	7.907275259127522
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0JE	4	12.0	7.161192736928689
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0JF	4	1.0	5.3074317284206876
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0JG	4	7.0	4.5332018004386585
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A0JI	4	8.0	4.681706339993463
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A12H	4	0.0	5.3074317284206876
+main	all	HRD_LOH	regression	Baseline	TCGA-AO-A1KP	4	3.0	5.077137515474977
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A0U0	4	10.0	6.416151636666585
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A1AH	4	5.0	8.70665321589201
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A1AK	4	5.0	7.835362477409137
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A1AP	4	7.0	6.128148524943652
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A24R	4	5.0	5.077137515474977
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A250	4	7.0	9.032594133709209
+main	all	HRD_LOH	regression	Baseline	TCGA-AR-A5QQ	4	4.0	7.798545344284752
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0IC	4	2.0	6.416151636666585
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0IH	4	1.0	6.547674388960378
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0WT	4	6.0	5.195164500460194
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A0X5	4	3.0	6.610720023944896
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A1KF	4	4.0	7.4806584134438365
+main	all	HRD_LOH	regression	Baseline	TCGA-B6-A409	4	13.0	6.547674388960378
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0AU	4	8.0	5.195164500460194
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0C3	4	5.0	4.019743639971929
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0DK	4	5.0	8.578071066848167
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0DV	4	1.0	3.600217775955202
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0DX	4	9.0	8.044690515870473
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0E9	4	4.0	5.516759766882023
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0EB	4	2.0	6.902378452925681
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0GY	4	2.0	6.276653064498456
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0H6	4	2.0	4.952727664455385
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0H7	4	9.0	7.835362477409137
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0HO	4	1.0	5.077137515474977
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0HW	4	7.0	6.2035986197797595
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A0WA	4	14.0	8.852029241395975
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18L	4	6.0	7.349135661150043
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A18R	4	7.0	5.708622660926925
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1EX	4	0.0	5.077137515474977
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-A1FL	4	3.0	4.952727664455385
+main	all	HRD_LOH	regression	Baseline	TCGA-BH-AB28	4	5.0	5.708622660926925
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A12L	4	20.0	8.011098361171578
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A12O	4	7.0	6.416151636666585
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A12P	4	12.0	10.146416087792476
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A12Q	4	13.0	9.159287877452204
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A12U	4	10.0	6.902378452925681
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A131	4	2.0	7.64508704236471
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A138	4	10.0	6.902378452925681
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A1HG	4	15.0	7.257082516890982
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A1HJ	4	23.0	9.010783337897404
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A1HK	4	6.0	7.723095249448645
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A273	4	5.0	4.952727664455385
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A8HP	4	14.0	10.078534417968438
+main	all	HRD_LOH	regression	Baseline	TCGA-C8-A8HR	4	12.0	6.416151636666585
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A13Y	4	14.0	8.110438466761499
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A147	4	15.0	9.892056832731791
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JB	4	12.0	6.902378452925681
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JD	4	5.0	8.731529368768209
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JF	4	4.0	6.902378452925681
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JI	4	8.0	6.276653064498456
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1JK	4	10.0	10.51635876195499
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1X8	4	6.0	5.708622660926925
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1XC	4	0.0	6.128148524943652
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A1Y1	4	3.0	10.351086185938675
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A27K	4	1.0	5.077137515474977
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A27V	4	5.0	10.078534417968438
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A3Z6	4	3.0	5.3074317284206876
+main	all	HRD_LOH	regression	Baseline	TCGA-D8-A4Z1	4	1.0	7.349135661150043
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A10A	4	6.0	5.077137515474977
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A10C	4	4.0	12.047785169322172
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A14O	4	4.0	5.9693944284422225
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A14Q	4	6.0	5.9693944284422225
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A14R	4	18.0	9.054200130292546
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A14T	4	7.0	6.3474593197565055
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A14X	4	3.0	6.2035986197797595
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A155	4	12.0	7.761129532418879
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A156	4	2.0	5.3074317284206876
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A15A	4	15.0	7.393817098660792
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1B0	4	12.0	7.303569385431918
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1IH	4	7.0	7.798545344284752
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A1LK	4	8.0	6.790111224965187
+main	all	HRD_LOH	regression	Baseline	TCGA-E2-A56Z	4	5.0	6.672084239979969
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1N3	4	1.0	5.61469036447692
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A1RH	4	10.0	8.52455652163831
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A229	4	8.0	5.516759766882023
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A22A	4	9.0	5.8857116889388434
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A245	4	0.0	4.821204912161593
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A247	4	11.0	6.610720023944896
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A248	4	1.0	4.681706339993463
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A2JT	4	0.0	5.195164500460194
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A3X8	4	2.0	6.128148524943652
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A5FL	4	22.0	8.731529368768209
+main	all	HRD_LOH	regression	Baseline	TCGA-E9-A5UO	4	8.0	5.516759766882023
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1P5	4	3.0	4.821204912161593
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1P6	4	2.0	5.195164500460194
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1P7	4	5.0	4.203923649650806
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A1PE	4	2.0	5.9693944284422225
+main	all	HRD_LOH	regression	Baseline	TCGA-EW-A6SB	4	8.0	7.64508704236471
+main	all	HRD_LOH	regression	Baseline	TCGA-GM-A2DD	4	2.0	7.522880180244773
+main	all	HRD_LOH	regression	Baseline	TCGA-GM-A2DH	4	8.0	10.212352453973674
+main	all	HRD_LOH	regression	Baseline	TCGA-GM-A2DK	4	8.0	5.61469036447692
+main	all	HRD_LOH	regression	Baseline	TCGA-LL-A5YM	4	11.0	5.414475295273047
+main	all	HRD_LOH	regression	Baseline	TCGA-LL-A7SZ	4	10.0	7.161192736928689
+main	all	HRD_LOH	regression	Baseline	TCGA-OL-A5D6	4	5.0	6.416151636666585
+main	all	HRD_LOH	regression	Baseline	TCGA-PL-A8LV	4	16.0	9.075605137948829
+main	all	HRD_LOH	regression	Baseline	TCGA-PL-A8LZ	4	12.0	8.52455652163831
+main	all	HRD_LOH	regression	Baseline	TCGA-S3-AA11	4	1.0	7.907275259127522
+main	all	HRD_LOH	regression	Baseline	TCGA-V7-A7HQ	4	4.0	5.077137515474977
+main	all	HRD_LOH	regression	Baseline	TCGA-XX-A899	4	5.0	6.3474593197565055
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-5L-AAT0	0	3.0	8.086728334371939
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A1-A0SF	0	7.0	4.903078495856693
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A1-A0SJ	0	7.0	5.926603496411522
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0CM	0	7.0	9.679079050358972
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0CW	0	12.0	7.952510545435001
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0CX	0	5.0	9.082181328912917
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0D1	0	12.0	6.1531583453485865
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0EU	0	2.0	6.041810830926621
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0T0	0	16.0	12.122144019430582
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0T5	0	1.0	4.490862452021167
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0T6	0	2.0	4.3966968280175935
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0YJ	0	3.0	9.329010698937523
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0YL	0	3.0	4.919183039011569
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0YM	0	3.0	6.645332857294705
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0YT	0	13.0	6.062167625631118
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A1G1	0	3.0	6.368953563256197
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A25C	0	5.0	5.72552198067047
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A25D	0	7.0	6.4066707306553
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A25E	0	13.0	8.865431516105604
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A3KD	0	4.0	4.760208281923284
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A3Y0	0	21.0	12.118043285060816
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A0CE	0	9.0	9.685420239714235
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A0CH	0	1.0	4.739733097703473
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A26J	0	6.0	6.214831639659813
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A5ZW	0	2.0	5.795353829431706
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A06U	0	21.0	8.254991451574801
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A07J	0	4.0	8.466775462136537
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A07O	0	7.0	5.721413402601232
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A08R	0	21.0	14.125574053388164
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A090	0	4.0	6.366603722505345
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A09C	0	9.0	4.7009302624518705
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A09V	0	1.0	7.276198175238859
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A3OD	0	8.0	5.494488535592828
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A62Y	0	2.0	9.212997362068673
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A03X	0	4.0	5.822843696748554
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A03Y	0	3.0	5.711408638287065
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A049	0	10.0	4.962799056570409
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0AJ	0	7.0	9.416705095797079
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0AT	0	20.0	12.440094257914751
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0FS	0	5.0	6.48677263917726
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0FW	0	5.0	8.531259825449917
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0FY	0	12.0	5.528146276395541
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0XN	0	7.0	11.5027994912869
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0XR	0	4.0	6.067471943105215
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0XT	0	14.0	5.392676828127354
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A03R	0	5.0	6.344003640218837
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0J3	0	10.0	6.619096436439434
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0J7	0	2.0	4.122807560713847
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0JD	0	17.0	11.335311034111118
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0JJ	0	2.0	4.63697349021121
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A128	0	2.0	9.795807324852028
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A12F	0	10.0	6.275016714440213
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A1KT	0	9.0	6.329833783939716
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A0TP	0	19.0	11.434182832960438
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A0TX	0	5.0	10.3913620245232
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A1AO	0	0.0	9.56229193533333
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A1AX	0	2.0	4.324403806122063
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A24P	0	2.0	4.490439174583735
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A24W	0	3.0	4.39829297896843
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A24Z	0	8.0	6.584482195739503
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A256	0	20.0	11.794793988453947
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A2LH	0	0.0	7.052803376376098
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A2LN	0	2.0	4.923102548605415
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0RO	0	7.0	4.6971004538503305
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0RU	0	6.0	6.338307445117607
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0WS	0	6.0	5.311058394408856
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0WY	0	8.0	9.136674325281463
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0X1	0	24.0	11.339411269057841
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A1KN	0	12.0	7.057777001799943
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A401	0	9.0	7.54613038959053
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0B5	0	3.0	9.462599993345554
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0BF	0	7.0	6.262969153621397
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0BP	0	22.0	10.299539869263853
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0BR	0	14.0	4.361637429621357
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0C1	0	3.0	5.18897272046474
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0C7	0	11.0	6.525791401911643
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0DE	0	7.0	5.871243762083344
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0DT	0	1.0	2.9083331195277697
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0E1	0	2.0	7.216484877735917
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0EE	0	6.0	6.3062572688190075
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0HB	0	8.0	5.536552996029057
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0HI	0	2.0	5.1131891490569625
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0HK	0	4.0	6.661028654228553
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0HP	0	2.0	10.236395347417663
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0W3	0	3.0	5.966912012958716
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0W4	0	2.0	4.653054152906433
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18H	0	8.0	6.134302801074326
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18Q	0	11.0	8.6964869279312
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1EO	0	9.0	6.039735896833472
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1EV	0	8.0	9.300629268777028
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1F0	0	11.0	8.039091483920437
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1FC	0	6.0	9.313836686659847
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1FE	0	6.0	1.5665344586053935
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1FJ	0	1.0	5.277020266038273
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A2L8	0	1.0	10.09898062325553
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A8FY	0	3.0	7.415709617015789
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A12M	0	5.0	6.016179218371654
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A12N	0	3.0	5.943940273777651
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A137	0	11.0	6.858655523764152
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A1HL	0	4.0	5.42579595088603
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A26V	0	9.0	9.490373212362194
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A275	0	5.0	9.786757540437634
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A278	0	6.0	6.578915837405368
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JN	0	2.0	7.0687797053459365
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JS	0	2.0	6.485817609583552
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JT	0	4.0	6.169922522479016
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XF	0	12.0	6.6587874900973425
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XY	0	8.0	5.97077854789197
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XZ	0	6.0	7.092066416703435
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A27L	0	3.0	5.1127295951702685
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A27T	0	3.0	4.864543912394028
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A14Z	0	12.0	6.395188581697955
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A153	0	2.0	4.771568087422661
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A159	0	9.0	9.87522623558928
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15H	0	5.0	5.734560260736178
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15K	0	2.0	6.180068418772796
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15T	0	6.0	5.827309479705876
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1IF	0	2.0	5.248769089410722
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1L8	0	4.0	6.283753730676061
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A570	0	2.0	5.640225224215624
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A576	0	12.0	6.079764895159986
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A9RU	0	8.0	6.947045403985637
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1NC	0	20.0	11.100012752862362
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1ND	0	3.0	10.551709577454352
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1NE	0	0.0	8.940417977010174
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1R6	0	2.0	5.147725662823074
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1RB	0	9.0	5.137611031753957
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1RG	0	12.0	6.723162685023294
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A226	0	8.0	8.95477042429439
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A22G	0	20.0	10.568817673697284
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A6HE	0	5.0	5.137001532983684
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1J3	0	4.0	6.47419585059502
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1J6	0	13.0	6.601057322333785
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1OV	0	12.0	6.458266009483651
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1OZ	0	12.0	7.185677503518356
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1P1	0	0.0	2.4052513497964165
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1P8	0	12.0	4.1853823486527615
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A2FV	0	3.0	4.155684867895593
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-GM-A2DA	0	4.0	5.6093953142328115
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-GM-A2DB	0	7.0	10.820589309312533
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-GM-A2DF	0	13.0	7.9030154797686745
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LL-A6FR	0	15.0	5.783737865662561
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LL-A7T0	0	9.0	6.485703273966727
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LL-A9Q3	0	5.0	5.72206221992729
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A5S0	0	11.0	5.115683219245712
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A66I	0	11.0	8.191492302289504
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A66J	0	4.0	7.468485839044816
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A66K	0	3.0	5.582431443529004
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-PE-A5DE	0	5.0	8.171722710204058
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-S3-A6ZF	0	9.0	6.04860444639729
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-S3-AA0Z	0	12.0	7.620416632165941
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-S3-AA14	0	7.0	4.2524989996363285
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-WT-AB41	0	10.0	4.445085234673229
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-WT-AB44	0	6.0	5.375544553100716
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-XX-A89A	0	7.0	9.597751330005286
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A1-A0SE	1	6.0	5.0139179760953425
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A1-A0SK	1	6.0	7.870077317334487
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A04P	1	22.0	10.48759535009151
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A04T	1	23.0	9.45329277697011
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0CP	1	2.0	7.315672646126979
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0CU	1	4.0	6.970395881928695
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0CV	1	1.0	6.7836741142417845
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0EW	1	3.0	3.979922210298562
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0EX	1	4.0	5.128895095860072
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0EY	1	13.0	6.0688606842255775
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0SU	1	5.0	6.241294160623626
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0T2	1	11.0	5.3180736513577465
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0T7	1	9.0	5.668773879422844
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0YF	1	5.0	4.711172369653108
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0YG	1	4.0	6.016399744018248
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A1FX	1	6.0	7.221301957527736
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A1FZ	1	1.0	4.74347352207019
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A1G4	1	3.0	5.883077639607434
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A259	1	3.0	4.612730681287445
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A4S1	1	8.0	9.68879706310209
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A4S3	1	22.0	8.402591233728826
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A0DA	1	9.0	11.278703531797982
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A0DB	1	1.0	10.219260804818493
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A13E	1	10.0	7.016215192045044
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A6VX	1	14.0	9.693468419917625
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A06R	1	10.0	7.137711634991668
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A06X	1	12.0	11.661063386608273
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A076	1	4.0	6.181465253521752
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A08L	1	23.0	13.695297429611543
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A08O	1	9.0	6.893119608852762
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A08X	1	9.0	6.122518598529442
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A08Z	1	4.0	5.260540956882547
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A092	1	4.0	7.120951857401895
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A093	1	2.0	5.626938917985681
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A099	1	5.0	6.51276914269046
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A09Z	1	3.0	8.463563862621431
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A0A7	1	9.0	6.664830988074331
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A0AB	1	6.0	5.410599805888486
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A0AD	1	4.0	6.190268885742662
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A23E	1	3.0	6.130548081110283
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A23H	1	4.0	13.50575781506553
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A3YI	1	0.0	5.5135708954107745
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A4ZE	1	7.0	6.326805750085226
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A5EH	1	12.0	11.334974781580367
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A6IV	1	3.0	6.419071760953879
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A04D	1	12.0	10.375263369518436
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0FT	1	10.0	6.908431146495652
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0FV	1	9.0	7.279932051809513
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0FX	1	12.0	8.442092866890395
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0XW	1	11.0	10.236614278842055
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0J8	1	1.0	4.886399319898381
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A12A	1	2.0	5.6942333873553475
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AQ-A04J	1	17.0	6.3487497897028335
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AQ-A1H2	1	9.0	5.420118129256771
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A0TQ	1	0.0	5.721598530144128
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A0TV	1	11.0	5.877615729619014
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A0TW	1	12.0	8.08617416019556
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A24U	1	7.0	6.563259944862155
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A24V	1	7.0	4.90577713006768
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A251	1	18.0	13.769896518199577
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A5QN	1	7.0	5.392040423691941
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0I2	1	9.0	8.276190733011184
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0I9	1	11.0	6.903019657004869
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0IE	1	8.0	8.109013549576437
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0RN	1	1.0	5.529990711468712
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0RS	1	15.0	9.87471798450511
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0RV	1	5.0	6.789701581425808
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0WW	1	11.0	7.935093254257087
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0WZ	1	2.0	4.946332418871087
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0X0	1	2.0	5.4673929321618
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A1KC	1	3.0	8.744129196379724
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A40C	1	4.0	5.164245914165839
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0B3	1	12.0	7.87381939733281
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0B7	1	8.0	9.13144453333416
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0BC	1	4.0	5.263783112658802
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0BJ	1	1.0	4.379231381286209
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0BO	1	1.0	5.097664318711185
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0BT	1	5.0	5.675358025789183
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0DQ	1	8.0	4.626724126899353
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0DZ	1	9.0	9.747397449073492
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0E0	1	7.0	6.116319956178506
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0E2	1	9.0	6.447721337277299
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18J	1	9.0	5.8900940648122715
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18T	1	17.0	12.073305116655067
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1ET	1	1.0	7.100050352396048
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1FG	1	4.0	4.186227510839039
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1FM	1	5.0	6.3903107121648794
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A201	1	3.0	2.6398295009972763
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A208	1	7.0	8.488743330592735
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A209	1	7.0	8.726307878942436
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A28Q	1	4.0	5.421447943124416
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A6R9	1	0.0	6.000734581739226
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A8G0	1	1.0	4.909580364368639
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A12W	1	8.0	5.947872043065192
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A12Z	1	11.0	7.261025031936601
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A130	1	10.0	6.218643870873295
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A133	1	0.0	7.079996971808679
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A1HF	1	9.0	6.408305567808178
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A1HM	1	17.0	11.7497553074054
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A26X	1	8.0	6.732516150443039
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A26Y	1	9.0	11.270411198934145
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A8HQ	1	9.0	8.101881381454792
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A13Z	1	3.0	9.938105382382506
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A140	1	5.0	5.46469371959703
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A141	1	1.0	5.140601675650213
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JA	1	6.0	11.836510969966337
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JG	1	11.0	6.519769071818131
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JH	1	0.0	5.204413335098967
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JM	1	15.0	8.38043333172004
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JP	1	19.0	9.31697563737898
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1X7	1	1.0	4.882462352430747
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1X9	1	12.0	10.278459391615995
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XA	1	5.0	4.5996047481107185
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XJ	1	9.0	5.2951184084809135
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XK	1	18.0	7.696348807684276
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XQ	1	15.0	9.003955422223807
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XV	1	0.0	5.81840484675741
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XW	1	6.0	9.662540193208526
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1Y2	1	5.0	4.116901472983745
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1Y3	1	10.0	6.257450173361481
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A27R	1	13.0	6.768531177607425
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A73U	1	5.0	5.093800149356101
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A73W	1	5.0	5.976601710414194
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A158	1	15.0	11.477792219098191
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15J	1	2.0	5.990014031108283
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15R	1	8.0	5.537558536729533
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1BC	1	4.0	7.283124179688304
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1IL	1	4.0	6.474859945422154
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1L6	1	3.0	4.618378047706541
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1LA	1	17.0	9.962451733600343
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1LH	1	17.0	12.417930229591972
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1N5	1	5.0	4.561149892324319
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1N9	1	9.0	6.578472904484417
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1NA	1	11.0	11.90679958214615
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1NH	1	2.0	5.68437044896054
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1RA	1	1.0	4.737075859038987
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1RE	1	12.0	5.061692408953042
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A227	1	1.0	7.5773133906480705
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1IW	1	10.0	8.06826928041493
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1IZ	1	2.0	7.691331328639908
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1P4	1	20.0	11.23973616294516
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A2FS	1	9.0	4.8438808479927395
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-GM-A2DC	1	8.0	5.155680045694173
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-GM-A2DM	1	1.0	7.145135321365798
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-GM-A3NW	1	3.0	8.384183346060532
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-HN-A2OB	1	1.0	5.713411904935749
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LL-A5YN	1	12.0	5.331407110910142
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LL-A6FQ	1	4.0	6.235043352381514
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LL-A8F5	1	23.0	11.328918060029338
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A5DA	1	6.0	8.11937970798953
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A5RU	1	0.0	5.6965190433168225
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A5RW	1	18.0	12.140601149776614
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-PE-A5DD	1	7.0	5.9008932906989795
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-PL-A8LX	1	3.0	5.827984670592817
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-S3-AA10	1	16.0	10.936030270872285
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-3C-AALI	2	8.0	12.842171685871484
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A1-A0SI	2	4.0	10.337645439022605
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A1-A0SO	2	26.0	12.336735292325876
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A04R	2	11.0	11.152405740268138
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A04U	2	14.0	8.54396242184848
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A04Y	2	5.0	8.093606429658571
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0CR	2	1.0	8.99505169480795
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0ES	2	0.0	4.475039169982964
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0SW	2	6.0	5.853977047280132
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0YC	2	1.0	5.495140668175889
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0YE	2	10.0	5.4333031540218055
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A1FV	2	11.0	5.809054432208109
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A25A	2	2.0	13.755439572657728
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A0D9	2	4.0	6.515278723438163
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A13F	2	3.0	6.434766983434404
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A26E	2	2.0	6.433900758148157
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A5ZV	2	13.0	11.571555045157982
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A06Q	2	9.0	9.545038682356772
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A075	2	13.0	7.997806494773801
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A079	2	6.0	7.215098049701727
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A07B	2	5.0	8.20131594339017
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A07I	2	9.0	8.639681531079951
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A07Z	2	4.0	4.81239846758809
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A081	2	12.0	8.472056094790595
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A082	2	4.0	5.411850142248637
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A083	2	2.0	7.7788708605596195
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A094	2	17.0	11.767206281914262
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A095	2	2.0	10.941958655106927
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A097	2	11.0	12.314088138113595
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A09D	2	7.0	5.847700902388302
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A09Q	2	12.0	8.71306934253451
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A09T	2	2.0	4.753054189886802
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A2B8	2	4.0	8.039562587749534
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A2FO	2	6.0	4.458652695381838
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A2QH	2	9.0	5.631603876338725
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A5XS	2	7.0	11.12856832955509
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A6IX	2	12.0	6.028264948400347
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A6NO	2	2.0	5.665340018145177
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A8OP	2	6.0	10.0055332201945
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A8OR	2	3.0	5.738802205701457
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A046	2	2.0	13.142362766523425
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0AS	2	5.0	6.694183867508812
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0XU	2	22.0	10.398544478699156
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0XV	2	3.0	7.025244333130714
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A03T	2	11.0	9.84923867416837
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0J9	2	2.0	6.901619169566455
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0JB	2	19.0	8.214681689194682
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0JM	2	8.0	6.386798800672137
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A12D	2	9.0	6.805216380134457
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AQ-A04H	2	4.0	6.960290229046557
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A0TR	2	6.0	5.973086366542169
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A0TZ	2	10.0	8.861380172292273
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A1AI	2	14.0	9.52273406996858
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A1AJ	2	5.0	6.571833299252084
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A1AN	2	8.0	5.272406477387723
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A1AQ	2	8.0	6.362972088830286
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A1AR	2	10.0	8.105548276318451
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A1AW	2	6.0	6.2531088097061405
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A24N	2	2.0	6.707764893755766
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A24Q	2	16.0	11.869825498656496
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A24S	2	7.0	7.214944821014369
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A254	2	7.0	6.077300338641363
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A2LQ	2	0.0	4.783939536568555
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A5QM	2	8.0	5.762239662809689
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A5QP	2	4.0	4.955128144772555
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0I5	2	1.0	5.197608546701199
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0IB	2	6.0	7.385512944343578
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0RE	2	8.0	11.457019594704695
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0RG	2	6.0	10.200917524258486
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0RH	2	7.0	4.867821180220149
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0RI	2	3.0	7.682595346356621
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0RL	2	7.0	6.482280541429734
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0X4	2	0.0	5.384878934031835
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A2IU	2	3.0	6.272338775809912
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0AV	2	19.0	7.328791089440783
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0AZ	2	11.0	6.7695066326128925
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0B9	2	12.0	7.766385656929694
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0BA	2	12.0	7.3928941374738875
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0BM	2	3.0	5.34621410444145
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0DG	2	2.0	6.7105663245301415
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0DI	2	10.0	6.399186083704515
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0H0	2	9.0	5.4979825523510115
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0HA	2	4.0	9.426965144333195
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0HQ	2	1.0	5.7153999923991705
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18F	2	3.0	6.122677596586524
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18G	2	2.0	11.098100378097866
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18K	2	10.0	8.030682157970677
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18P	2	4.0	10.686817609475902
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1EU	2	5.0	4.6922145853446775
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1EW	2	6.0	2.7083508969715586
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1EY	2	14.0	6.990735284577703
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1F2	2	11.0	8.401403253339408
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A202	2	4.0	5.686538273084024
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A5IZ	2	18.0	11.470364601927084
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A6R8	2	6.0	5.220308262820881
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A132	2	15.0	9.39188913845988
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A26Z	2	6.0	8.508481550152455
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A27A	2	14.0	6.617398969785188
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A145	2	2.0	6.452242172499321
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1J8	2	1.0	11.956037177300772
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1J9	2	10.0	10.057661684172299
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JL	2	8.0	12.201281528621724
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XB	2	2.0	6.141372995821993
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XG	2	3.0	6.380541246135138
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XL	2	7.0	9.990520946834586
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XM	2	6.0	5.7006592367238955
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XO	2	3.0	4.7385940025077
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XR	2	5.0	4.757933729985856
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XT	2	12.0	6.596828102866941
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A27M	2	15.0	10.394469948167092
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A27N	2	6.0	7.004789591335055
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A14Y	2	4.0	7.13123701563765
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15C	2	2.0	5.952387932371108
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15D	2	2.0	6.111118827739735
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15E	2	8.0	9.041842864850747
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15G	2	1.0	6.862968359970788
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15M	2	11.0	7.421598379049976
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1B4	2	1.0	6.297161527293896
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1IE	2	9.0	5.525934208986126
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1IJ	2	2.0	4.833446244625499
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1IK	2	0.0	6.453382217738261
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1IU	2	2.0	6.836210911482353
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1L9	2	2.0	7.253542622509081
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1NG	2	3.0	6.496267381701966
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1R3	2	3.0	6.9455980511496564
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1RC	2	2.0	7.103595468723278
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A228	2	12.0	7.749842670783888
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A22B	2	8.0	6.04817525802458
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A22D	2	5.0	5.357463303526251
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A22E	2	16.0	13.420112904303142
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A24A	2	2.0	5.433676644926203
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1IY	2	1.0	4.664437519518209
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1OX	2	4.0	5.757510994665409
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1P0	2	5.0	7.382731898030806
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1P3	2	3.0	4.3538052176945055
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1PB	2	29.0	12.536177646419318
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A6SD	2	17.0	8.077880016981863
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LD-A74U	2	3.0	7.407718807146573
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LD-A7W5	2	13.0	6.209727272590339
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LD-A7W6	2	4.0	5.486263821301469
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LL-A5YL	2	11.0	6.142703944417372
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LL-A73Y	2	8.0	9.999991844136009
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A5D8	2	6.0	5.644069232027876
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A5RV	2	2.0	4.607122868237734
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A5RY	2	0.0	4.059050724294182
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A5RZ	2	4.0	10.366727678801286
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A66L	2	2.0	5.897632739018766
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A66O	2	4.0	5.558988651242305
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-S3-A6ZG	2	4.0	5.913707501349182
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-S3-AA12	2	6.0	5.741317362322581
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-S3-AA17	2	16.0	10.675571746600106
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-UU-A93S	2	13.0	11.405866808815418
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-W8-A86G	2	3.0	5.268322028483125
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-Z7-A8R6	2	5.0	6.3242681240223275
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-5T-A9QA	3	6.0	6.295326447366467
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A1-A0SD	3	9.0	5.104753098489744
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A1-A0SG	3	3.0	4.7908986358137335
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A04Q	3	4.0	8.645515608804091
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0CS	3	1.0	5.3468303733010885
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0EM	3	2.0	6.494600686301968
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0EN	3	2.0	7.427086603495098
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0SV	3	15.0	6.293784172213838
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0SY	3	3.0	10.2107042582994
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0T1	3	8.0	6.136742338102737
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0T4	3	7.0	6.112278011065147
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A26I	3	10.0	6.288763880362627
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A6VW	3	12.0	9.237477149713799
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A06Y	3	2.0	7.16760086519566
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A06Z	3	10.0	10.70714111835441
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A07L	3	20.0	10.767620313505539
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A07U	3	9.0	8.7248511230032
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A07W	3	5.0	10.923705331564538
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A08G	3	6.0	8.804470323818455
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A096	3	2.0	7.069277368571547
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A09A	3	11.0	12.231947046147555
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A09B	3	1.0	6.613248616335724
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A09G	3	4.0	9.3926512160714
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A09M	3	12.0	9.334408203664253
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A09N	3	9.0	7.285899831410176
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A09X	3	4.0	6.632112956303084
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A0A6	3	5.0	5.810950211939369
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A2FG	3	3.0	5.359078973353522
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A3QQ	3	4.0	5.70910500482977
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A5XU	3	6.0	5.751893730670993
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A6IW	3	4.0	10.370252546835005
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A7VB	3	7.0	4.741928868582759
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A041	3	4.0	4.965417189201719
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A04C	3	8.0	9.100551198219218
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0AR	3	20.0	12.74048555065788
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0FN	3	2.0	6.7743266805005815
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0XS	3	3.0	4.71124898482384
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A03L	3	10.0	8.402228648026952
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A03O	3	13.0	7.591578444217405
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A03P	3	4.0	6.117279814079771
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A03V	3	7.0	6.2900386757203535
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0J4	3	10.0	11.321350787761052
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0J6	3	20.0	9.833250304885569
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0JA	3	16.0	2.9717700672452327
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A124	3	26.0	8.350991000073574
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A1KR	3	8.0	9.899039450618586
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AQ-A1H3	3	3.0	5.614760984215439
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A0TS	3	13.0	10.487328201770652
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A0TT	3	9.0	9.672545707203621
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A0TY	3	11.0	7.89552548943476
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A1AU	3	6.0	4.290023972438727
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A1AY	3	11.0	6.992703436432594
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A24L	3	17.0	13.977811574230325
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A24O	3	2.0	4.948102702767661
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A24X	3	1.0	7.032092500278943
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A252	3	1.0	1.9898124323856354
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A2LK	3	3.0	5.268568851126093
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A2LO	3	8.0	5.446455554258796
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0IJ	3	21.0	14.43572405806447
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0IN	3	5.0	3.611093790432011
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0RP	3	1.0	4.963256238092206
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0AW	3	8.0	8.8177915807457
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0AY	3	4.0	6.443200809365919
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0BL	3	1.0	7.592259534203613
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0BZ	3	5.0	14.304549654138695
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0DH	3	9.0	4.944077225522603
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0DL	3	6.0	5.283948016623548
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0DO	3	1.0	4.770998768853835
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0DS	3	3.0	6.193996499050816
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0E7	3	2.0	5.567990442957065
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0EA	3	1.0	5.646560220273741
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0HU	3	11.0	6.915819992362006
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0HX	3	13.0	6.547402318262326
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0HY	3	11.0	6.171897478991995
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18I	3	5.0	4.4079416100989945
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18M	3	2.0	9.448351962130705
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18N	3	1.0	5.31945965070955
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18S	3	4.0	6.067690904826524
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18U	3	10.0	7.029339340395089
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1FN	3	13.0	10.18884868795559
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1FU	3	4.0	10.248610497926332
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A203	3	12.0	7.402179487030818
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A204	3	8.0	5.801694775989131
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A42V	3	4.0	4.018683966228195
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A8FZ	3	12.0	8.102993519287045
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A12Y	3	6.0	5.39858429223252
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A135	3	12.0	7.990735823493924
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A1HE	3	5.0	3.8021048224932983
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A26W	3	13.0	6.146719909733427
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A27B	3	17.0	15.193510076995056
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A143	3	7.0	6.32553721130581
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JC	3	13.0	7.222652842455031
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JJ	3	3.0	5.083999723576266
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JU	3	2.0	4.428967502525625
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1X5	3	10.0	6.365451426151352
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1Y0	3	9.0	12.195847081646868
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A27E	3	0.0	4.245715089653741
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A27F	3	29.0	9.864464153015945
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A27H	3	19.0	14.473565146389038
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A27P	3	1.0	4.462629559700614
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A27W	3	6.0	5.973366151235415
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A73X	3	1.0	5.47000406979179
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A150	3	12.0	8.684124710916592
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A152	3	6.0	7.566318686075352
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A154	3	1.0	5.707445436504374
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15I	3	2.0	4.7664170602931435
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15O	3	7.0	5.110884843938577
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15P	3	6.0	4.684831814842342
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1AZ	3	12.0	7.66947490718305
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1B5	3	5.0	3.5066914126728
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1BD	3	1.0	6.38152555640386
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1IG	3	4.0	6.393353732983286
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1IO	3	11.0	4.257581827203538
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1LG	3	4.0	11.156043422220055
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1LL	3	11.0	9.612351332808485
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A573	3	15.0	7.402104124685466
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1N8	3	6.0	7.305332928086874
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1NI	3	5.0	4.772512778097047
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1R0	3	2.0	5.045954012798968
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1R5	3	4.0	6.479281943031411
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1R7	3	14.0	6.578627729375187
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1RD	3	1.0	9.240199666969897
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1RF	3	11.0	14.506123628864355
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A22H	3	3.0	4.843832714735829
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A243	3	12.0	12.00500503860367
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A244	3	14.0	9.196456166199372
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A295	3	5.0	8.199550947710849
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A2JS	3	14.0	8.675168890843395
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1J1	3	6.0	7.422296566731546
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1OY	3	9.0	6.0737633354391
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1PA	3	9.0	6.878927773582463
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1PG	3	0.0	3.3632883976518144
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1PH	3	9.0	5.656209194644639
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A6SC	3	5.0	5.588208363584881
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-GM-A2DL	3	6.0	5.188004243387699
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-GM-A2DN	3	1.0	4.770941031978756
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-GM-A5PX	3	5.0	5.027801683303508
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-HN-A2NL	3	21.0	12.567426239108508
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LD-A66U	3	4.0	33.61857813932422
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LL-A50Y	3	3.0	4.537918164275354
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LL-A5YP	3	19.0	10.276129973348107
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LL-A73Z	3	7.0	5.300733021836096
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OK-A5Q2	3	3.0	5.194321436752196
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A5D7	3	19.0	10.771312140843335
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A5RX	3	2.0	4.920247551498525
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A66H	3	0.0	3.970533510917221
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A66N	3	1.0	4.712871855719396
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A66P	3	5.0	10.304113067278596
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A6VO	3	7.0	4.717328326592762
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A6VQ	3	1.0	6.080615519722449
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A6VR	3	4.0	3.7128197319964578
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A97C	3	3.0	7.701795056407297
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-PL-A8LY	3	0.0	1.8911001179122557
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-S3-A6ZH	3	8.0	5.705085843910708
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-3C-AALJ	4	6.0	5.170582606433568
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A1-A0SB	4	0.0	4.551113385473061
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A1-A0SQ	4	2.0	5.3070250950641915
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A04N	4	2.0	7.824561207771048
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A04V	4	4.0	5.722162513438855
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A04W	4	6.0	9.154344090248086
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0CT	4	8.0	7.068450505443799
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0D0	4	10.0	10.754745486560696
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0D3	4	1.0	5.300279462075663
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0D4	4	12.0	9.062520631576836
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0EV	4	6.0	8.548201257775181
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0SX	4	12.0	5.4559949435470685
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0T3	4	12.0	5.860357383304366
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0YD	4	2.0	6.514577938858498
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0YH	4	7.0	9.529445622085472
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A0YK	4	3.0	10.338820465902987
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A1G0	4	2.0	5.966427737085587
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A2-A3XU	4	3.0	5.009221191959356
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A0CG	4	3.0	6.7513609283796265
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A0CJ	4	12.0	5.8377938281379524
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A13D	4	11.0	9.691504864120505
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A26H	4	6.0	8.53530899988145
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A4SE	4	18.0	9.372699410602312
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A56D	4	14.0	7.412730645946503
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A5ZX	4	2.0	6.121465133821635
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A7-A6VY	4	28.0	13.455136509695691
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A06P	4	3.0	5.594235479298573
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A07P	4	7.0	6.165168735788387
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A08B	4	8.0	5.83820055273428
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A08H	4	0.0	4.952507821056115
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A08T	4	3.0	6.047875787489556
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A091	4	4.0	5.072216762187836
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A09W	4	12.0	7.9951341330242585
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A0A1	4	6.0	6.2369646732472726
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A0A2	4	3.0	6.122426809449276
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-A8-A0A4	4	11.0	4.903975342913005
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A23C	4	8.0	10.127919106917467
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A2FB	4	3.0	6.005084168812089
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A7VC	4	3.0	4.872141969152278
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A8OQ	4	17.0	8.427950397310251
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AC-A8OS	4	3.0	5.5863571103050145
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0AL	4	17.0	12.349149683350172
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0AM	4	10.0	11.044811513855873
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0FJ	4	7.0	8.545472478335451
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0FK	4	3.0	5.830429733426035
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0FZ	4	10.0	6.52084160927874
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0XO	4	5.0	5.262599696755565
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AN-A0XP	4	2.0	5.130370772941451
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0J2	4	22.0	10.589816243224742
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0JE	4	12.0	9.046554815096172
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0JF	4	1.0	4.574659129719981
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0JG	4	7.0	4.951641263479634
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A0JI	4	8.0	5.335110228063683
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A12H	4	0.0	5.031498179089539
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AO-A1KP	4	3.0	4.492827461460363
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A0U0	4	10.0	7.685447839381391
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A1AH	4	5.0	8.729425575041509
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A1AK	4	5.0	8.057963558204348
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A1AP	4	7.0	5.263268241174398
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A24R	4	5.0	5.440396606472208
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A250	4	7.0	10.039501980026603
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-AR-A5QQ	4	4.0	10.730022820532657
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0IC	4	2.0	7.0372147163841525
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0IH	4	1.0	5.345461796993107
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0WT	4	6.0	4.768651861694482
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A0X5	4	3.0	6.231380310005964
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A1KF	4	4.0	7.291156446084309
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-B6-A409	4	13.0	6.0148696097663
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0AU	4	8.0	4.957124815502764
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0C3	4	5.0	5.032437015851786
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0DK	4	5.0	11.244510894132533
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0DV	4	1.0	9.569977527206449
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0DX	4	9.0	5.7114029592557785
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0E9	4	4.0	5.925366280649837
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0EB	4	2.0	6.089861167117469
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0GY	4	2.0	5.4170335403456775
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0H6	4	2.0	4.527850935278645
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0H7	4	9.0	6.2738776728895065
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0HO	4	1.0	4.771430867314271
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0HW	4	7.0	5.584064210108574
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A0WA	4	14.0	9.330847995460065
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18L	4	6.0	6.0905244983326865
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A18R	4	7.0	6.77303230375052
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1EX	4	0.0	4.579672422178413
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-A1FL	4	3.0	4.937200637734152
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-BH-AB28	4	5.0	5.925343343664579
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A12L	4	20.0	7.316041078750887
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A12O	4	7.0	5.574747158131464
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A12P	4	12.0	7.925886755770534
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A12Q	4	13.0	7.720532912652165
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A12U	4	10.0	6.674990719263725
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A131	4	2.0	8.339684802571401
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A138	4	10.0	5.991506294970546
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A1HG	4	15.0	6.981086755843939
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A1HJ	4	23.0	11.851088232855698
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A1HK	4	6.0	8.443849905058382
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A273	4	5.0	5.337166362381697
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A8HP	4	14.0	8.525625144937987
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-C8-A8HR	4	12.0	6.613330748277024
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A13Y	4	14.0	7.791365509815487
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A147	4	15.0	14.770662259698067
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JB	4	12.0	8.273814866503256
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JD	4	5.0	11.163878160041023
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JF	4	4.0	5.663671804815716
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JI	4	8.0	5.098024719403416
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1JK	4	10.0	10.785744323272576
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1X8	4	6.0	7.329839903069796
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1XC	4	0.0	5.243034094551625
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A1Y1	4	3.0	7.3488740080639525
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A27K	4	1.0	5.467420931083603
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A27V	4	5.0	8.414322536413357
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A3Z6	4	3.0	5.47908107101394
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-D8-A4Z1	4	1.0	5.703660375488216
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A10A	4	6.0	8.068221691392951
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A10C	4	4.0	9.251397469407866
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A14O	4	4.0	5.814648143738765
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A14Q	4	6.0	5.660894047256018
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A14R	4	18.0	11.000464472694915
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A14T	4	7.0	6.366164685725335
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A14X	4	3.0	5.38777107662278
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A155	4	12.0	6.254975553327699
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A156	4	2.0	5.162705426460561
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A15A	4	15.0	5.938377195705079
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1B0	4	12.0	6.980747339299372
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1IH	4	7.0	7.544454558546194
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A1LK	4	8.0	5.820114625069332
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E2-A56Z	4	5.0	10.99149015135001
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1N3	4	1.0	6.254680166427312
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A1RH	4	10.0	9.067016536549733
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A229	4	8.0	5.203387739088901
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A22A	4	9.0	7.085099762711552
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A245	4	0.0	4.463468086100612
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A247	4	11.0	5.643344807798723
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A248	4	1.0	4.8188813492796605
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A2JT	4	0.0	5.194872468708752
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A3X8	4	2.0	7.4710370367225
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A5FL	4	22.0	11.136104302212795
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-E9-A5UO	4	8.0	5.493727884790507
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1P5	4	3.0	5.0980147067171675
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1P6	4	2.0	4.918740212359541
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1P7	4	5.0	5.227398509369953
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A1PE	4	2.0	5.313959517805385
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-EW-A6SB	4	8.0	7.268777198214152
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-GM-A2DD	4	2.0	8.185011572057057
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-GM-A2DH	4	8.0	10.835756961702845
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-GM-A2DK	4	8.0	5.389393886357341
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LL-A5YM	4	11.0	6.6872394040314465
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-LL-A7SZ	4	10.0	5.732867461598482
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-OL-A5D6	4	5.0	5.548503115614993
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-PL-A8LV	4	16.0	9.497079380152652
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-PL-A8LZ	4	12.0	7.373162935411702
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-S3-AA11	4	1.0	10.20707257726745
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-V7-A7HQ	4	4.0	5.276436006282126
+main	all	HRD_LOH	regression	Baseline+Standard	TCGA-XX-A899	4	5.0	8.560404239805822
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-5L-AAT0	0	3.0	7.916790909229835
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SF	0	7.0	5.296339611633004
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SJ	0	7.0	5.957437307770818
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CM	0	7.0	6.520611861782335
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CW	0	12.0	6.642750330922101
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CX	0	5.0	8.402090038525847
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0D1	0	12.0	6.781527826953951
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EU	0	2.0	6.4515799488458905
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T0	0	16.0	14.385743692654888
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T5	0	1.0	4.322069987268316
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T6	0	2.0	4.102155513751732
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YJ	0	3.0	10.113818842072044
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YL	0	3.0	5.359574898739338
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YM	0	3.0	7.103127966446627
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YT	0	13.0	7.821184054556113
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1G1	0	3.0	8.047638179534705
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A25C	0	5.0	6.195456891137515
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A25D	0	7.0	7.737045036083535
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A25E	0	13.0	10.463646322848854
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A3KD	0	4.0	-11.87518909792619
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A3Y0	0	21.0	17.23709457320046
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0CE	0	9.0	11.636222171224425
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0CH	0	1.0	5.188580037232901
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A26J	0	6.0	8.485852089476627
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A5ZW	0	2.0	3.987485378307935
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06U	0	21.0	6.703463468183709
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07J	0	4.0	5.830698288756826
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07O	0	7.0	6.36276189244005
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08R	0	21.0	12.483355758028221
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A090	0	4.0	5.63052256291434
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09C	0	9.0	4.699163616591859
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09V	0	1.0	8.470375862440656
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A3OD	0	8.0	5.31351895880439
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A62Y	0	2.0	7.667850978832526
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A03X	0	4.0	6.42471069652825
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A03Y	0	3.0	6.617444162379259
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A049	0	10.0	6.870558779560916
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AJ	0	7.0	9.267104789318324
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AT	0	20.0	14.988884035710134
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FS	0	5.0	7.048559756141915
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FW	0	5.0	9.26221632869278
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FY	0	12.0	6.183116889443163
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XN	0	7.0	11.117426658623346
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XR	0	4.0	10.756513070787411
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XT	0	14.0	4.370382304239707
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03R	0	5.0	7.731304679035442
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J3	0	10.0	6.94513133544466
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J7	0	2.0	4.0731872138458485
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JD	0	17.0	9.401750216934591
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JJ	0	2.0	6.105606286529818
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A128	0	2.0	11.193100091239048
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A12F	0	10.0	6.982161781284135
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A1KT	0	9.0	5.544971768358203
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TP	0	19.0	10.742377539915886
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TX	0	5.0	8.468896056690163
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AO	0	0.0	12.59285825572649
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AX	0	2.0	5.05912207295267
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24P	0	2.0	5.220115235747649
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24W	0	3.0	4.547348023424816
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24Z	0	8.0	7.187538369333403
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A256	0	20.0	13.144175797012572
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LH	0	0.0	6.31938497348342
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LN	0	2.0	5.5180634237246355
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RO	0	7.0	5.870724414251525
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RU	0	6.0	6.704887128349705
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WS	0	6.0	5.024030443016391
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WY	0	8.0	6.959242560121584
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0X1	0	24.0	9.414512795578066
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A1KN	0	12.0	10.627954043384975
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A401	0	9.0	5.611753166603089
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0B5	0	3.0	5.636036160774356
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BF	0	7.0	6.294509566869318
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BP	0	22.0	10.679325743422385
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BR	0	14.0	5.653758512134111
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0C1	0	3.0	6.209854711780148
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0C7	0	11.0	6.537794072178257
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DE	0	7.0	5.893050326020523
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DT	0	1.0	4.084356492785513
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E1	0	2.0	4.730678555841065
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0EE	0	6.0	8.66872845237503
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HB	0	8.0	5.4707347971456475
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HI	0	2.0	5.435356225101305
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HK	0	4.0	6.864865815091319
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HP	0	2.0	8.16804481253892
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0W3	0	3.0	5.134805358137443
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0W4	0	2.0	5.772537613089194
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18H	0	8.0	6.336213936826619
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18Q	0	11.0	11.917987055839843
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EO	0	9.0	5.343972206549115
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EV	0	8.0	8.348992184820174
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1F0	0	11.0	8.646017807401469
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FC	0	6.0	7.778383951611219
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FE	0	6.0	-0.37762525822698034
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FJ	0	1.0	5.554944124245379
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A2L8	0	1.0	9.038834756529978
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A8FY	0	3.0	7.3646157379766795
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12M	0	5.0	6.639511747447928
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12N	0	3.0	4.3865697469925875
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A137	0	11.0	7.562615309239321
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HL	0	4.0	5.6913735049962035
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26V	0	9.0	7.718939168895442
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A275	0	5.0	7.417090621302839
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A278	0	6.0	6.272844573172178
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JN	0	2.0	7.7221154300666175
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JS	0	2.0	5.623134443913286
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JT	0	4.0	4.668217530867061
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XF	0	12.0	5.4275811573156005
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XY	0	8.0	6.546463196321968
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XZ	0	6.0	9.007752587800963
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27L	0	3.0	5.058830203688105
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27T	0	3.0	4.603370606479691
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14Z	0	12.0	7.13017079614293
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A153	0	2.0	4.904644016476725
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A159	0	9.0	8.27669346222648
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15H	0	5.0	5.86706462799199
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15K	0	2.0	8.496759108912405
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15T	0	6.0	5.0264436321042885
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IF	0	2.0	-10.35995507230894
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1L8	0	4.0	6.561383445446349
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A570	0	2.0	6.3291548402997435
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A576	0	12.0	6.5880465183731305
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A9RU	0	8.0	6.112759391303817
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NC	0	20.0	8.488947491767133
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1ND	0	3.0	8.380998317667569
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NE	0	0.0	11.978682343080592
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R6	0	2.0	5.250453023594908
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RB	0	9.0	10.066585863376737
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RG	0	12.0	8.047630894820786
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A226	0	8.0	6.232822058430296
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22G	0	20.0	9.183267760104565
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A6HE	0	5.0	3.912651758680827
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1J3	0	4.0	5.538054188527058
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1J6	0	13.0	6.901214548586572
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1OV	0	12.0	6.79549992268161
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1OZ	0	12.0	6.898454714720037
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P1	0	0.0	1.9909716060816542
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P8	0	12.0	6.32033399433027
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A2FV	0	3.0	5.051504097791156
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DA	0	4.0	6.022090095797134
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DB	0	7.0	9.043289431244043
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DF	0	13.0	7.1070329063270625
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A6FR	0	15.0	5.127229765121175
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A7T0	0	9.0	6.1239832331770225
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A9Q3	0	5.0	6.623213571421346
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5S0	0	11.0	5.917232684025991
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66I	0	11.0	7.50560754263837
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66J	0	4.0	6.981529196663342
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66K	0	3.0	5.196331873237533
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-PE-A5DE	0	5.0	8.545574504469668
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-A6ZF	0	9.0	6.105922908088015
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA0Z	0	12.0	6.752597442044418
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA14	0	7.0	3.7056642556361123
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-WT-AB41	0	10.0	4.814470244426984
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-WT-AB44	0	6.0	5.228066935245025
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-XX-A89A	0	7.0	7.754632413439287
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SE	1	6.0	6.501238373121201
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SK	1	6.0	10.562681232324655
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04P	1	22.0	16.044504913359994
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04T	1	23.0	10.114671702392696
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CP	1	2.0	7.394766020911643
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CU	1	4.0	7.911984413461202
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CV	1	1.0	3.598796795942967
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EW	1	3.0	3.3675564780600613
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EX	1	4.0	6.199153580275386
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EY	1	13.0	7.317630435502962
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SU	1	5.0	6.799743207819438
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T2	1	11.0	5.657948109545057
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T7	1	9.0	3.1124807548391074
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YF	1	5.0	3.9900871700868876
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YG	1	4.0	6.354271015957918
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1FX	1	6.0	5.959631582061939
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1FZ	1	1.0	5.295548302607578
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1G4	1	3.0	5.919302142836228
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A259	1	3.0	5.039364407415119
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A4S1	1	8.0	10.245110484726236
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A4S3	1	22.0	46.66722823246542
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0DA	1	9.0	13.393253259271734
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0DB	1	1.0	7.462053111064034
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A13E	1	10.0	8.005878507883006
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A6VX	1	14.0	14.161395760413699
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06R	1	10.0	11.911858249352559
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06X	1	12.0	11.481905283741325
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A076	1	4.0	8.597243418319476
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08L	1	23.0	12.683560894177251
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08O	1	9.0	4.2492443348799505
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08X	1	9.0	4.875092170891085
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08Z	1	4.0	6.474955836446517
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A092	1	4.0	6.0081402247714415
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A093	1	2.0	5.215279669021882
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A099	1	5.0	6.982224269396379
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09Z	1	3.0	10.36786156383111
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A7	1	9.0	7.3510858900687595
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0AB	1	6.0	5.5555506975563524
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0AD	1	4.0	7.638142097815372
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A23E	1	3.0	6.098274550884755
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A23H	1	4.0	12.602139069336246
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A3YI	1	0.0	5.156573259321791
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A4ZE	1	7.0	7.388965949372521
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A5EH	1	12.0	12.617787429167926
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A6IV	1	3.0	7.465601140768587
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A04D	1	12.0	10.490914135685706
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FT	1	10.0	7.549056377794313
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FV	1	9.0	8.140384163684994
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FX	1	12.0	9.322322313396452
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XW	1	11.0	8.281850719526133
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J8	1	1.0	4.7583737924905805
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A12A	1	2.0	4.024867020492657
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AQ-A04J	1	17.0	7.814323857908628
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AQ-A1H2	1	9.0	4.958474074973635
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TQ	1	0.0	6.099614118367155
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TV	1	11.0	8.25144513736125
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TW	1	12.0	7.94736198167404
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24U	1	7.0	6.3213049467284
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24V	1	7.0	4.913791402376914
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A251	1	18.0	13.490314105370725
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A5QN	1	7.0	4.546720128067257
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0I2	1	9.0	6.7503986789492165
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0I9	1	11.0	7.610341358408144
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IE	1	8.0	7.8559976755584175
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RN	1	1.0	5.8850872681330895
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RS	1	15.0	13.547868258542529
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RV	1	5.0	5.452298141869824
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WW	1	11.0	4.915362848757951
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WZ	1	2.0	5.337769151080415
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0X0	1	2.0	5.501033652341497
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A1KC	1	3.0	5.701200819438531
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A40C	1	4.0	5.866955894804629
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0B3	1	12.0	6.964524386767687
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0B7	1	8.0	6.467741415874426
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BC	1	4.0	5.434089963306448
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BJ	1	1.0	4.528825962871463
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BO	1	1.0	4.708843890510856
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BT	1	5.0	5.7583283988232505
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DQ	1	8.0	5.6903178148775995
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DZ	1	9.0	7.553094245474569
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E0	1	7.0	7.630271657764037
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E2	1	9.0	7.279988382344077
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18J	1	9.0	5.68790011166887
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18T	1	17.0	10.051391394583852
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1ET	1	1.0	5.671665019083061
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FG	1	4.0	5.070656302379854
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FM	1	5.0	6.151156535056507
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A201	1	3.0	0.7638888945275042
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A208	1	7.0	7.895036932586847
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A209	1	7.0	6.848717465179252
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A28Q	1	4.0	7.267237431860512
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A6R9	1	0.0	9.088552816400703
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A8G0	1	1.0	2.7609857059971477
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12W	1	8.0	6.976499902162275
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12Z	1	11.0	7.202693866248494
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A130	1	10.0	5.7854443392888015
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A133	1	0.0	6.676358926269662
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HF	1	9.0	7.343362069439963
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HM	1	17.0	8.95417984209054
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26X	1	8.0	9.284416173635506
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26Y	1	9.0	10.62027601907233
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A8HQ	1	9.0	7.7331389882198005
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A13Z	1	3.0	10.96910387660393
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A140	1	5.0	7.145401367388804
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A141	1	1.0	4.975778881140492
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JA	1	6.0	10.133134817455774
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JG	1	11.0	8.762651655488902
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JH	1	0.0	4.7276651253807
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JM	1	15.0	6.980963814861112
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JP	1	19.0	8.727525207101316
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1X7	1	1.0	5.021264727197156
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1X9	1	12.0	11.272440165183381
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XA	1	5.0	4.840523905542515
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XJ	1	9.0	5.968285041197781
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XK	1	18.0	7.928254315572943
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XQ	1	15.0	10.3361932185722
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XV	1	0.0	6.036641119615785
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XW	1	6.0	9.295038794433157
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1Y2	1	5.0	3.2196427536001764
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1Y3	1	10.0	9.191822655955963
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27R	1	13.0	7.18354110782926
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A73U	1	5.0	6.974511784404509
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A73W	1	5.0	7.174844694461515
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A158	1	15.0	12.130196759902487
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15J	1	2.0	6.602534791646693
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15R	1	8.0	5.201317318042818
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1BC	1	4.0	6.467709173897142
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IL	1	4.0	4.965725673304872
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1L6	1	3.0	4.219786970487085
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LA	1	17.0	13.627730397416116
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LH	1	17.0	12.20735067661902
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1N5	1	5.0	5.324539659856221
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1N9	1	9.0	7.32228164220761
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NA	1	11.0	10.823600828718185
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NH	1	2.0	5.174937239827191
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RA	1	1.0	3.53567283900428
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RE	1	12.0	5.589813625007237
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A227	1	1.0	5.520177564368631
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1IW	1	10.0	7.4827227454537235
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1IZ	1	2.0	8.086237709197983
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P4	1	20.0	7.8073535972005175
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A2FS	1	9.0	5.1044261701274145
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DC	1	8.0	5.037286871673555
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DM	1	1.0	4.691011164518341
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A3NW	1	3.0	7.010825129616215
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-HN-A2OB	1	1.0	4.804033788492921
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A5YN	1	12.0	5.513331602585499
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A6FQ	1	4.0	6.499498085942689
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A8F5	1	23.0	12.509113694058659
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5DA	1	6.0	6.097517809693253
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RU	1	0.0	5.45154007972106
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RW	1	18.0	11.325346268280246
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-PE-A5DD	1	7.0	5.063757531436401
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-PL-A8LX	1	3.0	5.606232098823673
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA10	1	16.0	9.85460413419176
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-3C-AALI	2	8.0	10.653544033028886
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SI	2	4.0	8.872421022862124
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SO	2	26.0	11.920227085028547
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04R	2	11.0	8.782405425603706
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04U	2	14.0	12.92435543311263
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04Y	2	5.0	6.476352613916591
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CR	2	1.0	8.146908881917579
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0ES	2	0.0	4.322842697313021
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SW	2	6.0	8.252892841156822
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YC	2	1.0	5.917158517771906
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YE	2	10.0	5.871290595139728
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1FV	2	11.0	5.968374935597932
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A25A	2	2.0	10.15985785742054
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0D9	2	4.0	5.158682610994182
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A13F	2	3.0	6.305445676138305
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A26E	2	2.0	6.72347161024038
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A5ZV	2	13.0	11.360080082392788
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06Q	2	9.0	8.747900676398393
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A075	2	13.0	8.922257181153787
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A079	2	6.0	9.358915929813104
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07B	2	5.0	7.137216922803864
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07I	2	9.0	6.701534689549527
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07Z	2	4.0	5.28096686907902
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A081	2	12.0	8.8244556497711
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A082	2	4.0	4.765498028392567
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A083	2	2.0	6.108030494345717
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A094	2	17.0	8.930888336518072
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A095	2	2.0	7.787539920952304
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A097	2	11.0	10.308476127976897
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09D	2	7.0	6.751225319962365
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09Q	2	12.0	10.626711215748582
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09T	2	2.0	4.780924009160412
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2B8	2	4.0	6.945604269839322
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2FO	2	6.0	5.019813614981609
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2QH	2	9.0	6.461043727892755
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A5XS	2	7.0	9.850366797755857
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A6IX	2	12.0	6.93526398526268
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A6NO	2	2.0	5.82191536003099
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A8OP	2	6.0	9.208109291176967
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A8OR	2	3.0	5.959286947117195
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A046	2	2.0	15.527608739178202
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AS	2	5.0	6.115618850221816
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XU	2	22.0	9.624119822529984
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XV	2	3.0	6.267419384299247
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03T	2	11.0	12.807384902257748
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J9	2	2.0	7.033317661766413
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JB	2	19.0	9.577741034373487
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JM	2	8.0	9.642903483786352
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A12D	2	9.0	6.191375245714919
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AQ-A04H	2	4.0	7.654592160596971
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TR	2	6.0	6.272860316056988
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TZ	2	10.0	7.280940351128579
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AI	2	14.0	11.054061151807364
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AJ	2	5.0	6.35662333592476
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AN	2	8.0	5.528517365625233
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AQ	2	8.0	8.186306300205104
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AR	2	10.0	8.36673869557136
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AW	2	6.0	9.670962143666976
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24N	2	2.0	6.534133791766866
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24Q	2	16.0	13.758824122656485
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24S	2	7.0	6.6847273380374075
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A254	2	7.0	6.332406265207608
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LQ	2	0.0	3.791772899227467
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A5QM	2	8.0	7.532989048526341
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A5QP	2	4.0	5.1132130019941755
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0I5	2	1.0	5.59600928591185
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IB	2	6.0	8.170934586033177
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RE	2	8.0	12.903780056466857
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RG	2	6.0	10.489981620014477
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RH	2	7.0	6.262047165274239
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RI	2	3.0	5.949889862488235
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RL	2	7.0	6.649864834575553
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0X4	2	0.0	4.52188583940471
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A2IU	2	3.0	6.010173063319135
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AV	2	19.0	13.54990407875932
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AZ	2	11.0	9.168243298639343
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0B9	2	12.0	6.909461193955381
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BA	2	12.0	6.273628551890898
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BM	2	3.0	6.449621794766479
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DG	2	2.0	7.962188097878548
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DI	2	10.0	7.072456066444758
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0H0	2	9.0	7.021531893248516
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HA	2	4.0	9.93276665216668
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HQ	2	1.0	5.729658445611667
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18F	2	3.0	6.573325943587232
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18G	2	2.0	12.819226176946733
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18K	2	10.0	9.65885763716632
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18P	2	4.0	9.195737913171918
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EU	2	5.0	4.926316751587472
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EW	2	6.0	3.649355600136888
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EY	2	14.0	6.587975305643829
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1F2	2	11.0	6.789029264509161
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A202	2	4.0	5.617792249770601
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A5IZ	2	18.0	7.550561648130418
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A6R8	2	6.0	7.400830582750446
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A132	2	15.0	7.153017762351009
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26Z	2	6.0	6.514293855066462
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A27A	2	14.0	5.788855493691353
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A145	2	2.0	6.823045081244895
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1J8	2	1.0	11.177362303196961
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1J9	2	10.0	8.23076534256568
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JL	2	8.0	10.788778659836481
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XB	2	2.0	6.027220725994411
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XG	2	3.0	5.405535103527838
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XL	2	7.0	11.295920344068147
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XM	2	6.0	6.267069858249588
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XO	2	3.0	4.130923267053357
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XR	2	5.0	5.375510022970585
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XT	2	12.0	6.675651601012511
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27M	2	15.0	7.75331347564986
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27N	2	6.0	6.96166722183987
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14Y	2	4.0	6.26441102824973
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15C	2	2.0	6.354166325178221
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15D	2	2.0	6.683525349991687
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15E	2	8.0	6.170848704285319
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15G	2	1.0	7.19905233283687
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15M	2	11.0	8.861315472950354
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1B4	2	1.0	7.61139621880406
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IE	2	9.0	5.924563309167332
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IJ	2	2.0	5.481305848689428
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IK	2	0.0	5.134097565789007
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IU	2	2.0	5.70673753199533
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1L9	2	2.0	5.918559050339075
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NG	2	3.0	5.26531536008287
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R3	2	3.0	5.2059841643451445
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RC	2	2.0	6.880147092928747
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A228	2	12.0	6.550699661337156
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22B	2	8.0	7.859197369574645
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22D	2	5.0	5.097311752021375
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22E	2	16.0	11.037702894804884
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A24A	2	2.0	5.40979530693122
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1IY	2	1.0	4.698851280827065
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1OX	2	4.0	3.817924091084392
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P0	2	5.0	5.317728559026833
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P3	2	3.0	5.188978310984789
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PB	2	29.0	11.483665307931481
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A6SD	2	17.0	6.271341809580133
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LD-A74U	2	3.0	7.953603969245599
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LD-A7W5	2	13.0	7.418431678713949
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LD-A7W6	2	4.0	6.6636153866806
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A5YL	2	11.0	6.859123377912431
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A73Y	2	8.0	8.451069873605526
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5D8	2	6.0	5.842611665640961
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RV	2	2.0	5.520896567177747
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RY	2	0.0	3.5983410545534467
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RZ	2	4.0	8.362217856142127
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66L	2	2.0	6.247765110428154
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66O	2	4.0	6.45486136765132
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-A6ZG	2	4.0	6.364086167173724
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA12	2	6.0	6.264411946144049
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA17	2	16.0	10.320504584288415
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-UU-A93S	2	13.0	13.59603529740795
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-W8-A86G	2	3.0	6.02279569192247
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-Z7-A8R6	2	5.0	6.109458813762544
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-5T-A9QA	3	6.0	6.322875783117309
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SD	3	9.0	5.965542005817565
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SG	3	3.0	5.581691620246303
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04Q	3	4.0	8.077168354331686
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CS	3	1.0	6.1028197520219605
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EM	3	2.0	5.613918841446668
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EN	3	2.0	6.168470883832658
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SV	3	15.0	5.856597880772819
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SY	3	3.0	7.342526053928948
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T1	3	8.0	5.988220758731426
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T4	3	7.0	7.67581530030041
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A26I	3	10.0	10.87383702525781
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A6VW	3	12.0	10.444379194865792
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06Y	3	2.0	7.447839971784995
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06Z	3	10.0	9.677837902528513
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07L	3	20.0	9.41585610493539
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07U	3	9.0	7.595498175075463
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07W	3	5.0	10.078830884318679
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08G	3	6.0	6.904047322021079
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A096	3	2.0	5.965542005817565
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09A	3	11.0	12.602419348078108
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09B	3	1.0	6.634521730527644
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09G	3	4.0	8.013729636065955
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09M	3	12.0	9.067829780507
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09N	3	9.0	6.778692962332748
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09X	3	4.0	7.1052230723066785
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A6	3	5.0	6.462806706096593
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2FG	3	3.0	5.599512763997741
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A3QQ	3	4.0	7.138317946745228
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A5XU	3	6.0	6.715387243763576
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A6IW	3	4.0	8.86547105220355
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A7VB	3	7.0	5.454527569610277
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A041	3	4.0	7.222357439014594
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A04C	3	8.0	8.203169907550564
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AR	3	20.0	11.285546139874011
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FN	3	2.0	6.549919776897166
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XS	3	3.0	6.07942838002825
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03L	3	10.0	6.7435385218930115
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03O	3	13.0	8.63428233478685
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03P	3	4.0	7.167925552857285
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03V	3	7.0	7.215651626885561
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J4	3	10.0	9.048759493551646
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J6	3	20.0	11.33934827308419
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JA	3	16.0	4.275882192469686
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A124	3	26.0	13.69155111731342
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A1KR	3	8.0	9.806513661636286
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AQ-A1H3	3	3.0	5.589471658465314
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TS	3	13.0	8.628328638079864
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TT	3	9.0	7.490463134379726
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TY	3	11.0	7.469767694531821
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AU	3	6.0	10.73392103518961
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AY	3	11.0	7.24907687012335
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24L	3	17.0	7.9133639497614086
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24O	3	2.0	5.4394231131685835
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24X	3	1.0	5.5581744380002815
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A252	3	1.0	2.7572354373067167
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LK	3	3.0	6.449463748258775
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LO	3	8.0	6.979267742162936
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IJ	3	21.0	10.972832808139888
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IN	3	5.0	6.056811443990702
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RP	3	1.0	5.545731188627111
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AW	3	8.0	7.907242418583798
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AY	3	4.0	7.5919991493575765
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BL	3	1.0	8.470260883496513
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BZ	3	5.0	11.97413626951166
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DH	3	9.0	6.0637805531712425
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DL	3	6.0	6.919237069300169
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DO	3	1.0	5.202192683141464
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DS	3	3.0	6.681105664196131
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E7	3	2.0	6.950597933331515
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0EA	3	1.0	5.976699850887945
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HU	3	11.0	6.559512845692257
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HX	3	13.0	8.472405228347654
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HY	3	11.0	7.657998942991388
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18I	3	5.0	3.9870149896598934
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18M	3	2.0	6.543988320486844
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18N	3	1.0	6.391392794930773
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18S	3	4.0	10.187231942539135
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18U	3	10.0	7.180955017034195
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FN	3	13.0	8.240007982124506
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FU	3	4.0	8.441988702786825
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A203	3	12.0	9.126804741069357
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A204	3	8.0	6.251867687131419
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A42V	3	4.0	4.735189696259219
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A8FZ	3	12.0	9.598191218115396
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12Y	3	6.0	6.319258617738737
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A135	3	12.0	6.952192627772996
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HE	3	5.0	5.273809065310928
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26W	3	13.0	6.807148976626296
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A27B	3	17.0	9.087855004721709
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A143	3	7.0	8.533794005438835
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JC	3	13.0	7.051230974231389
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JJ	3	3.0	6.8351021091963355
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JU	3	2.0	5.084830857881058
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1X5	3	10.0	6.689680335408129
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1Y0	3	9.0	10.748724149754764
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27E	3	0.0	6.392143887995712
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27F	3	29.0	9.326938487277204
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27H	3	19.0	12.460217985363446
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27P	3	1.0	6.63325107256046
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27W	3	6.0	5.972171919225623
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A73X	3	1.0	6.366174942815168
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A150	3	12.0	7.565964467155238
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A152	3	6.0	7.0104463547140545
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A154	3	1.0	7.010183522992513
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15I	3	2.0	5.375004582447449
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15O	3	7.0	6.525190975643678
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15P	3	6.0	7.276524023119725
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1AZ	3	12.0	6.936201013808015
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1B5	3	5.0	4.948914226748378
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1BD	3	1.0	6.318431002332545
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IG	3	4.0	6.558759542282612
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IO	3	11.0	4.117260373860747
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LG	3	4.0	7.574346554543119
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LL	3	11.0	7.519427886703477
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A573	3	15.0	6.88871295727814
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1N8	3	6.0	5.9736634913943725
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NI	3	5.0	5.535586845867857
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R0	3	2.0	5.249173575696872
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R5	3	4.0	6.670371798396272
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R7	3	14.0	6.909170000922087
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RD	3	1.0	7.194756874651226
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RF	3	11.0	12.388279746725996
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22H	3	3.0	5.696118780154377
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A243	3	12.0	7.983857992165566
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A244	3	14.0	10.095652562454195
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A295	3	5.0	8.365392018444716
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A2JS	3	14.0	7.116316036275819
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1J1	3	6.0	8.046277605102954
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1OY	3	9.0	7.9996204560416855
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PA	3	9.0	7.273729580853321
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PG	3	0.0	2.7164123621954026
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PH	3	9.0	5.5142198036312084
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A6SC	3	5.0	5.319182693134093
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DL	3	6.0	6.387144048083076
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DN	3	1.0	6.36238747906557
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A5PX	3	5.0	5.442375206985123
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-HN-A2NL	3	21.0	9.673346624914
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LD-A66U	3	4.0	5.622885238701803
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A50Y	3	3.0	6.288195414801674
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A5YP	3	19.0	9.370750995210237
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A73Z	3	7.0	6.1242628830103305
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OK-A5Q2	3	3.0	5.897809470428534
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5D7	3	19.0	7.6899088384853185
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RX	3	2.0	5.356732786257795
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66H	3	0.0	5.301431104097549
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66N	3	1.0	6.1010573164729
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66P	3	5.0	7.1761494627671665
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A6VO	3	7.0	5.471285357768288
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A6VQ	3	1.0	5.812251948649314
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A6VR	3	4.0	3.2184142515706755
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A97C	3	3.0	6.986124095756565
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-PL-A8LY	3	0.0	0.5230280275069239
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-A6ZH	3	8.0	6.544233293078714
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-3C-AALJ	4	6.0	6.235184304572649
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SB	4	0.0	4.079592640431668
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SQ	4	2.0	5.6346282365199825
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04N	4	2.0	5.769916602384516
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04V	4	4.0	6.619014619594568
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04W	4	6.0	7.166606357501946
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CT	4	8.0	7.4312676807968545
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0D0	4	10.0	10.57127041776261
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0D3	4	1.0	4.922273631291164
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0D4	4	12.0	7.3563580859903555
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EV	4	6.0	8.036689685319923
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SX	4	12.0	5.756916698064542
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T3	4	12.0	6.236778964863287
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YD	4	2.0	5.621128108387822
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YH	4	7.0	7.28371848956872
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YK	4	3.0	8.566106614729101
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1G0	4	2.0	4.908760975007538
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A3XU	4	3.0	6.304550670561385
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0CG	4	3.0	6.218651794964258
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0CJ	4	12.0	6.998927736281442
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A13D	4	11.0	12.689754263769077
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A26H	4	6.0	7.9895256648447885
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A4SE	4	18.0	4.06214251721625
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A56D	4	14.0	7.697502869692109
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A5ZX	4	2.0	5.80535622809634
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A6VY	4	28.0	8.882970285907108
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06P	4	3.0	5.877122337214848
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07P	4	7.0	6.096301482526267
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08B	4	8.0	6.81214387670116
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08H	4	0.0	5.172254947162026
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08T	4	3.0	5.713082956059202
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A091	4	4.0	4.707069832979241
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09W	4	12.0	11.151311855811585
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A1	4	6.0	6.076612938965738
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A2	4	3.0	5.367856063160598
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A4	4	11.0	4.938057429067627
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A23C	4	8.0	8.144303907920984
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2FB	4	3.0	4.142515393245764
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A7VC	4	3.0	4.883111264134319
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A8OQ	4	17.0	8.166136750808858
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A8OS	4	3.0	6.251128223770629
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AL	4	17.0	9.28968601877727
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AM	4	10.0	8.734615032361177
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FJ	4	7.0	7.99621438161146
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FK	4	3.0	6.156718479634982
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FZ	4	10.0	7.063325051959878
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XO	4	5.0	7.308447587116186
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XP	4	2.0	5.752235413298951
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J2	4	22.0	11.418087925302325
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JE	4	12.0	5.525746753629592
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JF	4	1.0	4.685827059964247
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JG	4	7.0	4.7440179481257205
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JI	4	8.0	5.895779175370829
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A12H	4	0.0	6.679555328358313
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A1KP	4	3.0	7.072136363699377
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0U0	4	10.0	6.430125164722781
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AH	4	5.0	10.306887363745311
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AK	4	5.0	5.882497255174477
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AP	4	7.0	4.8728550889907645
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24R	4	5.0	6.550069352011487
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A250	4	7.0	8.053185349692146
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A5QQ	4	4.0	8.868016298890375
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IC	4	2.0	5.947997001356084
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IH	4	1.0	5.991625455388158
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WT	4	6.0	3.4704299176176203
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0X5	4	3.0	4.682910496753678
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A1KF	4	4.0	7.589020283342521
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A409	4	13.0	7.370046963206454
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AU	4	8.0	5.367544606098459
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0C3	4	5.0	3.764784224924634
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DK	4	5.0	9.103539035279216
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DV	4	1.0	4.06214251721625
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DX	4	9.0	6.306188665843136
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E9	4	4.0	4.775460464922743
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0EB	4	2.0	7.076921512565001
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0GY	4	2.0	8.258401602592233
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0H6	4	2.0	5.614090253386469
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0H7	4	9.0	6.407476199277044
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HO	4	1.0	4.371897108629911
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HW	4	7.0	6.0010473549650225
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0WA	4	14.0	9.319742980085849
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18L	4	6.0	6.999774014035058
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18R	4	7.0	6.546742154899765
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EX	4	0.0	4.0093787543668755
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FL	4	3.0	3.1305943224041037
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-AB28	4	5.0	5.205884228436748
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12L	4	20.0	9.760540418167878
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12O	4	7.0	6.623661568168202
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12P	4	12.0	8.29137816371819
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12Q	4	13.0	6.884700203935391
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12U	4	10.0	7.818443034337083
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A131	4	2.0	7.435836884916242
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A138	4	10.0	6.598693538813201
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HG	4	15.0	7.0479516834889475
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HJ	4	23.0	14.695744890457151
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HK	4	6.0	7.014456976879598
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A273	4	5.0	4.966888483755693
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A8HP	4	14.0	7.5712862612172955
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A8HR	4	12.0	7.446820104268596
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A13Y	4	14.0	9.278741171702002
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A147	4	15.0	9.449163793943512
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JB	4	12.0	7.766799216483831
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JD	4	5.0	9.659896941801593
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JF	4	4.0	6.691967229558578
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JI	4	8.0	5.799360465826041
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JK	4	10.0	9.608348537746327
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1X8	4	6.0	6.016566128112723
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XC	4	0.0	5.639072167171233
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1Y1	4	3.0	8.326587193285174
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27K	4	1.0	5.423250947672974
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27V	4	5.0	7.192537659694024
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A3Z6	4	3.0	5.402562267275304
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A4Z1	4	1.0	5.157482089466598
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A10A	4	6.0	4.965546565967195
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A10C	4	4.0	8.425196495169162
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14O	4	4.0	6.154856178570112
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14Q	4	6.0	5.923317205129027
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14R	4	18.0	12.886712847582409
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14T	4	7.0	5.4806503466249925
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14X	4	3.0	4.769876475417689
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A155	4	12.0	6.137976099501744
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A156	4	2.0	7.561372271725229
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15A	4	15.0	7.488449859081065
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1B0	4	12.0	6.239790094859702
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IH	4	7.0	7.246907110417938
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LK	4	8.0	5.011144854436973
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A56Z	4	5.0	4.889963434167778
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1N3	4	1.0	6.926950869691298
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RH	4	10.0	8.015359605425152
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A229	4	8.0	5.350310484932545
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22A	4	9.0	5.691372865126889
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A245	4	0.0	4.842501268045513
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A247	4	11.0	6.88000069682674
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A248	4	1.0	4.433303729296562
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A2JT	4	0.0	3.292788117958968
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A3X8	4	2.0	9.170758740562718
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A5FL	4	22.0	11.650476524415977
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A5UO	4	8.0	5.346219259449797
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P5	4	3.0	4.186267830535563
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P6	4	2.0	4.057219046490573
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P7	4	5.0	5.135366103383421
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PE	4	2.0	5.269938863289097
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A6SB	4	8.0	7.238247517518095
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DD	4	2.0	7.190212340756104
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DH	4	8.0	10.525766248239997
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DK	4	8.0	5.72734697793733
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A5YM	4	11.0	6.034913879580566
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A7SZ	4	10.0	7.192704918097748
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5D6	4	5.0	6.908701587066423
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-PL-A8LV	4	16.0	12.65492967745486
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-PL-A8LZ	4	12.0	7.524626973030056
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA11	4	1.0	8.30175918914939
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-V7-A7HQ	4	4.0	6.5125935972021916
+main	all	HRD_LOH	regression	Baseline+Universal-BiCGR d=10	TCGA-XX-A899	4	5.0	5.875571140413099

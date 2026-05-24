@@ -1,0 +1,4 @@
+spearman	pearson	r2	mae	suite	subset	endpoint	task	model	n	auroc	auprc	balanced_acc	brier
+				main	all	parpi7_binary	classification	Baseline	772	0.6260900235640205	0.1786344223990993	0.4985141158989599	0.1115322408884464
+				main	all	parpi7_binary	classification	Baseline+Standard	772	0.5495744968256113	0.1615010887869261	0.5408317949179762	0.16440863809472928
+				main	all	parpi7_binary	classification	Baseline+Universal-BiCGR d=10	772	0.5853783000885526	0.18219364549335262	0.5384603839284374	0.15710327287228298

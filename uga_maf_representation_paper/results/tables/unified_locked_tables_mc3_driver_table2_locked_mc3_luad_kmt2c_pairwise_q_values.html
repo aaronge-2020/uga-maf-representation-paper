@@ -1,0 +1,99 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+
+    body{font-family:Arial,Helvetica,sans-serif;margin:28px;color:#111}
+    h1{font-size:18px;margin:0 0 12px 0}
+    table{border-collapse:collapse;font-size:12px;width:100%;max-width:1280px}
+    th,td{padding:6px 8px;border-bottom:1px solid #bbb;text-align:right}
+    th:first-child,td:first-child{text-align:left}
+    th{border-top:1.5px solid #111;border-bottom:1.5px solid #111;font-weight:600}
+    p{font-size:11px;color:#333;max-width:1120px}
+    </style>
+    
+<title>Table 2. Locked unified-model TCGA-LUAD KMT2C paired bootstrap q values</title></head><body>
+<h1>Table 2. Locked unified-model TCGA-LUAD KMT2C paired bootstrap q values</h1>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>comparison</th>
+      <th>feature_set_a</th>
+      <th>feature_set_b</th>
+      <th>auroc_a</th>
+      <th>auroc_b</th>
+      <th>delta_auroc</th>
+      <th>bootstrap_ci_low</th>
+      <th>bootstrap_ci_high</th>
+      <th>p_value</th>
+      <th>n_bootstrap</th>
+      <th>q_value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Locked UGA - Standard (SBS)</td>
+      <td>locked_uga_sbs</td>
+      <td>standard_sbs</td>
+      <td>0.7162</td>
+      <td>0.7095</td>
+      <td>0.00673</td>
+      <td>-0.04369</td>
+      <td>0.05635</td>
+      <td>0.8756</td>
+      <td>200</td>
+      <td>0.8756</td>
+    </tr>
+    <tr>
+      <td>Locked UGA pooled - Standard (SBS+ID)</td>
+      <td>locked_uga_sbs_id_pooled</td>
+      <td>standard_sbs_id</td>
+      <td>0.7409</td>
+      <td>0.7029</td>
+      <td>0.03798</td>
+      <td>-0.02656</td>
+      <td>0.1101</td>
+      <td>0.2488</td>
+      <td>200</td>
+      <td>0.6219</td>
+    </tr>
+    <tr>
+      <td>Locked UGA separate-block sensitivity - Standard (SBS+ID)</td>
+      <td>locked_uga_sbs_id_separate</td>
+      <td>standard_sbs_id</td>
+      <td>0.7021</td>
+      <td>0.7029</td>
+      <td>-0.0007663</td>
+      <td>-0.05801</td>
+      <td>0.04952</td>
+      <td>0.8259</td>
+      <td>200</td>
+      <td>0.8756</td>
+    </tr>
+    <tr>
+      <td>Locked pooled SBS+ID - Locked SBS</td>
+      <td>locked_uga_sbs_id_pooled</td>
+      <td>locked_uga_sbs</td>
+      <td>0.7409</td>
+      <td>0.7162</td>
+      <td>0.02469</td>
+      <td>-0.0242</td>
+      <td>0.08293</td>
+      <td>0.4378</td>
+      <td>200</td>
+      <td>0.7297</td>
+    </tr>
+    <tr>
+      <td>Locked pooled SBS+ID - Burden only</td>
+      <td>locked_uga_sbs_id_pooled</td>
+      <td>burden_only</td>
+      <td>0.7409</td>
+      <td>0.6956</td>
+      <td>0.04531</td>
+      <td>-0.02135</td>
+      <td>0.1266</td>
+      <td>0.209</td>
+      <td>200</td>
+      <td>0.6219</td>
+    </tr>
+  </tbody>
+</table>
+<p>P values use stratified paired bootstrap resampling of averaged repeated out-of-fold predictions. Q values use Benjamini-Hochberg correction across contrasts.</p>
+</body></html>

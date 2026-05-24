@@ -1,0 +1,4 @@
+model_id,endpoint_family,n_endpoints,mean_delta,min_delta,max_delta,positive_endpoints,fdr_significant_positive
+id_plus_best_gene_locus_multiscale_stack,mc3_clinical,5,0.0694921309352523,0.008508664316007,0.2809682508490777,5,5
+id_plus_best_gene_locus_multiscale_stack,hrd,10,0.0626938921382117,0.0112647374062164,0.1084751414856775,10,9
+id_plus_best_gene_locus_multiscale_stack,mc3_kmt2c_supportive,1,0.0238206289978678,0.0238206289978678,0.0238206289978678,1,0

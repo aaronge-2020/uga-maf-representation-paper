@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EXP-025 Payload Absence Tables</title>
+
+<style>
+body {
+  margin: 34px;
+  color: #202733;
+  font-family: Aptos, "Segoe UI", Arial, sans-serif;
+  line-height: 1.45;
+}
+main {
+  max-width: 1120px;
+}
+h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  letter-spacing: 0;
+}
+p {
+  color: #5d6875;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 26px 0 34px;
+  font-size: 13px;
+}
+caption {
+  caption-side: top;
+  text-align: left;
+  color: #202733;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+th {
+  text-align: left;
+  border-bottom: 2px solid #2d3745;
+  padding: 8px 8px;
+  white-space: nowrap;
+}
+td {
+  border-bottom: 1px solid #d9e0e8;
+  padding: 8px 8px;
+  vertical-align: top;
+}
+tbody tr:nth-child(even) {
+  background: #f7f9fb;
+}
+code {
+  background: #eef3f7;
+  border-radius: 4px;
+  padding: 1px 4px;
+}
+</style>
+
+</head>
+<body>
+<main>
+<h1>EXP-025 Payload Absence Encoding Tables</h1>
+<p>Copy/paste-ready tables for the UGA payload absence benchmark. Source CSV files are in <code>../tables/</code>.</p>
+<table>
+<caption>Table 1. Payload absence candidate properties.</caption>
+<thead><tr><th>Label</th><th>Payload Pair Dim</th><th>Full UGA Dim Selected</th><th>Collision Count</th><th>Binary Features</th><th>Bounded 0 1</th><th>Admissible UGA Binary Minimal</th></tr></thead>
+<tbody>
+<tr><td>Legacy zero padding</td><td>8</td><td>48</td><td>185</td><td>True</td><td>True</td><td>False</td></tr><tr><td>Fractional pad sentinel</td><td>8</td><td>48</td><td>0</td><td>False</td><td>True</td><td>False</td></tr><tr><td>Out-of-range pad sentinel</td><td>8</td><td>48</td><td>0</td><td>False</td><td>False</td><td>False</td></tr><tr><td>Masked payload</td><td>12</td><td>52</td><td>0</td><td>True</td><td>True</td><td>True</td></tr><tr><td>Length-coded payload</td><td>12</td><td>52</td><td>0</td><td>True</td><td>True</td><td>True</td></tr>
+</tbody>
+</table>
+
+<table>
+<caption>Table 2. Simulated INDEL-like exposure recovery.</caption>
+<thead><tr><th>Label</th><th>N</th><th>Mean MAE</th><th>Median MAE</th><th>Mean Cosine</th><th>Top1 Process Accuracy</th></tr></thead>
+<tbody>
+<tr><td>Legacy zero padding</td><td>480</td><td>0.0792</td><td>0.0864</td><td>0.4148</td><td>0.3438</td></tr><tr><td>Fractional pad sentinel</td><td>480</td><td>0.0239</td><td>0.0087</td><td>0.8916</td><td>0.8521</td></tr><tr><td>Out-of-range pad sentinel</td><td>480</td><td>0.0345</td><td>0.0135</td><td>0.8155</td><td>0.7500</td></tr><tr><td>Masked payload</td><td>480</td><td>0.0173</td><td>0.0072</td><td>0.9357</td><td>0.8958</td></tr><tr><td>Length-coded payload</td><td>480</td><td>0.0211</td><td>0.0079</td><td>0.9098</td><td>0.8708</td></tr>
+</tbody>
+</table>
+
+<table>
+<caption>Table 3. Signature geometry diagnostics.</caption>
+<thead><tr><th>Label</th><th>Feature Dim</th><th>Signature Count</th><th>Signature Matrix Rank</th><th>Rank Deficit</th><th>Min Signature Distance</th></tr></thead>
+<tbody>
+<tr><td>Legacy zero padding</td><td>8</td><td>16</td><td>5</td><td>11</td><td>0.0000</td></tr><tr><td>Fractional pad sentinel</td><td>8</td><td>16</td><td>6</td><td>10</td><td>0.5515</td></tr><tr><td>Out-of-range pad sentinel</td><td>8</td><td>16</td><td>6</td><td>10</td><td>0.9400</td></tr><tr><td>Masked payload</td><td>12</td><td>16</td><td>8</td><td>8</td><td>0.7800</td></tr><tr><td>Length-coded payload</td><td>12</td><td>16</td><td>8</td><td>8</td><td>0.9400</td></tr>
+</tbody>
+</table>
+
+<table>
+<caption>Table 4. Payload depth efficiency sweep.</caption>
+<thead><tr><th>d payload</th><th>Exact Enumerative Min Pair Dim</th><th>Masked Pair Dim</th><th>Length Coded Pair Dim</th><th>Masked Full UGA Dim</th><th>Length Coded Full UGA Dim</th><th>Length Saves Dim vs Masked</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>5</td><td>6</td><td>8</td><td>46</td><td>48</td><td>-2</td></tr><tr><td>2</td><td>9</td><td>12</td><td>12</td><td>52</td><td>52</td><td>0</td></tr><tr><td>3</td><td>13</td><td>18</td><td>18</td><td>58</td><td>58</td><td>0</td></tr><tr><td>4</td><td>17</td><td>24</td><td>22</td><td>64</td><td>62</td><td>2</td></tr><tr><td>5</td><td>21</td><td>30</td><td>26</td><td>70</td><td>66</td><td>4</td></tr><tr><td>6</td><td>25</td><td>36</td><td>30</td><td>76</td><td>70</td><td>6</td></tr><tr><td>7</td><td>29</td><td>42</td><td>36</td><td>82</td><td>76</td><td>6</td></tr><tr><td>8</td><td>33</td><td>48</td><td>40</td><td>88</td><td>80</td><td>8</td></tr><tr><td>9</td><td>37</td><td>54</td><td>44</td><td>94</td><td>84</td><td>10</td></tr><tr><td>10</td><td>41</td><td>60</td><td>48</td><td>100</td><td>88</td><td>12</td></tr>
+</tbody>
+</table>
+</main>
+</body>
+</html>

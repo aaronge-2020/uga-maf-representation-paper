@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EXP-024 Narrative Walkthrough</title>
+<style>
+:root {
+  --ink: #17202a;
+  --muted: #5f6b7a;
+  --line: #d8e0e8;
+  --soft: #f5f8fa;
+  --green: #2f6f73;
+  --blue: #4c78a8;
+  --red: #c44e52;
+  --amber: #b8872f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #ffffff;
+  font-family: "Aptos", "Segoe UI", Arial, sans-serif;
+  line-height: 1.55;
+}
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 38px 30px 58px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+a {
+  color: var(--green);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  gap: 34px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid var(--line);
+}
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+h1 {
+  margin: 0;
+  max-width: 820px;
+  font-size: 40px;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+.lede {
+  margin: 18px 0 0;
+  max-width: 760px;
+  color: #3d4a56;
+  font-size: 18px;
+}
+.thesis {
+  align-self: end;
+  border-left: 4px solid var(--green);
+  padding: 16px 0 16px 18px;
+  color: #33404c;
+  background: linear-gradient(90deg, #f3f8f6, #fff);
+}
+.thesis strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+section {
+  margin-top: 44px;
+}
+h2 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  letter-spacing: 0;
+}
+h3 {
+  margin: 22px 0 8px;
+  font-size: 16px;
+}
+p {
+  max-width: 850px;
+  margin: 12px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 22px 0;
+}
+.stat {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 15px 16px;
+  background: #fff;
+}
+.stat .value {
+  font-size: 29px;
+  line-height: 1;
+  font-weight: 750;
+  color: var(--ink);
+}
+.stat .label {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.callout {
+  margin: 22px 0;
+  padding: 15px 18px;
+  border-left: 4px solid var(--blue);
+  background: #f4f7fb;
+  color: #33404c;
+}
+.warning {
+  border-left-color: var(--amber);
+  background: #fbf7ee;
+}
+.bar-panel {
+  margin: 18px 0 24px;
+  max-width: 860px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+}
+.bar-row {
+  display: grid;
+  grid-template-columns: 190px minmax(160px, 1fr) 70px;
+  gap: 12px;
+  align-items: center;
+  margin: 9px 0;
+  font-size: 13px;
+}
+.bar-label { color: #34424f; }
+.bar-track {
+  height: 9px;
+  background: #edf1f5;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.bar-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+.bar-value {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+table {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 13px;
+}
+th {
+  background: var(--soft);
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: 8px;
+  text-align: left;
+}
+td {
+  border-bottom: 1px solid var(--line);
+  padding: 8px;
+}
+.method-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+.step {
+  border-top: 3px solid var(--green);
+  padding-top: 10px;
+  color: #34424f;
+}
+.step strong {
+  display: block;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+code {
+  background: #eef3f7;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+@media (max-width: 800px) {
+  main { padding: 26px 18px 44px; }
+  .hero { grid-template-columns: 1fr; }
+  h1 { font-size: 31px; }
+  .grid, .method-steps { grid-template-columns: 1fr; }
+  .bar-row { grid-template-columns: 1fr; gap: 5px; }
+  .bar-value { text-align: left; }
+}
+</style>
+</head>
+<body>
+<main>
+  <nav>
+    <a href="../index.html">Package index</a>
+    <a href="manuscript_tables.html">Publication tables</a>
+    <a href="../figures/shared_space_d3_figures.html">D3 figures</a>
+    <a href="../README.md">Generated README</a>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <p class="eyebrow">EXP-024 narrative walkthrough</p>
+      <h1>What the shared UGA coordinate space proves, without pretending the pooled solver is best</h1>
+      <p class="lede">This experiment asks whether SBS, DBS, and indels gain something scientifically useful from living in one 48-dimensional coordinate system, even when exposure estimation itself is more accurate when each modality is solved separately.</p>
+    </div>
+    <aside class="thesis">
+      <strong>Thesis in one sentence</strong>
+      UGA should be defended as a shared geometry for comparing, matching, and transferring mutation processes across modalities, not as a claim that one naive all-at-once NNLS solve must dominate.
+    </aside>
+  </header>
+
+  <section>
+    <h2>1. Why this experiment exists</h2>
+    <p>Your central methodological claim is that SBS, DBS, and indels can be represented in a single feature space. But your empirical observation is also important: when all modalities are solved together in one naive exposure system, performance can worsen. EXP-024 turns that tension into a strength.</p>
+    <p>The benchmark therefore tests two ideas separately. First, it checks whether separate modality solves remain better for exposure recovery. Second, it asks whether the shared UGA coordinate system enables analyses that standard SBS96, DBS78, and ID83 catalogs cannot naturally perform.</p>
+    <div class="callout">
+      The point is not “UGA pooling always wins.” The point is “UGA creates a common coordinate language, and that language makes cross-modality questions measurable.”
+    </div>
+  </section>
+
+  <section>
+    <h2>2. What was simulated</h2>
+    <p>The simulation generated <strong>520 tumors</strong> from sparse mixtures of <strong>12 latent mutational processes</strong>. Each process has three visible forms: an SBS form, a DBS form, and an indel form. These forms share the same flanking-context program, but they carry different mutation payloads and therefore land in distinct standard catalog channels.</p>
+    <div class="method-steps">
+      <div class="step"><strong>Latent process</strong> A shared biological context program defines the local sequence environment.</div>
+      <div class="step"><strong>Modality-specific event</strong> SBS, DBS, and ID versions use different ref/alt payloads.</div>
+      <div class="step"><strong>Two encodings</strong> Events are counted in standard channels and encoded as 48D UGA vectors.</div>
+      <div class="step"><strong>Known truth</strong> The true process mixture is retained for every simulated tumor.</div>
+    </div>
+    <p>The UGA vector uses the clean-context layout <code>[Lx, Ly, Xref, Yref, Rx, Ry, Xalt, Yalt]</code> with <code>d_context=10</code> and <code>d_payload=2</code>, producing <strong>48 dimensions</strong>. The standard comparator uses the familiar SBS96, DBS78, and ID83 channel universes.</p>
+  </section>
+
+  <section>
+    <h2>3. Result 1: exposure recovery is better when solved separately</h2>
+    <p>The first result validates your concern. The naive pooled UGA solve collapses all SBS, DBS, and ID events into one burden-weighted 48D profile, then tries to fit all modality-specific centroids at once. That makes the lower-burden modalities vulnerable to dilution by the larger SBS burden.</p>
+    <div class="grid">
+      <div class="stat"><div class="value">0.004 -> 0.032</div><div class="label">DBS MAE, separate UGA to naive pooled UGA</div></div>
+      <div class="stat"><div class="value">0.004 -> 0.030</div><div class="label">ID MAE, separate UGA to naive pooled UGA</div></div>
+      <div class="stat"><div class="value">0.001 -> 0.004</div><div class="label">SBS MAE, separate UGA to naive pooled UGA</div></div>
+    </div>
+    <div class="bar-panel" aria-label="Exposure recovery MAE bars">
+      <div class="bar-row">
+  <div class="bar-label">SBS separate UGA</div>
+  <div class="bar-track"><span style="width: 1.0%; background: #2f6f73;"></span></div>
+  <div class="bar-value">0.001</div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">SBS naive pooled</div>
+  <div class="bar-track"><span style="width: 2.6%; background: #c44e52;"></span></div>
+  <div class="bar-value">0.004</div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">DBS separate UGA</div>
+  <div class="bar-track"><span style="width: 2.9%; background: #2f6f73;"></span></div>
+  <div class="bar-value">0.004</div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">DBS naive pooled</div>
+  <div class="bar-track"><span style="width: 22.9%; background: #c44e52;"></span></div>
+  <div class="bar-value">0.032</div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">ID separate UGA</div>
+  <div class="bar-track"><span style="width: 2.6%; background: #2f6f73;"></span></div>
+  <div class="bar-value">0.004</div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">ID naive pooled</div>
+  <div class="bar-track"><span style="width: 21.7%; background: #c44e52;"></span></div>
+  <div class="bar-value">0.030</div>
+</div>
+    </div>
+    <p>Separate UGA NNLS also improves over the separate categorical NNLS baseline in this synthetic setting: SBS MAE is 0.001 versus 0.005, DBS MAE is 0.004 versus 0.008, and ID MAE is 0.004 versus 0.006. The pooled solve, however, is clearly not the right estimator for this task.</p>
+    <div class="callout warning">
+      Interpretation: this result protects the paper from an overclaim. The shared coordinate system is not the same thing as a single pooled exposure estimator.
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Result 2: UGA makes cross-modality signature matching possible</h2>
+    <p>The second result is the heart of the shared-space argument. Because every SBS, DBS, and ID process has a UGA coordinate, the benchmark can ask: if I only know the SBS version of a process, is the nearest DBS or ID coordinate the matching latent process?</p>
+    <div class="grid">
+      <div class="stat"><div class="value">1.000</div><div class="label">Top-1 retrieval using UGA clean-context coordinates</div></div>
+      <div class="stat"><div class="value">1.000</div><div class="label">Top-1 retrieval using full 48D UGA coordinates</div></div>
+      <div class="stat"><div class="value">0.083</div><div class="label">Standard-catalog chance/tie expectation</div></div>
+    </div>
+    <div class="bar-panel" aria-label="Cross-modality retrieval top-1 bars">
+      <div class="bar-row">
+  <div class="bar-label">UGA clean context 40D</div>
+  <div class="bar-track"><span style="width: 100.0%; background: #2f6f73;"></span></div>
+  <div class="bar-value">1.000</div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">UGA full 48D</div>
+  <div class="bar-track"><span style="width: 100.0%; background: #4c78a8;"></span></div>
+  <div class="bar-value">1.000</div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">UGA payload 8D</div>
+  <div class="bar-track"><span style="width: 8.3%; background: #9d755d;"></span></div>
+  <div class="bar-value">0.083</div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">Standard separate catalogs</div>
+  <div class="bar-track"><span style="width: 8.3%; background: #8b95a1;"></span></div>
+  <div class="bar-value">0.083</div>
+</div>
+    </div>
+    <p>UGA clean context and full UGA both recover the correct cross-modality partner with mean top-1 accuracy 1.000. Payload-only UGA performs near the standard chance/tie baseline, which is useful: it shows the bridge is coming from shared sequence environment, not merely from mutation payload identity.</p>
+    <p>Standard catalogs do not have a native distance between an SBS96 channel distribution and an ID83 channel distribution. The standard row is therefore reported as a chance/tie expectation, not as a meaningful geometric competitor.</p>
+  </section>
+
+  <section>
+    <h2>5. Result 3: UGA transfers signal into held-out modalities</h2>
+    <p>The final benchmark withholds DBS and ID exposures, then tries to infer them from SBS. The UGA bridge is unsupervised: it uses nearest neighbors in clean-context UGA space rather than process labels.</p>
+    <div class="grid">
+      <div class="stat"><div class="value">0.014</div><div class="label">DBS MAE using SBS-to-DBS UGA bridge</div></div>
+      <div class="stat"><div class="value">0.012</div><div class="label">ID MAE using SBS-to-ID UGA bridge</div></div>
+      <div class="stat"><div class="value">0.126</div><div class="label">DBS MAE with no bridge, cohort mean baseline</div></div>
+    </div>
+    <div class="bar-panel" aria-label="Held-out imputation MAE bars">
+      <div class="bar-row">
+  <div class="bar-label">DBS UGA bridge</div>
+  <div class="bar-track"><span style="width: 10.1%; background: #2f6f73;"></span></div>
+  <div class="bar-value">0.014</div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">DBS cohort mean</div>
+  <div class="bar-track"><span style="width: 91.3%; background: #8b95a1;"></span></div>
+  <div class="bar-value">0.126</div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">DBS random bridge</div>
+  <div class="bar-track"><span style="width: 100.0%; background: #c44e52;"></span></div>
+  <div class="bar-value">0.138</div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">ID UGA bridge</div>
+  <div class="bar-track"><span style="width: 8.8%; background: #2f6f73;"></span></div>
+  <div class="bar-value">0.012</div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">ID cohort mean</div>
+  <div class="bar-track"><span style="width: 91.3%; background: #8b95a1;"></span></div>
+  <div class="bar-value">0.126</div>
+</div>
+<div class="bar-row">
+  <div class="bar-label">ID random bridge</div>
+  <div class="bar-track"><span style="width: 99.7%; background: #c44e52;"></span></div>
+  <div class="bar-value">0.138</div>
+</div>
+    </div>
+    <p>The UGA bridge reaches DBS MAE 0.014 and ID MAE 0.012. The no-bridge standard baseline is much weaker: DBS MAE 0.126 and ID MAE 0.126. A random bridge is also poor, with DBS MAE 0.138 and ID MAE 0.138.</p>
+    <p>This result demonstrates a practical advantage of shared coordinates: one modality can supply information about another because both are addressable in the same clean-context geometry.</p>
+  </section>
+
+  <section>
+    <h2>6. What the results show</h2>
+    <table>
+      <thead><tr><th>Question</th><th>Answer from EXP-024</th></tr></thead>
+      <tbody>
+        <tr><td>Should SBS, DBS, and ID exposures always be solved in one pooled NNLS system?</td><td>No. The naive pooled solve worsens DBS and ID exposure recovery.</td></tr>
+        <tr><td>Does that invalidate the shared UGA feature space?</td><td>No. It separates representation from estimator choice.</td></tr>
+        <tr><td>What does UGA enable that standard catalogs do not?</td><td>Direct cross-modality distance, nearest-neighbor matching, manifold visualization, and held-out modality transfer.</td></tr>
+        <tr><td>Where does the cross-modality signal live?</td><td>Primarily in clean flanking context rather than payload-only coordinates.</td></tr>
+      </tbody>
+    </table>
+    <div class="callout">
+      Manuscript framing: “We solve exposures separately when that is statistically preferable, but UGA allows the resulting SBS, DBS, and indel processes to be compared in a single coordinate system.”
+    </div>
+  </section>
+
+  <section>
+    <h2>7. Reproducibility map</h2>
+    <p>Run the experiment from the repository root with:</p>
+    <p><code>python cgr_validation_results\research\scripts\EXP024_shared_space\run_shared_space_benchmark.py</code></p>
+    <p>The page you are reading is generated from the same summary tables used for the manuscript HTML tables. For deeper inspection, open the <a href="manuscript_tables.html">publication tables</a>, the <a href="../figures/shared_space_d3_figures.html">D3 figures</a>, or the raw CSV files in <code>../tables/</code>.</p>
+  </section>
+</main>
+</body>
+</html>

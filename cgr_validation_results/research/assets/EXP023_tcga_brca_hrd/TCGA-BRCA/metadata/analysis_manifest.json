@@ -1,0 +1,26 @@
+{
+  "final_analysis_cohort": 772,
+  "main_metric_rows": 30,
+  "main_prediction_rows": 23160,
+  "sensitivity_metric_rows": 105,
+  "statistical_test_rows": 207,
+  "regression_endpoints": [
+    "HRD_Score",
+    "PARPi7",
+    "eCARD",
+    "HRD_TAI",
+    "HRD_LST",
+    "HRD_LOH"
+  ],
+  "classification_endpoints": [
+    "parpi7_binary",
+    "hrd_binary_42",
+    "hrd_binary_33",
+    "hrd_binary_24"
+  ],
+  "hrd_binary_threshold_columns": [
+    "hrd_binary_42",
+    "hrd_binary_33",
+    "hrd_binary_24"
+  ]
+}

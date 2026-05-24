@@ -1,0 +1,1 @@
+Panel A: nested-CV Spearman ρ (Δ Spearman ρ = Universal − Standard); dependent correlations compared with Steiger tests. Panel B: nested-CV AUROC at HRD ≥24 / ≥33 / ≥42 (axis = AUROC; segment length = Δ AUROC); compared with DeLong tests. Panel C: burden-stratum refits (exploratory robustness; p-values not shown). Significance stars on A and B: * p<0.05, ** p<0.01, *** p<0.001.

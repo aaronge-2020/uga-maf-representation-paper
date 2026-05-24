@@ -1,0 +1,13 @@
+suite	subset	endpoint	task	model	fold	scope	study_name	best_value	best_params_json	n_trials
+main	all	HRD_TAI	regression	Baseline+Standard	0	outer	main__all__HRD_TAI__Baseline_Standard__fold_0	4.95268287025222	"{""alpha"": 0.3147958588682512, ""l1_ratio"": 0.7996948418836567}"	40
+main	all	HRD_TAI	regression	Baseline+Standard	1	outer	main__all__HRD_TAI__Baseline_Standard__fold_1	4.987999981837471	"{""alpha"": 0.33860550288793867, ""l1_ratio"": 0.7099839008108514}"	40
+main	all	HRD_TAI	regression	Baseline+Standard	2	outer	main__all__HRD_TAI__Baseline_Standard__fold_2	5.112599508111939	"{""alpha"": 0.7985732044781378, ""l1_ratio"": 0.9944969410503457}"	40
+main	all	HRD_TAI	regression	Baseline+Standard	3	outer	main__all__HRD_TAI__Baseline_Standard__fold_3	4.80246246806844	"{""alpha"": 0.2511860650143178, ""l1_ratio"": 0.901981752534621}"	40
+main	all	HRD_TAI	regression	Baseline+Standard	4	outer	main__all__HRD_TAI__Baseline_Standard__fold_4	5.036452145049302	"{""alpha"": 0.366510577417865, ""l1_ratio"": 0.826982386884433}"	40
+main	all	HRD_TAI	regression	Baseline+Standard	-1	full	main__all__HRD_TAI__Baseline_Standard__full	4.982274265073443	"{""alpha"": 0.2937809347597513, ""l1_ratio"": 0.9375245697168637}"	40
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	0	outer	main__all__HRD_TAI__Baseline_Universal-BiCGR_d_10__fold_0	4.7456621362163025	"{""alpha"": 0.3337073866459761, ""l1_ratio"": 0.8885883678481388}"	40
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	1	outer	main__all__HRD_TAI__Baseline_Universal-BiCGR_d_10__fold_1	4.785017183483775	"{""alpha"": 0.26954981795344457, ""l1_ratio"": 0.7469445082111014}"	40
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	2	outer	main__all__HRD_TAI__Baseline_Universal-BiCGR_d_10__fold_2	4.910175288197674	"{""alpha"": 0.47373024357568816, ""l1_ratio"": 0.7468763975726936}"	40
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	3	outer	main__all__HRD_TAI__Baseline_Universal-BiCGR_d_10__fold_3	4.89904042212304	"{""alpha"": 0.3968195939696007, ""l1_ratio"": 0.7888116266360918}"	40
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	4	outer	main__all__HRD_TAI__Baseline_Universal-BiCGR_d_10__fold_4	4.9789789699179	"{""alpha"": 0.5404908780217305, ""l1_ratio"": 0.7820369451257474}"	40
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	-1	full	main__all__HRD_TAI__Baseline_Universal-BiCGR_d_10__full	5.166951191496104	"{""alpha"": 0.6387112930574299, ""l1_ratio"": 0.45400255937234524}"	40

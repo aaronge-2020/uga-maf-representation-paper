@@ -1,0 +1,13 @@
+suite	subset	endpoint	task	model	fold	scope	study_name	best_value	best_params_json	n_trials
+main	all	HRD_Score	regression	Baseline+Standard	0	outer	main__all__HRD_Score__Baseline_Standard__fold_0	12.675975910627903	"{""alpha"": 0.7988900534968335, ""l1_ratio"": 0.9984664871681644}"	40
+main	all	HRD_Score	regression	Baseline+Standard	1	outer	main__all__HRD_Score__Baseline_Standard__fold_1	12.896235374572754	"{""alpha"": 0.6920987583170913, ""l1_ratio"": 0.6624400010046813}"	40
+main	all	HRD_Score	regression	Baseline+Standard	2	outer	main__all__HRD_Score__Baseline_Standard__fold_2	13.662003739605192	"{""alpha"": 0.914334338709441, ""l1_ratio"": 0.8470392944974212}"	40
+main	all	HRD_Score	regression	Baseline+Standard	3	outer	main__all__HRD_Score__Baseline_Standard__fold_3	12.230777563818421	"{""alpha"": 0.5808864448090956, ""l1_ratio"": 0.9027142823110943}"	40
+main	all	HRD_Score	regression	Baseline+Standard	4	outer	main__all__HRD_Score__Baseline_Standard__fold_4	13.134431216173487	"{""alpha"": 1.2335180960028551, ""l1_ratio"": 0.9371957308424146}"	40
+main	all	HRD_Score	regression	Baseline+Standard	-1	full	main__all__HRD_Score__Baseline_Standard__full	12.694004989110653	"{""alpha"": 1.116592205199284, ""l1_ratio"": 0.998754378031981}"	40
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	0	outer	main__all__HRD_Score__Baseline_Universal-BiCGR_d_10__fold_0	12.30333080394834	"{""alpha"": 0.7238489000691398, ""l1_ratio"": 0.6322693013576443}"	40
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	1	outer	main__all__HRD_Score__Baseline_Universal-BiCGR_d_10__fold_1	12.398971449136573	"{""alpha"": 0.5189217916851084, ""l1_ratio"": 0.7239914819483038}"	40
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	2	outer	main__all__HRD_Score__Baseline_Universal-BiCGR_d_10__fold_2	12.478171441984486	"{""alpha"": 1.116592205199284, ""l1_ratio"": 0.998754378031981}"	40
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	3	outer	main__all__HRD_Score__Baseline_Universal-BiCGR_d_10__fold_3	12.828561079172829	"{""alpha"": 0.8191398286919761, ""l1_ratio"": 0.4948194509714263}"	40
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	4	outer	main__all__HRD_Score__Baseline_Universal-BiCGR_d_10__fold_4	12.700380118497753	"{""alpha"": 0.9249824248250978, ""l1_ratio"": 0.8818674586143675}"	40
+main	all	HRD_Score	regression	Baseline+Universal-BiCGR d=10	-1	full	main__all__HRD_Score__Baseline_Universal-BiCGR_d_10__full	13.211819229872171	"{""alpha"": 0.9246712813599682, ""l1_ratio"": 0.2703413027604111}"	40

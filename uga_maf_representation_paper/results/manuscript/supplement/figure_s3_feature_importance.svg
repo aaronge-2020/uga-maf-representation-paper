@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1896" viewBox="0 0 1500 1896">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <linearGradient id="heat" x1="0" x2="1"><stop offset="0%" stop-color="#EFF6FF"/><stop offset="100%" stop-color="#1D4ED8"/></linearGradient>
+  </defs>
+  <style>
+  text{font-family:Inter,Arial,sans-serif;fill:#111827;letter-spacing:0}.title{font-size:30px;font-weight:760}.subtitle{font-size:15px;fill:#475569}.panel-title{font-size:17px;font-weight:760}.label{font-size:14px}.small{font-size:12px;fill:#475569}.tiny{font-size:10px;fill:#64748B}.value{font-size:14px;font-weight:700}.sig{font-size:16px;font-weight:800;fill:#111827}.axis{stroke:#CBD5E1;stroke-width:1}.grid{stroke:#E2E8F0;stroke-width:1}.rule{stroke:#334155;stroke-width:1.8}.card{fill:#FFFFFF;stroke:#CBD5E1;stroke-width:1.2}.soft{fill:#F8FAFC}.shadow{filter:drop-shadow(0 2px 3px rgba(15,23,42,.10))}
+  </style><rect width="1500" height="1896" fill="#FFFFFF"/>
+<text x="44" y="50" class="title">Supplementary Figure S3. Supplementary representation checks</text>
+<text x="44" y="78" class="subtitle">Measured supplementary results only. Unsupported combinations are documented in Table S3, not drawn as N/A marks.</text>
+<text x="44" y="110" class="panel-title">Alternative geometry</text>
+<line x1="280" y1="126" x2="280" y2="1056" class="grid"/>
+<text x="280" y="1080" text-anchor="middle" class="tiny">0.00</text>
+<line x1="495" y1="126" x2="495" y2="1056" class="grid"/>
+<text x="495" y="1080" text-anchor="middle" class="tiny">0.25</text>
+<line x1="710" y1="126" x2="710" y2="1056" class="grid"/>
+<text x="710" y="1080" text-anchor="middle" class="tiny">0.50</text>
+<line x1="925" y1="126" x2="925" y2="1056" class="grid"/>
+<text x="925" y="1080" text-anchor="middle" class="tiny">0.75</text>
+<line x1="1140" y1="126" x2="1140" y2="1056" class="grid"/>
+<text x="1140" y="1080" text-anchor="middle" class="tiny">1.00</text>
+<text x="44" y="156" class="small">BRCA-pathway mutated</text>
+<circle cx="982.6695608692024" cy="152" r="6" fill="#6D5BD0"><title>UGA geometry | Unified locked model | 0.817</title></circle>
+<text x="994.6695608692024" y="156" class="tiny">0.82 - UGA geometry - Unified locked model</text>
+<text x="44" y="188" class="small">eCARD</text>
+<circle cx="568.4985704223361" cy="184" r="6" fill="#0F8B8D"><title>Channel KME | XGBoost | 0.335</title></circle>
+<text x="580.4985704223361" y="188" class="tiny">0.34 - Channel KME - XGBoost</text>
+<circle cx="637.2335406528955" cy="216" r="6" fill="#6D5BD0"><title>UGA geometry | Locked UGA SBS | 0.415</title></circle>
+<text x="649.2335406528955" y="220" class="tiny">0.42 - UGA geometry - Locked UGA SBS</text>
+<text x="44" y="252" class="small">High tumor purity</text>
+<circle cx="813.4211713257529" cy="248" r="6" fill="#0F8B8D"><title>Channel KME | XGBoost | 0.620</title></circle>
+<text x="825.4211713257529" y="252" class="tiny">0.62 - Channel KME - XGBoost</text>
+<circle cx="826.3605676692059" cy="280" r="6" fill="#6D5BD0"><title>UGA geometry | Unified locked model | 0.635</title></circle>
+<text x="838.3605676692059" y="284" class="tiny">0.64 - UGA geometry - Unified locked model</text>
+<text x="44" y="316" class="small">High stage</text>
+<circle cx="800.7633831061523" cy="312" r="6" fill="#0F8B8D"><title>Channel KME | XGBoost | 0.606</title></circle>
+<text x="812.7633831061523" y="316" class="tiny">0.61 - Channel KME - XGBoost</text>
+<circle cx="812.2552046814535" cy="344" r="6" fill="#6D5BD0"><title>UGA geometry | Unified locked model | 0.619</title></circle>
+<text x="824.2552046814535" y="348" class="tiny">0.62 - UGA geometry - Unified locked model</text>
+<text x="44" y="380" class="small">HRD24 high/low</text>
+<circle cx="979.0469010932545" cy="376" r="6" fill="#0F8B8D"><title>Channel KME | XGBoost | 0.813</title></circle>
+<text x="991.0469010932545" y="380" class="tiny">0.81 - Channel KME - XGBoost</text>
+<circle cx="1052.1830985915494" cy="408" r="6" fill="#6D5BD0"><title>UGA geometry | Locked UGA SBS+ID separate | 0.898</title></circle>
+<text x="1064.1830985915494" y="412" class="tiny">0.90 - UGA geometry - Locked UGA SBS+ID separate</text>
+<text x="44" y="444" class="small">HRD42 high/low</text>
+<circle cx="1041.3488745980708" cy="440" r="6" fill="#0F8B8D"><title>Channel KME | XGBoost | 0.885</title></circle>
+<text x="1053.3488745980708" y="444" class="tiny">0.89 - Channel KME - XGBoost</text>
+<circle cx="1081.97311827957" cy="472" r="6" fill="#6D5BD0"><title>UGA geometry | Locked UGA SBS+ID separate | 0.933</title></circle>
+<text x="1093.97311827957" y="476" class="tiny">0.93 - UGA geometry - Locked UGA SBS+ID separate</text>
+<text x="44" y="508" class="small">HRD LOH</text>
+<circle cx="747.2391770780289" cy="504" r="6" fill="#0F8B8D"><title>Channel KME | XGBoost | 0.543</title></circle>
+<text x="759.2391770780289" y="508" class="tiny">0.54 - Channel KME - XGBoost</text>
+<circle cx="796.6361995428001" cy="536" r="6" fill="#6D5BD0"><title>UGA geometry | Locked UGA SBS | 0.601</title></circle>
+<text x="808.6361995428001" y="540" class="tiny">0.60 - UGA geometry - Locked UGA SBS</text>
+<text x="44" y="572" class="small">HRD LST</text>
+<circle cx="811.3952612700817" cy="568" r="6" fill="#0F8B8D"><title>Channel KME | XGBoost | 0.618</title></circle>
+<text x="823.3952612700817" y="572" class="tiny">0.62 - Channel KME - XGBoost</text>
+<circle cx="924.4413222648792" cy="600" r="6" fill="#6D5BD0"><title>UGA geometry | Locked UGA SBS+ID separate | 0.749</title></circle>
+<text x="936.4413222648792" y="604" class="tiny">0.75 - UGA geometry - Locked UGA SBS+ID separate</text>
+<text x="44" y="636" class="small">HRD TAI</text>
+<circle cx="820.3357584979991" cy="632" r="6" fill="#0F8B8D"><title>Channel KME | XGBoost | 0.628</title></circle>
+<text x="832.3357584979991" y="636" class="tiny">0.63 - Channel KME - XGBoost</text>
+<circle cx="899.9922193435252" cy="664" r="6" fill="#6D5BD0"><title>UGA geometry | Locked UGA SBS | 0.721</title></circle>
+<text x="911.9922193435252" y="668" class="tiny">0.72 - UGA geometry - Locked UGA SBS</text>
+<text x="44" y="700" class="small">LUAD KMT2C mutated</text>
+<circle cx="917.1495202558635" cy="696" r="6" fill="#6D5BD0"><title>UGA geometry | Unified locked model | 0.741</title></circle>
+<text x="929.1495202558635" y="700" class="tiny">0.74 - UGA geometry - Unified locked model</text>
+<text x="44" y="732" class="small">LUAD KMT2C mutated</text>
+<circle cx="926.4325692963753" cy="728" r="6" fill="#0F8B8D"><title>Channel KME | Elastic net | 0.752</title></circle>
+<text x="938.4325692963753" y="732" class="tiny">0.75 - Channel KME - Elastic net</text>
+<circle cx="921.2466684434968" cy="760" r="6" fill="#6D5BD0"><title>UGA geometry | Elastic net | 0.746</title></circle>
+<text x="933.2466684434968" y="764" class="tiny">0.75 - UGA geometry - Elastic net</text>
+<text x="44" y="796" class="small">MMR-pathway mutated</text>
+<circle cx="1015.8114842881936" cy="792" r="6" fill="#6D5BD0"><title>UGA geometry | Unified locked model | 0.856</title></circle>
+<text x="1027.8114842881937" y="796" class="tiny">0.86 - UGA geometry - Unified locked model</text>
+<text x="44" y="828" class="small">PARPi7</text>
+<circle cx="450.09826915894183" cy="824" r="6" fill="#0F8B8D"><title>Channel KME | Elastic net | 0.198</title></circle>
+<text x="462.09826915894183" y="828" class="tiny">0.20 - Channel KME - Elastic net</text>
+<circle cx="525.7594204499258" cy="856" r="6" fill="#6D5BD0"><title>UGA geometry | Locked UGA SBS | 0.286</title></circle>
+<text x="537.7594204499258" y="860" class="tiny">0.29 - UGA geometry - Locked UGA SBS</text>
+<text x="44" y="892" class="small">PARPi7 binary</text>
+<circle cx="840.5676377444579" cy="888" r="6" fill="#0F8B8D"><title>Channel KME | Elastic net | 0.652</title></circle>
+<text x="852.5676377444579" y="892" class="tiny">0.65 - Channel KME - Elastic net</text>
+<circle cx="929.4925373134328" cy="920" r="6" fill="#6D5BD0"><title>UGA geometry | Locked UGA SBS+ID pooled | 0.755</title></circle>
+<text x="941.4925373134328" y="924" class="tiny">0.76 - UGA geometry - Locked UGA SBS+ID pooled</text>
+<text x="44" y="956" class="small">POLE/POLD1 mutated</text>
+<circle cx="996.2580340104465" cy="952" r="6" fill="#6D5BD0"><title>UGA geometry | Unified locked model | 0.833</title></circle>
+<text x="1008.2580340104465" y="956" class="tiny">0.83 - UGA geometry - Unified locked model</text>
+<text x="44" y="988" class="small">Ever smoker</text>
+<circle cx="932.8607026479367" cy="984" r="6" fill="#0F8B8D"><title>Channel KME | Elastic net | 0.759</title></circle>
+<text x="944.8607026479367" y="988" class="tiny">0.76 - Channel KME - Elastic net</text>
+<circle cx="945.5425942659986" cy="1016" r="6" fill="#6D5BD0"><title>UGA geometry | Unified locked model | 0.774</title></circle>
+<text x="957.5425942659986" y="1020" class="tiny">0.77 - UGA geometry - Unified locked model</text>
+<text x="44" y="1118" class="panel-title">COSMIC/NNLS exposure checks</text>
+<line x1="280" y1="1134" x2="280" y2="1616" class="grid"/>
+<text x="280" y="1640" text-anchor="middle" class="tiny">0.00</text>
+<line x1="495" y1="1134" x2="495" y2="1616" class="grid"/>
+<text x="495" y="1640" text-anchor="middle" class="tiny">0.25</text>
+<line x1="710" y1="1134" x2="710" y2="1616" class="grid"/>
+<text x="710" y="1640" text-anchor="middle" class="tiny">0.50</text>
+<line x1="925" y1="1134" x2="925" y2="1616" class="grid"/>
+<text x="925" y="1640" text-anchor="middle" class="tiny">0.75</text>
+<line x1="1140" y1="1134" x2="1140" y2="1616" class="grid"/>
+<text x="1140" y="1640" text-anchor="middle" class="tiny">1.00</text>
+<text x="44" y="1164" class="small">BRCA-pathway mutated</text>
+<circle cx="983.3282335259076" cy="1160" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.818</title></circle>
+<text x="995.3282335259076" y="1164" class="tiny">0.82 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1196" class="small">eCARD</text>
+<circle cx="559.9799708071957" cy="1192" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.326</title></circle>
+<text x="571.9799708071957" y="1196" class="tiny">0.33 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1228" class="small">High tumor purity</text>
+<circle cx="831.1054624816965" cy="1224" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.641</title></circle>
+<text x="843.1054624816965" y="1228" class="tiny">0.64 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1260" class="small">High stage</text>
+<circle cx="821.5853051902035" cy="1256" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.630</title></circle>
+<text x="833.5853051902035" y="1260" class="tiny">0.63 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1292" class="small">HRD24 high/low</text>
+<circle cx="1001.9820562921295" cy="1288" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.840</title></circle>
+<text x="1013.9820562921295" y="1292" class="tiny">0.84 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1324" class="small">HRD42 high/low</text>
+<circle cx="1062.6276527331188" cy="1320" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.910</title></circle>
+<text x="1074.6276527331188" y="1324" class="tiny">0.91 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1356" class="small">HRD LOH</text>
+<circle cx="766.1025396215498" cy="1352" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.565</title></circle>
+<text x="778.1025396215498" y="1356" class="tiny">0.57 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1388" class="small">HRD LST</text>
+<circle cx="860.8660248638354" cy="1384" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.675</title></circle>
+<text x="872.8660248638354" y="1388" class="tiny">0.68 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1420" class="small">HRD TAI</text>
+<circle cx="855.8704880456031" cy="1416" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.670</title></circle>
+<text x="867.8704880456031" y="1420" class="tiny">0.67 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1452" class="small">MMR-pathway mutated</text>
+<circle cx="1019.3773862632457" cy="1448" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.860</title></circle>
+<text x="1031.3773862632456" y="1452" class="tiny">0.86 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1484" class="small">PARPi7</text>
+<circle cx="473.62738045083415" cy="1480" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.225</title></circle>
+<text x="485.62738045083415" y="1484" class="tiny">0.23 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1516" class="small">PARPi7 binary</text>
+<circle cx="854.89516262176" cy="1512" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.668</title></circle>
+<text x="866.89516262176" y="1516" class="tiny">0.67 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1548" class="small">POLE/POLD1 mutated</text>
+<circle cx="1014.7718480003524" cy="1544" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.854</title></circle>
+<text x="1026.7718480003523" y="1548" class="tiny">0.85 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1580" class="small">Ever smoker</text>
+<circle cx="949.3682740491251" cy="1576" r="6" fill="#64748B"><title>COSMIC NNLS exposures | Unified locked model | 0.778</title></circle>
+<text x="961.3682740491251" y="1580" class="tiny">0.78 - COSMIC NNLS exposures - Unified locked model</text>
+<text x="44" y="1678" class="panel-title">Mechanistic controls</text>
+<line x1="280" y1="1694" x2="280" y2="1792" class="grid"/>
+<text x="280" y="1816" text-anchor="middle" class="tiny">0.00</text>
+<line x1="495" y1="1694" x2="495" y2="1792" class="grid"/>
+<text x="495" y="1816" text-anchor="middle" class="tiny">0.25</text>
+<line x1="710" y1="1694" x2="710" y2="1792" class="grid"/>
+<text x="710" y="1816" text-anchor="middle" class="tiny">0.50</text>
+<line x1="925" y1="1694" x2="925" y2="1792" class="grid"/>
+<text x="925" y="1816" text-anchor="middle" class="tiny">0.75</text>
+<line x1="1140" y1="1694" x2="1140" y2="1792" class="grid"/>
+<text x="1140" y="1816" text-anchor="middle" class="tiny">1.00</text>
+<text x="44" y="1724" class="small">Low-burden Kucab</text>
+<circle cx="499.048195787967" cy="1720" r="6" fill="#B45309"><title>Mechanistic controls | Unified locked model | 0.255</title></circle>
+<text x="511.048195787967" y="1724" class="tiny">0.25 - Mechanistic controls - Unified locked model</text>
+<text x="44" y="1756" class="small">Original Kucab</text>
+<circle cx="541.0001313442779" cy="1752" r="6" fill="#B45309"><title>Mechanistic controls | Unified locked model | 0.303</title></circle>
+<text x="553.0001313442779" y="1756" class="tiny">0.30 - Mechanistic controls - Unified locked model</text></svg>

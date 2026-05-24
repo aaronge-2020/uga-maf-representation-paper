@@ -1,0 +1,27 @@
+{
+  "experiment": "UGA payload absence encoding benchmark",
+  "runner": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\cgr_validation\\bench\\run_payload_absence_benchmark.py",
+  "seed": 250513,
+  "n_patients": 480,
+  "burden": 300,
+  "uga_model": "compact_sbs_dbs_d10",
+  "d_context": 10,
+  "d_payload": 2,
+  "binary_lower_bound_bits_per_slot_when_slot_local": 3,
+  "length_code_bits_per_payload_block": 2,
+  "outputs": {
+    "candidate_summary": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp025_payload_absence\\tables\\payload_candidate_summary.csv",
+    "collision_detail": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp025_payload_absence\\tables\\payload_collision_detail.csv",
+    "mixture_summary": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp025_payload_absence\\tables\\mixture_recovery_summary.csv",
+    "patient_metrics": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp025_payload_absence\\tables\\mixture_patient_metrics.csv",
+    "signature_geometry": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp025_payload_absence\\tables\\signature_geometry.csv",
+    "dimension_efficiency": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp025_payload_absence\\tables\\payload_dimension_efficiency.csv",
+    "tables_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp025_payload_absence\\html\\manuscript_tables.html",
+    "table_fragments_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp025_payload_absence\\html\\manuscript_tables_fragment.html",
+    "figures_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp025_payload_absence\\figures\\payload_absence_d3_figures.html",
+    "figure_data_json": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp025_payload_absence\\data\\payload_absence_benchmark_data.json",
+    "index_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp025_payload_absence\\index.html",
+    "readme": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp025_payload_absence\\README.md",
+    "manifest": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp025_payload_absence\\manifest.json"
+  }
+}

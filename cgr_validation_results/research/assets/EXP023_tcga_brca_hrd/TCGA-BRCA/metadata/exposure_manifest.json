@@ -1,0 +1,19 @@
+{
+  "patients_processed": 792,
+  "patients_excluded_low_burden": 0,
+  "n_signatures": 119,
+  "universal_depth": 10,
+  "bicgr52_depth": 10,
+  "standard_shape": [
+    792,
+    119
+  ],
+  "universal_shape": [
+    792,
+    119
+  ],
+  "bicgr52_shape": [
+    792,
+    119
+  ]
+}

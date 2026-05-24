@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1650" height="560" viewBox="0 0 1650 560">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <linearGradient id="heat" x1="0" x2="1"><stop offset="0%" stop-color="#EFF6FF"/><stop offset="100%" stop-color="#1D4ED8"/></linearGradient>
+  </defs>
+  <style>
+  text{font-family:Inter,Arial,sans-serif;fill:#111827;letter-spacing:0}.title{font-size:30px;font-weight:760}.subtitle{font-size:15px;fill:#475569}.panel-title{font-size:17px;font-weight:760}.label{font-size:14px}.small{font-size:12px;fill:#475569}.tiny{font-size:10px;fill:#64748B}.value{font-size:14px;font-weight:700}.sig{font-size:16px;font-weight:800;fill:#111827}.axis{stroke:#CBD5E1;stroke-width:1}.grid{stroke:#E2E8F0;stroke-width:1}.rule{stroke:#334155;stroke-width:1.8}.card{fill:#FFFFFF;stroke:#CBD5E1;stroke-width:1.2}.soft{fill:#F8FAFC}.shadow{filter:drop-shadow(0 2px 3px rgba(15,23,42,.10))}
+  </style><rect width="1650" height="560" fill="#FFFFFF"/>
+<text x="44" y="50" class="title">Figure 2. Burden and signature baselines</text>
+<text x="44" y="78" class="subtitle">Single 5-fold OOF results. Metrics: macro-AUROC, Spearman r, AUROC. Significance markers show BH-adjusted q-values for declared comparisons.</text>
+<text x="44" y="162" class="label">Kucab damage class</text>
+<text x="44" y="230" class="label">HRD score</text>
+<text x="44" y="298" class="label">HRD33 high/low</text>
+<text x="44" y="366" class="label">Cancer type (top 10)</text>
+<text x="44" y="434" class="label">Overall survival</text>
+<text x="44" y="450" class="label">event</text>
+<text x="210" y="110" class="panel-title">Elastic net</text>
+<line x1="210" y1="114" x2="210" y2="480" class="grid"/>
+<text x="210" y="518" text-anchor="middle" class="tiny">0.00</text>
+<line x1="372.5" y1="114" x2="372.5" y2="480" class="grid"/>
+<text x="372.5" y="518" text-anchor="middle" class="tiny">0.25</text>
+<line x1="535" y1="114" x2="535" y2="480" class="grid"/>
+<text x="535" y="518" text-anchor="middle" class="tiny">0.50</text>
+<line x1="697.5" y1="114" x2="697.5" y2="480" class="grid"/>
+<text x="697.5" y="518" text-anchor="middle" class="tiny">0.75</text>
+<line x1="860" y1="114" x2="860" y2="480" class="grid"/>
+<text x="860" y="518" text-anchor="middle" class="tiny">1.00</text>
+<rect x="210" y="144" width="298.6555016247797" height="12" rx="2" fill="#6B7280"><title>Kucab damage class | Elastic net | Mutational burden: 0.459; q=0.00e+0</title></rect>
+<text x="515.6555016247796" y="155" class="tiny">0.46</text>
+<rect x="210" y="162" width="387.41246130854324" height="12" rx="2" fill="#2F6FDB"><title>Kucab damage class | Elastic net | Mutational signatures: 0.596; q=2.08e-2</title></rect>
+<text x="604.4124613085432" y="173" class="tiny">0.60 *</text>
+<rect x="210" y="212" width="356.0559775360198" height="12" rx="2" fill="#6B7280"><title>HRD score | Elastic net | Mutational burden: 0.548; q=0.00e+0</title></rect>
+<text x="573.0559775360198" y="223" class="tiny">0.55</text>
+<rect x="210" y="230" width="331.6354865609881" height="12" rx="2" fill="#2F6FDB"><title>HRD score | Elastic net | Mutational signatures: 0.510; q=2.48e-1</title></rect>
+<text x="548.635486560988" y="241" class="tiny">0.51</text>
+<rect x="210" y="280" width="516.602127220157" height="12" rx="2" fill="#6B7280"><title>HRD33 high/low | Elastic net | Mutational burden: 0.795; q=0.00e+0</title></rect>
+<text x="733.602127220157" y="291" class="tiny">0.79</text>
+<rect x="210" y="298" width="473.45621643948783" height="12" rx="2" fill="#2F6FDB"><title>HRD33 high/low | Elastic net | Mutational signatures: 0.728; q=8.84e-3</title></rect>
+<text x="690.4562164394879" y="309" class="tiny">0.73 **</text>
+<rect x="210" y="348" width="517.3552821019608" height="12" rx="2" fill="#6B7280"><title>Cancer type (top 10) | Elastic net | Mutational burden: 0.796; q=0.00e+0</title></rect>
+<text x="734.3552821019608" y="359" class="tiny">0.80</text>
+<rect x="210" y="366" width="565.2125602964069" height="12" rx="2" fill="#2F6FDB"><title>Cancer type (top 10) | Elastic net | Mutational signatures: 0.870; q=2.08e-2</title></rect>
+<text x="782.2125602964069" y="377" class="tiny">0.87 *</text>
+<rect x="210" y="416" width="384.01038707612446" height="12" rx="2" fill="#6B7280"><title>Overall survival event | Elastic net | Mutational burden: 0.591; q=0.00e+0</title></rect>
+<text x="601.0103870761245" y="427" class="tiny">0.59</text>
+<rect x="210" y="434" width="373.0828992903675" height="12" rx="2" fill="#2F6FDB"><title>Overall survival event | Elastic net | Mutational signatures: 0.574; q=2.69e-2</title></rect>
+<text x="590.0828992903675" y="445" class="tiny">0.57 *</text>
+<text x="930" y="110" class="panel-title">XGBoost</text>
+<line x1="930" y1="114" x2="930" y2="480" class="grid"/>
+<text x="930" y="518" text-anchor="middle" class="tiny">0.00</text>
+<line x1="1092.5" y1="114" x2="1092.5" y2="480" class="grid"/>
+<text x="1092.5" y="518" text-anchor="middle" class="tiny">0.25</text>
+<line x1="1255" y1="114" x2="1255" y2="480" class="grid"/>
+<text x="1255" y="518" text-anchor="middle" class="tiny">0.50</text>
+<line x1="1417.5" y1="114" x2="1417.5" y2="480" class="grid"/>
+<text x="1417.5" y="518" text-anchor="middle" class="tiny">0.75</text>
+<line x1="1580" y1="114" x2="1580" y2="480" class="grid"/>
+<text x="1580" y="518" text-anchor="middle" class="tiny">1.00</text>
+<rect x="930" y="144" width="298.19973959809585" height="12" rx="2" fill="#6B7280"><title>Kucab damage class | XGBoost | Mutational burden: 0.459; q=0.00e+0</title></rect>
+<text x="1235.199739598096" y="155" class="tiny">0.46</text>
+<rect x="930" y="162" width="423.29626731278603" height="12" rx="2" fill="#2F6FDB"><title>Kucab damage class | XGBoost | Mutational signatures: 0.651; q=2.08e-2</title></rect>
+<text x="1360.296267312786" y="173" class="tiny">0.65 *</text>
+<rect x="930" y="212" width="399.6764483938309" height="12" rx="2" fill="#6B7280"><title>HRD score | XGBoost | Mutational burden: 0.615; q=0.00e+0</title></rect>
+<text x="1336.676448393831" y="223" class="tiny">0.61</text>
+<rect x="930" y="230" width="451.04599978014187" height="12" rx="2" fill="#2F6FDB"><title>HRD score | XGBoost | Mutational signatures: 0.694; q=2.08e-2</title></rect>
+<text x="1388.0459997801418" y="241" class="tiny">0.69 *</text>
+<rect x="930" y="280" width="537.141160677406" height="12" rx="2" fill="#6B7280"><title>HRD33 high/low | XGBoost | Mutational burden: 0.826; q=0.00e+0</title></rect>
+<text x="1474.1411606774059" y="291" class="tiny">0.83</text>
+<rect x="930" y="298" width="574.3236266005782" height="12" rx="2" fill="#2F6FDB"><title>HRD33 high/low | XGBoost | Mutational signatures: 0.884; q=2.12e-6</title></rect>
+<text x="1511.3236266005783" y="309" class="tiny">0.88 ***</text>
+<rect x="930" y="348" width="545.7280399936175" height="12" rx="2" fill="#6B7280"><title>Cancer type (top 10) | XGBoost | Mutational burden: 0.840; q=0.00e+0</title></rect>
+<text x="1482.7280399936176" y="359" class="tiny">0.84</text>
+<rect x="930" y="366" width="601.8244665270229" height="12" rx="2" fill="#2F6FDB"><title>Cancer type (top 10) | XGBoost | Mutational signatures: 0.926; q=2.08e-2</title></rect>
+<text x="1538.8244665270229" y="377" class="tiny">0.93 *</text>
+<rect x="930" y="416" width="405.1773353081075" height="12" rx="2" fill="#6B7280"><title>Overall survival event | XGBoost | Mutational burden: 0.623; q=0.00e+0</title></rect>
+<text x="1342.1773353081076" y="427" class="tiny">0.62</text>
+<rect x="930" y="434" width="423.56828227629836" height="12" rx="2" fill="#2F6FDB"><title>Overall survival event | XGBoost | Mutational signatures: 0.652; q=1.56e-8</title></rect>
+<text x="1360.5682822762983" y="445" class="tiny">0.65 ***</text>
+<rect x="44" y="529" width="14" height="14" rx="2" fill="#6B7280"/><text x="65" y="542" class="small">Mutational burden</text>
+<rect x="214" y="529" width="14" height="14" rx="2" fill="#2F6FDB"/><text x="235" y="542" class="small">Mutational signatures</text></svg>

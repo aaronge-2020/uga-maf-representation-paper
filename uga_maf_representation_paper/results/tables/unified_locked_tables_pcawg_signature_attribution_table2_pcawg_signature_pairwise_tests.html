@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Table 2. Paired PCAWG attribution contrasts: locked UGA versus standard</title>
+<style>
+body { font-family: Arial, Helvetica, sans-serif; margin: 24px; color: #111; }
+table { border-collapse: collapse; width: 100%; font-size: 12px; }
+caption { caption-side: top; text-align: left; font-weight: 700; margin-bottom: 8px; }
+thead th { border-top: 1px solid #111; border-bottom: 1px solid #111; padding: 6px 8px; text-align: left; }
+tbody td { border-bottom: 0.5px solid #bbb; padding: 5px 8px; text-align: left; }
+tfoot td { border-top: 1px solid #111; padding: 6px 8px; font-size: 11px; line-height: 1.35; }
+</style>
+</head>
+<body>
+<table>
+<caption>Table 2. Paired PCAWG attribution contrasts: locked UGA versus standard</caption>
+<thead><tr><th>modality</th><th>algorithm</th><th>metric</th><th>n_patients</th><th>standard_mean</th><th>locked_uga_mean</th><th>delta_locked_uga_minus_standard</th><th>delta_95pct_interval_low</th><th>delta_95pct_interval_high</th><th>p_value</th><th>better_direction</th><th>q_value</th></tr></thead>
+<tbody><tr><td>SBS</td><td>NNLS</td><td>cosine</td><td>2683</td><td>0.209588</td><td>0.219806</td><td>0.0102176</td><td>-0.221851</td><td>0.271204</td><td>6.27067e-07</td><td>positive</td><td>1.8812e-06</td></tr><tr><td>SBS</td><td>NNLS</td><td>mae</td><td>2683</td><td>0.0171993</td><td>0.0169306</td><td>-0.00026864</td><td>-0.00475807</td><td>0.00306607</td><td>7.61873e-11</td><td>negative</td><td>4.57124e-10</td></tr><tr><td>DBS</td><td>NNLS</td><td>cosine</td><td>860</td><td>0.387496</td><td>0.412645</td><td>0.0251491</td><td>-0.497211</td><td>0.688847</td><td>0.000618367</td><td>positive</td><td>0.000927551</td></tr><tr><td>DBS</td><td>NNLS</td><td>mae</td><td>860</td><td>0.0623677</td><td>0.059778</td><td>-0.00258973</td><td>-0.0392308</td><td>0.0329322</td><td>5.54726e-06</td><td>negative</td><td>1.10945e-05</td></tr><tr><td>ID</td><td>NNLS</td><td>cosine</td><td>2287</td><td>0.215975</td><td>0.223639</td><td>0.00766342</td><td>-0.593317</td><td>0.670025</td><td>0.541317</td><td>positive</td><td>0.541317</td></tr><tr><td>ID</td><td>NNLS</td><td>mae</td><td>2287</td><td>0.06701</td><td>0.06621</td><td>-0.00079999</td><td>-0.037599</td><td>0.0318832</td><td>0.264446</td><td>negative</td><td>0.317335</td></tr></tbody>
+<tfoot><tr><td colspan="12">Delta is locked UGA minus Standard. Positive delta favors UGA for cosine similarity; negative delta favors UGA for mean absolute error. P values use paired Wilcoxon signed-rank tests, and q values use Benjamini-Hochberg correction.</td></tr></tfoot>
+</table>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "cohort_acronym": "BRCA",
+  "ddr_cohort_rows": 981,
+  "clinical_cohort_rows": 981,
+  "maf_rows": 71772,
+  "maf_unique_samples": 807,
+  "maf_unique_patients_12": 792,
+  "ddr_unique_patients_12": 981,
+  "clinical_unique_patients_12": 981,
+  "overlap_maf_ddr": 792,
+  "overlap_all3": 792,
+  "ncbi_build": "GRCh38",
+  "context_present": true
+}

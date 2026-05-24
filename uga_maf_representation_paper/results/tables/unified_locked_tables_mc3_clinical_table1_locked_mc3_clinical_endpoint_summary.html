@@ -1,0 +1,92 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+
+    body{font-family:Arial,Helvetica,sans-serif;margin:28px;color:#111}
+    h1{font-size:18px;margin:0 0 12px 0}
+    table{border-collapse:collapse;font-size:12px;width:100%;max-width:1280px}
+    th,td{padding:6px 8px;border-bottom:1px solid #bbb;text-align:right}
+    th:first-child,td:first-child{text-align:left}
+    th{border-top:1.5px solid #111;border-bottom:1.5px solid #111;font-weight:600}
+    p{font-size:11px;color:#333;max-width:1120px}
+    
+</style><title>Table 1. Locked unified-model MC3 clinical endpoint summary</title></head><body>
+<h1>Table 1. Locked unified-model MC3 clinical endpoint summary</h1>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>endpoint</th>
+      <th>endpoint_type</th>
+      <th>n</th>
+      <th>standard_sbs_auroc</th>
+      <th>locked_uga_sbs_auroc</th>
+      <th>delta_locked_sbs_vs_standard_sbs</th>
+      <th>standard_sbs_id_auroc</th>
+      <th>locked_pooled_sbs_id_auroc</th>
+      <th>delta_locked_pooled_vs_standard_sbs_id</th>
+      <th>pooled_q_value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>high_stage</td>
+      <td>binary</td>
+      <td>6404</td>
+      <td>0.6312</td>
+      <td>0.6213</td>
+      <td>-0.009926</td>
+      <td>0.621</td>
+      <td>0.6224</td>
+      <td>0.001406</td>
+      <td>0.971</td>
+    </tr>
+    <tr>
+      <td>high_purity</td>
+      <td>binary</td>
+      <td>9591</td>
+      <td>0.6401</td>
+      <td>0.6298</td>
+      <td>-0.01031</td>
+      <td>0.6392</td>
+      <td>0.639</td>
+      <td>-0.0001895</td>
+      <td>0.971</td>
+    </tr>
+    <tr>
+      <td>os_event</td>
+      <td>binary</td>
+      <td>10139</td>
+      <td>0.6538</td>
+      <td>0.6563</td>
+      <td>0.002504</td>
+      <td>0.6526</td>
+      <td>0.6523</td>
+      <td>-0.0002414</td>
+      <td>0.971</td>
+    </tr>
+    <tr>
+      <td>smoking_ever</td>
+      <td>binary</td>
+      <td>2798</td>
+      <td>0.7762</td>
+      <td>0.7709</td>
+      <td>-0.005271</td>
+      <td>0.774</td>
+      <td>0.7668</td>
+      <td>-0.007168</td>
+      <td>0.4211</td>
+    </tr>
+    <tr>
+      <td>cancer_type_top10</td>
+      <td>multiclass</td>
+      <td>5462</td>
+      <td>0.9355</td>
+      <td>0.9238</td>
+      <td>-0.0117</td>
+      <td>0.9371</td>
+      <td>0.9178</td>
+      <td>-0.01929</td>
+      <td>0.004995</td>
+    </tr>
+  </tbody>
+</table>
+<p>AUROC is computed from matched five-fold out-of-fold XGBoost predictions. Delta values compare locked pooled UGA SBS+ID against Standard SBS+ID.</p>
+</body></html>

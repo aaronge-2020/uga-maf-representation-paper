@@ -1,0 +1,9 @@
+Element,Specification
+Question,"Can UGA provide useful cross-modality evidence even when SBS, DBS, and indel exposures are solved separately?"
+Synthetic cohort,520 tumors with sparse mixtures of 12 latent mutational processes.
+Mutation modalities,"SBS96, DBS78, and ID83 standard channel universes plus event-level 48D UGA clean-context vectors."
+UGA encoding,"Atlas model compact_event_legacy_d10; layout [L context, REF payload, R context, ALT payload]."
+Separate solve benchmark,NNLS is fit independently for each modality using either categorical signatures or UGA signature centroids.
+Naive pooled benchmark,All SBS/DBS/ID events are collapsed into a single burden-weighted 48D mean and fit against all modality-specific UGA centroids at once.
+Shared-space benchmark,UGA centroids are used for cross-modality nearest-neighbor retrieval and SBS-to-DBS/ID held-out exposure imputation.
+Standard-catalog baseline,"SBS, DBS, and ID channels are unequal axes, so cross-catalog distance is undefined without external labels; chance/tie expectation is reported."

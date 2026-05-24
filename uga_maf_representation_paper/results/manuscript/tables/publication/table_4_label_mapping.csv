@@ -1,0 +1,108 @@
+label_domain,machine_name,display_name,long_description,used_in_figures,used_in_tables
+analysis_family,Alternative geometry,Alternative geometry,Supplementary analyses of UGA and channel-KME geometry variants.,True,False
+analysis_family,COSMIC/NNLS exposure checks,COSMIC/NNLS exposure checks,Supplementary checks using COSMIC reference signature exposure features.,True,False
+analysis_family,Mechanistic controls,Mechanistic controls,Supplementary mechanistic or diagnostic control analyses.,True,False
+atlas_status,uses COSMIC reference signatures; no UGA atlas for standard exposures,COSMIC reference signatures,COSMIC reference signatures are used for exposure estimation; no UGA atlas is used.,True,True
+atlas_status,uses GRCh37 FASTA windows; no UGA atlas,GRCh37 FASTA windows,Sequence context is fetched from GRCh37 FASTA windows; no UGA atlas is used.,True,True
+atlas_status,no UGA atlas,No UGA atlas,Representation does not use the UGA channel atlas.,True,True
+atlas_status,not applicable,Not applicable,Atlas status is not applicable for this analysis.,True,True
+atlas_status,uses UGA channel atlas for SBS/DBS; ID payload encoder for ID83,UGA channel atlas,SBS/DBS channels use the UGA channel atlas and ID channels use the ID payload encoder.,True,True
+calibration_mode,multiclass_confidence_accuracy,Confidence versus correctness,Multiclass reliability plot using maximum predicted confidence versus correctness.,True,False
+calibration_mode,binary_positive_probability,Positive-class probability,Binary reliability plot using the predicted probability of the positive class.,True,False
+comparison_name,maf_stack_vs_signatures,MAF stack vs signatures,Event-level MAF stack compared with mutational signatures.,False,True
+comparison_name,one_hot_kme_vs_signatures,One-hot KME vs signatures,One-hot sequence KME compared with mutational signatures.,False,True
+comparison_name,sig_maf_vs_maf_stack,Signatures + MAF vs MAF stack,Signatures plus MAF stack compared with MAF stack alone.,False,True
+comparison_name,sig_maf_vs_signatures,Signatures + MAF vs signatures,Signatures plus MAF stack compared with mutational signatures alone.,False,True
+comparison_name,signatures_vs_burden,Signatures vs burden,Mutational signatures compared with mutational burden.,False,True
+endpoint,brca_gene_mutated,BRCA-pathway mutated,Indicator for mutation in BRCA-pathway genes.,True,True
+endpoint,cancer_type_top10,Cancer type (top 10),Classification among the ten most frequent TCGA cancer types.,True,True
+endpoint,DBS,DBS attribution,Double-base substitution signature attribution task.,False,False
+endpoint,smoking_ever,Ever smoker,Ever-smoker clinical endpoint.,True,True
+endpoint,HRD_LOH,HRD LOH,Loss-of-heterozygosity component of homologous recombination deficiency.,True,True
+endpoint,HRD_LST,HRD LST,Large-scale transition component of homologous recombination deficiency.,True,True
+endpoint,HRD_TAI,HRD TAI,Telomeric allelic imbalance component of homologous recombination deficiency.,True,True
+endpoint,HRD_Score,HRD score,Continuous homologous recombination deficiency score.,True,True
+endpoint,hrd_binary_24,HRD24 high/low,HRD-high versus HRD-low using threshold 24.,True,True
+endpoint,hrd_binary_33,HRD33 high/low,HRD-high versus HRD-low using threshold 33.,True,True
+endpoint,hrd_binary_42,HRD42 high/low,HRD-high versus HRD-low using threshold 42.,True,True
+endpoint,high_stage,High stage,High tumor stage clinical endpoint.,True,True
+endpoint,high_purity,High tumor purity,High tumor purity clinical endpoint.,True,True
+endpoint,ID,ID attribution,Small insertion/deletion signature attribution task.,False,False
+endpoint,damage_class,Kucab damage class,Kucab DNA damage class from mutagen-treated clone catalogues.,True,True
+endpoint,kmt2c_mutated,LUAD KMT2C mutated,LUAD KMT2C mutation status endpoint.,True,True
+endpoint,luad_kmt2c_mutated,LUAD KMT2C mutated,LUAD KMT2C mutation status endpoint.,True,True
+endpoint,Low-burden downsample,Low-burden Kucab,Kucab low-burden downsampled benchmark.,True,True
+endpoint,mmr_gene_mutated,MMR-pathway mutated,Indicator for mutation in mismatch repair genes.,True,True
+endpoint,Original data,Original Kucab,Original Kucab benchmark without low-burden downsampling.,True,True
+endpoint,os_event,Overall survival event,Overall-survival event indicator.,True,True
+endpoint,PARPi7,PARPi7,Continuous PARPi7 HRD-related score.,True,True
+endpoint,parpi7_binary,PARPi7 binary,Binary PARPi7 HRD-related endpoint.,True,True
+endpoint,pole_pold1_mutated,POLE/POLD1 mutated,Indicator for POLE or POLD1 mutation.,True,True
+endpoint,SBS,SBS attribution,Single-base substitution signature attribution task.,False,False
+endpoint,eCARD,eCARD,Continuous eCARD HRD-related endpoint.,True,True
+endpoint_tier,main,Main,Endpoint belongs to the main manuscript panel.,True,True
+endpoint_tier,supplement,Supplement,Endpoint belongs to the supplementary panel.,True,True
+metric,auprc,AUPRC,Area under the precision-recall curve.,False,False
+metric,auroc,AUROC,Area under the receiver operating characteristic curve.,True,True
+metric,accuracy,Accuracy,Classification accuracy.,False,False
+metric,balanced_accuracy,Balanced accuracy,Balanced classification accuracy.,True,True
+metric,score,Score,Primary score reported by the source analysis.,False,False
+metric,spearman,Spearman r,Spearman rank correlation.,True,True
+metric,macro_auroc,macro-AUROC,Macro-averaged multiclass AUROC.,True,True
+model_family,elastic_net,Elastic net,Elastic-net regularized linear or generalized linear model.,True,True
+model_family,unspecified,Source model,Model family was not specified by the source analysis.,True,True
+model_family,XGBoost,XGBoost,Gradient-boosted tree model implemented with XGBoost.,True,True
+model_label,burden_only,Burden Only,Burden Only,False,True
+model_label,elastic_net,Elastic net,Elastic-net regularized linear or generalized linear model.,True,False
+model_label,"ElasticNet(alpha=0.01, l1_ratio=0.5, max_iter=5000, random_state=0)","Elasticnet(alpha=0.01, L1 Ratio=0.5, Max Iter=5000, Random State=0)","Elasticnet(alpha=0.01, L1 Ratio=0.5, Max Iter=5000, Random State=0)",True,True
+model_label,linear,Linear,Linear,True,True
+model_label,locked_uga_sbs,Locked UGA SBS,Locked UGA SBS model reported by the source analysis.,True,True
+model_label,locked_uga_sbs_id_pooled,Locked UGA SBS+ID pooled,Locked UGA pooled SBS+ID model reported by the source analysis.,True,True
+model_label,locked_uga_sbs_id_separate,Locked UGA SBS+ID separate,Locked UGA separate SBS+ID model reported by the source analysis.,True,True
+model_label,"LogisticRegression(L2,C=1.0,class_weight=balanced)","Logisticregression(l2,c=1.0,class Weight=balanced)","Logisticregression(l2,c=1.0,class Weight=balanced)",True,True
+model_label,maf_event_gene_locus,MAF Event Gene Locus,MAF Event Gene Locus,False,True
+model_label,standard_sbs,Standard SBS,Standard SBS,False,True
+model_label,standard_sbs_id,Standard SBS ID,Standard SBS ID,False,True
+model_label,unified_locked,Unified locked model,Unified locked benchmark model reported by the source analysis.,True,True
+model_label,XGBoost,XGBoost,Gradient-boosted tree model implemented with XGBoost.,True,False
+model_label,xgboost,XGBoost,XGBoost,True,True
+model_label,XGBClassifier(lightweight),Xgbclassifier(lightweight),Xgbclassifier(lightweight),True,True
+model_label,XGBRegressor(lightweight),Xgbregressor(lightweight),Xgbregressor(lightweight),True,True
+representation,MAF_stack_only,Event-level MAF stack,Event-level MAF-stack feature set.,True,True
+representation,maf_only_best_gene_locus_multiscale_stack,Event-level MAF stack,Event-level gene/locus multiscale MAF stack without signature identity features.,False,True
+representation,locked_uga_sbs,Locked UGA SBS,Locked UGA SBS representation.,True,True
+representation,locked_uga_sbs_exposure,Locked UGA SBS exposures,Locked UGA SBS exposure representation.,True,True
+representation,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,Locked UGA SBS+ID exposure representation.,True,True
+representation,locked_uga_sbs_id_pooled,Locked UGA SBS+ID pooled,Locked UGA pooled SBS+ID representation.,True,True
+representation,locked_uga_sbs_id_separate,Locked UGA SBS+ID separate,Locked UGA separate SBS+ID representation.,True,True
+representation,burden_only,Mutational burden,Mutation burden summary features.,True,True
+representation,one_hot_event_kme,One Hot Event KME,One Hot Event KME,False,True
+representation,one_hot_event_kme_oracle,One-hot sequence KME,One-hot sequence-window kernel mean embedding derived from event contexts.,True,True
+representation,previous_uga_mean_pooled,Previous pooled UGA,Previous pooled UGA mean representation.,True,True
+representation,standard_sbs_id_exposure,SBS + ID exposures,Standard SBS+ID signature exposure representation.,True,True
+representation,standard_sbs_id,SBS + ID spectra,Standard SBS and ID mutation spectra.,False,True
+representation,standard_sbs_exposure,SBS exposures,Standard SBS signature exposure representation.,True,True
+representation,standard_sbs,SBS spectra,Standard SBS mutation spectrum.,False,True
+representation,Standard_SBS96_DBS78_ID83_C0p5,SBS96 + DBS78 + ID83 spectra,"Standard SBS96, DBS78, and ID83 mutation spectra.",False,True
+representation,standard_sbs96_dbs78_id83,SBS96 + DBS78 + ID83 spectra,"Standard SBS96, DBS78, and ID83 mutation spectra.",True,True
+representation,standard_sbs96_id83,SBS96 + ID83 spectra,Standard SBS96 and ID83 mutation spectra.,True,True
+representation,id_plus_best_gene_locus_multiscale_stack,Signatures + MAF stack,Combined signature and event-level gene/locus multiscale stack.,False,True
+representation,signatures_plus_MAF_stack,Signatures + MAF stack,Combined mutational signatures and event-level MAF-stack features.,True,True
+representation,uga_rbf_kernel_mean,UGA kernel mean,UGA channel kernel mean embedding representation.,True,True
+representation,UGA_unified_d10dp5_IDpayload_unweighted_frac_C0p1,Unified UGA geometry,Unified UGA geometry representation with ID payload encoding.,True,True
+representation_family,COSMIC_NNLS_exposures,COSMIC NNLS exposures,COSMIC NNLS signature exposure features.,True,True
+representation_family,channel_KME,Channel KME,Kernel mean embedding over UGA mutation channels.,True,True
+representation_family,MAF_stack_only,Event-level MAF stack,"Event-level gene, locus, consequence, VAF, and burden summaries without signature identity features.",True,True
+representation_family,mechanistic_control,Mechanistic controls,Mechanistic or diagnostic control representation.,True,True
+representation_family,burden_only,Mutational burden,Minimal mutational burden summaries.,True,True
+representation_family,signatures_only,Mutational signatures,"Canonical mutational spectra such as SBS96, DBS78, and ID83.",True,True
+representation_family,one_hot_event_KME,One-hot sequence KME,FASTA-derived one-hot sequence-window kernel mean embedding.,True,True
+representation_family,other,Other representation,Other source representation.,False,False
+representation_family,signatures_plus_MAF_stack,Signatures + MAF stack,Combined mutational signatures and event-level MAF-stack features.,True,True
+representation_family,UGA_geometry,UGA geometry,UGA geometry features using the channel atlas.,True,True
+task,binary,Binary classification,Binary classification task.,True,True
+task,binary; classification,Binary classification,Binary classification task.,False,True
+task,classification,Classification,Classification task.,True,True
+task,multiclass_grouped,Grouped multiclass,Grouped multiclass classification task.,True,True
+task,multiclass,Multiclass classification,Multiclass classification task.,True,True
+task,regression,Regression,Continuous regression task.,True,True

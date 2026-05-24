@@ -1,0 +1,13 @@
+analysis_set,budget_mutations,budget_label,representation,n_samples,n_classes,n_agents,classifier_C,feature_dimension,mean_accuracy,se_accuracy,mean_balanced_accuracy,se_balanced_accuracy,mean_macro_f1,se_macro_f1
+Low-burden downsample,20,20,Standard_SBS96_DBS78_ID83_C0p5,259.0,8,70.0,0.5,257,0.2162162162162162,,0.1515393902735771,,0.1509676349026391,
+Low-burden downsample,20,20,UGA_unified_d10dp5_IDpayload_unweighted_frac_C0p1,259.0,8,70.0,0.1,143,0.1737451737451737,,0.1435096718512515,,0.1229587448844088,
+Low-burden downsample,25,25,Standard_SBS96_DBS78_ID83_C0p5,259.0,8,70.0,0.5,257,0.2239382239382239,,0.1744499970743864,,0.1721317942215043,
+Low-burden downsample,25,25,UGA_unified_d10dp5_IDpayload_unweighted_frac_C0p1,259.0,8,70.0,0.1,143,0.2432432432432432,,0.1897549246993857,,0.1898649667915267,
+Low-burden downsample,50,50,Standard_SBS96_DBS78_ID83_C0p5,258.0,8,70.0,0.5,257,0.2480620155038759,,0.1844802720667611,,0.1825913374589053,
+Low-burden downsample,50,50,UGA_unified_d10dp5_IDpayload_unweighted_frac_C0p1,258.0,8,70.0,0.1,143,0.2403100775193798,,0.2141849828241377,,0.1914667767955299,
+Low-burden downsample,100,100,Standard_SBS96_DBS78_ID83_C0p5,258.0,8,70.0,0.5,257,0.2945736434108527,,0.1998771859627099,,0.2018243620256924,
+Low-burden downsample,100,100,UGA_unified_d10dp5_IDpayload_unweighted_frac_C0p1,258.0,8,70.0,0.1,143,0.2829457364341085,,0.2337455656268574,,0.2146057908638136,
+Low-burden downsample,250,250,Standard_SBS96_DBS78_ID83_C0p5,237.0,8,67.0,0.5,257,0.2995780590717299,,0.2392195987040254,,0.2535649292228239,
+Low-burden downsample,250,250,UGA_unified_d10dp5_IDpayload_unweighted_frac_C0p1,237.0,8,67.0,0.1,143,0.2742616033755274,,0.2547072044046128,,0.2482369448268065,
+Original data,0,Original data,Standard_SBS96_DBS78_ID83_C0p5,259.0,8,70.0,0.5,257,0.3629343629343629,,0.3013937104704869,,0.3026177098350944,
+Original data,0,Original data,UGA_unified_d10dp5_IDpayload_unweighted_frac_C0p1,259.0,8,70.0,0.1,143,0.3088803088803089,,0.3034885248189278,,0.2868767608123309,

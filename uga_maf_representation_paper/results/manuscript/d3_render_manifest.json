@@ -1,0 +1,88 @@
+{
+  "created_utc": "2026-05-24T16:28:42.985Z",
+  "assets": [
+    {
+      "stem": "figure_1_conceptual_overview",
+      "svg": "figures\\figure_1_conceptual_overview.svg",
+      "html": "figures\\figure_1_conceptual_overview.html"
+    },
+    {
+      "stem": "figure_2_signature_baselines",
+      "svg": "figures\\figure_2_signature_baselines.svg",
+      "html": "figures\\figure_2_signature_baselines.html"
+    },
+    {
+      "stem": "figure_3_geometry_vs_signatures",
+      "svg": "figures\\figure_3_geometry_vs_signatures.svg",
+      "html": "figures\\figure_3_geometry_vs_signatures.html"
+    },
+    {
+      "stem": "figure_4_maf_stack_vs_signatures",
+      "svg": "figures\\figure_4_maf_stack_vs_signatures.svg",
+      "html": "figures\\figure_4_maf_stack_vs_signatures.html"
+    },
+    {
+      "stem": "figure_5_cross_endpoint_summary",
+      "svg": "figures\\figure_5_cross_endpoint_summary.svg",
+      "html": "figures\\figure_5_cross_endpoint_summary.html"
+    },
+    {
+      "stem": "figure_s1_representation_construction",
+      "svg": "supplement\\figure_s1_representation_construction.svg",
+      "html": "supplement\\figure_s1_representation_construction.html"
+    },
+    {
+      "stem": "figure_s2_calibration_thresholds",
+      "svg": "supplement\\figure_s2_calibration_thresholds.svg",
+      "html": "supplement\\figure_s2_calibration_thresholds.html"
+    },
+    {
+      "stem": "figure_s3_feature_importance",
+      "svg": "supplement\\figure_s3_feature_importance.svg",
+      "html": "supplement\\figure_s3_feature_importance.html"
+    }
+  ],
+  "playwright_status": "exported_png_pdf",
+  "visual_qa": [
+    {
+      "stem": "figure_1_conceptual_overview",
+      "status": "passed",
+      "issues": []
+    },
+    {
+      "stem": "figure_2_signature_baselines",
+      "status": "passed",
+      "issues": []
+    },
+    {
+      "stem": "figure_3_geometry_vs_signatures",
+      "status": "passed",
+      "issues": []
+    },
+    {
+      "stem": "figure_4_maf_stack_vs_signatures",
+      "status": "passed",
+      "issues": []
+    },
+    {
+      "stem": "figure_5_cross_endpoint_summary",
+      "status": "passed",
+      "issues": []
+    },
+    {
+      "stem": "figure_s1_representation_construction",
+      "status": "passed",
+      "issues": []
+    },
+    {
+      "stem": "figure_s2_calibration_thresholds",
+      "status": "passed",
+      "issues": []
+    },
+    {
+      "stem": "figure_s3_feature_importance",
+      "status": "passed",
+      "issues": []
+    }
+  ]
+}

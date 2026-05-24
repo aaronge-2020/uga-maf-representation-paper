@@ -1,0 +1,47 @@
+{
+  "canonical_main_rows": 50,
+  "created_utc": "2026-05-24T16:26:35+00:00",
+  "main_endpoint_rows": 50,
+  "main_endpoints": [
+    "damage_class",
+    "HRD_Score",
+    "hrd_binary_33",
+    "cancer_type_top10",
+    "os_event"
+  ],
+  "main_representations": [
+    "burden_only",
+    "signatures_only",
+    "MAF_stack_only",
+    "signatures_plus_MAF_stack",
+    "one_hot_event_KME"
+  ],
+  "manuscript_text_files": [
+    "text/manuscript_captions_and_results.md",
+    "text/figure_table_captions.md",
+    "text/results_section.md",
+    "text/label_mapping_notes.md"
+  ],
+  "normalized_rows": 1240,
+  "pairwise_tests": 90,
+  "required_files": [
+    "tables/table_1_datasets_endpoints.csv",
+    "tables/table_2_full_performance_metrics.csv",
+    "tables/table_3_hyperparameters_feature_dimensionality.csv",
+    "tables/table_4_label_mapping.csv",
+    "text/manuscript_captions_and_results.md",
+    "text/label_mapping_notes.md",
+    "supplement/table_s1_class_distribution_baselines.csv",
+    "supplement/table_s2_sensitivity_analyses.csv",
+    "figures/figure_1_conceptual_overview.png",
+    "figures/figure_2_signature_baselines.png",
+    "figures/figure_3_geometry_vs_signatures.png",
+    "figures/figure_4_maf_stack_vs_signatures.png",
+    "figures/figure_5_cross_endpoint_summary.png",
+    "supplement/figure_s1_representation_construction.png",
+    "supplement/figure_s2_calibration_thresholds.png",
+    "supplement/figure_s3_feature_importance.png"
+  ],
+  "run_id": "20260524T162414Z",
+  "strict": true
+}

@@ -1,0 +1,4 @@
+spearman	pearson	r2	mae	suite	subset	endpoint	task	model	n	auroc	auprc	balanced_acc	brier
+				main	all	hrd_binary_24	classification	Baseline	772	0.7723670955397648	0.6446296313567808	0.6958730824098927	0.20875497738362647
+				main	all	hrd_binary_24	classification	Baseline+Standard	772	0.7555186705159322	0.6764071111354455	0.6821550028058172	0.2117873513542717
+				main	all	hrd_binary_24	classification	Baseline+Universal-BiCGR d=10	772	0.7835328956709284	0.721253195563401	0.6889464325555923	0.20134722737710362

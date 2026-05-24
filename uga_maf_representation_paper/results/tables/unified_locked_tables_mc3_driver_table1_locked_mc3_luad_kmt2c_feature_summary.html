@@ -1,0 +1,133 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+
+    body{font-family:Arial,Helvetica,sans-serif;margin:28px;color:#111}
+    h1{font-size:18px;margin:0 0 12px 0}
+    table{border-collapse:collapse;font-size:12px;width:100%;max-width:1280px}
+    th,td{padding:6px 8px;border-bottom:1px solid #bbb;text-align:right}
+    th:first-child,td:first-child{text-align:left}
+    th{border-top:1.5px solid #111;border-bottom:1.5px solid #111;font-weight:600}
+    p{font-size:11px;color:#333;max-width:1120px}
+    </style>
+    
+<title>Table 1. Locked unified-model TCGA-LUAD KMT2C prediction</title></head><body>
+<h1>Table 1. Locked unified-model TCGA-LUAD KMT2C prediction</h1>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>scenario</th>
+      <th>scenario_label</th>
+      <th>endpoint</th>
+      <th>cancer_type</th>
+      <th>feature_set</th>
+      <th>n</th>
+      <th>positive</th>
+      <th>negative</th>
+      <th>n_features</th>
+      <th>repeats</th>
+      <th>folds</th>
+      <th>n_estimators</th>
+      <th>oof_auroc</th>
+      <th>oof_balanced_accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>within_cancer_type_LUAD</td>
+      <td>Within LUAD</td>
+      <td>kmt2c_mutated</td>
+      <td>LUAD</td>
+      <td>locked_uga_sbs_id_pooled</td>
+      <td>515</td>
+      <td>67</td>
+      <td>448</td>
+      <td>73</td>
+      <td>1</td>
+      <td>5</td>
+      <td>160</td>
+      <td>0.7409</td>
+      <td>0.6203</td>
+    </tr>
+    <tr>
+      <td>within_cancer_type_LUAD</td>
+      <td>Within LUAD</td>
+      <td>kmt2c_mutated</td>
+      <td>LUAD</td>
+      <td>locked_uga_sbs</td>
+      <td>515</td>
+      <td>67</td>
+      <td>448</td>
+      <td>73</td>
+      <td>1</td>
+      <td>5</td>
+      <td>160</td>
+      <td>0.7162</td>
+      <td>0.6476</td>
+    </tr>
+    <tr>
+      <td>within_cancer_type_LUAD</td>
+      <td>Within LUAD</td>
+      <td>kmt2c_mutated</td>
+      <td>LUAD</td>
+      <td>standard_sbs</td>
+      <td>515</td>
+      <td>67</td>
+      <td>448</td>
+      <td>99</td>
+      <td>1</td>
+      <td>5</td>
+      <td>160</td>
+      <td>0.7095</td>
+      <td>0.5718</td>
+    </tr>
+    <tr>
+      <td>within_cancer_type_LUAD</td>
+      <td>Within LUAD</td>
+      <td>kmt2c_mutated</td>
+      <td>LUAD</td>
+      <td>standard_sbs_id</td>
+      <td>515</td>
+      <td>67</td>
+      <td>448</td>
+      <td>182</td>
+      <td>1</td>
+      <td>5</td>
+      <td>160</td>
+      <td>0.7029</td>
+      <td>0.5751</td>
+    </tr>
+    <tr>
+      <td>within_cancer_type_LUAD</td>
+      <td>Within LUAD</td>
+      <td>kmt2c_mutated</td>
+      <td>LUAD</td>
+      <td>locked_uga_sbs_id_separate</td>
+      <td>515</td>
+      <td>67</td>
+      <td>448</td>
+      <td>143</td>
+      <td>1</td>
+      <td>5</td>
+      <td>160</td>
+      <td>0.7021</td>
+      <td>0.6263</td>
+    </tr>
+    <tr>
+      <td>within_cancer_type_LUAD</td>
+      <td>Within LUAD</td>
+      <td>kmt2c_mutated</td>
+      <td>LUAD</td>
+      <td>burden_only</td>
+      <td>515</td>
+      <td>67</td>
+      <td>448</td>
+      <td>3</td>
+      <td>1</td>
+      <td>5</td>
+      <td>160</td>
+      <td>0.6956</td>
+      <td>0.6428</td>
+    </tr>
+  </tbody>
+</table>
+<p>Repeated 5-fold out-of-fold XGBoost result. AUROC is computed from predictions averaged across five repeated cross-validation runs.</p>
+</body></html>

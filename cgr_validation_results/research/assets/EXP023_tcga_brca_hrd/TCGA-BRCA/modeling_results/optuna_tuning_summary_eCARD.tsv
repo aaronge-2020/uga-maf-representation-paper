@@ -1,0 +1,13 @@
+suite	subset	endpoint	task	model	fold	scope	study_name	best_value	best_params_json	n_trials
+main	all	eCARD	regression	Baseline+Standard	0	outer	main__all__eCARD__Baseline_Standard__fold_0	0.4257836402763718	"{""alpha"": 0.055259136032582486, ""l1_ratio"": 0.6865044832282042}"	40
+main	all	eCARD	regression	Baseline+Standard	1	outer	main__all__eCARD__Baseline_Standard__fold_1	0.4294906977387259	"{""alpha"": 0.03301357067290206, ""l1_ratio"": 0.66255480920666}"	40
+main	all	eCARD	regression	Baseline+Standard	2	outer	main__all__eCARD__Baseline_Standard__fold_2	0.4375582313466193	"{""alpha"": 0.06687806785055167, ""l1_ratio"": 0.6778129390276725}"	40
+main	all	eCARD	regression	Baseline+Standard	3	outer	main__all__eCARD__Baseline_Standard__fold_3	0.4382599342961133	"{""alpha"": 0.055259136032582486, ""l1_ratio"": 0.6865044832282042}"	40
+main	all	eCARD	regression	Baseline+Standard	4	outer	main__all__eCARD__Baseline_Standard__fold_4	0.42897456279341895	"{""alpha"": 0.06016538955717775, ""l1_ratio"": 0.5854486331970418}"	40
+main	all	eCARD	regression	Baseline+Standard	-1	full	main__all__eCARD__Baseline_Standard__full	0.43074810001784875	"{""alpha"": 0.048500210226792385, ""l1_ratio"": 0.6760771745685252}"	40
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	0	outer	main__all__eCARD__Baseline_Universal-BiCGR_d_10__fold_0	0.4226849284290924	"{""alpha"": 0.026432095851579032, ""l1_ratio"": 0.938606522604022}"	40
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	1	outer	main__all__eCARD__Baseline_Universal-BiCGR_d_10__fold_1	0.431538635120775	"{""alpha"": 0.04940760258667689, ""l1_ratio"": 0.5808161444470026}"	40
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	2	outer	main__all__eCARD__Baseline_Universal-BiCGR_d_10__fold_2	0.42681955494287277	"{""alpha"": 0.048500210226792385, ""l1_ratio"": 0.6760771745685252}"	40
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	3	outer	main__all__eCARD__Baseline_Universal-BiCGR_d_10__fold_3	0.4292355215210391	"{""alpha"": 0.05060156726054768, ""l1_ratio"": 0.6657067619860136}"	40
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	4	outer	main__all__eCARD__Baseline_Universal-BiCGR_d_10__fold_4	0.422513956927814	"{""alpha"": 0.044548823136985015, ""l1_ratio"": 0.8004674041047666}"	40
+main	all	eCARD	regression	Baseline+Universal-BiCGR d=10	-1	full	main__all__eCARD__Baseline_Universal-BiCGR_d_10__full	0.4275897588815269	"{""alpha"": 0.03711549054123645, ""l1_ratio"": 0.9091162659788792}"	40

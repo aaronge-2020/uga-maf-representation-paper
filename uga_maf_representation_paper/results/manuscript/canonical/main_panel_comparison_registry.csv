@@ -1,0 +1,91 @@
+figure_id,comparison_name,comparison_display,endpoint,endpoint_display,model_family,model_display,candidate_representation,candidate_representation_display,baseline_representation,baseline_representation_display
+figure_2,signatures_vs_burden,Signatures vs burden,damage_class,Kucab damage class,elastic_net,Elastic net,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_2,signatures_vs_burden,Signatures vs burden,damage_class,Kucab damage class,XGBoost,XGBoost,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_2,signatures_vs_burden,Signatures vs burden,HRD_Score,HRD score,elastic_net,Elastic net,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_2,signatures_vs_burden,Signatures vs burden,HRD_Score,HRD score,XGBoost,XGBoost,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_2,signatures_vs_burden,Signatures vs burden,hrd_binary_33,HRD33 high/low,elastic_net,Elastic net,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_2,signatures_vs_burden,Signatures vs burden,hrd_binary_33,HRD33 high/low,XGBoost,XGBoost,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_2,signatures_vs_burden,Signatures vs burden,cancer_type_top10,Cancer type (top 10),elastic_net,Elastic net,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_2,signatures_vs_burden,Signatures vs burden,cancer_type_top10,Cancer type (top 10),XGBoost,XGBoost,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_2,signatures_vs_burden,Signatures vs burden,os_event,Overall survival event,elastic_net,Elastic net,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_2,signatures_vs_burden,Signatures vs burden,os_event,Overall survival event,XGBoost,XGBoost,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_3,one_hot_kme_vs_signatures,One-hot KME vs signatures,damage_class,Kucab damage class,elastic_net,Elastic net,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_3,one_hot_kme_vs_signatures,One-hot KME vs signatures,damage_class,Kucab damage class,XGBoost,XGBoost,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_3,one_hot_kme_vs_signatures,One-hot KME vs signatures,HRD_Score,HRD score,elastic_net,Elastic net,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_3,one_hot_kme_vs_signatures,One-hot KME vs signatures,HRD_Score,HRD score,XGBoost,XGBoost,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_3,one_hot_kme_vs_signatures,One-hot KME vs signatures,hrd_binary_33,HRD33 high/low,elastic_net,Elastic net,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_3,one_hot_kme_vs_signatures,One-hot KME vs signatures,hrd_binary_33,HRD33 high/low,XGBoost,XGBoost,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_3,one_hot_kme_vs_signatures,One-hot KME vs signatures,cancer_type_top10,Cancer type (top 10),elastic_net,Elastic net,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_3,one_hot_kme_vs_signatures,One-hot KME vs signatures,cancer_type_top10,Cancer type (top 10),XGBoost,XGBoost,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_3,one_hot_kme_vs_signatures,One-hot KME vs signatures,os_event,Overall survival event,elastic_net,Elastic net,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_3,one_hot_kme_vs_signatures,One-hot KME vs signatures,os_event,Overall survival event,XGBoost,XGBoost,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_4,maf_stack_vs_signatures,MAF stack vs signatures,damage_class,Kucab damage class,elastic_net,Elastic net,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_4,maf_stack_vs_signatures,MAF stack vs signatures,damage_class,Kucab damage class,XGBoost,XGBoost,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_4,maf_stack_vs_signatures,MAF stack vs signatures,HRD_Score,HRD score,elastic_net,Elastic net,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_4,maf_stack_vs_signatures,MAF stack vs signatures,HRD_Score,HRD score,XGBoost,XGBoost,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_4,maf_stack_vs_signatures,MAF stack vs signatures,hrd_binary_33,HRD33 high/low,elastic_net,Elastic net,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_4,maf_stack_vs_signatures,MAF stack vs signatures,hrd_binary_33,HRD33 high/low,XGBoost,XGBoost,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_4,maf_stack_vs_signatures,MAF stack vs signatures,cancer_type_top10,Cancer type (top 10),elastic_net,Elastic net,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_4,maf_stack_vs_signatures,MAF stack vs signatures,cancer_type_top10,Cancer type (top 10),XGBoost,XGBoost,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_4,maf_stack_vs_signatures,MAF stack vs signatures,os_event,Overall survival event,elastic_net,Elastic net,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_4,maf_stack_vs_signatures,MAF stack vs signatures,os_event,Overall survival event,XGBoost,XGBoost,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_4,sig_maf_vs_signatures,Signatures + MAF vs signatures,damage_class,Kucab damage class,elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_4,sig_maf_vs_signatures,Signatures + MAF vs signatures,damage_class,Kucab damage class,XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_4,sig_maf_vs_signatures,Signatures + MAF vs signatures,HRD_Score,HRD score,elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_4,sig_maf_vs_signatures,Signatures + MAF vs signatures,HRD_Score,HRD score,XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_4,sig_maf_vs_signatures,Signatures + MAF vs signatures,hrd_binary_33,HRD33 high/low,elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_4,sig_maf_vs_signatures,Signatures + MAF vs signatures,hrd_binary_33,HRD33 high/low,XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_4,sig_maf_vs_signatures,Signatures + MAF vs signatures,cancer_type_top10,Cancer type (top 10),elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_4,sig_maf_vs_signatures,Signatures + MAF vs signatures,cancer_type_top10,Cancer type (top 10),XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_4,sig_maf_vs_signatures,Signatures + MAF vs signatures,os_event,Overall survival event,elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_4,sig_maf_vs_signatures,Signatures + MAF vs signatures,os_event,Overall survival event,XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_4,sig_maf_vs_maf_stack,Signatures + MAF vs MAF stack,damage_class,Kucab damage class,elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,MAF_stack_only,Event-level MAF stack
+figure_4,sig_maf_vs_maf_stack,Signatures + MAF vs MAF stack,damage_class,Kucab damage class,XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,MAF_stack_only,Event-level MAF stack
+figure_4,sig_maf_vs_maf_stack,Signatures + MAF vs MAF stack,HRD_Score,HRD score,elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,MAF_stack_only,Event-level MAF stack
+figure_4,sig_maf_vs_maf_stack,Signatures + MAF vs MAF stack,HRD_Score,HRD score,XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,MAF_stack_only,Event-level MAF stack
+figure_4,sig_maf_vs_maf_stack,Signatures + MAF vs MAF stack,hrd_binary_33,HRD33 high/low,elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,MAF_stack_only,Event-level MAF stack
+figure_4,sig_maf_vs_maf_stack,Signatures + MAF vs MAF stack,hrd_binary_33,HRD33 high/low,XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,MAF_stack_only,Event-level MAF stack
+figure_4,sig_maf_vs_maf_stack,Signatures + MAF vs MAF stack,cancer_type_top10,Cancer type (top 10),elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,MAF_stack_only,Event-level MAF stack
+figure_4,sig_maf_vs_maf_stack,Signatures + MAF vs MAF stack,cancer_type_top10,Cancer type (top 10),XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,MAF_stack_only,Event-level MAF stack
+figure_4,sig_maf_vs_maf_stack,Signatures + MAF vs MAF stack,os_event,Overall survival event,elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,MAF_stack_only,Event-level MAF stack
+figure_4,sig_maf_vs_maf_stack,Signatures + MAF vs MAF stack,os_event,Overall survival event,XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,MAF_stack_only,Event-level MAF stack
+figure_5,signatures_vs_burden,Signatures vs burden,damage_class,Kucab damage class,elastic_net,Elastic net,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_5,signatures_vs_burden,Signatures vs burden,damage_class,Kucab damage class,XGBoost,XGBoost,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_5,signatures_vs_burden,Signatures vs burden,HRD_Score,HRD score,elastic_net,Elastic net,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_5,signatures_vs_burden,Signatures vs burden,HRD_Score,HRD score,XGBoost,XGBoost,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_5,signatures_vs_burden,Signatures vs burden,hrd_binary_33,HRD33 high/low,elastic_net,Elastic net,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_5,signatures_vs_burden,Signatures vs burden,hrd_binary_33,HRD33 high/low,XGBoost,XGBoost,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_5,signatures_vs_burden,Signatures vs burden,cancer_type_top10,Cancer type (top 10),elastic_net,Elastic net,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_5,signatures_vs_burden,Signatures vs burden,cancer_type_top10,Cancer type (top 10),XGBoost,XGBoost,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_5,signatures_vs_burden,Signatures vs burden,os_event,Overall survival event,elastic_net,Elastic net,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_5,signatures_vs_burden,Signatures vs burden,os_event,Overall survival event,XGBoost,XGBoost,signatures_only,Mutational signatures,burden_only,Mutational burden
+figure_5,one_hot_kme_vs_signatures,One-hot KME vs signatures,damage_class,Kucab damage class,elastic_net,Elastic net,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_5,one_hot_kme_vs_signatures,One-hot KME vs signatures,damage_class,Kucab damage class,XGBoost,XGBoost,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_5,one_hot_kme_vs_signatures,One-hot KME vs signatures,HRD_Score,HRD score,elastic_net,Elastic net,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_5,one_hot_kme_vs_signatures,One-hot KME vs signatures,HRD_Score,HRD score,XGBoost,XGBoost,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_5,one_hot_kme_vs_signatures,One-hot KME vs signatures,hrd_binary_33,HRD33 high/low,elastic_net,Elastic net,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_5,one_hot_kme_vs_signatures,One-hot KME vs signatures,hrd_binary_33,HRD33 high/low,XGBoost,XGBoost,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_5,one_hot_kme_vs_signatures,One-hot KME vs signatures,cancer_type_top10,Cancer type (top 10),elastic_net,Elastic net,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_5,one_hot_kme_vs_signatures,One-hot KME vs signatures,cancer_type_top10,Cancer type (top 10),XGBoost,XGBoost,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_5,one_hot_kme_vs_signatures,One-hot KME vs signatures,os_event,Overall survival event,elastic_net,Elastic net,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_5,one_hot_kme_vs_signatures,One-hot KME vs signatures,os_event,Overall survival event,XGBoost,XGBoost,one_hot_event_KME,One-hot sequence KME,signatures_only,Mutational signatures
+figure_5,maf_stack_vs_signatures,MAF stack vs signatures,damage_class,Kucab damage class,elastic_net,Elastic net,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_5,maf_stack_vs_signatures,MAF stack vs signatures,damage_class,Kucab damage class,XGBoost,XGBoost,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_5,maf_stack_vs_signatures,MAF stack vs signatures,HRD_Score,HRD score,elastic_net,Elastic net,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_5,maf_stack_vs_signatures,MAF stack vs signatures,HRD_Score,HRD score,XGBoost,XGBoost,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_5,maf_stack_vs_signatures,MAF stack vs signatures,hrd_binary_33,HRD33 high/low,elastic_net,Elastic net,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_5,maf_stack_vs_signatures,MAF stack vs signatures,hrd_binary_33,HRD33 high/low,XGBoost,XGBoost,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_5,maf_stack_vs_signatures,MAF stack vs signatures,cancer_type_top10,Cancer type (top 10),elastic_net,Elastic net,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_5,maf_stack_vs_signatures,MAF stack vs signatures,cancer_type_top10,Cancer type (top 10),XGBoost,XGBoost,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_5,maf_stack_vs_signatures,MAF stack vs signatures,os_event,Overall survival event,elastic_net,Elastic net,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_5,maf_stack_vs_signatures,MAF stack vs signatures,os_event,Overall survival event,XGBoost,XGBoost,MAF_stack_only,Event-level MAF stack,signatures_only,Mutational signatures
+figure_5,sig_maf_vs_signatures,Signatures + MAF vs signatures,damage_class,Kucab damage class,elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_5,sig_maf_vs_signatures,Signatures + MAF vs signatures,damage_class,Kucab damage class,XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_5,sig_maf_vs_signatures,Signatures + MAF vs signatures,HRD_Score,HRD score,elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_5,sig_maf_vs_signatures,Signatures + MAF vs signatures,HRD_Score,HRD score,XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_5,sig_maf_vs_signatures,Signatures + MAF vs signatures,hrd_binary_33,HRD33 high/low,elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_5,sig_maf_vs_signatures,Signatures + MAF vs signatures,hrd_binary_33,HRD33 high/low,XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_5,sig_maf_vs_signatures,Signatures + MAF vs signatures,cancer_type_top10,Cancer type (top 10),elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_5,sig_maf_vs_signatures,Signatures + MAF vs signatures,cancer_type_top10,Cancer type (top 10),XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_5,sig_maf_vs_signatures,Signatures + MAF vs signatures,os_event,Overall survival event,elastic_net,Elastic net,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures
+figure_5,sig_maf_vs_signatures,Signatures + MAF vs signatures,os_event,Overall survival event,XGBoost,XGBoost,signatures_plus_MAF_stack,Signatures + MAF stack,signatures_only,Mutational signatures

@@ -1,0 +1,12 @@
+{
+  "patients_with_hrd_scores": 958,
+  "patients_with_catalogs": 792,
+  "base_analysis_cohort": 772,
+  "hrd_binary_42_high": 150,
+  "hrd_binary_42_low": 622,
+  "hrd_binary_33_high": 234,
+  "hrd_binary_33_low": 538,
+  "hrd_binary_24_high": 353,
+  "hrd_binary_24_low": 419,
+  "quartile_extremes": 411
+}

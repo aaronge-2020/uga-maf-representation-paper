@@ -1,0 +1,43 @@
+<section class="table-section">
+  <h2>Table 1. Shared-space simulation design</h2>
+  <table class="manuscript-table">
+    <thead><tr><th>Element</th><th>Specification</th></tr></thead>
+    <tbody>
+      <tr><td>Question</td><td>Can UGA provide useful cross-modality evidence even when SBS, DBS, and indel exposures are solved separately?</td></tr><tr><td>Synthetic cohort</td><td>520 tumors with sparse mixtures of 12 latent mutational processes.</td></tr><tr><td>Mutation modalities</td><td>SBS96, DBS78, and ID83 standard channel universes plus event-level 48D UGA clean-context vectors.</td></tr><tr><td>UGA encoding</td><td>Atlas model compact_event_legacy_d10; layout [L context, REF payload, R context, ALT payload].</td></tr><tr><td>Separate solve benchmark</td><td>NNLS is fit independently for each modality using either categorical signatures or UGA signature centroids.</td></tr><tr><td>Naive pooled benchmark</td><td>All SBS/DBS/ID events are collapsed into a single burden-weighted 48D mean and fit against all modality-specific UGA centroids at once.</td></tr><tr><td>Shared-space benchmark</td><td>UGA centroids are used for cross-modality nearest-neighbor retrieval and SBS-to-DBS/ID held-out exposure imputation.</td></tr><tr><td>Standard-catalog baseline</td><td>SBS, DBS, and ID channels are unequal axes, so cross-catalog distance is undefined without external labels; chance/tie expectation is reported.</td></tr>
+    </tbody>
+  </table>
+  
+</section>
+
+<section class="table-section">
+  <h2>Table 2. Exposure recovery: separate solves versus naive pooled UGA solve</h2>
+  <table class="manuscript-table">
+    <thead><tr><th>Modality</th><th>Method</th><th>N</th><th>Median burden</th><th>Mean MAE</th><th>Mean cosine</th><th>Top-1 process</th><th>Modal mass error</th></tr></thead>
+    <tbody>
+      <tr><td>DBS</td><td>Separate categorical NNLS</td><td>520</td><td>63</td><td>0.008</td><td>0.994</td><td>0.962</td><td>NA</td></tr><tr><td>DBS</td><td>Separate UGA NNLS</td><td>520</td><td>63</td><td>0.004</td><td>1.000</td><td>0.988</td><td>NA</td></tr><tr><td>DBS</td><td>Naive pooled UGA NNLS</td><td>520</td><td>63</td><td>0.032</td><td>0.933</td><td>0.865</td><td>0.004</td></tr><tr><td>ID</td><td>Separate categorical NNLS</td><td>520</td><td>93</td><td>0.006</td><td>0.998</td><td>0.971</td><td>NA</td></tr><tr><td>ID</td><td>Separate UGA NNLS</td><td>520</td><td>93</td><td>0.004</td><td>1.000</td><td>0.994</td><td>NA</td></tr><tr><td>ID</td><td>Naive pooled UGA NNLS</td><td>520</td><td>93</td><td>0.030</td><td>0.944</td><td>0.844</td><td>0.008</td></tr><tr><td>SBS</td><td>Separate categorical NNLS</td><td>520</td><td>1,160</td><td>0.005</td><td>0.999</td><td>0.977</td><td>NA</td></tr><tr><td>SBS</td><td>Separate UGA NNLS</td><td>520</td><td>1,160</td><td>0.001</td><td>1.000</td><td>1.000</td><td>NA</td></tr><tr><td>SBS</td><td>Naive pooled UGA NNLS</td><td>520</td><td>1,160</td><td>0.004</td><td>0.999</td><td>0.979</td><td>0.007</td></tr>
+    </tbody>
+  </table>
+  <p class="table-note">Lower MAE is better; higher cosine and top-1 accuracy are better. Modal mass error is only defined for the naive pooled solve.</p>
+</section>
+
+<section class="table-section">
+  <h2>Table 3. Cross-modality signature retrieval</h2>
+  <table class="manuscript-table">
+    <thead><tr><th>Coordinate system</th><th>Ordered modality pairs</th><th>Mean top-1</th><th>Mean reciprocal rank</th><th>Median true rank</th></tr></thead>
+    <tbody>
+      <tr><td>UGA clean context 40D</td><td>6</td><td>1.000</td><td>1.000</td><td>1.000</td></tr><tr><td>UGA full 48D</td><td>6</td><td>1.000</td><td>1.000</td><td>1.000</td></tr><tr><td>Standard separate catalogs</td><td>6</td><td>0.083</td><td>0.259</td><td>6.500</td></tr><tr><td>UGA payload 8D</td><td>6</td><td>0.083</td><td>0.251</td><td>6.250</td></tr>
+    </tbody>
+  </table>
+  <p class="table-note">The standard catalog row reports the chance/tie expectation because SBS96, DBS78, and ID83 have unequal, modality-specific axes.</p>
+</section>
+
+<section class="table-section">
+  <h2>Table 4. Held-out DBS/ID exposure imputation from SBS</h2>
+  <table class="manuscript-table">
+    <thead><tr><th>Target</th><th>Method</th><th>N</th><th>Mean MAE</th><th>Mean cosine</th><th>Top-1 process</th></tr></thead>
+    <tbody>
+      <tr><td>DBS</td><td>Oracle label bridge</td><td>156</td><td>0.014</td><td>0.990</td><td>0.923</td></tr><tr><td>DBS</td><td>UGA unsupervised bridge</td><td>156</td><td>0.014</td><td>0.990</td><td>0.923</td></tr><tr><td>DBS</td><td>Standard no-bridge cohort mean</td><td>156</td><td>0.126</td><td>0.409</td><td>0.071</td></tr><tr><td>DBS</td><td>Standard random bridge</td><td>156</td><td>0.138</td><td>0.188</td><td>0.090</td></tr><tr><td>ID</td><td>Oracle label bridge</td><td>156</td><td>0.012</td><td>0.993</td><td>0.929</td></tr><tr><td>ID</td><td>UGA unsupervised bridge</td><td>156</td><td>0.012</td><td>0.993</td><td>0.929</td></tr><tr><td>ID</td><td>Standard no-bridge cohort mean</td><td>156</td><td>0.126</td><td>0.409</td><td>0.077</td></tr><tr><td>ID</td><td>Standard random bridge</td><td>156</td><td>0.138</td><td>0.190</td><td>0.090</td></tr>
+    </tbody>
+  </table>
+  <p class="table-note">UGA bridge uses nearest neighbors in clean-context UGA coordinates without using process labels.</p>
+</section>

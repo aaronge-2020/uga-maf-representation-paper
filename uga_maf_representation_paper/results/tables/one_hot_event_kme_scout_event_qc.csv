@@ -1,0 +1,3 @@
+benchmark,cache_status,encoded_events,encoded_id,encoded_sbs,invalid_or_other,rows_in_endpoint_patients,rows_scanned,event_vector_dim,d_context,d_payload,fasta,cache_key,fasta_ref_mismatch,encoded_dbs,eligible_samples
+mc3_main,hit,3447758,41573,3406185,131134.0,3578892.0,3600963,110,6,6,${raw_data.grch37_dir}\GCF_000001405.13\GCF_000001405.13_GRCh37_genomic.fna,one_hot_event_inventory_mc3_main_0ef666426351560e50c45848,,,
+kucab_damage_class,,187243,7245,179245,,,191151,110,6,6,${raw_data.grch37_dir}\GCF_000001405.13\GCF_000001405.13_GRCh37_genomic.fna,one_hot_event_inventory_kucab_damage_class_d1b2510099145a6fb4d350fe,3908.0,753.0,259.0

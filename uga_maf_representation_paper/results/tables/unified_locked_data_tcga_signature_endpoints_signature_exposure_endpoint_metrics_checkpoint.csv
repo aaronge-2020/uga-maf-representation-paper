@@ -1,0 +1,91 @@
+suite,endpoint,task,feature_set,feature_label,n,n_features,repeats,outer_folds,primary_metric,primary_metric_name,spearman,r2,mae,auroc,auprc,balanced_accuracy
+tcga_brca_hrd,HRD_LOH,regression,burden_only,Burden only,772,3,1,5,0.507175849559229,spearman,0.507175849559229,0.2426508155465725,3.619687511822103,,,
+tcga_brca_hrd,HRD_LOH,regression,locked_uga_sbs_exposure,Locked UGA SBS exposures,772,100,1,5,0.5440421038017121,spearman,0.5440421038017121,0.3312523194176984,3.4055191377284,,,
+tcga_brca_hrd,HRD_LOH,regression,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,772,125,1,5,0.547233808155896,spearman,0.547233808155896,0.3679025885261187,3.3500356683459307,,,
+tcga_brca_hrd,HRD_LOH,regression,standard_sbs_exposure,Standard SBS exposures,772,100,1,5,0.5575398221299555,spearman,0.5575398221299555,0.3569810058576722,3.384228959911228,,,
+tcga_brca_hrd,HRD_LOH,regression,standard_sbs_id_exposure,Standard SBS+ID exposures,772,125,1,5,0.5652355111878485,spearman,0.5652355111878485,0.3919582028908757,3.330307018571567,,,
+tcga_brca_hrd,HRD_LST,regression,burden_only,Burden only,772,3,1,5,0.5970576426630552,spearman,0.5970576426630552,0.3999905306080646,4.718054769570346,,,
+tcga_brca_hrd,HRD_LST,regression,locked_uga_sbs_exposure,Locked UGA SBS exposures,772,100,1,5,0.6589496071315193,spearman,0.6589496071315193,0.5495331480675504,4.184650931951295,,,
+tcga_brca_hrd,HRD_LST,regression,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,772,125,1,5,0.6576198391367897,spearman,0.6576198391367897,0.5567451450659239,4.171005600474659,,,
+tcga_brca_hrd,HRD_LST,regression,standard_sbs_exposure,Standard SBS exposures,772,100,1,5,0.6754256103067854,spearman,0.6754256103067854,0.56710810093651,4.1130418116564575,,,
+tcga_brca_hrd,HRD_LST,regression,standard_sbs_id_exposure,Standard SBS+ID exposures,772,125,1,5,0.6626196674825396,spearman,0.6626196674825396,0.5906495793313793,4.037383760812987,,,
+tcga_brca_hrd,HRD_Score,regression,burden_only,Burden only,772,3,1,5,0.6188054113445145,spearman,0.6188054113445145,0.4148145868296397,11.717610120773315,,,
+tcga_brca_hrd,HRD_Score,regression,locked_uga_sbs_exposure,Locked UGA SBS exposures,772,100,1,5,0.6735743178075989,spearman,0.6735743178075989,0.5400775373545327,10.542511434752706,,,
+tcga_brca_hrd,HRD_Score,regression,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,772,125,1,5,0.6807140703683192,spearman,0.6807140703683192,0.5760253239101814,10.137070890535345,,,
+tcga_brca_hrd,HRD_Score,regression,standard_sbs_exposure,Standard SBS exposures,772,100,1,5,0.6860548883944046,spearman,0.6860548883944046,0.556892759110618,10.409469614374824,,,
+tcga_brca_hrd,HRD_Score,regression,standard_sbs_id_exposure,Standard SBS+ID exposures,772,125,1,5,0.6851627584727358,spearman,0.6851627584727358,0.5790858805625358,10.133391490254375,,,
+tcga_brca_hrd,HRD_TAI,regression,burden_only,Burden only,772,3,1,5,0.6054119852207275,spearman,0.6054119852207275,0.3803547075124749,4.578409311684919,,,
+tcga_brca_hrd,HRD_TAI,regression,locked_uga_sbs_exposure,Locked UGA SBS exposures,772,100,1,5,0.6558629293668204,spearman,0.6558629293668204,0.4906765189939897,4.1305843690516415,,,
+tcga_brca_hrd,HRD_TAI,regression,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,772,125,1,5,0.6671488884555391,spearman,0.6671488884555391,0.5255413628652867,3.972764986784347,,,
+tcga_brca_hrd,HRD_TAI,regression,standard_sbs_exposure,Standard SBS exposures,772,100,1,5,0.6696168465646548,spearman,0.6696168465646548,0.5089759382036383,4.088084508717986,,,
+tcga_brca_hrd,HRD_TAI,regression,standard_sbs_id_exposure,Standard SBS+ID exposures,772,125,1,5,0.6657403371475036,spearman,0.6657403371475036,0.5083396880337936,4.085794682329801,,,
+tcga_brca_hrd,PARPi7,regression,burden_only,Burden only,772,3,1,5,0.1512633634573566,spearman,0.1512633634573566,0.0011637721334865,0.7915355341816016,,,
+tcga_brca_hrd,PARPi7,regression,locked_uga_sbs_exposure,Locked UGA SBS exposures,772,100,1,5,0.134252659342244,spearman,0.134252659342244,-0.0298181013454774,0.7928123524614725,,,
+tcga_brca_hrd,PARPi7,regression,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,772,125,1,5,0.117778995314577,spearman,0.117778995314577,-0.0388901464701414,0.802510950290686,,,
+tcga_brca_hrd,PARPi7,regression,standard_sbs_exposure,Standard SBS exposures,772,100,1,5,0.2251481168032955,spearman,0.2251481168032955,0.0368696692290576,0.7672751977973091,,,
+tcga_brca_hrd,PARPi7,regression,standard_sbs_id_exposure,Standard SBS+ID exposures,772,125,1,5,0.1935349425667027,spearman,0.1935349425667027,0.0369677231780475,0.7695858425010008,,,
+tcga_brca_hrd,eCARD,regression,burden_only,Burden only,772,3,1,5,0.3255581055897624,spearman,0.3255581055897624,0.0814383199563175,0.42641394327601,,,
+tcga_brca_hrd,eCARD,regression,locked_uga_sbs_exposure,Locked UGA SBS exposures,772,100,1,5,0.3312715806083959,spearman,0.3312715806083959,0.0918440259406929,0.4260250171869559,,,
+tcga_brca_hrd,eCARD,regression,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,772,125,1,5,0.3355302092036242,spearman,0.3355302092036242,0.0893800289706651,0.4305957163741314,,,
+tcga_brca_hrd,eCARD,regression,standard_sbs_exposure,Standard SBS exposures,772,100,1,5,0.3002652460605538,spearman,0.3002652460605538,0.0667305933689225,0.4314454300106836,,,
+tcga_brca_hrd,eCARD,regression,standard_sbs_id_exposure,Standard SBS+ID exposures,772,125,1,5,0.3115130775101201,spearman,0.3115130775101201,0.0724395482093254,0.4294955544312624,,,
+tcga_brca_hrd,hrd_binary_24,binary,burden_only,Burden only,772,3,1,5,0.7977681921748127,auroc,,,,0.7977681921748127,0.7435674295885105,0.7365506703536682
+tcga_brca_hrd,hrd_binary_24,binary,locked_uga_sbs_exposure,Locked UGA SBS exposures,772,100,1,5,0.8216446821313392,auroc,,,,0.8216446821313392,0.8212853685441355,0.7448362822584462
+tcga_brca_hrd,hrd_binary_24,binary,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,772,125,1,5,0.833706315454982,auroc,,,,0.833706315454982,0.8310312802047511,0.7624351788623933
+tcga_brca_hrd,hrd_binary_24,binary,standard_sbs_exposure,Standard SBS exposures,772,100,1,5,0.8276552157774819,auroc,,,,0.8276552157774819,0.8267442078662283,0.7469220523707465
+tcga_brca_hrd,hrd_binary_24,binary,standard_sbs_id_exposure,Standard SBS+ID exposures,772,125,1,5,0.8395140189443366,auroc,,,,0.8395140189443366,0.842792247466852,0.7710115139919003
+tcga_brca_hrd,hrd_binary_33,binary,burden_only,Burden only,772,3,1,5,0.8235074508308708,auroc,,,,0.8235074508308708,0.6235448454276459,0.731341149556763
+tcga_brca_hrd,hrd_binary_33,binary,locked_uga_sbs_exposure,Locked UGA SBS exposures,772,100,1,5,0.8537714866711151,auroc,,,,0.8537714866711151,0.7457301609500966,0.7701998538429765
+tcga_brca_hrd,hrd_binary_33,binary,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,772,125,1,5,0.8662504368824073,auroc,,,,0.8662504368824073,0.7799120120977119,0.7821863184316715
+tcga_brca_hrd,hrd_binary_33,binary,standard_sbs_exposure,Standard SBS exposures,772,100,1,5,0.8628983573221491,auroc,,,,0.8628983573221491,0.7617951951190298,0.7805182219680361
+tcga_brca_hrd,hrd_binary_33,binary,standard_sbs_id_exposure,Standard SBS+ID exposures,772,125,1,5,0.873915737298637,auroc,,,,0.873915737298637,0.778636650162494,0.8001223270739999
+tcga_brca_hrd,hrd_binary_42,binary,burden_only,Burden only,772,3,1,5,0.8295391211146839,auroc,,,,0.8295391211146839,0.5242015734968016,0.7153697749196142
+tcga_brca_hrd,hrd_binary_42,binary,locked_uga_sbs_exposure,Locked UGA SBS exposures,772,100,1,5,0.8988531618435155,auroc,,,,0.8988531618435155,0.7363620162163688,0.8114790996784566
+tcga_brca_hrd,hrd_binary_42,binary,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,772,125,1,5,0.9031511254019292,auroc,,,,0.9031511254019292,0.7704073605157198,0.8142229367631297
+tcga_brca_hrd,hrd_binary_42,binary,standard_sbs_exposure,Standard SBS exposures,772,100,1,5,0.909549839228296,auroc,,,,0.909549839228296,0.7643991686875913,0.8275562700964629
+tcga_brca_hrd,hrd_binary_42,binary,standard_sbs_id_exposure,Standard SBS+ID exposures,772,125,1,5,0.910032154340836,auroc,,,,0.910032154340836,0.7694984996479498,0.8290460878885316
+tcga_brca_hrd,parpi7_binary,binary,burden_only,Burden only,772,3,1,5,0.6191934200849505,auroc,,,,0.6191934200849505,0.1715653544296768,0.5701592447506266
+tcga_brca_hrd,parpi7_binary,binary,locked_uga_sbs_exposure,Locked UGA SBS exposures,772,100,1,5,0.5730259504405121,auroc,,,,0.5730259504405121,0.1917344408670139,0.5382502589040479
+tcga_brca_hrd,parpi7_binary,binary,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,772,125,1,5,0.5947888993951401,auroc,,,,0.5947888993951401,0.2282846477352452,0.5340927852071983
+tcga_brca_hrd,parpi7_binary,binary,standard_sbs_exposure,Standard SBS exposures,772,100,1,5,0.6360784666876792,auroc,,,,0.6360784666876792,0.2274050906212413,0.5789544779143591
+tcga_brca_hrd,parpi7_binary,binary,standard_sbs_id_exposure,Standard SBS+ID exposures,772,125,1,5,0.6684827472346047,auroc,,,,0.6684827472346047,0.250835379422911,0.6187731700361716
+tcga_mc3,brca_gene_mutated,binary,burden_only,Burden only,10224,3,1,5,0.8178235273557065,auroc,,,,0.8178235273557065,0.4001450174634157,0.6022908473817001
+tcga_mc3,brca_gene_mutated,binary,locked_uga_sbs_exposure,Locked UGA SBS exposures,10224,100,1,5,0.8149654429078604,auroc,,,,0.8149654429078604,0.3776549134822298,0.6396554491351989
+tcga_mc3,brca_gene_mutated,binary,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,10224,125,1,5,0.8170576289176772,auroc,,,,0.8170576289176772,0.3797144218713568,0.6451725999958626
+tcga_mc3,brca_gene_mutated,binary,standard_sbs_exposure,Standard SBS exposures,10224,100,1,5,0.813907651351789,auroc,,,,0.813907651351789,0.3868184611236502,0.6405060907365308
+tcga_mc3,brca_gene_mutated,binary,standard_sbs_id_exposure,Standard SBS+ID exposures,10224,125,1,5,0.8139610081583128,auroc,,,,0.8139610081583128,0.3807692205293531,0.6477106149371952
+tcga_mc3,cancer_type_top10,multiclass,burden_only,Burden only,5462,3,1,5,0.8412563578682362,auroc,,,,0.8412563578682362,,0.4267389473510764
+tcga_mc3,cancer_type_top10,multiclass,locked_uga_sbs_exposure,Locked UGA SBS exposures,5462,100,1,5,0.9123345851238804,auroc,,,,0.9123345851238804,,0.5943049196556218
+tcga_mc3,cancer_type_top10,multiclass,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,5462,125,1,5,0.9119860408656112,auroc,,,,0.9119860408656112,,0.600949453368957
+tcga_mc3,cancer_type_top10,multiclass,standard_sbs_exposure,Standard SBS exposures,5462,100,1,5,0.923134774340363,auroc,,,,0.923134774340363,,0.6310128914086437
+tcga_mc3,cancer_type_top10,multiclass,standard_sbs_id_exposure,Standard SBS+ID exposures,5462,125,1,5,0.9239815244993894,auroc,,,,0.9239815244993894,,0.6368252040319772
+tcga_mc3,high_purity,binary,burden_only,Burden only,9591,3,1,5,0.6005246827316175,auroc,,,,0.6005246827316175,0.588808672495672,0.5732249093988027
+tcga_mc3,high_purity,binary,locked_uga_sbs_exposure,Locked UGA SBS exposures,9591,100,1,5,0.6292491615784637,auroc,,,,0.6292491615784637,0.6078668787582968,0.5889126107837281
+tcga_mc3,high_purity,binary,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,9591,125,1,5,0.6353029856618674,auroc,,,,0.6353029856618674,0.6184298759405773,0.5947679912565637
+tcga_mc3,high_purity,binary,standard_sbs_exposure,Standard SBS exposures,9591,100,1,5,0.6309277009360623,auroc,,,,0.6309277009360623,0.6082177269137732,0.5916860369377827
+tcga_mc3,high_purity,binary,standard_sbs_id_exposure,Standard SBS+ID exposures,9591,125,1,5,0.640820305211275,auroc,,,,0.640820305211275,0.6175086409860694,0.599832576659691
+tcga_mc3,high_stage,binary,burden_only,Burden only,6404,3,1,5,0.581079860658442,auroc,,,,0.581079860658442,0.4278455490591613,0.5332940631885519
+tcga_mc3,high_stage,binary,locked_uga_sbs_exposure,Locked UGA SBS exposures,6404,100,1,5,0.6144280793985935,auroc,,,,0.6144280793985935,0.4782087058828934,0.5417367628173081
+tcga_mc3,high_stage,binary,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,6404,125,1,5,0.6189014007923878,auroc,,,,0.6189014007923878,0.4808869252112365,0.5432373033843942
+tcga_mc3,high_stage,binary,standard_sbs_exposure,Standard SBS exposures,6404,100,1,5,0.6297503548723297,auroc,,,,0.6297503548723297,0.4971389127084379,0.558223148548626
+tcga_mc3,high_stage,binary,standard_sbs_id_exposure,Standard SBS+ID exposures,6404,125,1,5,0.6271815297210974,auroc,,,,0.6271815297210974,0.4893822248482493,0.5577648812536786
+tcga_mc3,mmr_gene_mutated,binary,burden_only,Burden only,10224,3,1,5,0.8597411468177276,auroc,,,,0.8597411468177276,0.4570250565356127,0.6190195707705346
+tcga_mc3,mmr_gene_mutated,binary,locked_uga_sbs_exposure,Locked UGA SBS exposures,10224,100,1,5,0.8555947491723181,auroc,,,,0.8555947491723181,0.4335432849270282,0.6822625786655501
+tcga_mc3,mmr_gene_mutated,binary,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,10224,125,1,5,0.8541642394881256,auroc,,,,0.8541642394881256,0.4411786397121131,0.6852321137191122
+tcga_mc3,mmr_gene_mutated,binary,standard_sbs_exposure,Standard SBS exposures,10224,100,1,5,0.8507611409991566,auroc,,,,0.8507611409991566,0.4333788952237541,0.6880107477130153
+tcga_mc3,mmr_gene_mutated,binary,standard_sbs_id_exposure,Standard SBS+ID exposures,10224,125,1,5,0.8466973783808793,auroc,,,,0.8466973783808793,0.4310758361521274,0.6799191724580533
+tcga_mc3,os_event,binary,burden_only,Burden only,10139,3,1,5,0.6231528631262782,auroc,,,,0.6231528631262782,0.3790117104511077,0.5649485624962327
+tcga_mc3,os_event,binary,locked_uga_sbs_exposure,Locked UGA SBS exposures,10139,100,1,5,0.6421318189204931,auroc,,,,0.6421318189204931,0.4136061807545489,0.5716697397317823
+tcga_mc3,os_event,binary,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,10139,125,1,5,0.6499666005701172,auroc,,,,0.6499666005701172,0.4234981550488441,0.5720771101779953
+tcga_mc3,os_event,binary,standard_sbs_exposure,Standard SBS exposures,10139,100,1,5,0.6527062057533128,auroc,,,,0.6527062057533128,0.4338067663967623,0.5737215007868012
+tcga_mc3,os_event,binary,standard_sbs_id_exposure,Standard SBS+ID exposures,10139,125,1,5,0.6482431313605257,auroc,,,,0.6482431313605257,0.4279935355657898,0.5688172763543579
+tcga_mc3,pole_pold1_mutated,binary,burden_only,Burden only,10224,3,1,5,0.8543858697678517,auroc,,,,0.8543858697678517,0.4759443121246427,0.607178495527528
+tcga_mc3,pole_pold1_mutated,binary,locked_uga_sbs_exposure,Locked UGA SBS exposures,10224,100,1,5,0.8328581790819145,auroc,,,,0.8328581790819145,0.4662050420052333,0.6408516847610557
+tcga_mc3,pole_pold1_mutated,binary,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,10224,125,1,5,0.83278555860989,auroc,,,,0.83278555860989,0.45664719444125573,0.6471133150525206
+tcga_mc3,pole_pold1_mutated,binary,standard_sbs_exposure,Standard SBS exposures,10224,100,1,5,0.8370088161422514,auroc,,,,0.8370088161422514,0.4487452041728699,0.6543997668010046
+tcga_mc3,pole_pold1_mutated,binary,standard_sbs_id_exposure,Standard SBS+ID exposures,10224,125,1,5,0.8380709223223638,auroc,,,,0.8380709223223638,0.4213126632823508,0.6627717124195412
+tcga_mc3,smoking_ever,binary,burden_only,Burden only,2798,3,1,5,0.7233030018779647,auroc,,,,0.7233030018779647,0.8656330511897024,0.618536575735982
+tcga_mc3,smoking_ever,binary,locked_uga_sbs_exposure,Locked UGA SBS exposures,2798,100,1,5,0.773886737518603,auroc,,,,0.773886737518603,0.9017860003951944,0.6936019924639419
+tcga_mc3,smoking_ever,binary,locked_uga_sbs_id_exposure,Locked UGA SBS+ID exposures,2798,125,1,5,0.7710678799248815,auroc,,,,0.7710678799248815,0.9012713753137874,0.6955324943944439
+tcga_mc3,smoking_ever,binary,standard_sbs_exposure,Standard SBS exposures,2798,100,1,5,0.7783352023827036,auroc,,,,0.7783352023827036,0.904531630959776,0.7054285854384815
+tcga_mc3,smoking_ever,binary,standard_sbs_id_exposure,Standard SBS+ID exposures,2798,125,1,5,0.7713340682167995,auroc,,,,0.7713340682167995,0.90138600811421,0.6964708399641601

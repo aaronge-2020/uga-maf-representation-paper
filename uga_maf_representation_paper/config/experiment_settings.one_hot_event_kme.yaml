@@ -1,0 +1,36 @@
+runtime_profile: cpu-one-hot-event-kme
+tree_method: hist
+xgb_n_jobs: 16
+
+experiments:
+  unified_locked:
+    enabled: false
+  uga_variants_kme:
+    enabled: false
+  maf_event_gene_locus:
+    enabled: false
+  mechanistic_representation:
+    enabled: false
+  one_hot_event_kme_scout:
+    enabled: true
+    d_context: 6
+    d_payload: 6
+    hrd_endpoint: hrd_binary_33
+    sigma_multipliers:
+      - 0.5
+      - 1.0
+      - 2.0
+    landmark_modes:
+      - 128
+      - "all"
+    maf_chunksize: 200000
+    kernel_chunk_size: 512
+    xgb_estimators: 100
+    xgb_max_depth: 2
+    xgb_learning_rate: 0.05
+    kucab_min_total_events: 20
+
+outputs:
+  normalize_tables: true
+  make_figures_after_run: true
+  cleanup_work_dir_after_run: true

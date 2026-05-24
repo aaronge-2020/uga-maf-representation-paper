@@ -1,0 +1,4 @@
+spearman	pearson	r2	mae	suite	subset	endpoint	task	model	n	auroc	auprc	balanced_acc	brier
+0.5383277837373455	0.4213342352635193	0.17638865595698905	5.358905667384821	main	all	HRD_TAI	regression	Baseline	772				
+0.5433402241231586	0.5533188766725635	0.30421875593710135	4.933474510919854	main	all	HRD_TAI	regression	Baseline+Standard	772				
+0.5632543372352532	0.4363782490277786	0.041552703531460344	5.003100234241321	main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	772				

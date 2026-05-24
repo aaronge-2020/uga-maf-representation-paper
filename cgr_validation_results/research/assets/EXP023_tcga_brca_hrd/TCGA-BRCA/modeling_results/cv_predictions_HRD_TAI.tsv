@@ -1,0 +1,2317 @@
+suite	subset	endpoint	task	model	patient_id	fold	true_value	pred_value
+main	all	HRD_TAI	regression	Baseline	TCGA-5L-AAT0	0	3.0	15.691968445345418
+main	all	HRD_TAI	regression	Baseline	TCGA-A1-A0SF	0	8.0	10.806142651521565
+main	all	HRD_TAI	regression	Baseline	TCGA-A1-A0SJ	0	12.0	8.277811771891066
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0CM	0	19.0	10.806142651521565
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0CW	0	19.0	10.960284804959768
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0CX	0	11.0	17.81143408895159
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0D1	0	12.0	10.806142651521565
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0EU	0	1.0	10.215632098306061
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0T0	0	19.0	15.715645510473282
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0T5	0	2.0	4.817208120989461
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0T6	0	1.0	6.473242083817014
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0YJ	0	16.0	12.301988149967556
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0YL	0	3.0	8.948871815513776
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0YM	0	20.0	12.514206391804422
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0YT	0	20.0	11.18111059960596
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A1G1	0	12.0	8.277811771891066
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A25C	0	6.0	8.559598135478508
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A25D	0	12.0	10.726833707226701
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A25E	0	16.0	11.035227867175273
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A3KD	0	5.0	4.461829094371025
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A3Y0	0	17.0	15.668153320748708
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A0CE	0	20.0	13.597689438151193
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A0CH	0	3.0	7.814945428824803
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A26J	0	8.0	7.474391399595145
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A5ZW	0	2.0	7.292837852686221
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A06U	0	27.0	11.458117229123806
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A07J	0	5.0	8.823191674792305
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A07O	0	10.0	9.933845734718622
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A08R	0	29.0	17.153476010877213
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A090	0	7.0	9.070799744399146
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A09C	0	10.0	8.421134628151252
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A09V	0	3.0	7.648216879304658
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A3OD	0	10.0	7.975133893206366
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A62Y	0	5.0	11.390606893793707
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A03X	0	7.0	8.559598135478508
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A03Y	0	6.0	9.416155987346457
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A049	0	17.0	8.693521028334397
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0AJ	0	20.0	12.462176614349119
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0AT	0	23.0	14.221615652108905
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0FS	0	4.0	11.961434120737898
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0FW	0	11.0	13.82893698455143
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0FY	0	18.0	10.56344062730503
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0XN	0	29.0	14.88028029229842
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0XR	0	4.0	8.129276046644568
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0XT	0	12.0	6.23979098608395
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A03R	0	6.0	10.305400157910345
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0J3	0	13.0	12.76485449303382
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0J7	0	2.0	6.23979098608395
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0JD	0	18.0	14.187437358128305
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0JJ	0	6.0	5.446803013575868
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A128	0	9.0	22.832062646768463
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A12F	0	27.0	9.070799744399146
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A1KT	0	15.0	10.215632098306061
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A0TP	0	22.0	11.108820530206266
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A0TX	0	11.0	18.27833628441772
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A1AO	0	0.0	12.462176614349119
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A1AX	0	4.0	7.292837852686221
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A24P	0	4.0	6.473242083817014
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A24W	0	3.0	5.446803013575868
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A24Z	0	13.0	9.734572930966154
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A256	0	24.0	15.809004599144465
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A2LH	0	0.0	11.18111059960596
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A2LN	0	4.0	9.631167856033919
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0RO	0	6.0	8.559598135478508
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0RU	0	14.0	10.215632098306061
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0WS	0	8.0	6.694067878463204
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0WY	0	13.0	7.474391399595145
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0X1	0	26.0	12.13525960044741
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A1KN	0	14.0	11.18111059960596
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A401	0	9.0	7.474391399595145
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0B5	0	6.0	11.252143386466448
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0BF	0	9.0	8.559598135478508
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0BP	0	27.0	15.132996908282756
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0BR	0	9.0	10.305400157910345
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0C1	0	5.0	9.525076636778401
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0C7	0	17.0	10.479225637619857
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0DE	0	7.0	8.129276046644568
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0DT	0	3.0	4.461829094371025
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0E1	0	2.0	8.693521028334397
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0EE	0	12.0	14.221615652108905
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0HB	0	11.0	8.823191674792305
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0HI	0	1.0	7.814945428824803
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0HK	0	5.0	13.82893698455143
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0HP	0	6.0	17.825542159270697
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0W3	0	3.0	6.473242083817014
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0W4	0	2.0	8.421134628151252
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18H	0	12.0	10.393237571155664
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18Q	0	24.0	12.666433289734455
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1EO	0	9.0	9.070799744399146
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1EV	0	13.0	13.267466651267455
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1F0	0	16.0	11.841299510123418
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1FC	0	21.0	13.352558943565024
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1FE	0	11.0	-5.33185211678369
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1FJ	0	1.0	8.277811771891066
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A2L8	0	2.0	19.967848158424474
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A8FY	0	3.0	9.734572930966154
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A12M	0	12.0	11.252143386466448
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A12N	0	4.0	7.102836976403422
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A137	0	12.0	10.393237571155664
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A1HL	0	8.0	7.814945428824803
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A26V	0	11.0	12.565581689281352
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A275	0	6.0	14.32246725256201
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A278	0	13.0	9.835424531419257
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JN	0	2.0	15.668153320748708
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JS	0	2.0	7.292837852686221
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JT	0	5.0	8.823191674792305
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XF	0	12.0	9.631167856033919
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XY	0	7.0	10.479225637619857
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XZ	0	11.0	12.40947546641538
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A27L	0	4.0	10.029950928715023
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A27T	0	5.0	7.648216879304658
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A14Z	0	20.0	11.717523907695416
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A153	0	6.0	7.292837852686221
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A159	0	9.0	15.293185372664318
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15H	0	6.0	8.559598135478508
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15K	0	5.0	9.835424531419257
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15T	0	7.0	8.559598135478508
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1IF	0	3.0	5.144125134891167
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1L8	0	6.0	8.421134628151252
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A570	0	3.0	6.473242083817014
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A576	0	7.0	10.305400157910345
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A9RU	0	21.0	12.13525960044741
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1NC	0	25.0	11.961434120737898
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1ND	0	18.0	12.462176614349119
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1NE	0	3.0	10.806142651521565
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1R6	0	6.0	7.975133893206366
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1RB	0	14.0	8.948871815513776
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1RG	0	20.0	9.189193028064917
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A226	0	8.0	11.252143386466448
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A22G	0	26.0	13.136408916225546
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A6HE	0	5.0	6.473242083817014
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1J3	0	6.0	7.474391399595145
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1J6	0	16.0	9.734572930966154
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1OV	0	13.0	13.637151409836763
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1OZ	0	19.0	11.108820530206266
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1P1	0	0.0	-2.500843358468492
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1P8	0	19.0	9.070799744399146
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A2FV	0	9.0	6.473242083817014
+main	all	HRD_TAI	regression	Baseline	TCGA-GM-A2DA	0	7.0	8.559598135478508
+main	all	HRD_TAI	regression	Baseline	TCGA-GM-A2DB	0	13.0	13.976134259090768
+main	all	HRD_TAI	regression	Baseline	TCGA-GM-A2DF	0	18.0	10.029950928715023
+main	all	HRD_TAI	regression	Baseline	TCGA-LL-A6FR	0	21.0	8.948871815513776
+main	all	HRD_TAI	regression	Baseline	TCGA-LL-A7T0	0	15.0	10.479225637619857
+main	all	HRD_TAI	regression	Baseline	TCGA-LL-A9Q3	0	6.0	10.12384661100142
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A5S0	0	23.0	8.129276046644568
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A66I	0	21.0	10.029950928715023
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A66J	0	4.0	10.645954187140001
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A66K	0	3.0	7.814945428824803
+main	all	HRD_TAI	regression	Baseline	TCGA-PE-A5DE	0	7.0	19.610953346931957
+main	all	HRD_TAI	regression	Baseline	TCGA-S3-A6ZF	0	16.0	8.421134628151252
+main	all	HRD_TAI	regression	Baseline	TCGA-S3-AA0Z	0	15.0	10.726833707226701
+main	all	HRD_TAI	regression	Baseline	TCGA-S3-AA14	0	7.0	5.144125134891167
+main	all	HRD_TAI	regression	Baseline	TCGA-WT-AB41	0	13.0	10.029950928715023
+main	all	HRD_TAI	regression	Baseline	TCGA-WT-AB44	0	5.0	8.421134628151252
+main	all	HRD_TAI	regression	Baseline	TCGA-XX-A89A	0	5.0	15.762591800869163
+main	all	HRD_TAI	regression	Baseline	TCGA-A1-A0SE	1	8.0	8.714097609345561
+main	all	HRD_TAI	regression	Baseline	TCGA-A1-A0SK	1	13.0	11.750136845467566
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A04P	1	28.0	14.181097430138237
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A04T	1	30.0	13.091663670701358
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0CP	1	3.0	9.290797520412722
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0CU	1	8.0	9.694053654816306
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0CV	1	2.0	7.5438606372361905
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0EW	1	3.0	6.32395756957075
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0EX	1	5.0	8.175990746904693
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0EY	1	21.0	16.07714411647877
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0SU	1	8.0	8.027987818509914
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0T2	1	7.0	8.318188120370538
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0T7	1	8.0	7.366968565724226
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0YF	1	6.0	8.318188120370538
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0YG	1	14.0	11.289127074790366
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A1FX	1	8.0	8.4550182563226
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A1FZ	1	2.0	7.5438606372361905
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A1G4	1	4.0	8.4550182563226
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A259	1	3.0	7.366968565724226
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A4S1	1	11.0	11.695615994319805
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A4S3	1	21.0	11.695615994319805
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A0DA	1	31.0	14.49886872630006
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A0DB	1	3.0	12.254499809199551
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A13E	1	13.0	13.413353512056858
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A6VX	1	26.0	13.981996601411947
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A06R	1	30.0	11.227150039465194
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A06X	1	26.0	15.892040108775557
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A076	1	7.0	12.061090313772835
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A08L	1	28.0	16.07714411647877
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A08O	1	10.0	8.175990746904693
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A08X	1	16.0	8.714097609345561
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A08Z	1	6.0	9.290797520412722
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A092	1	8.0	12.347468192213048
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A093	1	5.0	13.514538728943487
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A099	1	4.0	8.837009999690384
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A09Z	1	2.0	22.17485615261102
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A0A7	1	6.0	16.22186450207039
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A0AB	1	6.0	8.027987818509914
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A0AD	1	3.0	9.182563564200171
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A23E	1	4.0	7.181001224696675
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A23H	1	11.0	27.416448697546592
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A3YI	1	0.0	6.07381920327003
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A4ZE	1	5.0	10.464709676089132
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A5EH	1	10.0	14.67213704111012
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A6IV	1	6.0	6.98497682235644
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A04D	1	20.0	13.016128266116414
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0FT	1	25.0	13.273891384498508
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0FV	1	15.0	12.779594299562278
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0FX	1	19.0	12.73862699047328
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0XW	1	10.0	17.475389773090377
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0J8	1	3.0	8.175990746904693
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A12A	1	4.0	6.557946384543755
+main	all	HRD_TAI	regression	Baseline	TCGA-AQ-A04J	1	19.0	11.526954501321983
+main	all	HRD_TAI	regression	Baseline	TCGA-AQ-A1H2	1	8.0	8.714097609345561
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A0TQ	1	5.0	9.597366104153956
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A0TV	1	13.0	11.526954501321983
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A0TW	1	21.0	10.900301081937222
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A24U	1	10.0	9.880020995843859
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A24V	1	7.0	7.712522130234011
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A251	1	32.0	14.951164550528024
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A5QN	1	7.0	9.182563564200171
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0I2	1	20.0	11.034596741534116
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0I9	1	16.0	11.908946244689767
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0IE	1	8.0	8.95589174117268
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0RN	1	3.0	9.070998814663389
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0RS	1	29.0	14.696227284415581
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0RV	1	8.0	10.386737460650654
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0WW	1	11.0	9.395893814570135
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0WZ	1	3.0	11.960373607357678
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0X0	1	3.0	6.98497682235644
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A1KC	1	7.0	8.4550182563226
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A40C	1	5.0	9.182563564200171
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0B3	1	11.0	9.694053654816306
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0B7	1	10.0	9.070998814663389
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0BC	1	7.0	9.290797520412722
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0BJ	1	4.0	8.027987818509914
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0BO	1	2.0	8.175990746904693
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0BT	1	8.0	9.395893814570135
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0DQ	1	11.0	8.837009999690384
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0DZ	1	9.0	17.136523394512857
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0E0	1	10.0	9.597366104153956
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0E2	1	12.0	10.386737460650654
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18J	1	10.0	12.30128198445633
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18T	1	21.0	12.697191473431353
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1ET	1	2.0	8.175990746904693
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1FG	1	3.0	6.98497682235644
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1FM	1	16.0	10.831240550490172
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A201	1	5.0	6.77774509029309
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A208	1	13.0	11.526954501321983
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A209	1	12.0	13.016128266116414
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A28Q	1	5.0	7.366968565724226
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A6R9	1	0.0	4.471924392236806
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A8G0	1	1.0	5.514935388390281
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A12W	1	13.0	11.289127074790366
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A12Z	1	11.0	10.760838954378881
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A130	1	25.0	10.307051433656541
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A133	1	0.0	8.4550182563226
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A1HF	1	9.0	9.070998814663389
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A1HM	1	24.0	17.754417282508278
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A26X	1	11.0	11.350062429810016
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A26Y	1	19.0	20.448785907054223
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A8HQ	1	8.0	16.509638863205886
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A13Z	1	17.0	12.482598178882643
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A140	1	8.0	13.344292980609804
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A141	1	3.0	6.98497682235644
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JA	1	8.0	21.318219384672375
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JG	1	11.0	14.125318356427636
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JH	1	0.0	7.181001224696675
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JM	1	17.0	10.056913067355824
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JP	1	19.0	13.612976493628926
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1X7	1	2.0	7.5438606372361905
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1X9	1	19.0	12.73862699047328
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XA	1	6.0	7.5438606372361905
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XJ	1	18.0	12.526544999120096
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XK	1	26.0	21.68549349276914
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XQ	1	29.0	20.874724470659466
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XV	1	1.0	8.837009999690384
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XW	1	20.0	12.977762106208761
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1Y2	1	5.0	6.77774509029309
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1Y3	1	17.0	10.831240550490172
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A27R	1	15.0	8.318188120370538
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A73U	1	4.0	14.125318356427636
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A73W	1	6.0	9.96954574876301
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A158	1	27.0	12.482598178882643
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15J	1	4.0	7.712522130234011
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15R	1	14.0	9.694053654816306
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1BC	1	6.0	9.070998814663389
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1IL	1	5.0	8.318188120370538
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1L6	1	4.0	6.77774509029309
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1LA	1	17.0	12.697191473431353
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1LH	1	28.0	15.292646729681913
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1N5	1	7.0	8.95589174117268
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1N9	1	23.0	11.289127074790366
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1NA	1	18.0	12.612872131712825
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1NH	1	6.0	8.586871633389665
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1RA	1	2.0	7.712522130234011
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1RE	1	16.0	10.615796882235573
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A227	1	2.0	5.805135690250904
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1IW	1	4.0	12.569965497475456
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1IZ	1	2.0	17.475389773090377
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1P4	1	23.0	11.526954501321983
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A2FS	1	9.0	8.586871633389665
+main	all	HRD_TAI	regression	Baseline	TCGA-GM-A2DC	1	9.0	7.181001224696675
+main	all	HRD_TAI	regression	Baseline	TCGA-GM-A2DM	1	0.0	7.366968565724226
+main	all	HRD_TAI	regression	Baseline	TCGA-GM-A3NW	1	5.0	11.960373607357678
+main	all	HRD_TAI	regression	Baseline	TCGA-HN-A2OB	1	3.0	5.805135690250904
+main	all	HRD_TAI	regression	Baseline	TCGA-LL-A5YN	1	11.0	7.712522130234011
+main	all	HRD_TAI	regression	Baseline	TCGA-LL-A6FQ	1	3.0	10.464709676089132
+main	all	HRD_TAI	regression	Baseline	TCGA-LL-A8F5	1	30.0	14.316902380651982
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A5DA	1	7.0	12.061090313772835
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A5RU	1	1.0	8.318188120370538
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A5RW	1	23.0	15.039597429239727
+main	all	HRD_TAI	regression	Baseline	TCGA-PE-A5DD	1	5.0	10.760838954378881
+main	all	HRD_TAI	regression	Baseline	TCGA-PL-A8LX	1	5.0	8.95589174117268
+main	all	HRD_TAI	regression	Baseline	TCGA-S3-AA10	1	22.0	13.612976493628926
+main	all	HRD_TAI	regression	Baseline	TCGA-3C-AALI	2	12.0	21.773735573539838
+main	all	HRD_TAI	regression	Baseline	TCGA-A1-A0SI	2	6.0	17.669841274031658
+main	all	HRD_TAI	regression	Baseline	TCGA-A1-A0SO	2	27.0	18.740341549569678
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A04R	2	13.0	13.56585572130269
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A04U	2	28.0	11.306031168937364
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A04Y	2	9.0	9.456687446060549
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0CR	2	0.0	15.165621208423497
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0ES	2	0.0	4.298090593374656
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0SW	2	12.0	11.389339256721684
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0YC	2	4.0	7.180012768028439
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0YE	2	20.0	9.057299234035252
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A1FV	2	11.0	9.456687446060549
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A25A	2	3.0	18.724452573988582
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A0D9	2	8.0	7.180012768028439
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A13F	2	5.0	9.58224090161198
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A26E	2	1.0	12.853433570143224
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A5ZV	2	26.0	16.877382175787453
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A06Q	2	14.0	17.98136388259419
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A075	2	20.0	12.970725942828846
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A079	2	16.0	13.196437611831382
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A07B	2	14.0	12.350720641563775
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A07I	2	9.0	10.161868567308666
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A07Z	2	6.0	6.733955512508031
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A081	2	10.0	14.640679540846763
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A082	2	5.0	7.180012768028439
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A083	2	4.0	8.618566307082009
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A094	2	7.0	17.15748603936127
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A095	2	2.0	16.117489563122216
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A097	2	17.0	13.999838049550613
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A09D	2	10.0	10.674715646920243
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A09Q	2	16.0	16.088828030710754
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A09T	2	6.0	6.2382392147690435
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A2B8	2	8.0	13.999838049550613
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A2FO	2	10.0	7.585460604277565
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A2QH	2	20.0	7.957080172390842
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A5XS	2	7.0	21.245781501029185
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A6IX	2	9.0	10.864397589144954
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A6NO	2	2.0	8.300084214079005
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A8OP	2	16.0	15.822225795058122
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A8OR	2	1.0	8.300084214079005
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A046	2	4.0	32.35441771144779
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0AS	2	12.0	9.58224090161198
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0XU	2	31.0	14.71956395290309
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0XV	2	3.0	9.057299234035252
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A03T	2	17.0	13.56585572130269
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0J9	2	5.0	15.021839290119898
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0JB	2	22.0	13.666013934753792
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0JM	2	14.0	10.37413977699955
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A12D	2	12.0	11.630308910260414
+main	all	HRD_TAI	regression	Baseline	TCGA-AQ-A04H	2	12.0	12.215654155868972
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A0TR	2	7.0	9.057299234035252
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A0TZ	2	9.0	11.471118669159146
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A1AI	2	18.0	12.671495944254655
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A1AJ	2	6.0	9.58224090161198
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A1AN	2	14.0	7.957080172390842
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A1AQ	2	12.0	8.915799954926266
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A1AR	2	7.0	11.134592612521423
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A1AW	2	8.0	9.704354100002966
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A24N	2	5.0	9.938979477836861
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A24Q	2	30.0	16.57848676322221
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A24S	2	9.0	10.37413977699955
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A254	2	8.0	9.456687446060549
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A2LQ	2	1.0	2.878789148749899
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A5QM	2	4.0	8.131881122727158
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A5QP	2	5.0	6.96256218189171
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0I5	2	3.0	7.585460604277565
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0IB	2	6.0	12.416749300054397
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0RE	2	19.0	16.059980985471526
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0RG	2	13.0	11.707821349724686
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0RH	2	11.0	9.194443991127036
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0RI	2	6.0	5.680405494358733
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0RL	2	9.0	11.551424498204092
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0X4	2	0.0	7.180012768028439
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A2IU	2	5.0	10.576758892111112
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0AV	2	23.0	12.283699033769713
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0AZ	2	16.0	11.551424498204092
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0B9	2	13.0	9.823210555150705
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0BA	2	10.0	9.938979477836861
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0BM	2	4.0	7.585460604277565
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0DG	2	8.0	9.057299234035252
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0DI	2	11.0	10.161868567308666
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0H0	2	7.0	7.387345636017332
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0HA	2	2.0	18.92671795657644
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0HQ	2	2.0	9.327494257411718
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18F	2	4.0	10.864397589144954
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18G	2	1.0	25.618323121673576
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18K	2	12.0	11.134592612521423
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18P	2	3.0	19.416024973426488
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1EU	2	5.0	6.2382392147690435
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1EW	2	12.0	5.042626080084481
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1EY	2	12.0	10.674715646920243
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1F2	2	16.0	11.134592612521423
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A202	2	8.0	8.131881122727158
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A5IZ	2	19.0	12.350720641563775
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A6R8	2	4.0	8.618566307082009
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A132	2	15.0	12.215654155868972
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A26Z	2	13.0	9.938979477836861
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A27A	2	13.0	8.131881122727158
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A145	2	1.0	9.704354100002966
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1J8	2	4.0	23.19814432338265
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1J9	2	13.0	17.313102697806777
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JL	2	24.0	14.56037371180182
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XB	2	4.0	9.057299234035252
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XG	2	1.0	6.733955512508031
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XL	2	17.0	13.30514673115626
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XM	2	6.0	11.471118669159146
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XO	2	4.0	6.492985858969301
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XR	2	4.0	7.585460604277565
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XT	2	16.0	9.327494257411718
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A27M	2	17.0	11.858915579644089
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A27N	2	11.0	10.956294719730252
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A14Y	2	8.0	9.704354100002966
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15C	2	3.0	9.58224090161198
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15D	2	3.0	8.76966053700141
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15E	2	18.0	9.194443991127036
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15G	2	2.0	11.93258424747722
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15M	2	15.0	13.411267290553532
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1B4	2	2.0	9.327494257411718
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1IE	2	13.0	6.96256218189171
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1IJ	2	4.0	5.372914412918736
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1IK	2	0.0	5.680405494358733
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1IU	2	3.0	8.300084214079005
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1L9	2	3.0	8.300084214079005
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1NG	2	6.0	6.733955512508031
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1R3	2	5.0	7.775142546502276
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1RC	2	7.0	10.956294719730252
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A228	2	8.0	10.269267810671117
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A22B	2	7.0	12.076366165780819
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A22D	2	17.0	6.96256218189171
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A22E	2	23.0	14.910874564223233
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A24A	2	4.0	7.180012768028439
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1IY	2	0.0	7.957080172390842
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1OX	2	3.0	5.680405494358733
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1P0	2	8.0	6.733955512508031
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1P3	2	4.0	7.387345636017332
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1PB	2	25.0	15.760750986897335
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A6SD	2	17.0	10.576758892111112
+main	all	HRD_TAI	regression	Baseline	TCGA-LD-A74U	2	3.0	17.78922840167274
+main	all	HRD_TAI	regression	Baseline	TCGA-LD-A7W5	2	17.0	9.704354100002966
+main	all	HRD_TAI	regression	Baseline	TCGA-LD-A7W6	2	6.0	8.462169455561414
+main	all	HRD_TAI	regression	Baseline	TCGA-LL-A5YL	2	5.0	12.215654155868972
+main	all	HRD_TAI	regression	Baseline	TCGA-LL-A73Y	2	15.0	15.09431004021162
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A5D8	2	6.0	7.775142546502276
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A5RV	2	1.0	3.8733071392490315
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A5RY	2	0.0	2.878789148749899
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A5RZ	2	13.0	14.35304084381293
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A66L	2	6.0	12.416749300054397
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A66O	2	4.0	7.387345636017332
+main	all	HRD_TAI	regression	Baseline	TCGA-S3-A6ZG	2	9.0	9.704354100002966
+main	all	HRD_TAI	regression	Baseline	TCGA-S3-AA12	2	7.0	9.057299234035252
+main	all	HRD_TAI	regression	Baseline	TCGA-S3-AA17	2	23.0	13.715261429538677
+main	all	HRD_TAI	regression	Baseline	TCGA-UU-A93S	2	21.0	15.69841636337166
+main	all	HRD_TAI	regression	Baseline	TCGA-W8-A86G	2	6.0	5.968044191392575
+main	all	HRD_TAI	regression	Baseline	TCGA-Z7-A8R6	2	9.0	12.416749300054397
+main	all	HRD_TAI	regression	Baseline	TCGA-5T-A9QA	3	7.0	10.239075810894375
+main	all	HRD_TAI	regression	Baseline	TCGA-A1-A0SD	3	9.0	8.538800612591476
+main	all	HRD_TAI	regression	Baseline	TCGA-A1-A0SG	3	4.0	8.538800612591476
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A04Q	3	7.0	10.239075810894375
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0CS	3	2.0	9.303057774821939
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0EM	3	4.0	8.284983963339059
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0EN	3	4.0	8.775098259851294
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0SV	3	14.0	9.203776695264288
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0SY	3	5.0	13.926499303104375
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0T1	3	12.0	8.150654690731155
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0T4	3	7.0	8.88740200689282
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A26I	3	19.0	9.584719759744447
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A6VW	3	16.0	11.423240706121398
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A06Y	3	2.0	8.775098259851294
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A06Z	3	13.0	12.047684275241535
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A07L	3	24.0	12.613075391446255
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A07U	3	16.0	11.423240706121398
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A07W	3	12.0	13.849530728661799
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A08G	3	11.0	9.927501343942078
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A096	3	2.0	8.538800612591476
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A09A	3	26.0	15.390476854147455
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A09B	3	6.0	10.008092295688936
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A09G	3	3.0	16.412802630697776
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A09M	3	18.0	13.797240286673276
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A09N	3	10.0	11.867381729522288
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A09X	3	12.0	11.091534175784147
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A0A6	3	7.0	8.88740200689282
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A2FG	3	5.0	9.203776695264288
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A3QQ	3	6.0	8.284983963339059
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A5XU	3	10.0	11.091534175784147
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A6IW	3	15.0	14.218161170815197
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A7VB	3	8.0	7.865076230342499
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A041	3	10.0	8.88740200689282
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A04C	3	16.0	11.958719340296327
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0AR	3	25.0	13.225087159541658
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0FN	3	1.0	9.399541828971433
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0XS	3	4.0	8.150654690731155
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A03L	3	13.0	8.284983963339059
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A03O	3	23.0	12.047684275241535
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A03P	3	12.0	9.927501343942078
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A03V	3	22.0	10.658983543890935
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0J4	3	20.0	13.286799773695224
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0J6	3	22.0	12.758840258724586
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0JA	3	10.0	8.150654690731155
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A124	3	36.0	13.797240286673276
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A1KR	3	15.0	11.72563912626695
+main	all	HRD_TAI	regression	Baseline	TCGA-AQ-A1H3	3	4.0	7.712830836207443
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A0TS	3	18.0	11.958719340296327
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A0TT	3	14.0	10.973420491095052
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A0TY	3	11.0	11.370139527373983
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A1AU	3	9.0	7.5535017633902015
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A1AY	3	10.0	10.912800193143353
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A24L	3	17.0	9.844968255810922
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A24O	3	2.0	7.386397528500694
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A24X	3	3.0	8.150654690731155
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A252	3	2.0	4.65154266786768
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A2LK	3	5.0	9.76039710905257
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A2LO	3	7.0	6.401098679299418
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0IJ	3	29.0	14.099638706818824
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0IN	3	11.0	8.88740200689282
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0RP	3	3.0	8.010841097620832
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0AW	3	20.0	14.508396270156325
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0AY	3	10.0	10.384840678172708
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0BL	3	20.0	10.788242560322036
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0BZ	3	9.0	15.751332134228592
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0DH	3	8.0	9.584719759744447
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0DL	3	9.0	10.59247742661489
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0DO	3	3.0	7.5535017633902015
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0DS	3	5.0	9.844968255810922
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0E7	3	2.0	9.399541828971433
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0EA	3	3.0	8.41424297977016
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0HU	3	11.0	9.203776695264288
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0HX	3	16.0	11.423240706121398
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0HY	3	19.0	10.912800193143353
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18I	3	5.0	7.386397528500694
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18M	3	4.0	6.164801032039599
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18N	3	2.0	9.493382148970413
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18S	3	4.0	8.775098259851294
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18U	3	27.0	14.075433959986045
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1FN	3	25.0	13.225087159541658
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1FU	3	6.0	11.577776275816165
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A203	3	17.0	11.77354140952331
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A204	3	9.0	9.399541828971433
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A42V	3	3.0	9.493382148970413
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A8FZ	3	14.0	11.423240706121398
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A12Y	3	7.0	9.76039710905257
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A135	3	11.0	11.261401587444697
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A1HE	3	5.0	10.312733648083565
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A26W	3	13.0	10.788242560322036
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A27B	3	28.0	14.123673594380024
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A143	3	17.0	10.08683041675932
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JC	3	14.0	12.57564379021218
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JJ	3	10.0	12.091314896126159
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JU	3	4.0	6.622140366270232
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1X5	3	19.0	10.524654271283032
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1Y0	3	18.0	11.423240706121398
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A27E	3	0.0	5.012397947948818
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A27F	3	25.0	11.091534175784147
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A27H	3	25.0	13.823485299556552
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A27P	3	2.0	8.150654690731155
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A27W	3	10.0	9.203776695264288
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A73X	3	3.0	9.584719759744447
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A150	3	20.0	12.003490663080564
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A152	3	8.0	13.797240286673276
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A154	3	6.0	10.163798991201896
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15I	3	4.0	8.538800612591476
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15O	3	7.0	8.538800612591476
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15P	3	6.0	7.712830836207443
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1AZ	3	15.0	10.724222800630272
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1B5	3	7.0	9.493382148970413
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1BD	3	4.0	9.584719759744447
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1IG	3	6.0	9.76039710905257
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1IO	3	13.0	4.65154266786768
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1LG	3	10.0	14.508396270156325
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1LL	3	16.0	9.76039710905257
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A573	3	17.0	10.384840678172708
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1N8	3	11.0	8.150654690731155
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1NI	3	8.0	8.284983963339059
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1R0	3	4.0	8.996139946822108
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1R5	3	6.0	10.08683041675932
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1R7	3	15.0	10.312733648083565
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1RD	3	2.0	7.386397528500694
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1RF	3	18.0	14.099638706818824
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A22H	3	4.0	7.025542248419557
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A243	3	17.0	11.72563912626695
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A244	3	30.0	12.57564379021218
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A295	3	9.0	12.176943291672634
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A2JS	3	26.0	11.527035237799748
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1J1	3	7.0	7.210720179192572
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1OY	3	17.0	11.149097840403172
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1PA	3	9.0	9.399541828971433
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1PG	3	0.0	5.012397947948818
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1PH	3	16.0	10.008092295688936
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A6SC	3	7.0	7.865076230342499
+main	all	HRD_TAI	regression	Baseline	TCGA-GM-A2DL	3	6.0	9.844968255810922
+main	all	HRD_TAI	regression	Baseline	TCGA-GM-A2DN	3	3.0	7.712830836207443
+main	all	HRD_TAI	regression	Baseline	TCGA-GM-A5PX	3	4.0	8.41424297977016
+main	all	HRD_TAI	regression	Baseline	TCGA-HN-A2NL	3	27.0	11.913355002633635
+main	all	HRD_TAI	regression	Baseline	TCGA-LD-A66U	3	5.0	7.865076230342499
+main	all	HRD_TAI	regression	Baseline	TCGA-LL-A50Y	3	4.0	9.303057774821939
+main	all	HRD_TAI	regression	Baseline	TCGA-LL-A5YP	3	29.0	11.867381729522288
+main	all	HRD_TAI	regression	Baseline	TCGA-LL-A73Z	3	12.0	8.88740200689282
+main	all	HRD_TAI	regression	Baseline	TCGA-OK-A5Q2	3	5.0	8.284983963339059
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A5D7	3	16.0	10.658983543890935
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A5RX	3	3.0	7.5535017633902015
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A66H	3	0.0	6.829777114712414
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A66N	3	3.0	9.303057774821939
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A66P	3	8.0	12.091314896126159
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A6VO	3	19.0	7.5535017633902015
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A6VQ	3	4.0	10.724222800630272
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A6VR	3	5.0	4.65154266786768
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A97C	3	2.0	10.658983543890935
+main	all	HRD_TAI	regression	Baseline	TCGA-PL-A8LY	3	0.0	-0.4998583753853971
+main	all	HRD_TAI	regression	Baseline	TCGA-S3-A6ZH	3	8.0	8.284983963339059
+main	all	HRD_TAI	regression	Baseline	TCGA-3C-AALJ	4	14.0	8.383820604937796
+main	all	HRD_TAI	regression	Baseline	TCGA-A1-A0SB	4	0.0	5.704997498116872
+main	all	HRD_TAI	regression	Baseline	TCGA-A1-A0SQ	4	5.0	8.24549608648896
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A04N	4	4.0	10.089453567277314
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A04V	4	5.0	8.24549608648896
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A04W	4	8.0	14.619641716138162
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0CT	4	12.0	13.182742889293268
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0D0	4	24.0	12.318781709974493
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0D3	4	3.0	8.10174571254909
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0D4	4	15.0	9.334971881733033
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0EV	4	11.0	11.371065451907569
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0SX	4	14.0	8.769984249263135
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0T3	4	21.0	9.731592493821662
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0YD	4	4.0	11.371065451907569
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0YH	4	10.0	12.4553875110578
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A0YK	4	3.0	18.017408928133182
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A1G0	4	6.0	7.095889469233802
+main	all	HRD_TAI	regression	Baseline	TCGA-A2-A3XU	4	4.0	7.095889469233802
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A0CG	4	3.0	10.64224430092118
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A0CJ	4	27.0	10.785994674861048
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A13D	4	24.0	15.592662003278704
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A26H	4	7.0	13.881397905259064
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A4SE	4	26.0	4.743389253558344
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A56D	4	10.0	14.144351133851796
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A5ZX	4	1.0	8.645729478283448
+main	all	HRD_TAI	regression	Baseline	TCGA-A7-A6VY	4	19.0	12.95595934286988
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A06P	4	3.0	9.119311757246033
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A07P	4	9.0	10.64224430092118
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A08B	4	12.0	10.003210418447077
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A08H	4	0.0	12.318781709974493
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A08T	4	6.0	10.256080656595838
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A091	4	7.0	6.897724197605092
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A09W	4	18.0	12.318781709974493
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A0A1	4	5.0	10.089453567277314
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A0A2	4	7.0	9.731592493821662
+main	all	HRD_TAI	regression	Baseline	TCGA-A8-A0A4	4	7.0	7.283887841930432
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A23C	4	11.0	13.662983053310683
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A2FB	4	2.0	5.092716761541242
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A7VC	4	3.0	6.688229196043272
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A8OQ	4	25.0	12.587084243406107
+main	all	HRD_TAI	regression	Baseline	TCGA-AC-A8OS	4	3.0	10.256080656595838
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0AL	4	20.0	12.17688664597798
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0AM	4	21.0	12.543709006819164
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0FJ	4	11.0	13.033123555388652
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0FK	4	4.0	10.415460754497795
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0FZ	4	13.0	11.875470470105121
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0XO	4	8.0	8.890164350879482
+main	all	HRD_TAI	regression	Baseline	TCGA-AN-A0XP	4	3.0	8.517114011114373
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0J2	4	31.0	11.603852545479707
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0JE	4	13.0	10.415460754497795
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0JF	4	2.0	7.462711830074989
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0JG	4	5.0	6.229485660891046
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A0JI	4	5.0	6.466029971311772
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A12H	4	0.0	7.462711830074989
+main	all	HRD_TAI	regression	Baseline	TCGA-AO-A1KP	4	7.0	7.095889469233802
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A0U0	4	12.0	9.228727784415359
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A1AH	4	10.0	12.87713555834412
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A1AK	4	11.0	11.48930682577978
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A1AP	4	8.0	8.769984249263135
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A24R	4	5.0	7.095889469233802
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A250	4	16.0	13.396308035320926
+main	all	HRD_TAI	regression	Baseline	TCGA-AR-A5QQ	4	5.0	11.43066293925157
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0IC	4	3.0	9.228727784415359
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0IH	4	7.0	9.43822278597718
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0WT	4	12.0	7.283887841930432
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A0X5	4	1.0	9.538644539393989
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A1KF	4	12.0	10.924319193309884
+main	all	HRD_TAI	regression	Baseline	TCGA-B6-A409	4	22.0	9.43822278597718
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0AU	4	11.0	7.283887841930432
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0C3	4	5.0	5.411627790272388
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0DK	4	5.0	12.67232447398824
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0DV	4	3.0	4.743389253558344
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0DX	4	9.0	11.822733377304733
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0E9	4	3.0	7.796138381599942
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0EB	4	4.0	10.003210418447077
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0GY	4	9.0	9.006528559683861
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0H6	4	5.0	6.897724197605092
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0H7	4	20.0	11.48930682577978
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0HO	4	2.0	7.095889469233802
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0HW	4	9.0	8.890164350879482
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A0WA	4	23.0	13.108696639289061
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18L	4	16.0	10.714824191748065
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A18R	4	9.0	8.10174571254909
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1EX	4	1.0	7.095889469233802
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-A1FL	4	3.0	6.897724197605092
+main	all	HRD_TAI	regression	Baseline	TCGA-BH-AB28	4	4.0	8.10174571254909
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A12L	4	30.0	11.769226372787449
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A12O	4	13.0	9.228727784415359
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A12P	4	20.0	15.170450744021489
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A12Q	4	14.0	13.598111187858542
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A12U	4	16.0	10.003210418447077
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A131	4	8.0	11.186228066655534
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A138	4	13.0	10.003210418447077
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A1HG	4	16.0	10.568198050916973
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A1HJ	4	24.0	13.361566877437825
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A1HK	4	9.0	11.310482837635224
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A273	4	6.0	6.897724197605092
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A8HP	4	10.0	15.062325949810681
+main	all	HRD_TAI	regression	Baseline	TCGA-C8-A8HR	4	12.0	9.228727784415359
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A13Y	4	20.0	11.927459493770378
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A147	4	22.0	14.765296566460105
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JB	4	13.0	10.003210418447077
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JD	4	20.0	12.916759346584275
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JF	4	11.0	10.003210418447077
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JI	4	5.0	9.006528559683861
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1JK	4	24.0	15.75971107920927
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1X8	4	5.0	8.10174571254909
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1XC	4	3.0	8.769984249263135
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A1Y1	4	5.0	15.496457931241974
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A27K	4	3.0	7.095889469233802
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A27V	4	7.0	15.062325949810681
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A3Z6	4	5.0	7.462711830074989
+main	all	HRD_TAI	regression	Baseline	TCGA-D8-A4Z1	4	2.0	10.714824191748065
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A10A	4	8.0	7.095889469233802
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A10C	4	9.0	18.199031820357877
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A14O	4	6.0	8.517114011114373
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A14Q	4	8.0	8.517114011114373
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A14R	4	34.0	13.430722980332568
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A14T	4	12.0	9.119311757246033
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A14X	4	5.0	8.890164350879482
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A155	4	11.0	11.371065451907569
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A156	4	3.0	7.462711830074989
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A15A	4	23.0	10.785994674861048
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1B0	4	17.0	10.64224430092118
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1IH	4	13.0	11.43066293925157
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A1LK	4	9.0	9.824386430302521
+main	all	HRD_TAI	regression	Baseline	TCGA-E2-A56Z	4	13.0	9.636388057605888
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1N3	4	0.0	7.952126378644475
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A1RH	4	18.0	12.587084243406107
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A229	4	7.0	7.796138381599942
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A22A	4	12.0	8.383820604937796
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A245	4	1.0	6.688229196043272
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A247	4	18.0	9.538644539393989
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A248	4	9.0	6.466029971311772
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A2JT	4	0.0	7.283887841930432
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A3X8	4	3.0	8.769984249263135
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A5FL	4	21.0	12.916759346584275
+main	all	HRD_TAI	regression	Baseline	TCGA-E9-A5UO	4	7.0	7.796138381599942
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1P5	4	8.0	6.688229196043272
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1P6	4	2.0	7.283887841930432
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1P7	4	4.0	5.704997498116872
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A1PE	4	4.0	8.517114011114373
+main	all	HRD_TAI	regression	Baseline	TCGA-EW-A6SB	4	15.0	11.186228066655534
+main	all	HRD_TAI	regression	Baseline	TCGA-GM-A2DD	4	15.0	10.991571808904078
+main	all	HRD_TAI	regression	Baseline	TCGA-GM-A2DH	4	21.0	15.275476976328846
+main	all	HRD_TAI	regression	Baseline	TCGA-GM-A2DK	4	8.0	7.952126378644475
+main	all	HRD_TAI	regression	Baseline	TCGA-LL-A5YM	4	13.0	7.633215349913328
+main	all	HRD_TAI	regression	Baseline	TCGA-LL-A7SZ	4	25.0	10.415460754497795
+main	all	HRD_TAI	regression	Baseline	TCGA-OL-A5D6	4	6.0	9.228727784415359
+main	all	HRD_TAI	regression	Baseline	TCGA-PL-A8LV	4	22.0	13.464817781681973
+main	all	HRD_TAI	regression	Baseline	TCGA-PL-A8LZ	4	24.0	12.587084243406107
+main	all	HRD_TAI	regression	Baseline	TCGA-S3-AA11	4	1.0	11.603852545479707
+main	all	HRD_TAI	regression	Baseline	TCGA-V7-A7HQ	4	3.0	7.095889469233802
+main	all	HRD_TAI	regression	Baseline	TCGA-XX-A899	4	4.0	9.119311757246033
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-5L-AAT0	0	3.0	10.35226256716873
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A1-A0SF	0	8.0	4.816110061612556
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A1-A0SJ	0	12.0	8.297347699210096
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0CM	0	19.0	11.462806607840852
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0CW	0	19.0	11.748509414894569
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0CX	0	11.0	12.72106155522384
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0D1	0	12.0	9.504741665696384
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0EU	0	1.0	9.801582807340829
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0T0	0	19.0	19.83223802283147
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0T5	0	2.0	6.2091433922122725
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0T6	0	1.0	5.872727856975597
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0YJ	0	16.0	15.0916848686763
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0YL	0	3.0	5.393985190583991
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0YM	0	20.0	10.348421592934036
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0YT	0	20.0	10.792443505389148
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A1G1	0	12.0	9.726881734579766
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A25C	0	6.0	6.299338622560093
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A25D	0	12.0	9.64119424553752
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A25E	0	16.0	11.672092240135052
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A3KD	0	5.0	6.12542927592066
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A3Y0	0	17.0	19.47421716088907
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A0CE	0	20.0	15.751715210592787
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A0CH	0	3.0	5.9938007025145446
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A26J	0	8.0	8.313728809407698
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A5ZW	0	2.0	7.873606608852935
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A06U	0	27.0	12.456951781433109
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A07J	0	5.0	10.764121185950433
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A07O	0	10.0	8.371005510579007
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A08R	0	29.0	22.901273568769284
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A090	0	7.0	8.719013738938223
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A09C	0	10.0	4.4671310934594475
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A09V	0	3.0	11.288954837412426
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A3OD	0	10.0	6.311685437988942
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A62Y	0	5.0	13.43072509595845
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A03X	0	7.0	7.957808282104387
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A03Y	0	6.0	8.257359934881482
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A049	0	17.0	7.103913435289069
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0AJ	0	20.0	13.869300407187442
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0AT	0	23.0	19.39868624350749
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0FS	0	4.0	9.639068138045642
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0FW	0	11.0	14.477389316279362
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0FY	0	18.0	8.860177225133596
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0XN	0	29.0	18.498718606517215
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0XR	0	4.0	9.698327541038713
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0XT	0	12.0	7.556400652966195
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A03R	0	6.0	9.008982420056501
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0J3	0	13.0	10.054287237985049
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0J7	0	2.0	3.870623264536521
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0JD	0	18.0	18.790389899763056
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0JJ	0	6.0	3.3510996783455607
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A128	0	9.0	17.62502316918
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A12F	0	27.0	8.532829551490336
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A1KT	0	15.0	9.340599508716444
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A0TP	0	22.0	17.205448836366525
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A0TX	0	11.0	14.885820096597886
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A1AO	0	0.0	19.564251292865734
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A1AX	0	4.0	4.937572455998
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A24P	0	4.0	6.373814717413717
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A24W	0	3.0	5.085491462376492
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A24Z	0	13.0	9.752968179049764
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A256	0	24.0	17.141032636645107
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A2LH	0	0.0	8.352790343928115
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A2LN	0	4.0	5.696485540658393
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0RO	0	6.0	7.660434292946046
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0RU	0	14.0	9.3631798433636
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0WS	0	8.0	5.931850476273999
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0WY	0	13.0	9.178597939844138
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0X1	0	26.0	16.963801257842743
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A1KN	0	14.0	9.63521065768618
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A401	0	9.0	10.73681705106727
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0B5	0	6.0	12.45512119127725
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0BF	0	9.0	10.117920966355012
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0BP	0	27.0	15.83842661666597
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0BR	0	9.0	6.94312894454011
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0C1	0	5.0	8.006654527345262
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0C7	0	17.0	10.19065619095439
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0DE	0	7.0	8.216723243611053
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0DT	0	3.0	3.1733457005584214
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0E1	0	2.0	8.711880638774069
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0EE	0	12.0	9.236934594257772
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0HB	0	11.0	11.706522746342616
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0HI	0	1.0	6.673356948889496
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0HK	0	5.0	8.738275171572429
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0HP	0	6.0	13.59322791185479
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0W3	0	3.0	8.112474525963924
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0W4	0	2.0	6.306952208038385
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18H	0	12.0	9.09714107398218
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18Q	0	24.0	13.683630379577467
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1EO	0	9.0	9.574130976761213
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1EV	0	13.0	13.24626258441306
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1F0	0	16.0	11.852958063004298
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1FC	0	21.0	14.03682795642544
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1FE	0	11.0	-1.0749734768936001
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1FJ	0	1.0	7.160501333333306
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A2L8	0	2.0	14.514543923798485
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A8FY	0	3.0	10.51353927411253
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A12M	0	12.0	10.21472750918164
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A12N	0	4.0	8.407803079540244
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A137	0	12.0	10.070071055065048
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A1HL	0	8.0	6.880623024135774
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A26V	0	11.0	13.549093566852026
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A275	0	6.0	12.975050775224332
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A278	0	13.0	10.042182361072298
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JN	0	2.0	9.41452479302782
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JS	0	2.0	8.875223927329385
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JT	0	5.0	9.044074998207178
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XF	0	12.0	9.648704103453554
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XY	0	7.0	8.511852218544476
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XZ	0	11.0	11.188069954897438
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A27L	0	4.0	5.265156033181595
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A27T	0	5.0	5.374760818709507
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A14Z	0	20.0	9.221049118039762
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A153	0	6.0	7.198954040759794
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A159	0	9.0	13.517914505164589
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15H	0	6.0	8.570312036615476
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15K	0	5.0	9.54122607398467
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15T	0	7.0	8.927865508719908
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1IF	0	3.0	6.271451905154329
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1L8	0	6.0	8.3734926939406
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A570	0	3.0	7.655501942538859
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A576	0	7.0	9.865486271444755
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A9RU	0	21.0	10.414496068098398
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1NC	0	25.0	16.578186336217293
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1ND	0	18.0	18.246402690860585
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1NE	0	3.0	15.76720208970023
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1R6	0	6.0	7.375367551651094
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1RB	0	14.0	8.115322516106705
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1RG	0	20.0	8.292205448325607
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A226	0	8.0	11.326132244155305
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A22G	0	26.0	17.025435180445335
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A6HE	0	5.0	7.218203984296707
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1J3	0	6.0	7.824088674099906
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1J6	0	16.0	10.951595941660791
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1OV	0	13.0	8.039943377649374
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1OZ	0	19.0	10.889697168717737
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1P1	0	0.0	1.911912318116876
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1P8	0	19.0	6.511786568547777
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A2FV	0	9.0	6.236063725442972
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-GM-A2DA	0	7.0	8.027511204542598
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-GM-A2DB	0	13.0	17.04053117590969
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-GM-A2DF	0	18.0	11.63918717680885
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LL-A6FR	0	21.0	8.335247678275412
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LL-A7T0	0	15.0	9.567641135350584
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LL-A9Q3	0	6.0	7.994607956571615
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A5S0	0	23.0	6.549433230976693
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A66I	0	21.0	12.440758145827004
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A66J	0	4.0	11.323623895435247
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A66K	0	3.0	7.364716857572316
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-PE-A5DE	0	7.0	11.344947018593805
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-S3-A6ZF	0	16.0	9.121723890168457
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-S3-AA0Z	0	15.0	10.917107575433697
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-S3-AA14	0	7.0	4.682231157852134
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-WT-AB41	0	13.0	6.316308116044116
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-WT-AB44	0	5.0	6.87372258281029
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-XX-A89A	0	5.0	13.267293412744975
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A1-A0SE	1	8.0	7.8944291271890545
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A1-A0SK	1	13.0	12.542606145052687
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A04P	1	28.0	15.319126614216739
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A04T	1	30.0	15.454049308851609
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0CP	1	3.0	10.35902197336004
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0CU	1	8.0	9.401612990632776
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0CV	1	2.0	9.450884499785115
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0EW	1	3.0	5.989548496264501
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0EX	1	5.0	6.772010656139219
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0EY	1	21.0	8.761989553102982
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0SU	1	8.0	8.986319869070874
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0T2	1	7.0	8.489018968363204
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0T7	1	8.0	8.244951945961805
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0YF	1	6.0	6.817498117097437
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0YG	1	14.0	10.294499186118603
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A1FX	1	8.0	8.54030184754942
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A1FZ	1	2.0	7.359482715180477
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A1G4	1	4.0	7.859081456634966
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A259	1	3.0	5.945677007806088
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A4S1	1	11.0	15.58524375405592
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A4S3	1	21.0	11.928167693291211
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A0DA	1	31.0	20.67708518447268
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A0DB	1	3.0	15.331415814597348
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A13E	1	13.0	11.832179159094522
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A6VX	1	26.0	13.63891538678858
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A06R	1	30.0	10.843523338127225
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A06X	1	26.0	19.05729315957712
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A076	1	7.0	10.082233945923612
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A08L	1	28.0	19.8617901345598
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A08O	1	10.0	8.561767909275293
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A08X	1	16.0	8.503924306066512
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A08Z	1	6.0	7.475678817277888
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A092	1	8.0	9.867822141806307
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A093	1	5.0	8.558205420524153
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A099	1	4.0	28.34608085637046
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A09Z	1	2.0	15.743992586251348
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A0A7	1	6.0	9.265030688848835
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A0AB	1	6.0	8.672351111004454
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A0AD	1	3.0	9.387699926101964
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A23E	1	4.0	8.69836254703741
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A23H	1	11.0	20.71987688201269
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A3YI	1	0.0	7.045113480882398
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A4ZE	1	5.0	10.355133942951257
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A5EH	1	10.0	18.36132998595116
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A6IV	1	6.0	9.10925127406412
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A04D	1	20.0	15.060130932322979
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0FT	1	25.0	10.712535385177713
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0FV	1	15.0	10.4696806640596
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0FX	1	19.0	13.06289981292559
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0XW	1	10.0	13.98750848826336
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0J8	1	3.0	6.882975141866012
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A12A	1	4.0	7.800154607056471
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AQ-A04J	1	19.0	10.3881820801226
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AQ-A1H2	1	8.0	8.523125525355661
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A0TQ	1	5.0	8.946973707570109
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A0TV	1	13.0	9.648854224294542
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A0TW	1	21.0	12.216662118615123
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A24U	1	10.0	8.10698926781056
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A24V	1	7.0	7.397960864398514
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A251	1	32.0	20.86055296382342
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A5QN	1	7.0	7.7672184406701925
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0I2	1	20.0	11.260065851238544
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0I9	1	16.0	11.192839049993566
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0IE	1	8.0	11.689224131769313
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0RN	1	3.0	8.822170918766838
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0RS	1	29.0	15.105762886068717
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0RV	1	8.0	7.958598388630731
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0WW	1	11.0	11.579826043397297
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0WZ	1	3.0	5.931640683091654
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0X0	1	3.0	8.605328381307398
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A1KC	1	7.0	14.1199223658388
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A40C	1	5.0	7.184965470591075
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0B3	1	11.0	10.835637668316194
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0B7	1	10.0	13.63177946918346
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0BC	1	7.0	7.663496249193844
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0BJ	1	4.0	9.321643018627412
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0BO	1	2.0	7.256134621009041
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0BT	1	8.0	8.243022617664725
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0DQ	1	11.0	6.913135299791852
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0DZ	1	9.0	13.262120486852604
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0E0	1	10.0	9.863647438294315
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0E2	1	12.0	8.879339515728537
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18J	1	10.0	7.57452683289283
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18T	1	21.0	17.28180886487522
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1ET	1	2.0	10.545916812138117
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1FG	1	3.0	6.136827193834166
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1FM	1	16.0	9.467971645543065
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A201	1	5.0	2.4573867074332885
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A208	1	13.0	11.429204401635632
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A209	1	12.0	11.036992613022012
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A28Q	1	5.0	7.8817211953327835
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A6R9	1	0.0	5.312415531673831
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A8G0	1	1.0	7.452322236949271
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A12W	1	13.0	9.842893363245228
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A12Z	1	11.0	10.293698139514923
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A130	1	25.0	10.192164705981407
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A133	1	0.0	9.021363804623286
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A1HF	1	9.0	8.592180461304713
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A1HM	1	24.0	16.49219028699294
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A26X	1	11.0	10.833104541551489
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A26Y	1	19.0	16.473363641121264
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A8HQ	1	8.0	11.409771257030306
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A13Z	1	17.0	15.619780747138403
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A140	1	8.0	8.800955662495024
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A141	1	3.0	8.028819383254486
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JA	1	8.0	17.12043021827024
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JG	1	11.0	10.22939691747615
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JH	1	0.0	7.607537256495743
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JM	1	17.0	11.274301611011808
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JP	1	19.0	14.899278826162526
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1X7	1	2.0	7.162995667349138
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1X9	1	19.0	15.275796344094505
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XA	1	6.0	6.75785544297516
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XJ	1	18.0	8.678229846772293
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XK	1	26.0	13.266809702398294
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XQ	1	29.0	15.4414574244895
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XV	1	1.0	9.39871441455324
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XW	1	20.0	14.848738836393878
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1Y2	1	5.0	5.178595159278235
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1Y3	1	17.0	10.524742870229627
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A27R	1	15.0	7.822362336146416
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A73U	1	4.0	6.38525583801631
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A73W	1	6.0	9.692190538743464
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A158	1	27.0	18.462146520768627
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15J	1	4.0	9.25296592629692
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15R	1	14.0	8.794226900988376
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1BC	1	6.0	12.009181875943986
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1IL	1	5.0	9.916451006517388
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1L6	1	4.0	6.794727531812964
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1LA	1	17.0	14.457022476896153
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1LH	1	28.0	18.054261903625328
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1N5	1	7.0	6.850185462544482
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1N9	1	23.0	9.974869953275386
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1NA	1	18.0	17.206332827574336
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1NH	1	6.0	9.068351065737422
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1RA	1	2.0	6.968398986494782
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1RE	1	16.0	7.883008599778557
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A227	1	2.0	9.350458177861746
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1IW	1	4.0	11.856594224803551
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1IZ	1	2.0	13.47681856787934
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1P4	1	23.0	16.982903547438585
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A2FS	1	9.0	6.80476658121401
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-GM-A2DC	1	9.0	7.910868426307017
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-GM-A2DM	1	0.0	9.476203829575843
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-GM-A3NW	1	5.0	10.728934788429385
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-HN-A2OB	1	3.0	8.670177409988325
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LL-A5YN	1	11.0	7.742906459965759
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LL-A6FQ	1	3.0	8.809530249453829
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LL-A8F5	1	30.0	17.486463880978924
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A5DA	1	7.0	11.235857428767257
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A5RU	1	1.0	8.307895071642374
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A5RW	1	23.0	17.03431293503762
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-PE-A5DD	1	5.0	8.532499752970748
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-PL-A8LX	1	5.0	8.6738190428431
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-S3-AA10	1	22.0	16.18972749720796
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-3C-AALI	2	12.0	19.743116672814498
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A1-A0SI	2	6.0	15.18228809663664
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A1-A0SO	2	27.0	19.290180546670186
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A04R	2	13.0	16.730207529877326
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A04U	2	28.0	12.953983034064239
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A04Y	2	9.0	11.543600851176123
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0CR	2	0.0	12.841440322558638
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0ES	2	0.0	6.004780446186068
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0SW	2	12.0	8.88605423043731
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0YC	2	4.0	7.958206976371313
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0YE	2	20.0	8.173644530694792
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A1FV	2	11.0	8.873841167428624
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A25A	2	3.0	21.417891302932418
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A0D9	2	8.0	8.725868483270911
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A13F	2	5.0	9.476637535133605
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A26E	2	1.0	9.788188686468256
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A5ZV	2	26.0	17.962994390963267
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A06Q	2	14.0	14.591928714717557
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A075	2	20.0	11.74152369238279
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A079	2	16.0	11.352477771585244
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A07B	2	14.0	11.93241371332089
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A07I	2	9.0	11.908638667411306
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A07Z	2	6.0	6.886191299313793
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A081	2	10.0	13.146092107522595
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A082	2	5.0	7.958206976371313
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A083	2	4.0	10.93104418115201
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A094	2	7.0	17.31968836413651
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A095	2	2.0	16.0514372189609
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A097	2	17.0	17.503446985732296
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A09D	2	10.0	8.912961707785703
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A09Q	2	16.0	14.370431756982573
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A09T	2	6.0	6.7232148511979055
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A2B8	2	8.0	11.44106092334196
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A2FO	2	10.0	5.367926618179866
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A2QH	2	20.0	8.473246564283546
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A5XS	2	7.0	17.16981318975526
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A6IX	2	9.0	9.102109489800064
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A6NO	2	2.0	8.151612393559336
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A8OP	2	16.0	15.923524360313566
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A8OR	2	1.0	8.700589339558302
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A046	2	4.0	24.087145272094226
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0AS	2	12.0	10.061916106432482
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0XU	2	31.0	15.915594675506467
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0XV	2	3.0	8.907064456368458
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A03T	2	17.0	14.504137801706623
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0J9	2	5.0	10.647617045874773
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0JB	2	22.0	12.492354134420296
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0JM	2	14.0	9.71524721331039
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A12D	2	12.0	9.893827145389281
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AQ-A04H	2	12.0	11.295825631724925
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A0TR	2	7.0	9.096798501516597
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A0TZ	2	9.0	12.875820707527817
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A1AI	2	18.0	13.654982091416784
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A1AJ	2	6.0	9.421028252881293
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A1AN	2	14.0	7.46300758455814
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A1AQ	2	12.0	9.369312963695265
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A1AR	2	7.0	12.073660728916876
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A1AW	2	8.0	9.617775758126587
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A24N	2	5.0	10.36561535482009
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A24Q	2	30.0	17.480851884598554
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A24S	2	9.0	10.707729896582082
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A254	2	8.0	8.947500942410102
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A2LQ	2	1.0	5.847710508797179
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A5QM	2	4.0	8.589104479468848
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A5QP	2	5.0	7.154017672951969
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0I5	2	3.0	7.599539722459185
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0IB	2	6.0	11.579037670608596
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0RE	2	19.0	17.331664642928864
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0RG	2	13.0	14.5036039524187
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0RH	2	11.0	6.7955260477557
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0RI	2	6.0	9.972945182714543
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0RL	2	9.0	10.394603363432546
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0X4	2	0.0	7.944395382539961
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A2IU	2	5.0	9.84554116764791
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0AV	2	23.0	11.204951632316726
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0AZ	2	16.0	10.03282291664029
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0B9	2	13.0	11.38923536360909
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0BA	2	10.0	10.560836084001458
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0BM	2	4.0	7.390487440555344
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0DG	2	8.0	8.536937757422745
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0DI	2	11.0	9.535434629575557
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0H0	2	7.0	8.095627017786226
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0HA	2	2.0	16.10745331207054
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0HQ	2	2.0	8.3218623466965
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18F	2	4.0	9.15898129477608
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18G	2	1.0	20.179102760992762
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18K	2	12.0	11.651242351155119
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18P	2	3.0	16.172847987138738
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1EU	2	5.0	6.61649927190123
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1EW	2	12.0	2.9952539243306227
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1EY	2	12.0	10.150852078384654
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1F2	2	16.0	12.459949669641228
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A202	2	8.0	8.589104479468848
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A5IZ	2	19.0	16.92409751004164
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A6R8	2	4.0	7.671879317272193
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A132	2	15.0	13.543274514013412
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A26Z	2	13.0	12.603968932103653
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A27A	2	13.0	9.320252187744789
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A145	2	1.0	9.65717282179734
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1J8	2	4.0	19.4105932997688
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1J9	2	13.0	14.955272246203993
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JL	2	24.0	18.375848739925075
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XB	2	4.0	9.377246286455431
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XG	2	1.0	7.662560622169909
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XL	2	17.0	15.32620115266266
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XM	2	6.0	8.531348511381722
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XO	2	4.0	6.679345009659656
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XR	2	4.0	6.884719936139533
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XT	2	16.0	9.489414331162676
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A27M	2	17.0	14.803191961809556
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A27N	2	11.0	10.824018870223203
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A14Y	2	8.0	9.31534876477113
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15C	2	3.0	9.173011599738288
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15D	2	3.0	9.258999554745206
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15E	2	18.0	13.08652641848572
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15G	2	2.0	11.108207146957742
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15M	2	15.0	11.519086346226686
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1B4	2	2.0	8.851581467630668
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1IE	2	13.0	8.065546113994742
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1IJ	2	4.0	6.760463785873894
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1IK	2	0.0	8.848516801055064
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1IU	2	3.0	8.933435778781911
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1L9	2	3.0	9.083940264994178
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1NG	2	6.0	9.157462432453505
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1R3	2	5.0	10.06844531218511
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1RC	2	7.0	11.016948417407942
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A228	2	8.0	11.222684740259908
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A22B	2	7.0	9.493866224048961
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A22D	2	17.0	7.854810796117507
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A22E	2	23.0	19.539262310409647
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A24A	2	4.0	7.958206976371313
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1IY	2	0.0	5.90363568831137
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1OX	2	3.0	7.737407329358803
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1P0	2	8.0	10.279779156015284
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1P3	2	4.0	6.160704356620736
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1PB	2	25.0	18.05905342983909
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A6SD	2	17.0	11.125932784166501
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LD-A74U	2	3.0	11.467188413119123
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LD-A7W5	2	17.0	9.007952020884773
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LD-A7W6	2	6.0	8.278429986306538
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LL-A5YL	2	5.0	9.224060575892151
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LL-A73Y	2	15.0	14.464877540808487
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A5D8	2	6.0	8.352658466858118
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A5RV	2	1.0	5.76652541202747
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A5RY	2	0.0	5.107359768066047
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A5RZ	2	13.0	16.022920038958055
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A66L	2	6.0	8.608919766500048
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A66O	2	4.0	8.095627017786226
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-S3-A6ZG	2	9.0	8.885027504447104
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-S3-AA12	2	7.0	8.794714085648708
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-S3-AA17	2	23.0	16.03237682928728
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-UU-A93S	2	21.0	17.50241711019227
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-W8-A86G	2	6.0	7.162664708938687
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-Z7-A8R6	2	9.0	9.284557715475277
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-5T-A9QA	3	7.0	9.894216037790784
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A1-A0SD	3	9.0	9.008634909629304
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A1-A0SG	3	4.0	7.115891396744556
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A04Q	3	7.0	12.390285970323784
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0CS	3	2.0	8.174722323222792
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0EM	3	4.0	9.213869199006663
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0EN	3	4.0	10.790481631165632
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0SV	3	14.0	9.610461114104867
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0SY	3	5.0	13.724689436149852
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0T1	3	12.0	8.76214224560361
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0T4	3	7.0	9.410458084975271
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A26I	3	19.0	8.953626944876266
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A6VW	3	16.0	13.501563610435799
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A06Y	3	2.0	10.485319333588478
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A06Z	3	13.0	16.7619848043541
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A07L	3	24.0	15.825829590986423
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A07U	3	16.0	11.974103352866223
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A07W	3	12.0	19.72703625268184
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A08G	3	11.0	13.348578683486709
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A096	3	2.0	9.514397140783768
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A09A	3	26.0	19.587932078938152
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A09B	3	6.0	9.811149578095652
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A09G	3	3.0	12.61286479668685
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A09M	3	18.0	15.208337498300152
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A09N	3	10.0	9.709878685560557
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A09X	3	12.0	9.685074802788362
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A0A6	3	7.0	10.05764847309724
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A2FG	3	5.0	7.515304527707906
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A3QQ	3	6.0	9.003809195313359
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A5XU	3	10.0	9.06270419292405
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A6IW	3	15.0	14.499501060908923
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A7VB	3	8.0	7.875978693890065
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A041	3	10.0	7.122715145148883
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A04C	3	16.0	13.337788054037057
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0AR	3	25.0	17.57160375933395
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0FN	3	1.0	7.721931093888349
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0XS	3	4.0	7.296829199951458
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A03L	3	13.0	10.756467150249795
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A03O	3	23.0	12.044676484244075
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A03P	3	12.0	9.284594968198657
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A03V	3	22.0	9.703823955927806
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0J4	3	20.0	15.488033655510685
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0J6	3	22.0	15.272584829228421
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0JA	3	10.0	3.6722971394447494
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A124	3	36.0	13.715848354727578
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A1KR	3	15.0	12.973477480773882
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AQ-A1H3	3	4.0	8.289945378627873
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A0TS	3	18.0	15.663510833815689
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A0TT	3	14.0	13.645817409069812
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A0TY	3	11.0	11.231511712019449
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A1AU	3	9.0	6.388659244875595
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A1AY	3	10.0	10.770887007071853
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A24L	3	17.0	19.575337262027077
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A24O	3	2.0	7.306468770978338
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A24X	3	3.0	10.208419918247092
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A252	3	2.0	-1.197664080816768
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A2LK	3	5.0	8.278392308921042
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A2LO	3	7.0	7.930109047053635
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0IJ	3	29.0	21.24164626968024
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0IN	3	11.0	6.019013337837645
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0RP	3	3.0	4.828759647489764
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0AW	3	20.0	12.220105724847793
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0AY	3	10.0	9.594594406724713
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0BL	3	20.0	11.32511946780462
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0BZ	3	9.0	22.035481331696673
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0DH	3	8.0	7.584816990155488
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0DL	3	9.0	10.018105751943828
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0DO	3	3.0	7.5291011019841925
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0DS	3	5.0	9.212509181573871
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0E7	3	2.0	8.690740690437732
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0EA	3	3.0	9.086616153523224
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0HU	3	11.0	10.562556259759052
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0HX	3	16.0	10.68777511988099
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0HY	3	19.0	8.275862183210375
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18I	3	5.0	6.773215310918726
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18M	3	4.0	13.0409166419085
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18N	3	2.0	8.600901385467626
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18S	3	4.0	9.559830337094848
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18U	3	27.0	9.951162916359365
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1FN	3	25.0	14.117729314823453
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1FU	3	6.0	15.131416747996823
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A203	3	17.0	11.273571665376734
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A204	3	9.0	9.697457800392472
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A42V	3	3.0	4.837711842154489
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A8FZ	3	14.0	15.03456202152913
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A12Y	3	7.0	8.930763441202755
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A135	3	11.0	11.855575506571988
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A1HE	3	5.0	5.347343237178478
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A26W	3	13.0	8.08819152024426
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A27B	3	28.0	21.64844074965548
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A143	3	17.0	11.030772332983057
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JC	3	14.0	9.710969701612587
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JJ	3	10.0	7.556082736648813
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JU	3	4.0	4.8213777555766075
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1X5	3	19.0	8.560584901694462
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1Y0	3	18.0	17.622857256304833
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A27E	3	0.0	6.723535013038575
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A27F	3	25.0	15.268687717685278
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A27H	3	25.0	20.733858850024944
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A27P	3	2.0	7.249721422845029
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A27W	3	10.0	9.008809494240273
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A73X	3	3.0	8.562928352752223
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A150	3	20.0	14.371938001255097
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A152	3	8.0	10.17043148707809
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A154	3	6.0	9.43652241677044
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15I	3	4.0	6.512069429750541
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15O	3	7.0	7.943517115786088
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15P	3	6.0	7.363122573116021
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1AZ	3	15.0	10.558912538535932
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1B5	3	7.0	5.136357344905058
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1BD	3	4.0	9.563181991251977
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1IG	3	6.0	9.689845823571998
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1IO	3	13.0	5.7303207069915345
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1LG	3	10.0	14.921290671945071
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1LL	3	16.0	15.916917967530084
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A573	3	17.0	10.90127109025279
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1N8	3	11.0	10.212168205854155
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1NI	3	8.0	6.300586417458257
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1R0	3	4.0	5.997177431824517
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1R5	3	6.0	9.50215516713133
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1R7	3	15.0	10.176873555887354
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1RD	3	2.0	13.76662555693307
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1RF	3	18.0	20.779667135194657
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A22H	3	4.0	8.483523219974344
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A243	3	17.0	17.31491123244696
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A244	3	30.0	15.359099033608992
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A295	3	9.0	12.286258497786765
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A2JS	3	26.0	11.49662452749681
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1J1	3	7.0	10.493536744085642
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1OY	3	17.0	9.618396494206781
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1PA	3	9.0	11.608174259081697
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1PG	3	0.0	4.179585827484079
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1PH	3	16.0	8.668218296217981
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A6SC	3	7.0	7.16698373260374
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-GM-A2DL	3	6.0	6.8320044690215465
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-GM-A2DN	3	3.0	7.4207722513031396
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-GM-A5PX	3	4.0	6.602405907796101
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-HN-A2NL	3	27.0	16.84299080228065
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LD-A66U	3	5.0	6.135204906282458
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LL-A50Y	3	4.0	6.959680566086365
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LL-A5YP	3	29.0	14.452746830243738
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LL-A73Z	3	12.0	9.00207683663698
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OK-A5Q2	3	5.0	8.151153958235792
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A5D7	3	16.0	15.138439246077628
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A5RX	3	3.0	8.085128345550599
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A66H	3	0.0	6.0518037039348345
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A66N	3	3.0	7.901427498510342
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A66P	3	8.0	13.53307772077173
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A6VO	3	19.0	6.188075091171134
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A6VQ	3	4.0	6.537620576510606
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A6VR	3	5.0	5.339633685395589
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A97C	3	2.0	12.659699028786601
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-PL-A8LY	3	0.0	3.0012482359643133
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-S3-A6ZH	3	8.0	9.511749680517282
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-3C-AALJ	4	14.0	7.476928132694781
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A1-A0SB	4	0.0	6.2375239248759895
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A1-A0SQ	4	5.0	7.283732855842131
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A04N	4	4.0	12.900988419910414
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A04V	4	5.0	8.254890258556463
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A04W	4	8.0	12.243656351029376
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0CT	4	12.0	10.393713481857192
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0D0	4	24.0	17.85310094125002
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0D3	4	3.0	7.364780507860329
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0D4	4	15.0	12.282361289609499
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0EV	4	11.0	13.250286428051055
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0SX	4	14.0	7.450759437554896
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0T3	4	21.0	9.755043142723675
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0YD	4	4.0	8.410442287980963
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0YH	4	10.0	13.41519215614047
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A0YK	4	3.0	14.389765438421788
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A1G0	4	6.0	8.509596203393803
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A2-A3XU	4	4.0	6.7036710455003465
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A0CG	4	3.0	10.319174564386143
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A0CJ	4	27.0	9.264299447913112
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A13D	4	24.0	15.98544383138277
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A26H	4	7.0	12.140757756050062
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A4SE	4	26.0	11.734181475247428
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A56D	4	10.0	10.133042204281091
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A5ZX	4	1.0	8.306808373133128
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A7-A6VY	4	19.0	18.26618084844317
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A06P	4	3.0	8.29079732386887
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A07P	4	9.0	9.657899362624047
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A08B	4	12.0	7.08794134382732
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A08H	4	0.0	6.234638067220297
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A08T	4	6.0	10.003939232718366
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A091	4	7.0	6.26893644433949
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A09W	4	18.0	12.423776948404399
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A0A1	4	5.0	9.29585944989134
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A0A2	4	7.0	6.110960873555687
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-A8-A0A4	4	7.0	6.724296924215549
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A23C	4	11.0	14.041851980022535
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A2FB	4	2.0	8.560220763309818
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A7VC	4	3.0	6.665491996856555
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A8OQ	4	25.0	13.301339349433913
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AC-A8OS	4	3.0	8.081940280421618
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0AL	4	20.0	19.286996316618886
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0AM	4	21.0	17.024938173821937
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0FJ	4	11.0	12.529636299540531
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0FK	4	4.0	7.916316877144403
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0FZ	4	13.0	10.05581491456435
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0XO	4	8.0	6.943583951855235
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AN-A0XP	4	3.0	6.624105674261343
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0J2	4	31.0	17.81257449490405
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0JE	4	13.0	12.506705077240692
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0JF	4	2.0	5.151618751528675
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0JG	4	5.0	6.340317058538702
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A0JI	4	5.0	7.528622664213334
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A12H	4	0.0	7.6270688725899625
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AO-A1KP	4	7.0	4.576541950790949
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A0U0	4	12.0	7.661020236047454
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A1AH	4	10.0	13.814416419512407
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A1AK	4	11.0	11.458408132093881
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A1AP	4	8.0	6.9017552288197646
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A24R	4	5.0	7.5097214814801445
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A250	4	16.0	14.156818758668784
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-AR-A5QQ	4	5.0	17.50471734296078
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0IC	4	3.0	10.995448765424577
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0IH	4	7.0	7.803672841763836
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0WT	4	12.0	6.792804114459135
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A0X5	4	1.0	8.212196687428927
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A1KF	4	12.0	10.956293782823842
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-B6-A409	4	22.0	8.117139699528945
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0AU	4	11.0	6.9865743837444985
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0C3	4	5.0	7.242725586382024
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0DK	4	5.0	17.78458463053652
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0DV	4	3.0	9.615844736371448
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0DX	4	9.0	7.463175575112425
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0E9	4	3.0	8.593868300293083
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0EB	4	4.0	9.955942961666777
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0GY	4	9.0	7.619129223601747
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0H6	4	5.0	5.601009644553807
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0H7	4	20.0	9.128128892734031
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0HO	4	2.0	6.410114258533276
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0HW	4	9.0	8.312754222336968
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A0WA	4	23.0	14.620707703558287
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18L	4	16.0	9.627484014870479
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A18R	4	9.0	7.393460172128587
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1EX	4	1.0	6.265268268162804
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-A1FL	4	3.0	6.564325426843746
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-BH-AB28	4	4.0	8.669263180064936
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A12L	4	30.0	11.614386664235608
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A12O	4	13.0	8.458632153995218
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A12P	4	20.0	10.551180620415504
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A12Q	4	14.0	10.054769217407724
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A12U	4	16.0	10.123984961160877
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A131	4	8.0	12.431262665689093
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A138	4	13.0	9.445910644927514
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A1HG	4	16.0	10.757901858087983
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A1HJ	4	24.0	19.079242804337078
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A1HK	4	9.0	11.595304387709787
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A273	4	6.0	7.34118353766265
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A8HP	4	10.0	11.220936844066891
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-C8-A8HR	4	12.0	9.811102210781485
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A13Y	4	20.0	11.283157414918211
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A147	4	22.0	20.443671664502432
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JB	4	13.0	12.794486721558807
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JD	4	20.0	17.384223885824184
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JF	4	11.0	8.2816025582161
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JI	4	5.0	6.485477577773196
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1JK	4	24.0	17.61946957369723
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1X8	4	5.0	10.785164910140402
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1XC	4	3.0	7.463608182619128
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A1Y1	4	5.0	12.446865992592393
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A27K	4	3.0	7.668519859673616
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A27V	4	7.0	11.207743297204352
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A3Z6	4	5.0	7.549793308599327
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-D8-A4Z1	4	2.0	6.446502925330565
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A10A	4	8.0	11.852830631002131
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A10C	4	9.0	12.738833145823344
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A14O	4	6.0	7.642862924327587
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A14Q	4	8.0	8.58174870352067
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A14R	4	34.0	16.237414849047926
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A14T	4	12.0	9.13696588451772
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A14X	4	5.0	7.637070142529259
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A155	4	11.0	9.769779371855426
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A156	4	3.0	7.472464136703255
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A15A	4	23.0	8.615184037263825
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1B0	4	17.0	10.852574618373959
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1IH	4	13.0	10.65550751148744
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A1LK	4	9.0	9.012796460422893
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E2-A56Z	4	13.0	10.208546844094721
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1N3	4	0.0	9.714192344873283
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A1RH	4	18.0	14.147176978794858
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A229	4	7.0	6.692668764240272
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A22A	4	12.0	10.099202494895106
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A245	4	1.0	4.915417370766788
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A247	4	18.0	8.465476734519918
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A248	4	9.0	5.845883291562973
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A2JT	4	0.0	3.1437944796170214
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A3X8	4	3.0	10.587066012208972
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A5FL	4	21.0	17.17038775593619
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-E9-A5UO	4	7.0	7.883391636427628
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1P5	4	8.0	6.6099497051975815
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1P6	4	2.0	6.59966171093682
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1P7	4	4.0	7.462496690586231
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A1PE	4	4.0	6.992237130575479
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-EW-A6SB	4	15.0	11.515833559404133
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-GM-A2DD	4	15.0	12.416463105692433
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-GM-A2DH	4	21.0	15.973073591904814
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-GM-A2DK	4	8.0	7.853922392746183
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LL-A5YM	4	13.0	9.039508757953817
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-LL-A7SZ	4	25.0	8.366366471357106
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-OL-A5D6	4	6.0	7.213984157417329
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-PL-A8LV	4	22.0	14.156972184993972
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-PL-A8LZ	4	24.0	11.227175822269343
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-S3-AA11	4	1.0	15.204038451077958
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-V7-A7HQ	4	3.0	6.919136409292523
+main	all	HRD_TAI	regression	Baseline+Standard	TCGA-XX-A899	4	4.0	11.233401882737379
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-5L-AAT0	0	3.0	10.918304275866625
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SF	0	8.0	5.222273567754604
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SJ	0	12.0	8.207154876140756
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CM	0	19.0	8.272940329850547
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CW	0	19.0	10.319699242071914
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CX	0	11.0	11.927210723918712
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0D1	0	12.0	9.990301613496037
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EU	0	1.0	10.074475622509452
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T0	0	19.0	23.44068662347776
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T5	0	2.0	5.431276517703965
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T6	0	1.0	5.322287317656187
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YJ	0	16.0	16.235068713859498
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YL	0	3.0	5.625218182202815
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YM	0	20.0	10.775467479727071
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YT	0	20.0	11.622359418381013
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1G1	0	12.0	11.524598154952946
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A25C	0	6.0	8.923792211205566
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A25D	0	12.0	11.893631005549361
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A25E	0	16.0	16.057608803122722
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A3KD	0	5.0	-79.8185612244925
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A3Y0	0	17.0	28.359790751783926
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0CE	0	20.0	18.502674915656804
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0CH	0	3.0	6.051341398572677
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A26J	0	8.0	12.584097784784605
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A5ZW	0	2.0	3.6570336876495926
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06U	0	27.0	9.493715755006724
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07J	0	5.0	8.713742182363163
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07O	0	10.0	8.721755932483298
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08R	0	29.0	20.910548741285414
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A090	0	7.0	7.930092256533444
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09C	0	10.0	4.638178537046959
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09V	0	3.0	10.65585746700816
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A3OD	0	10.0	6.583467274372769
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A62Y	0	5.0	11.018351985530556
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A03X	0	7.0	9.035403686735615
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A03Y	0	6.0	10.529596658267277
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A049	0	17.0	10.344625796098862
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AJ	0	20.0	14.484480748118127
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AT	0	23.0	24.72737813823415
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FS	0	4.0	10.841712492966055
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FW	0	11.0	15.17578693431262
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FY	0	18.0	9.481752545651213
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XN	0	29.0	18.474116779083353
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XR	0	4.0	15.952619906722196
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XT	0	12.0	6.713291160903032
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03R	0	6.0	12.16499376763836
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J3	0	13.0	10.909041209924352
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J7	0	2.0	4.159653527975845
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JD	0	18.0	15.170299778576965
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JJ	0	6.0	8.890886847360443
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A128	0	9.0	19.963548705866828
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A12F	0	27.0	10.457407505949822
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A1KT	0	15.0	7.2782820290555295
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TP	0	22.0	17.067782682530027
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TX	0	11.0	11.703576641603096
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AO	0	0.0	19.89017197265428
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AX	0	4.0	7.30733366362617
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24P	0	4.0	6.772222607291517
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24W	0	3.0	4.465448046981811
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24Z	0	13.0	10.65444272134922
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A256	0	24.0	21.81420152056291
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LH	0	0.0	7.716112543824159
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LN	0	4.0	6.7728622059878525
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RO	0	6.0	7.438379255545291
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RU	0	14.0	9.35786070205429
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WS	0	8.0	6.577423850064631
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WY	0	13.0	9.970083269411536
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0X1	0	26.0	15.186645517859638
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A1KN	0	14.0	16.8903982268536
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A401	0	9.0	7.879322684997857
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0B5	0	6.0	5.9788659462745235
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BF	0	9.0	8.771740874106907
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BP	0	27.0	17.506619440080648
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BR	0	9.0	6.818979595072016
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0C1	0	5.0	8.755050545399575
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0C7	0	17.0	9.935791871709245
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DE	0	7.0	8.297580465532594
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DT	0	3.0	3.743441955065248
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E1	0	2.0	4.216067926753894
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0EE	0	12.0	12.1354556123737
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HB	0	11.0	8.1773429341761
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HI	0	1.0	5.975992270298952
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HK	0	5.0	9.067908837078999
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HP	0	6.0	11.09251518572588
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0W3	0	3.0	6.585276653980124
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0W4	0	2.0	8.538811041224307
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18H	0	12.0	8.247039293616458
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18Q	0	24.0	18.334317693613627
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EO	0	9.0	7.9445280025997995
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EV	0	13.0	12.455190232835804
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1F0	0	16.0	13.704277641289206
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FC	0	21.0	11.877195796279995
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FE	0	11.0	-3.844643953044276
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FJ	0	1.0	6.5218374268565835
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A2L8	0	2.0	12.67217220603352
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A8FY	0	3.0	10.56340196194647
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12M	0	12.0	6.60820497935174
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12N	0	4.0	4.007720501678443
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A137	0	12.0	10.229257105126583
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HL	0	8.0	8.103012837181183
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26V	0	11.0	12.123355083550003
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A275	0	6.0	10.085229230277033
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A278	0	13.0	9.435738444400066
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JN	0	2.0	10.775909259463804
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JS	0	2.0	8.189683960154571
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JT	0	5.0	6.090095087292367
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XF	0	12.0	7.403177691014525
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XY	0	7.0	10.119038851601687
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XZ	0	11.0	15.038277311241881
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27L	0	4.0	5.023983019506906
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27T	0	5.0	6.395149114459165
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14Z	0	20.0	10.78239971704886
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A153	0	6.0	7.427703662678088
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A159	0	9.0	13.414231884094914
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15H	0	6.0	8.816318497332531
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15K	0	5.0	13.451897599331065
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15T	0	7.0	6.897118203395474
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IF	0	3.0	-70.88790733688207
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1L8	0	6.0	9.186762779138084
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A570	0	3.0	7.471448301523756
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A576	0	7.0	10.60853963568163
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A9RU	0	21.0	7.8213013456784575
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NC	0	25.0	13.118451798039555
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1ND	0	18.0	13.21926727221296
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NE	0	3.0	18.885694333343842
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R6	0	6.0	7.222542035056081
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RB	0	14.0	14.823065137622208
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RG	0	20.0	11.998482480831848
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A226	0	8.0	8.067152128427072
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22G	0	26.0	14.680808118661288
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A6HE	0	5.0	5.188165329490742
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1J3	0	6.0	7.280760358352191
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1J6	0	16.0	10.641963910025856
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1OV	0	13.0	8.315537849511173
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1OZ	0	19.0	10.209830096573802
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P1	0	0.0	0.12862571151695512
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P8	0	19.0	8.30308749541836
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A2FV	0	9.0	5.920822068242357
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DA	0	7.0	8.399689416769537
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DB	0	13.0	14.637540181313742
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DF	0	18.0	10.737742743259142
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A6FR	0	21.0	7.0608524666191315
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A7T0	0	15.0	8.865155755351283
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A9Q3	0	6.0	10.016232119281836
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5S0	0	23.0	7.629830151390518
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66I	0	21.0	11.653167711448226
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66J	0	4.0	11.477928260567207
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66K	0	3.0	7.211418566849003
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-PE-A5DE	0	7.0	11.349717088890154
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-A6ZF	0	16.0	8.626417758987007
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA0Z	0	15.0	9.871974311609565
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA14	0	7.0	3.077093374849243
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-WT-AB41	0	13.0	4.74880096310987
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-WT-AB44	0	5.0	7.863108802070043
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-XX-A89A	0	5.0	10.560323989620867
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SE	1	8.0	9.100917905304929
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SK	1	13.0	16.66641017202341
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04P	1	28.0	22.57192675288818
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04T	1	30.0	16.19080864545073
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CP	1	3.0	10.870020623487333
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CU	1	8.0	13.959584056151002
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CV	1	2.0	4.832151862722089
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EW	1	3.0	4.255815803205126
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EX	1	5.0	10.306619226465811
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EY	1	21.0	9.879720359766488
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SU	1	8.0	10.397150903271612
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T2	1	7.0	7.862279908174102
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T7	1	8.0	3.468842979118631
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YF	1	6.0	3.6601641726731913
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YG	1	14.0	10.006095174990975
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1FX	1	8.0	8.640198948507521
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1FZ	1	2.0	7.6301945566289024
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1G4	1	4.0	8.146931945425118
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A259	1	3.0	6.78729587571558
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A4S1	1	11.0	17.547021417842593
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A4S3	1	21.0	58.398560175985814
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0DA	1	31.0	20.56657616764606
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0DB	1	3.0	10.607511605195658
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A13E	1	13.0	14.781508742284883
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A6VX	1	26.0	20.729513117370672
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06R	1	30.0	18.74165217139826
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06X	1	26.0	19.581704149660467
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A076	1	7.0	12.839832438506681
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08L	1	28.0	19.320595920701162
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08O	1	10.0	5.761544215650751
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08X	1	16.0	7.3811669712449355
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08Z	1	6.0	9.796371243932278
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A092	1	8.0	8.386812347755225
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A093	1	5.0	6.5521327724103084
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A099	1	4.0	11.623533033041278
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09Z	1	2.0	16.211216935966238
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A7	1	6.0	9.826715598509072
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0AB	1	6.0	8.024731126091975
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0AD	1	3.0	9.939526689055194
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A23E	1	4.0	7.153354581471552
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A23H	1	11.0	19.012699964813855
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A3YI	1	0.0	6.882271063064136
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A4ZE	1	5.0	11.509319122604396
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A5EH	1	10.0	19.48132470109223
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A6IV	1	6.0	8.697758560987529
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A04D	1	20.0	17.150756736948157
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FT	1	25.0	12.604686284433027
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FV	1	15.0	12.115722545307989
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FX	1	19.0	13.850563335316737
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XW	1	10.0	11.315175190229258
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J8	1	3.0	5.363652779570253
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A12A	1	4.0	5.494977874818341
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AQ-A04J	1	19.0	13.385189284121088
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AQ-A1H2	1	8.0	7.323959894293119
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TQ	1	5.0	8.485450424957286
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TV	1	13.0	14.09726111043805
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TW	1	21.0	12.24761467771756
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24U	1	10.0	9.038430566596013
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24V	1	7.0	6.85658337453313
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A251	1	32.0	21.21687156639963
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A5QN	1	7.0	6.639370101641291
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0I2	1	20.0	10.472303290236718
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0I9	1	16.0	11.359756654502974
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IE	1	8.0	11.739911403975103
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RN	1	3.0	11.844981305028737
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RS	1	29.0	21.100670022175812
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RV	1	8.0	6.90038704905651
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WW	1	11.0	7.869123092471858
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WZ	1	3.0	6.07666139325554
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0X0	1	3.0	7.042012019148146
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A1KC	1	7.0	9.186696452061092
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A40C	1	5.0	7.508033467072593
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0B3	1	11.0	14.155181946484127
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0B7	1	10.0	9.609209184077834
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BC	1	7.0	7.6092061630194205
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BJ	1	4.0	5.613253870882984
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BO	1	2.0	6.244069052376256
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BT	1	8.0	8.883773929423207
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DQ	1	11.0	7.529411637441582
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DZ	1	9.0	10.151355914540607
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E0	1	10.0	11.520518483586352
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E2	1	12.0	10.543332914092021
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18J	1	10.0	6.418244818511128
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18T	1	21.0	15.807289723196092
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1ET	1	2.0	10.062210913266947
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FG	1	3.0	7.708573149678971
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FM	1	16.0	9.022924529920196
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A201	1	5.0	-1.543096767220396
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A208	1	13.0	12.147732458920492
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A209	1	12.0	9.05956131293841
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A28Q	1	5.0	10.305293878142486
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A6R9	1	0.0	12.000925696394702
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A8G0	1	1.0	2.8775601435683322
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12W	1	13.0	12.772163644058061
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12Z	1	11.0	10.849766374289928
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A130	1	25.0	9.113253837565166
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A133	1	0.0	10.134284256469913
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HF	1	9.0	11.042439346200961
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HM	1	24.0	13.371286213776648
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26X	1	11.0	15.949252392050116
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26Y	1	19.0	16.539976069212823
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A8HQ	1	8.0	10.442002518646644
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A13Z	1	17.0	16.636248165492685
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A140	1	8.0	10.617576061966016
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A141	1	3.0	8.949871967705283
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JA	1	8.0	14.762994068701715
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JG	1	11.0	12.928648322120498
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JH	1	0.0	4.8737240439178375
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JM	1	17.0	11.176890257387594
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JP	1	19.0	14.339295299436024
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1X7	1	2.0	6.83544220574969
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1X9	1	19.0	15.472149187858241
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XA	1	6.0	6.308942019621354
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XJ	1	18.0	8.578357593283249
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XK	1	26.0	11.438302938896227
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XQ	1	29.0	16.77679232891718
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XV	1	1.0	10.407977760191178
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XW	1	20.0	13.8625664026318
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1Y2	1	5.0	3.7434188037275433
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1Y3	1	17.0	13.500979032861075
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27R	1	15.0	11.337034065179441
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A73U	1	4.0	9.292699272841006
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A73W	1	6.0	10.260160039335787
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A158	1	27.0	19.6395420000831
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15J	1	4.0	9.160573026443638
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15R	1	14.0	6.827756841960039
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1BC	1	6.0	10.371588219172054
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IL	1	5.0	7.487960819658149
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1L6	1	4.0	5.066141331149122
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LA	1	17.0	20.179899910264545
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LH	1	28.0	19.363085825860495
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1N5	1	7.0	8.217677251322174
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1N9	1	23.0	10.823386701725989
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NA	1	18.0	16.906704750273008
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NH	1	6.0	6.09312305654155
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RA	1	2.0	3.725134870532422
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RE	1	16.0	9.957024068254196
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A227	1	2.0	7.463155480630467
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1IW	1	4.0	10.17161306823931
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1IZ	1	2.0	11.895063357822071
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P4	1	23.0	9.278876659868843
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A2FS	1	9.0	6.849178479420051
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DC	1	9.0	7.070608140135459
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DM	1	0.0	5.302922304083396
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A3NW	1	5.0	10.218803645920463
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-HN-A2OB	1	3.0	7.406464613036937
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A5YN	1	11.0	9.487050381024922
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A6FQ	1	3.0	9.580034684971547
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A8F5	1	30.0	19.425150726536877
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5DA	1	7.0	8.371053482155746
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RU	1	1.0	7.800182797149018
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RW	1	23.0	17.19213287538428
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-PE-A5DD	1	5.0	6.481387751046136
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-PL-A8LX	1	5.0	8.511095540315063
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA10	1	22.0	14.291425009130588
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-3C-AALI	2	12.0	16.514495981503696
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SI	2	6.0	13.029114271338477
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SO	2	27.0	20.80312716181303
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04R	2	13.0	14.302366069754198
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04U	2	28.0	17.62088939126116
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04Y	2	9.0	10.301105656921335
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CR	2	0.0	11.58989020575583
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0ES	2	0.0	5.590492147704078
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SW	2	12.0	12.502780875748652
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YC	2	4.0	8.584999555546172
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YE	2	20.0	7.9049864183190035
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1FV	2	11.0	8.733314514645826
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A25A	2	3.0	17.586923803062817
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0D9	2	8.0	6.571635950628053
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A13F	2	5.0	9.890229685219577
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A26E	2	1.0	8.95996957835341
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A5ZV	2	26.0	19.49717380421337
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06Q	2	14.0	12.763892558569431
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A075	2	20.0	15.211591876218876
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A079	2	16.0	15.000573343856438
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07B	2	14.0	10.316575571511544
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07I	2	9.0	10.273026974699665
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07Z	2	6.0	7.029592269347994
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A081	2	10.0	13.996031153491495
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A082	2	5.0	5.836319716386848
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A083	2	4.0	8.969823217272618
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A094	2	7.0	13.437466018715288
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A095	2	2.0	11.013730507426638
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A097	2	17.0	16.210480323080304
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09D	2	10.0	9.384807628929195
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09Q	2	16.0	17.6081228004918
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09T	2	6.0	5.815476708114982
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2B8	2	8.0	8.828697985989166
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2FO	2	10.0	5.825150154302332
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2QH	2	20.0	9.501650330427466
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A5XS	2	7.0	14.519180465863075
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A6IX	2	9.0	10.05328206650086
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A6NO	2	2.0	9.158896357612564
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A8OP	2	16.0	15.520924926860925
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A8OR	2	1.0	8.542537053665601
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A046	2	4.0	25.491431707714778
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AS	2	12.0	9.196386714386449
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XU	2	31.0	15.839382160402154
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XV	2	3.0	11.057528939750993
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03T	2	17.0	19.93004343588762
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J9	2	5.0	8.843793263096819
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JB	2	22.0	14.806432950509322
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JM	2	14.0	15.051545474856226
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A12D	2	12.0	7.883086325532641
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AQ-A04H	2	12.0	12.034975291490793
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TR	2	7.0	9.215908299530815
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TZ	2	9.0	9.99398446900638
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AI	2	18.0	14.376592144009873
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AJ	2	6.0	8.950359281209575
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AN	2	14.0	7.869440907710465
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AQ	2	12.0	12.617376853703556
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AR	2	7.0	13.284383493790912
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AW	2	8.0	14.349241247219084
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24N	2	5.0	9.579704639837306
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24Q	2	30.0	20.45893355329281
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24S	2	9.0	10.326828846934596
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A254	2	8.0	10.44536413456661
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LQ	2	1.0	3.8463154889340556
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A5QM	2	4.0	11.638928947884764
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A5QP	2	5.0	6.964508222341616
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0I5	2	3.0	7.2741610749401815
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IB	2	6.0	12.425044724520879
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RE	2	19.0	19.72165336048985
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RG	2	13.0	13.328056017391607
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RH	2	11.0	9.218385844161261
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RI	2	6.0	8.553348366276651
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RL	2	9.0	9.298604478445435
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0X4	2	0.0	4.664758876987795
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A2IU	2	5.0	8.101600129413354
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AV	2	23.0	15.842017813850628
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AZ	2	16.0	15.950664394590955
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0B9	2	13.0	10.302367935927203
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BA	2	10.0	8.709948848461426
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BM	2	4.0	9.797844765767788
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DG	2	8.0	12.553225636127904
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DI	2	11.0	11.154561974056628
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0H0	2	7.0	10.902474811457575
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HA	2	2.0	15.942492614015533
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HQ	2	2.0	7.079196836708146
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18F	2	4.0	8.99105749728742
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18G	2	1.0	20.178722524166872
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18K	2	12.0	14.214656382624902
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18P	2	3.0	13.233299736979287
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EU	2	5.0	3.943760267106245
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EW	2	12.0	2.8728187857850607
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EY	2	12.0	9.088767573476702
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1F2	2	16.0	10.225391875237
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A202	2	8.0	8.360588979872825
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A5IZ	2	19.0	12.03471775866475
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A6R8	2	4.0	11.74566983953694
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A132	2	15.0	11.713778880717545
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26Z	2	13.0	10.033492852726521
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A27A	2	13.0	8.898157706590952
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A145	2	1.0	10.8276905932183
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1J8	2	4.0	17.730729024065024
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1J9	2	13.0	11.788972336738034
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JL	2	24.0	17.35954195252541
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XB	2	4.0	8.20066824327138
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XG	2	1.0	7.322443094482789
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XL	2	17.0	18.655132277116046
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XM	2	6.0	8.11061078937228
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XO	2	4.0	4.167961290138152
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XR	2	4.0	6.3969919556437
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XT	2	16.0	9.644820995495895
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27M	2	17.0	12.231187924945784
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27N	2	11.0	11.273578145792056
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14Y	2	8.0	8.469655769012835
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15C	2	3.0	8.250970545565483
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15D	2	3.0	10.189975757782149
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15E	2	18.0	8.391785640809934
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15G	2	2.0	10.694622952829976
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15M	2	15.0	15.750592044880898
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1B4	2	2.0	10.70001338581682
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IE	2	13.0	9.243361671905356
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IJ	2	4.0	7.74924505159888
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IK	2	0.0	6.674408334193657
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IU	2	3.0	7.307697986112691
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1L9	2	3.0	8.357565902377987
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NG	2	6.0	8.23151904281979
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R3	2	5.0	7.03769605034432
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RC	2	7.0	11.049134724892966
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A228	2	8.0	9.586009953673063
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22B	2	7.0	11.73336352069106
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22D	2	17.0	7.251976789033785
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22E	2	23.0	18.1852562743492
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A24A	2	4.0	6.22319936718531
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1IY	2	0.0	4.777197477343944
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1OX	2	3.0	3.2845693242825797
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P0	2	8.0	8.832395573083614
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P3	2	4.0	6.2079216742640275
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PB	2	25.0	18.72634567239963
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A6SD	2	17.0	9.165646133955393
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LD-A74U	2	3.0	10.443024498680442
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LD-A7W5	2	17.0	8.88681686156
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LD-A7W6	2	6.0	10.48156159055959
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A5YL	2	5.0	8.809156748232644
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A73Y	2	15.0	12.29692490745963
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5D8	2	6.0	8.529641524254934
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RV	2	1.0	8.457515844341877
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RY	2	0.0	4.184981471362173
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RZ	2	13.0	14.169557802152822
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66L	2	6.0	7.2730894723004305
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66O	2	4.0	8.538498913767395
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-A6ZG	2	9.0	8.620364422790338
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA12	2	7.0	9.020868103716307
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA17	2	23.0	16.77460591549847
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-UU-A93S	2	21.0	18.5929278277062
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-W8-A86G	2	6.0	7.662183251068452
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-Z7-A8R6	2	9.0	7.279094834274077
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-5T-A9QA	3	7.0	6.964243418083004
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SD	3	9.0	7.54373061502563
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SG	3	4.0	7.6676213930644685
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04Q	3	7.0	12.825442469325237
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CS	3	2.0	8.585116547479805
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EM	3	4.0	6.504051489508816
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EN	3	4.0	8.314364292755503
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SV	3	14.0	8.12386273528549
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SY	3	5.0	10.069824952511754
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T1	3	12.0	8.564441778422838
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T4	3	7.0	13.16890051634537
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A26I	3	19.0	17.301801592509378
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A6VW	3	16.0	14.444558985245648
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06Y	3	2.0	11.117571158271579
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06Z	3	13.0	16.43950453827795
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07L	3	24.0	16.19212634607681
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07U	3	16.0	11.645503663911837
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07W	3	12.0	17.005236728841062
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08G	3	11.0	10.922423394513878
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A096	3	2.0	7.492944595411804
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09A	3	26.0	17.326490119700996
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09B	3	6.0	9.738089163854408
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09G	3	3.0	10.70224861176818
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09M	3	18.0	14.462111550146972
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09N	3	10.0	9.95615143135415
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09X	3	12.0	10.772508124677382
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A6	3	7.0	9.800644072659013
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2FG	3	5.0	7.222571098494196
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A3QQ	3	6.0	11.263000548238168
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A5XU	3	10.0	9.390632093892032
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A6IW	3	15.0	14.591002599515953
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A7VB	3	8.0	5.420638160842603
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A041	3	10.0	11.153254337357833
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A04C	3	16.0	13.614941581719636
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AR	3	25.0	19.519458210492374
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FN	3	1.0	9.841798118939659
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XS	3	4.0	9.392336406230104
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03L	3	13.0	10.094557103554266
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03O	3	23.0	15.441139617770794
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03P	3	12.0	11.628773461217067
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A03V	3	22.0	9.558968665100453
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J4	3	20.0	15.13053940848564
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J6	3	22.0	19.871989326310384
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JA	3	10.0	4.049491474882197
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A124	3	36.0	19.22263621337732
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A1KR	3	15.0	14.245359121774253
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AQ-A1H3	3	4.0	7.527551346644596
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TS	3	18.0	16.172993582484224
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TT	3	14.0	11.323641385067592
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0TY	3	11.0	11.123754180027627
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AU	3	9.0	15.475008412704016
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AY	3	10.0	11.314032367189935
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24L	3	17.0	12.000384652669926
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24O	3	2.0	6.378934420396236
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24X	3	3.0	5.968221430832154
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A252	3	2.0	1.6542713668031208
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LK	3	5.0	9.634785003715558
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A2LO	3	7.0	11.439982698922552
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IJ	3	29.0	18.44458267748577
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IN	3	11.0	5.993865675618374
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0RP	3	3.0	7.564295278783797
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AW	3	20.0	11.058075724345809
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AY	3	10.0	12.041660676273377
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BL	3	20.0	15.971410215600343
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0BZ	3	9.0	20.866563853750357
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DH	3	8.0	9.203069191447032
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DL	3	9.0	11.002794532794935
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DO	3	3.0	7.139975791951587
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DS	3	5.0	8.956325870516476
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E7	3	2.0	10.612040283410686
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0EA	3	3.0	8.359061956794857
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HU	3	11.0	9.071541870140802
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HX	3	16.0	12.918201992546557
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HY	3	19.0	11.24128292448327
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18I	3	5.0	4.075655067892177
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18M	3	4.0	11.614778253292982
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18N	3	2.0	8.212221449675141
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18S	3	4.0	15.35751964911637
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18U	3	27.0	9.766451523574224
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FN	3	25.0	12.948079761998631
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FU	3	6.0	13.494456418600596
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A203	3	17.0	13.25007627485822
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A204	3	9.0	10.373694167573607
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A42V	3	3.0	4.80889985746671
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A8FZ	3	14.0	16.157787998571003
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12Y	3	7.0	8.830530468193402
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A135	3	11.0	9.859010014590615
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HE	3	5.0	6.0297858765126815
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A26W	3	13.0	9.352655931986188
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A27B	3	28.0	14.459686797812651
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A143	3	17.0	13.78274420608472
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JC	3	14.0	10.024884008268222
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JJ	3	10.0	9.67589388468942
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JU	3	4.0	5.368079875851365
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1X5	3	19.0	8.978394439382862
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1Y0	3	18.0	17.781759088284815
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27E	3	0.0	10.789720268364794
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27F	3	25.0	16.640337370922868
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27H	3	25.0	19.280211093595774
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27P	3	2.0	9.995962859420574
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27W	3	10.0	8.453741493462353
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A73X	3	3.0	8.671150312507905
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A150	3	20.0	10.816436069547962
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A152	3	8.0	9.08590517279866
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A154	3	6.0	10.929536742169478
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15I	3	4.0	6.883824640270955
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15O	3	7.0	8.90134569790297
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15P	3	6.0	12.405979822163484
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1AZ	3	15.0	10.305833640099234
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1B5	3	7.0	5.981858619143997
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1BD	3	4.0	8.020368355920866
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IG	3	6.0	9.448591149928918
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IO	3	13.0	4.992149201979143
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LG	3	10.0	10.324370611785104
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LL	3	16.0	12.492936026676135
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A573	3	17.0	11.507162228561668
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1N8	3	11.0	9.851809128360602
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1NI	3	8.0	7.6824080445403276
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R0	3	4.0	6.374651722197964
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R5	3	6.0	10.324721094779552
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1R7	3	15.0	11.599810328483866
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RD	3	2.0	10.974455751166357
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RF	3	18.0	21.221112679584962
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22H	3	4.0	7.961643192906235
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A243	3	17.0	12.15645997711084
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A244	3	30.0	15.543184824211218
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A295	3	9.0	12.56737136669742
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A2JS	3	26.0	10.94570424552552
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1J1	3	7.0	14.328148590780495
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1OY	3	17.0	12.460402782861202
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PA	3	9.0	11.208468117941182
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PG	3	0.0	1.3703859510400012
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PH	3	16.0	6.719352572466648
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A6SC	3	7.0	7.14118413045241
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DL	3	6.0	8.087193369325709
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DN	3	3.0	9.164329002555098
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A5PX	3	4.0	7.040678495957813
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-HN-A2NL	3	27.0	15.107182151398057
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LD-A66U	3	5.0	8.92601246666371
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A50Y	3	4.0	8.422983536869626
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A5YP	3	29.0	14.993577193843226
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A73Z	3	12.0	10.090716382814579
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OK-A5Q2	3	5.0	8.156752635661409
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5D7	3	16.0	12.928106268415732
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5RX	3	3.0	7.29065523551306
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66H	3	0.0	10.498249245108655
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66N	3	3.0	8.901053759044101
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A66P	3	8.0	11.246313272739764
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A6VO	3	19.0	7.618975847579257
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A6VQ	3	4.0	7.287846671570619
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A6VR	3	5.0	2.804211649967563
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A97C	3	2.0	11.895964478332097
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-PL-A8LY	3	0.0	-2.1131601307202175
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-A6ZH	3	8.0	9.8623450724002
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-3C-AALJ	4	14.0	8.808340077160063
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SB	4	0.0	5.681332104121621
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A1-A0SQ	4	5.0	8.348461361680613
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04N	4	4.0	8.585875605973412
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04V	4	5.0	9.851709577230539
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A04W	4	8.0	10.020346795601952
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0CT	4	12.0	10.826058533249379
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0D0	4	24.0	15.69357399234261
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0D3	4	3.0	7.786711280273423
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0D4	4	15.0	10.428222532905728
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0EV	4	11.0	11.389625522041566
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0SX	4	14.0	8.044674843886233
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0T3	4	21.0	9.26761020735696
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YD	4	4.0	7.504143029809476
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YH	4	10.0	10.742707954579933
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A0YK	4	3.0	12.20962758846853
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A1G0	4	6.0	7.64373444047731
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A2-A3XU	4	4.0	9.546995138673937
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0CG	4	3.0	8.836497324034768
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A0CJ	4	27.0	10.343206286318061
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A13D	4	24.0	20.302593758686346
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A26H	4	7.0	11.952393226258103
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A4SE	4	26.0	5.626036968096871
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A56D	4	10.0	11.229075244036737
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A5ZX	4	1.0	8.016702271120813
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A7-A6VY	4	19.0	13.84879532781004
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A06P	4	3.0	9.04837320652339
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A07P	4	9.0	9.419560520657505
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08B	4	12.0	10.243859981014612
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08H	4	0.0	6.255907921492825
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A08T	4	6.0	8.30322299480415
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A091	4	7.0	6.619660474876682
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A09W	4	18.0	17.553260749795758
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A1	4	5.0	9.384123180907498
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A2	4	7.0	7.615333253364329
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-A8-A0A4	4	7.0	7.428970685014408
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A23C	4	11.0	11.457872293600554
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A2FB	4	2.0	5.184345358204036
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A7VC	4	3.0	7.030936763032939
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A8OQ	4	25.0	11.823844921830844
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AC-A8OS	4	3.0	8.825530775709883
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AL	4	20.0	15.085846632760632
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0AM	4	21.0	12.653569649503986
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FJ	4	11.0	12.309890947623522
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FK	4	4.0	9.51497222937158
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0FZ	4	13.0	10.826168339115695
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XO	4	8.0	10.210295548904545
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AN-A0XP	4	3.0	8.168961371961364
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0J2	4	31.0	15.825174139682446
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JE	4	13.0	7.4535618186134975
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JF	4	2.0	7.1420321113967
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JG	4	5.0	6.847539143323388
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A0JI	4	5.0	8.887559083293656
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A12H	4	0.0	8.119749636504203
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AO-A1KP	4	7.0	8.83539422306347
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A0U0	4	12.0	9.30718931593044
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AH	4	10.0	15.913950708459291
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AK	4	11.0	8.41361474324323
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A1AP	4	8.0	7.200255568401008
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A24R	4	5.0	8.57008738693889
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A250	4	16.0	12.103028940049644
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-AR-A5QQ	4	5.0	11.989093331379314
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IC	4	3.0	8.651011529691969
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0IH	4	7.0	8.66753786241016
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0WT	4	12.0	5.163550639154696
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A0X5	4	1.0	6.742958479953592
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A1KF	4	12.0	11.905751319731582
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-B6-A409	4	22.0	10.637243580713799
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0AU	4	11.0	7.481526433855982
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0C3	4	5.0	5.078439614211334
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DK	4	5.0	12.902687522386769
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DV	4	3.0	5.626036968096871
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0DX	4	9.0	8.879140556312043
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0E9	4	3.0	7.18922978414591
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0EB	4	4.0	10.980725960112705
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0GY	4	9.0	11.884107430204121
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0H6	4	5.0	6.598625737456207
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0H7	4	20.0	9.42945982711969
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HO	4	2.0	6.88490521169258
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0HW	4	9.0	8.856090329619413
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A0WA	4	23.0	14.193033221690268
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18L	4	16.0	10.572756094012233
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A18R	4	9.0	8.651259221619519
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1EX	4	1.0	6.190894454329642
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-A1FL	4	3.0	6.169941256629798
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-BH-AB28	4	4.0	7.455248701694227
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12L	4	30.0	15.903747537242358
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12O	4	13.0	9.623171947873608
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12P	4	20.0	11.9613484786503
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12Q	4	14.0	9.511358497994333
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A12U	4	16.0	12.421163959164046
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A131	4	8.0	11.208736827163829
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A138	4	13.0	9.660690109826511
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HG	4	16.0	10.269013243380478
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HJ	4	24.0	21.85689010028446
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A1HK	4	9.0	10.082000452478393
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A273	4	6.0	7.209154911815586
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A8HP	4	10.0	10.710555245982544
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-C8-A8HR	4	12.0	10.822443583059504
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A13Y	4	20.0	13.478422979533097
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A147	4	22.0	14.305991340043267
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JB	4	13.0	12.282570212463488
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JD	4	20.0	14.913929690371681
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JF	4	11.0	9.766065649947528
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JI	4	5.0	8.68731859400831
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1JK	4	24.0	14.052830467482401
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1X8	4	5.0	8.54135076714997
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1XC	4	3.0	8.094696535359926
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A1Y1	4	5.0	12.615886441697546
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27K	4	3.0	7.645346583077871
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A27V	4	7.0	9.943083363167096
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A3Z6	4	5.0	8.278286977116236
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-D8-A4Z1	4	2.0	6.635940505127804
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A10A	4	8.0	6.469892427219359
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A10C	4	9.0	11.952037463235946
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14O	4	6.0	9.498891980146452
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14Q	4	8.0	8.680597936201636
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14R	4	34.0	19.690238982507367
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14T	4	12.0	8.56431950626162
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A14X	4	5.0	6.744060917142551
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A155	4	11.0	9.072976619426168
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A156	4	3.0	11.219941349295151
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A15A	4	23.0	10.545576627026612
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1B0	4	17.0	9.196408134729658
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1IH	4	13.0	10.152076273690762
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A1LK	4	9.0	7.708339938236937
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E2-A56Z	4	13.0	6.358456824644219
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1N3	4	0.0	10.143434752316427
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A1RH	4	18.0	12.956737994801014
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A229	4	7.0	7.994383459209104
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A22A	4	12.0	8.327251574252216
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A245	4	1.0	6.53104790286141
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A247	4	18.0	10.550215204841004
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A248	4	9.0	6.739093471606511
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A2JT	4	0.0	3.3811646664457164
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A3X8	4	3.0	12.443590913359174
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A5FL	4	21.0	16.008222825931945
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-E9-A5UO	4	7.0	7.739414748104732
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P5	4	8.0	6.512045544074406
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P6	4	2.0	5.336104210775863
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1P7	4	4.0	7.78984861361544
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A1PE	4	4.0	8.190724976903699
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-EW-A6SB	4	15.0	10.511287800076287
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DD	4	15.0	11.343846624831533
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DH	4	21.0	16.16554429531085
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-GM-A2DK	4	8.0	8.01227249758941
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A5YM	4	13.0	7.6557475674860305
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-LL-A7SZ	4	25.0	10.416890697211157
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-OL-A5D6	4	6.0	9.343723105175142
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-PL-A8LV	4	22.0	19.370459600253337
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-PL-A8LZ	4	24.0	11.252728069540488
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-S3-AA11	4	1.0	11.855820854623072
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-V7-A7HQ	4	3.0	9.655068076659202
+main	all	HRD_TAI	regression	Baseline+Universal-BiCGR d=10	TCGA-XX-A899	4	4.0	8.928577262065486

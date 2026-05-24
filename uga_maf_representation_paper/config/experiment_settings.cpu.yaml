@@ -1,0 +1,40 @@
+runtime_profile: cpu
+tree_method: hist
+xgb_n_jobs: 4
+
+experiments:
+  unified_locked:
+    enabled: true
+    scripts:
+      - run_locked_hrd_cross_validation.py
+      - run_locked_kucab_low_burden_benchmark.py
+      - run_locked_mc3_luad_kmt2c_validation.py
+      - run_locked_mc3_clinical_endpoints.py
+      - run_locked_pcawg_signature_attribution.py
+      - run_locked_tcga_signature_endpoint_prediction.py
+  uga_variants_kme:
+    enabled: true
+    run_linear_kme: true
+    run_xgboost_sensitivity: true
+    run_tuned_kme: true
+    run_standard_plus_tuned_kme_subset: true
+    run_signal_recovery_linear: true
+  maf_event_gene_locus:
+    enabled: true
+    discovery_folds: 3
+    discovery_estimators: 80
+    confirmation_folds: 5
+    confirmation_repeats: 3
+    confirmation_estimators: 160
+    bootstrap: 1000
+    max_candidates: 0
+    model_id: id_plus_best_gene_locus_multiscale_stack
+  mechanistic_representation:
+    enabled: true
+    run_exp024: true
+    run_exp025: true
+
+outputs:
+  normalize_tables: true
+  make_figures_after_run: true
+  cleanup_work_dir_after_run: true

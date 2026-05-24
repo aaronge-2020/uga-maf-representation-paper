@@ -1,0 +1,95 @@
+bundle: uga_maf_representation_paper
+created_for: UGA/MAF representation manuscript
+notes:
+  - Raw patient-scale data are external and configured through config/paths.yaml.
+  - Current result artifacts are not vendored. Runners regenerate outputs under results/.
+  - The MAF event-gene/locus stack is exploratory, not a locked primary validation.
+
+experiments:
+  - id: unified_locked
+    tier: locked_primary_benchmark
+    description: Standard SBS96/ID83 versus locked UGA mean projection across HRD, Kucab low-burden, PCAWG signature attribution, MC3 LUAD KMT2C, MC3 clinical, and TCGA signature endpoints.
+    source_path: src/legacy_source/cgr_validation/cgr_validation_results/research/experiments/supporting/2026_05_14_unified_uga_locked_manuscript_benchmark
+    entrypoints:
+      - code/run_locked_hrd_cross_validation.py
+      - code/run_locked_kucab_low_burden_benchmark.py
+      - code/run_locked_mc3_luad_kmt2c_validation.py
+      - code/run_locked_mc3_clinical_endpoints.py
+      - code/run_locked_pcawg_signature_attribution.py
+      - code/run_locked_tcga_signature_endpoint_prediction.py
+    data_dependencies:
+      - config.paths.raw_data.mc3_source_dir
+      - config.paths.raw_data.hrd_assets_dir
+      - config.paths.raw_data.kucab_raw_dir
+      - config.paths.raw_data.pcawg_dir
+      - src/legacy_source/cgr_validation/data/Signatures
+      - src/legacy_source/cgr_validation/cgr_validation_results/research/data/EXP022_atlas_genome_wide_45mer_universal_d22.json
+    output_tables:
+      - results/tables/unified_locked_endpoint_results.csv
+      - results/tables/unified_locked_summary.csv
+      - results/tables/unified_locked_*.csv
+    output_figures:
+      - results/figures/unified_locked_*.png
+      - results/figures/unified_locked_*.svg
+    notes: Locked primary comparison of Standard channels and pooled/separate UGA projections. No archived OOF or metric outputs are copied.
+
+  - id: uga_variants_kme
+    tier: supporting_sensitivity
+    description: Original UGA mean, untuned RBF KME, HRD33-tuned KME for linear and XGBoost learners, Standard+KME subset, and supporting linear UGA variant screen.
+    source_path: src/legacy_source/cgr_validation/cgr_validation_results/research/experiments/exploratory/2026_05_17_uga_kernel_mean_linear_benchmark
+    entrypoints:
+      - code/run_uga_kernel_mean_linear_benchmark.py
+      - code/run_uga_kernel_mean_xgboost_sensitivity.py
+      - code/run_hrd33_kme_grid_tuned_panel.py
+      - code/run_standard_plus_tuned_kme_subset.py
+      - ../supporting/2026_05_15_fast_defensible_uga_signal_recovery/code/run_third_pass_linear_learner_screen.py
+    data_dependencies:
+      - config.paths.raw_data.mc3_source_dir
+      - config.paths.raw_data.hrd_assets_dir
+      - config.paths.raw_data.kucab_raw_dir
+      - src/legacy_source/cgr_validation/cgr_validation_results/research/data/EXP022_atlas_genome_wide_45mer_universal_d22.json
+    output_tables:
+      - results/tables/uga_kme_endpoint_results.csv
+      - results/tables/uga_kme_summary.csv
+      - results/tables/uga_kme_*.csv
+    output_figures:
+      - results/figures/manuscript_representation_learner_heatmap.png
+    notes: Sensitivity and tuning evidence. HRD33 tuning is frozen before full-panel scoring.
+
+  - id: maf_event_gene_locus
+    tier: exploratory_lead
+    description: MC3 MAF event, gene, pathway, VAF, and locus-topography stacks compared with Standard SBS96+ID83 across the 16-endpoint panel.
+    source_path: src/legacy_source/cgr_validation/cgr_validation_results/research/experiments/exploratory/2026_05_16_xgboost_maf_event_gene_coordinate_search
+    entrypoints:
+      - code/run_xgboost_maf_event_gene_coordinate_search.py
+      - code/run_full_panel_confirmation.py
+      - src/utils/maf_features.py
+    data_dependencies:
+      - config.paths.raw_data.mc3_source_dir
+      - config.paths.raw_data.hrd_assets_dir
+      - config.paths.raw_data.mc3_source_dir/raw/mc3.v0.2.8.PUBLIC.maf.gz
+    output_tables:
+      - results/tables/maf_event_gene_locus_endpoint_results.csv
+      - results/tables/maf_event_gene_locus_summary.csv
+      - results/tables/maf_event_gene_locus_*.csv
+    output_figures:
+      - results/figures/manuscript_auroc_spearman_delta_bars.png
+    notes: KMT2C rows are excluded before event-gene and locus feature construction for the LUAD KMT2C endpoint.
+
+  - id: mechanistic_representation
+    tier: mechanism_control
+    description: EXP024 shared coordinate-space mechanics and EXP025 payload absence encoding benchmark.
+    source_path: src/legacy_source/cgr_validation/cgr_validation_results/research/scripts/EXP024_shared_space and src/legacy_source/cgr_validation/bench
+    entrypoints:
+      - cgr_validation_results/research/scripts/EXP024_shared_space/run_shared_space_benchmark.py
+      - bench/run_payload_absence_benchmark.py
+    data_dependencies:
+      - src/legacy_source/cgr_validation/data/Signatures
+      - src/legacy_source/cgr_validation/uga_atlas
+    output_tables:
+      - results/tables/mechanistic_representation_endpoint_results.csv
+      - results/tables/mechanistic_representation_summary.csv
+      - results/tables/mechanistic_representation_*.csv
+    output_figures:
+      - results/figures/manuscript_mechanistic_summary.png
+    notes: Simulated mechanism experiments that require no patient raw data.

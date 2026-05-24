@@ -1,0 +1,9 @@
+damage_class,n_samples,n_agents,median_total_events,median_sbs_events,median_dbs_events,median_id_events
+Alkylating and aldehyde adduct stress,63,18,384.0,365.0,0.0,16.0
+Aromatic and heterocyclic amines,47,11,293.0,280.0,0.0,16.0
+Environmental organ-specific DNA adducts,29,9,375.0,347.0,1.0,19.0
+Nitroaromatic and nitro-PAH adducts,36,7,592.5,564.0,1.0,24.0
+Oxidative and radiation-like stress,19,7,367.0,345.0,1.0,21.0
+PAH bulky adducts,41,9,765.0,717.0,3.0,31.0
+Platinum and crosslinking therapy,12,3,441.0,410.5,7.5,19.5
+Replication stress and DNA repair inhibition,12,6,256.5,242.0,0.0,14.5

@@ -1,0 +1,3 @@
+Organism Scientific Name	Organism Common Name	Organism Qualifier	Taxonomy id	Assembly Name	Assembly Accession	Source	Annotation	Level	Contig N50	Size	Submission Date	Gene Count	BioProject	BioSample
+Homo sapiens	human		9606	GRCh37	GCA_000001405.1	GenBank		Chromosome	38508932	3101788170	2009-02-27		PRJNA31257	
+Homo sapiens	human		9606	GRCh37	GCF_000001405.13	RefSeq	Annotation submitted by NCBI RefSeq	Chromosome	38508932	3101788170	2009-02-27	33922	PRJNA31257	
