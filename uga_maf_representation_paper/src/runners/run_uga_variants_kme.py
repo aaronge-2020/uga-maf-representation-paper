@@ -2,10 +2,13 @@
 
 from __future__ import annotations
 
+from datetime import datetime, timezone
 from pathlib import Path
 
 import pandas as pd
 
+from utils.checkpointing import atomic_write_json
+from utils.feature_cache import stable_json_hash
 from utils.runner_support import (
     RunnerContext,
     add_source_file_column,
@@ -62,13 +65,59 @@ def _script_plan(settings: dict) -> list[tuple[Path, str, list[str]]]:
     return scripts
 
 
+def _checkpoint_signature(settings: dict, scripts: list[tuple[Path, str, list[str]]]) -> str:
+    return stable_json_hash(
+        {
+            "experiment_id": EXPERIMENT_ID,
+            "settings": settings,
+            "scripts": [{"root": str(root), "script": script, "args": args} for root, script, args in scripts],
+        },
+        length=24,
+    )
+
+
+def _checkpoint_ready(ctx: RunnerContext, signature: str) -> bool:
+    required = [
+        ctx.tables_dir / f"{EXPERIMENT_ID}_endpoint_results.csv",
+        ctx.tables_dir / f"{EXPERIMENT_ID}_summary.csv",
+    ]
+    if ctx.refresh_cache or not all(path.exists() and path.stat().st_size > 0 for path in required):
+        return False
+    manifest_path = ctx.logs_dir / f"{EXPERIMENT_ID}_checkpoint_manifest.json"
+    if manifest_path.exists():
+        try:
+            manifest = pd.read_json(manifest_path, typ="series").to_dict()
+            return str(manifest.get("checkpoint_signature")) == signature
+        except Exception:
+            return False
+    # Adopt the existing copied legacy outputs as a checkpoint. This keeps the
+    # single-command workflow fast after a successful legacy run.
+    atomic_write_json(
+        manifest_path,
+        {
+            "checkpoint_signature": signature,
+            "created_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+            "status": "adopted_existing_outputs",
+            "outputs": [str(path) for path in required],
+        },
+    )
+    return True
+
+
 def run(ctx: RunnerContext) -> None:
     workspace = prepare_legacy_workspace(ctx, require_inputs=not ctx.dry_run)
     settings = (ctx.settings.get("experiments") or {}).get("uga_variants_kme") or {}
     log_path = ctx.logs_dir / f"{EXPERIMENT_ID}.log"
     summary_rows: list[dict] = []
+    scripts = _script_plan(settings)
+    signature = _checkpoint_signature(settings, scripts)
 
-    for rel_root, script_name, args in _script_plan(settings):
+    if not ctx.dry_run and _checkpoint_ready(ctx, signature):
+        summary_rows.append({"kind": "checkpoint", "name": EXPERIMENT_ID, "status": "reused", "checkpoint_signature": signature})
+        write_summary_csv(summary_rows, ctx.tables_dir / f"{EXPERIMENT_ID}_checkpoint_summary.csv")
+        return
+
+    for rel_root, script_name, args in scripts:
         exp_root = workspace / rel_root
         summary_rows.append(restore_legacy_feature_snapshot(ctx, f"{EXPERIMENT_ID}_{rel_root.name}", exp_root))
         script = exp_root / "code" / script_name
@@ -117,3 +166,12 @@ def run(ctx: RunnerContext) -> None:
 
     write_endpoint_results(frames, ctx.tables_dir / f"{EXPERIMENT_ID}_endpoint_results.csv")
     write_summary_csv(summary_rows, ctx.tables_dir / f"{EXPERIMENT_ID}_summary.csv")
+    atomic_write_json(
+        ctx.logs_dir / f"{EXPERIMENT_ID}_checkpoint_manifest.json",
+        {
+            "checkpoint_signature": signature,
+            "created_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+            "status": "completed",
+            "scripts": [{"root": str(root), "script": script, "args": args} for root, script, args in scripts],
+        },
+    )

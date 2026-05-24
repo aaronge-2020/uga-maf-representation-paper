@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import hashlib
+import gzip
 import json
 import math
 import re
+import shutil
 import time
 from collections import Counter, defaultdict
 from dataclasses import dataclass
@@ -35,6 +37,7 @@ from utils.runner_support import RunnerContext, sanitize_text, write_summary_csv
 EXPERIMENT_ID = "one_hot_event_kme_scout"
 RANDOM_SEED = 20260518
 N_SPLITS = 5
+OPTUNA_STUDY_SCHEMA = "kme_v2_no_queued_trials_v1"
 BASES = "ACGT"
 BASE_TO_INDEX = {base: i for i, base in enumerate(BASES)}
 COMP = str.maketrans("ACGTN-", "TGCAN-")
@@ -96,6 +99,7 @@ class EventInventory:
     standard_counts: pd.DataFrame
     covariates: pd.DataFrame
     qc: dict[str, object]
+    event_modalities: np.ndarray | None = None
 
 
 class FastaReader:
@@ -246,7 +250,7 @@ def canonicalize_for_context(left: str, right: str, ref: str, alt: str, modality
 
 
 def one_hot_sequence(seq: str, width: int) -> np.ndarray:
-    out = np.zeros((int(width), 4), dtype=np.float32)
+    out = np.zeros((int(width), 4), dtype=np.uint8)
     seq = str(seq or "").upper()[: int(width)]
     for i, base in enumerate(seq):
         j = BASE_TO_INDEX.get(base)
@@ -257,7 +261,7 @@ def one_hot_sequence(seq: str, width: int) -> np.ndarray:
 
 def one_hot_payload(seq: str, width: int) -> np.ndarray:
     width = int(width)
-    out = np.zeros((width, 5), dtype=np.float32)
+    out = np.zeros((width, 5), dtype=np.uint8)
     seq = clean_allele(seq)[:width]
     for i, base in enumerate(seq):
         j = BASE_TO_INDEX.get(base)
@@ -274,7 +278,7 @@ def encode_one_hot_event(left: str, right: str, ref: str, alt: str, d_context: i
             one_hot_sequence(right[:d_context], d_context),
             one_hot_payload(ref, d_payload),
             one_hot_payload(alt, d_payload),
-            np.array([float(len(clean_allele(ref)) > d_payload), float(len(clean_allele(alt)) > d_payload)], dtype=np.float32),
+            np.array([int(len(clean_allele(ref)) > d_payload), int(len(clean_allele(alt)) > d_payload)], dtype=np.uint8),
         ]
     )
 
@@ -317,13 +321,33 @@ def find_fasta(grch37_dir: Path) -> Path:
         fasta = grch37_dir
     else:
         fasta = grch37_dir / "GCF_000001405.13" / "GCF_000001405.13_GRCh37_genomic.fna"
+    if not fasta.exists() and fasta.with_suffix(f"{fasta.suffix}.gz").exists():
+        decompress_fasta_gzip(fasta.with_suffix(f"{fasta.suffix}.gz"), fasta)
     if not fasta.exists():
         matches = sorted(grch37_dir.rglob("*.fna")) + sorted(grch37_dir.rglob("*.fa")) + sorted(grch37_dir.rglob("*.fasta"))
         if matches:
             fasta = matches[0]
+    if not fasta.exists():
+        gz_matches = sorted(grch37_dir.rglob("*.fna.gz")) + sorted(grch37_dir.rglob("*.fa.gz")) + sorted(grch37_dir.rglob("*.fasta.gz"))
+        if gz_matches:
+            fasta = gz_matches[0].with_suffix("")
+            decompress_fasta_gzip(gz_matches[0], fasta)
     if not fasta.exists() or not (fasta.parent / f"{fasta.name}.fai").exists():
         raise FileNotFoundError(f"Could not find indexed GRCh37 FASTA under {grch37_dir}")
     return fasta
+
+
+def decompress_fasta_gzip(gzip_path: Path, fasta_path: Path) -> None:
+    """Create the uncompressed FASTA beside a curated .gz bundle copy."""
+    gzip_path = Path(gzip_path)
+    fasta_path = Path(fasta_path)
+    if fasta_path.exists():
+        return
+    fasta_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = fasta_path.with_name(f".{fasta_path.name}.tmp")
+    with gzip.open(gzip_path, "rb") as src, tmp_path.open("wb") as dst:
+        shutil.copyfileobj(src, dst, length=1024 * 1024)
+    tmp_path.replace(fasta_path)
 
 
 def display_fasta_path(fasta_path: Path, grch37_dir: Path) -> str:
@@ -423,9 +447,9 @@ def _inventory_cache_inputs(ctx: RunnerContext, *, fasta_path: Path, sample_ids:
         "fasta": fasta_fingerprint(fasta_path),
         "inputs": {Path(path).name: file_fingerprint(path) for path in extra_paths},
         "cache_schema": {
-            "inventory_schema_version": 2,
+            "inventory_schema_version": 3,
             "context_fetch": "single_window_indexed_fasta",
-            "event_vector_encoding": "one_hot_context_payload_v1",
+            "event_vector_encoding": "one_hot_context_payload_with_modality_manifest_v2",
         },
     }
 
@@ -450,6 +474,12 @@ def _save_inventory(ctx: RunnerContext, key: str, inventory: EventInventory, *, 
         event_vectors=inventory.event_vectors,
         event_patients=np.asarray(inventory.event_patients, dtype=object),
         patient_ids=np.asarray(inventory.patient_ids, dtype=object),
+        event_modalities=np.asarray(
+            inventory.event_modalities
+            if inventory.event_modalities is not None
+            else np.full(len(inventory.event_patients), "UNK", dtype=object),
+            dtype=object,
+        ),
     )
     atomic_write_csv(inventory.standard_counts, entry.path("standard_counts.csv.gz"), index=True)
     atomic_write_csv(inventory.covariates, entry.path("covariates.csv.gz"), index=True)
@@ -475,14 +505,16 @@ def _load_inventory(ctx: RunnerContext, key: str, name: str) -> EventInventory |
     qc_path = entry.path("qc.json")
     qc = json.loads(qc_path.read_text(encoding="utf-8")) if qc_path.exists() else {}
     qc["cache_status"] = "hit"
+    event_modalities = arrays["event_modalities"] if "event_modalities" in arrays else np.full(len(arrays["event_patients"]), "UNK", dtype=object)
     return EventInventory(
         name,
-        np.asarray(arrays["event_vectors"], dtype=np.float32),
+        np.asarray(arrays["event_vectors"]),
         np.asarray(arrays["event_patients"], dtype=object),
         [str(value) for value in arrays["patient_ids"].tolist()],
         counts.astype(np.float32),
         covariates.astype(np.float32),
         qc,
+        np.asarray(event_modalities, dtype=object),
     )
 
 
@@ -490,6 +522,7 @@ def append_event(
     *,
     event_vectors: list[np.ndarray],
     event_patients: list[str],
+    event_modalities: list[str],
     counts: pd.DataFrame,
     modality_counts: dict[str, Counter[str]],
     patient: str,
@@ -497,8 +530,9 @@ def append_event(
     modality: str,
     channel: str | None,
 ) -> None:
-    event_vectors.append(vector.astype(np.float32))
+    event_vectors.append(vector.astype(np.uint8))
     event_patients.append(patient)
+    event_modalities.append(modality)
     modality_counts[patient][modality] += 1
     if channel is not None:
         prefix = {"SBS": "SBS96", "DBS": "DBS78", "ID": "ID83"}[modality]
@@ -527,6 +561,7 @@ def build_mc3_inventory(ctx: RunnerContext, settings: dict, fasta: FastaReader, 
     modality_counts = {patient: Counter() for patient in patient_ids}
     event_vectors: list[np.ndarray] = []
     event_patients: list[str] = []
+    event_modalities: list[str] = []
     valid_dbs = set(dbs)
     valid_ids = set(ids)
     qc = Counter()
@@ -579,12 +614,31 @@ def build_mc3_inventory(ctx: RunnerContext, settings: dict, fasta: FastaReader, 
                 channel = dbs_channel(cref, calt, valid_dbs)
             elif modality == "ID":
                 channel = id83_channel(cref, calt, valid_ids)
-            append_event(event_vectors=event_vectors, event_patients=event_patients, counts=counts, modality_counts=modality_counts, patient=patient, vector=vector, modality=modality, channel=channel)
+            append_event(
+                event_vectors=event_vectors,
+                event_patients=event_patients,
+                event_modalities=event_modalities,
+                counts=counts,
+                modality_counts=modality_counts,
+                patient=patient,
+                vector=vector,
+                modality=modality,
+                channel=channel,
+            )
             qc["encoded_events"] += 1
             qc[f"encoded_{modality.lower()}"] += 1
     covariates = covariates_from_modalities(patient_ids, modality_counts)
     qc["cache_status"] = "miss_created"
-    inventory = EventInventory("mc3_main", np.vstack(event_vectors) if event_vectors else np.zeros((0, event_dim(settings)), dtype=np.float32), np.asarray(event_patients, dtype=object), patient_ids, counts, covariates, dict(qc))
+    inventory = EventInventory(
+        "mc3_main",
+        np.vstack(event_vectors) if event_vectors else np.zeros((0, event_dim(settings)), dtype=np.uint8),
+        np.asarray(event_patients, dtype=object),
+        patient_ids,
+        counts,
+        covariates,
+        dict(qc),
+        np.asarray(event_modalities, dtype=object),
+    )
     _save_inventory(ctx, cache_key, inventory, metadata={"inputs": cache_inputs, "representation": "one_hot_event_inventory", "benchmark": "mc3_main"})
     return inventory, endpoints, cache_key
 
@@ -644,6 +698,7 @@ def build_kucab_inventory(ctx: RunnerContext, settings: dict, fasta: FastaReader
     valid_ids = set(ids)
     event_vectors: list[np.ndarray] = []
     event_patients: list[str] = []
+    event_modalities: list[str] = []
     sample_to_name: dict[str, str] = {}
     modality_counts: dict[str, Counter[str]] = defaultdict(Counter)
     raw_counts: dict[str, Counter[str]] = defaultdict(Counter)
@@ -682,8 +737,9 @@ def build_kucab_inventory(ctx: RunnerContext, settings: dict, fasta: FastaReader
             channel = dbs_channel(cref, calt, valid_dbs)
         elif modality == "ID":
             channel = id83_channel(cref, calt, valid_ids)
-        event_vectors.append(vector.astype(np.float32))
+        event_vectors.append(vector.astype(np.uint8))
         event_patients.append(sample)
+        event_modalities.append(modality)
         modality_counts[sample][modality] += 1
         if channel is not None:
             raw_counts[sample][f"{ {'SBS':'SBS96','DBS':'DBS78','ID':'ID83'}[modality]}:{channel}"] += 1
@@ -736,10 +792,19 @@ def build_kucab_inventory(ctx: RunnerContext, settings: dict, fasta: FastaReader
                 counts.at[sample, col] = float(value)
     covariates = covariates_from_modalities(patient_ids, modality_counts)
     keep_mask = np.isin(np.asarray(event_patients, dtype=object), np.asarray(patient_ids, dtype=object))
-    vectors = np.vstack(event_vectors).astype(np.float32) if event_vectors else np.zeros((0, event_dim(settings)), dtype=np.float32)
+    vectors = np.vstack(event_vectors).astype(np.uint8) if event_vectors else np.zeros((0, event_dim(settings)), dtype=np.uint8)
     qc_out = dict(qc)
     qc_out["eligible_samples"] = len(patient_ids)
-    inventory = EventInventory("kucab_damage_class", vectors[keep_mask], np.asarray(event_patients, dtype=object)[keep_mask], patient_ids, counts, covariates.reindex(patient_ids).fillna(0.0), qc_out)
+    inventory = EventInventory(
+        "kucab_damage_class",
+        vectors[keep_mask],
+        np.asarray(event_patients, dtype=object)[keep_mask],
+        patient_ids,
+        counts,
+        covariates.reindex(patient_ids).fillna(0.0),
+        qc_out,
+        np.asarray(event_modalities, dtype=object)[keep_mask],
+    )
     endpoint = EndpointData("damage_class", "kucab_damage_class", "multiclass_grouped", use["damage_class"].astype(str), use["agent_core"].astype(str))
     _save_inventory(ctx, cache_key, inventory, metadata={"inputs": cache_inputs, "representation": "one_hot_event_inventory", "benchmark": "kucab_damage_class"})
     atomic_write_csv(use.loc[:, ["sample_name", "agent_core", "damage_class", "total_events", "eligible_event_burden"]], ctx.feature_cache.entry(cache_key).path("sample_metadata.csv.gz"), index=True)
@@ -770,7 +835,7 @@ def median_pairwise_scale(points: np.ndarray, seed: int, max_points: int = 2000)
 
 
 def select_landmarks(vectors: np.ndarray, mode: str, seed: int) -> np.ndarray:
-    arr = np.asarray(vectors, dtype=np.float32)
+    arr = np.asarray(vectors)
     if arr.size and np.nanmin(arr) >= 0.0 and np.nanmax(arr) <= 1.0:
         packed = np.packbits(arr.astype(np.uint8), axis=1)
         unique_packed = np.unique(packed, axis=0)
@@ -782,6 +847,40 @@ def select_landmarks(vectors: np.ndarray, mode: str, seed: int) -> np.ndarray:
     rng = np.random.default_rng(seed)
     idx = np.sort(rng.choice(unique.shape[0], size=int(mode), replace=False))
     return unique[idx]
+
+
+def _unique_binary_vectors_with_counts(vectors: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    arr = np.asarray(vectors)
+    if arr.size == 0:
+        width = arr.shape[1] if arr.ndim == 2 else 0
+        return np.zeros((0, width), dtype=np.float32), np.zeros(0, dtype=np.int64)
+    if np.nanmin(arr) >= 0.0 and np.nanmax(arr) <= 1.0:
+        packed = np.packbits(arr.astype(np.uint8), axis=1)
+        unique_packed, counts = np.unique(packed, axis=0, return_counts=True)
+        unique = np.unpackbits(unique_packed, axis=1)[:, : arr.shape[1]].astype(np.float32)
+        return unique, counts.astype(np.int64)
+    unique, counts = np.unique(arr, axis=0, return_counts=True)
+    return unique.astype(np.float32), counts.astype(np.int64)
+
+
+def select_landmarks_frequency_aware(vectors: np.ndarray, mode: str, seed: int, *, top_fraction: float = 0.5) -> np.ndarray:
+    unique, counts = _unique_binary_vectors_with_counts(vectors)
+    if str(mode) == "all" or unique.shape[0] <= int(mode):
+        return unique
+    n_landmarks = int(mode)
+    n_top = int(max(1, min(n_landmarks, round(n_landmarks * float(top_fraction)))))
+    order = np.argsort(-counts, kind="mergesort")
+    top_idx = order[:n_top]
+    remaining = np.setdiff1d(np.arange(unique.shape[0]), top_idx, assume_unique=False)
+    n_tail = n_landmarks - len(top_idx)
+    if n_tail > 0 and remaining.size:
+        rng = np.random.default_rng(seed)
+        tail_idx = rng.choice(remaining, size=min(n_tail, remaining.size), replace=False)
+        idx = np.r_[top_idx, tail_idx]
+    else:
+        idx = top_idx
+    idx = np.asarray(idx, dtype=np.int64)
+    return unique[np.sort(idx)]
 
 
 def _capped_event_indices(inventory: EventInventory, patient_index: dict[str, int], max_events_per_sample: int) -> np.ndarray:
@@ -808,7 +907,7 @@ def _kme_aggregation(inventory: EventInventory, max_events_per_sample: int) -> t
         return _KME_AGGREGATION_CACHE[cache_key]
     patient_index = {patient: i for i, patient in enumerate(inventory.patient_ids)}
     keep = _capped_event_indices(inventory, patient_index, int(max_events_per_sample))
-    vectors = np.asarray(inventory.event_vectors[keep], dtype=np.float32)
+    vectors = np.asarray(inventory.event_vectors[keep], dtype=np.uint8)
     codes = np.asarray([patient_index[str(inventory.event_patients[idx])] for idx in keep], dtype=np.int64)
     sample_counts = np.bincount(codes, minlength=len(inventory.patient_ids)).astype(np.float32)
     packed = np.packbits(vectors.astype(np.uint8), axis=1)
@@ -832,16 +931,65 @@ def _kme_aggregation(inventory: EventInventory, max_events_per_sample: int) -> t
     return out
 
 
-def kme_features(inventory: EventInventory, landmarks: np.ndarray, sigma: float, chunk_size: int = 512, max_events_per_sample: int = 0) -> pd.DataFrame:
+def feature_weights(settings: dict, mode: str) -> np.ndarray | None:
+    if str(mode or "uniform").lower() in {"", "uniform", "none"}:
+        return None
+    d_context = int(settings["d_context"])
+    d_payload = int(settings["d_payload"])
+    weights: list[float] = []
+    for i in range(d_context):
+        weights.extend([0.35 + 0.65 * ((i + 1) / max(d_context, 1))] * 4)
+    for i in range(d_context):
+        weights.extend([0.35 + 0.65 * ((d_context - i) / max(d_context, 1))] * 4)
+    weights.extend([1.35] * (5 * d_payload))
+    weights.extend([1.35] * (5 * d_payload))
+    weights.extend([0.75, 0.75])
+    return np.asarray(weights, dtype=np.float32)
+
+
+def modality_summary_covariates(inventory: EventInventory) -> pd.DataFrame:
+    modalities = np.asarray(inventory.event_modalities if inventory.event_modalities is not None else [], dtype=object)
+    patients = np.asarray(inventory.event_patients, dtype=object)
+    index = pd.Index(inventory.patient_ids, name="sample")
+    out = pd.DataFrame(0.0, index=index, columns=["kme_log_sbs_burden", "kme_log_dbs_burden", "kme_log_id_burden"], dtype=np.float32)
+    if len(modalities) != len(patients) or not len(patients):
+        return out
+    counts = (
+        pd.DataFrame({"sample": patients.astype(str), "modality": modalities.astype(str)})
+        .value_counts(["sample", "modality"])
+        .rename("n")
+        .reset_index()
+    )
+    for modality, column in {"SBS": "kme_log_sbs_burden", "DBS": "kme_log_dbs_burden", "ID": "kme_log_id_burden"}.items():
+        sub = counts[counts["modality"].eq(modality)]
+        if not sub.empty:
+            values = pd.Series(np.log1p(sub["n"].astype(float).to_numpy()), index=sub["sample"].astype(str))
+            out.loc[:, column] = values.reindex(out.index).fillna(0.0).to_numpy(dtype=np.float32)
+    return out.astype(np.float32)
+
+
+def kme_features(
+    inventory: EventInventory,
+    landmarks: np.ndarray,
+    sigma: float,
+    chunk_size: int = 512,
+    max_events_per_sample: int = 0,
+    weights: np.ndarray | None = None,
+) -> pd.DataFrame:
     unique_vectors, pair_u, pair_p, pair_counts, counts = _kme_aggregation(inventory, int(max_events_per_sample))
     sums = np.zeros((len(inventory.patient_ids), landmarks.shape[0]), dtype=np.float32)
     denom = max(float(sigma) * float(sigma), 1e-12)
-    landmark_norm = np.sum(landmarks * landmarks, axis=1, dtype=np.float32)[None, :]
-    landmarks_t = landmarks.T.astype(np.float32, copy=False)
+    weighted_landmarks = landmarks.astype(np.float32, copy=False)
+    if weights is not None:
+        weighted_landmarks = weighted_landmarks * weights[None, :]
+    landmark_norm = np.sum(weighted_landmarks * weighted_landmarks, axis=1, dtype=np.float32)[None, :]
+    landmarks_t = weighted_landmarks.T.astype(np.float32, copy=False)
     unique_chunk_size = max(int(chunk_size), 4096)
     for start in range(0, unique_vectors.shape[0], unique_chunk_size):
         stop = min(start + unique_chunk_size, unique_vectors.shape[0])
         block = unique_vectors[start:stop]
+        if weights is not None:
+            block = block * weights[None, :]
         block_norm = np.sum(block * block, axis=1, dtype=np.float32)[:, None]
         dist2 = block_norm + landmark_norm - 2.0 * (block @ landmarks_t)
         np.maximum(dist2, 0.0, out=dist2)
@@ -929,6 +1077,244 @@ def cached_kme_features(ctx: RunnerContext, inventory: EventInventory, inventory
         },
     )
     return frame, key, "miss_created"
+
+
+def kme_config_payload(
+    *,
+    version: str,
+    inventory: EventInventory,
+    inventory_cache_key: str,
+    landmark_mode: object,
+    sigma_multiplier: object,
+    sigma_strategy: str,
+    modality_strategy: str,
+    landmark_sampling: str,
+    kernel_weighting: str,
+    settings: dict,
+) -> dict[str, object]:
+    if str(sigma_strategy) == "multiscale_0.5_1_2":
+        sigma_multipliers = [0.5, 1.0, 2.0]
+    else:
+        sigma_multipliers = [float(sigma_multiplier)]
+    return {
+        "version": str(version),
+        "inventory": inventory.name,
+        "inventory_cache_key": inventory_cache_key,
+        "d_context": int(settings["d_context"]),
+        "d_payload": int(settings["d_payload"]),
+        "landmark_mode": str(landmark_mode),
+        "sigma_multiplier": float(sigma_multiplier),
+        "sigma_strategy": str(sigma_strategy),
+        "sigma_multipliers_selected": sigma_multipliers,
+        "modality_strategy": str(modality_strategy),
+        "landmark_sampling": str(landmark_sampling),
+        "kernel_weighting": str(kernel_weighting),
+        "kernel": "weighted_rbf" if str(kernel_weighting) != "uniform" else "rbf",
+        "event_cap": int(settings.get("kme_max_events_per_sample", 0) or 0),
+        "cache_schema": "one_hot_event_kme_v2_config_2026_05_24",
+    }
+
+
+def kme_config_id(payload: dict[str, object]) -> str:
+    return "kme_" + stable_json_hash(payload, length=24)
+
+
+def _sigma_multipliers_for_strategy(sigma_strategy: str, sigma_multiplier: object) -> list[float]:
+    if str(sigma_strategy) == "multiscale_0.5_1_2":
+        return [0.5, 1.0, 2.0]
+    return [float(sigma_multiplier)]
+
+
+def _modality_inventory(inventory: EventInventory, modality: str, config_id: str) -> EventInventory:
+    modalities = np.asarray(inventory.event_modalities if inventory.event_modalities is not None else [], dtype=object)
+    if len(modalities) != len(inventory.event_patients):
+        mask = np.ones(len(inventory.event_patients), dtype=bool)
+    else:
+        mask = modalities.astype(str) == str(modality)
+    return EventInventory(
+        name=f"{inventory.name}_{config_id}_{modality}",
+        event_vectors=np.asarray(inventory.event_vectors[mask]),
+        event_patients=np.asarray(inventory.event_patients, dtype=object)[mask],
+        patient_ids=inventory.patient_ids,
+        standard_counts=inventory.standard_counts,
+        covariates=pd.DataFrame(index=pd.Index(inventory.patient_ids, name="sample")),
+        qc=inventory.qc,
+        event_modalities=modalities[mask] if len(modalities) == len(inventory.event_patients) else np.full(int(mask.sum()), modality, dtype=object),
+    )
+
+
+def cached_landmarks_v2(
+    ctx: RunnerContext,
+    inventory: EventInventory,
+    inventory_cache_key: str,
+    landmark_mode: object,
+    settings: dict,
+    *,
+    modality: str,
+    landmark_sampling: str,
+    config_id: str,
+) -> tuple[np.ndarray, float, str]:
+    key = make_cache_key(
+        "one_hot_event_landmarks_v2",
+        params={
+            "inventory": inventory.name,
+            "inventory_cache_key": inventory_cache_key,
+            "landmark_mode": str(landmark_mode),
+            "d_context": int(settings["d_context"]),
+            "d_payload": int(settings["d_payload"]),
+            "modality": modality,
+            "landmark_sampling": str(landmark_sampling),
+            "config_id": config_id,
+        },
+        inputs={"event_count": int(inventory.event_vectors.shape[0]), "event_dim": int(inventory.event_vectors.shape[1]) if inventory.event_vectors.ndim == 2 else 0},
+    )
+    arrays = ctx.feature_cache.load_npz(key, "landmarks.npz")
+    if arrays is not None:
+        return np.asarray(arrays["landmarks"], dtype=np.float32), float(arrays["base_sigma"][0]), key
+    if str(landmark_sampling) == "frequency_tail":
+        landmarks = select_landmarks_frequency_aware(inventory.event_vectors, str(landmark_mode), stable_seed(inventory.name, modality, landmark_mode, landmark_sampling))
+    else:
+        landmarks = select_landmarks(inventory.event_vectors, str(landmark_mode), stable_seed(inventory.name, modality, landmark_mode))
+    base_sigma = median_pairwise_scale(landmarks, stable_seed(inventory.name, modality, "sigma", landmark_mode, landmark_sampling))
+    ctx.feature_cache.save_npz(
+        key,
+        "landmarks.npz",
+        metadata={
+            "namespace": EXPERIMENT_ID,
+            "representation": "one_hot_event_kme_v2_landmarks",
+            "benchmark": inventory.name,
+            "inventory_cache_key": inventory_cache_key,
+            "landmark_mode": str(landmark_mode),
+            "modality": modality,
+            "landmark_sampling": str(landmark_sampling),
+            "n_landmarks": int(landmarks.shape[0]),
+            "base_sigma": float(base_sigma),
+            "config_id": config_id,
+        },
+        landmarks=landmarks.astype(np.float32),
+        base_sigma=np.asarray([base_sigma], dtype=np.float64),
+    )
+    return landmarks, base_sigma, key
+
+
+def cached_kme_features_v2(
+    ctx: RunnerContext,
+    inventory: EventInventory,
+    inventory_cache_key: str,
+    landmark_mode: object,
+    sigma_multiplier: object,
+    sigma_strategy: str,
+    modality_strategy: str,
+    landmark_sampling: str,
+    kernel_weighting: str,
+    settings: dict,
+) -> tuple[pd.DataFrame, str, str, dict[str, object]]:
+    payload = kme_config_payload(
+        version="v2",
+        inventory=inventory,
+        inventory_cache_key=inventory_cache_key,
+        landmark_mode=landmark_mode,
+        sigma_multiplier=sigma_multiplier,
+        sigma_strategy=sigma_strategy,
+        modality_strategy=modality_strategy,
+        landmark_sampling=landmark_sampling,
+        kernel_weighting=kernel_weighting,
+        settings=settings,
+    )
+    config_id = kme_config_id(payload)
+    key = make_cache_key("one_hot_event_kme_features_v2", params=payload)
+    frame = ctx.feature_cache.load_frame(key, "features.csv.gz")
+    if frame is not None:
+        frame.index = frame.index.astype(str)
+        return frame.astype(np.float32), key, "hit", {**payload, "kme_config_id": config_id}
+
+    weights = feature_weights(settings, str(kernel_weighting))
+    if str(modality_strategy) == "stratified":
+        feature_blocks: list[pd.DataFrame] = []
+        base_sigmas: dict[str, float] = {}
+        landmark_counts: dict[str, int] = {}
+        modalities = ["SBS", "DBS", "ID"]
+        for modality in modalities:
+            sub_inventory = _modality_inventory(inventory, modality, config_id)
+            if sub_inventory.event_vectors.shape[0] == 0:
+                continue
+            landmarks, base_sigma, landmark_key = cached_landmarks_v2(
+                ctx,
+                sub_inventory,
+                inventory_cache_key,
+                landmark_mode,
+                settings,
+                modality=modality,
+                landmark_sampling=landmark_sampling,
+                config_id=config_id,
+            )
+            base_sigmas[modality] = float(base_sigma)
+            landmark_counts[modality] = int(landmarks.shape[0])
+            for multiplier in _sigma_multipliers_for_strategy(sigma_strategy, sigma_multiplier):
+                block = kme_features(
+                    sub_inventory,
+                    landmarks,
+                    base_sigma * float(multiplier),
+                    chunk_size=int(settings.get("kernel_chunk_size", 512)),
+                    max_events_per_sample=int(settings.get("kme_max_events_per_sample", 0) or 0),
+                    weights=weights,
+                )
+                block = block.loc[:, [col for col in block.columns if col.startswith("one_hot_kme__")]]
+                block = block.add_prefix(f"{modality.lower()}__sigma{str(multiplier).replace('.', 'p')}__")
+                feature_blocks.append(block)
+        if feature_blocks:
+            frame = pd.concat(feature_blocks, axis=1).reindex(pd.Index(inventory.patient_ids, name="sample")).fillna(0.0)
+        else:
+            frame = pd.DataFrame(index=pd.Index(inventory.patient_ids, name="sample"))
+        cov = pd.concat(
+            [
+                inventory.covariates.reindex(frame.index).fillna(0.0),
+                modality_summary_covariates(inventory).reindex(frame.index).fillna(0.0),
+            ],
+            axis=1,
+        )
+        frame = pd.concat([frame, cov], axis=1).astype(np.float32)
+    else:
+        landmarks, base_sigma, landmark_key = cached_landmarks_v2(
+            ctx,
+            inventory,
+            inventory_cache_key,
+            landmark_mode,
+            settings,
+            modality="mixed",
+            landmark_sampling=landmark_sampling,
+            config_id=config_id,
+        )
+        base_sigmas = {"mixed": float(base_sigma)}
+        landmark_counts = {"mixed": int(landmarks.shape[0])}
+        blocks = []
+        for multiplier in _sigma_multipliers_for_strategy(sigma_strategy, sigma_multiplier):
+            block = kme_features(
+                inventory,
+                landmarks,
+                base_sigma * float(multiplier),
+                chunk_size=int(settings.get("kernel_chunk_size", 512)),
+                max_events_per_sample=int(settings.get("kme_max_events_per_sample", 0) or 0),
+                weights=weights,
+            )
+            block = block.add_prefix(f"mixed__sigma{str(multiplier).replace('.', 'p')}__")
+            blocks.append(block)
+        frame = pd.concat(blocks, axis=1).astype(np.float32)
+
+    metadata = {
+        "namespace": EXPERIMENT_ID,
+        "representation": "one_hot_event_KME_v2",
+        "benchmark": inventory.name,
+        "inventory_cache_key": inventory_cache_key,
+        "kme_config_id": config_id,
+        "config": payload,
+        "base_sigmas": base_sigmas,
+        "landmark_counts": landmark_counts,
+        "sample_count": int(frame.shape[0]),
+        "feature_count": int(frame.shape[1]),
+    }
+    ctx.feature_cache.save_frame(key, frame, "features.csv.gz", metadata=metadata)
+    return frame, key, "miss_created", {**payload, "kme_config_id": config_id, "base_sigmas": base_sigmas, "landmark_counts": landmark_counts}
 
 
 def make_linear_classifier(seed: int) -> Pipeline:
@@ -1183,7 +1569,9 @@ def evaluate_features(endpoint: EndpointData, features: pd.DataFrame, representa
 
 def write_figures(endpoint_results: pd.DataFrame, grid_results: pd.DataFrame, ctx: RunnerContext) -> None:
     fig_path = ctx.figures_dir / f"{EXPERIMENT_ID}_delta_bars.png"
-    plot = endpoint_results[endpoint_results["representation"] == "one_hot_event_kme_oracle"].copy()
+    plot = endpoint_results[endpoint_results["representation"].astype(str).str.contains("one_hot_event_kme", case=False, na=False) & endpoint_results["representation"].astype(str).str.contains("oracle", case=False, na=False)].copy()
+    if plot.empty:
+        return
     labels = plot["benchmark"].astype(str) + " | " + plot["learner"].astype(str)
     fig, ax = plt.subplots(figsize=(8, max(3.5, 0.55 * len(plot) + 1.5)))
     colors = np.where(plot["delta_vs_standard"].to_numpy(dtype=float) >= 0, "#2a9d8f", "#b23a48")
@@ -1199,6 +1587,9 @@ def write_figures(endpoint_results: pd.DataFrame, grid_results: pd.DataFrame, ct
     heat_path = ctx.figures_dir / f"{EXPERIMENT_ID}_grid_heatmap.png"
     heat = grid_results.copy()
     heat["grid"] = heat["landmark_mode"].astype(str) + " / " + heat["sigma_multiplier"].astype(str)
+    for col in ["sigma_strategy", "modality_strategy", "kernel_weighting"]:
+        if col in heat.columns:
+            heat["grid"] = heat["grid"] + " / " + heat[col].astype(str)
     pivot = heat.pivot_table(index=["benchmark", "learner"], columns="grid", values="delta_vs_standard", aggfunc="max")
     fig, ax = plt.subplots(figsize=(9, max(3.5, 0.6 * max(1, len(pivot)) + 1.5)))
     arr = pivot.to_numpy(dtype=float)
@@ -1219,6 +1610,13 @@ def run(ctx: RunnerContext) -> None:
     settings.setdefault("d_payload", 6)
     settings.setdefault("sigma_multipliers", [0.5, 1.0, 2.0])
     settings.setdefault("landmark_modes", [128, "all"])
+    settings.setdefault("kme_version", "v2")
+    settings.setdefault("sigma_strategies", ["single"])
+    settings.setdefault("modality_strategies", ["mixed"])
+    settings.setdefault("landmark_sampling_modes", ["random_unique"])
+    settings.setdefault("kernel_weighting_modes", ["uniform"])
+    selected_representation = str(settings.get("selected_representation") or f"one_hot_event_kme_{settings['kme_version']}_oracle")
+    raw_kme_representation = str(settings.get("raw_kme_representation") or f"one_hot_event_kme_{settings['kme_version']}")
     ctx.tables_dir.mkdir(parents=True, exist_ok=True)
     ctx.figures_dir.mkdir(parents=True, exist_ok=True)
     ctx.logs_dir.mkdir(parents=True, exist_ok=True)
@@ -1256,13 +1654,14 @@ def run(ctx: RunnerContext) -> None:
     existing_endpoint_rows = pd.read_csv(endpoint_results_path).to_dict("records") if endpoint_results_path.exists() else []
     standard_rows: list[dict[str, object]] = [row for row in existing_endpoint_rows if row.get("representation") == "standard_sbs96_dbs78_id83"]
     burden_rows: list[dict[str, object]] = [row for row in existing_endpoint_rows if row.get("representation") == "burden_only"]
-    selected_rows: list[dict[str, object]] = [row for row in existing_endpoint_rows if row.get("representation") == "one_hot_event_kme_oracle"]
+    selected_rows: list[dict[str, object]] = [row for row in existing_endpoint_rows if row.get("representation") == selected_representation]
     grid_rows: list[dict[str, object]] = pd.read_csv(grid_results_path).to_dict("records") if grid_results_path.exists() else []
     prediction_rows: list[pd.DataFrame] = [pd.read_csv(oof_predictions_path)] if oof_predictions_path.exists() else []
     fold_metric_rows: list[pd.DataFrame] = [pd.read_csv(fold_metrics_path)] if fold_metrics_path.exists() else []
     feature_rows: list[dict[str, object]] = []
     landmark_cache: dict[tuple[str, str], tuple[np.ndarray, float, str]] = {}
     kme_feature_cache: dict[tuple[str, str, float], tuple[pd.DataFrame, str, str]] = {}
+    kme_feature_cache_v2: dict[str, tuple[pd.DataFrame, str, str, dict[str, object]]] = {}
 
     standard_features = {}
     burden_features = {}
@@ -1278,33 +1677,53 @@ def run(ctx: RunnerContext) -> None:
         if standard_rows or burden_rows or selected_rows:
             frame = pd.DataFrame([*burden_rows, *standard_rows, *selected_rows])
             if "representation" in frame.columns:
-                selected_mask = frame["representation"].astype(str).eq("one_hot_event_kme_oracle")
+                selected_mask = frame["representation"].astype(str).eq(selected_representation)
                 regular = frame[~selected_mask].drop_duplicates(["benchmark", "endpoint", "learner", "representation"], keep="last")
                 selected = frame[selected_mask].copy()
                 if not selected.empty:
                     selected["_trial_priority"] = pd.to_numeric(selected.get("optuna_trials_completed"), errors="coerce").fillna(-1)
-                    selected = selected.sort_values(["endpoint", "learner", "_trial_priority"]).drop_duplicates(["endpoint", "learner", "representation"], keep="last")
+                    selected["_score_priority"] = pd.to_numeric(selected.get("score"), errors="coerce").fillna(-np.inf)
+                    selected = selected.sort_values(["benchmark", "endpoint", "learner", "representation", "_trial_priority", "_score_priority"]).drop_duplicates(["benchmark", "endpoint", "learner", "representation"], keep="last")
                     selected = selected.drop(columns=["_trial_priority"])
+                    selected = selected.drop(columns=["_score_priority"])
                 frame = pd.concat([regular, selected], ignore_index=True, sort=False)
             else:
                 frame = frame.drop_duplicates(["benchmark", "endpoint", "learner", "representation"], keep="last")
             atomic_write_csv(frame, endpoint_results_path, index=False)
         if grid_rows:
-            frame = pd.DataFrame(grid_rows).drop_duplicates(["benchmark", "endpoint", "learner", "landmark_mode", "sigma_multiplier"], keep="last")
+            frame = pd.DataFrame(grid_rows)
+            grid_subset = ["benchmark", "endpoint", "learner", "representation", "landmark_mode", "sigma_multiplier"]
+            for col in ["kme_config_id", "sigma_strategy", "modality_strategy", "landmark_sampling", "kernel_weighting"]:
+                if col in frame.columns:
+                    grid_subset.append(col)
+            grid_subset = [col for col in dict.fromkeys(grid_subset) if col in frame.columns]
+            frame = frame.drop_duplicates(grid_subset, keep="last")
             atomic_write_csv(frame, grid_results_path, index=False)
         if selected_rows:
             selected_frame = pd.DataFrame(selected_rows).drop_duplicates(["benchmark", "endpoint", "learner", "representation"], keep="last")
-            atomic_write_csv(selected_frame[
-                ["benchmark", "endpoint", "learner", "score", "delta_vs_standard", "landmark_mode", "n_landmarks", "base_sigma", "sigma_multiplier", "kernel_sigma"]
-            ], selected_params_path, index=False)
+            selected_cols = [
+                "benchmark", "endpoint", "learner", "score", "delta_vs_standard", "kme_version", "kme_config_id",
+                "landmark_mode", "n_landmarks", "base_sigma", "sigma_multiplier", "sigma_strategy",
+                "sigma_multipliers_selected", "kernel_sigma", "modality_strategy", "landmark_sampling", "kernel_weighting",
+                "optuna_study_name", "optuna_trials_completed",
+            ]
+            atomic_write_csv(selected_frame[[col for col in selected_cols if col in selected_frame.columns]], selected_params_path, index=False)
         if feature_rows:
             frame = pd.DataFrame(feature_rows).drop_duplicates(["benchmark", "representation"], keep="last")
             atomic_write_csv(frame, feature_manifest_path, index=False)
         if prediction_rows:
-            pred_frame = pd.concat(prediction_rows, ignore_index=True, sort=False).drop_duplicates(["benchmark", "endpoint", "representation", "learner", "sample"], keep="last")
+            pred_frame = pd.concat(prediction_rows, ignore_index=True, sort=False)
+            pred_subset = ["benchmark", "endpoint", "representation", "learner", "sample"]
+            if "kme_config_id" in pred_frame.columns:
+                pred_subset.append("kme_config_id")
+            pred_frame = pred_frame.drop_duplicates(pred_subset, keep="last")
             atomic_write_csv(pred_frame, oof_predictions_path, index=False)
         if fold_metric_rows:
-            fold_frame = pd.concat(fold_metric_rows, ignore_index=True, sort=False).drop_duplicates(["benchmark", "endpoint", "representation", "learner", "repeat", "fold"], keep="last")
+            fold_frame = pd.concat(fold_metric_rows, ignore_index=True, sort=False)
+            fold_subset = ["benchmark", "endpoint", "representation", "learner", "repeat", "fold"]
+            if "kme_config_id" in fold_frame.columns:
+                fold_subset.append("kme_config_id")
+            fold_frame = fold_frame.drop_duplicates(fold_subset, keep="last")
             atomic_write_csv(fold_frame, fold_metrics_path, index=False)
         qc_list = []
         for inv in inventories.values():
@@ -1321,6 +1740,10 @@ def run(ctx: RunnerContext) -> None:
         if tuned:
             trials = pd.to_numeric(pd.Series([row.get("optuna_trials_completed")]), errors="coerce").iloc[0]
             if not pd.notna(trials) or int(trials) != int(settings.get("optuna_trials", ctx.optuna_trials)):
+                return False
+            if str(row.get("kme_version", settings["kme_version"])) != str(settings["kme_version"]):
+                return False
+            if str(settings.get("kme_version")) == "v2" and not str(row.get("kme_config_id", "")).strip():
                 return False
         return True
 
@@ -1374,46 +1797,128 @@ def run(ctx: RunnerContext) -> None:
                 continue
             best_row: dict[str, object] | None = None
 
-            def evaluate_kme_combo(landmark_mode: object, sigma_multiplier: object) -> dict[str, object]:
+            def evaluate_kme_combo(
+                landmark_mode: object,
+                sigma_multiplier: object,
+                *,
+                sigma_strategy: str = "single",
+                modality_strategy: str = "mixed",
+                landmark_sampling: str = "random_unique",
+                kernel_weighting: str = "uniform",
+            ) -> dict[str, object]:
+                config_payload: dict[str, object] | None = None
+                config_id = ""
+                if str(settings.get("kme_version")) == "v2":
+                    config_payload = kme_config_payload(
+                        version="v2",
+                        inventory=inventory,
+                        inventory_cache_key=inventory_cache_key,
+                        landmark_mode=landmark_mode,
+                        sigma_multiplier=sigma_multiplier,
+                        sigma_strategy=sigma_strategy,
+                        modality_strategy=modality_strategy,
+                        landmark_sampling=landmark_sampling,
+                        kernel_weighting=kernel_weighting,
+                        settings=settings,
+                    )
+                    config_id = kme_config_id(config_payload)
                 existing_grid = [
                     row for row in grid_rows
                     if str(row.get("benchmark")) == endpoint.benchmark
                     and str(row.get("endpoint")) == endpoint.name
                     and str(row.get("learner")) == learner
+                    and str(row.get("representation", raw_kme_representation)) == raw_kme_representation
                     and str(row.get("landmark_mode")) == str(landmark_mode)
                     and float(row.get("sigma_multiplier")) == float(sigma_multiplier)
+                    and (not config_id or str(row.get("kme_config_id", "")) == config_id)
                     and row_is_current(row, tuned=False)
                 ]
                 if existing_grid:
-                    print(f"[{EXPERIMENT_ID}] [checkpoint] reuse {endpoint.benchmark} {learner} KME landmarks={landmark_mode} sigma_multiplier={sigma_multiplier}", flush=True)
+                    print(f"[{EXPERIMENT_ID}] [checkpoint] reuse {endpoint.benchmark} {learner} KME {config_id or ''} landmarks={landmark_mode} sigma_multiplier={sigma_multiplier}", flush=True)
                     return dict(existing_grid[-1])
-                landmark_key = (endpoint.benchmark, str(landmark_mode))
-                if landmark_key not in landmark_cache:
-                    landmarks, base_sigma, landmark_cache_key = cached_landmarks(ctx, inventory, inventory_cache_key, landmark_mode, settings)
-                    landmark_cache[landmark_key] = (landmarks, base_sigma, landmark_cache_key)
-                else:
-                    landmarks, base_sigma, landmark_cache_key = landmark_cache[landmark_key]
                 print(
-                    f"[{EXPERIMENT_ID}] evaluating {endpoint.benchmark} {learner} KME landmarks={landmark_mode} sigma_multiplier={sigma_multiplier}",
+                    f"[{EXPERIMENT_ID}] evaluating {endpoint.benchmark} {learner} KME {config_id or ''} landmarks={landmark_mode} sigma_multiplier={sigma_multiplier} sigma_strategy={sigma_strategy} modality={modality_strategy} sampling={landmark_sampling} weighting={kernel_weighting}",
                     flush=True,
                 )
-                sigma = base_sigma * float(sigma_multiplier)
-                feature_key = (endpoint.benchmark, str(landmark_mode), float(sigma_multiplier))
-                if feature_key not in kme_feature_cache:
-                    kme_feature_cache[feature_key] = cached_kme_features(ctx, inventory, inventory_cache_key, landmarks, landmark_cache_key, sigma, sigma_multiplier, settings)
-                features, kme_cache_key, cache_status = kme_feature_cache[feature_key]
-                row, pred_frame, fold_frame = evaluate_features(endpoint, features, "one_hot_event_kme", learner, ctx, settings)
+                if str(settings.get("kme_version")) == "v2":
+                    assert config_payload is not None
+                    if config_id not in kme_feature_cache_v2:
+                        kme_feature_cache_v2[config_id] = cached_kme_features_v2(
+                            ctx,
+                            inventory,
+                            inventory_cache_key,
+                            landmark_mode,
+                            sigma_multiplier,
+                            sigma_strategy,
+                            modality_strategy,
+                            landmark_sampling,
+                            kernel_weighting,
+                            settings,
+                        )
+                    features, kme_cache_key, cache_status, config_meta = kme_feature_cache_v2[config_id]
+                    base_sigmas = config_meta.get("base_sigmas") or {}
+                    landmark_counts = config_meta.get("landmark_counts") or {}
+                    n_landmarks = int(sum(int(value) for value in dict(landmark_counts).values())) if landmark_counts else int(landmark_mode)
+                    base_sigma = float(np.nanmean(list(dict(base_sigmas).values()))) if base_sigmas else float("nan")
+                    sigma = base_sigma * float(sigma_multiplier) if np.isfinite(base_sigma) else float("nan")
+                else:
+                    landmark_key = (endpoint.benchmark, str(landmark_mode))
+                    if landmark_key not in landmark_cache:
+                        landmarks, base_sigma, landmark_cache_key = cached_landmarks(ctx, inventory, inventory_cache_key, landmark_mode, settings)
+                        landmark_cache[landmark_key] = (landmarks, base_sigma, landmark_cache_key)
+                    else:
+                        landmarks, base_sigma, landmark_cache_key = landmark_cache[landmark_key]
+                    sigma = base_sigma * float(sigma_multiplier)
+                    feature_key = (endpoint.benchmark, str(landmark_mode), float(sigma_multiplier))
+                    if feature_key not in kme_feature_cache:
+                        kme_feature_cache[feature_key] = cached_kme_features(ctx, inventory, inventory_cache_key, landmarks, landmark_cache_key, sigma, sigma_multiplier, settings)
+                    features, kme_cache_key, cache_status = kme_feature_cache[feature_key]
+                    config_id = "kme_" + stable_json_hash(
+                        {
+                            "version": "v1",
+                            "inventory": inventory.name,
+                            "inventory_cache_key": inventory_cache_key,
+                            "landmark_mode": str(landmark_mode),
+                            "sigma_multiplier": float(sigma_multiplier),
+                            "event_cap": int(settings.get("kme_max_events_per_sample", 0) or 0),
+                        },
+                        length=24,
+                    )
+                    n_landmarks = int(landmarks.shape[0])
+                    sigma_strategy = "single"
+                    modality_strategy = "mixed"
+                    landmark_sampling = "random_unique"
+                    kernel_weighting = "uniform"
+                row, pred_frame, fold_frame = evaluate_features(endpoint, features, raw_kme_representation, learner, ctx, settings)
+                for frame in (pred_frame, fold_frame):
+                    if frame is not None and not frame.empty:
+                        frame["kme_config_id"] = config_id
+                        frame["kme_version"] = str(settings.get("kme_version"))
+                        frame["landmark_mode"] = str(landmark_mode)
+                        frame["sigma_multiplier"] = float(sigma_multiplier)
+                        frame["sigma_strategy"] = str(sigma_strategy)
+                        frame["modality_strategy"] = str(modality_strategy)
+                        frame["landmark_sampling"] = str(landmark_sampling)
+                        frame["kernel_weighting"] = str(kernel_weighting)
                 row.update(
                     {
+                        "kme_version": str(settings.get("kme_version")),
+                        "kme_config_id": config_id,
                         "landmark_mode": str(landmark_mode),
-                        "n_landmarks": int(landmarks.shape[0]),
+                        "n_landmarks": int(n_landmarks),
                         "base_sigma": float(base_sigma),
                         "sigma_multiplier": float(sigma_multiplier),
+                        "sigma_strategy": str(sigma_strategy),
+                        "sigma_multipliers_selected": ",".join(map(str, _sigma_multipliers_for_strategy(sigma_strategy, sigma_multiplier))),
                         "kernel_sigma": float(sigma),
+                        "modality_strategy": str(modality_strategy),
+                        "landmark_sampling": str(landmark_sampling),
+                        "kernel_weighting": str(kernel_weighting),
                         "delta_vs_standard": float(row["score"] - std_row["score"]),
                         "tuning": str(settings.get("tuning_strategy", "grid")),
                         "cache_key": kme_cache_key,
                         "cache_status": cache_status,
+                        "inventory_cache_key": inventory_cache_key,
                         "oof_prediction_file": oof_predictions_path.name,
                         "fold_metrics_file": fold_metrics_path.name,
                     }
@@ -1433,32 +1938,64 @@ def run(ctx: RunnerContext) -> None:
                 storage = f"sqlite:///{(ctx.optuna_storage_dir / 'one_hot_event_kme_scout.sqlite3').as_posix()}"
                 study_name = "one_hot_kme__" + stable_json_hash(
                     {
+                        "study_schema": OPTUNA_STUDY_SCHEMA,
+                        "kme_version": str(settings.get("kme_version")),
                         "benchmark": endpoint.benchmark,
                         "endpoint": endpoint.name,
                         "learner": learner,
                         "landmark_modes": [str(value) for value in settings["landmark_modes"]],
                         "sigma_multipliers": [float(value) for value in settings["sigma_multipliers"]],
+                        "sigma_strategies": list(map(str, settings.get("sigma_strategies", ["single"]))),
+                        "modality_strategies": list(map(str, settings.get("modality_strategies", ["mixed"]))),
+                        "landmark_sampling_modes": list(map(str, settings.get("landmark_sampling_modes", ["random_unique"]))),
+                        "kernel_weighting_modes": list(map(str, settings.get("kernel_weighting_modes", ["uniform"]))),
                         "trials": int(settings.get("optuna_trials", 10)),
                         "inventory_cache_key": inventory_cache_key,
                     },
                     length=24,
                 )
-                study = optuna.create_study(direction="maximize", sampler=sampler, storage=storage, study_name=study_name, load_if_exists=True)
+                storage_backend = "sqlite"
+                try:
+                    study = optuna.create_study(direction="maximize", sampler=sampler, storage=storage, study_name=study_name, load_if_exists=True)
+                except Exception as exc:
+                    storage_backend = f"in_memory_after_sqlite_create_error:{type(exc).__name__}"
+                    log.write(f"[optuna] sqlite create failed for {study_name}; using in-memory study ({type(exc).__name__}: {exc})\n")
+                    study = optuna.create_study(direction="maximize", sampler=sampler)
 
                 def objective(trial):
                     landmark_mode = trial.suggest_categorical("landmark_mode", [str(value) for value in settings["landmark_modes"]])
                     sigma_multiplier = trial.suggest_categorical("sigma_multiplier", [float(value) for value in settings["sigma_multipliers"]])
-                    row = evaluate_kme_combo(landmark_mode, sigma_multiplier)
+                    sigma_strategy = trial.suggest_categorical("sigma_strategy", [str(value) for value in settings.get("sigma_strategies", ["single"])])
+                    modality_strategy = trial.suggest_categorical("modality_strategy", [str(value) for value in settings.get("modality_strategies", ["mixed"])])
+                    landmark_sampling = trial.suggest_categorical("landmark_sampling", [str(value) for value in settings.get("landmark_sampling_modes", ["random_unique"])])
+                    kernel_weighting = trial.suggest_categorical("kernel_weighting", [str(value) for value in settings.get("kernel_weighting_modes", ["uniform"])])
+                    row = evaluate_kme_combo(
+                        landmark_mode,
+                        sigma_multiplier,
+                        sigma_strategy=sigma_strategy,
+                        modality_strategy=modality_strategy,
+                        landmark_sampling=landmark_sampling,
+                        kernel_weighting=kernel_weighting,
+                    )
                     trial.set_user_attr("row", row)
                     return float(row["score"])
 
-                completed = [trial for trial in study.trials if trial.state == optuna.trial.TrialState.COMPLETE]
                 target_trials = int(settings.get("optuna_trials", ctx.optuna_trials))
+                completed = [trial for trial in study.trials if trial.state == optuna.trial.TrialState.COMPLETE]
                 if len(completed) > target_trials:
                     raise RuntimeError(f"Optuna study {study_name} has {len(completed)} completed trials; expected exactly {target_trials}. Use --refresh-cache or remove the study to rebuild.")
                 remaining = target_trials - len(completed)
-                if remaining:
-                    study.optimize(objective, n_trials=remaining, n_jobs=1, show_progress_bar=False)
+                try:
+                    if remaining:
+                        study.optimize(objective, n_trials=remaining, n_jobs=1, show_progress_bar=False)
+                except Exception as exc:
+                    if storage_backend != "sqlite":
+                        raise
+                    storage_backend = f"in_memory_after_sqlite_optimize_error:{type(exc).__name__}"
+                    log.write(f"[optuna] sqlite optimize failed for {study_name}; retrying {target_trials} in-memory trials ({type(exc).__name__}: {exc})\n")
+                    sampler = optuna.samplers.TPESampler(seed=stable_seed(endpoint.benchmark, endpoint.name, learner, "optuna", "fallback"))
+                    study = optuna.create_study(direction="maximize", sampler=sampler)
+                    study.optimize(objective, n_trials=target_trials, n_jobs=1, show_progress_bar=False)
                 completed = [trial for trial in study.trials if trial.state == optuna.trial.TrialState.COMPLETE]
                 if len(completed) != target_trials:
                     raise RuntimeError(f"Optuna study {study_name} completed {len(completed)} trials; expected exactly {target_trials}.")
@@ -1466,37 +2003,98 @@ def run(ctx: RunnerContext) -> None:
                 best_row = dict(best_trial.user_attrs["row"])
                 best_row["optuna_study_name"] = study_name
                 best_row["optuna_trials_completed"] = int(len(completed))
+                best_row["optuna_storage_backend"] = storage_backend
             else:
                 for landmark_mode in settings["landmark_modes"]:
                     for sigma_multiplier in settings["sigma_multipliers"]:
-                        row = evaluate_kme_combo(landmark_mode, sigma_multiplier)
-                        if best_row is None or float(row["score"]) > float(best_row["score"]):
-                            best_row = dict(row)
+                        for sigma_strategy in settings.get("sigma_strategies", ["single"]):
+                            for modality_strategy in settings.get("modality_strategies", ["mixed"]):
+                                for landmark_sampling in settings.get("landmark_sampling_modes", ["random_unique"]):
+                                    for kernel_weighting in settings.get("kernel_weighting_modes", ["uniform"]):
+                                        row = evaluate_kme_combo(
+                                            landmark_mode,
+                                            sigma_multiplier,
+                                            sigma_strategy=str(sigma_strategy),
+                                            modality_strategy=str(modality_strategy),
+                                            landmark_sampling=str(landmark_sampling),
+                                            kernel_weighting=str(kernel_weighting),
+                                        )
+                                        if best_row is None or float(row["score"]) > float(best_row["score"]):
+                                            best_row = dict(row)
                 best_row["optuna_trials_completed"] = 0
             assert best_row is not None
             selected = dict(best_row)
-            selected["representation"] = "one_hot_event_kme_oracle"
+            selected["representation"] = selected_representation
             selected["oof_prediction_file"] = oof_predictions_path.name
             selected["fold_metrics_file"] = fold_metrics_path.name
             selected_rows.append(selected)
+
+            def _copy_selected_frames() -> None:
+                selected_config = str(selected.get("kme_config_id", "")).strip()
+                if not selected_config:
+                    raise RuntimeError(f"Selected KME row for {endpoint.benchmark}/{endpoint.name}/{learner} lacks kme_config_id")
+                all_preds = pd.concat(prediction_rows, ignore_index=True, sort=False) if prediction_rows else pd.DataFrame()
+                pred_match = all_preds[
+                    all_preds.get("benchmark", pd.Series(dtype=object)).astype(str).eq(endpoint.benchmark)
+                    & all_preds.get("endpoint", pd.Series(dtype=object)).astype(str).eq(endpoint.name)
+                    & all_preds.get("learner", pd.Series(dtype=object)).astype(str).eq(learner)
+                    & all_preds.get("representation", pd.Series(dtype=object)).astype(str).eq(raw_kme_representation)
+                    & all_preds.get("kme_config_id", pd.Series(dtype=object)).astype(str).eq(selected_config)
+                ].copy()
+                if pred_match.empty:
+                    raise RuntimeError(f"Could not find OOF predictions for selected KME config {selected_config} ({endpoint.benchmark}/{endpoint.name}/{learner})")
+                pred_match["representation"] = selected_representation
+                prediction_rows.append(pred_match)
+                all_folds = pd.concat(fold_metric_rows, ignore_index=True, sort=False) if fold_metric_rows else pd.DataFrame()
+                if not all_folds.empty:
+                    fold_match = all_folds[
+                        all_folds.get("benchmark", pd.Series(dtype=object)).astype(str).eq(endpoint.benchmark)
+                        & all_folds.get("endpoint", pd.Series(dtype=object)).astype(str).eq(endpoint.name)
+                        & all_folds.get("learner", pd.Series(dtype=object)).astype(str).eq(learner)
+                        & all_folds.get("representation", pd.Series(dtype=object)).astype(str).eq(raw_kme_representation)
+                        & all_folds.get("kme_config_id", pd.Series(dtype=object)).astype(str).eq(selected_config)
+                    ].copy()
+                    if not fold_match.empty:
+                        fold_match["representation"] = selected_representation
+                        fold_metric_rows.append(fold_match)
+
+            _copy_selected_frames()
             feature_rows.append(
                 {
                     "benchmark": endpoint.benchmark,
-                    "representation": f"one_hot_event_kme_oracle_{learner}",
+                    "representation": f"{selected_representation}_{learner}",
                     "n_features": int(selected["n_features"]),
                     "n_samples": int(selected["n_samples"]),
                     "n_landmarks": int(selected["n_landmarks"]),
+                    "kme_version": str(selected.get("kme_version", settings["kme_version"])),
+                    "kme_config_id": str(selected.get("kme_config_id", "")),
+                    "modality_strategy": str(selected.get("modality_strategy", "")),
+                    "sigma_strategy": str(selected.get("sigma_strategy", "")),
+                    "landmark_sampling": str(selected.get("landmark_sampling", "")),
+                    "kernel_weighting": str(selected.get("kernel_weighting", "")),
                     "kernel_sigma": float(selected["kernel_sigma"]),
-                    "construction": f"FASTA one-hot d_context={settings['d_context']} d_payload={settings['d_payload']} endpoint-oracle KME",
+                    "construction": f"FASTA one-hot {settings['kme_version']} d_context={settings['d_context']} d_payload={settings['d_payload']} endpoint-selected KME",
                 }
             )
             save_current_results()
 
     endpoint_results = pd.DataFrame([*burden_rows, *standard_rows, *selected_rows])
     grid_results = pd.DataFrame(grid_rows)
-    selected_params = pd.DataFrame(selected_rows)[
-        ["benchmark", "endpoint", "learner", "score", "delta_vs_standard", "landmark_mode", "n_landmarks", "base_sigma", "sigma_multiplier", "kernel_sigma"]
+    if not grid_results.empty:
+        grid_subset = ["benchmark", "endpoint", "learner", "representation", "landmark_mode", "sigma_multiplier"]
+        for col in ["kme_config_id", "sigma_strategy", "modality_strategy", "landmark_sampling", "kernel_weighting"]:
+            if col in grid_results.columns:
+                grid_subset.append(col)
+        grid_subset = [col for col in dict.fromkeys(grid_subset) if col in grid_results.columns]
+        grid_results = grid_results.drop_duplicates(grid_subset, keep="last")
+    selected_params_frame = pd.DataFrame(selected_rows)
+    selected_param_cols = [
+        "benchmark", "endpoint", "learner", "score", "delta_vs_standard", "kme_version", "kme_config_id",
+        "landmark_mode", "n_landmarks", "base_sigma", "sigma_multiplier", "sigma_strategy",
+        "sigma_multipliers_selected", "kernel_sigma", "modality_strategy", "landmark_sampling", "kernel_weighting",
+        "optuna_study_name", "optuna_trials_completed",
     ]
+    selected_params = selected_params_frame[[col for col in selected_param_cols if col in selected_params_frame.columns]]
     qc_rows = []
     for inventory in inventories.values():
         row = {"benchmark": inventory.name, **inventory.qc, "event_vector_dim": event_dim(settings), "d_context": int(settings["d_context"]), "d_payload": int(settings["d_payload"]), "fasta": fasta_display_path, "cache_key": inventory_cache_keys[inventory.name]}
@@ -1510,9 +2108,17 @@ def run(ctx: RunnerContext) -> None:
     atomic_write_csv(qc, event_qc_path, index=False)
     atomic_write_csv(feature_manifest, feature_manifest_path, index=False)
     if prediction_rows:
-        atomic_write_csv(pd.concat(prediction_rows, ignore_index=True, sort=False).drop_duplicates(["benchmark", "endpoint", "representation", "learner", "sample"], keep="last"), oof_predictions_path, index=False)
+        pred_frame = pd.concat(prediction_rows, ignore_index=True, sort=False)
+        pred_subset = ["benchmark", "endpoint", "representation", "learner", "sample"]
+        if "kme_config_id" in pred_frame.columns:
+            pred_subset.append("kme_config_id")
+        atomic_write_csv(pred_frame.drop_duplicates(pred_subset, keep="last"), oof_predictions_path, index=False)
     if fold_metric_rows:
-        atomic_write_csv(pd.concat(fold_metric_rows, ignore_index=True, sort=False).drop_duplicates(["benchmark", "endpoint", "representation", "learner", "repeat", "fold"], keep="last"), fold_metrics_path, index=False)
+        fold_frame = pd.concat(fold_metric_rows, ignore_index=True, sort=False)
+        fold_subset = ["benchmark", "endpoint", "representation", "learner", "repeat", "fold"]
+        if "kme_config_id" in fold_frame.columns:
+            fold_subset.append("kme_config_id")
+        atomic_write_csv(fold_frame.drop_duplicates(fold_subset, keep="last"), fold_metrics_path, index=False)
     write_figures(endpoint_results, grid_results, ctx)
     write_summary_csv(
         [

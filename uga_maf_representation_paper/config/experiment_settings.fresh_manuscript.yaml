@@ -50,8 +50,11 @@ experiments:
     enabled: true
     tuning_strategy: optuna
     optuna_trials: 10
-    d_context: 6
-    d_payload: 6
+    kme_version: v2
+    selected_representation: one_hot_event_kme_v2_oracle
+    raw_kme_representation: one_hot_event_kme_v2
+    d_context: 12
+    d_payload: 8
     main_mc3_endpoints:
       - HRD_Score
       - hrd_binary_33
@@ -64,8 +67,21 @@ experiments:
       - 2.0
       - 4.0
     landmark_modes:
-      - 64
       - 128
+      - 256
+      - 512
+    sigma_strategies:
+      - single
+      - multiscale_0.5_1_2
+    modality_strategies:
+      - stratified
+      - mixed
+    landmark_sampling_modes:
+      - frequency_tail
+      - random_unique
+    kernel_weighting_modes:
+      - center_weighted
+      - uniform
     maf_chunksize: 200000
     kernel_chunk_size: 512
     cache_fasta_sequences: true

@@ -178,19 +178,33 @@ function metricSubtitle(rows) {
   return `Single 5-fold OOF results. Metrics: ${metrics}. Significance markers show BH-adjusted q-values for declared comparisons.`;
 }
 
-function barFigure(stem, title, csvName, outDir) {
+function barFigure(stem, title, csvName, outDir, options = {}) {
   const rows = readCsv(csvName);
   requireMeasured(rows, stem);
   const endpoints = ["damage_class", "HRD_Score", "hrd_binary_33", "cancer_type_top10", "os_event"].filter(ep => rows.some(r => r.endpoint === ep));
   const models = ["elastic_net", "XGBoost"].filter(m => rows.some(r => r.model_family === m));
   const reps = unique(rows.map(r => r.representation_family));
-  const width = 1650, margin = { left: 210, right: 70, top: 132, bottom: 88 };
+  const deltaPanel = Boolean(options.deltaPanel);
+  const width = deltaPanel ? 1880 : 1650, margin = { left: 210, right: 70, top: 132, bottom: 88 };
+  const deltaW = deltaPanel ? 170 : 0;
+  const deltaGap = deltaPanel ? 38 : 0;
   const facetGap = 70;
   const facetW = (width - margin.left - margin.right - facetGap * (models.length - 1)) / Math.max(models.length, 1);
+  const barW = Math.max(320, facetW - deltaW - deltaGap);
   const groupH = Math.max(68, reps.length * 18 + 20);
   const height = margin.top + margin.bottom + endpoints.length * groupH;
   const vals = rows.map(r => num(r.primary_score)).filter(Number.isFinite);
   const max = Math.max(0.75, Math.min(1.0, Math.max(...vals, 0.1) + 0.08));
+  const deltaVals = rows
+    .filter(r => r.representation_family === "one_hot_event_KME")
+    .map(r => {
+      const direct = num(r.delta);
+      if (Number.isFinite(direct)) return direct;
+      const base = rows.find(d => d.endpoint === r.endpoint && d.model_family === r.model_family && d.representation_family === "signatures_only");
+      return base ? num(r.primary_score) - num(base.primary_score) : NaN;
+    })
+    .filter(Number.isFinite);
+  const dMax = Math.max(0.03, Math.min(0.20, Math.max(...deltaVals.map(Math.abs), 0.01) * 1.35));
   const body = [
     `<rect width="${width}" height="${height}" fill="#FFFFFF"/>`,
     `<text x="44" y="50" class="title">${esc(title)}</text>`,
@@ -205,7 +219,7 @@ function barFigure(stem, title, csvName, outDir) {
     body.push(`<text x="${x0}" y="110" class="panel-title">${esc(labelModel(model))}</text>`);
     [0, 0.25, 0.5, 0.75, 1].forEach(t => {
       if (t <= max) {
-        const x = x0 + t / max * facetW;
+        const x = x0 + t / max * barW;
         body.push(`<line x1="${x}" y1="${margin.top - 18}" x2="${x}" y2="${height - margin.bottom + 8}" class="grid"/>`);
         body.push(`<text x="${x}" y="${height - 42}" text-anchor="middle" class="tiny">${t.toFixed(2)}</text>`);
       }
@@ -216,13 +230,36 @@ function barFigure(stem, title, csvName, outDir) {
         const r = rows.find(d => d.endpoint === ep && d.model_family === model && d.representation_family === rep);
         if (!r) throw new Error(`${stem} missing ${ep}/${model}/${rep}`);
         const y = baseY + ri * 18;
-        const w = Math.max(2, num(r.primary_score) / max * facetW);
+        const w = Math.max(2, num(r.primary_score) / max * barW);
         const q = num(r.q_value);
         const sig = String(r.significance_label || "");
         body.push(`<rect x="${x0}" y="${y}" width="${w}" height="12" rx="2" fill="${palette[rep] || "#334155"}"><title>${esc(labelEndpoint(ep))} | ${esc(labelModel(model))} | ${esc(labelRep(rep))}: ${num(r.primary_score).toFixed(3)}${Number.isFinite(q) ? `; q=${q.toExponential(2)}` : ""}</title></rect>`);
         body.push(`<text x="${x0 + w + 7}" y="${y + 11}" class="tiny">${num(r.primary_score).toFixed(2)}${sig ? ` ${sig}` : ""}</text>`);
       });
     });
+    if (deltaPanel) {
+      const dx0 = x0 + barW + deltaGap;
+      const zero = dx0 + deltaW / 2;
+      body.push(`<text x="${zero}" y="110" text-anchor="middle" class="small">KME v2 - signatures</text>`);
+      body.push(`<line x1="${zero}" y1="${margin.top - 18}" x2="${zero}" y2="${height - margin.bottom + 8}" stroke="#64748B" stroke-width="1.2"/>`);
+      [-dMax, 0, dMax].forEach(t => {
+        const x = zero + (t / dMax) * (deltaW / 2);
+        body.push(`<line x1="${x}" y1="${height - margin.bottom + 14}" x2="${x}" y2="${height - margin.bottom + 20}" stroke="#64748B"/>`);
+        body.push(`<text x="${x}" y="${height - 42}" text-anchor="middle" class="tiny">${t.toFixed(2)}</text>`);
+      });
+      endpoints.forEach((ep, ei) => {
+        const r = rows.find(d => d.endpoint === ep && d.model_family === model && d.representation_family === "one_hot_event_KME");
+        const base = rows.find(d => d.endpoint === ep && d.model_family === model && d.representation_family === "signatures_only");
+        if (!r || !base) return;
+        const direct = num(r.delta);
+        const delta = Number.isFinite(direct) ? direct : num(r.primary_score) - num(base.primary_score);
+        const y = margin.top + ei * groupH + groupH / 2 + 2;
+        const x = zero + Math.max(-1, Math.min(1, delta / dMax)) * (deltaW / 2);
+        const fill = delta >= 0 ? "#159A74" : "#B23A48";
+        body.push(`<line x1="${zero}" y1="${y}" x2="${x}" y2="${y}" stroke="${fill}" stroke-width="2.2"/>`);
+        body.push(`<circle cx="${x}" cy="${y}" r="4.5" fill="${fill}"><title>${esc(labelEndpoint(ep))} | ${esc(labelModel(model))}: delta=${delta.toFixed(3)}</title></circle>`);
+      });
+    }
   });
   reps.forEach((rep, i) => {
     const x = 44 + i * 170, y = height - 18;
@@ -334,7 +371,7 @@ function s3MeasuredFigure(stem, title, csvName, outDir) {
   const body = [
     `<rect width="${width}" height="${height}" fill="#FFFFFF"/>`,
     `<text x="44" y="50" class="title">${esc(title)}</text>`,
-    `<text x="44" y="78" class="subtitle">Measured supplementary results only. Unsupported combinations are documented in Table S3, not drawn as N/A marks.</text>`,
+    `<text x="44" y="78" class="subtitle">Measured supplementary results only. Unsupported combinations are documented in Table S3 rather than drawn as placeholders.</text>`,
   ];
   let yCursor = top;
   groups.forEach((group, gi) => {
@@ -489,7 +526,7 @@ function representationConstruction(stem, outDir) {
 const assets = [];
 assets.push(conceptualOverview("figure_1_conceptual_overview", figuresDir));
 assets.push(barFigure("figure_2_signature_baselines", "Figure 2. Burden and signature baselines", "figure_2_signature_baselines.csv", figuresDir));
-assets.push(barFigure("figure_3_geometry_vs_signatures", "Figure 3. One-hot event KME vs signatures", "figure_3_geometry_vs_signatures.csv", figuresDir));
+assets.push(barFigure("figure_3_geometry_vs_signatures", "Figure 3. One-hot sequence KME v2 vs signatures", "figure_3_geometry_vs_signatures.csv", figuresDir, { deltaPanel: true }));
 assets.push(barFigure("figure_4_maf_stack_vs_signatures", "Figure 4. Event-level MAF biology", "figure_4_maf_stack_vs_signatures.csv", figuresDir));
 assets.push(heatFacetFigure("figure_5_cross_endpoint_summary", "Figure 5. Cross-endpoint representation summary", "figure_5_cross_endpoint_summary.csv", figuresDir));
 assets.push(representationConstruction("figure_s1_representation_construction", supplementDir));

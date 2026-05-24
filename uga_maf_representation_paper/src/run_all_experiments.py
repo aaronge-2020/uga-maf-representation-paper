@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import argparse
 import csv
-import gzip
 import importlib.util
 import json
 import os
@@ -55,42 +54,20 @@ def _path_inside(path: Path, root: Path) -> bool:
         return False
 
 
-def _find_uncompressed_fasta(fasta_dir: Path) -> Path | None:
-    if not fasta_dir.exists():
-        return None
-    candidates = sorted(fasta_dir.rglob("*.fna")) + sorted(fasta_dir.rglob("*.fa")) + sorted(fasta_dir.rglob("*.fasta"))
-    return candidates[0] if candidates else None
-
-
-def _find_compressed_fasta(fasta_dir: Path) -> Path | None:
-    if not fasta_dir.exists():
-        return None
-    candidates = sorted(fasta_dir.rglob("*.fna.gz")) + sorted(fasta_dir.rglob("*.fa.gz")) + sorted(fasta_dir.rglob("*.fasta.gz"))
-    return candidates[0] if candidates else None
-
-
-def materialize_reference_fasta(paths: dict) -> Path | None:
-    """Expand a bundled compressed FASTA when the indexed FASTA is not present."""
-    fasta_dir = Path((paths.get("raw_data") or {}).get("grch37_dir") or "")
-    fasta = _find_uncompressed_fasta(fasta_dir)
-    if fasta is not None:
-        return fasta
-    archive = _find_compressed_fasta(fasta_dir)
-    if archive is None:
-        return None
-    target = archive.with_suffix("")
-    print(f"[reference] materializing {target.name} from bundled {archive.name}", flush=True)
-    with gzip.open(archive, "rb") as src, target.open("wb") as dst:
-        shutil.copyfileobj(src, dst, length=16 * 1024 * 1024)
-    return target
-
-
 def validate_environment(settings: dict, paths: dict, ctx: RunnerContext) -> list[dict[str, object]]:
     """Run cheap reproducibility checks before expensive work."""
     rows: list[dict[str, object]] = []
-    required_modules = ["yaml", "numpy", "pandas", "sklearn", "xgboost", "optuna", "pysam"]
+    required_modules = ["yaml", "numpy", "pandas", "sklearn", "xgboost", "optuna"]
     for module in required_modules:
         rows.append({"kind": "python_module", "name": module, "status": "ok" if importlib.util.find_spec(module) else "missing"})
+    rows.append(
+        {
+            "kind": "optional_python_module",
+            "name": "pysam",
+            "status": "ok" if importlib.util.find_spec("pysam") else "optional_missing",
+            "note": "Context-derived one-hot KME uses the bundled pure-Python FASTA reader when pysam is unavailable.",
+        }
+    )
     rows.append({"kind": "python_executable", "name": sys.executable, "status": "ok"})
     rows.append({"kind": "cpu_count", "name": "os.cpu_count", "status": "ok", "value": os.cpu_count() or 1})
     for section_name in ("raw_data", "processed_helpers", "workspace"):
@@ -103,12 +80,29 @@ def validate_environment(settings: dict, paths: dict, ctx: RunnerContext) -> lis
             inside = _path_inside(path, REPRO_ROOT)
             rows.append({"kind": "path", "name": f"{section_name}.{key}", "status": status, "inside_repro_root": inside, "path": str(path)})
     fasta_dir = Path((paths.get("raw_data") or {}).get("grch37_dir") or "")
-    fasta = _find_uncompressed_fasta(fasta_dir)
-    archive = _find_compressed_fasta(fasta_dir) if fasta is None else None
-    if fasta is None and archive is not None:
-        fasta = archive.with_suffix("")
-        rows.append({"kind": "fasta_archive", "name": "GRCh37 compressed FASTA", "status": "ok", "path": str(archive), "materializes_to": str(fasta)})
-    rows.append({"kind": "fasta", "name": "GRCh37", "status": "ok" if fasta and fasta.exists() else ("compressed_available" if archive else "missing"), "path": str(fasta) if fasta else ""})
+    fasta_candidates = []
+    compressed_fasta_candidates = []
+    if fasta_dir.exists():
+        fasta_candidates = sorted(fasta_dir.rglob("*.fna")) + sorted(fasta_dir.rglob("*.fa")) + sorted(fasta_dir.rglob("*.fasta"))
+        compressed_fasta_candidates = sorted(fasta_dir.rglob("*.fna.gz")) + sorted(fasta_dir.rglob("*.fa.gz")) + sorted(fasta_dir.rglob("*.fasta.gz"))
+    fasta = fasta_candidates[0] if fasta_candidates else None
+    compressed_fasta = compressed_fasta_candidates[0] if compressed_fasta_candidates else None
+    if fasta:
+        rows.append({"kind": "fasta", "name": "GRCh37", "status": "ok", "path": str(fasta)})
+    elif compressed_fasta:
+        fasta = compressed_fasta.with_suffix("")
+        rows.append(
+            {
+                "kind": "fasta",
+                "name": "GRCh37",
+                "status": "ok_compressed",
+                "path": str(fasta),
+                "compressed_path": str(compressed_fasta),
+                "note": "The one-hot KME runner will decompress this .gz FASTA on first use.",
+            }
+        )
+    else:
+        rows.append({"kind": "fasta", "name": "GRCh37", "status": "missing", "path": ""})
     if fasta:
         fai = fasta.parent / f"{fasta.name}.fai"
         rows.append({"kind": "fasta_index", "name": ".fai", "status": "ok" if fai.exists() else "missing", "path": str(fai)})
@@ -129,8 +123,6 @@ def main() -> None:
     settings["_run_id"] = run_id
     paths = resolve_paths_map(load_yaml(args.paths))
     ctx = RunnerContext(settings=settings, paths=paths, dry_run=bool(args.dry_run), refresh_cache=bool(args.refresh_cache))
-    if not args.dry_run:
-        materialize_reference_fasta(paths)
     ensure_output_dirs(ctx)
     env_rows = validate_environment(settings, paths, ctx)
     env_path = ctx.logs_dir / ("dry_run_environment_checks.csv" if args.dry_run else "environment_checks.csv")

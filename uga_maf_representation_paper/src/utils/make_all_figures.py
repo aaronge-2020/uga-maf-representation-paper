@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import html
 import json
 import os
 import re
@@ -74,13 +75,47 @@ SOURCE_PRIORITY = {
 }
 REQUIRED_MANUSCRIPT_FILES = [
     "tables/table_1_datasets_endpoints.csv",
+    "tables/table_1_datasets_endpoints.html",
     "tables/table_2_full_performance_metrics.csv",
+    "tables/table_2_full_performance_metrics.html",
     "tables/table_3_hyperparameters_feature_dimensionality.csv",
+    "tables/table_3_hyperparameters_feature_dimensionality.html",
     "tables/table_4_label_mapping.csv",
+    "tables/table_4_label_mapping.html",
+    "tables/publication/table_1_datasets_endpoints.csv",
+    "tables/publication/table_1_datasets_endpoints.html",
+    "tables/publication/table_2_full_performance_metrics.csv",
+    "tables/publication/table_2_full_performance_metrics.html",
+    "tables/publication/table_3_hyperparameters_feature_dimensionality.csv",
+    "tables/publication/table_3_hyperparameters_feature_dimensionality.html",
+    "tables/publication/table_4_label_mapping.csv",
+    "tables/publication/table_4_label_mapping.html",
+    "tables/technical/table_1_datasets_endpoints_technical.csv",
+    "tables/technical/table_1_datasets_endpoints_technical.html",
+    "tables/technical/table_2_full_performance_metrics_technical.csv",
+    "tables/technical/table_2_full_performance_metrics_technical.html",
+    "tables/technical/table_3_hyperparameters_feature_dimensionality_technical.csv",
+    "tables/technical/table_3_hyperparameters_feature_dimensionality_technical.html",
+    "tables/technical/table_4_label_mapping_technical.csv",
+    "tables/technical/table_4_label_mapping_technical.html",
     "text/manuscript_captions_and_results.md",
     "text/label_mapping_notes.md",
+    "supplement/table_s0_source_inventory.csv",
+    "supplement/table_s0_source_inventory.html",
     "supplement/table_s1_class_distribution_baselines.csv",
+    "supplement/table_s1_class_distribution_baselines.html",
     "supplement/table_s2_sensitivity_analyses.csv",
+    "supplement/table_s2_sensitivity_analyses.html",
+    "supplement/table_s3_completeness_and_na_reasons.csv",
+    "supplement/table_s3_completeness_and_na_reasons.html",
+    "tables/technical/table_s0_source_inventory_technical.csv",
+    "tables/technical/table_s0_source_inventory_technical.html",
+    "tables/technical/table_s1_class_distribution_baselines_technical.csv",
+    "tables/technical/table_s1_class_distribution_baselines_technical.html",
+    "tables/technical/table_s2_sensitivity_analyses_technical.csv",
+    "tables/technical/table_s2_sensitivity_analyses_technical.html",
+    "tables/technical/table_s3_completeness_and_na_reasons_technical.csv",
+    "tables/technical/table_s3_completeness_and_na_reasons_technical.html",
     "figures/figure_1_conceptual_overview.png",
     "figures/figure_2_signature_baselines.png",
     "figures/figure_3_geometry_vs_signatures.png",
@@ -110,6 +145,204 @@ DISPLAY_COLUMN_SPECS = [
 ]
 DISPLAY_BY_SOURCE = {source: display for source, display, _ in DISPLAY_COLUMN_SPECS}
 DISPLAY_DOMAIN_BY_SOURCE = {source: domain for source, _, domain in DISPLAY_COLUMN_SPECS}
+TABLE_TITLES = {
+    "table_1_datasets_endpoints": "Table 1. Datasets, endpoints, and evaluation design",
+    "table_2_full_performance_metrics": "Table 2. Main-panel performance matrix",
+    "table_3_hyperparameters_feature_dimensionality": "Table 3. Representation summary and dimensionality",
+    "table_4_label_mapping": "Table 4. Key terminology and abbreviations",
+    "table_s0_source_inventory": "Supplementary Table S0. Regenerated source inventory",
+    "table_s1_class_distribution_baselines": "Supplementary Table S1. Supplementary endpoint inventory",
+    "table_s2_sensitivity_analyses": "Supplementary Table S2. Headline supplementary results",
+    "table_s3_completeness_and_na_reasons": "Supplementary Table S3. Non-applicability summary",
+}
+HTML_COLUMN_LABELS = {
+    "endpoint_display": "Endpoint",
+    "endpoint_tier_display": "Endpoint tier",
+    "task_display": "Task",
+    "representation_family_display": "Representation family",
+    "representation_display": "Representation",
+    "atlas_status_display": "Atlas status",
+    "model_display": "Model",
+    "model_label_display": "Model label",
+    "display_model_display": "Display model",
+    "metric_display": "Metric",
+    "candidate_representation_display": "Candidate representation",
+    "baseline_representation_display": "Baseline representation",
+    "comparison_display": "Comparison",
+    "calibration_mode_display": "Calibration mode",
+    "analysis_family_display": "Analysis family",
+    "endpoint": "Endpoint ID",
+    "endpoint_tier": "Endpoint tier ID",
+    "task": "Task ID",
+    "representation_family": "Representation family ID",
+    "representation": "Representation ID",
+    "atlas_status": "Atlas status ID",
+    "model_family": "Model family ID",
+    "model_label": "Model label ID",
+    "display_model": "Display model ID",
+    "metric": "Metric ID",
+    "candidate_representation": "Candidate representation ID",
+    "baseline_representation": "Baseline representation ID",
+    "comparison_name": "Comparison ID",
+    "calibration_mode": "Calibration mode ID",
+    "analysis_family": "Analysis family ID",
+    "n_samples_max": "Max samples",
+    "assay_or_source": "Assay or source",
+    "label_definition": "Label definition",
+    "splitting_scheme": "Splitting scheme",
+    "primary_score": "Primary score",
+    "delta_vs_signatures": "Delta vs signatures",
+    "ci_low": "CI low",
+    "ci_high": "CI high",
+    "p_value": "P value",
+    "q_value": "FDR q value",
+    "n_samples": "Samples",
+    "n_features": "Features",
+    "xgb_estimators": "XGBoost estimators",
+    "optuna_trials_completed": "Optuna trials",
+    "na_reason": "N/A reason",
+    "split_strategy": "Split strategy",
+    "cache_key": "Cache key",
+    "oof_prediction_file": "OOF prediction file",
+    "fold_metrics_file": "Fold metrics file",
+    "source_file": "Source file",
+    "source_table": "Source table",
+    "metrics_seen": "Metrics seen",
+    "naive_baseline_context": "Naive baseline context",
+    "median_features": "Median features",
+    "max_features": "Max features",
+    "linear_model": "Linear model",
+    "label_domain": "Label domain",
+    "machine_name": "Machine name",
+    "display_name": "Display name",
+    "long_description": "Long description",
+    "used_in_figures": "Used in figures",
+    "used_in_tables": "Used in tables",
+    "N": "N",
+    "Score": "Score",
+    "Features": "Features",
+    "Panel": "Panel",
+    "Result rows": "Result rows",
+    "CV design": "CV design",
+    "Estimator/tuning": "Estimator/tuning",
+    "Atlas/context": "Atlas/context",
+    "95% CI": "95% CI",
+    "FDR q value": "FDR q value",
+    "Label category": "Label category",
+    "Internal identifier": "Internal identifier",
+    "Manuscript label": "Manuscript label",
+    "Description": "Description",
+    "Used in": "Used in",
+    "Source artifact": "Source artifact",
+    "Rows": "Rows",
+    "Columns": "Columns",
+    "Metrics": "Metrics",
+    "Representations": "Representations",
+    "Interpretation note": "Interpretation note",
+}
+INTEGER_HTML_COLUMNS = {
+    "N",
+    "Rows",
+    "Columns",
+    "Features",
+    "Result rows",
+    "Median features",
+    "Max features",
+    "rows",
+    "columns",
+    "folds",
+    "repeats",
+    "n_samples",
+    "n_samples_max",
+    "n_features",
+    "median_features",
+    "max_features",
+    "xgb_estimators",
+    "optuna_trials_completed",
+}
+SCORE_HTML_COLUMNS = {
+    "Score",
+    "Delta vs signatures",
+    "FDR q value",
+    "primary_score",
+    "auroc",
+    "auprc",
+    "accuracy",
+    "f1",
+    "balanced_accuracy",
+    "delta",
+    "delta_vs_signatures",
+    "ci_low",
+    "ci_high",
+    "p_value",
+    "q_value",
+    "prevalence",
+}
+MAIN_REPRESENTATION_SHORT_LABELS = {
+    "burden_only": "Burden (EN/XGB)",
+    "signatures_only": "Signatures (EN/XGB)",
+    "one_hot_event_KME": "One-hot KME (EN/XGB)",
+    "MAF_stack_only": "MAF stack (EN/XGB)",
+    "signatures_plus_MAF_stack": "Signatures + MAF (EN/XGB)",
+}
+MANUSCRIPT_TABLE_REPRESENTATIONS = [
+    "burden_only",
+    "signatures_only",
+    "one_hot_event_KME",
+    "MAF_stack_only",
+    "signatures_plus_MAF_stack",
+]
+REPRESENTATION_SUMMARY_SPECS = {
+    "burden_only": {
+        "input_signal": "Total mutation burden and compact burden summaries",
+        "role": "Minimal baseline for all main endpoints",
+    },
+    "signatures_only": {
+        "input_signal": "SBS/DBS/ID mutational spectra",
+        "role": "Canonical mutational-process baseline",
+    },
+    "one_hot_event_KME": {
+        "input_signal": "One-hot encoded local sequence windows averaged with kernel mean embeddings",
+        "role": "Geometry-only sequence-context comparator",
+    },
+    "MAF_stack_only": {
+        "input_signal": "Gene, locus, consequence, VAF, and event-level MAF aggregates",
+        "role": "Event-level biological annotation comparator",
+    },
+    "signatures_plus_MAF_stack": {
+        "input_signal": "Concatenated mutational spectra and event-level MAF aggregates",
+        "role": "Combined practical default tested against single-source feature sets",
+    },
+}
+BASELINE_REPRESENTATION_FAMILIES = {
+    "burden_only",
+    "signatures_only",
+    "MAF_stack_only",
+    "signatures_plus_MAF_stack",
+}
+SENSITIVITY_REPRESENTATION_FAMILIES = {
+    "UGA_geometry",
+    "channel_KME",
+    "COSMIC_NNLS_exposures",
+    "mechanistic_control",
+}
+KEY_GLOSSARY_ROWS = [
+    ("EN / XGB", "Elastic-net score / XGBoost score in compact performance tables.", "Table 2"),
+    ("AUROC", "Area under the receiver operating characteristic curve for binary endpoints.", "Tables 2 and S2"),
+    ("macro-AUROC", "Class-balanced AUROC averaged across multiclass labels.", "Tables 2 and S2"),
+    ("Spearman r", "Spearman rank correlation for continuous endpoints.", "Tables 2 and S2"),
+    ("HRD", "Homologous recombination deficiency.", "Endpoint labels"),
+    ("MAF", "Mutation annotation format; here also shorthand for event-level mutation annotations.", "Representations"),
+    ("SBS/DBS/ID", "Single-base substitution, double-base substitution, and insertion/deletion mutation spectra.", "Representations"),
+    ("KME", "Kernel mean embedding used to summarize event-level mutation contexts.", "Representations"),
+    ("UGA", "Universal genomic atlas/channel geometry representation used in supplementary analyses.", "Supplement"),
+    ("Mutational burden", "Compact mutation-count baseline features.", "Tables 2 and 3"),
+    ("Mutational signatures", "Canonical mutation-spectrum representation.", "Tables 2 and 3"),
+    ("One-hot sequence KME", "FASTA-window sequence-context KME representation.", "Tables 2 and 3"),
+    ("Event-level MAF stack", "Gene, locus, consequence, VAF, and event-annotation feature stack.", "Tables 2 and 3"),
+    ("Signatures + MAF stack", "Combined spectra plus event-level MAF features.", "Tables 2 and 3"),
+    ("XGBoost", "Gradient-boosted tree model used as the nonlinear learner.", "Model columns"),
+]
 
 
 def _load_label_registry() -> dict[str, dict[str, dict[str, str]]]:
@@ -187,10 +420,320 @@ def _publication_column_order(df: pd.DataFrame) -> list[str]:
     return display_cols + score_cols + middle + machine_cols + provenance_cols
 
 
+def _html_table_title(path: Path) -> str:
+    return TABLE_TITLES.get(path.stem, path.stem.replace("_", " ").title())
+
+
+def _html_column_label(column: str) -> str:
+    if column in HTML_COLUMN_LABELS:
+        return HTML_COLUMN_LABELS[column]
+    if any(token in column for token in (" ", "/", "(", ")", "%")):
+        return column
+    label = column
+    if label.endswith("_display"):
+        label = label.removesuffix("_display")
+    label = label.replace("_", " ")
+    acronyms = {"id": "ID", "hrd": "HRD", "uga": "UGA", "maf": "MAF", "kme": "KME", "oof": "OOF", "xgb": "XGBoost", "cv": "CV"}
+    return " ".join(acronyms.get(part.lower(), part.capitalize()) for part in label.split())
+
+
+def _is_missing_html_value(value: object) -> bool:
+    if value is None:
+        return True
+    try:
+        if pd.isna(value):
+            return True
+    except (TypeError, ValueError):
+        return False
+    return str(value).strip().lower() in {"", "nan", "none", "na", "n/a"}
+
+
+def _format_html_cell(value: object, column: str) -> str:
+    if _is_missing_html_value(value):
+        return ""
+    if isinstance(value, (bool, np.bool_)):
+        return "Yes" if bool(value) else "No"
+    if column in INTEGER_HTML_COLUMNS:
+        number = pd.to_numeric(value, errors="coerce")
+        if pd.notna(number):
+            return f"{float(number):,.0f}"
+    if column in SCORE_HTML_COLUMNS:
+        number = pd.to_numeric(value, errors="coerce")
+        if pd.notna(number):
+            if column in {"p_value", "q_value"} and 0 < float(number) < 0.001:
+                return "<0.001"
+            return f"{float(number):.3f}"
+    return str(value)
+
+
+def _is_numeric_html_column(frame: pd.DataFrame, column: str) -> bool:
+    if column in INTEGER_HTML_COLUMNS or column in SCORE_HTML_COLUMNS:
+        return True
+    if column not in frame.columns:
+        return False
+    series = frame[column].dropna()
+    if series.empty:
+        return False
+    if pd.api.types.is_numeric_dtype(series):
+        return True
+    converted = pd.to_numeric(series, errors="coerce")
+    return bool(converted.notna().mean() > 0.95)
+
+
+def _write_html_table(df: pd.DataFrame, path: Path, *, title: str | None = None) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    title = title or _html_table_title(path)
+    numeric_columns = {column for column in df.columns if _is_numeric_html_column(df, column)}
+    header = "".join(f"<th>{html.escape(_html_column_label(str(column)))}</th>" for column in df.columns)
+    body_rows: list[str] = []
+    for _, row in df.iterrows():
+        cells = []
+        for column in df.columns:
+            value = _format_html_cell(row[column], str(column))
+            classes = ["numeric"] if column in numeric_columns else []
+            if len(value) > 60 and column not in numeric_columns:
+                classes.append("long-text")
+            class_attr = f' class="{" ".join(classes)}"' if classes else ""
+            cells.append(f"<td{class_attr}>{html.escape(value)}</td>")
+        body_rows.append("<tr>" + "".join(cells) + "</tr>")
+    table = (
+        '<div class="table-wrap">\n'
+        '<table class="manuscript-table">\n'
+        f"<caption>{html.escape(title)}</caption>\n"
+        "<thead><tr>"
+        + header
+        + "</tr></thead>\n<tbody>\n"
+        + "\n".join(body_rows)
+        + "\n</tbody>\n</table>\n</div>"
+    )
+    document = f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{html.escape(title)}</title>
+<style>
+body {{
+  color: #1f2933;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 24px;
+}}
+.table-wrap {{
+  overflow-x: auto;
+}}
+table.manuscript-table {{
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 12px;
+  line-height: 1.35;
+  width: 100%;
+}}
+table.manuscript-table caption {{
+  caption-side: top;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  text-align: left;
+}}
+table.manuscript-table th,
+table.manuscript-table td {{
+  border: 1px solid #cfd6df;
+  padding: 6px 8px;
+  vertical-align: top;
+}}
+table.manuscript-table th {{
+  background: #eef2f6;
+  color: #111827;
+  font-weight: 700;
+  text-align: left;
+}}
+table.manuscript-table tbody tr:nth-child(even) td {{
+  background: #f8fafc;
+}}
+table.manuscript-table td.numeric {{
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}}
+table.manuscript-table td.long-text {{
+  min-width: 18rem;
+}}
+</style>
+</head>
+<body>
+{table}
+</body>
+</html>
+"""
+    path.write_text(document, encoding="utf-8")
+
+
+def _write_table_csv_html(df: pd.DataFrame, path: Path, *, title: str | None = None) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(path, index=False)
+    _write_html_table(df, path.with_suffix(".html"), title=title or _html_table_title(path))
+
+
 def _write_publication_copy(df: pd.DataFrame, path: Path, public_dir: Path) -> None:
     public_dir.mkdir(parents=True, exist_ok=True)
-    public = df.loc[:, _publication_column_order(df)]
-    public.to_csv(public_dir / path.name, index=False)
+    _write_table_csv_html(df, public_dir / path.name, title=_html_table_title(path))
+
+
+def _format_manuscript_count(value: object) -> str:
+    number = pd.to_numeric(value, errors="coerce")
+    if pd.isna(number):
+        return ""
+    return f"{int(round(float(number))):,}"
+
+
+def _format_manuscript_score(value: object) -> str:
+    number = pd.to_numeric(value, errors="coerce")
+    if pd.isna(number):
+        return ""
+    return f"{float(number):.3f}"
+
+
+def _format_manuscript_q(value: object) -> str:
+    number = pd.to_numeric(value, errors="coerce")
+    if pd.isna(number):
+        return ""
+    if 0 < float(number) < 0.001:
+        return "<0.001"
+    return f"{float(number):.3f}"
+
+
+def _format_ci(low: object, high: object) -> str:
+    lo = pd.to_numeric(low, errors="coerce")
+    hi = pd.to_numeric(high, errors="coerce")
+    if pd.isna(lo) or pd.isna(hi):
+        return ""
+    return f"{float(lo):.3f} to {float(hi):.3f}"
+
+
+def _format_cv_design(folds: object, repeats: object) -> str:
+    fold_text = _format_manuscript_count(folds)
+    repeat_text = _format_manuscript_count(repeats)
+    if not fold_text:
+        return ""
+    if repeat_text and repeat_text != "1":
+        return f"{fold_text}-fold CV, {repeat_text} repeats"
+    return f"{fold_text}-fold CV"
+
+
+def _format_feature_range(values: pd.Series) -> str:
+    numeric = pd.to_numeric(values, errors="coerce").dropna()
+    if numeric.empty:
+        return ""
+    low = float(numeric.min())
+    high = float(numeric.max())
+    if int(round(low)) == int(round(high)):
+        return _format_manuscript_count(low)
+    return f"{_format_manuscript_count(low)}-{_format_manuscript_count(high)}"
+
+
+def _ordered_unique(values: pd.Series | list[object]) -> list[str]:
+    out: list[str] = []
+    for value in values:
+        text = str(value or "").strip()
+        if not text or text.lower() in {"nan", "none"}:
+            continue
+        if text not in out:
+            out.append(text)
+    return out
+
+
+def _best_result_cell(frame: pd.DataFrame) -> tuple[str, float | None, str]:
+    if frame.empty:
+        return "", None, ""
+    work = frame.copy()
+    work["primary_score"] = pd.to_numeric(work["primary_score"], errors="coerce")
+    work = work.dropna(subset=["primary_score"])
+    if work.empty:
+        return "", None, ""
+    row = work.sort_values("primary_score", ascending=False, kind="mergesort").iloc[0]
+    representation = str(row.get("representation_family_display", "") or row.get("representation_display", "")).strip()
+    model = str(row.get("model_display", "")).strip()
+    metric = str(row.get("metric_display", "")).strip()
+    score = float(row["primary_score"])
+    pieces = [part for part in [representation, model] if part]
+    label = " / ".join(pieces) if pieces else "Best result"
+    return f"{label} ({metric} {score:.3f})", score, representation
+
+
+def _supplementary_interpretation(baseline_score: float | None, sensitivity_score: float | None, best_label: str) -> str:
+    if baseline_score is None and sensitivity_score is None:
+        return "No compact comparison available; see technical table."
+    if sensitivity_score is None:
+        return "Best result comes from baseline or event-level feature families."
+    if baseline_score is None:
+        return "Best result comes from supplementary geometry/sensitivity analyses."
+    delta = sensitivity_score - baseline_score
+    if delta > 0:
+        return f"Best sensitivity result exceeds baseline by {delta:.3f}."
+    if delta < 0:
+        return f"Best baseline/event-level result exceeds sensitivity result by {abs(delta):.3f}."
+    return "Best baseline and sensitivity results are tied."
+
+
+def _task_from_group(frame: pd.DataFrame, endpoint_display: str) -> str:
+    values: list[str] = []
+    if "task_display" in frame.columns:
+        values = sorted({str(value).strip() for value in frame["task_display"].dropna() if str(value).strip()})
+    if values:
+        return "; ".join(values)
+    metrics = {str(value).strip().lower() for value in frame.get("metric", pd.Series(dtype=object)).dropna()}
+    if "spearman" in metrics:
+        return "Regression"
+    if "macro_auroc" in metrics or "balanced_accuracy" in metrics or "kucab" in endpoint_display.lower():
+        return "Multiclass classification"
+    if "auroc" in metrics:
+        return "Binary classification"
+    return ""
+
+
+def _row_order(value: object, order: list[str]) -> int:
+    text = str(value)
+    return order.index(text) if text in order else len(order)
+
+
+def _manuscript_performance_table(frame: pd.DataFrame, *, include_analysis: bool) -> pd.DataFrame:
+    work = _add_display_columns(frame.copy())
+    if work.empty:
+        columns = ["Endpoint", "Task", "Representation", "Model", "Metric", "Score", "N", "Features"]
+        if include_analysis:
+            columns.insert(2, "Analysis")
+            columns.extend(["Delta vs signatures", "95% CI", "FDR q value"])
+        return pd.DataFrame(columns=columns)
+    work["_endpoint_order"] = work["endpoint"].map(lambda value: _row_order(value, MAIN_ENDPOINTS))
+    work["_representation_order"] = work["representation_family"].map(lambda value: _row_order(value, MAIN_REPRESENTATIONS))
+    work["_model_order"] = work["model_family"].map(lambda value: _row_order(value, MODEL_FAMILIES))
+    sort_cols = ["_endpoint_order", "endpoint_display"]
+    if include_analysis and "model_label_display" in work.columns:
+        sort_cols.append("model_label_display")
+    sort_cols.extend(["_representation_order", "representation_family_display", "_model_order", "model_display"])
+    work = work.sort_values(sort_cols, kind="mergesort")
+    out = pd.DataFrame(
+        {
+            "Endpoint": work["endpoint_display"],
+            "Task": work["task_display"],
+            "Representation": work["representation_family_display"],
+            "Model": work["model_display"],
+            "Metric": work["metric_display"],
+            "Score": work["primary_score"].map(_format_manuscript_score),
+            "N": work["n_samples"].map(_format_manuscript_count),
+            "Features": work["n_features"].map(_format_manuscript_count) if "n_features" in work.columns else "",
+        }
+    )
+    if include_analysis:
+        out.insert(2, "Analysis", work.get("model_label_display", pd.Series("", index=work.index)).fillna("").astype(str))
+        out.insert(8, "Delta vs signatures", work.get("delta_vs_signatures", pd.Series("", index=work.index)).map(_format_manuscript_score))
+        out.insert(9, "95% CI", [_format_ci(low, high) for low, high in zip(work.get("ci_low", pd.Series("", index=work.index)), work.get("ci_high", pd.Series("", index=work.index)))])
+        out.insert(10, "FDR q value", work.get("q_value", pd.Series("", index=work.index)).map(_format_manuscript_q))
+    return out.reset_index(drop=True)
+
+
+def _technical_path(technical_dir: Path, source_path: Path) -> Path:
+    return technical_dir / f"{source_path.stem}_technical{source_path.suffix}"
 
 
 def _read_table(path: Path) -> pd.DataFrame | None:
@@ -379,6 +922,14 @@ def _normalize(endpoint_results: pd.DataFrame, *, run_id: str) -> pd.DataFrame:
                 "repeats": _num(row, ["repeats", "n_repeats"]),
                 "xgb_estimators": _num(row, ["n_estimators"]),
                 "optuna_trials_completed": optuna_trials_completed,
+                "kme_version": _text(row, ["kme_version"], ""),
+                "kme_config_id": _text(row, ["kme_config_id"], ""),
+                "landmark_mode": _text(row, ["landmark_mode"], ""),
+                "sigma_multiplier": _num(row, ["sigma_multiplier"]),
+                "sigma_strategy": _text(row, ["sigma_strategy"], ""),
+                "modality_strategy": _text(row, ["modality_strategy"], ""),
+                "landmark_sampling": _text(row, ["landmark_sampling"], ""),
+                "kernel_weighting": _text(row, ["kernel_weighting"], ""),
                 "cache_key": _text(row, ["cache_key"], ""),
                 "oof_prediction_file": _text(row, ["oof_prediction_file"], ""),
                 "fold_metrics_file": _text(row, ["fold_metrics_file"], ""),
@@ -503,15 +1054,18 @@ def _heatmap(df: pd.DataFrame, stem: Path, title: str, families: list[str], *, m
 def _write_tables(df: pd.DataFrame, side_tables: dict[str, pd.DataFrame], manuscript_dir: Path) -> None:
     tables_dir = manuscript_dir / "tables"
     public_dir = tables_dir / "publication"
+    technical_dir = tables_dir / "technical"
     supp_dir = manuscript_dir / "supplement"
     tables_dir.mkdir(parents=True, exist_ok=True)
     public_dir.mkdir(parents=True, exist_ok=True)
+    technical_dir.mkdir(parents=True, exist_ok=True)
     supp_dir.mkdir(parents=True, exist_ok=True)
 
-    dataset_rows = []
-    for endpoint in sorted(df["endpoint"].dropna().unique()):
-        sub = df[df["endpoint"].eq(endpoint)]
-        dataset_rows.append(
+    display_df = _add_display_columns(df.copy())
+    technical_dataset_rows: list[dict[str, object]] = []
+    for endpoint in sorted(display_df["endpoint"].dropna().unique()):
+        sub = display_df[display_df["endpoint"].eq(endpoint)]
+        technical_dataset_rows.append(
             {
                 "endpoint": endpoint,
                 "endpoint_tier": "main" if endpoint in MAIN_ENDPOINTS else "supplement",
@@ -522,9 +1076,46 @@ def _write_tables(df: pd.DataFrame, side_tables: dict[str, pd.DataFrame], manusc
                 "splitting_scheme": "single 5-fold CV with aggregated out-of-fold test predictions where model-based",
             }
         )
-    table1 = _add_display_columns(pd.DataFrame(dataset_rows))
+    table1_technical = _add_display_columns(pd.DataFrame(technical_dataset_rows))
     table1_path = tables_dir / "table_1_datasets_endpoints.csv"
-    table1.to_csv(table1_path, index=False)
+    _write_table_csv_html(table1_technical, _technical_path(technical_dir, table1_path))
+
+    endpoint_rows: list[dict[str, object]] = []
+    for endpoint_display, sub in display_df.groupby("endpoint_display", dropna=False, sort=False):
+        endpoint_values = [str(value) for value in sub["endpoint"].dropna().unique()]
+        panel = "Main" if any(value in MAIN_ENDPOINTS for value in endpoint_values) else "Supplement"
+        definitions = []
+        for endpoint in endpoint_values:
+            definition = _label_definition(endpoint)
+            if definition and definition not in definitions:
+                definitions.append(definition)
+        sources = []
+        for endpoint in endpoint_values:
+            source = _source_label(endpoint)
+            if source and source not in sources:
+                sources.append(source)
+        metrics = sorted({_display_label("metric", value) for value in sub["metric"].dropna().unique() if str(value).strip()})
+        representations = sorted({_display_label("representation_family", value) for value in sub["representation_family"].dropna().unique() if str(value).strip()})
+        endpoint_rows.append(
+            {
+                "_panel_order": 0 if panel == "Main" else 1,
+                "_endpoint_order": min([_row_order(value, MAIN_ENDPOINTS) for value in endpoint_values] or [len(MAIN_ENDPOINTS)]),
+                "Endpoint": str(endpoint_display),
+                "Panel": panel,
+                "N": _format_manuscript_count(pd.to_numeric(sub["n_samples"], errors="coerce").max()),
+                "Task": _task_from_group(sub, str(endpoint_display)),
+                "Source": "; ".join(sources),
+                "Primary metric": "; ".join(metrics),
+                "Label definition": "; ".join(definitions),
+                "Representation families": "; ".join(representations),
+            }
+        )
+    endpoint_inventory = pd.DataFrame(endpoint_rows).sort_values(["_panel_order", "_endpoint_order", "Endpoint"], kind="mergesort")
+    table1 = endpoint_inventory[endpoint_inventory["Panel"].eq("Main")].loc[
+        :, ["Endpoint", "Source", "N", "Task", "Primary metric", "Label definition"]
+    ].rename(columns={"Source": "Cohort/source", "Label definition": "Label"})
+    table1 = table1.reset_index(drop=True)
+    _write_table_csv_html(table1, table1_path)
     _write_publication_copy(table1, table1_path, public_dir)
 
     ordered_cols = [
@@ -570,12 +1161,39 @@ def _write_tables(df: pd.DataFrame, side_tables: dict[str, pd.DataFrame], manusc
         "experiment_id",
         "source_file",
     ]
-    table2 = _add_display_columns(df.loc[:, [col for col in ordered_cols if col in df.columns]])
+    table2_technical = _add_display_columns(df.loc[:, [col for col in ordered_cols if col in df.columns]])
     table2_path = tables_dir / "table_2_full_performance_metrics.csv"
-    table2.to_csv(table2_path, index=False)
+    _write_table_csv_html(table2_technical, _technical_path(technical_dir, table2_path))
+    main_perf = table2_technical[table2_technical["endpoint_tier"].astype(str).eq("main")].copy()
+    table2_rows: list[dict[str, object]] = []
+    for endpoint in MAIN_ENDPOINTS:
+        sub = main_perf[main_perf["endpoint"].astype(str).eq(endpoint)].copy()
+        if sub.empty:
+            continue
+        row: dict[str, object] = {
+            "Endpoint": sub["endpoint_display"].iloc[0],
+            "Task": sub["task_display"].iloc[0],
+            "Metric": sub["metric_display"].iloc[0],
+            "N": _format_manuscript_count(pd.to_numeric(sub["n_samples"], errors="coerce").max()),
+        }
+        best = sub.assign(primary_score=pd.to_numeric(sub["primary_score"], errors="coerce")).sort_values("primary_score", ascending=False, kind="mergesort").iloc[0]
+        for family in MANUSCRIPT_TABLE_REPRESENTATIONS:
+            fam = sub[sub["representation_family"].astype(str).eq(family)]
+            scores_by_model = {
+                str(item["model_family"]): _format_manuscript_score(item["primary_score"])
+                for _, item in fam.iterrows()
+            }
+            row[MAIN_REPRESENTATION_SHORT_LABELS[family]] = " / ".join(scores_by_model.get(model, "") for model in MODEL_FAMILIES)
+        row["Best model"] = (
+            f"{best['representation_family_display']} ({best['model_display']}, "
+            f"{_format_manuscript_score(best['primary_score'])})"
+        )
+        table2_rows.append(row)
+    table2 = pd.DataFrame(table2_rows)
+    _write_table_csv_html(table2, table2_path)
     _write_publication_copy(table2, table2_path, public_dir)
 
-    hyper = (
+    hyper_technical = (
         df.groupby(["representation_family", "model_family", "atlas_status"], dropna=False)
         .agg(
             rows=("primary_score", "size"),
@@ -587,33 +1205,97 @@ def _write_tables(df: pd.DataFrame, side_tables: dict[str, pd.DataFrame], manusc
         )
         .reset_index()
     )
-    hyper["linear_model"] = np.where(hyper["model_family"].eq("elastic_net"), "elastic-net linear model", "")
-    hyper["tuning"] = "10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings"
-    hyper = _add_display_columns(hyper)
+    hyper_technical["linear_model"] = np.where(hyper_technical["model_family"].eq("elastic_net"), "elastic-net linear model", "")
+    hyper_technical["tuning"] = "10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings"
+    hyper_technical = _add_display_columns(hyper_technical)
     table3_path = tables_dir / "table_3_hyperparameters_feature_dimensionality.csv"
-    hyper.to_csv(table3_path, index=False)
+    _write_table_csv_html(hyper_technical, _technical_path(technical_dir, table3_path))
+    representation_rows: list[dict[str, object]] = []
+    for family in MANUSCRIPT_TABLE_REPRESENTATIONS:
+        sub = main_perf[main_perf["representation_family"].astype(str).eq(family)].copy()
+        if sub.empty:
+            continue
+        specs = REPRESENTATION_SUMMARY_SPECS[family]
+        models = [model for model in [_display_label("model_family", model) for model in MODEL_FAMILIES] if model in set(sub["model_display"].astype(str))]
+        representation_rows.append(
+            {
+                "Representation": sub["representation_family_display"].iloc[0],
+                "Input signal": specs["input_signal"],
+                "Feature dimensionality": _format_feature_range(sub["n_features"]),
+                "Context/atlas": "; ".join(_ordered_unique(sub["atlas_status_display"].tolist())),
+                "Evaluated models": "; ".join(models),
+                "Manuscript role": specs["role"],
+            }
+        )
+    hyper = pd.DataFrame(representation_rows)
+    _write_table_csv_html(hyper, table3_path)
     _write_publication_copy(hyper, table3_path, public_dir)
 
-    class_dist = (
+    class_dist_technical = (
         df.groupby(["endpoint_tier", "endpoint"], dropna=False)
         .agg(n_samples_max=("n_samples", "max"), metrics_seen=("metric", lambda x: "; ".join(sorted(set(map(str, x))))), representations=("representation_family", lambda x: "; ".join(sorted(set(map(str, x))))))
         .reset_index()
     )
-    class_dist["naive_baseline_context"] = "prevalence/all-negative baselines should be interpreted from endpoint class balance; model rows use OOF predictions"
-    class_dist = _add_display_columns(class_dist)
-    class_dist.to_csv(supp_dir / "table_s1_class_distribution_baselines.csv", index=False)
+    class_dist_technical["naive_baseline_context"] = "Endpoint-level sample size and metric coverage; model rows use OOF predictions where available"
+    class_dist_technical = _add_display_columns(class_dist_technical)
+    s1_path = supp_dir / "table_s1_class_distribution_baselines.csv"
+    _write_table_csv_html(class_dist_technical, _technical_path(technical_dir, s1_path))
+    s1 = endpoint_inventory[endpoint_inventory["Panel"].eq("Supplement")].loc[
+        :, ["Endpoint", "N", "Task", "Source", "Primary metric", "Representation families"]
+    ].rename(columns={"Primary metric": "Metric(s)"})
+    s1 = s1.reset_index(drop=True)
+    _write_table_csv_html(s1, s1_path)
 
-    sensitivity = df[df["endpoint_tier"].eq("supplement") | df["representation_family"].isin(["UGA_geometry", "channel_KME", "COSMIC_NNLS_exposures", "mechanistic_control"])].copy()
-    sensitivity = _add_display_columns(sensitivity)
-    sensitivity.to_csv(supp_dir / "table_s2_sensitivity_analyses.csv", index=False)
+    sensitivity_technical = df[df["endpoint_tier"].eq("supplement") | df["representation_family"].isin(["UGA_geometry", "channel_KME", "COSMIC_NNLS_exposures", "mechanistic_control"])].copy()
+    sensitivity_technical = _add_display_columns(sensitivity_technical)
+    s2_path = supp_dir / "table_s2_sensitivity_analyses.csv"
+    _write_table_csv_html(sensitivity_technical, _technical_path(technical_dir, s2_path))
+    sensitivity_rows: list[dict[str, object]] = []
+    for endpoint_display, sub in sensitivity_technical.groupby("endpoint_display", dropna=False, sort=False):
+        baseline_cell, baseline_score, _ = _best_result_cell(sub[sub["representation_family"].isin(BASELINE_REPRESENTATION_FAMILIES)])
+        sensitivity_cell, sensitivity_score, _ = _best_result_cell(sub[sub["representation_family"].isin(SENSITIVITY_REPRESENTATION_FAMILIES)])
+        best_cell, _, _ = _best_result_cell(sub)
+        sensitivity_rows.append(
+            {
+                "Endpoint": str(endpoint_display),
+                "N": _format_manuscript_count(pd.to_numeric(sub["n_samples"], errors="coerce").max()),
+                "Metric(s)": "; ".join(sorted({_display_label("metric", value) for value in sub["metric"].dropna().unique() if str(value).strip()})),
+                "Best baseline/event-level": baseline_cell,
+                "Best geometry/sensitivity": sensitivity_cell,
+                "Best overall": best_cell,
+                "Interpretation": _supplementary_interpretation(baseline_score, sensitivity_score, best_cell),
+            }
+        )
+    sensitivity = pd.DataFrame(sensitivity_rows).sort_values("Endpoint", kind="mergesort").reset_index(drop=True)
+    _write_table_csv_html(sensitivity, s2_path)
 
-    pd.DataFrame(
+    source_inventory = pd.DataFrame(
         [{"source_table": name, "rows": len(frame), "columns": len(frame.columns)} for name, frame in side_tables.items()]
-    ).to_csv(supp_dir / "table_s0_source_inventory.csv", index=False)
+    )
+    s0_path = supp_dir / "table_s0_source_inventory.csv"
+    _write_table_csv_html(source_inventory, _technical_path(technical_dir, s0_path))
+    group_labels = {
+        "main_manuscript_complete_panel": "Main complete panel",
+        "one_hot_event_kme_scout": "One-hot event KME scout",
+        "maf_event_gene_locus": "MAF event-gene/locus stack",
+        "unified_locked": "Unified locked benchmark",
+        "uga_kme": "UGA/KME variants",
+        "mechanistic_representation": "Mechanistic controls",
+    }
+    source_inventory["source_group"] = source_inventory["source_table"].map(
+        lambda name: next((label for key, label in group_labels.items() if str(name).startswith(key)), "Other regenerated source artifacts")
+    )
+    source_inventory_public = (
+        source_inventory.groupby("source_group", as_index=False)
+        .agg(Files=("source_table", "size"), **{"Total source rows": ("rows", "sum"), "Max columns": ("columns", "max")})
+        .rename(columns={"source_group": "Source group"})
+        .sort_values("Source group", kind="mergesort")
+    )
+    _write_table_csv_html(source_inventory_public, s0_path)
 
 
 def _source_label(endpoint: str) -> str:
-    if endpoint == "damage_class":
+    if endpoint in {"damage_class", "Low-burden downsample", "Original data"}:
         return "Kucab mutagen-treated clone mutation catalogues"
     if endpoint.startswith("hrd") or endpoint in {"HRD_Score", "eCARD", "HRD_TAI", "HRD_LST", "HRD_LOH", "PARPi7", "parpi7_binary"}:
         return "TCGA-BRCA HRD labels with MC3 mutation features"
@@ -634,7 +1316,13 @@ def _label_definition(endpoint: str) -> str:
         "cancer_type_top10": "top-10 TCGA cancer type classification",
         "os_event": "overall-survival event indicator",
     }
-    return labels.get(endpoint, "see regenerated source table and experiment manifest")
+    if endpoint in labels:
+        return labels[endpoint]
+    description = _label_description("endpoint", endpoint)
+    display = _display_label("endpoint", endpoint)
+    if description and description != display:
+        return description
+    return "see regenerated source table and experiment manifest"
 
 
 def _completion_grid(df: pd.DataFrame, *, endpoints: list[str], families: list[str], model_families: list[str] | None = None) -> pd.DataFrame:
@@ -753,10 +1441,14 @@ def _read_prediction_file(tables_dir: Path, name: str, cache: dict[str, pd.DataF
 
 
 def _oof_representation_aliases(representation: str, family: str) -> list[str]:
+    # One-hot KME has many measured grid configurations. Broad aliases can mix
+    # predictions from unselected configurations into the selected manuscript row,
+    # so canonical OOF extraction uses exact representation and, when present,
+    # exact kme_config_id filtering below.
     aliases = [str(representation)]
-    if family == "one_hot_event_KME":
+    if family == "one_hot_event_KME" and representation == "one_hot_event_kme_oracle":
         aliases.append("one_hot_event_kme")
-    return sorted(set(aliases))
+    return aliases
 
 
 def _canonical_oof_predictions(canonical: pd.DataFrame, tables_dir: Path, *, strict: bool) -> pd.DataFrame:
@@ -775,6 +1467,23 @@ def _canonical_oof_predictions(canonical: pd.DataFrame, tables_dir: Path, *, str
             & pred["representation"].astype(str).isin(aliases)
             & pred["learner"].astype(str).eq(learner)
         ].copy()
+        kme_config = str(row.get("kme_config_id", "")).strip()
+        if str(row["representation_family"]) == "one_hot_event_KME" and kme_config:
+            if "kme_config_id" not in pred.columns:
+                slot = slot.iloc[0:0].copy()
+            else:
+                slot = slot[slot["kme_config_id"].astype(str).eq(kme_config)].copy()
+            if slot.empty:
+                if "kme_config_id" in pred.columns:
+                    raw_slot = pred[
+                        pred["endpoint"].astype(str).eq(str(row["endpoint"]))
+                        & pred["learner"].astype(str).eq(learner)
+                        & pred["kme_config_id"].astype(str).eq(kme_config)
+                    ].copy()
+                else:
+                    raw_slot = pd.DataFrame()
+                if not raw_slot.empty:
+                    slot = raw_slot.copy()
         if slot.empty:
             missing.append(
                 {
@@ -786,6 +1495,19 @@ def _canonical_oof_predictions(canonical: pd.DataFrame, tables_dir: Path, *, str
                 }
             )
             continue
+        duplicated_samples = slot["sample"].astype(str).duplicated(keep=False)
+        if duplicated_samples.any():
+            detail = {
+                "endpoint": str(row["endpoint"]),
+                "representation": str(row["representation"]),
+                "representation_family": str(row["representation_family"]),
+                "model_family": str(row["model_family"]),
+                "kme_config_id": kme_config,
+                "duplicate_samples": int(duplicated_samples.sum()),
+            }
+            if strict:
+                raise ValueError(f"Canonical OOF slot has duplicate samples: {json.dumps(detail, indent=2)}")
+            slot = slot.drop_duplicates(["sample"], keep="last")
         slot["representation_family"] = row["representation_family"]
         slot["model_family"] = row["model_family"]
         slot["metric"] = row["metric"]
@@ -1183,7 +1905,16 @@ def _write_plot_data(
     benchmark_completeness = pd.concat(completeness, ignore_index=True, sort=False)
     atomic_write_csv(benchmark_completeness, plot_dir / "benchmark_completeness.csv", index=False)
     if not s3_missing.empty:
-        atomic_write_csv(_add_display_columns(s3_missing), manuscript_dir / "supplement" / "table_s3_completeness_and_na_reasons.csv", index=False)
+        s3_path = manuscript_dir / "supplement" / "table_s3_completeness_and_na_reasons.csv"
+        s3_technical = _add_display_columns(s3_missing)
+        _write_table_csv_html(s3_technical, _technical_path(manuscript_dir / "tables" / "technical", s3_path))
+        s3_public = (
+            s3_technical.groupby(["representation_family_display", "na_reason"], dropna=False)
+            .agg(**{"Missing combinations": ("endpoint_display", "size"), "Example endpoints": ("endpoint_display", lambda x: "; ".join(_ordered_unique(list(x))[:5]))})
+            .reset_index()
+            .rename(columns={"representation_family_display": "Representation/analysis family", "na_reason": "Reason"})
+        )
+        _write_table_csv_html(s3_public, s3_path)
     atomic_write_json(
         plot_dir / "plot_data_manifest.json",
         {
@@ -1265,16 +1996,17 @@ def _write_label_mapping(manuscript_dir: Path) -> pd.DataFrame:
                 "used_in_tables": bool(used["used_in_tables"]),
             }
         )
-    mapping = pd.DataFrame(rows).sort_values(["label_domain", "display_name", "machine_name"]).reset_index(drop=True)
+    mapping_technical = pd.DataFrame(rows).sort_values(["label_domain", "display_name", "machine_name"]).reset_index(drop=True)
     table4_path = tables_dir / "table_4_label_mapping.csv"
-    mapping.to_csv(table4_path, index=False)
+    _write_table_csv_html(mapping_technical, _technical_path(tables_dir / "technical", table4_path))
+    mapping = pd.DataFrame(KEY_GLOSSARY_ROWS, columns=["Term", "Definition", "Used in"])
+    _write_table_csv_html(mapping, table4_path)
     _write_publication_copy(mapping, table4_path, public_dir)
     notes = (
         "# Label Mapping Notes\n\n"
-        "Machine-readable identifiers are retained in the technical CSVs so results can be traced back to cached features, "
-        "model slots, and source runner outputs. Manuscript-facing figures, captions, and publication-friendly tables use "
-        "the paired display labels from `table_4_label_mapping.csv`. When a value is not explicitly listed in the registry, "
-        "the pipeline falls back to a deterministic title-cased label and records that value in the mapping table.\n"
+        "Manuscript-facing tables use compact display labels and omit run/cache provenance columns. "
+        "Full machine-readable mappings and provenance-heavy table versions are retained under `tables/technical/` "
+        "so results can still be traced back to cached features, model slots, and source runner outputs.\n"
     )
     (text_dir / "label_mapping_notes.md").write_text(notes, encoding="utf-8")
     return mapping
@@ -1312,7 +2044,7 @@ def _write_figures(df: pd.DataFrame, manuscript_dir: Path) -> None:
     supp_dir.mkdir(parents=True, exist_ok=True)
     _figure_1(figures_dir)
     _barplot(df, figures_dir / "figure_2_signature_baselines", "Figure 2. Burden and Signature Baselines", ["burden_only", "signatures_only"])
-    _barplot(df, figures_dir / "figure_3_geometry_vs_signatures", "Figure 3. One-Hot Event KME vs Signatures", ["signatures_only", "one_hot_event_KME"])
+    _barplot(df, figures_dir / "figure_3_geometry_vs_signatures", "Figure 3. One-Hot Sequence KME v2 vs Signatures", ["signatures_only", "one_hot_event_KME"])
     _barplot(df, figures_dir / "figure_4_maf_stack_vs_signatures", "Figure 4. MAF-Stack Biology Adds to Spectra", ["signatures_only", "MAF_stack_only", "signatures_plus_MAF_stack"])
     _heatmap(df, figures_dir / "figure_5_cross_endpoint_summary", "Figure 5. Main Endpoint Representation Summary", MAIN_REPRESENTATIONS, main_only=True)
     _write_text_panel(
@@ -1469,6 +2201,35 @@ def _write_manuscript_text(manuscript_dir: Path, canonical: pd.DataFrame, pairwi
     kme_over = _sig_count(figure_tests, "one_hot_kme_vs_signatures", positive=True)
     sig_over_burden_xgb = _sig_count(figure_tests, "signatures_vs_burden", positive=True, model_family="XGBoost")
     sig_maf_over_sig_xgb = _sig_endpoints(figure_tests, "sig_maf_vs_signatures", model_family="XGBoost", positive=True)
+    kme_tests = figure_tests[figure_tests.get("comparison_name", pd.Series(dtype=object)).astype(str).eq("one_hot_kme_vs_signatures")].copy()
+    kme_numeric_wins = int((pd.to_numeric(kme_tests.get("delta"), errors="coerce") > 0).sum()) if not kme_tests.empty else 0
+    kme_sig_positive_pairs = [
+        f"{_display_label('model_family', str(row.model_family))} {_display_label('endpoint', str(row.endpoint))}"
+        for row in kme_tests.itertuples()
+        if pd.to_numeric(pd.Series([getattr(row, "delta", np.nan)]), errors="coerce").iloc[0] > 0
+        and pd.to_numeric(pd.Series([getattr(row, "q_value", np.nan)]), errors="coerce").iloc[0] < 0.05
+    ]
+    kme_sig_negative_pairs = [
+        f"{_display_label('model_family', str(row.model_family))} {_display_label('endpoint', str(row.endpoint))}"
+        for row in kme_tests.itertuples()
+        if pd.to_numeric(pd.Series([getattr(row, "delta", np.nan)]), errors="coerce").iloc[0] < 0
+        and pd.to_numeric(pd.Series([getattr(row, "q_value", np.nan)]), errors="coerce").iloc[0] < 0.05
+    ]
+    kme_sig_positive_text = ", ".join(kme_sig_positive_pairs) if kme_sig_positive_pairs else "none"
+    kme_sig_negative_text = ", ".join(kme_sig_negative_pairs) if kme_sig_negative_pairs else "none"
+    xgb_winners: list[str] = []
+    elastic_winners: list[str] = []
+    for endpoint_name in MAIN_ENDPOINTS:
+        for model_name, winners in [("XGBoost", xgb_winners), ("elastic_net", elastic_winners)]:
+            subset = canonical[
+                canonical["endpoint"].astype(str).eq(endpoint_name)
+                & canonical["model_family"].astype(str).eq(model_name)
+            ].copy()
+            if subset.empty:
+                continue
+            subset["_score_numeric"] = pd.to_numeric(subset["primary_score"], errors="coerce")
+            best = subset.sort_values("_score_numeric", ascending=False).iloc[0]
+            winners.append(f"{_display_label('endpoint', endpoint_name)}: {_display_label('representation_family', str(best['representation_family']))}")
 
     table2_rows = table_shapes.get("tables/table_2_full_performance_metrics.csv", (len(canonical), 0))[0]
     table_s2_rows = table_shapes.get("supplement/table_s2_sensitivity_analyses.csv", (0, 0))[0]
@@ -1515,13 +2276,13 @@ def _write_manuscript_text(manuscript_dir: Path, canonical: pd.DataFrame, pairwi
         "### Figure 3. Geometry-only one-hot event KME compared with signatures.",
         "",
         f"Performance of FASTA-derived {one_hot_kme} is compared with {signatures} using the same canonical out-of-fold results. "
-        f"{one_hot_kme} is strongest for {damage}, where it slightly exceeds {signatures} for {xgboost} ({s('damage_class', 'XGBoost', 'one_hot_event_KME')} vs {s('damage_class', 'XGBoost', 'signatures_only')}) "
-        f"and {elastic_net} ({s('damage_class', 'elastic_net', 'one_hot_event_KME')} vs {s('damage_class', 'elastic_net', 'signatures_only')}). "
-        f"Across the remaining endpoints, {one_hot_kme} is generally competitive but does not consistently outperform {signatures}; it is lower than {signatures} for {xgboost} {cancer_type} "
-        f"({s('cancer_type_top10', 'XGBoost', 'one_hot_event_KME')} vs {s('cancer_type_top10', 'XGBoost', 'signatures_only')}), "
-        f"{hrd33} ({s('hrd_binary_33', 'XGBoost', 'one_hot_event_KME')} vs {s('hrd_binary_33', 'XGBoost', 'signatures_only')}), "
-        f"and {os_event} ({s('os_event', 'XGBoost', 'one_hot_event_KME')} vs {s('os_event', 'XGBoost', 'signatures_only')}). "
-        "This supports the conclusion that sequence-context geometry can be useful for mechanistic process classification, but is not a general replacement for spectra.",
+        f"{one_hot_kme} numerically exceeds {signatures} in {kme_numeric_wins} of 10 endpoint/model comparisons, including {elastic_net} {damage} "
+        f"({s('damage_class', 'elastic_net', 'one_hot_event_KME')} vs {s('damage_class', 'elastic_net', 'signatures_only')}), {elastic_net} {hrd_score} "
+        f"({s('HRD_Score', 'elastic_net', 'one_hot_event_KME')} vs {s('HRD_Score', 'elastic_net', 'signatures_only')}), and {xgboost} {cancer_type} "
+        f"({s('cancer_type_top10', 'XGBoost', 'one_hot_event_KME')} vs {s('cancer_type_top10', 'XGBoost', 'signatures_only')}). "
+        f"FDR-significant positive KME differences are observed for {kme_sig_positive_text}, while significant negative differences are observed for {kme_sig_negative_text}. "
+        f"For {xgboost} {damage}, {one_hot_kme} is lower than {signatures} ({s('damage_class', 'XGBoost', 'one_hot_event_KME')} vs {s('damage_class', 'XGBoost', 'signatures_only')}). "
+        "This supports the conclusion that sequence-context geometry can be useful in selected settings, but is not a general replacement for spectra.",
         "",
         "### Figure 4. Event-level MAF-stack features and combined signature-plus-event representations.",
         "",
@@ -1537,33 +2298,32 @@ def _write_manuscript_text(manuscript_dir: Path, canonical: pd.DataFrame, pairwi
         "### Figure 5. Cross-endpoint summary of representation tradeoffs.",
         "",
         f"A canonical heatmap summarizes all five main representations across the five main endpoints and two model families. Values exactly match the canonical rows used in Figures 2-4. "
-        f"{xgboost} dominates the best overall results, with {sig_maf} winning four of five endpoints: {hrd_score}, {hrd33}, {cancer_type}, and {os_event}. "
-        f"The exception is {damage}, where {one_hot_kme} is best. No single representation wins everywhere, but the combined signature-plus-MAF representation is the most consistently strong practical default for tabular models.",
+        f"For {xgboost}, {sig_maf} wins four of five endpoints ({hrd_score}, {hrd33}, {cancer_type}, and {os_event}), while {signatures} are highest for {damage}. "
+        f"For {elastic_net}, the winners are {', '.join(elastic_winners)}. No single representation wins everywhere, but the combined signature-plus-MAF representation is the strongest practical default for XGBoost tabular models.",
         "",
         "### Table 1. Datasets, endpoints, and evaluation design.",
         "",
-        "This table summarizes the benchmark endpoints, sample counts, endpoint tiers, task types, data sources, label definitions, and splitting scheme. "
+        "This table summarizes the five main manuscript endpoints, sample counts, task types, data sources, primary metrics, and label definitions. "
         f"The main panel includes {damage} (n = 259), {hrd_score} (n = 772), {hrd33} (n = 772), MC3 {cancer_type} (n = 5,462), and MC3 {os_event} (n = 10,139). "
-        "Supplementary endpoints include additional HRD metrics and thresholds, MC3 clinical and driver endpoints, LUAD KMT2C status, and other validation tasks. "
-        "Model-based results use a single 5-fold cross-validation design with aggregated out-of-fold predictions.",
+        "Supplementary endpoints are listed separately in Supplementary Table S1. Model-based results use a single 5-fold cross-validation design with aggregated out-of-fold predictions.",
         "",
-        "### Table 2. Full performance metrics by endpoint, representation, and model.",
+        "### Table 2. Main-panel performance matrix.",
         "",
-        f"This table is the numeric backbone for the manuscript figures and supplement, containing {table2_rows} benchmark rows. "
-        "Rows report endpoint, representation, model family, primary metric, AUROC or macro-AUROC where applicable, AUPRC, accuracy/F1-style metrics where available, fold metadata, feature counts, runtime/provenance fields, and run identifiers. "
-        "Main-figure values are drawn only from canonical measured rows with valid out-of-fold prediction provenance.",
+        f"This table is the compact numeric backbone for the main manuscript figures, containing {table2_rows} endpoint rows. "
+        "Each representation column reports elastic-net and XGBoost scores as EN / XGB, using the endpoint-specific primary metric. "
+        "Full provenance-heavy versions with run identifiers, cache keys, and source files are retained under `tables/technical/`.",
         "",
-        "### Table 3. Hyperparameters and feature dimensionality.",
+        "### Table 3. Representation summary and dimensionality.",
         "",
-        "This table summarizes representation dimensionality, model family, atlas status, folds/repeats, XGBoost estimator settings where applicable, linear model type, and tuning policy. "
+        "This table summarizes the five main representations, their input signal, feature dimensionality range, context or atlas status, evaluated models, and manuscript role. "
         f"{burden} features are compact with a median of 3 features; {signatures} have a median of 182 features; {one_hot_kme} has 68-132 features depending on model family; "
         f"{maf_stack} features are substantially larger, with median dimensionality around 1,823 features; and {sig_maf} reaches a median of about 2,005 features. "
         "These values make the performance/complexity tradeoff explicit.",
         "",
-        "### Table 4. Machine-readable to manuscript label mapping.",
+        "### Table 4. Key terminology and abbreviations.",
         "",
-        "This table maps internal endpoint, representation, model, metric, task, and atlas-status identifiers to manuscript-facing display labels. "
-        "Machine-readable identifiers are retained in technical CSVs for reproducibility, while display labels are used in figures, captions, text, and publication-friendly table copies.",
+        "This short glossary defines the key abbreviations, metrics, representation names, and model shorthand needed to read the main tables. "
+        "The full machine-readable label mapping is retained in `tables/technical/table_4_label_mapping_technical.csv`.",
         "",
         "### Supplementary Figure S1. Representation construction and reproducibility workflow.",
         "",
@@ -1580,17 +2340,18 @@ def _write_manuscript_text(manuscript_dir: Path, canonical: pd.DataFrame, pairwi
         "Measured supplementary results are shown for alternative geometry encodings, COSMIC/NNLS exposure checks, and mechanistic-control benchmarks. Visible marks are measured only and specify the model family or analysis family used. "
         "Unsupported or intentionally omitted combinations are excluded from the figure and documented separately in Supplementary Table S3.",
         "",
-        "### Supplementary Table S1. Class distribution and baseline rates.",
+        "### Supplementary Table S1. Supplementary endpoint inventory.",
         "",
-        "This table reports endpoint-level sample counts, class distributions, prevalence, and naive baseline context. It provides the denominator and imbalance information needed to interpret AUROC, macro-AUROC, AUPRC, and accuracy-like metrics across binary, multiclass, and continuous tasks.",
+        "This table lists supplementary endpoints, sample counts, task types, data sources, primary metrics, and representation families evaluated outside the main five-endpoint panel.",
         "",
-        "### Supplementary Table S2. Sensitivity analyses and supplementary endpoint results.",
+        "### Supplementary Table S2. Headline supplementary results.",
         "",
-        f"This table reports {table_s2_rows} supplementary benchmark rows across additional endpoints, representations, and analysis families. It extends the main conclusions to extra HRD metrics/thresholds, additional MC3 clinical or driver endpoints, geometry variants, COSMIC/NNLS exposure checks, and mechanistic-control analyses.",
+        f"This table reports {table_s2_rows} endpoint-level headline rows summarizing the best baseline/event-level result, best geometry or sensitivity result, and best overall supplementary result. "
+        "The exhaustive supplementary result matrix is retained under `tables/technical/`.",
         "",
-        "### Supplementary Table S3. Completeness and non-applicability registry.",
+        "### Supplementary Table S3. Non-applicability summary.",
         "",
-        "This table records combinations that are unsupported, intentionally omitted, or not applicable for supplementary analyses. Main manuscript figures contain no N/A rows; missing or unsupported supplementary combinations are documented here rather than rendered as visual placeholders.",
+        "This compact table groups unsupported, intentionally omitted, or not-applicable supplementary combinations by representation or analysis family. Full endpoint-level details are retained under `tables/technical/`.",
         "",
         "## Results Section Text",
         "",
@@ -1604,12 +2365,14 @@ def _write_manuscript_text(manuscript_dir: Path, canonical: pd.DataFrame, pairwi
         f"in particular, {burden} exceeded {signatures} for {elastic_net} {hrd33} and {os_event}. Thus, signatures are a strong baseline, but their advantage depends on both endpoint and model class.",
         "",
         f"We next tested whether geometry-only sequence-context encodings provide a general replacement for spectra. The main geometry comparison used FASTA-derived {one_hot_kme}. "
-        f"This representation performed best on {damage}, reaching {s('damage_class', 'XGBoost', 'one_hot_event_KME')} macro-AUROC with {xgboost} and {s('damage_class', 'elastic_net', 'one_hot_event_KME')} with {elastic_net}, slightly above the corresponding signature models. "
-        f"However, {one_hot_kme} did not consistently outperform {signatures} elsewhere. For {xgboost}, it was lower than {signatures} on {cancer_type} ({s('cancer_type_top10', 'XGBoost', 'one_hot_event_KME')} vs {s('cancer_type_top10', 'XGBoost', 'signatures_only')}), "
-        f"{hrd33} ({s('hrd_binary_33', 'XGBoost', 'one_hot_event_KME')} vs {s('hrd_binary_33', 'XGBoost', 'signatures_only')}), "
-        f"and {os_event} ({s('os_event', 'XGBoost', 'one_hot_event_KME')} vs {s('os_event', 'XGBoost', 'signatures_only')}). "
-        f"Pairwise testing showed significant underperformance of {one_hot_kme} versus {signatures} in {kme_under} of 10 main comparisons, with {kme_over} significant positive comparisons. "
-        "These results support a conditional role for geometry encodings, especially in mechanistic damage-class prediction, rather than a universal replacement for spectra.",
+        f"It numerically exceeded {signatures} in {kme_numeric_wins} of 10 endpoint/model comparisons. The clearest positive cases were {elastic_net} {hrd_score} "
+        f"({s('HRD_Score', 'elastic_net', 'one_hot_event_KME')} vs {s('HRD_Score', 'elastic_net', 'signatures_only')}) and {xgboost} {cancer_type} "
+        f"({s('cancer_type_top10', 'XGBoost', 'one_hot_event_KME')} vs {s('cancer_type_top10', 'XGBoost', 'signatures_only')}), both significant after FDR correction. "
+        f"However, it did not improve {xgboost} {damage} ({s('damage_class', 'XGBoost', 'one_hot_event_KME')} vs {s('damage_class', 'XGBoost', 'signatures_only')}), {xgboost} {hrd33} "
+        f"({s('hrd_binary_33', 'XGBoost', 'one_hot_event_KME')} vs {s('hrd_binary_33', 'XGBoost', 'signatures_only')}), or {xgboost} {os_event} "
+        f"({s('os_event', 'XGBoost', 'one_hot_event_KME')} vs {s('os_event', 'XGBoost', 'signatures_only')}). "
+        f"Pairwise testing showed {kme_over} significant positive and {kme_under} significant negative KME-vs-signature comparisons. "
+        "These results support a conditional role for geometry encodings rather than a universal replacement for spectra.",
         "",
         f"Event-level MAF-stack features provided a complementary source of biological information. {maf_stack} alone was particularly useful for cancer-type prediction with {xgboost}, improving over {signatures} from {s('cancer_type_top10', 'XGBoost', 'signatures_only')} to {s('cancer_type_top10', 'XGBoost', 'MAF_stack_only')} macro-AUROC. "
         f"However, it was not uniformly better than spectra: for {damage}, {maf_stack} alone was lower than {signatures} with {xgboost} ({s('damage_class', 'XGBoost', 'MAF_stack_only')} vs {s('damage_class', 'XGBoost', 'signatures_only')}), "
@@ -1620,7 +2383,7 @@ def _write_manuscript_text(manuscript_dir: Path, canonical: pd.DataFrame, pairwi
         f"{hrd33} reached {s('hrd_binary_33', 'XGBoost', 'signatures_plus_MAF_stack')} AUROC, "
         f"{cancer_type} reached {s('cancer_type_top10', 'XGBoost', 'signatures_plus_MAF_stack')} macro-AUROC, "
         f"and {os_event} reached {s('os_event', 'XGBoost', 'signatures_plus_MAF_stack')} AUROC. "
-        f"The only main endpoint where it did not win was {damage}, where {one_hot_kme} was slightly higher. "
+        f"The only main endpoint where it did not win was {damage}, where {signatures} remained slightly higher for {xgboost}. "
         f"In pairwise tests, {sig_maf} significantly improved over {maf_stack} alone in {sig_maf_over_maf} of 10 Figure 4 comparisons and significantly improved over {signatures} alone for {xgboost} {', '.join(_display_label('endpoint', endpoint) for endpoint in sig_maf_over_sig_xgb)}.",
         "",
         f"Taken together, the cross-endpoint summary shows that there is no single magic representation. Geometry-only features are useful for some mechanistic settings, {signatures} remain a strong and efficient baseline, and {maf_stack} features capture endpoint-relevant biology that spectra alone can miss. "
@@ -1664,10 +2427,14 @@ def _validate_display_columns(manuscript_dir: Path) -> None:
 
 
 def _validate_label_mapping_coverage(manuscript_dir: Path) -> None:
-    table4 = manuscript_dir / "tables" / "table_4_label_mapping.csv"
+    table4 = manuscript_dir / "tables" / "technical" / "table_4_label_mapping_technical.csv"
+    if not table4.exists():
+        table4 = manuscript_dir / "tables" / "table_4_label_mapping.csv"
     if not table4.exists():
         raise FileNotFoundError("Label mapping table is missing")
     mapping = pd.read_csv(table4)
+    if not {"label_domain", "machine_name"}.issubset(mapping.columns):
+        return
     keys = set(zip(mapping["label_domain"].astype(str), mapping["machine_name"].astype(str)))
     missing: list[dict[str, str]] = []
     for path in _manuscript_csvs_for_label_mapping(manuscript_dir):
@@ -1708,6 +2475,53 @@ def _validate_visible_svg_labels(manuscript_dir: Path) -> None:
         raise ValueError(f"Rendered SVGs contain visible machine labels: {json.dumps(offenders[:50], indent=2)}")
 
 
+def _validate_manuscript_ready_tables(manuscript_dir: Path, df: pd.DataFrame) -> None:
+    table1 = pd.read_csv(manuscript_dir / "tables" / "table_1_datasets_endpoints.csv")
+    if len(table1) != len(MAIN_ENDPOINTS):
+        raise ValueError(f"Table 1 should contain {len(MAIN_ENDPOINTS)} main endpoint rows, found {len(table1)}")
+    table2 = pd.read_csv(manuscript_dir / "tables" / "table_2_full_performance_metrics.csv")
+    if len(table2) != len(MAIN_ENDPOINTS):
+        raise ValueError(f"Table 2 should contain {len(MAIN_ENDPOINTS)} endpoint summary rows, found {len(table2)}")
+    score_columns = [MAIN_REPRESENTATION_SHORT_LABELS[family] for family in MANUSCRIPT_TABLE_REPRESENTATIONS]
+    for column in score_columns:
+        if column not in table2.columns:
+            raise ValueError(f"Table 2 is missing score column {column}")
+        bad = table2[column].dropna().astype(str).map(lambda value: " / " not in value)
+        if bad.any():
+            raise ValueError(f"Table 2 column {column} must use EN / XGB score cells")
+    s2 = pd.read_csv(manuscript_dir / "supplement" / "table_s2_sensitivity_analyses.csv")
+    s2_technical_path = manuscript_dir / "tables" / "technical" / "table_s2_sensitivity_analyses_technical.csv"
+    if not s2_technical_path.exists():
+        raise FileNotFoundError("Technical Supplementary Table S2 is missing")
+    s2_technical = pd.read_csv(s2_technical_path)
+    expected_s2_rows = int((df["endpoint_tier"].astype(str).eq("supplement") | df["representation_family"].isin(["UGA_geometry", "channel_KME", "COSMIC_NNLS_exposures", "mechanistic_control"])).sum())
+    if len(s2_technical) != expected_s2_rows:
+        raise ValueError(f"Technical Supplementary Table S2 should contain {expected_s2_rows} rows, found {len(s2_technical)}")
+    if len(s2) >= len(s2_technical):
+        raise ValueError("Public Supplementary Table S2 should be a compact headline summary, not the full technical table")
+    banned_exact = {
+        "run_id",
+        "cache_key",
+        "source_file",
+        "oof_prediction_file",
+        "fold_metrics_file",
+        "experiment_id",
+        "bundle_table",
+        "canonical_slot_id",
+        "source_priority",
+    }
+    offenders: list[dict[str, str]] = []
+    public_paths = sorted((manuscript_dir / "tables").glob("table_*.csv")) + sorted((manuscript_dir / "supplement").glob("table_*.csv"))
+    for path in public_paths:
+        frame = pd.read_csv(path, nrows=0)
+        for column in frame.columns:
+            normalized = str(column).strip().lower()
+            if normalized in banned_exact or normalized.endswith("_id"):
+                offenders.append({"file": str(path.relative_to(manuscript_dir)), "column": str(column)})
+    if offenders:
+        raise ValueError(f"Manuscript-ready tables contain technical/provenance columns: {json.dumps(offenders[:50], indent=2)}")
+
+
 def _validate(manuscript_dir: Path, df: pd.DataFrame, *, strict: bool) -> None:
     missing = [rel for rel in REQUIRED_MANUSCRIPT_FILES if not (manuscript_dir / rel).exists()]
     if (manuscript_dir / "d3_render_manifest.json").exists():
@@ -1746,6 +2560,7 @@ def _validate(manuscript_dir: Path, df: pd.DataFrame, *, strict: bool) -> None:
             raise ValueError("No finite primary scores found in normalized results")
         _validate_display_columns(manuscript_dir)
         _validate_label_mapping_coverage(manuscript_dir)
+        _validate_manuscript_ready_tables(manuscript_dir, df)
         _validate_plot_data(manuscript_dir)
         _validate_d3_manifest(manuscript_dir)
         _validate_visible_svg_labels(manuscript_dir)

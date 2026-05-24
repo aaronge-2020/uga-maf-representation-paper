@@ -2,7 +2,7 @@
   "benchmark_completeness": "benchmark_completeness.csv",
   "canonical_pairwise_tests": "canonical/main_panel_pairwise_tests.csv",
   "canonical_results": "canonical/main_panel_results.csv",
-  "created_utc": "2026-05-24T16:26:28+00:00",
+  "created_utc": "2026-05-24T19:48:27+00:00",
   "files": [
     "figure_2_signature_baselines.csv",
     "figure_3_geometry_vs_signatures.csv",

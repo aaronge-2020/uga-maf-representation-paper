@@ -1,2 +1,3 @@
-# The public reproduction bundle includes finalized normalized result tables.
-# Runtime scratch/work artifacts remain ignored at higher-level paths.
+*
+!.gitignore
+!.gitkeep

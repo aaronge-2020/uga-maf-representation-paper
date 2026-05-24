@@ -299,8 +299,20 @@
       "display": "Event-level MAF stack"
     },
     "one_hot_event_kme_oracle": {
-      "description": "One-hot sequence-window kernel mean embedding derived from event contexts.",
-      "display": "One-hot sequence KME"
+      "description": "Original one-hot sequence-window kernel mean embedding derived from event contexts.",
+      "display": "One-hot sequence KME v1"
+    },
+    "one_hot_event_kme_v1": {
+      "description": "Original one-hot sequence-window kernel mean embedding grid row.",
+      "display": "One-hot sequence KME v1"
+    },
+    "one_hot_event_kme_v2": {
+      "description": "Modality-stratified, frequency-aware one-hot sequence-window kernel mean embedding grid row.",
+      "display": "One-hot sequence KME v2"
+    },
+    "one_hot_event_kme_v2_oracle": {
+      "description": "Selected one-hot sequence KME v2 configuration for the endpoint and model family.",
+      "display": "One-hot sequence KME v2"
     },
     "previous_uga_mean_pooled": {
       "description": "Previous pooled UGA mean representation.",
@@ -365,8 +377,8 @@
       "display": "Mechanistic controls"
     },
     "one_hot_event_KME": {
-      "description": "FASTA-derived one-hot sequence-window kernel mean embedding.",
-      "display": "One-hot sequence KME"
+      "description": "FASTA-derived one-hot sequence-window kernel mean embedding; main figures use the locked v2 implementation.",
+      "display": "One-hot sequence KME v2"
     },
     "other": {
       "description": "Other source representation.",

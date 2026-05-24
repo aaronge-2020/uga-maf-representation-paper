@@ -1,29 +1,5 @@
-endpoint,endpoint_display,representation_family,representation_family_display,na_reason
-HRD_LOH,HRD LOH,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-HRD_LST,HRD LST,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-HRD_TAI,HRD TAI,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-Low-burden downsample,Low-burden Kucab,UGA_geometry,UGA geometry,no measured supplementary result for this analysis family/endpoint
-Low-burden downsample,Low-burden Kucab,channel_KME,Channel KME,no measured supplementary result for this analysis family/endpoint
-Low-burden downsample,Low-burden Kucab,COSMIC_NNLS_exposures,COSMIC NNLS exposures,no measured supplementary result for this analysis family/endpoint
-Original data,Original Kucab,UGA_geometry,UGA geometry,no measured supplementary result for this analysis family/endpoint
-Original data,Original Kucab,channel_KME,Channel KME,no measured supplementary result for this analysis family/endpoint
-Original data,Original Kucab,COSMIC_NNLS_exposures,COSMIC NNLS exposures,no measured supplementary result for this analysis family/endpoint
-PARPi7,PARPi7,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-brca_gene_mutated,BRCA-pathway mutated,channel_KME,Channel KME,no measured supplementary result for this analysis family/endpoint
-brca_gene_mutated,BRCA-pathway mutated,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-eCARD,eCARD,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-high_purity,High tumor purity,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-high_stage,High stage,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-hrd_binary_24,HRD24 high/low,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-hrd_binary_42,HRD42 high/low,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-kmt2c_mutated,LUAD KMT2C mutated,channel_KME,Channel KME,no measured supplementary result for this analysis family/endpoint
-kmt2c_mutated,LUAD KMT2C mutated,COSMIC_NNLS_exposures,COSMIC NNLS exposures,no measured supplementary result for this analysis family/endpoint
-kmt2c_mutated,LUAD KMT2C mutated,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-luad_kmt2c_mutated,LUAD KMT2C mutated,COSMIC_NNLS_exposures,COSMIC NNLS exposures,no measured supplementary result for this analysis family/endpoint
-luad_kmt2c_mutated,LUAD KMT2C mutated,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-mmr_gene_mutated,MMR-pathway mutated,channel_KME,Channel KME,no measured supplementary result for this analysis family/endpoint
-mmr_gene_mutated,MMR-pathway mutated,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-parpi7_binary,PARPi7 binary,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-pole_pold1_mutated,POLE/POLD1 mutated,channel_KME,Channel KME,no measured supplementary result for this analysis family/endpoint
-pole_pold1_mutated,POLE/POLD1 mutated,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
-smoking_ever,Ever smoker,mechanistic_control,Mechanistic controls,no measured supplementary result for this analysis family/endpoint
+Representation/analysis family,Reason,Missing combinations,Example endpoints
+COSMIC NNLS exposures,no measured supplementary result for this analysis family/endpoint,4,Low-burden Kucab; Original Kucab; LUAD KMT2C mutated
+Channel KME,no measured supplementary result for this analysis family/endpoint,6,Low-burden Kucab; Original Kucab; BRCA-pathway mutated; LUAD KMT2C mutated; MMR-pathway mutated
+Mechanistic controls,no measured supplementary result for this analysis family/endpoint,16,HRD LOH; HRD LST; HRD TAI; PARPi7; BRCA-pathway mutated
+UGA geometry,no measured supplementary result for this analysis family/endpoint,2,Low-burden Kucab; Original Kucab

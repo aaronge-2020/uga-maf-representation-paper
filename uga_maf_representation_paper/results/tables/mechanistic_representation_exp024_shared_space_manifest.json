@@ -1,7 +1,7 @@
 {
   "experiment": "UGA shared-coordinate cross-modality benchmark",
-  "runner": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\cgr_validation\\cgr_validation_results\\research\\scripts\\EXP024_shared_space\\run_shared_space_benchmark.py",
-  "compatibility_runner": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\cgr_validation\\bench\\run_shared_space_benchmark.py",
+  "runner": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\projects\\cgr_validation\\uga_maf_representation_paper\\results\\work\\cgr_validation\\cgr_validation_results\\research\\scripts\\EXP024_shared_space\\run_shared_space_benchmark.py",
+  "compatibility_runner": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\projects\\cgr_validation\\uga_maf_representation_paper\\results\\work\\cgr_validation\\bench\\run_shared_space_benchmark.py",
   "seed": 240513,
   "n_patients": 520,
   "signature_events_per_process": 5500,
@@ -11,13 +11,13 @@
   "d_payload": 2,
   "payload_schema": "legacy",
   "outputs": {
-    "index_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\index.html",
-    "readme": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\README.md",
-    "narrative_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\html\\narrative_walkthrough.html",
-    "tables_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\html\\manuscript_tables.html",
-    "table_fragments_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\html\\manuscript_tables_fragment.html",
-    "figures_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\figures\\shared_space_d3_figures.html",
-    "data_json": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\data\\shared_space_benchmark_data.json",
-    "tables_dir": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\tables"
+    "index_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\projects\\cgr_validation\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\index.html",
+    "readme": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\projects\\cgr_validation\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\README.md",
+    "narrative_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\projects\\cgr_validation\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\html\\narrative_walkthrough.html",
+    "tables_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\projects\\cgr_validation\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\html\\manuscript_tables.html",
+    "table_fragments_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\projects\\cgr_validation\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\html\\manuscript_tables_fragment.html",
+    "figures_html": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\projects\\cgr_validation\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\figures\\shared_space_d3_figures.html",
+    "data_json": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\projects\\cgr_validation\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\data\\shared_space_benchmark_data.json",
+    "tables_dir": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\projects\\cgr_validation\\uga_maf_representation_paper\\results\\work\\mechanistic\\exp024_shared_space\\tables"
   }
 }
