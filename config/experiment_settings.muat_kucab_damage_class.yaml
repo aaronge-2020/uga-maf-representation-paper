@@ -1,0 +1,60 @@
+runtime_profile: muat-compatible-kucab-damage-class
+tree_method: hist
+cv_folds: 5
+endpoint_registry: config/endpoint_registry.yaml
+
+feature_cache:
+  enabled: true
+  dir: results/cache/features
+  validate_fasta: true
+
+experiments:
+  main_manuscript_complete_panel:
+    enabled: false
+  muat_style_tcga_comparator:
+    enabled: true
+    output_tag: kucab_damage_class
+    primary_task: damage_class
+    secondary_endpoints: []
+    primary_metric_by_endpoint:
+      damage_class: macro_auroc
+    selection_metric_by_endpoint:
+      damage_class: macro_auroc
+    nested_validation: true
+    run_manuscript_endpoints: false
+    smoke_run: false
+    folds: 5
+    epochs: 150
+    batch_size: 4
+    eval_batch_size: 4
+    embed_dim: 128
+    attention_heads: 1
+    feature_dim: 24
+    dropout: 0.1
+    count_feature_mode: log_count
+    lr: 0.0006
+    momentum: 0.9
+    weight_decay: 0.0
+    max_events_per_sample: 5000
+    kucab_max_events_per_sample: 512
+    maf_chunksize: 500000
+    dictionary_mode: fixed_hash
+    motif_hash_buckets: 1024
+    position_hash_buckets: 2048
+    annotation_hash_buckets: 256
+    device: auto
+    amp: true
+    torch_num_threads: 8
+    dataloader_workers: 0
+    preload_tensors_to_device: true
+    trim_to_observed_events: true
+    resume_checkpoints: true
+    epoch_checkpoints: true
+    progress_interval_epochs: 10
+    official_mutation_type: snv+mnv+indel
+
+outputs:
+  make_figures_after_run: false
+  cleanup_work_dir_after_run: false
+  strict_manuscript: true
+  strict_no_leakage: true

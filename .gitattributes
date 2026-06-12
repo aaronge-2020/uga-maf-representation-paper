@@ -1,6 +1,12 @@
-﻿# Large files tracked with Git LFS for GitHub compatibility.
+# Optional Git LFS patterns if the large assets are kept in Git LFS instead of
+# the sibling ../github_exports_datasets folder.
 cgr_validation_results/research/experiments/supporting/2026_05_14_unified_uga_locked_manuscript_benchmark/data/mc3_source/raw/mc3.v0.2.8.PUBLIC.maf.gz filter=lfs diff=lfs merge=lfs -text
+cgr_validation_results/research/assets/EXP023_tcga_brca_hrd/TCGA-BRCA/sigprofiler_results/Assignment_Solution/Activities/Decomposed_MutationType_Probabilities.txt filter=lfs diff=lfs merge=lfs -text
+data/GRCH37/GCF_000001405.13/GCF_000001405.13_GRCh37_genomic.fna filter=lfs diff=lfs merge=lfs -text
 data/GRCH37/GCF_000001405.13/GCF_000001405.13_GRCh37_genomic.fna.gz filter=lfs diff=lfs merge=lfs -text
-uga_maf_representation_paper/results/manuscript/canonical/main_panel_oof_predictions.csv filter=lfs diff=lfs merge=lfs -text
-uga_maf_representation_paper/results/tables/one_hot_event_kme_scout_oof_predictions.csv filter=lfs diff=lfs merge=lfs -text
-uga_maf_representation_paper/results/tables/unified_locked_data_tcga_signature_endpoints_signature_exposure_predictions_checkpoint.csv filter=lfs diff=lfs merge=lfs -text
+results/manuscript/canonical/main_panel_oof_predictions.csv filter=lfs diff=lfs merge=lfs -text
+results/tables/main_manuscript_complete_panel_oof_predictions.csv filter=lfs diff=lfs merge=lfs -text
+results/tables/unified_locked_data_tcga_signature_endpoints_signature_exposure_predictions_checkpoint.csv filter=lfs diff=lfs merge=lfs -text
+results/tables/muat_style_tcga_comparator_cancer_type_top20_comparable_muat_compatible_events.tsv.gz filter=lfs diff=lfs merge=lfs -text
+results/tables/muat_style_tcga_comparator_main_endpoints_comparable_muat_compatible_events.tsv.gz filter=lfs diff=lfs merge=lfs -text
+results/tables/muat_style_tcga_comparator_muat_compatible_events.tsv.gz filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,29 @@
+{
+  "active_directories": [
+    "src",
+    "config",
+    "data",
+    "results/tables",
+    "results/manuscript",
+    "docs",
+    "manifests"
+  ],
+  "created_utc": "2026-06-12T12:09:55.828875+00:00",
+  "dataset_backed_strict_command": "python scripts/reproduce_manuscript.py --datasets-dir ../github_exports_datasets --strict",
+  "default_external_datasets_dir": "../github_exports_datasets",
+  "full_regeneration_command": "python src/run_all_experiments.py --config config/experiment_settings.strict_no_leakage.yaml --paths config/paths.yaml",
+  "full_regeneration_dry_run_command": "python src/run_all_experiments.py --config config/experiment_settings.strict_no_leakage.yaml --paths config/paths.yaml --dry-run",
+  "github_upload_cleanup_command": "python scripts/reproduce_manuscript.py --prepare-github-upload --datasets-dir ../github_exports_datasets",
+  "local_repo_only_strict_command": "python scripts/reproduce_manuscript.py --strict",
+  "repository_root": ".",
+  "reviewer_fast_validation_command": "python scripts/reviewer_workflow.py reproduce --datasets-dir ../github_exports_datasets --dry-run",
+  "reviewer_full_reproduction_command": "python scripts/reviewer_workflow.py reproduce --datasets-dir ../github_exports_datasets",
+  "reviewer_setup_check_command": "python scripts/reviewer_workflow.py check --datasets-dir ../github_exports_datasets",
+  "science_guards": [
+    "Bio MAF v4 only for active MAF-stack manuscript outputs",
+    "COSMIC signatures remain separate from Bio MAF feature resources",
+    "Bio MAF feature-block selection is nested inside inner-loop tuning",
+    "Fixed TCGA cancer-type endpoint is cancer_type_top20"
+  ],
+  "strict_command": "python scripts/reproduce_manuscript.py --datasets-dir ../github_exports_datasets --strict"
+}

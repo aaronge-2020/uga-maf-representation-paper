@@ -1,0 +1,85 @@
+# Final QC Report
+
+This report records the current GitHub-ready export state for `github_exports`.
+
+## Scope
+
+- Active code, configs, resources, result tables, manuscript outputs, docs, and manifests live inside `github_exports`.
+- Downloaded or oversized external assets live in the sibling `github_exports_datasets` bundle.
+- Obsolete provenance-only files, scratch reports, stale curation helpers, old Bio MAF material, retired hash-derived MAF variants, stale feature-ranking summaries, duplicate manuscript copies, and temporary files were removed from the active export.
+- No active script, config, notebook, manifest, README, or command is intended to depend on the historical validation project folder or any other external project folder.
+
+## Kept
+
+- Active Python and Node entrypoints under `scripts/`, `src/`, and `src/visualization/`.
+- Active configuration under `config/`.
+- Small in-repo references under `data/`, `resources`-style config folders, and manuscript resources.
+- Active result sources under `results/tables/`.
+- Active manuscript artifacts under `results/manuscript/`.
+- Reviewer-facing docs, upload checklists, reproducibility manifests, data manifests, and manuscript artifact manifests.
+
+## Deleted Or Excluded
+
+- The export no longer keeps a required provenance-only code tree.
+- Retired GDC utility scripts, refactor scratch reports, old peer-review cleanup wrappers, retired representation specs, stale feature-ranking outputs, retired hash-derived MAF outputs, obsolete Bio MAF versions, temp/scratch material, and duplicate manuscript package files were removed from the GitHub-ready tree.
+- Oversized active assets are excluded from the GitHub checkout and read directly from `github_exports_datasets` when needed.
+
+## Hugging Face Dataset Bundle
+
+Large and downloaded assets are centralized in `../github_exports_datasets` with readable paths for:
+
+- `datasets/tcga_mc3/`
+- `datasets/tcga_brca_hrd/`
+- `datasets/kucab_mendeley/`
+- `datasets/pcawg_pancan/`
+- `references/grch37/`
+- `resources/bio_maf_v4/`
+- `resources/signatures_cosmic/`
+- `results/` and `caches/` when needed for dataset-backed validation or provenance.
+
+Asset paths, sizes, purposes, source locations or URLs, checksums, destinations, and use/validation instructions are tracked in the dataset and Hugging Face manifests under `manifests/`.
+
+## Methodology QC
+
+- No retired hash-derived MAF workflow is active.
+- COSMIC/signature resources are kept separate from Bio MAF resources.
+- Nested cross-validation remains active.
+- Bio MAF v4 feature selection is restricted to inner-loop tuning.
+- Endpoint labels and held-out fold performance are not used to define Bio MAF features.
+- Checkpoint reuse is guarded by data, label, feature, sample, and configuration fingerprints.
+- `cancer_type_top20` is active.
+- HRD binary endpoints are included.
+- Bio MAF v4 S4/S5/S6 outputs are present in the active manuscript/results set.
+- Stale feature-ranking claims and old Bio MAF/hash-derived MAF wording are not part of the active public narrative.
+
+## Latest Validation Evidence
+
+- Manifest refresh: `python scripts/reproduce_manuscript.py --refresh-manifests` returned `status: refreshed`.
+- Strict validation: `python scripts\reproduce_manuscript.py --datasets-dir ../github_exports_datasets --strict` passed through the reviewer dry run.
+- Dataset-bundle validation during strict run: 1,257 dataset-bundle files were checksum-validated; active large files are read directly from the dataset bundle and are not copied back into the Git checkout.
+- Strict read audit: 409 unique repo reads and 1,001 unique dataset-bundle reads were reported, with zero reads outside the allowed roots.
+- Manuscript artifacts: 88 required files validated.
+- Active endpoints confirmed: `HRD_Score`, `OS`, `cancer_type_top20`, `damage_class`, `hrd_binary_24`, `hrd_binary_33`, and `hrd_binary_42`.
+- Bio MAF v4 outputs confirmed: S6 has 112 rows and 14 required S4/S5/S6/interpretability outputs are present.
+- Reviewer dry run: `.venv\Scripts\python.exe scripts\reviewer_workflow.py reproduce --datasets-dir ../github_exports_datasets --dry-run` completed with `Status: reviewer_dry_run_complete`.
+- GitHub upload prep: active large assets are kept in `../github_exports_datasets` and read directly during validation; the Git checkout does not need duplicate large files.
+- Reviewer setup check on the pruned checkout: `python scripts\reviewer_workflow.py start --datasets-dir ../github_exports_datasets` returned `Status: READY` and verified 1,257 of 1,257 dataset-bundle files.
+- Syntax checks: active Python scripts and package initializers passed `py_compile`; `src/visualization/render_manuscript_figures.mjs` passed `node --check`.
+
+## Reviewer Commands
+
+From `github_exports`, run:
+
+```bash
+python scripts/reproduce_manuscript.py --datasets-dir ../github_exports_datasets --strict
+python scripts/reviewer_workflow.py reproduce --datasets-dir ../github_exports_datasets --dry-run
+python scripts/reproduce_manuscript.py --prepare-github-upload --datasets-dir ../github_exports_datasets
+```
+
+The strict validation writes `results/logs/strict_validation_latest.json` and must report zero reads outside the repo and dataset bundle roots. The reviewer dry run must complete without launching expensive model jobs. The prepare command leaves the GitHub checkout small while preserving dataset-backed validation instructions for every oversized active asset.
+
+## Limitations
+
+- Restricted-access controlled datasets are not redistributed unless explicitly permitted; their access requirements are documented in the data manifests and public notices.
+- A dry run validates wiring, manifests, dataset-backed paths, and artifact freshness expectations, but it is not a substitute for a full expensive reproduction run.
+- The system Python in this workspace was missing `PyYAML==6.0.2`; the reviewer dry run was therefore verified with the repo virtual environment. A collaborator should install `requirements.txt` in their own environment before running the plain `python ...` commands.

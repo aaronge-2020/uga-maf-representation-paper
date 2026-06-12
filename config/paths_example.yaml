@@ -1,0 +1,22 @@
+# Copy this file to config/paths.yaml and edit paths as needed.
+# Relative paths are resolved from the bundle root.
+
+raw_data:
+  mc3_source_dir: ${datasets_root}/datasets/tcga_mc3
+  hrd_assets_dir: ${datasets_root}/datasets/tcga_brca_hrd
+  kucab_raw_dir: ${datasets_root}/datasets/kucab_mendeley/raw_mutation_tables
+  pcawg_dir: ${datasets_root}/datasets/pcawg_pancan/cgr_validation_results/research/data/pancan_pcawg_2020
+  grch37_dir: ${datasets_root}/references/grch37
+
+processed_helpers:
+  # Optional. If set, this directory should contain features_burden_only.csv,
+  # features_standard_sbs96.csv.gz, features_standard_id83.csv.gz, and
+  # features_standard_sbs96_id83.csv.gz. If omitted, the runner expects these
+  # under raw_data.mc3_source_dir/features.
+  mc3_standard_features_dir: null
+
+workspace:
+  work_dir: results/work
+  results_tables_dir: results/tables
+  results_figures_dir: results/figures
+  results_logs_dir: results/logs

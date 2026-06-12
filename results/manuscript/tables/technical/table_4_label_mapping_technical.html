@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Table 4. Key terminology and abbreviations (technical detail)</title>
+<style>
+body {
+  background: #ffffff;
+  color: #111111;
+  font-family: "Times New Roman", Times, serif;
+  margin: 28px auto;
+  max-width: 940px;
+  padding: 0 18px;
+}
+.manuscript-table-block {
+  margin: 0 auto;
+}
+.table-number {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 22px;
+  text-align: center;
+}
+.table-title {
+  font-size: 15px;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  margin: 0 0 24px;
+  text-align: center;
+}
+.table-wrap {
+  overflow-x: auto;
+}
+table.manuscript-table {
+  border-top: 1.5px solid #111111;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 14px;
+  line-height: 1.12;
+  width: 100%;
+}
+table.manuscript-table thead {
+  border-bottom: 1.5px solid #111111;
+}
+table.manuscript-table th {
+  font-weight: 400;
+  padding: 8px 10px 10px;
+  text-align: center;
+  vertical-align: bottom;
+}
+table.manuscript-table td {
+  border: 0;
+  padding: 2px 10px;
+  vertical-align: top;
+}
+table.manuscript-table tbody tr:last-child td {
+  border-bottom: 1.5px solid #111111;
+  padding-bottom: 7px;
+}
+table.manuscript-table td:first-child {
+  padding-left: 0;
+  text-align: left;
+}
+table.manuscript-table td.numeric {
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  white-space: nowrap;
+}
+table.manuscript-table td.long-text {
+  min-width: 12rem;
+}
+.table-notes {
+  font-size: 13px;
+  line-height: 1.18;
+  margin-top: 14px;
+  text-align: left;
+}
+.table-notes p {
+  margin: 0 0 5px;
+}
+.note-label {
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+}
+</style>
+</head>
+<body>
+<div class="manuscript-table-block">
+<div class="table-number">Table 4</div>
+<div class="table-title">Key terminology and abbreviations (technical detail)</div>
+<div class="table-wrap">
+<table class="manuscript-table">
+<thead><tr><th>Label domain</th><th>Machine name</th><th>Display name</th><th>Long description</th><th>Used in figures</th><th>Used in tables</th></tr></thead>
+<tbody>
+<tr><td>atlas_status</td><td>no UGA atlas</td><td>No UGA atlas</td><td>Representation does not use the UGA channel atlas.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>calibration_mode</td><td>multiclass_confidence_accuracy</td><td>Confidence versus correctness</td><td class="long-text">Multiclass reliability plot using maximum predicted confidence versus correctness.</td><td class="numeric">Yes</td><td class="numeric">No</td></tr>
+<tr><td>calibration_mode</td><td>binary_positive_probability</td><td>Positive-class probability</td><td class="long-text">Binary reliability plot using the predicted probability of the positive class.</td><td class="numeric">Yes</td><td class="numeric">No</td></tr>
+<tr><td>comparison_name</td><td>maf_stack_vs_signatures</td><td>MAF stack vs signatures</td><td>Event-level MAF stack compared with mutational signatures.</td><td class="numeric">No</td><td class="numeric">Yes</td></tr>
+<tr><td>comparison_name</td><td>sig_maf_vs_maf_stack</td><td>Signatures + MAF vs MAF stack</td><td>Signatures plus MAF stack compared with MAF stack alone.</td><td class="numeric">No</td><td class="numeric">Yes</td></tr>
+<tr><td>comparison_name</td><td>sig_maf_vs_signatures</td><td>Signatures + MAF vs signatures</td><td class="long-text">Signatures plus MAF stack compared with mutational signatures alone.</td><td class="numeric">No</td><td class="numeric">Yes</td></tr>
+<tr><td>comparison_name</td><td>signatures_vs_burden</td><td>Signatures vs burden</td><td>Mutational signatures compared with mutational burden.</td><td class="numeric">No</td><td class="numeric">Yes</td></tr>
+<tr><td>endpoint</td><td>cancer_type_top20</td><td>Cancer type (top 20)</td><td class="long-text">Classification among twenty fixed TCGA cancer types with at least 184 matched MC3-feature patients.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>endpoint</td><td>HRD_Score</td><td>HRD score</td><td>Continuous homologous recombination deficiency score.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>endpoint</td><td>hrd_binary_24</td><td>HRD24 high/low</td><td>HRD-high versus HRD-low using threshold 24.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>endpoint</td><td>hrd_binary_33</td><td>HRD33 high/low</td><td>HRD-high versus HRD-low using threshold 33.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>endpoint</td><td>hrd_binary_42</td><td>HRD42 high/low</td><td>HRD-high versus HRD-low using threshold 42.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>endpoint</td><td>damage_class</td><td>Kucab damage class</td><td class="long-text">Kucab DNA damage class from mutagen-treated clone catalogues.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>endpoint</td><td>OS</td><td>Overall survival</td><td>Overall survival time-to-event endpoint.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>endpoint_tier</td><td>main</td><td>Main</td><td>Endpoint belongs to the main manuscript panel.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>metric</td><td>auroc</td><td>AUROC</td><td>Area under the receiver operating characteristic curve.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>metric</td><td>c_index</td><td>Harrell C-index</td><td>Harrell concordance index for survival risk scores.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>metric</td><td>spearman</td><td>Spearman r</td><td>Spearman rank correlation.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>metric</td><td>macro_auroc</td><td>macro-AUROC</td><td>Macro-averaged multiclass AUROC.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>model_family</td><td>cox_ph</td><td>Cox PH</td><td>Penalized Cox proportional hazards model.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>model_family</td><td>elastic_net</td><td>Elastic net</td><td>Elastic-net regularized linear or generalized linear model.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>model_family</td><td>MuAt-compatible reimplementation</td><td>MuAt-compatible</td><td class="long-text">Local MuAt-compatible Q/K/V attention model trained on MC3 mutation bags without official checkpoints.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>model_family</td><td>XGBoost</td><td>XGBoost</td><td>Gradient-boosted tree model implemented with XGBoost.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>model_label</td><td>cox_ph</td><td>Cox Ph</td><td>Cox Ph</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>model_label</td><td>linear</td><td>Linear</td><td>Linear</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>model_label</td><td>muat_compatible_qkv_attention</td><td>Muat Compatible Qkv Attention</td><td>Muat Compatible Qkv Attention</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>model_label</td><td>xgboost</td><td>XGBoost</td><td>XGBoost</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>representation</td><td>MAF_stack_only</td><td>Bio MAF v4</td><td class="long-text">Bio MAF v4 event-level feature blocks selected inside nested cross-validation.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>representation</td><td>MuAt-compatible reimplementation</td><td>Muat Compatible Reimplementation</td><td>Muat Compatible Reimplementation</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>representation</td><td>burden_only</td><td>Mutational burden</td><td>Mutation burden summary features.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>representation</td><td>standard_sbs96_dbs78_id83</td><td>SBS96 + DBS78 + ID83 spectra</td><td>Standard SBS96, DBS78, and ID83 mutation spectra.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>representation</td><td>standard_sbs96_id83</td><td>SBS96 + ID83 spectra</td><td>Standard SBS96 and ID83 mutation spectra.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>representation</td><td>signatures_plus_MAF_stack</td><td>Signatures + Bio MAF v4</td><td class="long-text">Mutational signature features plus Bio MAF v4 feature blocks selected inside nested cross-validation.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>representation_family</td><td>MAF_stack_only</td><td>Bio MAF v4</td><td class="long-text">Bio MAF v4 event-level feature blocks selected inside nested cross-validation, without mutational signature features.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>representation_family</td><td>MuAt_style_attention_MIL</td><td>MuAt-compatible</td><td class="long-text">TCGA-WES MuAt-compatible event-bag comparator over mutation motif, position, and annotation tokens.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>representation_family</td><td>burden_only</td><td>Mutational burden</td><td>Minimal mutational burden summaries.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>representation_family</td><td>signatures_only</td><td>Mutational signatures</td><td>Canonical mutational spectra such as SBS96, DBS78, and ID83.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>representation_family</td><td>signatures_plus_MAF_stack</td><td>Signatures + Bio MAF v4</td><td class="long-text">Mutational signature features plus Bio MAF v4 feature blocks selected inside nested cross-validation.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>task</td><td>binary</td><td>Binary classification</td><td>Binary classification task.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>task</td><td>multiclass_grouped</td><td>Grouped multiclass</td><td>Grouped multiclass classification task.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>task</td><td>multiclass</td><td>Multiclass classification</td><td>Multiclass classification task.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>task</td><td>regression</td><td>Regression</td><td>Continuous regression task.</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+<tr><td>task</td><td>survival</td><td>Survival</td><td>Survival</td><td class="numeric">Yes</td><td class="numeric">Yes</td></tr>
+</tbody>
+</table>
+</div>
+<div class="table-notes">
+<p><span class="note-label">Note.</span> AUROC = area under the receiver operating characteristic curve; HRD = homologous recombination deficiency; KME = kernel mean embedding; MAF = mutation annotation format.</p>
+<p>Technical detail table retained for reproducibility; manuscript-facing summary tables omit run, cache, and source provenance columns.</p>
+</div>
+</div>
+</body>
+</html>

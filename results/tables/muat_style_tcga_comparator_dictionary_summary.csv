@@ -1,0 +1,4 @@
+modality,n_tokens,pad_index,unk_index,example_tokens
+motif,11329,0,1,<PAD>;<UNK>;A[AAGCACCAAATT>TAAGCACCAAAT]T;A[ACA>TAC]A;A[ACT>CTC]T;A[AGACCCAGACTA>GACCCAGACTAT]C;A[AGGGAGTTAATG>GGGAGTTAATGC]G;A[ATC>CCT]C
+position,2658,0,1,<PAD>;<UNK>;chr10_0;chr10_1;chr10_10;chr10_100;chr10_101;chr10_102
+annotation,10,0,1,<PAD>;<UNK>;no_no_+;no_no_-;no_yes_+;no_yes_-;yes_no_+;yes_no_-

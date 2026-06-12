@@ -1,0 +1,2418 @@
+<!doctype html><meta charset='utf-8'>
+<title>Class-specific Bio MAF v4 SHAP features</title>
+<style>body{font-family:Segoe UI,Arial,sans-serif;margin:24px;color:#1F2430}table{border-collapse:collapse;width:100%;font-size:13px}th,td{border-bottom:1px solid #E6E8F0;padding:7px 9px;text-align:left;vertical-align:top}th{background:#F4F5F7}td.num{text-align:right;font-variant-numeric:tabular-nums}</style>
+<h1>Class-specific Bio MAF v4 SHAP features</h1>
+<table border="1" class="dataframe data">
+  <thead>
+    <tr style="text-align: right;">
+      <th>cancer_type</th>
+      <th>rank</th>
+      <th>feature</th>
+      <th>feature_family</th>
+      <th>mean_abs_shap</th>
+      <th>plain_english_meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BLCA</td>
+      <td>1</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.390442</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>2</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.232594</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>3</td>
+      <td>vep_consequence_fraction__splice_region_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.193718</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>4</td>
+      <td>oncokb_role_vep_high_impact_log_count__tumor_suppressor</td>
+      <td>OncoKB role aggregate</td>
+      <td>0.153125</td>
+      <td>Aggregate burden in OncoKB-curated oncogene/tumor-suppressor role groups.</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>5</td>
+      <td>vep_consequence_fraction__stop_gained</td>
+      <td>VEP consequence composition</td>
+      <td>0.153015</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>6</td>
+      <td>vep_polyphen_fraction__possibly_damaging</td>
+      <td>Predicted functional damage</td>
+      <td>0.122385</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>7</td>
+      <td>oncokb_role_unique_high_or_moderate_impact_genes_log_count__tumor_suppressor</td>
+      <td>OncoKB role aggregate</td>
+      <td>0.117003</td>
+      <td>Aggregate burden in OncoKB-curated oncogene/tumor-suppressor role groups.</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>8</td>
+      <td>oncokb_role_vep_high_or_moderate_impact_log_count__tumor_suppressor</td>
+      <td>OncoKB role aggregate</td>
+      <td>0.115878</td>
+      <td>Aggregate burden in OncoKB-curated oncogene/tumor-suppressor role groups.</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>9</td>
+      <td>vep_impact_count__low</td>
+      <td>VEP impact composition</td>
+      <td>0.112733</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>10</td>
+      <td>vep_impact_fraction__low</td>
+      <td>VEP impact composition</td>
+      <td>0.112565</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>11</td>
+      <td>driver_evidence_max_vaf_high_or_moderate_impact__source_count_2</td>
+      <td>External driver-evidence tier</td>
+      <td>0.107413</td>
+      <td>Aggregate burden among genes supported by 2 external driver-evidence source(s).</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>12</td>
+      <td>driver_gene_functional_event_log_count__KDM6A</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.102984</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit KDM6A.</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>13</td>
+      <td>driver_gene_role_matched_event_log_count__ARID1A</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.085423</td>
+      <td>How many mutations affect ARID1A in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>14</td>
+      <td>vep_biotype_fraction__protein_coding</td>
+      <td>Transcript annotation composition</td>
+      <td>0.084800</td>
+      <td>Transcript-level annotation composition from VEP.</td>
+    </tr>
+    <tr>
+      <td>BLCA</td>
+      <td>15</td>
+      <td>vep_consequence_count__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.081062</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>1</td>
+      <td>driver_gene_functional_event_log_count__PIK3CA</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.265844</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit PIK3CA.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>2</td>
+      <td>vep_consequence_count__synonymous_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.210637</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>3</td>
+      <td>vaf_median</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.144416</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>4</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.121978</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>5</td>
+      <td>residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.109492</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>6</td>
+      <td>driver_gene_functional_event_log_count__TP53</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.099221</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit TP53.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>7</td>
+      <td>vep_consequence_fraction__synonymous_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.095713</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>8</td>
+      <td>cancer_hotspot_unique_gene_log_count</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.084883</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>9</td>
+      <td>driver_gene_role_matched_event_log_count__GATA3</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.084000</td>
+      <td>How many mutations affect GATA3 in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>10</td>
+      <td>vep_impact_count__low</td>
+      <td>VEP impact composition</td>
+      <td>0.082889</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>11</td>
+      <td>driver_gene_role_matched_event_log_count__CDH1</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.069187</td>
+      <td>How many mutations affect CDH1 in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>12</td>
+      <td>vep_consequence_fraction__intron_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.067962</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>13</td>
+      <td>driver_gene_functional_event_log_count__LRP1B</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.067202</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit LRP1B.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>14</td>
+      <td>residual_non_oncokb_positive_role_max_vaf_high_or_moderate_impact</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.065894</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>BRCA</td>
+      <td>15</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.060929</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>1</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.726445</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>2</td>
+      <td>driver_gene_functional_event_log_count__TP53</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.604467</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit TP53.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>3</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.539005</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>4</td>
+      <td>vep_consequence_fraction__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.369652</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>5</td>
+      <td>vep_consequence_count__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.250869</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>6</td>
+      <td>vep_consequence_fraction__splice_region_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.205308</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>7</td>
+      <td>vep_sift_fraction__unknown</td>
+      <td>Predicted functional damage</td>
+      <td>0.121946</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>8</td>
+      <td>vep_polyphen_fraction__benign</td>
+      <td>Predicted functional damage</td>
+      <td>0.116981</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>9</td>
+      <td>vep_consequence_fraction__splice_donor_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.099258</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>10</td>
+      <td>vep_consequence_fraction__downstream_gene_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.091789</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>11</td>
+      <td>vep_polyphen_count__unknown</td>
+      <td>Predicted functional damage</td>
+      <td>0.089540</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>12</td>
+      <td>vep_sift_fraction__deleterious</td>
+      <td>Predicted functional damage</td>
+      <td>0.088005</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>13</td>
+      <td>vaf_median</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.078782</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>14</td>
+      <td>vep_sift_count__unknown</td>
+      <td>Predicted functional damage</td>
+      <td>0.065990</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>CESC</td>
+      <td>15</td>
+      <td>vep_consequence_fraction__stop_gained</td>
+      <td>VEP consequence composition</td>
+      <td>0.063045</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>1</td>
+      <td>driver_gene_role_matched_event_log_count__APC</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.837441</td>
+      <td>How many mutations affect APC in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>2</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.255050</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>3</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.189304</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>4</td>
+      <td>driver_gene_functional_event_log_count__APC</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.167651</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit APC.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>5</td>
+      <td>residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.146140</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>6</td>
+      <td>vep_consequence_fraction__splice_region_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.130168</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>7</td>
+      <td>cancer_hotspot_unique_gene_log_count</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.123303</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>8</td>
+      <td>driver_gene_role_matched_event_log_count__KRAS</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.122601</td>
+      <td>How many mutations affect KRAS in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>9</td>
+      <td>vep_consequence_count__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.116738</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>10</td>
+      <td>driver_gene_functional_event_log_count__BRAF</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.115827</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit BRAF.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>11</td>
+      <td>vaf_mean</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.111056</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>12</td>
+      <td>vep_consequence_fraction__splice_acceptor_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.106973</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>13</td>
+      <td>driver_gene_functional_event_log_count__KRAS</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.097721</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit KRAS.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>14</td>
+      <td>vep_consequence_count__synonymous_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.096564</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>COAD</td>
+      <td>15</td>
+      <td>oncokb_role_max_vaf_high_or_moderate_impact__oncogene_and_tumor_suppressor</td>
+      <td>OncoKB role aggregate</td>
+      <td>0.090920</td>
+      <td>Aggregate burden in OncoKB-curated oncogene/tumor-suppressor role groups.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>1</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>1.343469</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>2</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.986507</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>3</td>
+      <td>vep_consequence_fraction__downstream_gene_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.315797</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>4</td>
+      <td>driver_gene_functional_event_log_count__TP53</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.171038</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit TP53.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>5</td>
+      <td>vep_biotype_fraction__lncrna</td>
+      <td>Transcript annotation composition</td>
+      <td>0.132391</td>
+      <td>Transcript-level annotation composition from VEP.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>6</td>
+      <td>vep_polyphen_fraction__possibly_damaging</td>
+      <td>Predicted functional damage</td>
+      <td>0.114298</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>7</td>
+      <td>vep_impact_fraction__low</td>
+      <td>VEP impact composition</td>
+      <td>0.098395</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>8</td>
+      <td>vep_consequence_count__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.092779</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>9</td>
+      <td>vep_consequence_fraction__splice_acceptor_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.092066</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>10</td>
+      <td>vep_consequence_fraction__stop_gained</td>
+      <td>VEP consequence composition</td>
+      <td>0.081930</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>11</td>
+      <td>vep_polyphen_fraction__probably_damaging</td>
+      <td>Predicted functional damage</td>
+      <td>0.081389</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>12</td>
+      <td>vep_impact_count__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.079918</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>13</td>
+      <td>vep_consequence_fraction__5_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.077844</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>14</td>
+      <td>vep_consequence_fraction__splice_region_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.072495</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>ESCA</td>
+      <td>15</td>
+      <td>residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.059582</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>1</td>
+      <td>driver_gene_functional_event_log_count__PTEN</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.307836</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit PTEN.</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>2</td>
+      <td>vep_impact_count__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.257445</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>3</td>
+      <td>vaf_median</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.245484</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>4</td>
+      <td>driver_gene_role_matched_event_log_count__EGFR</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.163376</td>
+      <td>How many mutations affect EGFR in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>5</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.159229</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>6</td>
+      <td>vaf_std</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.152204</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>7</td>
+      <td>vep_consequence_count__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.144239</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>8</td>
+      <td>vaf_max</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.087905</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>9</td>
+      <td>residual_non_oncokb_positive_role_max_vaf_high_or_moderate_impact</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.085125</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>10</td>
+      <td>vep_sift_fraction__tolerated</td>
+      <td>Predicted functional damage</td>
+      <td>0.081752</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>11</td>
+      <td>driver_gene_functional_event_log_count__NF1</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.076441</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit NF1.</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>12</td>
+      <td>driver_evidence_max_vaf_high_or_moderate_impact__source_count_3</td>
+      <td>External driver-evidence tier</td>
+      <td>0.076077</td>
+      <td>Aggregate burden among genes supported by 3 external driver-evidence source(s).</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>13</td>
+      <td>driver_gene_role_matched_event_log_count__IDH1</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.073954</td>
+      <td>How many mutations affect IDH1 in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>14</td>
+      <td>driver_evidence_max_vaf_high_or_moderate_impact__source_count_4</td>
+      <td>External driver-evidence tier</td>
+      <td>0.072481</td>
+      <td>Aggregate burden among genes supported by 4 external driver-evidence source(s).</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>15</td>
+      <td>vep_polyphen_count__possibly_damaging</td>
+      <td>Predicted functional damage</td>
+      <td>0.070213</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>1</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.286417</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>2</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.266607</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>3</td>
+      <td>driver_gene_functional_event_log_count__TP53</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.261812</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit TP53.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>4</td>
+      <td>vaf_std</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.149260</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>5</td>
+      <td>vep_impact_fraction__low</td>
+      <td>VEP impact composition</td>
+      <td>0.119055</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>6</td>
+      <td>driver_gene_functional_event_log_count__NOTCH1</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.115370</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit NOTCH1.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>7</td>
+      <td>vep_consequence_fraction__stop_gained</td>
+      <td>VEP consequence composition</td>
+      <td>0.108817</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>8</td>
+      <td>vep_impact_count__low</td>
+      <td>VEP impact composition</td>
+      <td>0.101260</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>9</td>
+      <td>driver_gene_role_matched_event_log_count__FAT1</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.082431</td>
+      <td>How many mutations affect FAT1 in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>10</td>
+      <td>driver_gene_functional_event_log_count__CDKN2A</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.073294</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit CDKN2A.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>11</td>
+      <td>residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.065225</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>12</td>
+      <td>vep_consequence_count__stop_gained</td>
+      <td>VEP consequence composition</td>
+      <td>0.064878</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>13</td>
+      <td>oncokb_role_max_vaf_high_or_moderate_impact__oncogene</td>
+      <td>OncoKB role aggregate</td>
+      <td>0.059498</td>
+      <td>Aggregate burden in OncoKB-curated oncogene/tumor-suppressor role groups.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>14</td>
+      <td>vep_sift_fraction__tolerated</td>
+      <td>Predicted functional damage</td>
+      <td>0.057226</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>HNSC</td>
+      <td>15</td>
+      <td>vep_sift_fraction__deleterious_low_confidence</td>
+      <td>Predicted functional damage</td>
+      <td>0.056066</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>1</td>
+      <td>vep_consequence_fraction__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.571221</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>2</td>
+      <td>driver_gene_functional_event_log_count__VHL</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.449169</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit VHL.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>3</td>
+      <td>cancer_hotspot_max_vaf</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.314601</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>4</td>
+      <td>driver_gene_functional_event_log_count__TP53</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.255813</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit TP53.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>5</td>
+      <td>vaf_std</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.193012</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>6</td>
+      <td>vaf_q90</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.191085</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>7</td>
+      <td>driver_gene_functional_event_log_count__PBRM1</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.175710</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit PBRM1.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>8</td>
+      <td>vaf_median</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.171037</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>9</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.124157</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>10</td>
+      <td>vep_impact_fraction__high</td>
+      <td>VEP impact composition</td>
+      <td>0.124129</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>11</td>
+      <td>vaf_max</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.123063</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>12</td>
+      <td>vep_consequence_count__synonymous_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.111569</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>13</td>
+      <td>vep_polyphen_count__probably_damaging</td>
+      <td>Predicted functional damage</td>
+      <td>0.105297</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>14</td>
+      <td>driver_gene_role_matched_event_log_count__PBRM1</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.090011</td>
+      <td>How many mutations affect PBRM1 in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>KIRC</td>
+      <td>15</td>
+      <td>vep_impact_count__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.071186</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>1</td>
+      <td>driver_gene_functional_event_log_count__TP53</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.551464</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit TP53.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>2</td>
+      <td>vep_consequence_fraction__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.514216</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>3</td>
+      <td>cancer_hotspot_max_vaf</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.392167</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>4</td>
+      <td>vep_biotype_fraction__protein_coding</td>
+      <td>Transcript annotation composition</td>
+      <td>0.176524</td>
+      <td>Transcript-level annotation composition from VEP.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>5</td>
+      <td>vep_consequence_count__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.163577</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>6</td>
+      <td>vaf_median</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.152417</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>7</td>
+      <td>vaf_mean</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.134369</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>8</td>
+      <td>vep_consequence_fraction__intron_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.123995</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>9</td>
+      <td>vep_consequence_fraction__5_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.116500</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>10</td>
+      <td>driver_evidence_max_vaf_high_or_moderate_impact__source_count_4</td>
+      <td>External driver-evidence tier</td>
+      <td>0.113381</td>
+      <td>Aggregate burden among genes supported by 4 external driver-evidence source(s).</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>11</td>
+      <td>vep_impact_fraction__high</td>
+      <td>VEP impact composition</td>
+      <td>0.113025</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>12</td>
+      <td>vep_consequence_fraction__splice_region_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.109631</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>13</td>
+      <td>residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.102115</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>14</td>
+      <td>cancer_hotspot_residue_log_count</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.098584</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>KIRP</td>
+      <td>15</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.097722</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>1</td>
+      <td>driver_gene_role_matched_event_log_count__IDH1</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.874305</td>
+      <td>How many mutations affect IDH1 in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>2</td>
+      <td>vep_consequence_count__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.379035</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>3</td>
+      <td>residual_non_oncokb_positive_role_vep_high_or_moderate_impact_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.292768</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>4</td>
+      <td>driver_gene_functional_event_log_count__IDH1</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.250785</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit IDH1.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>5</td>
+      <td>vep_impact_count__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.208075</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>6</td>
+      <td>vep_consequence_fraction__5_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.170457</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>7</td>
+      <td>vep_sift_count__tolerated_low_confidence</td>
+      <td>Predicted functional damage</td>
+      <td>0.134753</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>8</td>
+      <td>vep_polyphen_count__unknown</td>
+      <td>Predicted functional damage</td>
+      <td>0.113665</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>9</td>
+      <td>driver_gene_role_matched_event_log_count__EGFR</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.100518</td>
+      <td>How many mutations affect EGFR in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>10</td>
+      <td>driver_gene_functional_event_log_count__CIC</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.097815</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit CIC.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>11</td>
+      <td>vep_biotype_count__protein_coding</td>
+      <td>Transcript annotation composition</td>
+      <td>0.094292</td>
+      <td>Transcript-level annotation composition from VEP.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>12</td>
+      <td>vep_polyphen_count__probably_damaging</td>
+      <td>Predicted functional damage</td>
+      <td>0.090534</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>13</td>
+      <td>vaf_q90</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.084713</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>14</td>
+      <td>residual_non_oncokb_positive_role_vep_high_impact_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.081587</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>LGG</td>
+      <td>15</td>
+      <td>vep_sift_fraction__tolerated_low_confidence</td>
+      <td>Predicted functional damage</td>
+      <td>0.079905</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>1</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.617534</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>2</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.324180</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>3</td>
+      <td>vep_consequence_fraction__5_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.199321</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>4</td>
+      <td>driver_gene_functional_event_log_count__CTNNB1</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.187694</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit CTNNB1.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>5</td>
+      <td>vep_biotype_fraction__protein_coding</td>
+      <td>Transcript annotation composition</td>
+      <td>0.186256</td>
+      <td>Transcript-level annotation composition from VEP.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>6</td>
+      <td>cancer_hotspot_max_vaf</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.163755</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>7</td>
+      <td>vep_consequence_fraction__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.158941</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>8</td>
+      <td>vep_consequence_fraction__splice_acceptor_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.114403</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>9</td>
+      <td>vaf_median</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.108130</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>10</td>
+      <td>vep_sift_fraction__deleterious_low_confidence</td>
+      <td>Predicted functional damage</td>
+      <td>0.102514</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>11</td>
+      <td>vep_consequence_fraction__upstream_gene_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.090263</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>12</td>
+      <td>vep_consequence_fraction__non_coding_transcript_exon_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.088888</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>13</td>
+      <td>residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.086197</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>14</td>
+      <td>vep_consequence_fraction__stop_gained</td>
+      <td>VEP consequence composition</td>
+      <td>0.083765</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LIHC</td>
+      <td>15</td>
+      <td>vep_consequence_fraction__splice_donor_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.082943</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>1</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.370850</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>2</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.174038</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>3</td>
+      <td>driver_gene_role_matched_event_log_count__KRAS</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.163705</td>
+      <td>How many mutations affect KRAS in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>4</td>
+      <td>vaf_mean</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.161761</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>5</td>
+      <td>vep_consequence_fraction__stop_gained</td>
+      <td>VEP consequence composition</td>
+      <td>0.149086</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>6</td>
+      <td>vep_biotype_fraction__protein_coding</td>
+      <td>Transcript annotation composition</td>
+      <td>0.145750</td>
+      <td>Transcript-level annotation composition from VEP.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>7</td>
+      <td>vep_sift_fraction__deleterious</td>
+      <td>Predicted functional damage</td>
+      <td>0.143934</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>8</td>
+      <td>driver_gene_functional_event_log_count__KEAP1</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.125699</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit KEAP1.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>9</td>
+      <td>vaf_median</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.123649</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>10</td>
+      <td>vep_consequence_count__stop_gained</td>
+      <td>VEP consequence composition</td>
+      <td>0.094330</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>11</td>
+      <td>driver_gene_functional_event_log_count__EGFR</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.087656</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit EGFR.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>12</td>
+      <td>driver_evidence_max_vaf_high_or_moderate_impact__source_count_4</td>
+      <td>External driver-evidence tier</td>
+      <td>0.084040</td>
+      <td>Aggregate burden among genes supported by 4 external driver-evidence source(s).</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>13</td>
+      <td>driver_gene_role_matched_event_log_count__EGFR</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.083872</td>
+      <td>How many mutations affect EGFR in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>14</td>
+      <td>driver_gene_functional_event_log_count__PIK3CA</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.083071</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit PIK3CA.</td>
+    </tr>
+    <tr>
+      <td>LUAD</td>
+      <td>15</td>
+      <td>vep_sift_fraction__deleterious_low_confidence</td>
+      <td>Predicted functional damage</td>
+      <td>0.079997</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>1</td>
+      <td>residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.403058</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>2</td>
+      <td>driver_gene_functional_event_log_count__TP53</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.262547</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit TP53.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>3</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.228367</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>4</td>
+      <td>residual_non_oncokb_positive_role_vep_high_or_moderate_impact_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.200544</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>5</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.176256</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>6</td>
+      <td>vep_sift_fraction__unknown</td>
+      <td>Predicted functional damage</td>
+      <td>0.174774</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>7</td>
+      <td>vep_consequence_fraction__missense_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.149390</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>8</td>
+      <td>vep_biotype_count__other</td>
+      <td>Transcript annotation composition</td>
+      <td>0.148928</td>
+      <td>Transcript-level annotation composition from VEP.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>9</td>
+      <td>vep_biotype_fraction__protein_coding</td>
+      <td>Transcript annotation composition</td>
+      <td>0.137569</td>
+      <td>Transcript-level annotation composition from VEP.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>10</td>
+      <td>vep_biotype_fraction__other</td>
+      <td>Transcript annotation composition</td>
+      <td>0.119408</td>
+      <td>Transcript-level annotation composition from VEP.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>11</td>
+      <td>residual_non_oncokb_positive_role_vep_high_impact_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.113184</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>12</td>
+      <td>driver_gene_functional_event_log_count__NFE2L2</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.103624</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit NFE2L2.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>13</td>
+      <td>vep_impact_count__moderate</td>
+      <td>VEP impact composition</td>
+      <td>0.099830</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>14</td>
+      <td>vep_consequence_fraction__splice_donor_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.093392</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>LUSC</td>
+      <td>15</td>
+      <td>vep_consequence_fraction__intron_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.090911</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>1</td>
+      <td>driver_gene_functional_event_log_count__TP53</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.708678</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit TP53.</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>2</td>
+      <td>vaf_std</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.664233</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>3</td>
+      <td>vaf_mean</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.259523</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>4</td>
+      <td>cancer_hotspot_exact_variant_log_count</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.177126</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>5</td>
+      <td>vaf_max</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.158135</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>6</td>
+      <td>driver_evidence_max_vaf_high_or_moderate_impact__source_count_4</td>
+      <td>External driver-evidence tier</td>
+      <td>0.149273</td>
+      <td>Aggregate burden among genes supported by 4 external driver-evidence source(s).</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>7</td>
+      <td>oncokb_role_max_vaf_high_or_moderate_impact__tumor_suppressor</td>
+      <td>OncoKB role aggregate</td>
+      <td>0.134393</td>
+      <td>Aggregate burden in OncoKB-curated oncogene/tumor-suppressor role groups.</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>8</td>
+      <td>driver_evidence_high_or_moderate_impact_log_count__source_count_4</td>
+      <td>External driver-evidence tier</td>
+      <td>0.119301</td>
+      <td>Aggregate burden among genes supported by 4 external driver-evidence source(s).</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>9</td>
+      <td>vep_consequence_fraction__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.119018</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>10</td>
+      <td>cancer_hotspot_residue_log_count</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.109343</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>11</td>
+      <td>vep_consequence_fraction__synonymous_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.079524</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>12</td>
+      <td>vep_consequence_fraction__stop_gained</td>
+      <td>VEP consequence composition</td>
+      <td>0.073645</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>13</td>
+      <td>vaf_median</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.065883</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>14</td>
+      <td>vep_consequence_fraction__downstream_gene_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.062769</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>OV</td>
+      <td>15</td>
+      <td>vep_consequence_fraction__splice_acceptor_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.059187</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>1</td>
+      <td>residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.911325</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>2</td>
+      <td>vep_impact_count__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.528578</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>3</td>
+      <td>vaf_q90</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.234141</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>4</td>
+      <td>driver_evidence_unique_high_or_moderate_genes_log_count__source_count_4</td>
+      <td>External driver-evidence tier</td>
+      <td>0.154588</td>
+      <td>Aggregate burden among genes supported by 4 external driver-evidence source(s).</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>5</td>
+      <td>cancer_hotspot_max_vaf</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.153082</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>6</td>
+      <td>driver_evidence_max_vaf_high_or_moderate_impact__source_count_3</td>
+      <td>External driver-evidence tier</td>
+      <td>0.136865</td>
+      <td>Aggregate burden among genes supported by 3 external driver-evidence source(s).</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>7</td>
+      <td>vep_polyphen_fraction__unknown</td>
+      <td>Predicted functional damage</td>
+      <td>0.105827</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>8</td>
+      <td>driver_gene_functional_event_log_count__SPOP</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.104309</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit SPOP.</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>9</td>
+      <td>oncokb_role_unique_high_or_moderate_impact_genes_log_count__oncogene</td>
+      <td>OncoKB role aggregate</td>
+      <td>0.103388</td>
+      <td>Aggregate burden in OncoKB-curated oncogene/tumor-suppressor role groups.</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>10</td>
+      <td>driver_evidence_max_vaf_high_or_moderate_impact__source_count_4</td>
+      <td>External driver-evidence tier</td>
+      <td>0.099277</td>
+      <td>Aggregate burden among genes supported by 4 external driver-evidence source(s).</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>11</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.091950</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>12</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.088011</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>13</td>
+      <td>vep_polyphen_count__unknown</td>
+      <td>Predicted functional damage</td>
+      <td>0.087125</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>14</td>
+      <td>vep_consequence_count__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.076625</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>PRAD</td>
+      <td>15</td>
+      <td>vep_consequence_fraction__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.067276</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>1</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>1.700499</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>2</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.695212</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>3</td>
+      <td>vaf_std</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.190546</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>4</td>
+      <td>vep_impact_fraction__high</td>
+      <td>VEP impact composition</td>
+      <td>0.104262</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>5</td>
+      <td>vep_consequence_count__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.097430</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>6</td>
+      <td>vep_consequence_fraction__downstream_gene_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.087143</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>7</td>
+      <td>vep_biotype_fraction__protein_coding</td>
+      <td>Transcript annotation composition</td>
+      <td>0.083351</td>
+      <td>Transcript-level annotation composition from VEP.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>8</td>
+      <td>vaf_median</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.082119</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>9</td>
+      <td>residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.080968</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>10</td>
+      <td>vep_consequence_count__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.077040</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>11</td>
+      <td>vaf_mean</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.069407</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>12</td>
+      <td>vep_sift_fraction__tolerated_low_confidence</td>
+      <td>Predicted functional damage</td>
+      <td>0.069264</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>13</td>
+      <td>vep_consequence_fraction__stop_gained</td>
+      <td>VEP consequence composition</td>
+      <td>0.066422</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>14</td>
+      <td>vaf_max</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.065737</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>SARC</td>
+      <td>15</td>
+      <td>driver_gene_role_matched_event_log_count__ATRX</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.065595</td>
+      <td>How many mutations affect ATRX in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>1</td>
+      <td>driver_gene_functional_event_log_count__TP53</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.584748</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit TP53.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>2</td>
+      <td>vep_consequence_fraction__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.515592</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>3</td>
+      <td>driver_gene_functional_event_log_count__BRAF</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.485742</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit BRAF.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>4</td>
+      <td>vep_consequence_fraction__synonymous_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.448844</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>5</td>
+      <td>vep_impact_fraction__low</td>
+      <td>VEP impact composition</td>
+      <td>0.371422</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>6</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.233343</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>7</td>
+      <td>driver_gene_functional_event_log_count__NRAS</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.209106</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit NRAS.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>8</td>
+      <td>vep_consequence_count__synonymous_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.208893</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>9</td>
+      <td>vep_consequence_count__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.206217</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>10</td>
+      <td>vep_polyphen_fraction__probably_damaging</td>
+      <td>Predicted functional damage</td>
+      <td>0.183769</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>11</td>
+      <td>oncokb_role_max_vaf_high_or_moderate_impact__oncogene</td>
+      <td>OncoKB role aggregate</td>
+      <td>0.171170</td>
+      <td>Aggregate burden in OncoKB-curated oncogene/tumor-suppressor role groups.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>12</td>
+      <td>vep_consequence_fraction__inframe_deletion</td>
+      <td>VEP consequence composition</td>
+      <td>0.163716</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>13</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.157426</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>14</td>
+      <td>cancer_hotspot_max_vaf</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.109270</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>SKCM</td>
+      <td>15</td>
+      <td>driver_gene_functional_event_log_count__PIK3CA</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.107500</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit PIK3CA.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>1</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.520877</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>2</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.294623</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>3</td>
+      <td>vep_consequence_fraction__splice_acceptor_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.240134</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>4</td>
+      <td>vep_consequence_count__synonymous_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.143959</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>5</td>
+      <td>vep_impact_fraction__high</td>
+      <td>VEP impact composition</td>
+      <td>0.114794</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>6</td>
+      <td>driver_gene_role_matched_event_log_count__ARID1A</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.113241</td>
+      <td>How many mutations affect ARID1A in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>7</td>
+      <td>vep_consequence_fraction__splice_region_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.108851</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>8</td>
+      <td>oncokb_role_max_vaf_high_or_moderate_impact__oncogene</td>
+      <td>OncoKB role aggregate</td>
+      <td>0.105766</td>
+      <td>Aggregate burden in OncoKB-curated oncogene/tumor-suppressor role groups.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>9</td>
+      <td>vep_consequence_count__stop_gained</td>
+      <td>VEP consequence composition</td>
+      <td>0.101668</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>10</td>
+      <td>vep_consequence_fraction__stop_gained</td>
+      <td>VEP consequence composition</td>
+      <td>0.089258</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>11</td>
+      <td>vep_impact_fraction__moderate</td>
+      <td>VEP impact composition</td>
+      <td>0.087208</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>12</td>
+      <td>vep_consequence_count__inframe_deletion</td>
+      <td>VEP consequence composition</td>
+      <td>0.082946</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>13</td>
+      <td>residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.081844</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>14</td>
+      <td>vep_consequence_fraction__inframe_deletion</td>
+      <td>VEP consequence composition</td>
+      <td>0.079078</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>STAD</td>
+      <td>15</td>
+      <td>vaf_median</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.072568</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>1</td>
+      <td>residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count</td>
+      <td>Non-OncoKB cancer-gene aggregate</td>
+      <td>0.692924</td>
+      <td>Aggregate burden in externally supported cancer genes not covered by the OncoKB role group.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>2</td>
+      <td>driver_gene_functional_event_log_count__BRAF</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.590460</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit BRAF.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>3</td>
+      <td>vaf_max</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.465727</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>4</td>
+      <td>vep_canonical_count__yes</td>
+      <td>Transcript annotation composition</td>
+      <td>0.346689</td>
+      <td>Transcript-level annotation composition from VEP.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>5</td>
+      <td>driver_gene_functional_event_log_count__TP53</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.331835</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit TP53.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>6</td>
+      <td>vep_sift_count__unknown</td>
+      <td>Predicted functional damage</td>
+      <td>0.292023</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>7</td>
+      <td>vep_biotype_count__protein_coding</td>
+      <td>Transcript annotation composition</td>
+      <td>0.239017</td>
+      <td>Transcript-level annotation composition from VEP.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>8</td>
+      <td>vep_polyphen_fraction__benign</td>
+      <td>Predicted functional damage</td>
+      <td>0.200427</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>9</td>
+      <td>vaf_std</td>
+      <td>Variant allele fraction summary</td>
+      <td>0.194560</td>
+      <td>A sample-level summary of tumor variant allele fractions; useful but should be checked as a purity/proxy sensitivity.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>10</td>
+      <td>vep_consequence_count__frameshift_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.188966</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>11</td>
+      <td>oncokb_role_max_vaf_high_or_moderate_impact__tumor_suppressor</td>
+      <td>OncoKB role aggregate</td>
+      <td>0.167833</td>
+      <td>Aggregate burden in OncoKB-curated oncogene/tumor-suppressor role groups.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>12</td>
+      <td>driver_evidence_max_vaf_high_or_moderate_impact__source_count_4</td>
+      <td>External driver-evidence tier</td>
+      <td>0.137009</td>
+      <td>Aggregate burden among genes supported by 4 external driver-evidence source(s).</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>13</td>
+      <td>vep_polyphen_count__unknown</td>
+      <td>Predicted functional damage</td>
+      <td>0.123626</td>
+      <td>Composition of predicted protein-damaging versus tolerated variants.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>14</td>
+      <td>cancer_hotspot_max_vaf</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.105017</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>THCA</td>
+      <td>15</td>
+      <td>driver_gene_functional_event_log_count__NRAS</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.104381</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit NRAS.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>1</td>
+      <td>driver_gene_functional_event_log_count__PTEN</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.507819</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit PTEN.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>2</td>
+      <td>vep_consequence_fraction__3_prime_utr_variant</td>
+      <td>VEP consequence composition</td>
+      <td>0.490868</td>
+      <td>Composition of mutation consequence types assigned by VEP.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>3</td>
+      <td>cancer_hotspot_max_vaf</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.456736</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>4</td>
+      <td>cancer_hotspot_unique_gene_log_count</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.408057</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>5</td>
+      <td>driver_gene_functional_event_log_count__PIK3CA</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.208805</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit PIK3CA.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>6</td>
+      <td>driver_gene_functional_event_log_count__PIK3R1</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.199640</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit PIK3R1.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>7</td>
+      <td>driver_gene_functional_event_log_count__PPP2R1A</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.118711</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit PPP2R1A.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>8</td>
+      <td>vep_impact_fraction__modifier</td>
+      <td>VEP impact composition</td>
+      <td>0.111228</td>
+      <td>Composition of VEP impact levels such as high, moderate, low, or modifier.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>9</td>
+      <td>oncokb_role_max_vaf_high_or_moderate_impact__tumor_suppressor</td>
+      <td>OncoKB role aggregate</td>
+      <td>0.102954</td>
+      <td>Aggregate burden in OncoKB-curated oncogene/tumor-suppressor role groups.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>10</td>
+      <td>driver_evidence_max_vaf_high_or_moderate_impact__source_count_4</td>
+      <td>External driver-evidence tier</td>
+      <td>0.099207</td>
+      <td>Aggregate burden among genes supported by 4 external driver-evidence source(s).</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>11</td>
+      <td>cancer_hotspot_exact_variant_log_count</td>
+      <td>Cancer hotspot summary</td>
+      <td>0.090523</td>
+      <td>Burden or maximum VAF of mutations at known cancer hotspot residues or exact hotspot variants.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>12</td>
+      <td>driver_gene_role_matched_event_log_count__ARID1A</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.090233</td>
+      <td>How many mutations affect ARID1A in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>13</td>
+      <td>driver_gene_role_matched_event_log_count__PTEN</td>
+      <td>Exact cancer gene, role-matched event</td>
+      <td>0.090067</td>
+      <td>How many mutations affect PTEN in a way consistent with that gene's curated cancer role.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>14</td>
+      <td>oncokb_role_unique_high_or_moderate_impact_genes_log_count__tumor_suppressor</td>
+      <td>OncoKB role aggregate</td>
+      <td>0.086225</td>
+      <td>Aggregate burden in OncoKB-curated oncogene/tumor-suppressor role groups.</td>
+    </tr>
+    <tr>
+      <td>UCEC</td>
+      <td>15</td>
+      <td>driver_gene_functional_event_log_count__CHD4</td>
+      <td>Exact cancer gene, functional event</td>
+      <td>0.083967</td>
+      <td>How many protein-affecting or high/moderate-impact mutations hit CHD4.</td>
+    </tr>
+  </tbody>
+</table>

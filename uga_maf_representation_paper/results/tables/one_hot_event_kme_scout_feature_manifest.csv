@@ -1,5 +1,0 @@
-benchmark,representation,n_features,n_samples,cache_key,construction
-mc3_main,standard_sbs96_dbs78_id83,261,10146,one_hot_event_inventory_mc3_main_81db513e1714ccb24a681cba,same-inventory SBS96+DBS78+ID83 frequencies plus burden/modality covariates
-mc3_main,burden_only,1,10146,one_hot_event_inventory_mc3_main_81db513e1714ccb24a681cba,log total eligible event burden
-kucab_damage_class,standard_sbs96_dbs78_id83,261,259,one_hot_event_inventory_kucab_damage_class_f28f4b53c4a8b37e807073cd,same-inventory SBS96+DBS78+ID83 frequencies plus burden/modality covariates
-kucab_damage_class,burden_only,1,259,one_hot_event_inventory_kucab_damage_class_f28f4b53c4a8b37e807073cd,log total eligible event burden

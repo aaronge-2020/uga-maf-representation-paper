@@ -1,0 +1,374 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2420" height="1000" viewBox="0 0 2420 1000">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <linearGradient id="heat" x1="0" x2="1"><stop offset="0%" stop-color="#EFF6FF"/><stop offset="100%" stop-color="#1D4ED8"/></linearGradient>
+  </defs>
+  <style>
+  text{font-family:Inter,Arial,sans-serif;letter-spacing:0}.title{font-size:30px;font-weight:760;fill:#111827}.subtitle{font-size:15px;fill:#475569}.panel-title{font-size:17px;font-weight:760;fill:#111827}.label{font-size:14px;fill:#111827}.small{font-size:12px;fill:#475569}.tiny{font-size:10px;fill:#64748B}.value{font-size:14px;font-weight:740;fill:#111827}.cell-value{font-size:16px;font-weight:780;fill:#111827}.cell-value-light{font-size:16px;font-weight:780;fill:#FFFFFF}.sig{font-size:13px;font-weight:800;fill:#111827}.badge-text{font-size:10px;font-weight:760;fill:#334155}.axis{stroke:#CBD5E1;stroke-width:1}.grid{stroke:#E2E8F0;stroke-width:1}.rule{stroke:#334155;stroke-width:1.8}.card{fill:#FFFFFF;stroke:#CBD5E1;stroke-width:1.2}.soft{fill:#F8FAFC}.row-band{fill:#F8FAFC}.chip{fill:#F1F5F9;stroke:#CBD5E1}.shadow{filter:drop-shadow(0 2px 3px rgba(15,23,42,.10))}
+  </style><rect width="2420" height="1000" fill="#FFFFFF"/>
+<text x="44" y="50" class="title">Figure 4. MAF-stack biology vs signatures</text>
+<text x="44" y="80" class="subtitle">Bars show canonical 5-fold OOF performance. Right panels show signed pairwise deltas and FDR markers.</text>
+<text x="44" y="106" class="tiny">Contrast signs are candidate minus baseline. Intervals are shown for bootstrap tests; DeLong rows carry p/q markers without bootstrap CIs.</text>
+<rect x="36" y="146" width="2348" height="104" class="row-band"/>
+<text x="52" y="184" class="label">Kucab damage class</text>
+<rect x="52" y="199" width="58.8" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="81.4" y="213" text-anchor="middle" class="badge-text" fill="#334155">mAUROC</text><rect x="118" y="199" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="145" y="213" text-anchor="middle" class="badge-text" fill="#334155">multi</text><text x="184" y="213" class="tiny">n=259</text>
+<text x="52" y="288" class="label">HRD score</text>
+<rect x="52" y="303" width="50" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="77" y="317" text-anchor="middle" class="badge-text" fill="#334155">rho</text><rect x="118" y="303" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="145" y="317" text-anchor="middle" class="badge-text" fill="#334155">reg</text><text x="184" y="317" class="tiny">n=772</text>
+<rect x="36" y="354" width="2348" height="104" class="row-band"/>
+<text x="52" y="392" class="label">HRD24 high/low</text>
+<rect x="52" y="407" width="52" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="78" y="421" text-anchor="middle" class="badge-text" fill="#334155">AUROC</text><rect x="118" y="407" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="145" y="421" text-anchor="middle" class="badge-text" fill="#334155">binary</text><text x="184" y="421" class="tiny">n=772</text>
+<text x="52" y="496" class="label">HRD33 high/low</text>
+<rect x="52" y="511" width="52" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="78" y="525" text-anchor="middle" class="badge-text" fill="#334155">AUROC</text><rect x="118" y="511" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="145" y="525" text-anchor="middle" class="badge-text" fill="#334155">binary</text><text x="184" y="525" class="tiny">n=772</text>
+<rect x="36" y="562" width="2348" height="104" class="row-band"/>
+<text x="52" y="600" class="label">HRD42 high/low</text>
+<rect x="52" y="615" width="52" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="78" y="629" text-anchor="middle" class="badge-text" fill="#334155">AUROC</text><rect x="118" y="615" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="145" y="629" text-anchor="middle" class="badge-text" fill="#334155">binary</text><text x="184" y="629" class="tiny">n=772</text>
+<text x="52" y="704" class="label">Cancer type (top 20)</text>
+<rect x="52" y="719" width="58.8" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="81.4" y="733" text-anchor="middle" class="badge-text" fill="#334155">mAUROC</text><rect x="118" y="719" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="145" y="733" text-anchor="middle" class="badge-text" fill="#334155">multi</text><text x="184" y="733" class="tiny">n=8,800</text>
+<rect x="36" y="770" width="2348" height="104" class="row-band"/>
+<text x="52" y="808" class="label">Overall survival</text>
+<rect x="52" y="823" width="120" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="112" y="837" text-anchor="middle" class="badge-text" fill="#334155">Harrell C-index</text><text x="186" y="837" class="tiny">n=9,986</text>
+<text x="250" y="126" class="panel-title">Elastic net</text>
+<rect x="362" y="111" width="44" height="20" rx="10" fill="#E0F2FE" stroke="#BAE6FD"/><text x="384" y="125" text-anchor="middle" class="badge-text" fill="#334155">EN</text>
+<line x1="250" y1="130" x2="250" y2="894" class="grid"/>
+<text x="250" y="938" text-anchor="middle" class="tiny">0.00</text>
+<line x1="364.75" y1="130" x2="364.75" y2="894" class="grid"/>
+<text x="364.75" y="938" text-anchor="middle" class="tiny">0.25</text>
+<line x1="479.5" y1="130" x2="479.5" y2="894" class="grid"/>
+<text x="479.5" y="938" text-anchor="middle" class="tiny">0.50</text>
+<line x1="594.25" y1="130" x2="594.25" y2="894" class="grid"/>
+<text x="594.25" y="938" text-anchor="middle" class="tiny">0.75</text>
+<line x1="709" y1="130" x2="709" y2="894" class="grid"/>
+<text x="709" y="938" text-anchor="middle" class="tiny">1.00</text>
+<text x="479.5" y="964" text-anchor="middle" class="small">OOF primary metric</text>
+<rect x="250" y="172" width="288.5185670920997" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>Kucab damage class | Elastic net | Mutational signatures: 0.629; n=259; 261 features</title></rect>
+<text x="546.5185670920997" y="185" class="tiny">0.63</text>
+<rect x="250" y="196" width="265.7094960907999" height="15" rx="3" fill="#059669" stroke="none" stroke-width="0"><title>Kucab damage class | Elastic net | Bio MAF v4: 0.579; n=259; 2,980 features</title></rect>
+<text x="523.7094960907999" y="209" class="tiny">0.58</text>
+<rect x="250" y="220" width="312.33652574210856" height="15" rx="3" fill="#D97706" stroke="#111827" stroke-width="1.6"><title>Kucab damage class | Elastic net | Signatures + Bio MAF v4: 0.680; n=259; 3,241 features</title></rect>
+<text x="570.3365257421085" y="233" class="tiny">0.68</text>
+<rect x="250" y="276" width="197.638069748086" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>HRD score | Elastic net | Mutational signatures: 0.431; n=772; 182 features</title></rect>
+<text x="455.63806974808597" y="289" class="tiny">0.43</text>
+<rect x="250" y="300" width="325.81759870367745" height="15" rx="3" fill="#059669" stroke="none" stroke-width="0"><title>HRD score | Elastic net | Bio MAF v4: 0.710; n=772; 948 features</title></rect>
+<text x="583.8175987036775" y="313" class="tiny">0.71</text>
+<rect x="250" y="324" width="336.24134103965343" height="15" rx="3" fill="#D97706" stroke="#111827" stroke-width="1.6"><title>HRD score | Elastic net | Signatures + Bio MAF v4: 0.733; n=772; 1,130 features</title></rect>
+<text x="594.2413410396534" y="337" class="tiny">0.73</text>
+<rect x="250" y="380" width="347.7900910707404" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>HRD24 high/low | Elastic net | Mutational signatures: 0.758; n=772; 182 features</title></rect>
+<text x="605.7900910707403" y="393" class="tiny">0.76</text>
+<rect x="250" y="404" width="374.7298505141745" height="15" rx="3" fill="#059669" stroke="none" stroke-width="0"><title>HRD24 high/low | Elastic net | Bio MAF v4: 0.816; n=772; 948 features</title></rect>
+<text x="632.7298505141745" y="417" class="tiny">0.82</text>
+<rect x="250" y="428" width="377.69040004867924" height="15" rx="3" fill="#D97706" stroke="#111827" stroke-width="1.6"><title>HRD24 high/low | Elastic net | Signatures + Bio MAF v4: 0.823; n=772; 1,130 features</title></rect>
+<text x="635.6904000486793" y="441" class="tiny">0.82</text>
+<rect x="250" y="484" width="355.09315127251926" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>HRD33 high/low | Elastic net | Mutational signatures: 0.774; n=772; 182 features</title></rect>
+<text x="613.0931512725192" y="497" class="tiny">0.77</text>
+<rect x="250" y="508" width="381.154632542179" height="15" rx="3" fill="#059669" stroke="none" stroke-width="0"><title>HRD33 high/low | Elastic net | Bio MAF v4: 0.830; n=772; 948 features</title></rect>
+<text x="639.154632542179" y="521" class="tiny">0.83</text>
+<rect x="250" y="532" width="388.49034887046037" height="15" rx="3" fill="#D97706" stroke="#111827" stroke-width="1.6"><title>HRD33 high/low | Elastic net | Signatures + Bio MAF v4: 0.846; n=772; 1,130 features</title></rect>
+<text x="646.4903488704604" y="545" class="tiny">0.85</text>
+<rect x="250" y="588" width="394.0561736334405" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>HRD42 high/low | Elastic net | Mutational signatures: 0.859; n=772; 182 features</title></rect>
+<text x="652.0561736334405" y="601" class="tiny">0.86</text>
+<rect x="250" y="612" width="384.47768488745976" height="15" rx="3" fill="#059669" stroke="none" stroke-width="0"><title>HRD42 high/low | Elastic net | Bio MAF v4: 0.838; n=772; 948 features</title></rect>
+<text x="642.4776848874598" y="625" class="tiny">0.84</text>
+<rect x="250" y="636" width="415.53028938906755" height="15" rx="3" fill="#D97706" stroke="#111827" stroke-width="1.6"><title>HRD42 high/low | Elastic net | Signatures + Bio MAF v4: 0.905; n=772; 1,130 features</title></rect>
+<text x="673.5302893890675" y="649" class="tiny">0.91</text>
+<rect x="250" y="692" width="421.52322828359814" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>Cancer type (top 20) | Elastic net | Mutational signatures: 0.918; n=8,800; 182 features</title></rect>
+<text x="679.5232282835982" y="705" class="tiny">0.92</text>
+<rect x="250" y="716" width="427.48751856785" height="15" rx="3" fill="#059669" stroke="#111827" stroke-width="1.6"><title>Cancer type (top 20) | Elastic net | Bio MAF v4: 0.931; n=8,800; 948 features</title></rect>
+<text x="685.48751856785" y="729" class="tiny">0.93</text>
+<rect x="250" y="740" width="413.35050635391167" height="15" rx="3" fill="#D97706" stroke="none" stroke-width="0"><title>Cancer type (top 20) | Elastic net | Signatures + Bio MAF v4: 0.901; n=8,800; 1,130 features</title></rect>
+<text x="671.3505063539117" y="753" class="tiny">0.90</text>
+<text x="268" y="826" class="tiny">Survival uses Cox PH</text>
+<text x="268" y="839" class="tiny">shown in the right panel</text>
+<text x="751" y="112" class="small">Pairwise deltas; CI if bootstrapped</text>
+<text x="834.3333333333334" y="132" class="tiny" text-anchor="middle">Bio MAF - Sig</text>
+<line x1="834.3333333333334" y1="142" x2="834.3333333333334" y2="890" stroke="#CBD5E1" stroke-width="1.1"><title>Bio MAF v4 minus signatures</title></line>
+<text x="1001" y="132" class="tiny" text-anchor="middle">Sig+Bio MAF -</text>
+<text x="1001" y="144" class="tiny" text-anchor="middle">Sig</text>
+<line x1="1001" y1="142" x2="1001" y2="890" stroke="#CBD5E1" stroke-width="1.1"><title>Signatures + Bio MAF v4 minus signatures</title></line>
+<text x="1167.6666666666665" y="132" class="tiny" text-anchor="middle">Sig+Bio MAF -</text>
+<text x="1167.6666666666665" y="144" class="tiny" text-anchor="middle">Bio MAF</text>
+<line x1="1167.6666666666665" y1="142" x2="1167.6666666666665" y2="890" stroke="#CBD5E1" stroke-width="1.1"><title>Signatures + Bio MAF v4 minus Bio MAF v4</title></line>
+<rect x="759" y="186" width="150.66666666666666" height="42" rx="5" fill="#FEF2F2" stroke="#FECACA"/>
+<line x1="814.6522660894207" y1="197" x2="834.1472499144851" y2="197" stroke="#B91C1C" stroke-width="1.8"/>
+<line x1="834.3333333333334" y1="190" x2="834.3333333333334" y2="224" stroke="#94A3B8" stroke-width="1"/>
+<line x1="834.3333333333334" y1="197" x2="824.3947403044446" y2="197" stroke="#B91C1C" stroke-width="3"/>
+<circle cx="824.3947403044446" cy="197" r="3.8" fill="#B91C1C"><title>Kucab damage class | Elastic net | Bio MAF v4 minus signatures: delta=-0.050; q=0.078</title></circle>
+<rect x="798.3333333333334" y="211" width="72" height="17" rx="8" fill="#FEF2F2" stroke="#FECACA" opacity=".96"/><text x="834.3333333333334" y="224" text-anchor="middle" class="tiny" style="fill:#B91C1C">-0.050 .</text>
+<rect x="925.6666666666666" y="186" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1003.2963052160927" y1="197" x2="1019.634314757843" y2="197" stroke="#047857" stroke-width="1.8"/>
+<line x1="1001" y1="190" x2="1001" y2="224" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1001" y1="197" x2="1011.3739999207213" y2="197" stroke="#047857" stroke-width="3"/>
+<circle cx="1011.3739999207213" cy="197" r="3.8" fill="#047857"><title>Kucab damage class | Elastic net | Signatures + Bio MAF v4 minus signatures: delta=+0.052; q=0.021</title></circle>
+<rect x="965" y="211" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1001" y="224" text-anchor="middle" class="tiny" style="fill:#047857">+0.052 *</text>
+<rect x="1092.3333333333333" y="186" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1179.5231457733892" y1="197" x2="1195.7192199387778" y2="197" stroke="#047857" stroke-width="1.8"/>
+<line x1="1167.6666666666665" y1="190" x2="1167.6666666666665" y2="224" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1167.6666666666665" y1="197" x2="1187.9792596162765" y2="197" stroke="#047857" stroke-width="3"/>
+<circle cx="1187.9792596162765" cy="197" r="3.8" fill="#047857"><title>Kucab damage class | Elastic net | Signatures + Bio MAF v4 minus Bio MAF v4: delta=+0.102; q=0.008</title></circle>
+<rect x="1131.6666666666665" y="211" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1167.6666666666665" y="224" text-anchor="middle" class="tiny" style="fill:#047857">+0.102 **</text>
+<rect x="759" y="290" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="878.9259051774214" y1="301" x2="894.3333333333334" y2="301" stroke="#047857" stroke-width="1.8"/>
+<line x1="834.3333333333334" y1="294" x2="834.3333333333334" y2="328" stroke="#94A3B8" stroke-width="1"/>
+<line x1="834.3333333333334" y1="301" x2="890.184979937077" y2="301" stroke="#047857" stroke-width="3"/>
+<circle cx="890.184979937077" cy="301" r="3.8" fill="#047857"><title>HRD score | Elastic net | Bio MAF v4 minus signatures: delta=+0.279; q=0.008</title></circle>
+<rect x="798.3333333333334" y="315" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="834.3333333333334" y="328" text-anchor="middle" class="tiny" style="fill:#047857">+0.279 **</text>
+<rect x="925.6666666666666" y="290" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1050.7247642098807" y1="301" x2="1061" y2="301" stroke="#047857" stroke-width="1.8"/>
+<line x1="1001" y1="294" x2="1001" y2="328" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1001" y1="301" x2="1061" y2="301" stroke="#047857" stroke-width="3"/>
+<circle cx="1061" cy="301" r="3.8" fill="#047857"><title>HRD score | Elastic net | Signatures + Bio MAF v4 minus signatures: delta=+0.302; q=0.008</title></circle>
+<rect x="965" y="315" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1001" y="328" text-anchor="middle" class="tiny" style="fill:#047857">+0.302 **</text>
+<rect x="1092.3333333333333" y="290" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1167.0994892493738" y1="301" x2="1176.9329251519744" y2="301" stroke="#047857" stroke-width="1.8"/>
+<line x1="1167.6666666666665" y1="294" x2="1167.6666666666665" y2="328" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1167.6666666666665" y1="301" x2="1172.2086023250438" y2="301" stroke="#047857" stroke-width="3"/>
+<circle cx="1172.2086023250438" cy="301" r="3.8" fill="#047857"><title>HRD score | Elastic net | Signatures + Bio MAF v4 minus Bio MAF v4: delta=+0.023; q=0.116</title></circle>
+<rect x="1131.6666666666665" y="315" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1167.6666666666665" y="328" text-anchor="middle" class="tiny" style="fill:#047857">+0.023</text>
+<rect x="759" y="394" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="834.3333333333334" y1="405" x2="834.3333333333334" y2="405" stroke="#047857" stroke-width="1.8"/>
+<line x1="834.3333333333334" y1="398" x2="834.3333333333334" y2="432" stroke="#94A3B8" stroke-width="1"/>
+<line x1="834.3333333333334" y1="405" x2="846.0717906071608" y2="405" stroke="#047857" stroke-width="3"/>
+<circle cx="846.0717906071608" cy="405" r="3.8" fill="#047857"><title>HRD24 high/low | Elastic net | Bio MAF v4 minus signatures: delta=+0.059; q=0.008</title></circle>
+<rect x="798.3333333333334" y="419" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="834.3333333333334" y="432" text-anchor="middle" class="tiny" style="fill:#047857">+0.059 **</text>
+<rect x="925.6666666666666" y="394" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1001" y1="405" x2="1001" y2="405" stroke="#047857" stroke-width="1.8"/>
+<line x1="1001" y1="398" x2="1001" y2="432" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1001" y1="405" x2="1014.0284570709973" y2="405" stroke="#047857" stroke-width="3"/>
+<circle cx="1014.0284570709973" cy="405" r="3.8" fill="#047857"><title>HRD24 high/low | Elastic net | Signatures + Bio MAF v4 minus signatures: delta=+0.065; q&lt;0.001</title></circle>
+<rect x="965" y="419" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1001" y="432" text-anchor="middle" class="tiny" style="fill:#047857">+0.065 ***</text>
+<rect x="1092.3333333333333" y="394" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1167.6666666666665" y1="405" x2="1167.6666666666665" y2="405" stroke="#047857" stroke-width="1.8"/>
+<line x1="1167.6666666666665" y1="398" x2="1167.6666666666665" y2="432" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1167.6666666666665" y1="405" x2="1168.9566664638364" y2="405" stroke="#047857" stroke-width="3"/>
+<circle cx="1168.9566664638364" cy="405" r="3.8" fill="#047857"><title>HRD24 high/low | Elastic net | Signatures + Bio MAF v4 minus Bio MAF v4: delta=+0.006; q=0.622</title></circle>
+<rect x="1131.6666666666665" y="419" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1167.6666666666665" y="432" text-anchor="middle" class="tiny" style="fill:#047857">+0.006</text>
+<rect x="759" y="498" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="834.3333333333334" y1="509" x2="834.3333333333334" y2="509" stroke="#047857" stroke-width="1.8"/>
+<line x1="834.3333333333334" y1="502" x2="834.3333333333334" y2="536" stroke="#94A3B8" stroke-width="1"/>
+<line x1="834.3333333333334" y1="509" x2="845.6890985924443" y2="509" stroke="#047857" stroke-width="3"/>
+<circle cx="845.6890985924443" cy="509" r="3.8" fill="#047857"><title>HRD33 high/low | Elastic net | Bio MAF v4 minus signatures: delta=+0.057; q=0.008</title></circle>
+<rect x="798.3333333333334" y="523" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="834.3333333333334" y="536" text-anchor="middle" class="tiny" style="fill:#047857">+0.057 **</text>
+<rect x="925.6666666666666" y="498" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1001" y1="509" x2="1001" y2="509" stroke="#047857" stroke-width="1.8"/>
+<line x1="1001" y1="502" x2="1001" y2="536" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1001" y1="509" x2="1015.5521558160963" y2="509" stroke="#047857" stroke-width="3"/>
+<circle cx="1015.5521558160963" cy="509" r="3.8" fill="#047857"><title>HRD33 high/low | Elastic net | Signatures + Bio MAF v4 minus signatures: delta=+0.073; q&lt;0.001</title></circle>
+<rect x="965" y="523" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1001" y="536" text-anchor="middle" class="tiny" style="fill:#047857">+0.073 ***</text>
+<rect x="1092.3333333333333" y="498" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1167.6666666666665" y1="509" x2="1167.6666666666665" y2="509" stroke="#047857" stroke-width="1.8"/>
+<line x1="1167.6666666666665" y1="502" x2="1167.6666666666665" y2="536" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1167.6666666666665" y1="509" x2="1170.8630572236518" y2="509" stroke="#047857" stroke-width="3"/>
+<circle cx="1170.8630572236518" cy="509" r="3.8" fill="#047857"><title>HRD33 high/low | Elastic net | Signatures + Bio MAF v4 minus Bio MAF v4: delta=+0.016; q=0.281</title></circle>
+<rect x="1131.6666666666665" y="523" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1167.6666666666665" y="536" text-anchor="middle" class="tiny" style="fill:#047857">+0.016</text>
+<rect x="759" y="602" width="150.66666666666666" height="42" rx="5" fill="#FEF2F2" stroke="#FECACA"/>
+<line x1="834.3333333333334" y1="613" x2="834.3333333333334" y2="613" stroke="#B91C1C" stroke-width="1.8"/>
+<line x1="834.3333333333334" y1="606" x2="834.3333333333334" y2="640" stroke="#94A3B8" stroke-width="1"/>
+<line x1="834.3333333333334" y1="613" x2="830.1596998928189" y2="613" stroke="#B91C1C" stroke-width="3"/>
+<circle cx="830.1596998928189" cy="613" r="3.8" fill="#B91C1C"><title>HRD42 high/low | Elastic net | Bio MAF v4 minus signatures: delta=-0.021; q=0.350</title></circle>
+<rect x="798.3333333333334" y="627" width="72" height="17" rx="8" fill="#FEF2F2" stroke="#FECACA" opacity=".96"/><text x="834.3333333333334" y="640" text-anchor="middle" class="tiny" style="fill:#B91C1C">-0.021</text>
+<rect x="925.6666666666666" y="602" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1001" y1="613" x2="1001" y2="613" stroke="#047857" stroke-width="1.8"/>
+<line x1="1001" y1="606" x2="1001" y2="640" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1001" y1="613" x2="1010.3569131832797" y2="613" stroke="#047857" stroke-width="3"/>
+<circle cx="1010.3569131832797" cy="613" r="3.8" fill="#047857"><title>HRD42 high/low | Elastic net | Signatures + Bio MAF v4 minus signatures: delta=+0.047; q=0.002</title></circle>
+<rect x="965" y="627" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1001" y="640" text-anchor="middle" class="tiny" style="fill:#047857">+0.047 **</text>
+<rect x="1092.3333333333333" y="602" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1167.6666666666665" y1="613" x2="1167.6666666666665" y2="613" stroke="#047857" stroke-width="1.8"/>
+<line x1="1167.6666666666665" y1="606" x2="1167.6666666666665" y2="640" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1167.6666666666665" y1="613" x2="1181.1972132904607" y2="613" stroke="#047857" stroke-width="3"/>
+<circle cx="1181.1972132904607" cy="613" r="3.8" fill="#047857"><title>HRD42 high/low | Elastic net | Signatures + Bio MAF v4 minus Bio MAF v4: delta=+0.068; q&lt;0.001</title></circle>
+<rect x="1131.6666666666665" y="627" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1167.6666666666665" y="640" text-anchor="middle" class="tiny" style="fill:#047857">+0.068 ***</text>
+<rect x="759" y="706" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="836.264932254185" y1="717" x2="837.7566141122613" y2="717" stroke="#047857" stroke-width="1.8"/>
+<line x1="834.3333333333334" y1="710" x2="834.3333333333334" y2="744" stroke="#94A3B8" stroke-width="1"/>
+<line x1="834.3333333333334" y1="717" x2="836.9296837002645" y2="717" stroke="#047857" stroke-width="3"/>
+<circle cx="836.9296837002645" cy="717" r="3.8" fill="#047857"><title>Cancer type (top 20) | Elastic net | Bio MAF v4 minus signatures: delta=+0.013; q=0.008</title></circle>
+<rect x="798.3333333333334" y="731" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="834.3333333333334" y="744" text-anchor="middle" class="tiny" style="fill:#047857">+0.013 **</text>
+<rect x="925.6666666666666" y="706" width="150.66666666666666" height="42" rx="5" fill="#FEF2F2" stroke="#FECACA"/>
+<line x1="996.6268648263218" y1="717" x2="998.1906701079436" y2="717" stroke="#B91C1C" stroke-width="1.8"/>
+<line x1="1001" y1="710" x2="1001" y2="744" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1001" y1="717" x2="997.4332920945573" y2="717" stroke="#B91C1C" stroke-width="3"/>
+<circle cx="997.4332920945573" cy="717" r="3.8" fill="#B91C1C"><title>Cancer type (top 20) | Elastic net | Signatures + Bio MAF v4 minus signatures: delta=-0.018; q=0.008</title></circle>
+<rect x="965" y="731" width="72" height="17" rx="8" fill="#FEF2F2" stroke="#FECACA" opacity=".96"/><text x="1001" y="744" text-anchor="middle" class="tiny" style="fill:#B91C1C">-0.018 **</text>
+<rect x="1092.3333333333333" y="706" width="150.66666666666666" height="42" rx="5" fill="#FEF2F2" stroke="#FECACA"/>
+<line x1="1160.593238384232" y1="717" x2="1162.3457069146102" y2="717" stroke="#B91C1C" stroke-width="1.8"/>
+<line x1="1167.6666666666665" y1="710" x2="1167.6666666666665" y2="744" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1167.6666666666665" y1="717" x2="1161.5036083942928" y2="717" stroke="#B91C1C" stroke-width="3"/>
+<circle cx="1161.5036083942928" cy="717" r="3.8" fill="#B91C1C"><title>Cancer type (top 20) | Elastic net | Signatures + Bio MAF v4 minus Bio MAF v4: delta=-0.031; q=0.008</title></circle>
+<rect x="1131.6666666666665" y="731" width="72" height="17" rx="8" fill="#FEF2F2" stroke="#FECACA" opacity=".96"/><text x="1167.6666666666665" y="744" text-anchor="middle" class="tiny" style="fill:#B91C1C">-0.031 **</text>
+<text x="1347" y="126" class="panel-title">XGBoost / Cox PH for OS</text>
+<rect x="1625" y="111" width="74" height="20" rx="10" fill="#E0F2FE" stroke="#BAE6FD"/><text x="1662" y="125" text-anchor="middle" class="badge-text" fill="#334155">XGB+COX</text>
+<line x1="1347" y1="130" x2="1347" y2="894" class="grid"/>
+<text x="1347" y="938" text-anchor="middle" class="tiny">0.00</text>
+<line x1="1461.75" y1="130" x2="1461.75" y2="894" class="grid"/>
+<text x="1461.75" y="938" text-anchor="middle" class="tiny">0.25</text>
+<line x1="1576.5" y1="130" x2="1576.5" y2="894" class="grid"/>
+<text x="1576.5" y="938" text-anchor="middle" class="tiny">0.50</text>
+<line x1="1691.25" y1="130" x2="1691.25" y2="894" class="grid"/>
+<text x="1691.25" y="938" text-anchor="middle" class="tiny">0.75</text>
+<line x1="1806" y1="130" x2="1806" y2="894" class="grid"/>
+<text x="1806" y="938" text-anchor="middle" class="tiny">1.00</text>
+<text x="1576.5" y="964" text-anchor="middle" class="small">OOF primary metric</text>
+<rect x="1347" y="172" width="292.02640718129214" height="15" rx="3" fill="#2563EB" stroke="#111827" stroke-width="1.6"><title>Kucab damage class | XGBoost | Mutational signatures: 0.636; n=259; 261 features</title></rect>
+<text x="1647.0264071812921" y="185" class="tiny">0.64</text>
+<rect x="1347" y="196" width="242.64768449626357" height="15" rx="3" fill="#059669" stroke="none" stroke-width="0"><title>Kucab damage class | XGBoost | Bio MAF v4: 0.529; n=259; 2,980 features</title></rect>
+<text x="1597.6476844962635" y="209" class="tiny">0.53</text>
+<rect x="1347" y="220" width="265.37685321941404" height="15" rx="3" fill="#D97706" stroke="none" stroke-width="0"><title>Kucab damage class | XGBoost | Signatures + Bio MAF v4: 0.578; n=259; 3,241 features</title></rect>
+<text x="1620.376853219414" y="233" class="tiny">0.58</text>
+<rect x="1347" y="276" width="323.19400515169394" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>HRD score | XGBoost | Mutational signatures: 0.704; n=772; 182 features</title></rect>
+<text x="1678.194005151694" y="289" class="tiny">0.70</text>
+<rect x="1347" y="300" width="335.64217057645504" height="15" rx="3" fill="#059669" stroke="none" stroke-width="0"><title>HRD score | XGBoost | Bio MAF v4: 0.731; n=772; 948 features</title></rect>
+<text x="1690.642170576455" y="313" class="tiny">0.73</text>
+<rect x="1347" y="324" width="358.47236499889146" height="15" rx="3" fill="#D97706" stroke="#111827" stroke-width="1.6"><title>HRD score | XGBoost | Signatures + Bio MAF v4: 0.781; n=772; 1,130 features</title></rect>
+<text x="1713.4723649988914" y="337" class="tiny">0.78</text>
+<rect x="1347" y="380" width="377.6826417951821" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>HRD24 high/low | XGBoost | Mutational signatures: 0.823; n=772; 182 features</title></rect>
+<text x="1732.682641795182" y="393" class="tiny">0.82</text>
+<rect x="1347" y="404" width="385.49054811469364" height="15" rx="3" fill="#059669" stroke="#111827" stroke-width="1.6"><title>HRD24 high/low | XGBoost | Bio MAF v4: 0.840; n=772; 948 features</title></rect>
+<text x="1740.4905481146936" y="417" class="tiny">0.84</text>
+<rect x="1347" y="428" width="383.9901018883487" height="15" rx="3" fill="#D97706" stroke="none" stroke-width="0"><title>HRD24 high/low | XGBoost | Signatures + Bio MAF v4: 0.837; n=772; 1,130 features</title></rect>
+<text x="1738.9901018883488" y="441" class="tiny">0.84</text>
+<rect x="1347" y="484" width="387.8103731770089" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>HRD33 high/low | XGBoost | Mutational signatures: 0.845; n=772; 182 features</title></rect>
+<text x="1742.8103731770088" y="497" class="tiny">0.84</text>
+<rect x="1347" y="508" width="393.2410637689448" height="15" rx="3" fill="#059669" stroke="none" stroke-width="0"><title>HRD33 high/low | XGBoost | Bio MAF v4: 0.857; n=772; 948 features</title></rect>
+<text x="1748.2410637689447" y="521" class="tiny">0.86</text>
+<rect x="1347" y="532" width="397.81494852730907" height="15" rx="3" fill="#D97706" stroke="#111827" stroke-width="1.6"><title>HRD33 high/low | XGBoost | Signatures + Bio MAF v4: 0.867; n=772; 1,130 features</title></rect>
+<text x="1752.814948527309" y="545" class="tiny">0.87</text>
+<rect x="1347" y="588" width="399.7284887459807" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>HRD42 high/low | XGBoost | Mutational signatures: 0.871; n=772; 182 features</title></rect>
+<text x="1754.7284887459807" y="601" class="tiny">0.87</text>
+<rect x="1347" y="612" width="385.94372990353696" height="15" rx="3" fill="#059669" stroke="none" stroke-width="0"><title>HRD42 high/low | XGBoost | Bio MAF v4: 0.841; n=772; 948 features</title></rect>
+<text x="1740.943729903537" y="625" class="tiny">0.84</text>
+<rect x="1347" y="636" width="417.27183279742763" height="15" rx="3" fill="#D97706" stroke="#111827" stroke-width="1.6"><title>HRD42 high/low | XGBoost | Signatures + Bio MAF v4: 0.909; n=772; 1,130 features</title></rect>
+<text x="1772.2718327974276" y="649" class="tiny">0.91</text>
+<rect x="1347" y="692" width="429.34800581865704" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>Cancer type (top 20) | XGBoost | Mutational signatures: 0.935; n=8,800; 182 features</title></rect>
+<text x="1784.348005818657" y="705" class="tiny">0.94</text>
+<rect x="1347" y="716" width="440.02848418687046" height="15" rx="3" fill="#059669" stroke="none" stroke-width="0"><title>Cancer type (top 20) | XGBoost | Bio MAF v4: 0.959; n=8,800; 948 features</title></rect>
+<text x="1795.0284841868704" y="729" class="tiny">0.96</text>
+<rect x="1347" y="740" width="447.8722680203903" height="15" rx="3" fill="#D97706" stroke="#111827" stroke-width="1.6"><title>Cancer type (top 20) | XGBoost | Signatures + Bio MAF v4: 0.976; n=8,800; 1,130 features</title></rect>
+<text x="1802.8722680203903" y="753" class="tiny">0.98</text>
+<rect x="1347" y="796" width="278.40329219256927" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>Overall survival | Cox PH | Mutational signatures: 0.607; n=9,986; 182 features</title></rect>
+<text x="1633.4032921925693" y="809" class="tiny">0.61</text>
+<rect x="1347" y="820" width="282.517137220084" height="15" rx="3" fill="#059669" stroke="none" stroke-width="0"><title>Overall survival | Cox PH | Bio MAF v4: 0.616; n=9,986; 948 features</title></rect>
+<text x="1637.517137220084" y="833" class="tiny">0.62</text>
+<rect x="1347" y="844" width="290.36968012351184" height="15" rx="3" fill="#D97706" stroke="#111827" stroke-width="1.6"><title>Overall survival | Cox PH | Signatures + Bio MAF v4: 0.633; n=9,986; 1,130 features</title></rect>
+<text x="1645.369680123512" y="857" class="tiny">0.63</text>
+<text x="1848" y="112" class="small">Pairwise deltas; CI if bootstrapped</text>
+<text x="1931.3333333333333" y="132" class="tiny" text-anchor="middle">Bio MAF - Sig</text>
+<line x1="1931.3333333333333" y1="142" x2="1931.3333333333333" y2="890" stroke="#CBD5E1" stroke-width="1.1"><title>Bio MAF v4 minus signatures</title></line>
+<text x="2098" y="132" class="tiny" text-anchor="middle">Sig+Bio MAF -</text>
+<text x="2098" y="144" class="tiny" text-anchor="middle">Sig</text>
+<line x1="2098" y1="142" x2="2098" y2="890" stroke="#CBD5E1" stroke-width="1.1"><title>Signatures + Bio MAF v4 minus signatures</title></line>
+<text x="2264.666666666667" y="132" class="tiny" text-anchor="middle">Sig+Bio MAF -</text>
+<text x="2264.666666666667" y="144" class="tiny" text-anchor="middle">Bio MAF</text>
+<line x1="2264.666666666667" y1="142" x2="2264.666666666667" y2="890" stroke="#CBD5E1" stroke-width="1.1"><title>Signatures + Bio MAF v4 minus Bio MAF v4</title></line>
+<rect x="1856" y="186" width="150.66666666666666" height="42" rx="5" fill="#FEF2F2" stroke="#FECACA"/>
+<line x1="1900.1996558148878" y1="197" x2="1921.1257843959866" y2="197" stroke="#B91C1C" stroke-width="1.8"/>
+<line x1="1931.3333333333333" y1="190" x2="1931.3333333333333" y2="224" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1931.3333333333333" y1="197" x2="1909.8175500283098" y2="197" stroke="#B91C1C" stroke-width="3"/>
+<circle cx="1909.8175500283098" cy="197" r="3.8" fill="#B91C1C"><title>Kucab damage class | XGBoost | Bio MAF v4 minus signatures: delta=-0.108; q=0.008</title></circle>
+<rect x="1895.3333333333333" y="211" width="72" height="17" rx="8" fill="#FEF2F2" stroke="#FECACA" opacity=".96"/><text x="1931.3333333333333" y="224" text-anchor="middle" class="tiny" style="fill:#B91C1C">-0.108 **</text>
+<rect x="2022.6666666666667" y="186" width="150.66666666666666" height="42" rx="5" fill="#FEF2F2" stroke="#FECACA"/>
+<line x1="2077.37662139498" y1="197" x2="2095.8598870278215" y2="197" stroke="#B91C1C" stroke-width="1.8"/>
+<line x1="2098" y1="190" x2="2098" y2="224" stroke="#94A3B8" stroke-width="1"/>
+<line x1="2098" y1="197" x2="2086.387993916393" y2="197" stroke="#B91C1C" stroke-width="3"/>
+<circle cx="2086.387993916393" cy="197" r="3.8" fill="#B91C1C"><title>Kucab damage class | XGBoost | Signatures + Bio MAF v4 minus signatures: delta=-0.058; q=0.026</title></circle>
+<rect x="2062" y="211" width="72" height="17" rx="8" fill="#FEF2F2" stroke="#FECACA" opacity=".96"/><text x="2098" y="224" text-anchor="middle" class="tiny" style="fill:#B91C1C">-0.058 *</text>
+<rect x="2189.3333333333335" y="186" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="2265.0773055236837" y1="197" x2="2282.9678761232894" y2="197" stroke="#047857" stroke-width="1.8"/>
+<line x1="2264.666666666667" y1="190" x2="2264.666666666667" y2="224" stroke="#94A3B8" stroke-width="1"/>
+<line x1="2264.666666666667" y1="197" x2="2274.5704438880834" y2="197" stroke="#047857" stroke-width="3"/>
+<circle cx="2274.5704438880834" cy="197" r="3.8" fill="#047857"><title>Kucab damage class | XGBoost | Signatures + Bio MAF v4 minus Bio MAF v4: delta=+0.050; q=0.069</title></circle>
+<rect x="2228.666666666667" y="211" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2264.666666666667" y="224" text-anchor="middle" class="tiny" style="fill:#047857">+0.050 .</text>
+<rect x="1856" y="290" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1929.9027202543068" y1="301" x2="1943.902276876139" y2="301" stroke="#047857" stroke-width="1.8"/>
+<line x1="1931.3333333333333" y1="294" x2="1931.3333333333333" y2="328" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1931.3333333333333" y1="301" x2="1936.7573705554514" y2="301" stroke="#047857" stroke-width="3"/>
+<circle cx="1936.7573705554514" cy="301" r="3.8" fill="#047857"><title>HRD score | XGBoost | Bio MAF v4 minus signatures: delta=+0.027; q=0.164</title></circle>
+<rect x="1895.3333333333333" y="315" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1931.3333333333333" y="328" text-anchor="middle" class="tiny" style="fill:#047857">+0.027</text>
+<rect x="2022.6666666666667" y="290" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="2108.262869849705" y1="301" x2="2118.2108325964045" y2="301" stroke="#047857" stroke-width="1.8"/>
+<line x1="2098" y1="294" x2="2098" y2="328" stroke="#94A3B8" stroke-width="1"/>
+<line x1="2098" y1="301" x2="2113.371834356077" y2="301" stroke="#047857" stroke-width="3"/>
+<circle cx="2113.371834356077" cy="301" r="3.8" fill="#047857"><title>HRD score | XGBoost | Signatures + Bio MAF v4 minus signatures: delta=+0.077; q=0.008</title></circle>
+<rect x="2062" y="315" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2098" y="328" text-anchor="middle" class="tiny" style="fill:#047857">+0.077 **</text>
+<rect x="2189.3333333333335" y="290" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="2270.2054820567073" y1="301" x2="2279.182390061197" y2="301" stroke="#047857" stroke-width="1.8"/>
+<line x1="2264.666666666667" y1="294" x2="2264.666666666667" y2="328" stroke="#94A3B8" stroke-width="1"/>
+<line x1="2264.666666666667" y1="301" x2="2274.6144638006263" y2="301" stroke="#047857" stroke-width="3"/>
+<circle cx="2274.6144638006263" cy="301" r="3.8" fill="#047857"><title>HRD score | XGBoost | Signatures + Bio MAF v4 minus Bio MAF v4: delta=+0.050; q=0.008</title></circle>
+<rect x="2228.666666666667" y="315" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2264.666666666667" y="328" text-anchor="middle" class="tiny" style="fill:#047857">+0.050 **</text>
+<rect x="1856" y="394" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1931.3333333333333" y1="405" x2="1931.3333333333333" y2="405" stroke="#047857" stroke-width="1.8"/>
+<line x1="1931.3333333333333" y1="398" x2="1931.3333333333333" y2="432" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1931.3333333333333" y1="405" x2="1934.7354711631858" y2="405" stroke="#047857" stroke-width="3"/>
+<circle cx="1934.7354711631858" cy="405" r="3.8" fill="#047857"><title>HRD24 high/low | XGBoost | Bio MAF v4 minus signatures: delta=+0.017; q=0.281</title></circle>
+<rect x="1895.3333333333333" y="419" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1931.3333333333333" y="432" text-anchor="middle" class="tiny" style="fill:#047857">+0.017</text>
+<rect x="2022.6666666666667" y="394" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="2098" y1="405" x2="2098" y2="405" stroke="#047857" stroke-width="1.8"/>
+<line x1="2098" y1="398" x2="2098" y2="432" stroke="#94A3B8" stroke-width="1"/>
+<line x1="2098" y1="405" x2="2100.7483486244737" y2="405" stroke="#047857" stroke-width="3"/>
+<circle cx="2100.7483486244737" cy="405" r="3.8" fill="#047857"><title>HRD24 high/low | XGBoost | Signatures + Bio MAF v4 minus signatures: delta=+0.014; q=0.265</title></circle>
+<rect x="2062" y="419" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2098" y="432" text-anchor="middle" class="tiny" style="fill:#047857">+0.014</text>
+<rect x="2189.3333333333335" y="394" width="150.66666666666666" height="42" rx="5" fill="#FEF2F2" stroke="#FECACA"/>
+<line x1="2264.666666666667" y1="405" x2="2264.666666666667" y2="405" stroke="#B91C1C" stroke-width="1.8"/>
+<line x1="2264.666666666667" y1="398" x2="2264.666666666667" y2="432" stroke="#94A3B8" stroke-width="1"/>
+<line x1="2264.666666666667" y1="405" x2="2264.012877461288" y2="405" stroke="#B91C1C" stroke-width="3"/>
+<circle cx="2264.012877461288" cy="405" r="3.8" fill="#B91C1C"><title>HRD24 high/low | XGBoost | Signatures + Bio MAF v4 minus Bio MAF v4: delta=-0.003; q=0.772</title></circle>
+<rect x="2228.666666666667" y="419" width="72" height="17" rx="8" fill="#FEF2F2" stroke="#FECACA" opacity=".96"/><text x="2264.666666666667" y="432" text-anchor="middle" class="tiny" style="fill:#B91C1C">-0.003</text>
+<rect x="1856" y="498" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1931.3333333333333" y1="509" x2="1931.3333333333333" y2="509" stroke="#047857" stroke-width="1.8"/>
+<line x1="1931.3333333333333" y1="502" x2="1931.3333333333333" y2="536" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1931.3333333333333" y1="509" x2="1933.6996473167476" y2="509" stroke="#047857" stroke-width="3"/>
+<circle cx="1933.6996473167476" cy="509" r="3.8" fill="#047857"><title>HRD33 high/low | XGBoost | Bio MAF v4 minus signatures: delta=+0.012; q=0.454</title></circle>
+<rect x="1895.3333333333333" y="523" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1931.3333333333333" y="536" text-anchor="middle" class="tiny" style="fill:#047857">+0.012</text>
+<rect x="2022.6666666666667" y="498" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="2098" y1="509" x2="2098" y2="509" stroke="#047857" stroke-width="1.8"/>
+<line x1="2098" y1="502" x2="2098" y2="536" stroke="#94A3B8" stroke-width="1"/>
+<line x1="2098" y1="509" x2="2102.359292091634" y2="509" stroke="#047857" stroke-width="3"/>
+<circle cx="2102.359292091634" cy="509" r="3.8" fill="#047857"><title>HRD33 high/low | XGBoost | Signatures + Bio MAF v4 minus signatures: delta=+0.022; q=0.102</title></circle>
+<rect x="2062" y="523" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2098" y="536" text-anchor="middle" class="tiny" style="fill:#047857">+0.022</text>
+<rect x="2189.3333333333335" y="498" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="2264.666666666667" y1="509" x2="2264.666666666667" y2="509" stroke="#047857" stroke-width="1.8"/>
+<line x1="2264.666666666667" y1="502" x2="2264.666666666667" y2="536" stroke="#94A3B8" stroke-width="1"/>
+<line x1="2264.666666666667" y1="509" x2="2266.6596447748866" y2="509" stroke="#047857" stroke-width="3"/>
+<circle cx="2266.6596447748866" cy="509" r="3.8" fill="#047857"><title>HRD33 high/low | XGBoost | Signatures + Bio MAF v4 minus Bio MAF v4: delta=+0.010; q=0.454</title></circle>
+<rect x="2228.666666666667" y="523" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2264.666666666667" y="536" text-anchor="middle" class="tiny" style="fill:#047857">+0.010</text>
+<rect x="1856" y="602" width="150.66666666666666" height="42" rx="5" fill="#FEF2F2" stroke="#FECACA"/>
+<line x1="1931.3333333333333" y1="613" x2="1931.3333333333333" y2="613" stroke="#B91C1C" stroke-width="1.8"/>
+<line x1="1931.3333333333333" y1="606" x2="1931.3333333333333" y2="640" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1931.3333333333333" y1="613" x2="1925.326902465166" y2="613" stroke="#B91C1C" stroke-width="3"/>
+<circle cx="1925.326902465166" cy="613" r="3.8" fill="#B91C1C"><title>HRD42 high/low | XGBoost | Bio MAF v4 minus signatures: delta=-0.030; q=0.124</title></circle>
+<rect x="1895.3333333333333" y="627" width="72" height="17" rx="8" fill="#FEF2F2" stroke="#FECACA" opacity=".96"/><text x="1931.3333333333333" y="640" text-anchor="middle" class="tiny" style="fill:#B91C1C">-0.030</text>
+<rect x="2022.6666666666667" y="602" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="2098" y1="613" x2="2098" y2="613" stroke="#047857" stroke-width="1.8"/>
+<line x1="2098" y1="606" x2="2098" y2="640" stroke="#94A3B8" stroke-width="1"/>
+<line x1="2098" y1="613" x2="2105.6441586280816" y2="613" stroke="#047857" stroke-width="3"/>
+<circle cx="2105.6441586280816" cy="613" r="3.8" fill="#047857"><title>HRD42 high/low | XGBoost | Signatures + Bio MAF v4 minus signatures: delta=+0.038; q=0.008</title></circle>
+<rect x="2062" y="627" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2098" y="640" text-anchor="middle" class="tiny" style="fill:#047857">+0.038 **</text>
+<rect x="2189.3333333333335" y="602" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="2264.666666666667" y1="613" x2="2264.666666666667" y2="613" stroke="#047857" stroke-width="1.8"/>
+<line x1="2264.666666666667" y1="606" x2="2264.666666666667" y2="640" stroke="#94A3B8" stroke-width="1"/>
+<line x1="2264.666666666667" y1="613" x2="2278.317256162916" y2="613" stroke="#047857" stroke-width="3"/>
+<circle cx="2278.317256162916" cy="613" r="3.8" fill="#047857"><title>HRD42 high/low | XGBoost | Signatures + Bio MAF v4 minus Bio MAF v4: delta=+0.068; q&lt;0.001</title></circle>
+<rect x="2228.666666666667" y="627" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2264.666666666667" y="640" text-anchor="middle" class="tiny" style="fill:#047857">+0.068 ***</text>
+<rect x="1856" y="706" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="1935.4120163671826" y1="717" x2="1936.5367822018509" y2="717" stroke="#047857" stroke-width="1.8"/>
+<line x1="1931.3333333333333" y1="710" x2="1931.3333333333333" y2="744" stroke="#94A3B8" stroke-width="1"/>
+<line x1="1931.3333333333333" y1="717" x2="1935.9871365438837" y2="717" stroke="#047857" stroke-width="3"/>
+<circle cx="1935.9871365438837" cy="717" r="3.8" fill="#047857"><title>Cancer type (top 20) | XGBoost | Bio MAF v4 minus signatures: delta=+0.023; q=0.008</title></circle>
+<rect x="1895.3333333333333" y="731" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1931.3333333333333" y="744" text-anchor="middle" class="tiny" style="fill:#047857">+0.023 **</text>
+<rect x="2022.6666666666667" y="706" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="2105.6447294448017" y1="717" x2="2106.562225533035" y2="717" stroke="#047857" stroke-width="1.8"/>
+<line x1="2098" y1="710" x2="2098" y2="744" stroke="#94A3B8" stroke-width="1"/>
+<line x1="2098" y1="717" x2="2106.0715739441102" y2="717" stroke="#047857" stroke-width="3"/>
+<circle cx="2106.0715739441102" cy="717" r="3.8" fill="#047857"><title>Cancer type (top 20) | XGBoost | Signatures + Bio MAF v4 minus signatures: delta=+0.040; q=0.008</title></circle>
+<rect x="2062" y="731" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2098" y="744" text-anchor="middle" class="tiny" style="fill:#047857">+0.040 **</text>
+<rect x="2189.3333333333335" y="706" width="150.66666666666666" height="42" rx="5" fill="#ECFDF5" stroke="#A7F3D0"/>
+<line x1="2267.7821088303585" y1="717" x2="2268.380856498024" y2="717" stroke="#047857" stroke-width="1.8"/>
+<line x1="2264.666666666667" y1="710" x2="2264.666666666667" y2="744" stroke="#94A3B8" stroke-width="1"/>
+<line x1="2264.666666666667" y1="717" x2="2268.0844374002268" y2="717" stroke="#047857" stroke-width="3"/>
+<circle cx="2268.0844374002268" cy="717" r="3.8" fill="#047857"><title>Cancer type (top 20) | XGBoost | Signatures + Bio MAF v4 minus Bio MAF v4: delta=+0.017; q=0.008</title></circle>
+<rect x="2228.666666666667" y="731" width="72" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2264.666666666667" y="744" text-anchor="middle" class="tiny" style="fill:#047857">+0.017 **</text>
+<rect x="52" y="966" width="14" height="14" rx="2" fill="#2563EB"/><text x="74" y="978" class="small">Mutational signatures (182 feat)</text>
+<rect x="318" y="966" width="14" height="14" rx="2" fill="#059669"/><text x="340" y="978" class="small">Bio MAF v4 (948 feat)</text>
+<rect x="507" y="966" width="14" height="14" rx="2" fill="#D97706"/><text x="529" y="978" class="small">Signatures + Bio MAF v4 (1,130 feat)</text>
+<text x="1990" y="978" class="tiny">Paired-test FDR:</text><text x="2102" y="978" class="tiny">* q&lt;0.05</text><text x="2180" y="978" class="tiny">** q&lt;0.01</text><text x="2264" y="978" class="tiny">*** q&lt;0.001</text>
+<line x1="1600" y1="78" x2="1628" y2="78" stroke="#047857" stroke-width="3"/><text x="1636" y="82" class="tiny">positive favors left label</text><line x1="1820" y1="78" x2="1848" y2="78" stroke="#B91C1C" stroke-width="3"/><text x="1856" y="82" class="tiny">negative favors baseline</text></svg>

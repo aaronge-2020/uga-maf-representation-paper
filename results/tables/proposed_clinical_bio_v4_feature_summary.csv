@@ -1,0 +1,6 @@
+Bio MAF v4 block,Feature count,Status,Why included
+v3_core_compact_biology,121,core,"Retains standard VEP, VAF, OncoKB role, and residual aggregates."
+external_driver_evidence_tier_aggregates,16,core,Adds graded external support without exact gene identity.
+exact_consensus_driver_gene_identity,802,core selectable block,Recovers exact identity for 401 externally supported cancer genes.
+cancer_hotspot_summary,4,core,Adds exact recurrent hotspot signal.
+optional_burden_and_event_composition_controls,5,optional control,Sensitivity controls; not part of strict core Bio MAF v4.

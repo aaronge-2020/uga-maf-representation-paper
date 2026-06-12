@@ -1,0 +1,87 @@
+minimums:
+  binary_min_per_class: 25
+  multiclass_min_per_class: 50
+  survival_min_samples: 200
+  survival_min_events: 25
+
+main_manuscript_complete_panel:
+  kucab:
+    - damage_class
+  hrd_continuous:
+    - HRD_Score
+  hrd_binary:
+    - hrd_binary_24
+    - hrd_binary_33
+    - hrd_binary_42
+  mc3_binary: []
+  mc3_multiclass:
+    - cancer_type_top20
+  survival:
+    - OS
+
+supplementary_manuscript_panel:
+  hrd_continuous:
+    - HRD_TAI
+    - HRD_LST
+    - HRD_LOH
+    - PARPi7
+    - eCARD
+  survival:
+    - PFI
+
+excluded_from_main_claims:
+  redundant_or_unstable:
+    - parpi7_binary
+  proxy_or_confounding_risk:
+    - high_purity
+    - smoking_ever
+    - high_stage
+  redundant_survival:
+    - DSS
+    - DFI
+
+tcga_cancer_type_top20:
+  endpoint: cancer_type_top20
+  source: TCGA CDR cancer type labels restricted to patients with matched MC3 feature rows
+  expected_n_samples: 8800
+  expected_n_classes: 20
+  min_class_n: 184
+  classes:
+    - BRCA
+    - UCEC
+    - LUAD
+    - LGG
+    - HNSC
+    - PRAD
+    - THCA
+    - LUSC
+    - SKCM
+    - STAD
+    - BLCA
+    - OV
+    - COAD
+    - GBM
+    - KIRC
+    - LIHC
+    - CESC
+    - KIRP
+    - SARC
+    - ESCA
+
+target_gene_ablation_qc:
+  mutation_status_endpoints:
+    - brca_gene_mutated
+    - mmr_gene_mutated
+    - pole_pold1_mutated
+    - luad_kmt2c_mutated
+
+muat_style_tcga_comparator:
+  endpoints:
+    - cancer_type_top20
+
+kucab_sparsity_control:
+  budgets:
+    - 20
+    - 41
+    - 100
+    - 200

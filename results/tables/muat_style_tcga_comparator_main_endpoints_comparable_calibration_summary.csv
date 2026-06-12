@@ -1,0 +1,5 @@
+endpoint,calibration_ece,calibration_mean_confidence,calibration_accuracy,calibration_n_bins_used
+HRD_Score,,,,
+hrd_binary_33,0.11735827193976683,0.857039851845855,0.7655440414507773,5.0
+OS,,,,
+damage_class,0.3095278942446912,0.6106861954029923,0.30115830115830117,8.0

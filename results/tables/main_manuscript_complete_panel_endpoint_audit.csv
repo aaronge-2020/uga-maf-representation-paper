@@ -1,0 +1,13 @@
+endpoint,task,status,n_samples,reason,min_class_n,n_classes,class_counts_json,n_events
+HRD_Score,regression,included,772,,,,,
+HRD_TAI,regression,included,772,,,,,
+HRD_LST,regression,included,772,,,,,
+HRD_LOH,regression,included,772,,,,,
+PARPi7,regression,included,772,,,,,
+eCARD,regression,included,772,,,,,
+hrd_binary_24,binary,included,772,,353.0,,,
+hrd_binary_33,binary,included,772,,234.0,,,
+hrd_binary_42,binary,included,772,,150.0,,,
+cancer_type_top20,multiclass,included,8800,,184.0,20.0,"{""BRCA"": 1020, ""UCEC"": 530, ""LUAD"": 515, ""LGG"": 511, ""HNSC"": 507, ""PRAD"": 497, ""THCA"": 492, ""LUSC"": 485, ""SKCM"": 466, ""STAD"": 439, ""BLCA"": 411, ""OV"": 411, ""COAD"": 404, ""GBM"": 390, ""KIRC"": 369, ""LIHC"": 363, ""CESC"": 289, ""KIRP"": 281, ""SARC"": 236, ""ESCA"": 184}",
+OS,survival,included,10986,,,,,3573.0
+PFI,survival,included,10804,,,,,3968.0

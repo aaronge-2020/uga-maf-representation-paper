@@ -1,0 +1,284 @@
+{
+  "blocking": [],
+  "blocking_count": 0,
+  "checked_utc": "2026-06-12T11:56:08+00:00",
+  "dataset_locations": [
+    {
+      "label": "TCGA/MC3 mutation calls, labels, and feature tables",
+      "manifest_rows": 104,
+      "path": "../github_exports_datasets/datasets/tcga_mc3",
+      "status": "present"
+    },
+    {
+      "label": "TCGA-BRCA HRD labels and cohort inputs",
+      "manifest_rows": 265,
+      "path": "../github_exports_datasets/datasets/tcga_brca_hrd",
+      "status": "present"
+    },
+    {
+      "label": "KUCAB/Mendeley mutagenesis inputs",
+      "manifest_rows": 12,
+      "path": "../github_exports_datasets/datasets/kucab_mendeley",
+      "status": "present"
+    },
+    {
+      "label": "KUCAB raw mutation tables used by active runners",
+      "manifest_rows": 5,
+      "path": "../github_exports_datasets/datasets/kucab_mendeley/raw_mutation_tables",
+      "status": "present"
+    },
+    {
+      "label": "PCAWG/PanCancer signature data",
+      "manifest_rows": 52,
+      "path": "../github_exports_datasets/datasets/pcawg_pancan",
+      "status": "present"
+    },
+    {
+      "label": "GRCh37 reference genome",
+      "manifest_rows": 25,
+      "path": "../github_exports_datasets/references/grch37",
+      "status": "present"
+    },
+    {
+      "label": "Bio MAF v4 feature resources",
+      "manifest_rows": 17,
+      "path": "../github_exports_datasets/resources/bio_maf_v4",
+      "status": "present"
+    },
+    {
+      "label": "COSMIC and other signature resources",
+      "manifest_rows": 150,
+      "path": "../github_exports_datasets/resources/signatures_cosmic",
+      "status": "present"
+    },
+    {
+      "label": "Dataset-backed MuAt/cache artifacts",
+      "manifest_rows": 36,
+      "path": "../github_exports_datasets/caches",
+      "status": "present"
+    },
+    {
+      "label": "Large manuscript/result artifacts",
+      "manifest_rows": 5,
+      "path": "../github_exports_datasets/results",
+      "status": "present"
+    },
+    {
+      "label": "Manifest rows by dataset family",
+      "manifest_rows": {
+        "bio_maf_resources": 17,
+        "cardiogram": 4,
+        "cbioportal": 2,
+        "cell_model_passport": 2,
+        "clinvar": 9,
+        "kucab_mendeley": 14,
+        "other_curated_datasets": 514,
+        "pcawg_pancan": 88,
+        "reference_grch37": 25,
+        "reference_grch38": 62,
+        "signature_resources": 90,
+        "tcga_mc3": 430
+      },
+      "path": "manifests/dataset_assets_manifest.csv",
+      "status": "present"
+    }
+  ],
+  "datasets_dir": "../github_exports_datasets",
+  "full_dataset_check": true,
+  "next_commands": {
+    "fast_validation": "python scripts/reviewer_workflow.py reproduce --datasets-dir ../github_exports_datasets --dry-run",
+    "full_reproduction": "python scripts/reviewer_workflow.py reproduce --datasets-dir ../github_exports_datasets",
+    "install_environment": "python -m pip install -r requirements.txt",
+    "setup_check": "python scripts/reviewer_workflow.py check --datasets-dir ../github_exports_datasets"
+  },
+  "rows": [
+    {
+      "current": ".",
+      "kind": "working_directory",
+      "name": "repository root",
+      "status": "ok"
+    },
+    {
+      "kind": "repo_file",
+      "name": "README.md",
+      "status": "ok"
+    },
+    {
+      "kind": "repo_file",
+      "name": "REPRODUCIBILITY.md",
+      "status": "ok"
+    },
+    {
+      "kind": "repo_file",
+      "name": "requirements.txt",
+      "status": "ok"
+    },
+    {
+      "kind": "repo_file",
+      "name": "config/experiment_settings.strict_no_leakage.yaml",
+      "status": "ok"
+    },
+    {
+      "kind": "repo_file",
+      "name": "config/paths.yaml",
+      "status": "ok"
+    },
+    {
+      "kind": "repo_file",
+      "name": "manifests/dataset_assets_manifest.csv",
+      "status": "ok"
+    },
+    {
+      "kind": "repo_file",
+      "name": "manifests/huggingface_asset_manifest.csv",
+      "status": "ok"
+    },
+    {
+      "kind": "repo_file",
+      "name": "manifests/manuscript_artifact_manifest.csv",
+      "status": "ok"
+    },
+    {
+      "kind": "repo_file",
+      "name": "manifests/reproducibility_manifest.json",
+      "status": "ok"
+    },
+    {
+      "kind": "repo_file",
+      "name": "scripts/reproduce_manuscript.py",
+      "status": "ok"
+    },
+    {
+      "kind": "repo_file",
+      "name": "scripts/reviewer_workflow.py",
+      "status": "ok"
+    },
+    {
+      "kind": "repo_file",
+      "name": "src/run_all_experiments.py",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "yaml",
+      "package": "PyYAML==6.0.2",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "numpy",
+      "package": "numpy==1.26.4",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "pandas",
+      "package": "pandas==2.3.1",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "scipy",
+      "package": "scipy==1.15.3",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "sklearn",
+      "package": "scikit-learn==1.7.2",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "xgboost",
+      "package": "xgboost==1.6.2",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "matplotlib",
+      "package": "matplotlib==3.9.2",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "optuna",
+      "package": "optuna==4.1.0",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "lifelines",
+      "package": "lifelines==0.30.0",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "torch",
+      "package": "torch==2.5.1",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "requests",
+      "package": "requests==2.32.3",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "statsmodels",
+      "package": "statsmodels==0.14.4",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "openpyxl",
+      "package": "openpyxl==3.1.5",
+      "status": "ok"
+    },
+    {
+      "kind": "python_module",
+      "name": "tabulate",
+      "package": "tabulate==0.9.0",
+      "status": "ok"
+    },
+    {
+      "kind": "renderer",
+      "name": "node",
+      "path": "<node-on-PATH>",
+      "status": "ok"
+    },
+    {
+      "kind": "dataset_bundle",
+      "name": "../github_exports_datasets",
+      "status": "ok"
+    },
+    {
+      "checked": 1257,
+      "expected": 1257,
+      "kind": "dataset_checksum",
+      "mismatched_count": 0,
+      "mismatched_examples": [],
+      "missing_count": 0,
+      "missing_examples": [],
+      "name": "full_dataset_bundle",
+      "status": "ok"
+    },
+    {
+      "dataset_backed": 8,
+      "kind": "dataset_backed_state",
+      "mismatched_count": 0,
+      "mismatched_examples": [],
+      "missing_count": 0,
+      "missing_examples": [],
+      "name": "active dataset-backed assets",
+      "repo_current": 40,
+      "stale_repo_duplicate_count": 0,
+      "stale_repo_duplicate_examples": [],
+      "status": "ok"
+    }
+  ],
+  "status": "ready",
+  "warning_count": 0,
+  "warnings": []
+}

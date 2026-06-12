@@ -1,0 +1,184 @@
+runtime_profile: explicit-bio-maf-from-scratch-rerun
+tree_method: gpu_hist
+xgb_n_jobs: 32
+xgb_estimators: 160
+xgb_feature_set_random_search_trials: 5
+cv_folds: 5
+cv_repeats: 1
+bootstrap: 500
+optuna_trials: 10
+random_search_trials: 10
+linear_high_dim_random_search_trials: 3
+linear_candidate_n_jobs: 32
+linear_high_dim_candidate_n_jobs: 1
+linear_process_backend_min_features: 500
+linear_multiclass_process_backend: false
+linear_high_dim_classification_solver: sgd_log_loss
+linear_high_dim_classification_solver_min_features: 500
+linear_sgd_max_iter: 60
+linear_sgd_tol: 5.0e-3
+linear_sgd_n_iter_no_change: 3
+linear_sgd_average: true
+linear_sgd_early_stopping: true
+linear_sgd_validation_fraction: 0.1
+linear_force_sgd_in_feature_set_search: true
+candidate_checkpoint_enabled: true
+candidate_progress_every: 1
+candidate_memmap_max_nbytes: 10M
+cox_candidate_n_jobs: 8
+cox_max_candidate_n_jobs: 8
+cox_blas_threads: 4
+cox_final_blas_threads: 32
+cox_batch_mode: true
+cox_drop_conditioned_low_variance: true
+cox_max_steps: 25
+cox_precision: 1.0e-5
+cox_r_precision: 1.0e-8
+cox_high_dim_feature_threshold: 500
+cox_high_dim_backend: fast_breslow
+cox_high_dim_candidate_n_jobs: 8
+cox_high_dim_max_candidate_n_jobs: 8
+cox_high_dim_blas_threads: 1
+cox_high_dim_max_steps: 5
+cox_high_dim_precision: 1.0e-4
+cox_fast_max_iter: 20
+cox_fast_learning_rate: 0.05
+cox_min_feature_std: 1.0e-8
+endpoint_registry: config/endpoint_registry.yaml
+
+feature_cache:
+  enabled: true
+  dir: results/cache/features
+  validate_fasta: true
+
+experiments:
+  main_manuscript_complete_panel:
+    enabled: true
+    linear_candidate_n_jobs: 32
+    xgb_feature_set_random_search_trials: 5
+    linear_high_dim_candidate_n_jobs: 1
+    linear_process_backend_min_features: 500
+    linear_multiclass_process_backend: false
+    linear_high_dim_classification_solver: sgd_log_loss
+    linear_high_dim_classification_solver_min_features: 500
+    linear_sgd_max_iter: 60
+    linear_sgd_tol: 5.0e-3
+    linear_sgd_n_iter_no_change: 3
+    linear_sgd_average: true
+    linear_sgd_early_stopping: true
+    linear_sgd_validation_fraction: 0.1
+    linear_force_sgd_in_feature_set_search: true
+    candidate_checkpoint_enabled: true
+    candidate_progress_every: 1
+    candidate_memmap_max_nbytes: 10M
+    cox_candidate_n_jobs: 8
+    cox_max_candidate_n_jobs: 8
+    cox_blas_threads: 4
+    cox_final_blas_threads: 32
+    cox_batch_mode: true
+    cox_drop_conditioned_low_variance: true
+    cox_max_steps: 25
+    cox_precision: 1.0e-5
+    cox_r_precision: 1.0e-8
+    cox_high_dim_feature_threshold: 500
+    cox_high_dim_backend: fast_breslow
+    cox_high_dim_candidate_n_jobs: 8
+    cox_high_dim_max_candidate_n_jobs: 8
+    cox_high_dim_blas_threads: 1
+    cox_high_dim_max_steps: 5
+    cox_high_dim_precision: 1.0e-4
+    cox_fast_max_iter: 20
+    cox_fast_learning_rate: 0.05
+    cox_min_feature_std: 1.0e-8
+    allow_transductive_maf_features: false
+    maf_stack_builder: frozen_biological_v4_nested_fs
+    maf_bio_resources_dir: config/feature_resources
+    maf_bio_include_locus_bins: true
+    maf_bio_v4_include_signatures_only_candidate: true
+    maf_bio_chunksize: 350000
+    main_mc3_endpoints:
+      - HRD_Score
+      - HRD_TAI
+      - HRD_LST
+      - HRD_LOH
+      - PARPi7
+      - eCARD
+      - hrd_binary_24
+      - hrd_binary_33
+      - hrd_binary_42
+      - cancer_type_top20
+    survival_endpoints:
+      - OS
+      - PFI
+    random_search_trials: 10
+    linear_high_dim_random_search_trials: 3
+    fold_checkpoint_enabled: true
+    fold_checkpoint_resume: true
+    learners:
+      - linear
+      - xgboost
+    representations:
+      - burden_only
+      - signatures_only
+      - MAF_stack_only
+      - signatures_plus_MAF_stack
+
+  muat_style_tcga_comparator:
+    enabled: true
+    output_tag: cancer_type_top20_comparable
+    endpoints:
+      - cancer_type_top20
+    primary_task: cancer_type_top20
+    primary_metric: balanced_accuracy
+    nested_validation: true
+    selection_metric: balanced_accuracy
+    split_manifest_source: results/tables/main_manuscript_complete_panel_oof_predictions.csv
+    split_manifest_endpoint: cancer_type_top20
+    split_manifest_representation: signatures_plus_MAF_stack
+    split_manifest_learner: xgboost
+    require_canonical_split: true
+    paper_reference_accuracy: 0.641
+    paper_reference_top5_accuracy: 0.906
+    run_manuscript_endpoints: false
+    secondary_endpoints: []
+    smoke_run: false
+    folds: 5
+    epochs: 150
+    batch_size: 1
+    eval_batch_size: 1
+    embed_dim: 128
+    attention_heads: 1
+    feature_dim: 24
+    dropout: 0.1
+    lr: 0.0006
+    momentum: 0.9
+    weight_decay: 0.0
+    max_events_per_sample: 5000
+    maf_chunksize: 500000
+    dictionary_mode: fixed_hash
+    motif_hash_buckets: 1024
+    position_hash_buckets: 2048
+    annotation_hash_buckets: 256
+    device: auto
+    amp: true
+    torch_num_threads: 8
+    dataloader_workers: 0
+    preload_tensors_to_device: true
+    trim_to_observed_events: true
+    resume_checkpoints: true
+    epoch_checkpoints: true
+    progress_interval_epochs: 10
+    official_mutation_type: snv+mnv+indel
+
+outputs:
+  normalize_tables: true
+  make_figures_after_run: true
+  strict_manuscript: true
+  strict_no_leakage: true
+  cleanup_work_dir_after_run: false
+  visualization_renderer: d3
+  strict_plot_completeness: true
+  write_interactive_html: true
+  required_experiments:
+    - main_manuscript_complete_panel
+    - muat_style_tcga_comparator

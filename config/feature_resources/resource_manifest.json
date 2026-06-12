@@ -1,0 +1,11 @@
+{
+  "created_or_refreshed_at_utc": "2026-06-02T23:09:12.422028+00:00",
+  "files": {
+    "curated_pathways.yaml": "3c918c1a63309de35508435b47cf4bb362ed9784a1025293d0893a2ff106f1cf",
+    "hgnc_symbol_aliases.tsv": "de25023d42816a075fb1c12847daa4acecd00a618a43f51a6325bccdea097ed0",
+    "oncokb_cancer_genes.tsv": "0a93e0b0d506902e5b7e5dea7c96d501b58bde95d924ac756c29d5634cfc3822"
+  },
+  "hgnc_complete_set_url": "https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt",
+  "oncokb_cancer_gene_url": "https://public.api.oncokb.org/api/v1/utils/cancerGeneList",
+  "resource_profile": "explicit_biological_maf_v2"
+}

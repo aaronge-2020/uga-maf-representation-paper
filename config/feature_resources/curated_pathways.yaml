@@ -1,0 +1,105 @@
+hr_repair:
+  - ATM
+  - ATR
+  - BARD1
+  - BRCA1
+  - BRCA2
+  - BRIP1
+  - FANCA
+  - FANCC
+  - FANCD2
+  - FANCE
+  - FANCF
+  - FANCG
+  - FANCI
+  - FANCL
+  - PALB2
+  - RAD51
+  - RAD51B
+  - RAD51C
+  - RAD51D
+  - CHEK2
+mmr:
+  - EPCAM
+  - MLH1
+  - MSH2
+  - MSH6
+  - PMS2
+ddr_checkpoint:
+  - ATM
+  - ATR
+  - CHEK1
+  - CHEK2
+  - MDM2
+  - TP53
+polymerase:
+  - POLD1
+  - POLD2
+  - POLD3
+  - POLD4
+  - POLE
+chromatin:
+  - ARID1A
+  - ARID1B
+  - CREBBP
+  - EP300
+  - EZH2
+  - KDM6A
+  - KMT2A
+  - KMT2B
+  - KMT2D
+  - PBRM1
+  - SETD2
+  - SMARCA4
+  - SMARCB1
+ras_rtk:
+  - ALK
+  - BRAF
+  - EGFR
+  - ERBB2
+  - FGFR1
+  - FGFR2
+  - FGFR3
+  - HRAS
+  - KRAS
+  - MET
+  - NRAS
+  - RET
+  - ROS1
+pi3k:
+  - AKT1
+  - AKT2
+  - MTOR
+  - PIK3CA
+  - PIK3R1
+  - PTEN
+  - TSC1
+  - TSC2
+cell_cycle:
+  - CCND1
+  - CCNE1
+  - CDK4
+  - CDK6
+  - CDKN2A
+  - MYC
+  - RB1
+  - TP53
+lung_smoking_relevant:
+  - BRAF
+  - KEAP1
+  - KRAS
+  - NFE2L2
+  - RBM10
+  - SMARCA4
+  - STK11
+  - TP53
+breast_hrd_relevant:
+  - ATM
+  - BARD1
+  - BRCA1
+  - BRCA2
+  - BRIP1
+  - CHEK2
+  - PALB2
+  - RAD51C
+  - RAD51D

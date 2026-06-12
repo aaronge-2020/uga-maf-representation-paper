@@ -1,0 +1,13 @@
+{
+  "feature_count": 948,
+  "sample_count": 10224,
+  "core_feature_count": 943,
+  "optional_control_count": 5,
+  "driver_gene_count": 401,
+  "rows_scanned": 3600963,
+  "rows_used": 3600963,
+  "nonzero_feature_count": 922,
+  "cache_path": "${BUNDLE_ROOT}\\results\\tables\\quick_bio_v4_maf_features.csv.gz",
+  "leakage_note": "Bio v4 schema and gene/hotspot resources are fixed before training; feature-set inclusion is selected inside the inner CV loop."
+}
+

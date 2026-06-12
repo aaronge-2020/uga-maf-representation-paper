@@ -1,0 +1,7 @@
+modality,n_tokens,pad_index,unk_index,example_tokens,benchmark
+motif,1026,0,1,<PAD>;<UNK>;motif_hash_0000;motif_hash_0001;motif_hash_0002;motif_hash_0003;motif_hash_0004;motif_hash_0005,kucab_wgs
+position,2050,0,1,<PAD>;<UNK>;position_hash_0000;position_hash_0001;position_hash_0002;position_hash_0003;position_hash_0004;position_hash_0005,kucab_wgs
+annotation,258,0,1,<PAD>;<UNK>;annotation_hash_0000;annotation_hash_0001;annotation_hash_0002;annotation_hash_0003;annotation_hash_0004;annotation_hash_0005,kucab_wgs
+motif,1026,0,1,<PAD>;<UNK>;motif_hash_0000;motif_hash_0001;motif_hash_0002;motif_hash_0003;motif_hash_0004;motif_hash_0005,kucab_wgs
+position,2050,0,1,<PAD>;<UNK>;position_hash_0000;position_hash_0001;position_hash_0002;position_hash_0003;position_hash_0004;position_hash_0005,kucab_wgs
+annotation,258,0,1,<PAD>;<UNK>;annotation_hash_0000;annotation_hash_0001;annotation_hash_0002;annotation_hash_0003;annotation_hash_0004;annotation_hash_0005,kucab_wgs

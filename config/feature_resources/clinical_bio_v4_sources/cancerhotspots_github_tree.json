@@ -1,0 +1,2249 @@
+{
+    "sha":  "8c79cc62e85df53930a775191ca828cf27449152",
+    "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/8c79cc62e85df53930a775191ca828cf27449152",
+    "tree":  [
+                 {
+                     "path":  ".editorconfig",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "168ae9bb116cca92f3e9978433ad47d35a6caaca",
+                     "size":  1080,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/168ae9bb116cca92f3e9978433ad47d35a6caaca"
+                 },
+                 {
+                     "path":  ".gitignore",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b5bedf7c07958bb8184ea18e0e7a8ffa956f622b",
+                     "size":  292,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/b5bedf7c07958bb8184ea18e0e7a8ffa956f622b"
+                 },
+                 {
+                     "path":  ".travis.yml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "9ba3ff7bd9638841361f209190025978534c070f",
+                     "size":  2389,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/9ba3ff7bd9638841361f209190025978534c070f"
+                 },
+                 {
+                     "path":  "LICENSE",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "58777e31affae4a4448722cff12c8bd440236c7b",
+                     "size":  34500,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/58777e31affae4a4448722cff12c8bd440236c7b"
+                 },
+                 {
+                     "path":  "Procfile",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "23ea83539ea633e0c940ff1544ee0ec8b307f54f",
+                     "size":  66,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/23ea83539ea633e0c940ff1544ee0ec8b307f54f"
+                 },
+                 {
+                     "path":  "README.md",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d1ebf489d5a3617fc4ec143ef97a0acef6909030",
+                     "size":  309,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/d1ebf489d5a3617fc4ec143ef97a0acef6909030"
+                 },
+                 {
+                     "path":  "add_samples_column.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "eab822b58111ec7c861e041512102b27610c11fb",
+                     "size":  2087,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/eab822b58111ec7c861e041512102b27610c11fb"
+                 },
+                 {
+                     "path":  "add_variant_samples_sheet.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1fb104f922221476f94f36771b0a731c4b8a0dac",
+                     "size":  5114,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/1fb104f922221476f94f36771b0a731c4b8a0dac"
+                 },
+                 {
+                     "path":  "app.json",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "8bdfab9498519698e300ad38eaedd8d5839ff3b4",
+                     "size":  724,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/8bdfab9498519698e300ad38eaedd8d5839ff3b4"
+                 },
+                 {
+                     "path":  "docker",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "d6c1b31060da2b9ac792b443134c561747d1db17",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/d6c1b31060da2b9ac792b443134c561747d1db17"
+                 },
+                 {
+                     "path":  "docker/Dockerfile",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "0269edc87abbff40aa91e1e94524efca4a9e8ea8",
+                     "size":  134,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/0269edc87abbff40aa91e1e94524efca4a9e8ea8"
+                 },
+                 {
+                     "path":  "model",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "204e1361cca79eca66a70e044aa94e4a58600048",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/204e1361cca79eca66a70e044aa94e4a58600048"
+                 },
+                 {
+                     "path":  "model/pom.xml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5658ee220462abc18e5b754d1cdf596a9f739520",
+                     "size":  4098,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/5658ee220462abc18e5b754d1cdf596a9f739520"
+                 },
+                 {
+                     "path":  "model/src",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "a2922d4401cfdd5440caa968e0f9f5ef4442c28a",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/a2922d4401cfdd5440caa968e0f9f5ef4442c28a"
+                 },
+                 {
+                     "path":  "model/src/main",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "e9ba8a762709272c7f95aadb25a11e15757a9aaa",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/e9ba8a762709272c7f95aadb25a11e15757a9aaa"
+                 },
+                 {
+                     "path":  "model/src/main/java",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "d4c539cb5810c2438112022f4c4da0a89f4c9f10",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/d4c539cb5810c2438112022f4c4da0a89f4c9f10"
+                 },
+                 {
+                     "path":  "model/src/main/java/org",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "3b1b5909eb98331350795fe2fcb499dbb53495ac",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/3b1b5909eb98331350795fe2fcb499dbb53495ac"
+                 },
+                 {
+                     "path":  "model/src/main/java/org/cmo",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "f1ff87fa74e47503bb5b212439e73a68b552336e",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/f1ff87fa74e47503bb5b212439e73a68b552336e"
+                 },
+                 {
+                     "path":  "model/src/main/java/org/cmo/cancerhotspots",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "bcae02464cf05c1868689b869dee44a300518acf",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/bcae02464cf05c1868689b869dee44a300518acf"
+                 },
+                 {
+                     "path":  "model/src/main/java/org/cmo/cancerhotspots/model",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "8ca7a1b4a1709124bf076775850b1c3f13c850f9",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/8ca7a1b4a1709124bf076775850b1c3f13c850f9"
+                 },
+                 {
+                     "path":  "model/src/main/java/org/cmo/cancerhotspots/model/Cluster.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e5483ca0abc4e80083b2b68f9d219918c8ce671f",
+                     "size":  2702,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/e5483ca0abc4e80083b2b68f9d219918c8ce671f"
+                 },
+                 {
+                     "path":  "model/src/main/java/org/cmo/cancerhotspots/model/ClusteredHotspotMutation.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "56ab682d9795d2232f1bd14b85831477261dac42",
+                     "size":  1516,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/56ab682d9795d2232f1bd14b85831477261dac42"
+                 },
+                 {
+                     "path":  "model/src/main/java/org/cmo/cancerhotspots/model/HotspotMutation.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "96627166f5151c46fdcc6e03c920cdf6be4a207c",
+                     "size":  5135,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/96627166f5151c46fdcc6e03c920cdf6be4a207c"
+                 },
+                 {
+                     "path":  "model/src/main/java/org/cmo/cancerhotspots/model/Mutation.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e538085c40f11c742378c5a8fea7f46ef46fbc26",
+                     "size":  7108,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/e538085c40f11c742378c5a8fea7f46ef46fbc26"
+                 },
+                 {
+                     "path":  "model/src/main/java/org/cmo/cancerhotspots/model/MutationAnnotation.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2a7d17a540488d50c502085c6e56c694bb16658d",
+                     "size":  2259,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/2a7d17a540488d50c502085c6e56c694bb16658d"
+                 },
+                 {
+                     "path":  "model/src/main/java/org/cmo/cancerhotspots/model/SingleResidueHotspotMutation.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "4677a93f471b4a587bb969368061cb06cb50624a",
+                     "size":  1253,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/4677a93f471b4a587bb969368061cb06cb50624a"
+                 },
+                 {
+                     "path":  "model/src/main/java/org/cmo/cancerhotspots/model/Transcript.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b4a5d22ce65f5ed80d09b8e87018aeb5f849b0b8",
+                     "size":  880,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/b4a5d22ce65f5ed80d09b8e87018aeb5f849b0b8"
+                 },
+                 {
+                     "path":  "model/src/main/java/org/cmo/cancerhotspots/model/TumorTypeComposition.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "fc5e19a71445d3feb3b7c97ec37763ce101ebe86",
+                     "size":  3635,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/fc5e19a71445d3feb3b7c97ec37763ce101ebe86"
+                 },
+                 {
+                     "path":  "model/src/main/java/org/cmo/cancerhotspots/model/VariantComposition.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "951b62a6a199400e4073d74b182727f8658ec42e",
+                     "size":  1901,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/951b62a6a199400e4073d74b182727f8658ec42e"
+                 },
+                 {
+                     "path":  "normalize_data.py",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "03fd0e0f122c498d03741d6834bf0ae347fabe0d",
+                     "size":  12194,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/03fd0e0f122c498d03741d6834bf0ae347fabe0d"
+                 },
+                 {
+                     "path":  "persistence",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "be2526537607fbe4e016e436851bedd9f62e43be",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/be2526537607fbe4e016e436851bedd9f62e43be"
+                 },
+                 {
+                     "path":  "persistence/pom.xml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "024051ec17197ecc4741a9a5c2fe76971ee76264",
+                     "size":  1344,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/024051ec17197ecc4741a9a5c2fe76971ee76264"
+                 },
+                 {
+                     "path":  "persistence/src",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "10783bd6f1d659fe987cd63ce8ac1da6626a3e63",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/10783bd6f1d659fe987cd63ce8ac1da6626a3e63"
+                 },
+                 {
+                     "path":  "persistence/src/main",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "131113696a438b0e3adbb01828076382ef11e2bc",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/131113696a438b0e3adbb01828076382ef11e2bc"
+                 },
+                 {
+                     "path":  "persistence/src/main/java",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "2569fc611ef5098ae444a51c15b8b023da9fcb7f",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/2569fc611ef5098ae444a51c15b8b023da9fcb7f"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "960bbae2e004093a8a6b9e9fafd8687b7eee7379",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/960bbae2e004093a8a6b9e9fafd8687b7eee7379"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "f950d65fcb804bac71101f76ce200c309731c245",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/f950d65fcb804bac71101f76ce200c309731c245"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo/cancerhotspots",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "99db38fccbef6efcfed7773d596a80e2c5dca29f",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/99db38fccbef6efcfed7773d596a80e2c5dca29f"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo/cancerhotspots/persistence",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "f8b06e524952b08f6169056780295e0629d74a36",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/f8b06e524952b08f6169056780295e0629d74a36"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo/cancerhotspots/persistence/ClusterRepository.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "da31b87d9542e3bb7e8700f2626eff24650309e4",
+                     "size":  417,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/da31b87d9542e3bb7e8700f2626eff24650309e4"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo/cancerhotspots/persistence/MutationAnnotationRepository.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1db154bb50f05df43295764f98172d683a3e6206",
+                     "size":  233,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/1db154bb50f05df43295764f98172d683a3e6206"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo/cancerhotspots/persistence/MutationRepository.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "38ac56299b231361306ff17ee874f9bf46c59561",
+                     "size":  551,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/38ac56299b231361306ff17ee874f9bf46c59561"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo/cancerhotspots/persistence/TranscriptRepository.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e454dc0cc9071ab67922d3b3969c264ff53a4afd",
+                     "size":  379,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/e454dc0cc9071ab67922d3b3969c264ff53a4afd"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo/cancerhotspots/persistence/VariantRepository.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "fd7cac10961482afd51d6d94eaa9657c88a005f1",
+                     "size":  337,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/fd7cac10961482afd51d6d94eaa9657c88a005f1"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo/cancerhotspots/persistence/internal",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "50ce177ddb8742cde66fa7fd8970b4457f688edd",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/50ce177ddb8742cde66fa7fd8970b4457f688edd"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo/cancerhotspots/persistence/internal/ClusterRepositoryImpl.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a5a1723fb406023a7c10964fba61012a16278a8c",
+                     "size":  4570,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/a5a1723fb406023a7c10964fba61012a16278a8c"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo/cancerhotspots/persistence/internal/MutationAnnotationRepositoryImpl.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5320964c323ba44bb197fbccd07e47f0ac1b1df0",
+                     "size":  1413,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/5320964c323ba44bb197fbccd07e47f0ac1b1df0"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo/cancerhotspots/persistence/internal/MutationRepositoryImpl.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "c5e65d1c75a23d8bda007d8ef7cfbbb6d4112bc6",
+                     "size":  4105,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/c5e65d1c75a23d8bda007d8ef7cfbbb6d4112bc6"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo/cancerhotspots/persistence/internal/TranscriptRepositoryImpl.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "da599ee383c86200d181183a937ffbd15b7eb085",
+                     "size":  2940,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/da599ee383c86200d181183a937ffbd15b7eb085"
+                 },
+                 {
+                     "path":  "persistence/src/main/java/org/cmo/cancerhotspots/persistence/internal/VariantRepositoryImpl.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a594aa45f555ebd3db37d33ca641155f36ac2d96",
+                     "size":  2669,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/a594aa45f555ebd3db37d33ca641155f36ac2d96"
+                 },
+                 {
+                     "path":  "pipeline",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "e35388bd4604ecd96bbf0d7bcba36355c06acbc8",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/e35388bd4604ecd96bbf0d7bcba36355c06acbc8"
+                 },
+                 {
+                     "path":  "pipeline/pom.xml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1069be4d5643efa0fd5f2872f82651b0662eac64",
+                     "size":  3128,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/1069be4d5643efa0fd5f2872f82651b0662eac64"
+                 },
+                 {
+                     "path":  "pipeline/src",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "3c8310bf5c1d322997142dab091437fbd77037f0",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/3c8310bf5c1d322997142dab091437fbd77037f0"
+                 },
+                 {
+                     "path":  "pipeline/src/main",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "7d7c1ffc611455582d9534b8459e58f464dc1c4e",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/7d7c1ffc611455582d9534b8459e58f464dc1c4e"
+                 },
+                 {
+                     "path":  "pipeline/src/main/java",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "e152816b3009cc28f2b7ab83c6d6f6f6c3ba56b0",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/e152816b3009cc28f2b7ab83c6d6f6f6c3ba56b0"
+                 },
+                 {
+                     "path":  "pipeline/src/main/java/org",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "e79bb9444cd61df0bc122cbfed268b279a5f91e2",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/e79bb9444cd61df0bc122cbfed268b279a5f91e2"
+                 },
+                 {
+                     "path":  "pipeline/src/main/java/org/cmo",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "10c6a88ea3008c1556b5c24fe9d881c0e55a0d79",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/10c6a88ea3008c1556b5c24fe9d881c0e55a0d79"
+                 },
+                 {
+                     "path":  "pipeline/src/main/java/org/cmo/cancerhotspots",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "9e923fcc35e77d236abe02e14be20e783ffe66c6",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/9e923fcc35e77d236abe02e14be20e783ffe66c6"
+                 },
+                 {
+                     "path":  "pipeline/src/main/java/org/cmo/cancerhotspots/CancerHotspotsPipeline.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "6311bb9fc726b7d6c436fd8187cb58dfcc8c3bf6",
+                     "size":  3534,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/6311bb9fc726b7d6c436fd8187cb58dfcc8c3bf6"
+                 },
+                 {
+                     "path":  "pipeline/src/main/java/org/cmo/cancerhotspots/controller",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "179e22e8172518c369acd2910c2727637a680cd8",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/179e22e8172518c369acd2910c2727637a680cd8"
+                 },
+                 {
+                     "path":  "pipeline/src/main/java/org/cmo/cancerhotspots/controller/PipelineController.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "28464a6f9a264cce5c76e56c6f695ce833b2ed2f",
+                     "size":  3397,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/28464a6f9a264cce5c76e56c6f695ce833b2ed2f"
+                 },
+                 {
+                     "path":  "pipeline/src/main/resources",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "54bf18cfdcaecfcdeb9da03658fd821f39edc9a7",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/54bf18cfdcaecfcdeb9da03658fd821f39edc9a7"
+                 },
+                 {
+                     "path":  "pipeline/src/main/resources/application-3d.properties",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2f462b6aec4855d37ef66b13bad1ab93091a63fd",
+                     "size":  437,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/2f462b6aec4855d37ef66b13bad1ab93091a63fd"
+                 },
+                 {
+                     "path":  "pipeline/src/main/resources/application-internal.properties",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b80b291f21c78d1475dffac2e5296f03850e8cd8",
+                     "size":  410,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/b80b291f21c78d1475dffac2e5296f03850e8cd8"
+                 },
+                 {
+                     "path":  "pipeline/src/main/resources/application-single.properties",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "571036aa132a1378c071a14d0c3e5e6e56fe817a",
+                     "size":  564,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/571036aa132a1378c071a14d0c3e5e6e56fe817a"
+                 },
+                 {
+                     "path":  "pipeline/src/main/resources/application.properties",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "cef537f33cfa67f8cfa2aa7bd4ce6dbbd5ed80ae",
+                     "size":  443,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/cef537f33cfa67f8cfa2aa7bd4ce6dbbd5ed80ae"
+                 },
+                 {
+                     "path":  "pipeline/src/main/resources/data",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "15a3e5cade1acc0105a870495582bf0b821ce593",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/15a3e5cade1acc0105a870495582bf0b821ce593"
+                 },
+                 {
+                     "path":  "pipeline/src/main/resources/data/isoforms_per_gene_uniprot.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "f7840c0f04695af4292869a50705480f039f32ac",
+                     "size":  847498,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/f7840c0f04695af4292869a50705480f039f32ac"
+                 },
+                 {
+                     "path":  "pipeline/src/main/resources/data/isoforms_per_gene_v1.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a47817b9cebbde20d6bffadd84280e1ff556fb9a",
+                     "size":  876235,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/a47817b9cebbde20d6bffadd84280e1ff556fb9a"
+                 },
+                 {
+                     "path":  "pipeline/src/main/resources/data/isoforms_per_gene_v2.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1415253b42e73791870209f6f2415a6b169ee5a2",
+                     "size":  1131966,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/1415253b42e73791870209f6f2415a6b169ee5a2"
+                 },
+                 {
+                     "path":  "pom.xml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "f8874ee6fab001fa9795258b9c60dc46efa45e86",
+                     "size":  1578,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/f8874ee6fab001fa9795258b9c60dc46efa45e86"
+                 },
+                 {
+                     "path":  "service",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "fca41819202a26dbe4150b594445e63a1fcad6b9",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/fca41819202a26dbe4150b594445e63a1fcad6b9"
+                 },
+                 {
+                     "path":  "service/pom.xml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "881cc88d66a86e2afc0cff1ace48013f2ea992e6",
+                     "size":  1335,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/881cc88d66a86e2afc0cff1ace48013f2ea992e6"
+                 },
+                 {
+                     "path":  "service/src",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "c174f58df2e372c809e303982bb4385402c52dcb",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/c174f58df2e372c809e303982bb4385402c52dcb"
+                 },
+                 {
+                     "path":  "service/src/main",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "5dce9604ee1098c185cc5d7546f9e43102e60a2f",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/5dce9604ee1098c185cc5d7546f9e43102e60a2f"
+                 },
+                 {
+                     "path":  "service/src/main/java",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "cd99d25ea937f412030de41ce813f533243742f4",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/cd99d25ea937f412030de41ce813f533243742f4"
+                 },
+                 {
+                     "path":  "service/src/main/java/org",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "f461e23a8b2a89090cd0b8c7e2996787167f1fb2",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/f461e23a8b2a89090cd0b8c7e2996787167f1fb2"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "341de64983a6be4d65b5e9ff66ef96636fb0928c",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/341de64983a6be4d65b5e9ff66ef96636fb0928c"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "618edcd81b1a2ddba2ac4da2f79dff9347ee34ca",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/618edcd81b1a2ddba2ac4da2f79dff9347ee34ca"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "6ebc8991a72c58104b0344112f5a4336b7ed6543",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/6ebc8991a72c58104b0344112f5a4336b7ed6543"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/ClusterService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "943decd07c4f8c3efe92b4b81f3aaea8604c742d",
+                     "size":  399,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/943decd07c4f8c3efe92b4b81f3aaea8604c742d"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/DataImportService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "0a8b6d1573bd8365ae129f7c6ae5451eed860a42",
+                     "size":  590,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/0a8b6d1573bd8365ae129f7c6ae5451eed860a42"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/HotspotMutationService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "985a77ebbcc5793e45b0b54cd777aca5916f6c99",
+                     "size":  2196,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/985a77ebbcc5793e45b0b54cd777aca5916f6c99"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/MutationAnnotationService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "908077825f1360bc96e0c0eb2da025b7662aaba5",
+                     "size":  264,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/908077825f1360bc96e0c0eb2da025b7662aaba5"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/MutationFilterService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "20ee282a000aa7acb5ac03a088067cf9a631d295",
+                     "size":  233,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/20ee282a000aa7acb5ac03a088067cf9a631d295"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/VariantService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "dc5f00f71b12d4840af49bfb27ce74ca15c0170b",
+                     "size":  601,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/dc5f00f71b12d4840af49bfb27ce74ca15c0170b"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/internal",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "3826e4dca90ff628e1afa9c8a507e7f27845f11b",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/3826e4dca90ff628e1afa9c8a507e7f27845f11b"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/internal/ClusteredHotspotMutationService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d1ab02a66d9bfe17aed7afa46feb7fdbae414e55",
+                     "size":  4070,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/d1ab02a66d9bfe17aed7afa46feb7fdbae414e55"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/internal/ConfigurationService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "855a06e1852fbbdf362254a0e61e590554251161",
+                     "size":  3154,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/855a06e1852fbbdf362254a0e61e590554251161"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/internal/HotspotClusterService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b520705e07629394fb76122a78e45ad450a0666e",
+                     "size":  1697,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/b520705e07629394fb76122a78e45ad450a0666e"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/internal/HotspotDataImportService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "8f12b35e914285d675bf2532d78bf68251535f6f",
+                     "size":  19911,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/8f12b35e914285d675bf2532d78bf68251535f6f"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/internal/HotspotMAFService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "0c9d220e623262cc22655965a8c6c96f90b121de",
+                     "size":  2757,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/0c9d220e623262cc22655965a8c6c96f90b121de"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/internal/HotspotVariantService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a4b617f0058c9c75a1bc0eb676187a8c3264b435",
+                     "size":  4928,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/a4b617f0058c9c75a1bc0eb676187a8c3264b435"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/internal/MutationAnnotationFilterService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "4ebfc8240c19dd93099add4ea1e6b9f59fd88d2e",
+                     "size":  1750,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/4ebfc8240c19dd93099add4ea1e6b9f59fd88d2e"
+                 },
+                 {
+                     "path":  "service/src/main/java/org/cmo/cancerhotspots/service/internal/SingleResidueHotspotMutationService.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "360b0fc56787f9ba776c6c019284c50ab26424ba",
+                     "size":  5532,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/360b0fc56787f9ba776c6c019284c50ab26424ba"
+                 },
+                 {
+                     "path":  "system.properties",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "9146af5386451d165fe7b632434f2071acac5280",
+                     "size":  24,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/9146af5386451d165fe7b632434f2071acac5280"
+                 },
+                 {
+                     "path":  "update_hotspots.ipynb",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "bb245c4790bf0e9920d4e4bc4ea23f45ca10755c",
+                     "size":  12998,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/bb245c4790bf0e9920d4e4bc4ea23f45ca10755c"
+                 },
+                 {
+                     "path":  "util",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "1b166192e4ffa804f9a7f2029b3e1ffe34187d0a",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/1b166192e4ffa804f9a7f2029b3e1ffe34187d0a"
+                 },
+                 {
+                     "path":  "util/pom.xml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "7df7d30d4b9ca06a478e99974327c81cbc6f3785",
+                     "size":  4030,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/7df7d30d4b9ca06a478e99974327c81cbc6f3785"
+                 },
+                 {
+                     "path":  "util/src",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "6caafe80f0b3f8add76b8fb450c85c0b928bba63",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/6caafe80f0b3f8add76b8fb450c85c0b928bba63"
+                 },
+                 {
+                     "path":  "util/src/main",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "a68cf3e31d874e98bb4fb176f808836f25e7e17b",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/a68cf3e31d874e98bb4fb176f808836f25e7e17b"
+                 },
+                 {
+                     "path":  "util/src/main/java",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "686f8f231b16f53594c500e4b47a047b9fe8974f",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/686f8f231b16f53594c500e4b47a047b9fe8974f"
+                 },
+                 {
+                     "path":  "util/src/main/java/org",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "918c9975a4fc1dc7cb6f4dc1a7f3c8dccb7211f6",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/918c9975a4fc1dc7cb6f4dc1a7f3c8dccb7211f6"
+                 },
+                 {
+                     "path":  "util/src/main/java/org/cmo",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "dd23cf3a064fe1a1eae402661e79261e87e89760",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/dd23cf3a064fe1a1eae402661e79261e87e89760"
+                 },
+                 {
+                     "path":  "util/src/main/java/org/cmo/cancerhotspots",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "75d79199b53a75c2571985a5d758a443e705d1db",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/75d79199b53a75c2571985a5d758a443e705d1db"
+                 },
+                 {
+                     "path":  "util/src/main/java/org/cmo/cancerhotspots/data",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "066fdd5bb7ec8ddf855ae2d765b1d3ae45cda385",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/066fdd5bb7ec8ddf855ae2d765b1d3ae45cda385"
+                 },
+                 {
+                     "path":  "util/src/main/java/org/cmo/cancerhotspots/data/IntegerRange.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2a56f591dd3f0c92af0ff87b116ce12cea1fc7b5",
+                     "size":  2212,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/2a56f591dd3f0c92af0ff87b116ce12cea1fc7b5"
+                 },
+                 {
+                     "path":  "util/src/main/java/org/cmo/cancerhotspots/util",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "78c746054165d7d53329a5b0c7b358f54575be11",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/78c746054165d7d53329a5b0c7b358f54575be11"
+                 },
+                 {
+                     "path":  "util/src/main/java/org/cmo/cancerhotspots/util/ChainMapConversion.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "9d16627a5e20102e75c08b456ef9167923bd5bf2",
+                     "size":  2542,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/9d16627a5e20102e75c08b456ef9167923bd5bf2"
+                 },
+                 {
+                     "path":  "util/src/main/java/org/cmo/cancerhotspots/util/CompositionMapConversion.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "84682b140f6854442005a166ad72b72279affabf",
+                     "size":  3865,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/84682b140f6854442005a166ad72b72279affabf"
+                 },
+                 {
+                     "path":  "util/src/main/java/org/cmo/cancerhotspots/util/Config.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "3bcd2e9e187c56295cb9ef08a7f9498d6239a1de",
+                     "size":  598,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/3bcd2e9e187c56295cb9ef08a7f9498d6239a1de"
+                 },
+                 {
+                     "path":  "util/src/main/java/org/cmo/cancerhotspots/util/DataUtils.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "f9b87a3e6f2bcbf404a4cca38c1ea8f7539aa73a",
+                     "size":  4115,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/f9b87a3e6f2bcbf404a4cca38c1ea8f7539aa73a"
+                 },
+                 {
+                     "path":  "util/src/main/java/org/cmo/cancerhotspots/util/FileIO.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "59f59ca5798e1a7c184ce5f84530a36dd9f09eed",
+                     "size":  3179,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/59f59ca5798e1a7c184ce5f84530a36dd9f09eed"
+                 },
+                 {
+                     "path":  "util/src/main/java/org/cmo/cancerhotspots/util/ListConversion.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "fce522a65a543877dfe4103012c628dba956aa0b",
+                     "size":  2956,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/fce522a65a543877dfe4103012c628dba956aa0b"
+                 },
+                 {
+                     "path":  "util/src/main/java/org/cmo/cancerhotspots/util/RangeConversion.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e0b92ba273362aacf56a8794e5c2c9c12274cdb7",
+                     "size":  3511,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/e0b92ba273362aacf56a8794e5c2c9c12274cdb7"
+                 },
+                 {
+                     "path":  "webapp",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "f55fe3e90d1f8a34d2229e4f72254e7a76049a3d",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/f55fe3e90d1f8a34d2229e4f72254e7a76049a3d"
+                 },
+                 {
+                     "path":  "webapp/pom.xml",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b4fb38cdc071c976bbcb49eab900e0550a2ffe19",
+                     "size":  11495,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/b4fb38cdc071c976bbcb49eab900e0550a2ffe19"
+                 },
+                 {
+                     "path":  "webapp/src",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "6ea5430cae6af794a86f1fc4018307b2af9c757a",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/6ea5430cae6af794a86f1fc4018307b2af9c757a"
+                 },
+                 {
+                     "path":  "webapp/src/main",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "97421bca72a06801cc86db69ba0c30dfbdc28b02",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/97421bca72a06801cc86db69ba0c30dfbdc28b02"
+                 },
+                 {
+                     "path":  "webapp/src/main/java",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "138f70f37212aff9c73ed9c149f25350cde6afbe",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/138f70f37212aff9c73ed9c149f25350cde6afbe"
+                 },
+                 {
+                     "path":  "webapp/src/main/java/org",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "272e657908a77e4d0eaaae9de4ad350056e1115a",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/272e657908a77e4d0eaaae9de4ad350056e1115a"
+                 },
+                 {
+                     "path":  "webapp/src/main/java/org/cmo",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "c2479ecc40da25b36af33b8e3ae92e4fbcb36a8d",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/c2479ecc40da25b36af33b8e3ae92e4fbcb36a8d"
+                 },
+                 {
+                     "path":  "webapp/src/main/java/org/cmo/cancerhotspots",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "d9697654e263b72fc2b6948e6a25ac15808edc89",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/d9697654e263b72fc2b6948e6a25ac15808edc89"
+                 },
+                 {
+                     "path":  "webapp/src/main/java/org/cmo/cancerhotspots/CancerHotspots.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "4f68be01fed8d6592b4ba7af71711ea60638207d",
+                     "size":  3408,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/4f68be01fed8d6592b4ba7af71711ea60638207d"
+                 },
+                 {
+                     "path":  "webapp/src/main/java/org/cmo/cancerhotspots/controller",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "11454979df012bc9f4e44574ff09decba4ee6360",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/11454979df012bc9f4e44574ff09decba4ee6360"
+                 },
+                 {
+                     "path":  "webapp/src/main/java/org/cmo/cancerhotspots/controller/HotspotController.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "f363995f8c1da402fe6b1350e791f2c15cba3181",
+                     "size":  19945,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/f363995f8c1da402fe6b1350e791f2c15cba3181"
+                 },
+                 {
+                     "path":  "webapp/src/main/java/org/cmo/cancerhotspots/controller/ProxyController.java",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2887ce9f5a2688106db4ff84c4091a113b6e25c1",
+                     "size":  1914,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/2887ce9f5a2688106db4ff84c4091a113b6e25c1"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "f6a9beae58d4ceea3b055b8ede444d31d48513f8",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/f6a9beae58d4ceea3b055b8ede444d31d48513f8"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/application-3d.properties",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "dce066726bb395a5f6bccd2f9afb2e9e6fa72667",
+                     "size":  228,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/dce066726bb395a5f6bccd2f9afb2e9e6fa72667"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/application-internal.properties",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2de651daf301cf344af79472a663d76279c1a2bb",
+                     "size":  359,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/2de651daf301cf344af79472a663d76279c1a2bb"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/application-multi.properties",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "3ed277565900bfd89db661627ad3e658659c56b0",
+                     "size":  358,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/3ed277565900bfd89db661627ad3e658659c56b0"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/application-single.properties",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "fa2887eaa7140789890acdbddf1ac199688ecf4d",
+                     "size":  323,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/fa2887eaa7140789890acdbddf1ac199688ecf4d"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/application.properties",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "aed7c313fd3ceb0e112c5f8531590895a1cac384",
+                     "size":  390,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/aed7c313fd3ceb0e112c5f8531590895a1cac384"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "56e0fff36578c9df62d3b85b0291f1d0f7fb513e",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/56e0fff36578c9df62d3b85b0291f1d0f7fb513e"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/.ipynb_checkpoints",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "d285df12fd4dc44ce4923e5dc2ea6582c73b0944",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/d285df12fd4dc44ce4923e5dc2ea6582c73b0944"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/.ipynb_checkpoints/v2_multi_type_variant_file-checkpoint.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "f5bdb8e9edf37272efc4feca293c2e4e12bd9f24",
+                     "size":  161329,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/f5bdb8e9edf37272efc4feca293c2e4e12bd9f24"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/3d_cluster_file.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "ae0d168d68d5f8740c62abe479309ae8c6db9872",
+                     "size":  137843,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/ae0d168d68d5f8740c62abe479309ae8c6db9872"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/3d_hotspot_variant_file.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "9447c4ee553f660c44e603b5fbf41709a1986a53",
+                     "size":  284239,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/9447c4ee553f660c44e603b5fbf41709a1986a53"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/3d_hotspots.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "70f5bcb39145b249475d474b0f9164b6f2f32e5f",
+                     "size":  1057516,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/70f5bcb39145b249475d474b0f9164b6f2f32e5f"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/hotspot_variant_file.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "c92deabe95e3ff235dc1fab8e624d07af6a46961",
+                     "size":  41027,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/c92deabe95e3ff235dc1fab8e624d07af6a46961"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/single_residue_hotspot_mutations.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "c45bc9d085af41dc2f7a4884f0cc06b69c62fdf8",
+                     "size":  68655,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/c45bc9d085af41dc2f7a4884f0cc06b69c62fdf8"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/v2_multi_type_residue.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d45c9cb424badda964e9fc583c1677f839f477e4",
+                     "size":  194460,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/d45c9cb424badda964e9fc583c1677f839f477e4"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/v2_multi_type_residue_all_1068_new.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "13dbfe6f2c0648550a49f79c00eba3a3badafeeb",
+                     "size":  190371,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/13dbfe6f2c0648550a49f79c00eba3a3badafeeb"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/v2_multi_type_residue_old.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e3027820465597e2ff18e07a26123cccc141c0e2",
+                     "size":  194460,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/e3027820465597e2ff18e07a26123cccc141c0e2"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/v2_multi_type_variant_file.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "f5bdb8e9edf37272efc4feca293c2e4e12bd9f24",
+                     "size":  161329,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/f5bdb8e9edf37272efc4feca293c2e4e12bd9f24"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/v3_multi_type_residue.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e7ed44c618a5a8cfb0162d77f7981151b47c3e39",
+                     "size":  219799,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/e7ed44c618a5a8cfb0162d77f7981151b47c3e39"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/v3_multi_type_variant_file.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5607916140a4c5433a5f928b3d98ba25bf5e1658",
+                     "size":  225939,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/5607916140a4c5433a5f928b3d98ba25bf5e1658"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/v3_original_backup",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "ed82c2f29012922fbf9380532b23585455a4daca",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/ed82c2f29012922fbf9380532b23585455a4daca"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/v3_original_backup/v2_multi_type_residue.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5265571d610ad1c3b369ac571105bb33f18512fa",
+                     "size":  221478,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/5265571d610ad1c3b369ac571105bb33f18512fa"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/data/v3_original_backup/v2_multi_type_variant_file.txt",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5356726d5196ad4bce69be35cf46c6fc6ed8783b",
+                     "size":  231441,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/5356726d5196ad4bce69be35cf46c6fc6ed8783b"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "38e7df9dc4f59f0aee1f04f32420601b9bf010ff",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/38e7df9dc4f59f0aee1f04f32420601b9bf010ff"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/files",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "68f304e2717f66a622d7e393d3adc4bae4db62b3",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/68f304e2717f66a622d7e393d3adc4bae4db62b3"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/files/3d_hotspots.xls",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "687634b31ea83fadb646e7027a95aa866cd11f07",
+                     "size":  1566208,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/687634b31ea83fadb646e7027a95aa866cd11f07"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/files/hotspots.xls",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "03e85388d3469190d496b80fda68d387cfed2eda",
+                     "size":  238592,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/03e85388d3469190d496b80fda68d387cfed2eda"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/files/hotspots_v2.xls",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "7d33bfca7a86347a45d86d2100ddd0680ea9439c",
+                     "size":  2777600,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/7d33bfca7a86347a45d86d2100ddd0680ea9439c"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/files/hotspots_v3.xlsx",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "ca9f9bb16a995502efcb2c5c1fc9506a802d45cd",
+                     "size":  197138,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/ca9f9bb16a995502efcb2c5c1fc9506a802d45cd"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/index.html",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "3859140134433dbb501ddcbaf5623ef7c6ca96d3",
+                     "size":  26543,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/3859140134433dbb501ddcbaf5623ef7c6ca96d3"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "91aa5ad100374467a5c14d4a003c2af183fbb3b3",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/91aa5ad100374467a5c14d4a003c2af183fbb3b3"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "2c2d3eb703a928dddf5ce5496c8ff2f1ab31bbf7",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/2c2d3eb703a928dddf5ce5496c8ff2f1ab31bbf7"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/bootstrap.dropdown.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "c5c68736f7fce384655a0962eb735a44d291c389",
+                     "size":  1895,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/c5c68736f7fce384655a0962eb735a44d291c389"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/bootstrap.min.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a69f504826e8ea36f791adf0f71cc42ecb5129a0",
+                     "size":  127382,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/a69f504826e8ea36f791adf0f71cc42ecb5129a0"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/bootstrap.pagination.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "df334f77f06d45079676a0512bfdc1754c31a5f2",
+                     "size":  2636,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/df334f77f06d45079676a0512bfdc1754c31a5f2"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/bootstrap.table.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e70648090f31799db9116eaa087eb940f0d43736",
+                     "size":  1250,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/e70648090f31799db9116eaa087eb940f0d43736"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/buttons.bootstrap.min.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "05b6c22d3d9b9064ba6fa9701ccc4e9cdfe0ea2c",
+                     "size":  1735,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/05b6c22d3d9b9064ba6fa9701ccc4e9cdfe0ea2c"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/dataTables.bootstrap.min.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "745f2996fcc39d1503ca85ecaf0a931490c758dd",
+                     "size":  4247,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/745f2996fcc39d1503ca85ecaf0a931490c758dd"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/dataTables.jqueryui.min.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "9e026e754231d10f05ec0de7f291623fdab11edc",
+                     "size":  14097,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/9e026e754231d10f05ec0de7f291623fdab11edc"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/font-awesome.min.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "ec53d4d6d5bf13db8ca757ea991a9c7839f23c89",
+                     "size":  21984,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/ec53d4d6d5bf13db8ca757ea991a9c7839f23c89"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/freelancer.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "35b500330586da7634b304f6ffa977fa82b27e7b",
+                     "size":  7985,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/35b500330586da7634b304f6ffa977fa82b27e7b"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/icomoon.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "aaffc8ab621cb665777da4d7db49651727f5cc55",
+                     "size":  886,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/aaffc8ab621cb665777da4d7db49651727f5cc55"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/images",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "d3fc14ac872f3a904edde159ee6166281eddaec8",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/d3fc14ac872f3a904edde159ee6166281eddaec8"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/images/ui-bg_glass_55_fbf9ee_1x400.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a31ef183175d4191bc5ad96ad0ce5b486867e5b0",
+                     "size":  335,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/a31ef183175d4191bc5ad96ad0ce5b486867e5b0"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/images/ui-bg_glass_65_ffffff_1x400.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "38ee9a80657b7c46252cfd8e60742f825d0c0bac",
+                     "size":  207,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/38ee9a80657b7c46252cfd8e60742f825d0c0bac"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/images/ui-bg_glass_75_dadada_1x400.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "eb0499bbedb64da18e63b8fadf45e7a167e9898c",
+                     "size":  262,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/eb0499bbedb64da18e63b8fadf45e7a167e9898c"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/images/ui-bg_glass_75_e6e6e6_1x400.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5b53109dff3154e5485ffbc07bb9cae554b17314",
+                     "size":  262,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/5b53109dff3154e5485ffbc07bb9cae554b17314"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/images/ui-bg_glass_95_fef1ec_1x400.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2b54e8f1dbf7213357afecc3367fcd8e1df1e7e5",
+                     "size":  332,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/2b54e8f1dbf7213357afecc3367fcd8e1df1e7e5"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a839ab57f248f04cc265e30d1dbe57a1276e9fd3",
+                     "size":  280,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/a839ab57f248f04cc265e30d1dbe57a1276e9fd3"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/images/ui-icons_222222_256x240.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e9c8e16ac5e7f61c843fbac290ce30c5de7e40b6",
+                     "size":  6922,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/e9c8e16ac5e7f61c843fbac290ce30c5de7e40b6"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/images/ui-icons_2e83ff_256x240.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "f2bf8388370920783b94285cb75827ce4b4cc1c5",
+                     "size":  4549,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/f2bf8388370920783b94285cb75827ce4b4cc1c5"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/images/ui-icons_454545_256x240.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d6169e8bf9389ab9b5b7d2c6f0c5fe3e4d363105",
+                     "size":  6992,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/d6169e8bf9389ab9b5b7d2c6f0c5fe3e4d363105"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/images/ui-icons_888888_256x240.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d3e6e02a03d4cfdc6a2114f736aa57e8a898b98b",
+                     "size":  6999,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/d3e6e02a03d4cfdc6a2114f736aa57e8a898b98b"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/images/ui-icons_cd0a0a_256x240.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "49370189231d006600b0f0c2967cad1583eba634",
+                     "size":  4549,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/49370189231d006600b0f0c2967cad1583eba634"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/jquery-ui.min.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "95700f879bd1f460bd1c693a97a7b7319a62841b",
+                     "size":  17139,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/95700f879bd1f460bd1c693a97a7b7319a62841b"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/jquery.dataTables.min.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "9ec6ca31f7356dcb1a277f9dd9e6701cbdad8258",
+                     "size":  13615,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/9ec6ca31f7356dcb1a277f9dd9e6701cbdad8258"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/jquery.qtip.min.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "ac501ed120eba0a3b019fc2305e0cf44f7580e5c",
+                     "size":  9226,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/ac501ed120eba0a3b019fc2305e0cf44f7580e5c"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/mutationMapper.min.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "bbf498cc981569dd31f190da3abba8df422fab23",
+                     "size":  9204,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/bbf498cc981569dd31f190da3abba8df422fab23"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/css/spinner.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "25daa89b70bddc1795b762a82e24bb6d1d2eba31",
+                     "size":  1054,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/25daa89b70bddc1795b762a82e24bb6d1d2eba31"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "be0c933a5474f0be143e5219bea08c5d686c5379",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/be0c933a5474f0be143e5219bea08c5d686c5379"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/FontAwesome.otf",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "81c9ad949b47f64afeca5642ee2494b6e3147f44",
+                     "size":  85908,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/81c9ad949b47f64afeca5642ee2494b6e3147f44"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/fontawesome-webfont.eot",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "84677bc0c5f37f1fac9d87548c4554b5c91717cf",
+                     "size":  56006,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/84677bc0c5f37f1fac9d87548c4554b5c91717cf"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/fontawesome-webfont.svg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "d907b25ae60ec7e3d32e4027aa6e6b7595de97af",
+                     "size":  287007,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/d907b25ae60ec7e3d32e4027aa6e6b7595de97af"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/fontawesome-webfont.ttf",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "96a3639cdde5e8ab459c6380e3b9524ee81641dc",
+                     "size":  112160,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/96a3639cdde5e8ab459c6380e3b9524ee81641dc"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/fontawesome-webfont.woff",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "628b6a52a87e62c6f22426e17c01f6a303aa194e",
+                     "size":  65452,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/628b6a52a87e62c6f22426e17c01f6a303aa194e"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/glyphicons-halflings-regular.eot",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b93a4953fff68df523aa7656497ee339d6026d64",
+                     "size":  20127,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/b93a4953fff68df523aa7656497ee339d6026d64"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/glyphicons-halflings-regular.svg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "94fb5490a2ed10b2c69a4a567a4fd2e4f706d841",
+                     "size":  108738,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/94fb5490a2ed10b2c69a4a567a4fd2e4f706d841"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/glyphicons-halflings-regular.ttf",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1413fc609ab6f21774de0cb7e01360095584f65b",
+                     "size":  45404,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/1413fc609ab6f21774de0cb7e01360095584f65b"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/glyphicons-halflings-regular.woff",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "9e612858f802245ddcbf59788a0db942224bab35",
+                     "size":  23424,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/9e612858f802245ddcbf59788a0db942224bab35"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/glyphicons-halflings-regular.woff2",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "64539b54c3751a6d9adb44c8e3a45ba5a73b77f0",
+                     "size":  18028,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/64539b54c3751a6d9adb44c8e3a45ba5a73b77f0"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/icomoon.eot",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "723f3326b9b2cceb95adeccc6e0dd73a4c2d9ef5",
+                     "size":  1788,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/723f3326b9b2cceb95adeccc6e0dd73a4c2d9ef5"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/icomoon.svg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5a4c7793b1909e67b90ea8c437c7e34067593f37",
+                     "size":  2917,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/5a4c7793b1909e67b90ea8c437c7e34067593f37"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/icomoon.ttf",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "45c7060b913d9b3b1cf6387405f174298ed8f658",
+                     "size":  1624,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/45c7060b913d9b3b1cf6387405f174298ed8f658"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/fonts/icomoon.woff",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "57bf57ea419f39272f64736d741e89dab1b9f2d5",
+                     "size":  1700,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/57bf57ea419f39272f64736d741e89dab1b9f2d5"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/images",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "cc3db8ff3b78b2fa30338a18ec892510e90c3315",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/cc3db8ff3b78b2fa30338a18ec892510e90c3315"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/images/MSKLogo.svg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b3ca0754622a321a621c63f7d666f666988d0335",
+                     "size":  18098,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/b3ca0754622a321a621c63f7d666f666988d0335"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/images/MSKLogo_fff.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "705eaf6eef98a9ae58ef72150d59d460ad5fcfa2",
+                     "size":  305997,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/705eaf6eef98a9ae58ef72150d59d460ad5fcfa2"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/images/PubMed.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5290e3adbb8aa3f6bf457720ea4d540feadbba67",
+                     "size":  1162,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/5290e3adbb8aa3f6bf457720ea4d540feadbba67"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/images/ajax-loader.gif",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "97e65d90589e46fc5401f7411ab49b2d071968fc",
+                     "size":  8238,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/97e65d90589e46fc5401f7411ab49b2d071968fc"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/images/help.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "0206fdb44530b35ebe0f240090778fead15c3c45",
+                     "size":  887,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/0206fdb44530b35ebe0f240090778fead15c3c45"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/images/loader.gif",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a717b380332f7368f8eb4028d8c38df032e0d5bf",
+                     "size":  46891,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/a717b380332f7368f8eb4028d8c38df032e0d5bf"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/images/warning.gif",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "fc5437ee677646ab3e8cbafab9c2bed8bb0fbe21",
+                     "size":  908,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/fc5437ee677646ab3e8cbafab9c2bed8bb0fbe21"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "a1fa09b19cdc44795b704efe68175ef228bf2c92",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/a1fa09b19cdc44795b704efe68175ef228bf2c92"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/3Dmol-nojquery-min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "88d9fbb8bb3b8e37e2749f5a1dbda8900887f986",
+                     "size":  201250,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/88d9fbb8bb3b8e37e2749f5a1dbda8900887f986"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/FileSaver.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "eb062f2590a3b5d3fdec49cb619fea82b78646fb",
+                     "size":  5118,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/eb062f2590a3b5d3fdec49cb619fea82b78646fb"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/backbone-min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "0c42354919b5ba3591725e6a66e449e6a3a8a4f2",
+                     "size":  19747,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/0c42354919b5ba3591725e6a66e449e6a3a8a4f2"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/bootstrap.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e79c065134f2cfcf3e44a59cffcb5f090232f98f",
+                     "size":  36868,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/e79c065134f2cfcf3e44a59cffcb5f090232f98f"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/buttons.bootstrap.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "eabe00d60f782669c9b8292923b5afb3e3cbc1e7",
+                     "size":  939,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/eabe00d60f782669c9b8292923b5afb3e3cbc1e7"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/buttons.colVis.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "35f0711447aa1a11dcac1991702b93543cc166c3",
+                     "size":  2549,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/35f0711447aa1a11dcac1991702b93543cc166c3"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/buttons.html5.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1d5f7ccac6254561228f37ffeb45c7fb265d7e3d",
+                     "size":  11321,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/1d5f7ccac6254561228f37ffeb45c7fb265d7e3d"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/buttons.print.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "01e29d6128af9192529c3156fb21a19705d2574d",
+                     "size":  1682,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/01e29d6128af9192529c3156fb21a19705d2574d"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/cbio-util.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "8208d1a433bdbb98595148983f79ab3cb0c3009d",
+                     "size":  13274,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/8208d1a433bdbb98595148983f79ab3cb0c3009d"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/d3.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2856dd2f35ed18e2fe001e6e397873492a974683",
+                     "size":  151732,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/2856dd2f35ed18e2fe001e6e397873492a974683"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/dataTables.bootstrap.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2d824c8fd7818a8be133bfc7b843d6e7f34e075a",
+                     "size":  1960,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/2d824c8fd7818a8be133bfc7b843d6e7f34e075a"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/dataTables.buttons.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "cb3382284eec847fbad34647b7c76a86f963b18c",
+                     "size":  16073,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/cb3382284eec847fbad34647b7c76a86f963b18c"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/dataTables.fnSetFilteringDelay.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "ec89da03f7ce47ea0cb6f1784efe5e142cd05003",
+                     "size":  1977,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/ec89da03f7ce47ea0cb6f1784efe5e142cd05003"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/director.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "c956af40095bc22c6885f277ed9ef5f7416bae4f",
+                     "size":  10169,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/c956af40095bc22c6885f277ed9ef5f7416bae4f"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/download-util.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "cdd7e60bae3aa39970a7caf3ec2511d4709152cd",
+                     "size":  6396,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/cdd7e60bae3aa39970a7caf3ec2511d4709152cd"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/freelancer.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "b1f77b3609be98cb11346c2252700d945e663195",
+                     "size":  1311,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/b1f77b3609be98cb11346c2252700d945e663195"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/jquery-2.2.1.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "349030de9955ea5e2d37e403f09c58c7595902a2",
+                     "size":  85630,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/349030de9955ea5e2d37e403f09c58c7595902a2"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/jquery-ui.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e6669e2e98d02bb44ee3a35ff52baee178ff94ea",
+                     "size":  78657,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/e6669e2e98d02bb44ee3a35ff52baee178ff94ea"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/jquery.dataTables.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e28e037cdb11b16879de108b1a0cb47e29d9b8fc",
+                     "size":  82480,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/e28e037cdb11b16879de108b1a0cb47e29d9b8fc"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/jquery.easing.1.3.min.js",
+                     "mode":  "100755",
+                     "type":  "blob",
+                     "sha":  "a1aa22ebd449d56edb78cc88247d8380e7a11b1a",
+                     "size":  6967,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/a1aa22ebd449d56edb78cc88247d8380e7a11b1a"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/jquery.expander.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "8a3ee3ac2098186e4bc70e6c377be4efcbeca835",
+                     "size":  4769,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/8a3ee3ac2098186e4bc70e6c377be4efcbeca835"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/jquery.qtip.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "40ff1cbfcd08b2f8127dd6a6cc45dfa78733bae5",
+                     "size":  44296,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/40ff1cbfcd08b2f8127dd6a6cc45dfa78733bae5"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/jquery.scrollTo.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "32cd7864af886e209cdba599d88fa3a3888160e7",
+                     "size":  2590,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/32cd7864af886e209cdba599d88fa3a3888160e7"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/jquery.tipTip.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "cdf3a892b7c18434a8507a148d3a4f7723337c3f",
+                     "size":  5251,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/cdf3a892b7c18434a8507a148d3a4f7723337c3f"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/mutationMapper.min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "ea8d8dbab06f3738284cf45de893ca6f87cd8fcd",
+                     "size":  178383,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/ea8d8dbab06f3738284cf45de893ca6f87cd8fcd"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/ui.tabs.paging.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "6f7c2958c56852841a06a4fbfeb06ad46072d28b",
+                     "size":  11097,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/6f7c2958c56852841a06a4fbfeb06ad46072d28b"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/js/underscore-min.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "f01025b7bcaab18e6b698141c854f95669a5975c",
+                     "size":  16449,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/f01025b7bcaab18e6b698141c854f95669a5975c"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/template",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "4cf93b571dcc458f123e5bf5ebaf88a021ba96a8",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/4cf93b571dcc458f123e5bf5ebaf88a021ba96a8"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/lib/template/mutationMapperTemplates.html",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "661d6f76d4d8da81c793686379ee60d5a5fe1d95",
+                     "size":  26611,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/661d6f76d4d8da81c793686379ee60d5a5fe1d95"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "9322a1d49cf26e003d3a66340bdacc0a97ad3a0f",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/9322a1d49cf26e003d3a66340bdacc0a97ad3a0f"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/css",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "557d46d1c8c485de858593df8d9068808e5ad64f",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/557d46d1c8c485de858593df8d9068808e5ad64f"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/css/hotspots.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "c27e3c94056f54efa6bb67bd0176b37b38444260",
+                     "size":  6186,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/c27e3c94056f54efa6bb67bd0176b37b38444260"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/css/oncokb.css",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "8e9a754deb8461672ba831aebf1911b8f0e35730",
+                     "size":  6320,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/8e9a754deb8461672ba831aebf1911b8f0e35730"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/data",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "16833a5b06d1601e2baa74d4e8a0563a66085ba7",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/16833a5b06d1601e2baa74d4e8a0563a66085ba7"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/data/combined_published_and_new_filtered.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "8ec80205565529170d9a7e62c983721a87747304",
+                     "size":  67873,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/8ec80205565529170d9a7e62c983721a87747304"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/images",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "bf97169839be02f8936aecbd54ad6e32f62c9725",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/bf97169839be02f8936aecbd54ad6e32f62c9725"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/images/favicon.ico",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "5d50db37fabbdf1a6f8746b71d00618cd6b12baf",
+                     "size":  1295,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/5d50db37fabbdf1a6f8746b71d00618cd6b12baf"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/images/fire.png",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "aa4af5148abf22d4f8358f0710260147ee95cc1a",
+                     "size":  26383,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/aa4af5148abf22d4f8358f0710260147ee95cc1a"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/images/fire.svg",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "7aa6ae1cb44b1ad0540886474360809e7f981187",
+                     "size":  861,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/7aa6ae1cb44b1ad0540886474360809e7f981187"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "4fec1598e87ef7af88e037bc8f017ff85cf73a5b",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/4fec1598e87ef7af88e037bc8f017ff85cf73a5b"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/component",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "04de48d097f48de59cc206d807958b9cd6401935",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/04de48d097f48de59cc206d807958b9cd6401935"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/component/StackedBar.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "7e197e120b6efe3c52bb6eac614d849f0aec366f",
+                     "size":  9182,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/7e197e120b6efe3c52bb6eac614d849f0aec366f"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/controller",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "1bbdcc2068f2c00dbfc1ddef6791866b5e7fb094",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/1bbdcc2068f2c00dbfc1ddef6791866b5e7fb094"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/controller/CancerHotspots.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "2c4cc34eb2d75bf8621b955e9b24c1bf9e60fb21",
+                     "size":  14214,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/2c4cc34eb2d75bf8621b955e9b24c1bf9e60fb21"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/controller/ClusterDataManager.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "90f6c18cec2673afd97a9daa530041f46eba3b9c",
+                     "size":  7590,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/90f6c18cec2673afd97a9daa530041f46eba3b9c"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/controller/ResidueController.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "efc85cf5aff7a95cafd41466713d5792594c3096",
+                     "size":  11112,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/efc85cf5aff7a95cafd41466713d5792594c3096"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/data",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "f45e7558f716c47b8a53683fd55da73c62a33a37",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/f45e7558f716c47b8a53683fd55da73c62a33a37"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/data/ClusterDataProxy.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "85e65bef9ee2235f42ce5121324e386005eb7c15",
+                     "size":  2291,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/85e65bef9ee2235f42ce5121324e386005eb7c15"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/data/HotspotDataProxy.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "de84cde0d15c51482495a76bb30e54f9cd6a6b5f",
+                     "size":  2636,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/de84cde0d15c51482495a76bb30e54f9cd6a6b5f"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/data/MetadataProxy.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "c1afac324d2184eb6384425b3f5f4f331b342a3f",
+                     "size":  2090,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/c1afac324d2184eb6384425b3f5f4f331b342a3f"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/data/VariantDataProxy.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "abfba472bfb98761ffde221155f2aa1aec22007d",
+                     "size":  2354,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/abfba472bfb98761ffde221155f2aa1aec22007d"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/main.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "ff29705dd417a3cb9dd1614f157ea2cd5bacdb61",
+                     "size":  1791,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/ff29705dd417a3cb9dd1614f157ea2cd5bacdb61"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "32615902f935f9f12a8b7246f9e72b760fcbbe8e",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/32615902f935f9f12a8b7246f9e72b760fcbbe8e"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/ClassificationRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "e5b41e46402b86e00c293013d07ef84ad315e51b",
+                     "size":  3345,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/e5b41e46402b86e00c293013d07ef84ad315e51b"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/ClusterRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "36d90b4b2cb010b93ae4082341f6437d332896ec",
+                     "size":  3079,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/36d90b4b2cb010b93ae4082341f6437d332896ec"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/ClustersRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "dc091770c5e9d82e1f015158342a72f9afba3feb",
+                     "size":  1983,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/dc091770c5e9d82e1f015158342a72f9afba3feb"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/DecimalValueRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "f65671b6de3a1784028faa27881a1e5c370a1f90",
+                     "size":  2793,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/f65671b6de3a1784028faa27881a1e5c370a1f90"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/FoundInRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1a81e98f523a8358de506e96c1b55529c21da361",
+                     "size":  2318,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/1a81e98f523a8358de506e96c1b55529c21da361"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/GeneRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "71bdf084cc94a9dc12535402c09326c922d2ee8d",
+                     "size":  2137,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/71bdf084cc94a9dc12535402c09326c922d2ee8d"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/HotspotTypeRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1f2c9df9ca16806a7bba7547a5c9a7d0986192e6",
+                     "size":  1919,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/1f2c9df9ca16806a7bba7547a5c9a7d0986192e6"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/NoWrapRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "458e345bdfaf7e2bd84cf24fd6ce0fe01506141a",
+                     "size":  1986,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/458e345bdfaf7e2bd84cf24fd6ce0fe01506141a"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/PdbChainsRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "3550b552846b1f87a5e96682c531774d42b6e9b8",
+                     "size":  5034,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/3550b552846b1f87a5e96682c531774d42b6e9b8"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/PdbIdRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "11134ae52bdebd851b2a1bd3e4bf491c6eea1892",
+                     "size":  2683,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/11134ae52bdebd851b2a1bd3e4bf491c6eea1892"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/ResidueRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "08c75ac81b037f4e50c85867c852a1ad70824082",
+                     "size":  2506,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/08c75ac81b037f4e50c85867c852a1ad70824082"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/ResiduesRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "80effe949cd17701c4ad9ab47df7ffe414ed9b80",
+                     "size":  6273,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/80effe949cd17701c4ad9ab47df7ffe414ed9b80"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/TumorCountRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "266f9d4517341984123ba999d45e3ce0447c4744",
+                     "size":  2340,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/266f9d4517341984123ba999d45e3ce0447c4744"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/VariantRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "72d77d4d385c3c13f121fe523b30e34bfd6a3a4f",
+                     "size":  4893,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/72d77d4d385c3c13f121fe523b30e34bfd6a3a4f"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/VariantTipCountRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a3af61880761beeff67abe4739a818901a3f29ee",
+                     "size":  3666,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/a3af61880761beeff67abe4739a818901a3f29ee"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/render/VariantTipRender.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "9abc0810acc981e23533b59b068395455b013988",
+                     "size":  2537,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/9abc0810acc981e23533b59b068395455b013988"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/util",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "00b7a553d9b28902627d41cad64f500283b4a862",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/00b7a553d9b28902627d41cad64f500283b4a862"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/util/DataUtils.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "79137f24dbd7f9e1db0fb68fc8a81e1f54a62ed2",
+                     "size":  3424,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/79137f24dbd7f9e1db0fb68fc8a81e1f54a62ed2"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/util/EventUtils.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "6527f8d8985de04cb1421aa8027c11138759e59a",
+                     "size":  1912,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/6527f8d8985de04cb1421aa8027c11138759e59a"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/util/MutationUtils.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "3eb5d28ce340519682754bd5c10b6c2c99b39fb1",
+                     "size":  5196,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/3eb5d28ce340519682754bd5c10b6c2c99b39fb1"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/util/ProxyUtils.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1ee27377972db9bb278f9deb8a8ff51000dd55f7",
+                     "size":  2540,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/1ee27377972db9bb278f9deb8a8ff51000dd55f7"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/util/TooltipUtils.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "1587937e56d4430f7d483efabb6b66a86ace9a00",
+                     "size":  1901,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/1587937e56d4430f7d483efabb6b66a86ace9a00"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/util/ViewUtils.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "ffd524db8f87ae45f484a12dd2089c73221252d5",
+                     "size":  13963,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/ffd524db8f87ae45f484a12dd2089c73221252d5"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/view",
+                     "mode":  "040000",
+                     "type":  "tree",
+                     "sha":  "aa936ef5155630295ccaf397d3ceccbbb5fd4cc6",
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/trees/aa936ef5155630295ccaf397d3ceccbbb5fd4cc6"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/view/CompositionView.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "4f73bdd574e30d240c3ef75ac0ade1718694fcae",
+                     "size":  4227,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/4f73bdd574e30d240c3ef75ac0ade1718694fcae"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/view/HotspotTableView.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "a72e86ab32d10ab4fa4e01e719851f3e8d632b93",
+                     "size":  15748,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/a72e86ab32d10ab4fa4e01e719851f3e8d632b93"
+                 },
+                 {
+                     "path":  "webapp/src/main/resources/static/src/js/view/ResidueView.js",
+                     "mode":  "100644",
+                     "type":  "blob",
+                     "sha":  "063436231c573c040cdf24bee5fe3abeb2177ed7",
+                     "size":  14397,
+                     "url":  "https://api.github.com/repos/cBioPortal/cancerhotspots/git/blobs/063436231c573c040cdf24bee5fe3abeb2177ed7"
+                 }
+             ],
+    "truncated":  false
+}

@@ -1,0 +1,106 @@
+{
+  "name": "proposed_clinical_bio_v4",
+  "core_feature_count": 943,
+  "full_feature_count_including_optional_controls": 948,
+  "optional_control_count": 5,
+  "driver_gene_count": 401,
+  "driver_gene_features": 802,
+  "hotspot_residue_count": 1329,
+  "hotspot_variant_count": 5075,
+  "feature_blocks": [
+    {
+      "Bio MAF v4 block": "v3_core_compact_biology",
+      "Feature count": 121,
+      "Status": "core",
+      "Why included": "Retains standard VEP, VAF, OncoKB role, and residual aggregates."
+    },
+    {
+      "Bio MAF v4 block": "external_driver_evidence_tier_aggregates",
+      "Feature count": 16,
+      "Status": "core",
+      "Why included": "Adds graded external support without exact gene identity."
+    },
+    {
+      "Bio MAF v4 block": "exact_consensus_driver_gene_identity",
+      "Feature count": 802,
+      "Status": "core selectable block",
+      "Why included": "Recovers exact identity for 401 externally supported cancer genes."
+    },
+    {
+      "Bio MAF v4 block": "cancer_hotspot_summary",
+      "Feature count": 4,
+      "Status": "core",
+      "Why included": "Adds exact recurrent hotspot signal."
+    },
+    {
+      "Bio MAF v4 block": "optional_burden_and_event_composition_controls",
+      "Feature count": 5,
+      "Status": "optional control",
+      "Why included": "Sensitivity controls; not part of strict core Bio MAF v4."
+    }
+  ],
+  "selection_rule": "Exact-gene block includes genes with >=3 of OncoKB annotated / COSMIC CGC v99 flag / IntOGen 2024 / Vogelstein 2013 OR Cancer Hotspots v3 gene evidence.",
+  "signature_separation": "No COSMIC SBS/DBS/ID exposure features are included in Bio MAF v4.",
+  "resources": {
+    "oncokb_cancer_genes.tsv": {
+      "path": "${BUNDLE_ROOT}\\config\\feature_resources\\oncokb_cancer_genes.tsv",
+      "sha256": "0a93e0b0d506902e5b7e5dea7c96d501b58bde95d924ac756c29d5634cfc3822"
+    },
+    "IntOGen-Drivers-20240920.zip": {
+      "path": "${BUNDLE_ROOT}\\config\\feature_resources\\clinical_bio_v4_sources\\IntOGen-Drivers-20240920.zip",
+      "sha256": "854def4465bcd7f90f0f8c7857dee9a4cf9da66a4c477c3fe4abeb510358a53c"
+    },
+    "Compendium_Cancer_Genes.tsv": {
+      "path": "${BUNDLE_ROOT}\\config\\feature_resources\\clinical_bio_v4_sources\\2024-06-18_IntOGen-Drivers\\Compendium_Cancer_Genes.tsv",
+      "sha256": "7c1982aa1fae1ff8200f4c2811cdb1707ea3f778b5e95782798d09e792ddb5e8"
+    },
+    "v3_multi_type_residue.txt": {
+      "path": "${BUNDLE_ROOT}\\config\\feature_resources\\clinical_bio_v4_sources\\v3_multi_type_residue.txt",
+      "sha256": "f4648b2702154093fc3b0cad85ff61b2e7d27cea59f6d4c2c33e2942304274a0"
+    },
+    "v3_multi_type_variant_file.txt": {
+      "path": "${BUNDLE_ROOT}\\config\\feature_resources\\clinical_bio_v4_sources\\v3_multi_type_variant_file.txt",
+      "sha256": "56dd3e52a0bbd3bb97de992c631e8ffdc036dea7fcb689600c5e9e730bb310e8"
+    },
+    "hotspots_v3.xlsx": {
+      "path": "${BUNDLE_ROOT}\\config\\feature_resources\\clinical_bio_v4_sources\\hotspots_v3.xlsx",
+      "sha256": "2be3166ade131d756cae3affb9ef7cc909d1d928458bd0630e771f60945c76bc"
+    }
+  },
+  "outputs": {
+    "features_csv": {
+      "path": "${BUNDLE_ROOT}\\results\\tables\\proposed_clinical_bio_v4_feature_table_exact.csv",
+      "sha256": "8c6de416e8b6f8dc69c87e8504f9b04851f672fc36ed1d7d121fe479e77d9e77"
+    },
+    "core_features_csv": {
+      "path": "${BUNDLE_ROOT}\\results\\tables\\proposed_clinical_bio_v4_core_feature_table_exact.csv",
+      "sha256": "0236b79409570ae613fdc86d637e7afe396bf01cffe391ceb34e4e93cc9926f1"
+    },
+    "optional_features_csv": {
+      "path": "${BUNDLE_ROOT}\\results\\tables\\proposed_clinical_bio_v4_optional_controls_feature_table_exact.csv",
+      "sha256": "9864bace3c55e09508e2e8a0f3443a20d7b24fe351f529301be6a6fdb85693f7"
+    },
+    "driver_gene_panel_csv": {
+      "path": "${BUNDLE_ROOT}\\results\\tables\\proposed_clinical_bio_v4_driver_gene_panel.csv",
+      "sha256": "d9c4efff9883b169e98288a6d2004e26a1b57c270b1aecb2ded1d06c06a6544d"
+    },
+    "driver_gene_evidence_csv": {
+      "path": "${BUNDLE_ROOT}\\results\\tables\\proposed_clinical_bio_v4_driver_gene_evidence_all_sources.csv",
+      "sha256": "132a71914c9d980c92d9bc9ec46593d4c71eae056c680519992f4eb79c096991"
+    },
+    "summary_csv": {
+      "path": "${BUNDLE_ROOT}\\results\\tables\\proposed_clinical_bio_v4_feature_summary.csv",
+      "sha256": "0981a7028af7795a0806a0ff5417634a17e9d4ab168af89e35126f6d00b1a322"
+    },
+    "markdown": {
+      "path": "${BUNDLE_ROOT}\\results\\tables\\proposed_clinical_bio_v4_feature_set.md",
+      "sha256": "e1378932ce7c9956fa1f6c9f6160d48ee752744f3858eeac1e805c64653f80d0"
+    }
+  },
+  "caveats": [
+    "Direct COSMIC CGC download is login-gated; current v4 uses the OncoKB CGC v99 flag and should be refreshed with official COSMIC credentials if available.",
+    "Exact-gene features may encode cancer-type biology; therefore exact-gene blocks are selected only inside each outer fold's inner-loop tuning."
+  ]
+}
+
+

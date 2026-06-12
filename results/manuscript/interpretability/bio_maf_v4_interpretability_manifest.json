@@ -1,0 +1,43 @@
+{
+  "generated_utc": "2026-06-04T20:24:14+00:00",
+  "selection_rows": 102,
+  "top20_performance_rows": 6,
+  "shap_status": "completed",
+  "shap": {
+    "generated_utc": "2026-06-04T20:24:46+00:00",
+    "endpoint": "cancer_type_top20",
+    "representation": "MAF_stack_only",
+    "learner": "xgboost",
+    "selected_feature_set_used_for_interpretation": "v4_full_core",
+    "n_samples": 8800,
+    "n_features": 943,
+    "shap_sample_n": 1600,
+    "class_count": 20,
+    "classes": [
+      "BLCA",
+      "BRCA",
+      "CESC",
+      "COAD",
+      "ESCA",
+      "GBM",
+      "HNSC",
+      "KIRC",
+      "KIRP",
+      "LGG",
+      "LIHC",
+      "LUAD",
+      "LUSC",
+      "OV",
+      "PRAD",
+      "SARC",
+      "SKCM",
+      "STAD",
+      "THCA",
+      "UCEC"
+    ],
+    "interpretation_fit_note": "Full-data fit used only for attribution; predictive performance is reported from nested out-of-fold benchmark rows.",
+    "interpretation_fit_accuracy": 0.887159090909091,
+    "interpretation_fit_balanced_accuracy": 0.8951452194553375,
+    "interpretation_fit_macro_f1": 0.8950686273736059
+  }
+}

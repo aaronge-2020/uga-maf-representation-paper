@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1664" height="874" viewBox="0 0 1664 874">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <linearGradient id="heat" x1="0" x2="1"><stop offset="0%" stop-color="#EFF6FF"/><stop offset="100%" stop-color="#1D4ED8"/></linearGradient>
+  </defs>
+  <style>
+  text{font-family:Inter,Arial,sans-serif;letter-spacing:0}.title{font-size:30px;font-weight:760;fill:#111827}.subtitle{font-size:15px;fill:#475569}.panel-title{font-size:17px;font-weight:760;fill:#111827}.label{font-size:14px;fill:#111827}.small{font-size:12px;fill:#475569}.tiny{font-size:10px;fill:#64748B}.value{font-size:14px;font-weight:740;fill:#111827}.cell-value{font-size:16px;font-weight:780;fill:#111827}.cell-value-light{font-size:16px;font-weight:780;fill:#FFFFFF}.sig{font-size:13px;font-weight:800;fill:#111827}.badge-text{font-size:10px;font-weight:760;fill:#334155}.axis{stroke:#CBD5E1;stroke-width:1}.grid{stroke:#E2E8F0;stroke-width:1}.rule{stroke:#334155;stroke-width:1.8}.card{fill:#FFFFFF;stroke:#CBD5E1;stroke-width:1.2}.soft{fill:#F8FAFC}.row-band{fill:#F8FAFC}.chip{fill:#F1F5F9;stroke:#CBD5E1}.shadow{filter:drop-shadow(0 2px 3px rgba(15,23,42,.10))}
+  </style><rect width="1664" height="874" fill="#FFFFFF"/>
+<text x="44" y="50" class="title">Figure 5. Cross-endpoint representation summary</text>
+<text x="44" y="82" class="subtitle">Absolute canonical 5-fold OOF scores. MuAt-compatible is separated as a direct event-bag model, not nested under Elastic net or XGBoost.</text>
+<text x="44" y="108" class="tiny">Black outline marks the best displayed score within each endpoint. OS is evaluated with Cox PH; Elastic net cells are intentionally not applicable for survival.</text>
+<rect x="300" y="128" width="514" height="64" rx="7" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="557" y="153" text-anchor="middle" class="panel-title">Tabular linear model</text>
+<text x="557" y="174" text-anchor="middle" class="tiny">Elastic net; non-survival endpoints</text>
+<rect x="848" y="128" width="514" height="64" rx="7" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="1105" y="153" text-anchor="middle" class="panel-title">Tabular nonlinear / survival</text>
+<text x="1105" y="174" text-anchor="middle" class="tiny">XGBoost; Cox PH for OS</text>
+<rect x="1396" y="128" width="198" height="64" rx="7" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="1495" y="153" text-anchor="middle" class="panel-title">Direct event-set model</text>
+<text x="1495" y="174" text-anchor="middle" class="tiny">MuAt-compatible</text>
+<text x="368" y="204" class="tiny" text-anchor="middle">Burden</text>
+<text x="916" y="204" class="tiny" text-anchor="middle">Burden</text>
+<text x="494" y="204" class="tiny" text-anchor="middle">Signatures</text>
+<text x="1042" y="204" class="tiny" text-anchor="middle">Signatures</text>
+<text x="620" y="204" class="tiny" text-anchor="middle">Bio MAF v4</text>
+<text x="1168" y="204" class="tiny" text-anchor="middle">Bio MAF v4</text>
+<text x="746" y="204" class="tiny" text-anchor="middle">Sig + Bio MAF</text>
+<text x="1294" y="204" class="tiny" text-anchor="middle">Sig + Bio MAF</text>
+<text x="1495" y="204" class="tiny" text-anchor="middle">MuAt-compatible</text>
+<rect x="36" y="209" width="1592" height="73" class="row-band"/>
+<text x="44" y="241" class="label">Kucab damage class</text>
+<rect x="44" y="253" width="58.8" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="73.4" y="267" text-anchor="middle" class="badge-text" fill="#334155">mAUROC</text><rect x="110" y="253" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="137" y="267" text-anchor="middle" class="badge-text" fill="#334155">multi</text><text x="176" y="267" class="tiny">n=259</text>
+<rect x="310" y="214" width="116" height="64" rx="4" fill="rgb(181,215,254)" stroke="#FFFFFF" stroke-width="1"><title>Kucab damage class | Mutational burden | Elastic net: 0.601</title></rect>
+<text x="368" y="246" text-anchor="middle" class="cell-value">0.60</text>
+<text x="368" y="266" text-anchor="middle" class="tiny" style="fill:#64748B">Elastic net</text>
+<rect x="858" y="214" width="116" height="64" rx="4" fill="rgb(214,233,254)" stroke="#FFFFFF" stroke-width="1"><title>Kucab damage class | Mutational burden | XGBoost: 0.505</title></rect>
+<text x="916" y="246" text-anchor="middle" class="cell-value">0.51</text>
+<text x="916" y="266" text-anchor="middle" class="tiny" style="fill:#64748B">XGBoost</text>
+<rect x="436" y="214" width="116" height="64" rx="4" fill="rgb(172,210,254)" stroke="#FFFFFF" stroke-width="1"><title>Kucab damage class | Mutational signatures | Elastic net: 0.629</title></rect>
+<text x="494" y="246" text-anchor="middle" class="cell-value">0.63</text>
+<text x="494" y="266" text-anchor="middle" class="tiny" style="fill:#64748B">Elastic net</text>
+<rect x="984" y="214" width="116" height="64" rx="4" fill="rgb(170,209,253)" stroke="#FFFFFF" stroke-width="1"><title>Kucab damage class | Mutational signatures | XGBoost: 0.636</title></rect>
+<text x="1042" y="246" text-anchor="middle" class="cell-value">0.64</text>
+<text x="1042" y="266" text-anchor="middle" class="tiny" style="fill:#64748B">XGBoost</text>
+<rect x="562" y="214" width="116" height="64" rx="4" fill="rgb(189,219,254)" stroke="#FFFFFF" stroke-width="1"><title>Kucab damage class | Bio MAF v4 | Elastic net: 0.579</title></rect>
+<text x="620" y="246" text-anchor="middle" class="cell-value">0.58</text>
+<text x="620" y="266" text-anchor="middle" class="tiny" style="fill:#64748B">Elastic net</text>
+<rect x="1110" y="214" width="116" height="64" rx="4" fill="rgb(206,228,254)" stroke="#FFFFFF" stroke-width="1"><title>Kucab damage class | Bio MAF v4 | XGBoost: 0.529</title></rect>
+<text x="1168" y="246" text-anchor="middle" class="cell-value">0.53</text>
+<text x="1168" y="266" text-anchor="middle" class="tiny" style="fill:#64748B">XGBoost</text>
+<rect x="688" y="214" width="116" height="64" rx="4" fill="rgb(155,201,253)" stroke="#111827" stroke-width="2.4"><title>Kucab damage class | Signatures + Bio MAF v4 | Elastic net: 0.680</title></rect>
+<text x="746" y="246" text-anchor="middle" class="cell-value">0.68</text>
+<text x="746" y="266" text-anchor="middle" class="tiny" style="fill:#64748B">Elastic net</text>
+<rect x="1236" y="214" width="116" height="64" rx="4" fill="rgb(189,219,254)" stroke="#FFFFFF" stroke-width="1"><title>Kucab damage class | Signatures + Bio MAF v4 | XGBoost: 0.578</title></rect>
+<text x="1294" y="246" text-anchor="middle" class="cell-value">0.58</text>
+<text x="1294" y="266" text-anchor="middle" class="tiny" style="fill:#64748B">XGBoost</text>
+<rect x="1406" y="214" width="178" height="64" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="1495" y="244" text-anchor="middle" class="tiny" style="fill:#94A3B8">n/a</text>
+<text x="44" y="317" class="label">HRD score</text>
+<rect x="44" y="329" width="50" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="69" y="343" text-anchor="middle" class="badge-text" fill="#334155">rho</text><rect x="110" y="329" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="137" y="343" text-anchor="middle" class="badge-text" fill="#334155">reg</text><text x="176" y="343" class="tiny">n=772</text>
+<rect x="310" y="290" width="116" height="64" rx="4" fill="rgb(216,234,255)" stroke="#FFFFFF" stroke-width="1"><title>HRD score | Mutational burden | Elastic net: 0.497</title></rect>
+<text x="368" y="322" text-anchor="middle" class="cell-value">0.50</text>
+<text x="368" y="342" text-anchor="middle" class="tiny" style="fill:#64748B">Elastic net</text>
+<rect x="858" y="290" width="116" height="64" rx="4" fill="rgb(183,216,254)" stroke="#FFFFFF" stroke-width="1"><title>HRD score | Mutational burden | XGBoost: 0.596</title></rect>
+<text x="916" y="322" text-anchor="middle" class="cell-value">0.60</text>
+<text x="916" y="342" text-anchor="middle" class="tiny" style="fill:#64748B">XGBoost</text>
+<rect x="436" y="290" width="116" height="64" rx="4" fill="rgb(239,246,255)" stroke="#FFFFFF" stroke-width="1"><title>HRD score | Mutational signatures | Elastic net: 0.431</title></rect>
+<text x="494" y="322" text-anchor="middle" class="cell-value">0.43</text>
+<text x="494" y="342" text-anchor="middle" class="tiny" style="fill:#64748B">Elastic net</text>
+<rect x="984" y="290" width="116" height="64" rx="4" fill="rgb(147,197,253)" stroke="#FFFFFF" stroke-width="1"><title>HRD score | Mutational signatures | XGBoost: 0.704</title></rect>
+<text x="1042" y="322" text-anchor="middle" class="cell-value">0.70</text>
+<text x="1042" y="342" text-anchor="middle" class="tiny" style="fill:#64748B">XGBoost</text>
+<rect x="562" y="290" width="116" height="64" rx="4" fill="rgb(144,195,253)" stroke="#FFFFFF" stroke-width="1"><title>HRD score | Bio MAF v4 | Elastic net: 0.710</title></rect>
+<text x="620" y="322" text-anchor="middle" class="cell-value">0.71</text>
+<text x="620" y="342" text-anchor="middle" class="tiny" style="fill:#64748B">Elastic net</text>
+<rect x="1110" y="290" width="116" height="64" rx="4" fill="rgb(136,187,251)" stroke="#FFFFFF" stroke-width="1"><title>HRD score | Bio MAF v4 | XGBoost: 0.731</title></rect>
+<text x="1168" y="322" text-anchor="middle" class="cell-value">0.73</text>
+<text x="1168" y="342" text-anchor="middle" class="tiny" style="fill:#64748B">XGBoost</text>
+<rect x="688" y="290" width="116" height="64" rx="4" fill="rgb(135,186,251)" stroke="#FFFFFF" stroke-width="1"><title>HRD score | Signatures + Bio MAF v4 | Elastic net: 0.733</title></rect>
+<text x="746" y="322" text-anchor="middle" class="cell-value">0.73</text>
+<text x="746" y="342" text-anchor="middle" class="tiny" style="fill:#64748B">Elastic net</text>
+<rect x="1236" y="290" width="116" height="64" rx="4" fill="rgb(116,169,248)" stroke="#111827" stroke-width="2.4"><title>HRD score | Signatures + Bio MAF v4 | XGBoost: 0.781</title></rect>
+<text x="1294" y="322" text-anchor="middle" class="cell-value-light">0.78</text>
+<text x="1294" y="342" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="1406" y="290" width="178" height="64" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="1495" y="320" text-anchor="middle" class="tiny" style="fill:#94A3B8">n/a</text>
+<rect x="36" y="361" width="1592" height="73" class="row-band"/>
+<text x="44" y="393" class="label">HRD24 high/low</text>
+<rect x="44" y="405" width="52" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="70" y="419" text-anchor="middle" class="badge-text" fill="#334155">AUROC</text><rect x="110" y="405" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="137" y="419" text-anchor="middle" class="badge-text" fill="#334155">binary</text><text x="176" y="419" class="tiny">n=772</text>
+<rect x="310" y="366" width="116" height="64" rx="4" fill="rgb(128,180,250)" stroke="#FFFFFF" stroke-width="1"><title>HRD24 high/low | Mutational burden | Elastic net: 0.750</title></rect>
+<text x="368" y="398" text-anchor="middle" class="cell-value">0.75</text>
+<text x="368" y="418" text-anchor="middle" class="tiny" style="fill:#64748B">Elastic net</text>
+<rect x="858" y="366" width="116" height="64" rx="4" fill="rgb(119,172,248)" stroke="#FFFFFF" stroke-width="1"><title>HRD24 high/low | Mutational burden | XGBoost: 0.773</title></rect>
+<text x="916" y="398" text-anchor="middle" class="cell-value-light">0.77</text>
+<text x="916" y="418" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="436" y="366" width="116" height="64" rx="4" fill="rgb(125,177,249)" stroke="#FFFFFF" stroke-width="1"><title>HRD24 high/low | Mutational signatures | Elastic net: 0.758</title></rect>
+<text x="494" y="398" text-anchor="middle" class="cell-value">0.76</text>
+<text x="494" y="418" text-anchor="middle" class="tiny" style="fill:#64748B">Elastic net</text>
+<rect x="984" y="366" width="116" height="64" rx="4" fill="rgb(99,154,245)" stroke="#FFFFFF" stroke-width="1"><title>HRD24 high/low | Mutational signatures | XGBoost: 0.823</title></rect>
+<text x="1042" y="398" text-anchor="middle" class="cell-value-light">0.82</text>
+<text x="1042" y="418" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="562" y="366" width="116" height="64" rx="4" fill="rgb(101,156,246)" stroke="#FFFFFF" stroke-width="1"><title>HRD24 high/low | Bio MAF v4 | Elastic net: 0.816</title></rect>
+<text x="620" y="398" text-anchor="middle" class="cell-value-light">0.82</text>
+<text x="620" y="418" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="1110" y="366" width="116" height="64" rx="4" fill="rgb(92,148,244)" stroke="#111827" stroke-width="2.4"><title>HRD24 high/low | Bio MAF v4 | XGBoost: 0.840</title></rect>
+<text x="1168" y="398" text-anchor="middle" class="cell-value-light">0.84</text>
+<text x="1168" y="418" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="688" y="366" width="116" height="64" rx="4" fill="rgb(99,154,245)" stroke="#FFFFFF" stroke-width="1"><title>HRD24 high/low | Signatures + Bio MAF v4 | Elastic net: 0.823</title></rect>
+<text x="746" y="398" text-anchor="middle" class="cell-value-light">0.82</text>
+<text x="746" y="418" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="1236" y="366" width="116" height="64" rx="4" fill="rgb(93,149,244)" stroke="#FFFFFF" stroke-width="1"><title>HRD24 high/low | Signatures + Bio MAF v4 | XGBoost: 0.837</title></rect>
+<text x="1294" y="398" text-anchor="middle" class="cell-value-light">0.84</text>
+<text x="1294" y="418" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="1406" y="366" width="178" height="64" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="1495" y="396" text-anchor="middle" class="tiny" style="fill:#94A3B8">n/a</text>
+<text x="44" y="469" class="label">HRD33 high/low</text>
+<rect x="44" y="481" width="52" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="70" y="495" text-anchor="middle" class="badge-text" fill="#334155">AUROC</text><rect x="110" y="481" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="137" y="495" text-anchor="middle" class="badge-text" fill="#334155">binary</text><text x="176" y="495" class="tiny">n=772</text>
+<rect x="310" y="442" width="116" height="64" rx="4" fill="rgb(113,166,247)" stroke="#FFFFFF" stroke-width="1"><title>HRD33 high/low | Mutational burden | Elastic net: 0.788</title></rect>
+<text x="368" y="474" text-anchor="middle" class="cell-value-light">0.79</text>
+<text x="368" y="494" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="858" y="442" width="116" height="64" rx="4" fill="rgb(104,158,246)" stroke="#FFFFFF" stroke-width="1"><title>HRD33 high/low | Mutational burden | XGBoost: 0.811</title></rect>
+<text x="916" y="474" text-anchor="middle" class="cell-value-light">0.81</text>
+<text x="916" y="494" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="436" y="442" width="116" height="64" rx="4" fill="rgb(119,172,248)" stroke="#FFFFFF" stroke-width="1"><title>HRD33 high/low | Mutational signatures | Elastic net: 0.774</title></rect>
+<text x="494" y="474" text-anchor="middle" class="cell-value-light">0.77</text>
+<text x="494" y="494" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="984" y="442" width="116" height="64" rx="4" fill="rgb(90,146,244)" stroke="#FFFFFF" stroke-width="1"><title>HRD33 high/low | Mutational signatures | XGBoost: 0.845</title></rect>
+<text x="1042" y="474" text-anchor="middle" class="cell-value-light">0.84</text>
+<text x="1042" y="494" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="562" y="442" width="116" height="64" rx="4" fill="rgb(96,151,245)" stroke="#FFFFFF" stroke-width="1"><title>HRD33 high/low | Bio MAF v4 | Elastic net: 0.830</title></rect>
+<text x="620" y="474" text-anchor="middle" class="cell-value-light">0.83</text>
+<text x="620" y="494" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="1110" y="442" width="116" height="64" rx="4" fill="rgb(85,142,243)" stroke="#FFFFFF" stroke-width="1"><title>HRD33 high/low | Bio MAF v4 | XGBoost: 0.857</title></rect>
+<text x="1168" y="474" text-anchor="middle" class="cell-value-light">0.86</text>
+<text x="1168" y="494" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="688" y="442" width="116" height="64" rx="4" fill="rgb(89,146,244)" stroke="#FFFFFF" stroke-width="1"><title>HRD33 high/low | Signatures + Bio MAF v4 | Elastic net: 0.846</title></rect>
+<text x="746" y="474" text-anchor="middle" class="cell-value-light">0.85</text>
+<text x="746" y="494" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="1236" y="442" width="116" height="64" rx="4" fill="rgb(81,138,242)" stroke="#111827" stroke-width="2.4"><title>HRD33 high/low | Signatures + Bio MAF v4 | XGBoost: 0.867</title></rect>
+<text x="1294" y="474" text-anchor="middle" class="cell-value-light">0.87</text>
+<text x="1294" y="494" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="1406" y="442" width="178" height="64" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="1495" y="472" text-anchor="middle" class="tiny" style="fill:#94A3B8">n/a</text>
+<rect x="36" y="513" width="1592" height="73" class="row-band"/>
+<text x="44" y="545" class="label">HRD42 high/low</text>
+<rect x="44" y="557" width="52" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="70" y="571" text-anchor="middle" class="badge-text" fill="#334155">AUROC</text><rect x="110" y="557" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="137" y="571" text-anchor="middle" class="badge-text" fill="#334155">binary</text><text x="176" y="571" class="tiny">n=772</text>
+<rect x="310" y="518" width="116" height="64" rx="4" fill="rgb(98,153,245)" stroke="#FFFFFF" stroke-width="1"><title>HRD42 high/low | Mutational burden | Elastic net: 0.825</title></rect>
+<text x="368" y="550" text-anchor="middle" class="cell-value-light">0.82</text>
+<text x="368" y="570" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="858" y="518" width="116" height="64" rx="4" fill="rgb(100,155,245)" stroke="#FFFFFF" stroke-width="1"><title>HRD42 high/low | Mutational burden | XGBoost: 0.819</title></rect>
+<text x="916" y="550" text-anchor="middle" class="cell-value-light">0.82</text>
+<text x="916" y="570" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="436" y="518" width="116" height="64" rx="4" fill="rgb(84,141,243)" stroke="#FFFFFF" stroke-width="1"><title>HRD42 high/low | Mutational signatures | Elastic net: 0.859</title></rect>
+<text x="494" y="550" text-anchor="middle" class="cell-value-light">0.86</text>
+<text x="494" y="570" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="984" y="518" width="116" height="64" rx="4" fill="rgb(79,137,242)" stroke="#FFFFFF" stroke-width="1"><title>HRD42 high/low | Mutational signatures | XGBoost: 0.871</title></rect>
+<text x="1042" y="550" text-anchor="middle" class="cell-value-light">0.87</text>
+<text x="1042" y="570" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="562" y="518" width="116" height="64" rx="4" fill="rgb(93,149,244)" stroke="#FFFFFF" stroke-width="1"><title>HRD42 high/low | Bio MAF v4 | Elastic net: 0.838</title></rect>
+<text x="620" y="550" text-anchor="middle" class="cell-value-light">0.84</text>
+<text x="620" y="570" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="1110" y="518" width="116" height="64" rx="4" fill="rgb(91,148,244)" stroke="#FFFFFF" stroke-width="1"><title>HRD42 high/low | Bio MAF v4 | XGBoost: 0.841</title></rect>
+<text x="1168" y="550" text-anchor="middle" class="cell-value-light">0.84</text>
+<text x="1168" y="570" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="688" y="518" width="116" height="64" rx="4" fill="rgb(65,124,240)" stroke="#FFFFFF" stroke-width="1"><title>HRD42 high/low | Signatures + Bio MAF v4 | Elastic net: 0.905</title></rect>
+<text x="746" y="550" text-anchor="middle" class="cell-value-light">0.91</text>
+<text x="746" y="570" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="1236" y="518" width="116" height="64" rx="4" fill="rgb(64,123,239)" stroke="#111827" stroke-width="2.4"><title>HRD42 high/low | Signatures + Bio MAF v4 | XGBoost: 0.909</title></rect>
+<text x="1294" y="550" text-anchor="middle" class="cell-value-light">0.91</text>
+<text x="1294" y="570" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="1406" y="518" width="178" height="64" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="1495" y="548" text-anchor="middle" class="tiny" style="fill:#94A3B8">n/a</text>
+<text x="44" y="621" class="label">Cancer type (top 20)</text>
+<rect x="44" y="633" width="58.8" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="73.4" y="647" text-anchor="middle" class="badge-text" fill="#334155">mAUROC</text><rect x="110" y="633" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="137" y="647" text-anchor="middle" class="badge-text" fill="#334155">multi</text><text x="176" y="647" class="tiny">n=8,800</text>
+<rect x="310" y="594" width="116" height="64" rx="4" fill="rgb(116,169,248)" stroke="#FFFFFF" stroke-width="1"><title>Cancer type (top 20) | Mutational burden | Elastic net: 0.781</title></rect>
+<text x="368" y="626" text-anchor="middle" class="cell-value-light">0.78</text>
+<text x="368" y="646" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="858" y="594" width="116" height="64" rx="4" fill="rgb(105,159,246)" stroke="#FFFFFF" stroke-width="1"><title>Cancer type (top 20) | Mutational burden | XGBoost: 0.808</title></rect>
+<text x="916" y="626" text-anchor="middle" class="cell-value-light">0.81</text>
+<text x="916" y="646" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="436" y="594" width="116" height="64" rx="4" fill="rgb(60,120,239)" stroke="#FFFFFF" stroke-width="1"><title>Cancer type (top 20) | Mutational signatures | Elastic net: 0.918</title></rect>
+<text x="494" y="626" text-anchor="middle" class="cell-value-light">0.92</text>
+<text x="494" y="646" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="984" y="594" width="116" height="64" rx="4" fill="rgb(53,114,238)" stroke="#FFFFFF" stroke-width="1"><title>Cancer type (top 20) | Mutational signatures | XGBoost: 0.935</title></rect>
+<text x="1042" y="626" text-anchor="middle" class="cell-value-light">0.94</text>
+<text x="1042" y="646" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="562" y="594" width="116" height="64" rx="4" fill="rgb(55,115,238)" stroke="#FFFFFF" stroke-width="1"><title>Cancer type (top 20) | Bio MAF v4 | Elastic net: 0.931</title></rect>
+<text x="620" y="626" text-anchor="middle" class="cell-value-light">0.93</text>
+<text x="620" y="646" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="1110" y="594" width="116" height="64" rx="4" fill="rgb(44,105,236)" stroke="#FFFFFF" stroke-width="1"><title>Cancer type (top 20) | Bio MAF v4 | XGBoost: 0.959</title></rect>
+<text x="1168" y="626" text-anchor="middle" class="cell-value-light">0.96</text>
+<text x="1168" y="646" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="688" y="594" width="116" height="64" rx="4" fill="rgb(67,126,240)" stroke="#FFFFFF" stroke-width="1"><title>Cancer type (top 20) | Signatures + Bio MAF v4 | Elastic net: 0.901</title></rect>
+<text x="746" y="626" text-anchor="middle" class="cell-value-light">0.90</text>
+<text x="746" y="646" text-anchor="middle" class="tiny" style="fill:#FFFFFF">Elastic net</text>
+<rect x="1236" y="594" width="116" height="64" rx="4" fill="rgb(37,99,235)" stroke="#111827" stroke-width="2.4"><title>Cancer type (top 20) | Signatures + Bio MAF v4 | XGBoost: 0.976</title></rect>
+<text x="1294" y="626" text-anchor="middle" class="cell-value-light">0.98</text>
+<text x="1294" y="646" text-anchor="middle" class="tiny" style="fill:#FFFFFF">XGBoost</text>
+<rect x="1406" y="594" width="178" height="64" rx="4" fill="rgb(59,119,239)" stroke="#FFFFFF" stroke-width="1"><title>Cancer type (top 20) | MuAt-compatible | MuAt-compatible: 0.920</title></rect>
+<text x="1495" y="626" text-anchor="middle" class="cell-value-light">0.92</text>
+<text x="1495" y="646" text-anchor="middle" class="tiny" style="fill:#FFFFFF">MuAt-compatible</text>
+<text x="1495" y="658" text-anchor="middle" class="tiny" style="fill:#B91C1C">vs best tabular -0.056</text>
+<rect x="36" y="665" width="1592" height="73" class="row-band"/>
+<text x="44" y="697" class="label">Overall survival</text>
+<rect x="44" y="709" width="120" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="104" y="723" text-anchor="middle" class="badge-text" fill="#334155">Harrell C-index</text><text x="178" y="723" class="tiny">n=9,986</text>
+<rect x="310" y="670" width="116" height="64" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="368" y="700" text-anchor="middle" class="tiny" style="fill:#94A3B8">Cox only</text>
+<rect x="858" y="670" width="116" height="64" rx="4" fill="rgb(188,219,254)" stroke="#FFFFFF" stroke-width="1"><title>Overall survival | Mutational burden | Cox PH: 0.582</title></rect>
+<text x="916" y="702" text-anchor="middle" class="cell-value">0.58</text>
+<text x="916" y="722" text-anchor="middle" class="tiny" style="fill:#64748B">Cox PH</text>
+<rect x="436" y="670" width="116" height="64" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="494" y="700" text-anchor="middle" class="tiny" style="fill:#94A3B8">Cox only</text>
+<rect x="984" y="670" width="116" height="64" rx="4" fill="rgb(180,214,254)" stroke="#FFFFFF" stroke-width="1"><title>Overall survival | Mutational signatures | Cox PH: 0.607</title></rect>
+<text x="1042" y="702" text-anchor="middle" class="cell-value">0.61</text>
+<text x="1042" y="722" text-anchor="middle" class="tiny" style="fill:#64748B">Cox PH</text>
+<rect x="562" y="670" width="116" height="64" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="620" y="700" text-anchor="middle" class="tiny" style="fill:#94A3B8">Cox only</text>
+<rect x="1110" y="670" width="116" height="64" rx="4" fill="rgb(177,213,254)" stroke="#FFFFFF" stroke-width="1"><title>Overall survival | Bio MAF v4 | Cox PH: 0.616</title></rect>
+<text x="1168" y="702" text-anchor="middle" class="cell-value">0.62</text>
+<text x="1168" y="722" text-anchor="middle" class="tiny" style="fill:#64748B">Cox PH</text>
+<rect x="688" y="670" width="116" height="64" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="746" y="700" text-anchor="middle" class="tiny" style="fill:#94A3B8">Cox only</text>
+<rect x="1236" y="670" width="116" height="64" rx="4" fill="rgb(171,210,254)" stroke="#111827" stroke-width="2.4"><title>Overall survival | Signatures + Bio MAF v4 | Cox PH: 0.633</title></rect>
+<text x="1294" y="702" text-anchor="middle" class="cell-value">0.63</text>
+<text x="1294" y="722" text-anchor="middle" class="tiny" style="fill:#64748B">Cox PH</text>
+<rect x="1406" y="670" width="178" height="64" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="1495" y="700" text-anchor="middle" class="tiny" style="fill:#94A3B8">n/a</text>
+<rect x="310" y="788" width="280" height="14" fill="url(#heat)"/>
+<text x="310" y="822" class="tiny">0.43</text>
+<text x="450" y="822" text-anchor="middle" class="tiny">OOF score</text>
+<text x="590" y="822" text-anchor="end" class="tiny">0.98</text>
+<rect x="690" y="784" width="22" height="18" fill="#F8FAFC" stroke="#E2E8F0"/><text x="722" y="798" class="small">not applicable</text>
+<rect x="870" y="783" width="22" height="18" fill="#FFFFFF" stroke="#111827" stroke-width="2.4"/><text x="902" y="798" class="small">best within endpoint</text></svg>

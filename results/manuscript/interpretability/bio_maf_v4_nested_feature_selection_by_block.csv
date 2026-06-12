@@ -1,0 +1,103 @@
+endpoint,representation,learner,selected_feature_set,feature_set_display,outer_folds_selected,mean_outer_score,median_selected_features,candidate_sets
+HRD_LOH,MAF_stack_only,linear,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,5,0.5790213637231636,923.0,6.0
+HRD_LOH,MAF_stack_only,xgboost,v4_full_core_plus_optional_controls,Full core + optional controls,3,0.5993629991182142,948.0,6.0
+HRD_LOH,MAF_stack_only,xgboost,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,2,0.6942596912241805,923.0,6.0
+HRD_LOH,signatures_plus_MAF_stack,linear,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,3,0.6243037364163448,1105.0,7.0
+HRD_LOH,signatures_plus_MAF_stack,linear,signatures_plus_v4_full_core,Signatures + full core biology,1,0.6627410907312792,1125.0,7.0
+HRD_LOH,signatures_plus_MAF_stack,linear,signatures_plus_v4_full_core_plus_optional_controls,Signatures + full core + optional controls,1,0.5780044004546881,1130.0,7.0
+HRD_LOH,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core,Signatures + full core biology,4,0.6661987435631234,1125.0,7.0
+HRD_LOH,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,1,0.638808677788254,1105.0,7.0
+HRD_LST,MAF_stack_only,linear,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,3,0.6751940388298904,923.0,6.0
+HRD_LST,MAF_stack_only,linear,v4_full_core,Full core biology,1,0.6667356425077743,943.0,6.0
+HRD_LST,MAF_stack_only,linear,v4_full_core_plus_optional_controls,Full core + optional controls,1,0.6125856280045834,948.0,6.0
+HRD_LST,MAF_stack_only,xgboost,v4_full_core_plus_optional_controls,Full core + optional controls,2,0.7124572946176748,948.0,6.0
+HRD_LST,MAF_stack_only,xgboost,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,2,0.5921718415525036,923.0,6.0
+HRD_LST,MAF_stack_only,xgboost,v4_full_core,Full core biology,1,0.753226850626294,943.0,6.0
+HRD_LST,signatures_plus_MAF_stack,linear,signatures_plus_v4_full_core,Signatures + full core biology,3,0.6645333355746602,1125.0,7.0
+HRD_LST,signatures_plus_MAF_stack,linear,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,2,0.676734781691747,1105.0,7.0
+HRD_LST,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,3,0.7359362746803036,1105.0,7.0
+HRD_LST,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core,Signatures + full core biology,2,0.7163399642014427,1125.0,7.0
+HRD_Score,MAF_stack_only,linear,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,2,0.7431979881131598,923.0,6.0
+HRD_Score,MAF_stack_only,linear,v4_full_core_plus_optional_controls,Full core + optional controls,2,0.7278359608706488,948.0,6.0
+HRD_Score,MAF_stack_only,linear,v4_compact_biology_only,Compact biology only,1,0.622645950185392,121.0,6.0
+HRD_Score,MAF_stack_only,xgboost,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,3,0.7219672485960933,923.0,6.0
+HRD_Score,MAF_stack_only,xgboost,v4_full_core_plus_optional_controls,Full core + optional controls,2,0.7414663874134487,948.0,6.0
+HRD_Score,signatures_plus_MAF_stack,linear,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,3,0.7394860433859168,1105.0,7.0
+HRD_Score,signatures_plus_MAF_stack,linear,signatures_plus_v4_full_core,Signatures + full core biology,2,0.7239648436734452,1125.0,7.0
+HRD_Score,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core_plus_optional_controls,Signatures + full core + optional controls,3,0.7881491376272297,1130.0,7.0
+HRD_Score,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core,Signatures + full core biology,2,0.7779043174149092,1125.0,7.0
+HRD_TAI,MAF_stack_only,linear,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,4,0.717250459361193,923.0,6.0
+HRD_TAI,MAF_stack_only,linear,v4_full_core_plus_optional_controls,Full core + optional controls,1,0.7151802048210549,948.0,6.0
+HRD_TAI,MAF_stack_only,xgboost,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,2,0.7703786605295906,923.0,6.0
+HRD_TAI,MAF_stack_only,xgboost,v4_full_core_plus_optional_controls,Full core + optional controls,2,0.7137651677850938,948.0,6.0
+HRD_TAI,MAF_stack_only,xgboost,v4_full_core,Full core biology,1,0.7939427337655256,943.0,6.0
+HRD_TAI,signatures_plus_MAF_stack,linear,signatures_plus_v4_full_core,Signatures + full core biology,3,0.7390029838627608,1125.0,7.0
+HRD_TAI,signatures_plus_MAF_stack,linear,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,2,0.745283414605423,1105.0,7.0
+HRD_TAI,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core,Signatures + full core biology,3,0.7357643031651988,1125.0,7.0
+HRD_TAI,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,2,0.7765135315313807,1105.0,7.0
+OS,MAF_stack_only,cox_ph,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,3,0.6280866854686528,923.0,6.0
+OS,MAF_stack_only,cox_ph,v4_full_core_plus_optional_controls,Full core + optional controls,2,0.614581881067064,948.0,6.0
+OS,signatures_plus_MAF_stack,cox_ph,signatures_plus_v4_full_core_plus_optional_controls,Signatures + full core + optional controls,3,0.6425032298914112,1130.0,7.0
+OS,signatures_plus_MAF_stack,cox_ph,signatures_plus_v4_full_core,Signatures + full core biology,1,0.6517077649271589,1125.0,7.0
+OS,signatures_plus_MAF_stack,cox_ph,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,1,0.6146603285710555,1105.0,7.0
+PARPi7,MAF_stack_only,linear,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,4,0.2930925433663813,923.0,6.0
+PARPi7,MAF_stack_only,linear,v4_full_core,Full core biology,1,0.4077738330154445,943.0,6.0
+PARPi7,MAF_stack_only,xgboost,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,2,0.4281824226803851,923.0,6.0
+PARPi7,MAF_stack_only,xgboost,v4_full_core_plus_optional_controls,Full core + optional controls,1,0.3840549002086387,948.0,6.0
+PARPi7,MAF_stack_only,xgboost,v4_compact_plus_driver_evidence_tiers,Compact + driver evidence tiers,1,0.2853037641562602,137.0,6.0
+PARPi7,MAF_stack_only,xgboost,v4_full_core,Full core biology,1,0.201063442660055,943.0,6.0
+PARPi7,signatures_plus_MAF_stack,linear,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,3,0.3316645604224389,1105.0,7.0
+PARPi7,signatures_plus_MAF_stack,linear,signatures_plus_v4_full_core,Signatures + full core biology,2,0.3985024077957813,1125.0,7.0
+PARPi7,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,2,0.4886812781665526,1105.0,7.0
+PARPi7,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core_plus_optional_controls,Signatures + full core + optional controls,2,0.27456663676899645,1130.0,7.0
+PARPi7,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core,Signatures + full core biology,1,0.3471900033519612,1125.0,7.0
+cancer_type_top20,MAF_stack_only,linear,v4_full_core_plus_optional_controls,Full core + optional controls,3,0.9337056140603521,948.0,6.0
+cancer_type_top20,MAF_stack_only,linear,v4_full_core,Full core biology,2,0.9311171378229364,943.0,6.0
+cancer_type_top20,MAF_stack_only,xgboost,v4_full_core,Full core biology,3,0.9593427568943896,943.0,6.0
+cancer_type_top20,MAF_stack_only,xgboost,v4_full_core_plus_optional_controls,Full core + optional controls,2,0.9598253274047052,948.0,6.0
+eCARD,MAF_stack_only,linear,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,5,0.5370672453608858,923.0,6.0
+eCARD,MAF_stack_only,xgboost,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,3,0.5195825738364198,923.0,6.0
+eCARD,MAF_stack_only,xgboost,v4_full_core,Full core biology,1,0.6198362042764319,943.0,6.0
+eCARD,MAF_stack_only,xgboost,v4_full_core_plus_optional_controls,Full core + optional controls,1,0.5218479180528517,948.0,6.0
+eCARD,signatures_plus_MAF_stack,linear,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,5,0.5348739840815877,1105.0,7.0
+eCARD,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core_plus_optional_controls,Signatures + full core + optional controls,2,0.5372870395619717,1130.0,7.0
+eCARD,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core,Signatures + full core biology,2,0.5307681307836194,1125.0,7.0
+eCARD,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,1,0.5014272582924372,1105.0,7.0
+hrd_binary_24,MAF_stack_only,linear,v4_full_core,Full core biology,2,0.8465136054421769,943.0,6.0
+hrd_binary_24,MAF_stack_only,linear,v4_full_core_plus_optional_controls,Full core + optional controls,2,0.8373574782025486,948.0,6.0
+hrd_binary_24,MAF_stack_only,linear,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,1,0.7771629778672032,923.0,6.0
+hrd_binary_24,MAF_stack_only,xgboost,v4_full_core,Full core biology,3,0.8352199302142941,943.0,6.0
+hrd_binary_24,MAF_stack_only,xgboost,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,1,0.9013605442176872,923.0,6.0
+hrd_binary_24,MAF_stack_only,xgboost,v4_full_core_plus_optional_controls,Full core + optional controls,1,0.8841381623071763,948.0,6.0
+hrd_binary_24,signatures_plus_MAF_stack,linear,signatures_plus_v4_full_core_plus_optional_controls,Signatures + full core + optional controls,3,0.8326323017469899,1130.0,7.0
+hrd_binary_24,signatures_plus_MAF_stack,linear,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,1,0.8613945578231293,1105.0,7.0
+hrd_binary_24,signatures_plus_MAF_stack,linear,signatures_plus_v4_full_core,Signatures + full core biology,1,0.8367554725946037,1125.0,7.0
+hrd_binary_24,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,2,0.881227843249976,1105.0,7.0
+hrd_binary_24,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core,Signatures + full core biology,2,0.871469291942129,1125.0,7.0
+hrd_binary_24,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_compact_biology_only,Signatures + compact biology,1,0.7860173086713049,303.0,7.0
+hrd_binary_33,MAF_stack_only,linear,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,3,0.848607704940972,923.0,6.0
+hrd_binary_33,MAF_stack_only,linear,v4_full_core_plus_optional_controls,Full core + optional controls,1,0.8852654603300855,948.0,6.0
+hrd_binary_33,MAF_stack_only,linear,v4_compact_plus_hotspot_summary,Compact + hotspot summaries,1,0.8144208037825059,125.0,6.0
+hrd_binary_33,MAF_stack_only,xgboost,v4_full_core_plus_optional_controls,Full core + optional controls,3,0.8837399550668389,948.0,6.0
+hrd_binary_33,MAF_stack_only,xgboost,v4_full_core,Full core biology,2,0.8807573481216351,943.0,6.0
+hrd_binary_33,signatures_plus_MAF_stack,linear,signatures_plus_v4_full_core_plus_optional_controls,Signatures + full core + optional controls,2,0.8611111111111112,1130.0,7.0
+hrd_binary_33,signatures_plus_MAF_stack,linear,signatures_plus_v4_compact_plus_driver_evidence_tiers,Signatures + driver evidence tiers,2,0.8352053060045617,319.0,7.0
+hrd_binary_33,signatures_plus_MAF_stack,linear,signatures_plus_v4_full_core,Signatures + full core biology,1,0.8997812686418771,1125.0,7.0
+hrd_binary_33,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core,Signatures + full core biology,2,0.8888516051346635,1125.0,7.0
+hrd_binary_33,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core_plus_optional_controls,Signatures + full core + optional controls,1,0.9210007880220646,1130.0,7.0
+hrd_binary_33,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,1,0.875402576489533,1105.0,7.0
+hrd_binary_33,signatures_plus_MAF_stack,xgboost,signatures_only,Signatures only,1,0.8104991051898985,182.0,7.0
+hrd_binary_42,MAF_stack_only,linear,v4_compact_plus_hotspot_summary,Compact + hotspot summaries,2,0.8528795698924732,125.0,6.0
+hrd_binary_42,MAF_stack_only,linear,v4_compact_plus_exact_driver_genes,Compact + exact driver genes,1,0.8908602150537634,923.0,6.0
+hrd_binary_42,MAF_stack_only,linear,v4_compact_plus_driver_evidence_tiers,Compact + driver evidence tiers,1,0.8797333333333334,137.0,6.0
+hrd_binary_42,MAF_stack_only,linear,v4_compact_biology_only,Compact biology only,1,0.7999999999999999,121.0,6.0
+hrd_binary_42,MAF_stack_only,xgboost,v4_full_core_plus_optional_controls,Full core + optional controls,2,0.8813172043010753,948.0,6.0
+hrd_binary_42,MAF_stack_only,xgboost,v4_full_core,Full core biology,2,0.8702849462365592,943.0,6.0
+hrd_binary_42,MAF_stack_only,xgboost,v4_compact_biology_only,Compact biology only,1,0.8712,121.0,6.0
+hrd_binary_42,signatures_plus_MAF_stack,linear,signatures_plus_v4_compact_plus_hotspot_summary,Signatures + hotspot summaries,4,0.9126774193548387,307.0,7.0
+hrd_binary_42,signatures_plus_MAF_stack,linear,signatures_plus_v4_full_core_plus_optional_controls,Signatures + full core + optional controls,1,0.8970430107526881,1130.0,7.0
+hrd_binary_42,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core,Signatures + full core biology,1,0.952,1125.0,7.0
+hrd_binary_42,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_compact_plus_exact_driver_genes,Signatures + exact driver genes,1,0.943010752688172,1105.0,7.0
+hrd_binary_42,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_full_core_plus_optional_controls,Signatures + full core + optional controls,1,0.9272,1130.0,7.0
+hrd_binary_42,signatures_plus_MAF_stack,xgboost,signatures_plus_v4_compact_biology_only,Signatures + compact biology,1,0.9233870967741936,303.0,7.0
+hrd_binary_42,signatures_plus_MAF_stack,xgboost,signatures_only,Signatures only,1,0.8077956989247312,182.0,7.0

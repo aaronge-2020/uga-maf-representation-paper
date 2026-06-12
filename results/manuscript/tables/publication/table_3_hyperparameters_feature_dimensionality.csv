@@ -1,0 +1,6 @@
+Representation,Input signal,Feature dimensionality,Context/atlas,Evaluated models,Manuscript role
+Mutational burden,Total mutation burden and compact burden summaries,1-3,No UGA atlas,Elastic net; XGBoost; Cox PH,Minimal baseline for all main endpoints
+Mutational signatures,SBS/DBS/ID mutational spectra,182-261,No UGA atlas,Elastic net; XGBoost; Cox PH,Canonical mutational-process baseline
+Bio MAF v4,Predeclared Bio MAF v4 blocks selected inside each outer fold's inner validation split,"948-2,980",No UGA atlas,Elastic net; XGBoost; Cox PH,Interpretable event-level biological annotation comparator with nested feature-block selection
+Signatures + Bio MAF v4,Mutational spectra plus predeclared Bio MAF v4 blocks selected by nested validation,"1,130-3,241",No UGA atlas,Elastic net; XGBoost; Cox PH,Combined practical default with inner-loop feature-block selection
+MuAt-compatible,"Per-mutation MC3 event bags with motif, position-bin, and genic/exonic/strand tokens",,No UGA atlas,MuAt-compatible,TCGA-WES MuAt-compatible smoke comparator; official MuAt only when package/checkpoints are configured

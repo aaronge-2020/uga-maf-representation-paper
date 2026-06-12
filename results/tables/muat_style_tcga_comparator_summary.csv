@@ -1,0 +1,2 @@
+elapsed_seconds,experiment_id,n_events,n_patients,official_cli_status,primary_endpoint,secondary_endpoints,smoke_run,status
+85.739,muat_style_tcga_comparator,34041,60,not_available,tcga_20_type,,True,completed

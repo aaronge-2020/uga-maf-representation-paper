@@ -1,0 +1,67 @@
+bundle: github_exports
+created_for: UGA/MAF representation manuscript
+standalone_policy:
+  code_root: github_exports
+  large_asset_bundle: ../github_exports_datasets
+  strict_command: python scripts/reproduce_manuscript.py --datasets-dir ../github_exports_datasets --strict
+  full_regeneration_dry_run: python src/run_all_experiments.py --config config/experiment_settings.strict_no_leakage.yaml --paths config/paths.yaml --dry-run
+  full_regeneration: python src/run_all_experiments.py --config config/experiment_settings.strict_no_leakage.yaml --paths config/paths.yaml
+  notes:
+    - Active paths resolve under this export and the sibling dataset bundle.
+    - Large data and cache assets are mirrored in ../github_exports_datasets for GitHub/Hugging Face upload.
+    - Bio MAF v4 is the only active MAF-stack manuscript feature family.
+    - COSMIC signature resources are kept separate from Bio MAF v4 resources.
+
+active_experiments:
+  - id: main_manuscript_complete_panel
+    tier: active_primary
+    entrypoint: src/runners/run_main_manuscript_complete_panel.py
+    outputs:
+      - results/tables/main_manuscript_complete_panel_endpoint_results.csv
+      - results/tables/main_manuscript_complete_panel_oof_predictions.csv
+      - results/tables/main_manuscript_complete_panel_fold_metrics.csv
+    endpoints:
+      - damage_class
+      - HRD_Score
+      - hrd_binary_24
+      - hrd_binary_33
+      - hrd_binary_42
+      - cancer_type_top20
+      - OS
+    methodology:
+      - nested outer-fold out-of-fold evaluation
+      - inner-loop model and Bio MAF v4 feature-block selection
+      - fixed cancer_type_top20 class registry
+      - high-purity VAF proxy guard retained for optional safety endpoints
+
+  - id: muat_style_tcga_comparator
+    tier: active_comparator
+    entrypoint: src/runners/run_muat_style_tcga_comparator.py
+    outputs:
+      - results/tables/muat_style_tcga_comparator_*_endpoint_results.csv
+      - results/tables/muat_style_tcga_comparator_*_oof_predictions.csv
+      - results/tables/muat_style_tcga_comparator_*_fidelity_report.md
+    methodology:
+      - local MuAt-compatible attention MIL comparator
+      - fixed-size token dictionaries when configured
+      - canonical outer-fold manifest support for direct top-20 comparison
+      - labelled as MuAt-compatible reimplementation, not official MuAt
+
+manuscript_build:
+  entrypoint: src/utils/make_all_figures.py
+  outputs_root: results/manuscript
+  required_artifacts_manifest: results/manuscript/manuscript_asset_manifest.json
+  validation_script: scripts/reproduce_manuscript.py
+
+dataset_bundle:
+  manifest: manifests/dataset_assets_manifest.csv
+  readable_roots:
+    - ../github_exports_datasets/datasets/tcga_mc3
+    - ../github_exports_datasets/datasets/kucab_mendeley
+    - ../github_exports_datasets/datasets/kucab_mendeley/raw_mutation_tables
+    - ../github_exports_datasets/datasets/tcga_brca_hrd
+    - ../github_exports_datasets/datasets/pcawg_pancan
+    - ../github_exports_datasets/resources/bio_maf_v4
+    - ../github_exports_datasets/resources/signatures_cosmic
+    - ../github_exports_datasets/caches
+    - ../github_exports_datasets/results

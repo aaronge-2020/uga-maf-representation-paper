@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Table 3. Representation summary and dimensionality</title>
+<style>
+body {
+  background: #ffffff;
+  color: #111111;
+  font-family: "Times New Roman", Times, serif;
+  margin: 28px auto;
+  max-width: 940px;
+  padding: 0 18px;
+}
+.manuscript-table-block {
+  margin: 0 auto;
+}
+.table-number {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 22px;
+  text-align: center;
+}
+.table-title {
+  font-size: 15px;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  margin: 0 0 24px;
+  text-align: center;
+}
+.table-wrap {
+  overflow-x: auto;
+}
+table.manuscript-table {
+  border-top: 1.5px solid #111111;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 14px;
+  line-height: 1.12;
+  width: 100%;
+}
+table.manuscript-table thead {
+  border-bottom: 1.5px solid #111111;
+}
+table.manuscript-table th {
+  font-weight: 400;
+  padding: 8px 10px 10px;
+  text-align: center;
+  vertical-align: bottom;
+}
+table.manuscript-table td {
+  border: 0;
+  padding: 2px 10px;
+  vertical-align: top;
+}
+table.manuscript-table tbody tr:last-child td {
+  border-bottom: 1.5px solid #111111;
+  padding-bottom: 7px;
+}
+table.manuscript-table td:first-child {
+  padding-left: 0;
+  text-align: left;
+}
+table.manuscript-table td.numeric {
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  white-space: nowrap;
+}
+table.manuscript-table td.long-text {
+  min-width: 12rem;
+}
+.table-notes {
+  font-size: 13px;
+  line-height: 1.18;
+  margin-top: 14px;
+  text-align: left;
+}
+.table-notes p {
+  margin: 0 0 5px;
+}
+.note-label {
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+}
+</style>
+</head>
+<body>
+<div class="manuscript-table-block">
+<div class="table-number">Table 3</div>
+<div class="table-title">Representation summary and dimensionality</div>
+<div class="table-wrap">
+<table class="manuscript-table">
+<thead><tr><th>Representation</th><th>Input signal</th><th>Feature dimensionality</th><th>Context/atlas</th><th>Evaluated models</th><th>Manuscript role</th></tr></thead>
+<tbody>
+<tr><td>Mutational burden</td><td>Total mutation burden and compact burden summaries</td><td>1-3</td><td>No UGA atlas</td><td>Elastic net; XGBoost; Cox PH</td><td>Minimal baseline for all main endpoints</td></tr>
+<tr><td>Mutational signatures</td><td>SBS/DBS/ID mutational spectra</td><td>182-261</td><td>No UGA atlas</td><td>Elastic net; XGBoost; Cox PH</td><td>Canonical mutational-process baseline</td></tr>
+<tr><td>Bio MAF v4</td><td class="long-text">Predeclared Bio MAF v4 blocks selected inside each outer fold&#x27;s inner validation split</td><td>948-2,980</td><td>No UGA atlas</td><td>Elastic net; XGBoost; Cox PH</td><td class="long-text">Interpretable event-level biological annotation comparator with nested feature-block selection</td></tr>
+<tr><td>Signatures + Bio MAF v4</td><td class="long-text">Mutational spectra plus predeclared Bio MAF v4 blocks selected by nested validation</td><td>1,130-3,241</td><td>No UGA atlas</td><td>Elastic net; XGBoost; Cox PH</td><td class="long-text">Combined practical default with inner-loop feature-block selection</td></tr>
+<tr><td>MuAt-compatible</td><td class="long-text">Per-mutation MC3 event bags with motif, position-bin, and genic/exonic/strand tokens</td><td></td><td>No UGA atlas</td><td>MuAt-compatible</td><td class="long-text">TCGA-WES MuAt-compatible smoke comparator; official MuAt only when package/checkpoints are configured</td></tr>
+</tbody>
+</table>
+</div>
+<div class="table-notes">
+<p><span class="note-label">Note.</span> Feature dimensionality is shown as the observed range across main endpoints and model families.</p>
+</div>
+</div>
+</body>
+</html>

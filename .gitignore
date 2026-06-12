@@ -1,4 +1,4 @@
-﻿# Python/runtime caches
+# Python/runtime caches
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -16,15 +16,25 @@ desktop.ini
 .DS_Store
 Thumbs.db
 
-# Regenerable runtime artifacts intentionally excluded from the public repo
-uga_maf_representation_paper/results/work/
-uga_maf_representation_paper/results/cache/
-uga_maf_representation_paper/results/checkpoints/
-data/GRCH37/GCF_000001405.13/GCF_000001405.13_GRCh37_genomic.fna
+# Regenerable runtime work areas
+results/work/
+results/cache/
+results/checkpoints/
+w/
 scratch/
 .benchmarks/
 
-# Large obsolete or historical archives intentionally excluded
-cgr_validation_results/research/data/EXP030_islam2022_sigprofiler_benchmark/raw/Benchmark.tar.gz
+# Large assets live in ../github_exports_datasets for ordinary GitHub upload.
+cgr_validation_results/research/experiments/supporting/2026_05_14_unified_uga_locked_manuscript_benchmark/data/mc3_source/raw/mc3.v0.2.8.PUBLIC.maf.gz
+cgr_validation_results/research/assets/EXP023_tcga_brca_hrd/TCGA-BRCA/sigprofiler_results/Assignment_Solution/Activities/Decomposed_MutationType_Probabilities.txt
+data/GRCH37/GCF_000001405.13/GCF_000001405.13_GRCh37_genomic.fna
+data/GRCH37/GCF_000001405.13/GCF_000001405.13_GRCh37_genomic.fna.gz
+results/manuscript/canonical/main_panel_oof_predictions.csv
+results/tables/main_manuscript_complete_panel_oof_predictions.csv
+results/tables/unified_locked_data_tcga_signature_endpoints_signature_exposure_predictions_checkpoint.csv
+results/tables/muat_style_tcga_comparator_cancer_type_top20_comparable_muat_compatible_events.tsv.gz
+results/tables/muat_style_tcga_comparator_main_endpoints_comparable_muat_compatible_events.tsv.gz
+results/tables/muat_style_tcga_comparator_muat_compatible_events.tsv.gz
 
-uga_maf_representation_paper/results/logs/
+# Keep strict validation logs explicit; ignore ad hoc logs
+results/logs/*.tmp

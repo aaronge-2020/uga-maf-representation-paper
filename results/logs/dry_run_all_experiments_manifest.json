@@ -1,0 +1,34 @@
+{
+  "active_runners": [
+    "main_manuscript_complete_panel",
+    "muat_style_tcga_comparator"
+  ],
+  "bundle_root": "${BUNDLE_ROOT}",
+  "completed_utc": "2026-06-12T11:58:24+00:00",
+  "config": "config/experiment_settings.strict_no_leakage.yaml",
+  "dry_run": true,
+  "elapsed_seconds": 0.007,
+  "experiments": [
+    {
+      "elapsed_seconds": 0.0,
+      "experiment_id": "main_manuscript_complete_panel",
+      "status": "planned"
+    },
+    {
+      "elapsed_seconds": 0.0,
+      "experiment_id": "muat_style_tcga_comparator",
+      "status": "planned"
+    },
+    {
+      "experiment_id": "make_all_figures",
+      "status": "skipped_dry_run"
+    }
+  ],
+  "feature_cache_dir": "${BUNDLE_ROOT}/results/cache/features",
+  "paths": "config/paths.yaml",
+  "refresh_cache": false,
+  "repro_root": "${BUNDLE_ROOT}",
+  "run_id": "20260612T115824Z",
+  "runtime_profile": "strict-no-leakage-affected-rerun",
+  "tree_method": "gpu_hist"
+}

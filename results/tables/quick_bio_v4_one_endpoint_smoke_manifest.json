@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 154.478,
+  "folds": 2,
+  "profile": "tiny",
+  "seed_key": "quick_bio_v4_nested_selection_smoke",
+  "endpoints_requested": [
+    "HRD_TAI"
+  ],
+  "endpoints_completed": [
+    "HRD_TAI"
+  ],
+  "bio_v4_feature_count": 948,
+  "signature_feature_count": 182,
+  "outputs": {
+    "summary": "${BUNDLE_ROOT}\\results\\tables\\quick_bio_v4_one_endpoint_smoke_summary.csv",
+    "folds": "${BUNDLE_ROOT}\\results\\tables\\quick_bio_v4_one_endpoint_smoke_folds.csv",
+    "predictions": "${BUNDLE_ROOT}\\results\\tables\\quick_bio_v4_one_endpoint_smoke_predictions.csv.gz",
+    "wide_comparison": "${BUNDLE_ROOT}\\results\\tables\\quick_bio_v4_one_endpoint_smoke_wide_comparison.csv"
+  },
+  "leakage_note": "Feature schema/resources are fixed before training; feature-set selection is performed within each outer fold's inner validation split."
+}
+

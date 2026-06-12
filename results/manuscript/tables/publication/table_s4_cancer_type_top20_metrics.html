@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Supplementary Table S4. TCGA top-20 cancer-type metrics</title>
+<style>
+body {
+  background: #ffffff;
+  color: #111111;
+  font-family: "Times New Roman", Times, serif;
+  margin: 28px auto;
+  max-width: 940px;
+  padding: 0 18px;
+}
+.manuscript-table-block {
+  margin: 0 auto;
+}
+.table-number {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 22px;
+  text-align: center;
+}
+.table-title {
+  font-size: 15px;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  margin: 0 0 24px;
+  text-align: center;
+}
+.table-wrap {
+  overflow-x: auto;
+}
+table.manuscript-table {
+  border-top: 1.5px solid #111111;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 14px;
+  line-height: 1.12;
+  width: 100%;
+}
+table.manuscript-table thead {
+  border-bottom: 1.5px solid #111111;
+}
+table.manuscript-table th {
+  font-weight: 400;
+  padding: 8px 10px 10px;
+  text-align: center;
+  vertical-align: bottom;
+}
+table.manuscript-table td {
+  border: 0;
+  padding: 2px 10px;
+  vertical-align: top;
+}
+table.manuscript-table tbody tr:last-child td {
+  border-bottom: 1.5px solid #111111;
+  padding-bottom: 7px;
+}
+table.manuscript-table td:first-child {
+  padding-left: 0;
+  text-align: left;
+}
+table.manuscript-table td.numeric {
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  white-space: nowrap;
+}
+table.manuscript-table td.long-text {
+  min-width: 12rem;
+}
+.table-notes {
+  font-size: 13px;
+  line-height: 1.18;
+  margin-top: 14px;
+  text-align: left;
+}
+.table-notes p {
+  margin: 0 0 5px;
+}
+.note-label {
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+}
+</style>
+</head>
+<body>
+<div class="manuscript-table-block">
+<div class="table-number">Supplementary Table S4</div>
+<div class="table-title">TCGA top-20 cancer-type metrics</div>
+<div class="table-wrap">
+<table class="manuscript-table">
+<thead><tr><th>Representation</th><th>Model</th><th>N</th><th>Macro-auroc</th><th>Micro-auroc</th><th>Accuracy</th><th>Balanced accuracy</th><th>Macro-f1</th><th>Cohen&#x27;s kappa</th><th>Top-3 accuracy</th><th>Top-5 accuracy</th></tr></thead>
+<tbody>
+<tr><td>Bio MAF v4</td><td>Elastic net</td><td class="numeric">8,800</td><td class="numeric">0.931</td><td class="numeric">0.933</td><td class="numeric">0.589</td><td class="numeric">0.585</td><td class="numeric">0.593</td><td class="numeric">0.564</td><td class="numeric">0.807</td><td class="numeric">0.894</td></tr>
+<tr><td>Bio MAF v4</td><td>XGBoost</td><td class="numeric">8,800</td><td class="numeric">0.959</td><td class="numeric">0.964</td><td class="numeric">0.670</td><td class="numeric">0.668</td><td class="numeric">0.670</td><td class="numeric">0.650</td><td class="numeric">0.866</td><td class="numeric">0.929</td></tr>
+<tr><td>MuAt-compatible</td><td>MuAt-compatible</td><td class="numeric">8,800</td><td class="numeric">0.920</td><td class="numeric">0.922</td><td class="numeric">0.539</td><td class="numeric">0.534</td><td class="numeric">0.520</td><td class="numeric">0.512</td><td class="numeric">0.775</td><td class="numeric">0.861</td></tr>
+<tr><td>Mutational burden</td><td>Elastic net</td><td class="numeric">8,800</td><td class="numeric">0.781</td><td class="numeric">0.796</td><td class="numeric">0.245</td><td class="numeric">0.249</td><td class="numeric">0.211</td><td class="numeric">0.206</td><td class="numeric">0.492</td><td class="numeric">0.645</td></tr>
+<tr><td>Mutational burden</td><td>XGBoost</td><td class="numeric">8,800</td><td class="numeric">0.808</td><td class="numeric">0.835</td><td class="numeric">0.289</td><td class="numeric">0.254</td><td class="numeric">0.238</td><td class="numeric">0.238</td><td class="numeric">0.563</td><td class="numeric">0.698</td></tr>
+<tr><td>Mutational signatures</td><td>Elastic net</td><td class="numeric">8,800</td><td class="numeric">0.918</td><td class="numeric">0.922</td><td class="numeric">0.512</td><td class="numeric">0.531</td><td class="numeric">0.508</td><td class="numeric">0.486</td><td class="numeric">0.782</td><td class="numeric">0.879</td></tr>
+<tr><td>Mutational signatures</td><td>XGBoost</td><td class="numeric">8,800</td><td class="numeric">0.935</td><td class="numeric">0.944</td><td class="numeric">0.563</td><td class="numeric">0.540</td><td class="numeric">0.549</td><td class="numeric">0.535</td><td class="numeric">0.821</td><td class="numeric">0.899</td></tr>
+<tr><td>Signatures + Bio MAF v4</td><td>Elastic net</td><td class="numeric">8,800</td><td class="numeric">0.901</td><td class="numeric">0.901</td><td class="numeric">0.574</td><td class="numeric">0.586</td><td class="numeric">0.580</td><td class="numeric">0.548</td><td class="numeric">0.804</td><td class="numeric">0.869</td></tr>
+<tr><td>Signatures + Bio MAF v4</td><td>XGBoost</td><td class="numeric">8,800</td><td class="numeric">0.976</td><td class="numeric">0.978</td><td class="numeric">0.744</td><td class="numeric">0.742</td><td class="numeric">0.749</td><td class="numeric">0.728</td><td class="numeric">0.909</td><td class="numeric">0.955</td></tr>
+</tbody>
+</table>
+</div>
+<div class="table-notes">
+<p><span class="note-label">Note.</span> Rows report pooled out-of-fold metrics for the fixed 20-class TCGA cancer-type endpoint. Macro-AUROC remains the primary metric; other columns summarize classification behavior from the same predictions.</p>
+</div>
+</div>
+</body>
+</html>
