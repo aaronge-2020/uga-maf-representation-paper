@@ -69,6 +69,7 @@ const modelLabel = registryMap("model_family", {
 const metricLabel = registryMap("metric", {
   macro_auroc: "macro-AUROC",
   auroc: "AUROC",
+  balanced_accuracy: "Balanced accuracy",
   spearman: "Spearman r",
   c_index: "Harrell C-index",
 });
@@ -247,6 +248,7 @@ function rowTitle(row) {
 
 function metricCode(value, row = null) {
   const label = labelMetric(value, row).toLowerCase();
+  if (label.includes("balanced")) return "Bal acc";
   if (label.includes("macro")) return "mAUROC";
   if (label.includes("spearman")) return "rho";
   if (label.includes("auroc")) return "AUROC";
@@ -1227,8 +1229,9 @@ function conceptualOverview(stem, outDir) {
   body.push(`<rect x="1540" y="204" width="300" height="185" rx="10" class="card shadow"/>`);
   body.push(`<text x="1564" y="244" class="panel-title">Tabular models</text>`);
   body.push(textBlock(1564, 276, ["Elastic net and XGBoost", "5-fold out-of-fold predictions", "Endpoint-level metrics"], { cls: "small", lineHeight: 22 }));
-  body.push(`<rect x="1564" y="342" width="96" height="24" rx="12" fill="#DBEAFE"/><text x="1612" y="359" text-anchor="middle" class="tiny">AUROC</text>`);
-  body.push(`<rect x="1674" y="342" width="116" height="24" rx="12" fill="#DCFCE7"/><text x="1732" y="359" text-anchor="middle" class="tiny">Spearman r</text>`);
+  body.push(`<rect x="1564" y="342" width="74" height="24" rx="12" fill="#DBEAFE"/><text x="1601" y="359" text-anchor="middle" class="tiny">AUROC</text>`);
+  body.push(`<rect x="1650" y="342" width="104" height="24" rx="12" fill="#DCFCE7"/><text x="1702" y="359" text-anchor="middle" class="tiny">Spearman r</text>`);
+  body.push(`<rect x="1766" y="342" width="66" height="24" rx="12" fill="#FDE68A"/><text x="1799" y="359" text-anchor="middle" class="tiny">Bal acc</text>`);
 
   body.push(`<rect x="1540" y="604" width="300" height="155" rx="10" fill="#FFF7ED" stroke="#D9822B" stroke-width="1.8"/>`);
   body.push(`<text x="1564" y="644" class="panel-title">End-to-end alternatives</text>`);
@@ -1334,7 +1337,8 @@ function conceptualOverviewV2(stem, outDir) {
   body.push(textBlock(1560, 284, ["Elastic net and XGBoost", "5-fold out-of-fold predictions", "same endpoint splits and metrics"], { cls: "small", lineHeight: 22 }));
   body.push(chip(1560, 382, "mAUROC", { width: 72, fill: "#DBEAFE", stroke: "#BFDBFE" }));
   body.push(chip(1648, 382, "AUROC", { width: 66, fill: "#DBEAFE", stroke: "#BFDBFE" }));
-  body.push(chip(1730, 382, "rho", { width: 50, fill: "#DCFCE7", stroke: "#BBF7D0" }));
+  body.push(chip(1728, 382, "Bal acc", { width: 70, fill: "#FDE68A", stroke: "#FCD34D" }));
+  body.push(chip(1560, 414, "rho", { width: 50, fill: "#DCFCE7", stroke: "#BBF7D0" }));
   body.push(`<path d="M1454 424 C1488 424 1498 328 1532 328" fill="none" class="rule" marker-end="url(#arrow)"/>`);
 
   body.push(`<rect x="1532" y="592" width="310" height="170" rx="8" fill="#FFF7ED" stroke="${palette.signatures_plus_MAF_stack}" stroke-width="1.8"/>`);

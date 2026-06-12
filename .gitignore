@@ -20,6 +20,11 @@ Thumbs.db
 results/work/
 results/cache/
 results/checkpoints/
+results/manuscript/**
+!results/manuscript/
+!results/manuscript/.gitignore
+!results/manuscript/.gitkeep
+manifests/manuscript_artifact_manifest.csv
 w/
 scratch/
 .benchmarks/
@@ -29,7 +34,6 @@ cgr_validation_results/research/experiments/supporting/2026_05_14_unified_uga_lo
 cgr_validation_results/research/assets/EXP023_tcga_brca_hrd/TCGA-BRCA/sigprofiler_results/Assignment_Solution/Activities/Decomposed_MutationType_Probabilities.txt
 data/GRCH37/GCF_000001405.13/GCF_000001405.13_GRCh37_genomic.fna
 data/GRCH37/GCF_000001405.13/GCF_000001405.13_GRCh37_genomic.fna.gz
-results/manuscript/canonical/main_panel_oof_predictions.csv
 results/tables/main_manuscript_complete_panel_oof_predictions.csv
 results/tables/unified_locked_data_tcga_signature_endpoints_signature_exposure_predictions_checkpoint.csv
 results/tables/muat_style_tcga_comparator_cancer_type_top20_comparable_muat_compatible_events.tsv.gz

@@ -25,7 +25,7 @@ The command prints a short human-readable checklist and writes the full report t
 python scripts/reproduce_manuscript.py --datasets-dir ../github_exports_datasets --strict
 ```
 
-The strict command validates every active file under `results/manuscript`, uses large active artifacts directly from the readable sibling bundle when they are intentionally absent from Git, checks Bio MAF v4 resources, confirms top-20 and HRD binary endpoints, verifies the Bio MAF v4 S4/S5/S6 outputs, scans active configs/source/docs/manifests for disallowed external path dependencies, and writes repo plus dataset read audits under `results/logs/`.
+The strict command validates active source/result tables, uses large active artifacts directly from the readable sibling bundle when they are intentionally absent from Git, checks Bio MAF v4 resources, confirms top-20 and HRD binary endpoints, verifies that generated manuscript outputs are not tracked for GitHub, scans active configs/source/docs/manifests for disallowed external path dependencies, and writes repo plus dataset read audits under `results/logs/`.
 
 To check the sibling dataset folder without copying files back into the checkout:
 
@@ -41,7 +41,7 @@ The one-line reviewer command for full regeneration is:
 python scripts/reviewer_workflow.py reproduce --datasets-dir ../github_exports_datasets
 ```
 
-It verifies required dataset assets, runs strict validation, runs the active manuscript experiments, and regenerates manuscript tables/figures.
+It verifies required dataset assets, runs strict validation, runs the active manuscript experiments, and regenerates manuscript tables/figures into the ignored local `results/manuscript/` output directory.
 
 The underlying active full-run driver is:
 

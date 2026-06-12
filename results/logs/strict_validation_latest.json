@@ -1,7 +1,22 @@
 {
   "bio_maf_v4": {
-    "bio_maf_v4_required_outputs": 14,
-    "s6_rows": 112
+    "bio_maf_v4_endpoint_rows": 48,
+    "bio_maf_v4_feature_count": 948,
+    "bio_maf_v4_nested_policy_endpoints": [
+      "HRD_LOH",
+      "HRD_LST",
+      "HRD_Score",
+      "HRD_TAI",
+      "OS",
+      "PARPi7",
+      "PFI",
+      "cancer_type_top20",
+      "eCARD",
+      "hrd_binary_24",
+      "hrd_binary_33",
+      "hrd_binary_42"
+    ],
+    "bio_maf_v4_required_source_outputs": 8
   },
   "dataset_read_audit": {
     "datasets_dir": "../github_exports_datasets",
@@ -67,23 +82,29 @@
     "required_only": false
   },
   "main_results": {
-    "canonical_rows": 53,
     "endpoints": [
+      "HRD_LOH",
+      "HRD_LST",
       "HRD_Score",
+      "HRD_TAI",
       "OS",
+      "PARPi7",
+      "PFI",
       "cancer_type_top20",
       "damage_class",
+      "eCARD",
       "hrd_binary_24",
       "hrd_binary_33",
       "hrd_binary_42"
-    ]
+    ],
+    "source_rows": 96
   },
   "manifests": {
     "data_manifest": {
       "dataset_backed_examples": [],
       "dataset_backed_files_checked": 0,
-      "manifest_rows": 23,
-      "repo_files_checked": 23
+      "manifest_rows": 28,
+      "repo_files_checked": 28
     },
     "large_assets_manifest": {
       "dataset_backed_examples": [
@@ -100,26 +121,14 @@
       "manifest_rows": 43,
       "repo_files_checked": 35
     },
-    "manuscript_artifact_manifest": {
-      "dataset_backed_examples": [],
-      "dataset_backed_files_checked": 0,
-      "manifest_rows": 204,
-      "repo_files_checked": 204
-    },
     "reproducibility_manifest": "passed"
   },
-  "manuscript": {
-    "dataset_backed_required_files": 0,
-    "main_endpoints": [
-      "HRD_Score",
-      "OS",
-      "cancer_type_top20",
-      "damage_class",
-      "hrd_binary_24",
-      "hrd_binary_33",
-      "hrd_binary_42"
-    ],
-    "required_files": 88
+  "manuscript_outputs": {
+    "generated_outputs_tracked": 0,
+    "git_index_checked": true,
+    "local_generated_files_present": 202,
+    "output_dir": "results/manuscript",
+    "tracked_policy_files": 2
   },
   "read_audit": {
     "allowed_roots": [
@@ -127,7 +136,7 @@
       "../github_exports_datasets"
     ],
     "outside_root_reads": 0,
-    "read_count": 561,
+    "read_count": 237,
     "sample_relative_paths": [
       "config/endpoint_registry.yaml",
       "config/experiment_settings.explicit_bio_maf.yaml",
@@ -137,10 +146,12 @@
       "config/experiment_settings.muat_top20_comparable.yaml",
       "config/experiment_settings.strict_no_leakage.yaml",
       "config/feature_resources/clinical_bio_v4_sources/2024-06-18_intogen-drivers/compendium_cancer_genes.tsv",
+      "config/feature_resources/clinical_bio_v4_sources/2024-06-18_intogen-drivers/desktop.ini",
       "config/feature_resources/clinical_bio_v4_sources/2024-06-18_intogen-drivers/license.txt",
       "config/feature_resources/clinical_bio_v4_sources/2024-06-18_intogen-drivers/readme.txt",
       "config/feature_resources/clinical_bio_v4_sources/2024-06-18_intogen-drivers/unfiltered_drivers.tsv",
       "config/feature_resources/clinical_bio_v4_sources/cancerhotspots_github_tree.json",
+      "config/feature_resources/clinical_bio_v4_sources/desktop.ini",
       "config/feature_resources/clinical_bio_v4_sources/hotspot_variant_file.txt",
       "config/feature_resources/clinical_bio_v4_sources/hotspots_v3.xlsx",
       "config/feature_resources/clinical_bio_v4_sources/intogen-drivers-20240920.zip",
@@ -148,6 +159,7 @@
       "config/feature_resources/clinical_bio_v4_sources/v3_multi_type_residue.txt",
       "config/feature_resources/clinical_bio_v4_sources/v3_multi_type_variant_file.txt",
       "config/feature_resources/curated_pathways.yaml",
+      "config/feature_resources/desktop.ini",
       "config/feature_resources/hgnc_symbol_aliases.tsv",
       "config/feature_resources/oncokb_cancer_genes.tsv",
       "config/feature_resources/resource_manifest.json",
@@ -158,8 +170,10 @@
       "data/grch37/dataset_catalog.json",
       "data/grch37/gcf_000001405.13/chr_mapping.json",
       "data/grch37/gcf_000001405.13/gcf_000001405.13_grch37_genomic.fna.fai",
+      "data/processed/desktop.ini",
       "data/processed/readme.md",
       "data/raw/.gitignore",
+      "data/raw/desktop.ini",
       "data/raw/readme.md",
       "data_manifest.csv",
       "data_not_included.md",
@@ -173,15 +187,10 @@
       "docs/representation_specs/standard_sbs96_id83.md",
       "docs/representation_specs/uga_kme_rbf.md",
       "docs/reviewer_audit_smart_goal.md",
-      "docs/reviewer_quickstart.md",
-      "docs/revision_response_analyses.md",
-      "docs/script_methodology_audit.md",
-      "environment/environment.yml",
-      "environment/requirements-optional.txt",
-      "environment/requirements.txt"
+      "docs/reviewer_quickstart.md"
     ],
-    "unique_read_count": 409
+    "unique_read_count": 210
   },
   "status": "passed",
-  "validated_utc": "2026-06-12T12:12:11.214319+00:00"
+  "validated_utc": "2026-06-12T13:02:05.757931+00:00"
 }

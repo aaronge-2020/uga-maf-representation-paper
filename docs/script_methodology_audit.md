@@ -42,4 +42,4 @@ python scripts/reproduce_manuscript.py --datasets-dir ../github_exports_datasets
 python scripts/reviewer_workflow.py reproduce --datasets-dir ../github_exports_datasets --dry-run
 ```
 
-The strict command validates active manuscript artifacts, manifests, dataset-backed large assets, and read boundaries. The dry run confirms a collaborator can follow the published workflow without launching expensive model jobs.
+The strict command validates active source result tables, manifests, dataset-backed large assets, manuscript-output tracking policy, and read boundaries. The dry run confirms a collaborator can follow the published workflow without launching expensive model jobs.

@@ -1,8 +1,0 @@
-Endpoint,Cohort/source,N,Task,Primary metric,Label
-Kucab damage class,Kucab mutagen-treated clone mutation catalogues,259,Grouped multiclass,macro-AUROC,curated DNA damage class from Kucab treatment metadata
-HRD score,TCGA-BRCA HRD labels with MC3 mutation features,772,Regression,Spearman r,continuous HRD score
-HRD24 high/low,TCGA-BRCA HRD labels with MC3 mutation features,772,Binary classification,AUROC,HRD-high versus HRD-low at threshold 24
-HRD33 high/low,TCGA-BRCA HRD labels with MC3 mutation features,772,Binary classification,AUROC,HRD-high versus HRD-low at threshold 33
-HRD42 high/low,TCGA-BRCA HRD labels with MC3 mutation features,772,Binary classification,AUROC,HRD-high versus HRD-low at threshold 42
-Cancer type (top 20),TCGA MC3 clinical endpoint panel,"8,800",Multiclass classification,macro-AUROC,fixed top-20 TCGA cancer type classification
-Overall survival,TCGA MC3 clinical endpoint panel,"9,986",Survival,Harrell C-index,overall survival time-to-event endpoint

@@ -8,7 +8,7 @@ Make `github_exports` understandable and reproducible for a new manuscript revie
 - the Hugging Face-style dataset bundle at `github_exports_datasets/`;
 - Python, pip, and Node.js.
 
-The reviewer must be able to discover where TCGA/MC3, TCGA-BRCA HRD, KUCAB/Mendeley, PCAWG/PanCancer, GRCh37, Bio MAF v4, COSMIC/signature resources, caches, and large manuscript artifacts live without reading internal manifests first.
+The reviewer must be able to discover where TCGA/MC3, TCGA-BRCA HRD, KUCAB/Mendeley, PCAWG/PanCancer, GRCh37, Bio MAF v4, COSMIC/signature resources, caches, and regenerated manuscript outputs live without reading internal manifests first.
 
 ## Measurable
 
@@ -22,7 +22,7 @@ Completion requires all of the following evidence from inside `github_exports`:
 - Active Python files under `scripts/` and `src/` compile with zero syntax failures.
 - No active code depends on the old external `cgr_validation` project folder or any other local folder outside the export.
 - Public docs name `cancer_type_top20`, include HRD binary endpoints, and avoid retired smaller-cancer-type or retired hashed-feature wording except validator guard patterns.
-- Bio MAF v4 S4/S5/S6 outputs remain present, and COSMIC/signature resources remain separate from Bio MAF v4 resources.
+- Bio MAF v4 source tables/resources remain present for regenerating S4/S5/S6 outputs, and COSMIC/signature resources remain separate from Bio MAF v4 resources.
 
 ## Achievable
 

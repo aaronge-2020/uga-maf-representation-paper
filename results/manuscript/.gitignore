@@ -1,2 +1,4 @@
-# Active manuscript artifacts in this directory are intended for GitHub.
-# Oversized files are ignored by the repository-root .gitignore and listed in LFS_MANIFEST.csv.
+# Generated manuscript outputs are local/regenerated and are not committed.
+*
+!.gitignore
+!.gitkeep

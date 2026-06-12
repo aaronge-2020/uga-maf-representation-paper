@@ -1,7 +1,0 @@
-Endpoint,N,Task,Source,Metric(s),Representation families
-HRD LOH,772,Regression,TCGA-BRCA HRD labels with MC3 mutation features,Spearman r,Bio MAF v4; Mutational burden; Mutational signatures; Signatures + Bio MAF v4
-HRD LST,772,Regression,TCGA-BRCA HRD labels with MC3 mutation features,Spearman r,Bio MAF v4; Mutational burden; Mutational signatures; Signatures + Bio MAF v4
-HRD TAI,772,Regression,TCGA-BRCA HRD labels with MC3 mutation features,Spearman r,Bio MAF v4; Mutational burden; Mutational signatures; Signatures + Bio MAF v4
-PARPi7,772,Regression,TCGA-BRCA HRD labels with MC3 mutation features,Spearman r,Bio MAF v4; Mutational burden; Mutational signatures; Signatures + Bio MAF v4
-PFI survival,"9,857",Survival,TCGA MC3 clinical endpoint panel,Harrell C-index,Bio MAF v4; Mutational burden; Mutational signatures; Signatures + Bio MAF v4
-eCARD,772,Regression,TCGA-BRCA HRD labels with MC3 mutation features,Spearman r,Bio MAF v4; Mutational burden; Mutational signatures; Signatures + Bio MAF v4

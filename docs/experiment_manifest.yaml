@@ -50,7 +50,7 @@ active_experiments:
 manuscript_build:
   entrypoint: src/utils/make_all_figures.py
   outputs_root: results/manuscript
-  required_artifacts_manifest: results/manuscript/manuscript_asset_manifest.json
+  github_tracking: ignored local outputs; regenerate from source result tables
   validation_script: scripts/reproduce_manuscript.py
 
 dataset_bundle:

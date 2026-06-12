@@ -73,7 +73,7 @@ Expected dataset locations in the companion bundle:
 python scripts/reviewer_workflow.py reproduce --datasets-dir ../github_exports_datasets --dry-run
 ```
 
-This verifies required dataset-backed assets, strictly validates manuscript artifacts and science guards, and dry-runs the full manuscript driver without launching expensive model jobs.
+This verifies required dataset-backed assets, strictly validates source result tables and science guards, checks that generated manuscript outputs are not tracked for GitHub, and dry-runs the full manuscript driver without launching expensive model jobs.
 
 Expected proof files:
 
