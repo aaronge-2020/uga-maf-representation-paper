@@ -30,7 +30,7 @@ REQUIRED_MODULES = {
     "xgboost": "xgboost==1.6.2",
     "matplotlib": "matplotlib==3.9.2",
     "optuna": "optuna==4.1.0",
-    "lifelines": "lifelines==0.30.0",
+    "sksurv": "scikit-survival==0.27.0",
     "torch": "torch==2.5.1",
     "requests": "requests==2.32.3",
     "statsmodels": "statsmodels==0.14.4",

@@ -1,38 +1,37 @@
-# MuAt Replication And Comparator Rigor
+# MuAt Reproduction And Comparator Rigor
 
-## Current Answer
+## Current Position
 
-We have not replicated the official MuAt TCGA-WES result. The active local output is a same-fold MuAt-compatible comparator for the fixed 20-class TCGA endpoint, not the official MuAt paper pipeline.
+This repository does not claim an official MuAt reproduction unless the official MuAt CLI and checkpoints are configured and run. The default manuscript claim is a MuAt-compatible TCGA-WES event-bag comparator evaluated on the same held-out folds as the corresponding tabular benchmark.
 
-The Bio MAF v4 top-20 manuscript benchmark is complete and strong: `signatures_plus_MAF_stack` with XGBoost reaches 0.7436 accuracy, 0.9091 top-3 accuracy, 0.9551 top-5 accuracy, and 0.9758 macro-AUROC on 8,800 patients across 20 fixed TCGA classes.
+The strict manuscript profile currently emphasizes `HRD_Score` and `hrd_binary_33` because those MuAt-compatible rows are measured against canonical tabular folds. Dedicated configs still support the fixed `cancer_type_top20` comparison; that path uses 20 TCGA classes and balanced accuracy as the primary metric.
 
 ## Paper Reference
 
 The MuAt paper's TCGA-WES reference point is 7,352 tumours across 20 tumour types, with 64.1% top-1 accuracy and 90.6% top-5 accuracy. It used MuAt's official mutation-attention training framework and paper-specific TCGA exome inclusion criteria.
 
-## Why Our Prior MuAt Output Was Not Comparable
+## Fixes Now Enforced
 
-| Issue | Why it matters | Fix now enforced |
+| Issue | Why it matters | Current handling |
 |---|---|---|
-| Endpoint mismatch | A narrower historical cancer-type task is not comparable to the paper's 20-type exome result | Active output tag is `cancer_type_top20_comparable` and uses the fixed manuscript class list |
-| Local model is not official MuAt | Reviewers can object to calling it a replication | Results are labeled `MuAt-compatible reimplementation` unless official MuAt CLI/checkpoints are configured |
-| Different patient set | Paper used 7,352 TCGA exomes; manuscript endpoint uses 8,800 matched-feature patients | Report the difference explicitly and compare as same-fold local comparator |
-| Vocabulary leakage risk | Learned token dictionaries could be influenced by held-out samples | Use fixed-hash motif, position, and annotation dictionaries |
-| Metric mismatch | Paper headline is accuracy, while manuscript often uses macro-AUROC | Select MuAt epochs by inner-fold accuracy and report accuracy/top-5 alongside macro-AUROC |
-| Split mismatch | Different folds can obscure whether model differences are real | Use canonical `cancer_type_top20` folds from the Bio MAF v4 main benchmark |
+| Local model is not official MuAt | Reviewers can object to calling it a replication | Results are labelled `MuAt-compatible reimplementation` unless official MuAt CLI/checkpoints are available |
+| Pooling mismatch | The source model used attention-weighted set pooling, while the old local code used masked mean pooling | `MuAtCompatibleModel` now uses learned attention-weighted set pooling and reports those weights in the attention summary |
+| Fixed architecture | A single 128-dimension, one-layer, one-head architecture could understate architecture sensitivity | Full configs run a limited inner-split search over embedding sizes 128/256/512, layer counts 1/2/4, and heads 1/2 |
+| Metric drift | Cancer-type text previously mixed accuracy, macro-AUROC, and balanced accuracy | `cancer_type_top20` uses balanced accuracy as the primary manuscript metric; accuracy/top-5 remain paper-facing comparability metrics |
+| Vocabulary leakage risk | Learned token dictionaries could be influenced by held-out samples | Manuscript configs use fixed-hash motif, position, and annotation dictionaries |
+| Biological feature mismatch | The paper is clear about sequence-context style encodings but less explicit about all auxiliary annotation tokens | The local event bag uses deterministic MAF/VEP-derived motif, 1-Mb position-bin, and genic/exonic/strand tokens; broader external-resource Bio MAF v4 annotations are tabular features, not MuAt inputs |
+| Split comparability | Different folds can obscure whether model differences are real | Full manuscript comparator runs use canonical folds from `results/tables/main_manuscript_complete_panel_oof_predictions.csv` where those rows are available |
 
-## Reviewer-Facing Position
+## Reviewer-Facing Framing
 
-This should not be framed as "we reproduced MuAt." The defensible framing is: "We implemented a MuAt-compatible TCGA-WES event-bag comparator and evaluated it on the same held-out folds as the tabular Bio MAF benchmark. This directly tests whether a mutation-attention event model dominates our feature representation under our endpoint definition, while avoiding claims about the official pretrained MuAt model."
+Use: "We implemented a MuAt-compatible TCGA-WES event-bag comparator with attention-weighted set pooling and limited architecture search, then evaluated it on the same held-out folds as the tabular benchmark where canonical splits were available."
 
-The stronger claim available now is that Bio MAF v4 exceeds the MuAt paper's quoted TCGA-WES accuracy reference on our fixed 20-class matched-feature endpoint. That is encouraging, but it is not a head-to-head official MuAt comparison until the official MuAt pipeline is installed and run under a predeclared protocol.
+Avoid: "We reproduced MuAt" unless the official package/checkpoints are used under a predeclared protocol.
 
-## Acceptance Criteria For The Rigorous Local Comparator
+## Acceptance Checks
 
-- Endpoint is exactly `cancer_type_top20`.
-- Result row has 8,800 samples and 20 classes.
-- Outer folds come from `results/tables/main_manuscript_complete_panel_oof_predictions.csv` for `cancer_type_top20`, `signatures_plus_MAF_stack`, `xgboost`.
-- Token dictionaries use `dictionary_mode: fixed_hash`.
-- Epoch selection uses inner-fold accuracy.
-- Final row reports accuracy, balanced accuracy, macro-F1, macro-AUROC, micro-AUROC, top-3 accuracy, top-5 accuracy, calibration, and paper-reference columns.
-- The fidelity report states that this is not official MuAt replication unless the official CLI status is available.
+- `pooling_mode` is `attention_weighted`.
+- Architecture-search configs include embedding sizes `128, 256, 512`, layers `1, 2, 4`, and heads `1, 2`.
+- `cancer_type_top20` reports 20 classes with balanced accuracy as the primary metric.
+- Fixed-hash dictionaries are used for manuscript comparisons.
+- The fidelity report states that the local model is not official MuAt unless the official CLI is available.

@@ -69,7 +69,6 @@ NOISE_FILENAMES = {
 }
 
 RESTORABLE_CACHE_GLOBS = [
-    "results/cache/features/muat_style_tcga_comparator/fold_checkpoints/full/cancer_type_top20_fold0*",
 ]
 REMOVED_FEATURE_OPTIMIZER_TOKEN = "sc" + "out"
 REMOVED_EVENT_RUNNER_TOKEN = "run_" + "one_" + "hot_" + "event"
@@ -405,10 +404,12 @@ def generate_data_manifest() -> None:
 
 def purpose_for(path: Path) -> str:
     relative = rel(path)
-    if "muat_style_tcga_comparator/fold_checkpoints/full/cancer_type_top20" in relative:
-        return "MuAt-compatible cancer_type_top20 fold checkpoint cache"
+    if "muat_style_tcga_comparator/fold_checkpoints/full/HRD_Score" in relative:
+        return "MuAt-compatible HRD_Score fold checkpoint cache"
+    if "muat_style_tcga_comparator/fold_checkpoints/full/hrd_binary_33" in relative:
+        return "MuAt-compatible hrd_binary_33 fold checkpoint cache"
     if "muat_style_tcga_comparator/muat_compatible_events" in relative:
-        return "MuAt-compatible cancer_type_top20 event-token cache"
+        return "MuAt-compatible event-token cache"
     if "GRCh37" in relative:
         return "GRCh37 reference FASTA and metadata"
     if "mc3.v0.2.8.PUBLIC.maf" in relative:
@@ -422,7 +423,11 @@ def purpose_for(path: Path) -> str:
 
 def source_for(path: Path) -> str:
     relative = rel(path)
-    if "muat_style_tcga_comparator/fold_checkpoints/full/cancer_type_top20" in relative:
+    if "muat_style_tcga_comparator/fold_checkpoints/full/HRD_Score" in relative:
+        return "Bundled local export; regenerable by full MuAt-compatible HRD_Score comparator"
+    if "muat_style_tcga_comparator/fold_checkpoints/full/hrd_binary_33" in relative:
+        return "Bundled local export; regenerable by full MuAt-compatible hrd_binary_33 comparator"
+    if "muat_style_tcga_comparator/fold_checkpoints/full/" in relative:
         return "Bundled local export; regenerable by full MuAt-compatible comparator"
     if "muat_style_tcga_comparator/muat_compatible_events" in relative:
         return "Bundled local export; regenerable from MC3 mutation calls"
@@ -465,27 +470,33 @@ def generate_large_assets_manifest() -> None:
         destination = item.get("restore_destination")
         if not destination or destination in seen:
             continue
-        size_text = str(item.get("bytes", "0"))
+        repo_path = repo_manifest_path(destination)
+        if repo_path.exists():
+            size_text = str(repo_path.stat().st_size)
+            digest = sha256_file(repo_path)
+        else:
+            size_text = str(item.get("bytes", "0"))
+            digest = item.get("sha256", "")
         try:
             size = int(size_text)
         except ValueError:
             size = 0
-        if size < GITHUB_SIZE_THRESHOLD_BYTES and not destination.startswith("results/cache/features/muat_style_tcga_comparator/fold_checkpoints/full/cancer_type_top20_fold0"):
+        if size < GITHUB_SIZE_THRESHOLD_BYTES:
             continue
         dataset_relative = item.get("dataset_relative_path") or destination
-        repo_path = repo_manifest_path(destination)
         rows.append(
             {
                 "path": destination,
                 "bytes": size_text,
                 "purpose": purpose_for(repo_path),
                 "source_or_url": source_for(repo_path),
-                "sha256": item.get("sha256", ""),
+                "sha256": digest,
                 "destination": "Readable path in sibling datasets folder or Hugging Face dataset",
                 "dataset_relative_path": dataset_relative,
                 "restore_instructions": f"Use directly from --datasets-dir at {dataset_relative}; validate with: {DIRECT_STRICT_COMMAND}",
             }
         )
+        seen.add(destination)
     fields = [
         "path",
         "bytes",

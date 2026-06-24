@@ -251,8 +251,8 @@
       "display": "Elastic net"
     },
     "cox_ph": {
-      "description": "Penalized Cox proportional hazards model.",
-      "display": "Cox PH"
+      "description": "scikit-survival CoxNet proportional-hazards model.",
+      "display": "CoxNet"
     },
     "MuAt-compatible reimplementation": {
       "description": "Local MuAt-compatible Q/K/V attention model trained on MC3 mutation bags without official checkpoints.",
@@ -275,6 +275,10 @@
     "elastic_net": {
       "description": "Elastic-net regularized linear or generalized linear model.",
       "display": "Elastic net"
+    },
+    "cox_ph": {
+      "description": "scikit-survival CoxNet proportional-hazards model.",
+      "display": "CoxNet"
     }
   },
   "representation": {

@@ -1,0 +1,68 @@
+runtime_profile: muat-compatible-architecture-search-smoke
+tree_method: hist
+cv_folds: 2
+endpoint_registry: config/endpoint_registry.yaml
+
+feature_cache:
+  enabled: true
+  dir: results/cache/features
+  validate_fasta: true
+
+experiments:
+  main_manuscript_complete_panel:
+    enabled: false
+  muat_style_tcga_comparator:
+    enabled: true
+    output_tag: architecture_search_smoke
+    endpoints:
+      - cancer_type_top20
+    primary_task: cancer_type_top20
+    primary_metric: balanced_accuracy
+    selection_metric: balanced_accuracy
+    nested_validation: true
+    nested_validation_in_smoke: true
+    run_manuscript_endpoints: false
+    secondary_endpoints: []
+    smoke_run: true
+    smoke_folds: 2
+    smoke_samples_per_type: 3
+    epochs: 1
+    architecture_search_epochs: 1
+    batch_size: 2
+    eval_batch_size: 2
+    embed_dim: 128
+    attention_heads: 1
+    num_layers: 1
+    pooling_mode: attention_weighted
+    architecture_search_enabled: true
+    architecture_search_embed_dims: [128, 256, 512]
+    architecture_search_num_layers: [1, 2, 4]
+    architecture_search_attention_heads: [1, 2]
+    feature_dim: 24
+    dropout: 0.1
+    scheduler: cosine
+    lr: 0.0006
+    momentum: 0.9
+    weight_decay: 0.0
+    max_events_per_sample: 5000
+    maf_chunksize: 500000
+    dictionary_mode: fixed_hash
+    motif_hash_buckets: 1024
+    position_hash_buckets: 2048
+    annotation_hash_buckets: 256
+    device: cpu
+    amp: false
+    torch_num_threads: 2
+    dataloader_workers: 0
+    preload_tensors_to_device: false
+    trim_to_observed_events: true
+    resume_checkpoints: true
+    epoch_checkpoints: false
+    progress_interval_epochs: 1
+    official_mutation_type: snv+mnv+indel
+
+outputs:
+  make_figures_after_run: false
+  cleanup_work_dir_after_run: false
+  strict_manuscript: false
+  strict_no_leakage: true

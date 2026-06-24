@@ -89,7 +89,9 @@ python scripts/reviewer_workflow.py reproduce --datasets-dir ../github_exports_d
 
 This single command verifies assets, runs strict validation, runs the active manuscript experiments, and regenerates manuscript tables/figures through `src/run_all_experiments.py`.
 
-The full run is computationally expensive. If it stops before the expensive jobs begin, first inspect `results/logs/reviewer_setup_check.json`; it will list the missing dependency, file, or dataset path and the command needed to fix it.
+The full run is computationally expensive. The last recorded cold strict rerun took about 28 hours on the author's Windows workstation before small validation and figure-rendering overhead: 6.2 hours for `main_manuscript_complete_panel` and 21.7 hours for a now-superseded CPU MuAt-compatible `cancer_type_top20` comparator. The active MuAt-compatible manuscript comparator is HRD-only (`HRD_Score` and `hrd_binary_33`) and has no separate completed cold-run timing log yet. Checkpoint and cache reuse can make reruns shorter.
+
+If it stops before the expensive jobs begin, first inspect `results/logs/reviewer_setup_check.json`; it will list the missing dependency, file, or dataset path and the command needed to fix it.
 
 ## 5. After GitHub Upload Preparation
 

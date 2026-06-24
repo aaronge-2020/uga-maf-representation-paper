@@ -1,0 +1,26 @@
+{
+  "count_feature_mode": "none",
+  "dictionary_mode": "fixed_hash",
+  "dictionary_sizes": {
+    "annotation": 258,
+    "motif": 1026,
+    "position": 2050
+  },
+  "elapsed_seconds": 78235.745,
+  "encoded_event_count_max": 5000,
+  "encoded_event_count_median": 108.0,
+  "encoded_event_count_min": 1,
+  "event_cache_hit": false,
+  "event_cache_key": "8a04eedcf76941d5e187801e",
+  "event_cache_path": "${REPRO_ROOT}\\results\\cache\\features\\muat_style_tcga_comparator\\muat_compatible_events_8a04eedcf76941d5e187801e.csv.gz",
+  "max_events_per_sample": 5000,
+  "n_events": 3416147,
+  "n_patients": 8800,
+  "official_cli_status": "not_available",
+  "primary_endpoint": "cancer_type_top20",
+  "representation": "MuAt-compatible reimplementation",
+  "secondary_endpoints": [],
+  "smoke_run": false,
+  "torch_device": "cpu",
+  "torch_num_threads": 8
+}

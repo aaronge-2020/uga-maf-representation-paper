@@ -64,7 +64,7 @@ def _display_path(path: str | Path | None) -> str:
 def validate_environment(settings: dict, paths: dict, ctx: RunnerContext) -> list[dict[str, object]]:
     """Run cheap reproducibility checks before expensive work."""
     rows: list[dict[str, object]] = []
-    required_modules = ["yaml", "numpy", "pandas", "sklearn", "xgboost", "optuna", "lifelines", "torch"]
+    required_modules = ["yaml", "numpy", "pandas", "sklearn", "xgboost", "optuna", "sksurv", "torch"]
     for module in required_modules:
         rows.append({"kind": "python_module", "name": module, "status": "ok" if importlib.util.find_spec(module) else "missing"})
     rows.append(

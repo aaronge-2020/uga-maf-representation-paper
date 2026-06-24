@@ -1,0 +1,8 @@
+G:\My Drive\chaos-game-representation_pipeline_Jan10\github_exports\src\utils\nested_oof.py:616: UserWarning: all coefficients are zero, consider decreasing alpha.
+  model.fit(x_train, y_structured)
+G:\My Drive\chaos-game-representation_pipeline_Jan10\github_exports\src\utils\nested_oof.py:616: UserWarning: all coefficients are zero, consider decreasing alpha.
+  model.fit(x_train, y_structured)
+G:\My Drive\chaos-game-representation_pipeline_Jan10\github_exports\src\utils\nested_oof.py:616: UserWarning: all coefficients are zero, consider decreasing alpha.
+  model.fit(x_train, y_structured)
+G:\My Drive\chaos-game-representation_pipeline_Jan10\github_exports\scripts\rerun_survival_cox.py:80: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  return pd.concat([kept, new_frame], ignore_index=True, sort=False)

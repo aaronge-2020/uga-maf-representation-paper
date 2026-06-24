@@ -43,7 +43,7 @@ CORRESPONDING = [
 KEYWORDS = (
     "Somatic mutations; Mutational signatures; Mutation annotation format; "
     "Representation learning; Homologous recombination deficiency; Tumour type; "
-    "Survival analysis; Cox proportional hazards; MuAt; XGBoost"
+    "Survival analysis; scikit-survival CoxNet; MuAt-compatible; XGBoost"
 )
 
 ABSTRACT = {
@@ -61,20 +61,20 @@ ABSTRACT = {
         "mutational spectra, Bio MAF v4 features, and combined Signatures + Bio MAF v4 "
         "features. Tabular learners used five outer folds, an inner train/validation split for "
         "hyperparameter selection, final refitting on the full outer-training fold, and pooled "
-        "out-of-fold metrics. Survival was modeled with Cox proportional hazards and Harrell's "
-        "C-index. We also added a MuAt-compatible event-bag comparator on the same manuscript "
-        "endpoints and outer folds where possible."
+        "out-of-fold metrics. Survival was modeled with scikit-survival CoxNet and Harrell's "
+        "C-index. We also added a MuAt-compatible event-bag comparator for the TCGA-BRCA "
+        "HRD endpoints, using the same endpoint-specific outer folds where configured."
     ),
     "Results": (
         "Mutational signatures improved over burden for XGBoost on Kucab damage class, HRD "
         "score, HRD33 high/low status, and cancer-type prediction. The strongest tabular "
         "performance generally came from Signatures + MAF stack with XGBoost: HRD score reached "
-        "0.749 Spearman r, HRD33 high/low reached 0.886 AUROC, and the fixed top-20 cancer-type "
-        "endpoint was evaluated by balanced accuracy. Overall survival was best predicted by mutational signatures under Cox PH "
-        "(C-index 0.607), while richer event-level MAF features did not improve this survival "
-        "endpoint. The MuAt-compatible comparator was evaluated by balanced accuracy on "
-        "the directly comparable fixed TCGA-WES top-20 task and compared with the tuned "
-        "Signatures + MAF stack XGBoost baseline."
+        "0.781 Spearman r, HRD33 high/low reached 0.867 AUROC, and the fixed top-20 cancer-type "
+        "endpoint was evaluated by balanced accuracy. Overall survival was best predicted by the "
+        "combined signatures + Bio MAF v4 representation under CoxNet (C-index 0.647), with "
+        "Bio MAF v4 alone reaching 0.632 and signatures alone reaching 0.607. The active MuAt-compatible comparator was evaluated on HRD score and "
+        "HRD33 high/low status and compared with the tuned Signatures + MAF stack XGBoost "
+        "baselines on the same endpoint-specific folds."
     ),
     "Conclusions": (
         "Representation choice is a first-order determinant of prediction performance for "
@@ -110,12 +110,12 @@ FIGURE_CAPTIONS = [
     (
         "figure_2_signature_baselines.png",
         "Figure 2. Signature baselines compared with mutational burden.",
-        "Nested five-fold out-of-fold performance is shown for burden and mutational signatures across the five main endpoints. Metrics are Spearman r for HRD score, AUROC for HRD33, macro-AUROC for Kucab damage class, balanced accuracy for top-20 cancer type, and Harrell C-index for survival.",
+        "Nested five-fold out-of-fold performance is shown for burden and mutational signatures across the non-survival model-comparison endpoints. Survival CoxNet C-index results are reported separately in Figure 5 and the tables.",
     ),
     (
         "figure_3_geometry_vs_signatures.png",
         "Figure 3. MuAt-compatible event-bag comparator.",
-        "The MuAt-compatible reimplementation is evaluated on the manuscript endpoints rather than as a reproduction of the original MuAt TCGA-20 benchmark. For TCGA endpoints, the comparator uses the same held-out folds as the canonical tabular benchmark where configured.",
+        "The MuAt-compatible reimplementation is evaluated on raw HRD score and HRD33 high/low rather than as a reproduction of the original MuAt TCGA-20 benchmark. The comparator uses the same held-out folds as the corresponding canonical tabular benchmark.",
     ),
     (
         "figure_4_maf_stack_vs_signatures.png",
@@ -123,9 +123,9 @@ FIGURE_CAPTIONS = [
         "Mutational signatures, event-level MAF-stack features, and their concatenation are compared for each endpoint and tabular model family. The combined representation is strongest for HRD score, HRD33 status, and cancer type under XGBoost.",
     ),
     (
-        "figure_5_cross_endpoint_summary.png",
-        "Figure 5. Cross-endpoint representation summary.",
-        "The summary heatmap reports the canonical main-panel scores. MuAt-compatible results are displayed as a separate event-bag comparator, and overall survival is reported as a Cox PH C-index rather than a binary event AUROC.",
+        "figure_5_overall_survival_cox.png",
+        "Figure 5. Overall survival CoxNet benchmark.",
+        "Overall-survival C-index is shown for the scikit-survival CoxNet benchmark across burden, signatures, Bio MAF v4, and combined signature-plus-Bio MAF v4 representations.",
     ),
 ]
 
@@ -379,8 +379,8 @@ def add_performance_table(doc: Document, table_dir: Path) -> None:
     reps = [
         ("Burden", "Mutational burden"),
         ("Signatures", "Mutational signatures"),
-        ("MAF stack", "Event-level MAF stack"),
-        ("Signatures + MAF", "Signatures + MAF stack"),
+        ("Bio MAF v4", "Bio MAF v4"),
+        ("Signatures + bio MAF", "Signatures + Bio MAF v4"),
     ]
     rows: list[list[str]] = []
     group_rows: set[int] = set()
@@ -397,8 +397,8 @@ def add_performance_table(doc: Document, table_dir: Path) -> None:
     add_booktabs_table(
         doc,
         "Table 2. Main-panel performance by endpoint and representation.",
-        "Scores are pooled out-of-fold primary metrics. Elastic net and XGBoost columns apply to tabular representations; the Cox PH value is shown in the XGBoost/Cox PH column for survival. MuAt-compatible is shown as a separate event-bag comparator.",
-        ["Endpoint / representation", "Elastic net", "XGBoost / Cox PH", "MuAt-compatible"],
+        "Scores are pooled out-of-fold primary metrics. Elastic net and XGBoost columns apply to tabular representations; the CoxNet value is shown in the XGBoost/CoxNet column for survival. MuAt-compatible is shown as a separate event-bag comparator.",
+        ["Endpoint / representation", "Elastic net", "XGBoost / CoxNet", "MuAt-compatible"],
         rows,
         group_rows=group_rows,
         widths=[4.2, 1.35, 1.45, 1.45],
@@ -422,7 +422,7 @@ def add_representation_table(doc: Document, table_dir: Path) -> None:
     add_booktabs_table(
         doc,
         "Table 3. Representation summary and dimensionality.",
-        "Feature dimensionality is reported for tabular matrices; MuAt-compatible uses padded mutation bags and learned embeddings rather than a fixed tabular feature count.",
+        "Feature-dimensionality ranges are observed across endpoint/model rows because spectrum channels vary by endpoint data source and Bio MAF v4 blocks are selected within each outer fold's inner-validation split; MuAt-compatible uses padded mutation bags and learned embeddings rather than fixed tabular columns.",
         ["Representation", "Input signal", "Dimensionality", "Evaluated models"],
         rows,
         widths=[1.65, 4.1, 1.2, 1.75],
@@ -601,7 +601,7 @@ def build_docx(repo_root: Path, output: Path) -> None:
     add_paragraphs(
         doc,
         [
-            "All analyses were regenerated inside the project repository using an endpoint registry and strict completion gate. The main panel contains five endpoints chosen to span mechanism, DNA repair deficiency, tumour identity, and clinical outcome. Binary overall-survival classification was removed from the main benchmark and replaced by Cox proportional hazards modeling of TCGA CDR overall survival.",
+            "All analyses were regenerated inside the project repository using an endpoint registry and strict completion gate. The main panel contains five endpoints chosen to span mechanism, DNA repair deficiency, tumour identity, and clinical outcome. Binary overall-survival classification was removed from the main benchmark and replaced by scikit-survival CoxNet proportional-hazards modeling of TCGA CDR overall survival.",
             "The five primary endpoint families were Kucab DNA damage class; continuous HRD score; HRD-high versus HRD-low binary thresholds; TCGA cancer type among the fixed twenty-class registry; and TCGA CDR overall survival. Survival endpoints required positive follow-up time, at least 200 eligible samples, and at least 25 events.",
         ],
     )
@@ -627,8 +627,9 @@ def build_docx(repo_root: Path, output: Path) -> None:
         doc,
         [
             "Each endpoint used five outer folds. For every outer fold, the 80% outer-training partition was split into inner-training and inner-validation partitions. Candidate models were trained only on the inner-training set, selected only on the inner-validation set, refit once on the full 80% outer-training set using the selected hyperparameters, and predicted once on the 20% held-out outer fold. Primary metrics were computed after pooling all out-of-fold predictions over the full cohort.",
-            "Classification used stratified splits when feasible; survival used event-stratified splits; regression used shuffled K-fold splits; and Kucab analyses used grouped splitting to prevent treatment-agent leakage across folds. Logistic elastic-net models searched C values of 0.001, 0.01, 0.1, 1, and 10 with l1_ratio values of 0, 0.25, 0.5, 0.75, and 1. Regression elastic net and Cox PH models searched alpha or penalizer values from 1e-4 to 10 with the same l1_ratio grid. XGBoost used seeded candidate search with inner-validation early stopping; final refits used exactly the selected number of boosting rounds.",
-            "Primary metrics were Spearman r for continuous endpoints, AUROC for binary endpoints, macro-AUROC for Kucab damage class, balanced accuracy for the fixed top-20 cancer-type endpoint, and Harrell C-index for survival endpoints. Multiclass Kucab robustness was further summarized with micro-AUROC, balanced accuracy, macro-F1, and Cohen's kappa. Statistical comparisons used paired tests over pooled out-of-fold predictions with Benjamini-Hochberg FDR correction.",
+            "The current implementation uses one inner validation split per outer fold because the feature-generation and neural comparator experiments are expensive. This split is retained as a leakage-prevention and correctness check for the current manuscript rerun; broader repeated inner resampling is a future precision improvement rather than part of the present statistical claim.",
+            "Classification used stratified splits when feasible; survival used event-stratified splits; regression used shuffled K-fold splits; and Kucab analyses used grouped splitting to prevent treatment-agent leakage across folds. Logistic elastic-net models searched C values of 0.001, 0.01, 0.1, 1, and 10 with l1_ratio values of 0, 0.25, 0.5, 0.75, and 1. Regression elastic net searched alpha values from 1e-4 to 10 with the same l1_ratio grid. Survival used scikit-survival CoxnetSurvivalAnalysis with elastic-net penalties, l1_ratio values of 0.25, 0.5, 0.75, and 1.0, and alpha >= 1e-2 by default. XGBoost used seeded candidate search with inner-validation early stopping; final refits used exactly the selected number of boosting rounds.",
+            "Primary metrics were Spearman r for continuous endpoints, AUROC for binary endpoints, balanced accuracy for multiclass endpoints, and Harrell C-index for survival endpoints. Multiclass robustness was further summarized with macro-AUROC, micro-AUROC, macro-F1, and Cohen's kappa. Statistical comparisons used paired tests over pooled out-of-fold predictions with Benjamini-Hochberg FDR correction.",
         ],
     )
 
@@ -636,9 +637,10 @@ def build_docx(repo_root: Path, output: Path) -> None:
     add_paragraphs(
         doc,
         [
-            "The MuAt-compatible comparator follows the central structure reported for MuAt: separate motif, position, and annotation embeddings; concatenation of modality embeddings; Q/K/V self-attention; residual/normalization layers; a fully connected block; average pooling; and a 24-dimensional tumour feature layer before prediction. We label this model MuAt-compatible rather than MuAt because official MuAt package checkpoints were not used for the manuscript comparison.",
-            "The primary manuscript comparison evaluates this neural event-bag model on the same TCGA-WES endpoints as the tabular benchmark. The event tensor allows up to 5,000 mutation events per tumour; samples above this ceiling are deterministically truncated after sorting events by chromosome, position, and motif. In practice, most TCGA-WES tumours were far below this ceiling; the directly comparable cancer-type task is now the fixed top-20 TCGA benchmark defined from matched MC3 feature support.",
-            "The fixed top-20 TCGA cancer-type task is the active manuscript endpoint, so neural and tabular cancer-type comparisons share the same endpoint definition and fold structure.",
+            "The MuAt-compatible comparator follows the central structure reported for MuAt: separate motif, position, and annotation embeddings; concatenation of modality embeddings; stacked Q/K/V self-attention; residual/normalization layers; attention-weighted set pooling; and a 24-dimensional tumour feature layer before prediction. The limited architecture search evaluates embedding sizes 128, 256, and 512; self-attention layer counts 1, 2, and 4; and attention-head counts 1 and 2 on the inner split before outer-fold refitting. We label this model MuAt-compatible rather than MuAt because official MuAt package checkpoints were not used for the manuscript comparison.",
+            "The MuAt paper clearly specifies sequence-context style mutation encodings, but the exact auxiliary biological annotation vocabulary is not fully reproducible from the bundled manuscript sources. The local event bag therefore uses deterministic MAF/VEP-derived motif, 1-Mb position-bin, and genic/exonic/strand annotation tokens. Broader external-resource annotations are confined to Bio MAF v4 tabular features and are treated as part of the representation difference tested by the benchmark.",
+            "The active manuscript comparison evaluates this neural event-bag model only on raw HRD score and HRD33 high/low status. The event tensor allows up to 5,000 mutation events per tumour; samples above this ceiling are deterministically truncated after sorting events by chromosome, position, and motif. In practice, most TCGA-WES tumours were far below this ceiling.",
+            "The HRD endpoints are active because measured MuAt-compatible OOF rows are present for them. Cancer-type, Kucab, survival, HRD24, and HRD42 MuAt rows are not active manuscript comparator claims.",
         ],
     )
 
@@ -647,8 +649,8 @@ def build_docx(repo_root: Path, output: Path) -> None:
     add_paragraphs(
         doc,
         [
-            "In the strict main panel, XGBoost models using mutational signatures outperformed burden on Kucab damage class (0.636 vs 0.505 macro-AUROC), HRD score (0.704 vs 0.596 Spearman r), HRD33 high/low status (0.845 vs 0.811 AUROC), and cancer-type prediction by balanced accuracy. Elastic-net models showed the same qualitative gain for Kucab damage class and cancer type but not for every clinical endpoint, underscoring that signatures are strong but not universally dominant.",
-            "The survival result should be interpreted separately from the older binary-OS draft: overall survival is now a Cox PH endpoint evaluated by Harrell C-index. Under this survival analysis, mutational signatures achieved the strongest overall-survival C-index among the main tabular representations (0.607).",
+            "In the strict main panel, XGBoost models using mutational signatures outperformed burden on Kucab damage class (0.277 vs 0.114 balanced accuracy), HRD score (0.704 vs 0.596 Spearman r), HRD33 high/low status (0.845 vs 0.811 AUROC), and cancer-type prediction by balanced accuracy. Elastic-net models showed the same qualitative gain for Kucab damage class and cancer type but not for every clinical endpoint, underscoring that signatures are strong but not universally dominant.",
+            "The survival result should be interpreted separately from the older binary-OS draft: overall survival is now a time-to-event CoxNet endpoint evaluated by Harrell C-index. Under this survival analysis, the combined signatures + Bio MAF v4 representation achieved the strongest overall-survival C-index among the main tabular representations (0.647).",
         ],
     )
 
@@ -660,8 +662,8 @@ def build_docx(repo_root: Path, output: Path) -> None:
     add_paragraphs(
         doc,
         [
-            "Event-level MAF-stack features were most useful for endpoints where gene, locus, consequence, or event-level biology carries direct label information. With XGBoost, MAF stack alone improved cancer-type prediction relative to signatures by balanced accuracy, but it underperformed signatures for the mechanistic Kucab damage-class task (0.529 vs 0.636 macro-AUROC). This pattern supports the expected distinction between mutagen-mechanism endpoints, which are strongly sequence-context driven, and clinical or tumour-identity endpoints, which can benefit from broader annotation features.",
-            "The combined Signatures + MAF stack representation was the strongest practical tabular default. With XGBoost it reached 0.749 Spearman r for HRD score, 0.886 AUROC for HRD33 high/low, and the strongest balanced accuracy for cancer type. It did not improve overall survival, where signatures alone remained best under Cox PH.",
+            "Event-level MAF-stack features were most useful for endpoints where gene, locus, consequence, or event-level biology carries direct label information. With XGBoost, MAF stack alone improved cancer-type prediction relative to signatures by balanced accuracy, but it underperformed signatures for the mechanistic Kucab damage-class task (0.188 vs 0.277 balanced accuracy). This pattern supports the expected distinction between mutagen-mechanism endpoints, which are strongly sequence-context driven, and clinical or tumour-identity endpoints, which can benefit from broader annotation features.",
+            "The combined Signatures + MAF stack representation was the strongest practical tabular default. With XGBoost it reached 0.781 Spearman r for HRD score, 0.867 AUROC for HRD33 high/low, and the strongest balanced accuracy for cancer type. It was also strongest for overall survival under CoxNet in the current rerun.",
         ],
     )
 
@@ -673,7 +675,7 @@ def build_docx(repo_root: Path, output: Path) -> None:
     add_paragraphs(
         doc,
         [
-            "The MuAt-compatible comparator was added to avoid treating deep event-level models only as a conceptual future baseline. On the fixed 20-class TCGA cancer-type endpoint, it is evaluated by balanced accuracy against the tuned Signatures + MAF stack XGBoost model. On HRD score, HRD33 high/low, Kucab damage class, and overall survival, the MuAt-compatible model also did not exceed the best tabular result.",
+            "The MuAt-compatible comparator was added to avoid treating deep event-level models only as a conceptual future baseline. In the active manuscript comparison, it is evaluated on raw HRD score and HRD33 high/low status against the tuned Signatures + MAF stack XGBoost baselines on the matching folds.",
             "These results do not imply that the official pretrained MuAt model is ineffective. They show that, in this manuscript's strict TCGA-WES benchmark and local reimplementation, a mutation-attention architecture does not automatically outperform a leakage-safe, tuned tabular representation.",
         ],
     )
@@ -688,7 +690,7 @@ def build_docx(repo_root: Path, output: Path) -> None:
     add_paragraphs(
         doc,
         [
-            "No representation wins across every endpoint. Mutational signatures are a strong and efficient baseline; event-level MAF features capture biology that spectra can miss; and combined signature-plus-MAF features offer the best overall tabular default for HRD and tumour-identity endpoints. Survival remains difficult, and richer annotation stacks did not improve over signatures in the current Cox PH analysis.",
+            "No representation wins across every endpoint. Mutational signatures are a strong and efficient baseline; event-level MAF features capture biology that spectra can miss; and combined signature-plus-MAF features offer the best overall tabular default for HRD, tumour-identity, and the current CoxNet overall-survival endpoint. Survival remains difficult, with modest C-index values even under the validated scikit-survival implementation.",
             "The Kucab sparsity control downsampled WGS mutation inventories to budgets of 20, 41, 100, and 200 mutations per clone. These runs provide an exome-like stress test for the mechanistic endpoint and are reported in the supplementary tables. They make explicit that WGS-versus-WES mutation count differences can affect representation stability and should not be ignored when comparing mechanistic and clinical cohorts.",
         ],
     )
@@ -703,7 +705,7 @@ def build_docx(repo_root: Path, output: Path) -> None:
         [
             "This regenerated benchmark changes the interpretation of the original draft in three important ways. First, survival is now evaluated as time-to-event data with censoring rather than as binary event status. Second, high-dimensional tabular baselines are tuned within a nested out-of-fold framework, reducing the risk that poor performance reflects inadequate regularization. Third, the neural event-bag comparator is measured directly rather than invoked as an untested future alternative.",
             "The results support a pragmatic view of mutation-catalogue modeling. For mechanistic mutagen attribution, mutational spectra remain highly competitive because the label is closely tied to sequence-context processes. For HRD and cancer-type endpoints, event-level annotations add useful biological structure, and the combined Signatures + MAF stack representation performs best with XGBoost. For survival, predictive signal from mutation catalogues alone remains modest and appears sensitive to representation and censoring-aware modeling assumptions.",
-            "The MuAt-compatible model's weaker performance relative to tuned tabular models is scientifically plausible. Although the model permits 5,000 events per tumour, TCGA WES mutation bags are sparse in the present data, with median event counts near 100 for the primary TCGA comparison. The model was also trained locally rather than initialized from official MuAt checkpoints, and the manuscript endpoints include HRD and survival tasks that were not the original MuAt paper's primary tumour-typing benchmark. The result should therefore be read as a fair local comparator, not as a failure to reproduce the full MuAt PCAWG/TCGA/GEL study.",
+            "The MuAt-compatible model's weaker performance relative to tuned tabular models is scientifically plausible. Although the model permits 5,000 events per tumour, TCGA WES mutation bags are sparse in the present data, with median event counts near 100 for the HRD comparison. The model was also trained locally rather than initialized from official MuAt checkpoints, and the active manuscript endpoints are HRD tasks rather than the original MuAt paper's primary tumour-typing benchmark. The result should therefore be read as a fair local comparator, not as a failure to reproduce the full MuAt PCAWG/TCGA/GEL study.",
         ],
     )
 
@@ -712,8 +714,8 @@ def build_docx(repo_root: Path, output: Path) -> None:
         doc,
         [
             "The benchmark uses bundled MC3, CDR, HRD, and Kucab assets rather than downloading new GDC cohorts during the default run, so manuscript reproduction stays offline and reproducible from the bundled assets.",
-            "The MuAt-compatible comparator implements the central mutation-attention architecture and token modalities but does not include official pretrained checkpoints, external WGS validation cohorts, structural-variant and mobile-element modalities unavailable in the bundled TCGA WES assets, or the full 150-epoch MuAt paper training regimen. Although the comparator uses a 5,000-event cap, this capacity is rarely used in TCGA-WES; most tumours contribute far fewer events than the cap, so the comparison should be interpreted as a sparse exome-facing benchmark rather than a high-mutation whole-genome MuAt reproduction.",
-            "Some comparisons involving MuAt and simpler tabular representations share the same endpoint and out-of-fold pooling but are not all paired on identical fold manifests for every representation family. The strongest TCGA cancer-type comparison was aligned to the canonical tabular fold assignment, and this is the comparison emphasized for direct model interpretation.",
+            "The MuAt-compatible comparator implements the central mutation-attention architecture, attention-weighted set pooling, token modalities, and limited inner-split architecture search, but it does not include official pretrained checkpoints, external WGS validation cohorts, structural-variant and mobile-element modalities unavailable in the bundled TCGA WES assets, or the complete original-study training program. Although the comparator uses a 5,000-event cap, this capacity is rarely used in TCGA-WES; most tumours contribute far fewer events than the cap, so the comparison should be interpreted as a sparse exome-facing benchmark rather than a high-mutation whole-genome MuAt reproduction.",
+            "Some comparisons involving MuAt and simpler tabular representations share the same endpoint and out-of-fold pooling but are not all paired on identical fold manifests for every representation family. The active HRD MuAt comparisons use the canonical tabular fold assignments and are the only MuAt comparisons emphasized for direct model interpretation.",
         ],
     )
 
@@ -721,7 +723,7 @@ def build_docx(repo_root: Path, output: Path) -> None:
     add_paragraphs(
         doc,
         [
-            "Representation choice strongly influences somatic-mutation prediction performance. Mutational signatures are a robust baseline, event-level MAF features add complementary endpoint-specific signal, and their combination with XGBoost is the strongest practical default for several clinical and tumour-identity endpoints. Cox survival modeling and no-leakage feature generation materially strengthen the clinical interpretation of the benchmark. A MuAt-compatible event-bag comparator provides a direct neural-model comparison but does not supersede the tuned tabular baseline under the current TCGA-WES evaluation.",
+            "Representation choice strongly influences somatic-mutation prediction performance. Mutational signatures are a robust baseline, event-level MAF features add complementary endpoint-specific signal, and their combination with XGBoost is the strongest practical default for several clinical and tumour-identity endpoints. CoxNet survival modeling and no-leakage feature generation materially strengthen the clinical interpretation of the benchmark. A MuAt-compatible event-bag comparator provides a direct neural-model comparison but does not supersede the tuned tabular baseline under the current TCGA-WES evaluation.",
         ],
     )
 

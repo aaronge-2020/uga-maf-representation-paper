@@ -8,10 +8,10 @@
     "muat_style_tcga_comparator"
   ],
   "bundle_root": "${BUNDLE_ROOT}",
-  "completed_utc": "2026-06-12T11:58:24+00:00",
+  "completed_utc": "2026-06-17T01:35:07+00:00",
   "config": "config/experiment_settings.strict_no_leakage.yaml",
   "dry_run": true,
-  "elapsed_seconds": 0.007,
+  "elapsed_seconds": 0.005,
   "experiments": [
     {
       "elapsed_seconds": 0.0,
@@ -32,7 +32,7 @@
   "paths": "config/paths.yaml",
   "refresh_cache": false,
   "repro_root": "${BUNDLE_ROOT}",
-  "run_id": "20260612T115824Z",
+  "run_id": "20260617T013507Z",
   "runtime_profile": "strict-no-leakage-affected-rerun",
   "tree_method": "gpu_hist"
 }

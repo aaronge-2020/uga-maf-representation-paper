@@ -25,8 +25,16 @@ experiments:
     eval_batch_size: 1
     embed_dim: 128
     attention_heads: 1
+    num_layers: 1
+    pooling_mode: attention_weighted
+    architecture_search_enabled: true
+    architecture_search_embed_dims: [128, 256, 512]
+    architecture_search_num_layers: [1, 2, 4]
+    architecture_search_attention_heads: [1, 2]
+    architecture_search_epochs: 3
     feature_dim: 24
     dropout: 0.1
+    scheduler: cosine
     lr: 0.0006
     momentum: 0.9
     weight_decay: 0.0

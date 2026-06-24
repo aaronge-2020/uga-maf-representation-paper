@@ -8,7 +8,7 @@ PyYAML==6.0.2
 openpyxl==3.1.5
 statsmodels==0.14.4
 optuna==4.1.0
-lifelines==0.30.0
+scikit-survival==0.27.0
 torch==2.5.1
 requests==2.32.3
 setuptools<81

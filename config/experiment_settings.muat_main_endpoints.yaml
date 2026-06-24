@@ -19,19 +19,16 @@ experiments:
       - damage_class
       - HRD_Score
       - hrd_binary_33
-      - OS
     primary_metric_by_endpoint:
       HRD_Score: spearman
       hrd_binary_33: auroc
-      damage_class: macro_auroc
+      damage_class: balanced_accuracy
       cancer_type_top20: balanced_accuracy
-      OS: c_index
     selection_metric_by_endpoint:
       HRD_Score: spearman
       hrd_binary_33: auroc
-      damage_class: macro_auroc
+      damage_class: balanced_accuracy
       cancer_type_top20: balanced_accuracy
-      OS: c_index
     nested_validation: true
     split_manifest_by_endpoint:
       HRD_Score:
@@ -49,11 +46,6 @@ experiments:
         endpoint: cancer_type_top20
         representation: signatures_plus_MAF_stack
         learner: xgboost
-      OS:
-        source: results/tables/main_manuscript_complete_panel_oof_predictions.csv
-        endpoint: OS
-        representation: signatures_plus_MAF_stack
-        learner: cox_ph
     run_manuscript_endpoints: false
     require_canonical_split: true
     paper_reference_accuracy: 0.641
@@ -61,17 +53,22 @@ experiments:
     smoke_run: false
     folds: 5
     epochs: 150
-    early_stopping_patience_by_endpoint:
-      OS: 30
     batch_size: 1
     regression_batch_size: 1
-    survival_batch_size: 4
     eval_batch_size: 1
     embed_dim: 128
     attention_heads: 1
+    num_layers: 1
+    pooling_mode: attention_weighted
+    architecture_search_enabled: true
+    architecture_search_embed_dims: [128, 256, 512]
+    architecture_search_num_layers: [1, 2, 4]
+    architecture_search_attention_heads: [1, 2]
+    architecture_search_epochs: 3
     feature_dim: 24
     dropout: 0.1
     count_feature_mode: log_count
+    scheduler: cosine
     lr: 0.0006
     momentum: 0.9
     weight_decay: 0.0

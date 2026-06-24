@@ -102,27 +102,6 @@ Scope: main manuscript Figures 1-5 in `results/manuscript/figures`. This second 
 | 19 | Stars appended to labels could look like stray marks. | Statistical marks should be grouped with the value. | Put stars inside the same label pill. | Stars stay attached to the relevant delta. |
 | 20 | Previous element spacing was manually tuned for one export size. | Manuscript figures may be resized. | Use fixed sublanes and larger gutters. | The figure is robust to scaling. |
 
-## Figure 5. Cross-Endpoint Representation Summary
+## Removed Cross-Endpoint Summary
 
-| # | What was wrong | Why it needs to be fixed | How to fix it | Why the proposed fix is better |
-|---|---|---|---|---|
-| 1 | The feature-richness arrow ran too close to column headers. | The arrow line could be read as underlining or crossing labels. | Move the arrow into its own lane above headers. | Column names are no longer touched by the arrow. |
-| 2 | Column headers were close to the first heatmap row. | Headers need separation from data cells. | Lower the heatmap start and reserve a header band. | The header and data grid are visually distinct. |
-| 3 | Heatmap cells were short for score plus delta labels. | Two text lines in a cell need vertical space. | Increase cell height. | Scores and deltas do not crowd each other. |
-| 4 | Delta labels sat near the lower cell border. | Border-adjacent text can look clipped. | Move delta labels to a lower but padded baseline. | Delta values remain inside the cell with safe margins. |
-| 5 | Score labels and delta labels were close. | Readers could confuse the absolute score with the delta. | Separate score and delta baselines. | Absolute and relative information read as two layers. |
-| 6 | Star badges were close to score values in some cells. | Significance badges can crowd central scores. | Reserve the upper-right badge zone. | Scores stay centered and unobstructed. |
-| 7 | Best-cell outlines could touch neighboring cells. | Heavy outlines need enough gutter. | Preserve gutters and cell padding while increasing cell size. | Winner outlines stand out without colliding. |
-| 8 | Model tags were close to row headings. | Tags can merge with facet labels. | Keep tags offset from model titles. | Facet labels stay readable. |
-| 9 | Row bands were close to cell borders. | Strong adjacency can make rows look boxed in. | Use low-contrast bands behind the full row. | Row guidance stays subtle. |
-| 10 | The color legend was far below the grid but cramped with other legends. | Multiple legends need distinct zones. | Keep colorbar, delta key, and q key separated horizontally. | Decoding aids do not collide. |
-| 11 | Negative deltas displayed as "-0.000" in one cell. | Negative zero is visually confusing. | Round values near zero to "+0.000". | Zero-like deltas read correctly. |
-| 12 | Dark-cell reference labels had low contrast. | Reference labels should remain readable on dark blue cells. | Use white reference labels on dark cells. | Reference text is legible across the color scale. |
-| 13 | Column labels wrapped unevenly. | Uneven wrapping can collide with header guides. | Use fixed column widths and a dedicated header lane. | Headers align cleanly. |
-| 14 | The first row began too soon after the header guide. | Crowding in the top grid weakens the hierarchy. | Increase top offset. | The heatmap has a clear beginning. |
-| 15 | Delta text color could be overridden by global CSS. | If color is lost, direction becomes harder to see. | Use explicit inline style for delta text color. | Positive and negative deltas remain visible. |
-| 16 | q badges could visually touch cell edges. | Badges need padding to avoid looking clipped. | Position badges with inset coordinates. | Stars stay inside the cells. |
-| 17 | The heatmap used compact cells that looked card-like. | Dense rounded cells can feel crowded. | Slightly larger cells with consistent gutters. | The grid is more analytical and less cramped. |
-| 18 | Endpoint metadata chips were close to row labels. | Left labels can become busy in a matrix. | Keep endpoint label, chips, and n on separate aligned positions. | Row metadata is easier to scan. |
-| 19 | The arrow label and subtitle could compete in the upper region. | Upper text needs hierarchy. | Place arrow label after the note and before headers. | The top region has a clean order. |
-| 20 | The static figure depended on exact renderer behavior to avoid collisions. | Small font changes can introduce overlap. | Add extra header and cell clearance. | The figure is more robust in PDF, SVG, and PNG exports. |
+The former cross-endpoint heatmap duplicated the endpoint/model matrix already covered by the main model-comparison panels. The manuscript now keeps that non-survival information in Figures 2-4 plus Table 2 and uses the Figure 5 slot for a survival-specific CoxNet C-index panel.

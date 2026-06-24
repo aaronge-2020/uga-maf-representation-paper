@@ -22,20 +22,15 @@ cox_candidate_n_jobs: 8
 cox_max_candidate_n_jobs: 8
 cox_blas_threads: 4
 cox_final_blas_threads: 32
-cox_batch_mode: true
 cox_drop_conditioned_low_variance: true
-cox_max_steps: 25
-cox_precision: 1.0e-5
-cox_r_precision: 1.0e-8
+coxnet_min_alpha: 1.0e-2
+coxnet_max_iter: 100000
+coxnet_tol: 1.0e-7
 cox_high_dim_feature_threshold: 500
-cox_high_dim_backend: fast_breslow
 cox_high_dim_candidate_n_jobs: 8
 cox_high_dim_max_candidate_n_jobs: 8
 cox_high_dim_blas_threads: 1
-cox_high_dim_max_steps: 5
-cox_high_dim_precision: 1.0e-4
-cox_fast_max_iter: 20
-cox_fast_learning_rate: 0.05
+cox_high_dim_min_alpha: 1.0e-2
 cox_min_feature_std: 1.0e-8
 endpoint_registry: config/endpoint_registry.yaml
 
@@ -62,20 +57,15 @@ experiments:
     cox_max_candidate_n_jobs: 8
     cox_blas_threads: 4
     cox_final_blas_threads: 32
-    cox_batch_mode: true
     cox_drop_conditioned_low_variance: true
-    cox_max_steps: 25
-    cox_precision: 1.0e-5
-    cox_r_precision: 1.0e-8
+    coxnet_min_alpha: 1.0e-2
+    coxnet_max_iter: 100000
+    coxnet_tol: 1.0e-7
     cox_high_dim_feature_threshold: 500
-    cox_high_dim_backend: fast_breslow
     cox_high_dim_candidate_n_jobs: 8
     cox_high_dim_max_candidate_n_jobs: 8
     cox_high_dim_blas_threads: 1
-    cox_high_dim_max_steps: 5
-    cox_high_dim_precision: 1.0e-4
-    cox_fast_max_iter: 20
-    cox_fast_learning_rate: 0.05
+    cox_high_dim_min_alpha: 1.0e-2
     cox_min_feature_std: 1.0e-8
     allow_transductive_maf_features: false
     maf_stack_builder: frozen_biological_v4_nested_fs
@@ -107,31 +97,61 @@ experiments:
 
   muat_style_tcga_comparator:
     enabled: true
-    output_tag: cancer_type_top20_comparable
+    output_tag: main_endpoints_comparable
     endpoints:
-      - cancer_type_top20
-    primary_task: cancer_type_top20
-    primary_metric: balanced_accuracy
+      - HRD_Score
+      - hrd_binary_33
+    primary_endpoint: HRD_Score
+    primary_task: HRD_Score
+    primary_metric: spearman
+    primary_metric_by_endpoint:
+      HRD_Score: spearman
+      hrd_binary_33: auroc
     nested_validation: true
-    selection_metric: balanced_accuracy
+    selection_metric: spearman
+    selection_metric_by_endpoint:
+      HRD_Score: spearman
+      hrd_binary_33: auroc
     split_manifest_source: results/tables/main_manuscript_complete_panel_oof_predictions.csv
-    split_manifest_endpoint: cancer_type_top20
+    split_manifest_endpoint: HRD_Score
     split_manifest_representation: signatures_plus_MAF_stack
     split_manifest_learner: xgboost
+    split_manifest_by_endpoint:
+      HRD_Score:
+        source: results/tables/main_manuscript_complete_panel_oof_predictions.csv
+        endpoint: HRD_Score
+        representation: signatures_plus_MAF_stack
+        learner: xgboost
+      hrd_binary_33:
+        source: results/tables/main_manuscript_complete_panel_oof_predictions.csv
+        endpoint: hrd_binary_33
+        representation: signatures_plus_MAF_stack
+        learner: xgboost
     require_canonical_split: true
     paper_reference_accuracy: 0.641
     paper_reference_top5_accuracy: 0.906
     run_manuscript_endpoints: false
-    secondary_endpoints: []
+    secondary_endpoints:
+      - hrd_binary_33
     smoke_run: false
     folds: 5
     epochs: 150
     batch_size: 1
+    regression_batch_size: 1
     eval_batch_size: 1
     embed_dim: 128
     attention_heads: 1
+    num_layers: 1
+    pooling_mode: attention_weighted
+    architecture_search_enabled: true
+    architecture_search_embed_dims: [128, 256, 512]
+    architecture_search_num_layers: [1, 2, 4]
+    architecture_search_attention_heads: [1, 2]
+    architecture_search_epochs: 3
     feature_dim: 24
     dropout: 0.1
+    count_feature_mode: log_count
+    scheduler: cosine
     lr: 0.0006
     momentum: 0.9
     weight_decay: 0.0

@@ -1,0 +1,43 @@
+{
+  "architecture_search_attention_heads": [
+    1,
+    2
+  ],
+  "architecture_search_embed_dims": [
+    128,
+    256,
+    512
+  ],
+  "architecture_search_enabled": true,
+  "architecture_search_epochs": 1,
+  "architecture_search_num_layers": [
+    1,
+    2,
+    4
+  ],
+  "count_feature_mode": "none",
+  "dictionary_mode": "fixed_hash",
+  "dictionary_sizes": {
+    "annotation": 258,
+    "motif": 1026,
+    "position": 2050
+  },
+  "elapsed_seconds": 50.129,
+  "encoded_event_count_max": 5000,
+  "encoded_event_count_median": 115.5,
+  "encoded_event_count_min": 5,
+  "event_cache_hit": true,
+  "event_cache_key": "122d5bbc572a1b26670e8de5",
+  "event_cache_path": "${REPRO_ROOT}\\results\\cache\\features\\muat_style_tcga_comparator\\muat_compatible_events_122d5bbc572a1b26670e8de5.csv.gz",
+  "max_events_per_sample": 5000,
+  "n_events": 34041,
+  "n_patients": 60,
+  "official_cli_status": "not_available",
+  "pooling_mode": "attention_weighted",
+  "primary_endpoint": "cancer_type_top20",
+  "representation": "MuAt-compatible reimplementation",
+  "secondary_endpoints": [],
+  "smoke_run": true,
+  "torch_device": "cpu",
+  "torch_num_threads": 2
+}

@@ -36,8 +36,8 @@ Current asset groups:
 |---|---:|---|
 | TCGA MC3 public mutation calls | 1 | Public MAF source input. |
 | GRCh37 reference FASTA and metadata | 2 | Plain and gzipped FASTA assets. |
-| MuAt-compatible `cancer_type_top20` fold checkpoint cache | 35 | Validated vendored fold outputs used by release validation. |
-| MuAt-compatible `cancer_type_top20` event-token cache | 1 | Dataset-backed comparator event cache. |
+| Active MuAt-compatible HRD comparator source tables | 12 | HRD-only source outputs kept in `results/tables/`; full HRD MuAt reruns regenerate caches from bundled TCGA/HRD data. |
+| Superseded MuAt-compatible cancer-type caches | optional historical assets | Not required for active manuscript validation or reviewer restore. |
 | Bundled manuscript/result inputs | 5 | Prediction tables and comparator event tables. |
 | Optional external-project datasets | 514 | Includes discovered raw/downloaded resources retained outside ordinary Git history. |
 

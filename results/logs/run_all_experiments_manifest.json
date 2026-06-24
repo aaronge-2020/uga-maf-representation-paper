@@ -1,0 +1,29 @@
+{
+  "active_runners": [
+    "main_manuscript_complete_panel",
+    "muat_style_tcga_comparator"
+  ],
+  "bundle_root": "${BUNDLE_ROOT}",
+  "completed_utc": "2026-06-24T21:52:32+00:00",
+  "config": "config\\experiment_settings.muat_arch_search_smoke.yaml",
+  "dry_run": false,
+  "elapsed_seconds": 63.042,
+  "experiments": [
+    {
+      "experiment_id": "main_manuscript_complete_panel",
+      "status": "skipped"
+    },
+    {
+      "elapsed_seconds": 63.032,
+      "experiment_id": "muat_style_tcga_comparator",
+      "status": "completed"
+    }
+  ],
+  "feature_cache_dir": "${BUNDLE_ROOT}/results/cache/features",
+  "paths": "config\\paths.yaml",
+  "refresh_cache": false,
+  "repro_root": "${BUNDLE_ROOT}",
+  "run_id": "20260624T215129Z",
+  "runtime_profile": "muat-compatible-architecture-search-smoke",
+  "tree_method": "hist"
+}

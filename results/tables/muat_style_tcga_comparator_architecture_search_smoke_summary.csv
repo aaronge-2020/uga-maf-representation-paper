@@ -1,0 +1,2 @@
+elapsed_seconds,experiment_id,n_events,n_patients,official_cli_status,primary_endpoint,secondary_endpoints,smoke_run,status
+50.145,muat_style_tcga_comparator,34041,60,not_available,cancer_type_top20,,True,completed

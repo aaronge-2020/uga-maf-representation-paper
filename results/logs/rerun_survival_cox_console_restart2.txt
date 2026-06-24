@@ -1,0 +1,38 @@
+[survival_cox] evaluating OS burden_only cox_ph
+[survival_cox] completed OS burden_only c_index=0.584846 seconds=9.3
+[survival_cox] evaluating OS standard_sbs96_id83 cox_ph
+[survival_cox] completed OS standard_sbs96_id83 c_index=0.60624 seconds=17.5
+[survival_cox] evaluating OS MAF_stack_only cox_ph
+[nested_oof] start fold 1/5 main_manuscript_complete_panel OS MAF_stack_only cox_ph; feature_sets=6 model_candidates=10
+[nested_oof] done fold 1/5 main_manuscript_complete_panel OS MAF_stack_only cox_ph; score=0.634834 selected=v4_full_core_plus_optional_controls features=948 seconds=11.6
+[nested_oof] start fold 2/5 main_manuscript_complete_panel OS MAF_stack_only cox_ph; feature_sets=6 model_candidates=10
+[nested_oof] done fold 2/5 main_manuscript_complete_panel OS MAF_stack_only cox_ph; score=0.640698 selected=v4_full_core_plus_optional_controls features=948 seconds=12.1
+[nested_oof] start fold 3/5 main_manuscript_complete_panel OS MAF_stack_only cox_ph; feature_sets=6 model_candidates=10
+[nested_oof] done fold 3/5 main_manuscript_complete_panel OS MAF_stack_only cox_ph; score=0.630577 selected=v4_full_core_plus_optional_controls features=948 seconds=7.9
+[nested_oof] start fold 4/5 main_manuscript_complete_panel OS MAF_stack_only cox_ph; feature_sets=6 model_candidates=10
+[nested_oof] done fold 4/5 main_manuscript_complete_panel OS MAF_stack_only cox_ph; score=0.642145 selected=v4_full_core_plus_optional_controls features=948 seconds=8.5
+[nested_oof] start fold 5/5 main_manuscript_complete_panel OS MAF_stack_only cox_ph; feature_sets=6 model_candidates=10
+[nested_oof] done fold 5/5 main_manuscript_complete_panel OS MAF_stack_only cox_ph; score=0.625336 selected=v4_compact_plus_exact_driver_genes features=923 seconds=11.0
+[survival_cox] completed OS MAF_stack_only c_index=0.634618 seconds=51.6
+[survival_cox] evaluating OS signatures_plus_MAF_stack cox_ph
+[nested_oof] start fold 1/5 main_manuscript_complete_panel OS signatures_plus_MAF_stack cox_ph; feature_sets=7 model_candidates=10
+[nested_oof] done fold 1/5 main_manuscript_complete_panel OS signatures_plus_MAF_stack cox_ph; score=0.655863 selected=signatures_plus_v4_compact_plus_exact_driver_genes features=1105 seconds=16.0
+[nested_oof] start fold 2/5 main_manuscript_complete_panel OS signatures_plus_MAF_stack cox_ph; feature_sets=7 model_candidates=10
+[nested_oof] done fold 2/5 main_manuscript_complete_panel OS signatures_plus_MAF_stack cox_ph; score=0.645992 selected=signatures_plus_v4_full_core_plus_optional_controls features=1130 seconds=13.5
+[nested_oof] start fold 3/5 main_manuscript_complete_panel OS signatures_plus_MAF_stack cox_ph; feature_sets=7 model_candidates=10
+[nested_oof] done fold 3/5 main_manuscript_complete_panel OS signatures_plus_MAF_stack cox_ph; score=0.643251 selected=signatures_plus_v4_compact_plus_exact_driver_genes features=1105 seconds=18.3
+[nested_oof] start fold 4/5 main_manuscript_complete_panel OS signatures_plus_MAF_stack cox_ph; feature_sets=7 model_candidates=10
+[nested_oof] done fold 4/5 main_manuscript_complete_panel OS signatures_plus_MAF_stack cox_ph; score=0.638210 selected=signatures_plus_v4_full_core features=1125 seconds=13.0
+[nested_oof] start fold 5/5 main_manuscript_complete_panel OS signatures_plus_MAF_stack cox_ph; feature_sets=7 model_candidates=10
+[nested_oof] done fold 5/5 main_manuscript_complete_panel OS signatures_plus_MAF_stack cox_ph; score=0.648071 selected=signatures_plus_v4_full_core_plus_optional_controls features=1130 seconds=12.5
+[survival_cox] completed OS signatures_plus_MAF_stack c_index=0.646236 seconds=74.1
+{
+  "completed_utc": "2026-06-24T21:06:38+00:00",
+  "endpoint": "OS",
+  "elapsed_seconds": 172.987,
+  "endpoint_results": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\github_exports\\results\\tables\\main_manuscript_complete_panel_endpoint_results.csv",
+  "fold_metrics": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\github_exports\\results\\tables\\main_manuscript_complete_panel_fold_metrics.csv",
+  "oof_predictions": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\github_exports\\results\\tables\\main_manuscript_complete_panel_oof_predictions.csv",
+  "plot_data": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\github_exports\\results\\manuscript\\plot_data\\figure_5_overall_survival_cox.csv",
+  "summary": "G:\\My Drive\\chaos-game-representation_pipeline_Jan10\\github_exports\\results\\tables\\main_manuscript_complete_panel_survival_cox_summary.csv"
+}

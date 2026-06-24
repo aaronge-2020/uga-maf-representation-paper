@@ -6,8 +6,10 @@ import json
 import os
 import time
 import hashlib
+import warnings
 from contextlib import nullcontext
 from dataclasses import asdict, dataclass
+from itertools import product
 from pathlib import Path
 from typing import Any
 
@@ -21,11 +23,9 @@ from utils.endpoint_registry import (
     CANCER_TYPE_ENDPOINT_CLASSES,
     HRD_CONTINUOUS,
     build_cdr_cancer_type_labels,
-    build_cdr_survival_labels,
     build_luad_kmt2c_labels,
     load_endpoint_registry,
     muat_comparator_endpoints,
-    registry_minimums,
 )
 from utils.muat_compatible import (
     OfficialMuAtCLI,
@@ -42,7 +42,7 @@ from utils.muat_compatible import (
     stable_sha256,
     topk_accuracy,
 )
-from utils.nested_oof import assign_oof_fold, assert_all_oof_assigned, harrell_c_index, inner_train_val_split, outer_splits, safe_macro_auroc, safe_micro_auroc
+from utils.nested_oof import assign_oof_fold, assert_all_oof_assigned, inner_train_val_split, outer_splits, safe_macro_auroc, safe_micro_auroc
 from utils.runner_support import RunnerContext, sanitize_frame, sanitize_text, write_summary_csv
 
 
@@ -50,6 +50,7 @@ EXPERIMENT_ID = "muat_style_tcga_comparator"
 PRIMARY_ENDPOINT = "tcga_20_type"
 LOCAL_REPRESENTATION = "MuAt-compatible reimplementation"
 TCGA_WES_TOP20_ENDPOINTS = {PRIMARY_ENDPOINT, "cancer_type_top20"}
+SURVIVAL_ENDPOINTS = {"OS", "DSS", "PFI", "DFI"}
 MUAT_PAPER_TCGA_WES_N_SAMPLES = 7352
 MUAT_PAPER_TCGA_WES_N_CLASSES = 20
 MUAT_PAPER_TCGA_WES_ACCURACY = 0.641
@@ -60,9 +61,12 @@ MUAT_PAPER_TCGA_WES_TOP5_ACCURACY = 0.906
 class LocalMuAtSettings:
     embed_dim: int = 32
     attention_heads: int = 1
+    num_layers: int = 1
     feature_dim: int = 24
     dropout: float = 0.1
     count_feature_mode: str = "none"
+    pooling_mode: str = "attention_weighted"
+    scheduler: str = "none"
     lr: float = 6e-4
     momentum: float = 0.9
     weight_decay: float = 0.0
@@ -75,6 +79,12 @@ def _load_secondary_endpoint_labels(ctx: RunnerContext, endpoints: list[str]) ->
 
     out: dict[str, tuple[str, pd.Series | pd.DataFrame]] = {}
     endpoints = [endpoint for endpoint in endpoints if str(endpoint) != "damage_class"]
+    survival_requested = sorted(str(endpoint) for endpoint in endpoints if str(endpoint) in SURVIVAL_ENDPOINTS)
+    if survival_requested:
+        raise ValueError(
+            "MuAt-compatible neural survival endpoints are disabled; "
+            f"use the main scikit-survival Cox pipeline for {survival_requested}"
+        )
     if not endpoints:
         return out
     mc3_dir = Path(ctx.paths["raw_data"]["mc3_source_dir"])
@@ -83,16 +93,6 @@ def _load_secondary_endpoint_labels(ctx: RunnerContext, endpoints: list[str]) ->
     feature_patient_index = pd.read_csv(mc3_dir / "features" / "features_burden_only.csv", usecols=[0], index_col=0).index.astype(str)
     hrd = pd.read_csv(Path(ctx.paths["raw_data"]["hrd_assets_dir"]) / "cohort" / "final_analysis_cohort.tsv", sep="\t")
     hrd["patient_id_12"] = hrd["patient_id_12"].astype(str)
-    survival_requested = [endpoint for endpoint in endpoints if endpoint in {"OS", "DSS", "PFI", "DFI"}]
-    survival_labels: dict[str, pd.DataFrame] = {}
-    if survival_requested:
-        minimums = registry_minimums(load_endpoint_registry(ctx.settings.get("endpoint_registry")))
-        survival_labels, _audit = build_cdr_survival_labels(
-            mc3_dir,
-            survival_requested,
-            min_samples=int(minimums.get("survival_min_samples", 200)),
-            min_events=int(minimums.get("survival_min_events", 25)),
-        )
     for endpoint in endpoints:
         if endpoint in out:
             continue
@@ -104,8 +104,6 @@ def _load_secondary_endpoint_labels(ctx: RunnerContext, endpoints: list[str]) ->
                 endpoint_name=endpoint,
             ).astype(str)
             out[endpoint] = ("multiclass", y)
-        elif endpoint in survival_labels:
-            out[endpoint] = ("survival", survival_labels[endpoint])
         elif endpoint in HRD_CONTINUOUS and endpoint in hrd.columns:
             data = hrd.dropna(subset=[endpoint]).drop_duplicates("patient_id_12").copy()
             out[endpoint] = ("regression", pd.Series(data[endpoint].astype(float).to_numpy(), index=data["patient_id_12"], name=endpoint))
@@ -214,15 +212,83 @@ def _settings(settings: dict[str, Any]) -> LocalMuAtSettings:
     return LocalMuAtSettings(
         embed_dim=int(settings.get("embed_dim", settings.get("embedding_dim", 32))),
         attention_heads=int(settings.get("attention_heads", 1)),
+        num_layers=int(settings.get("num_layers", 1)),
         feature_dim=int(settings.get("feature_dim", 24)),
         dropout=float(settings.get("dropout", 0.1)),
         count_feature_mode=str(settings.get("count_feature_mode", "none")),
+        pooling_mode=str(settings.get("pooling_mode", "attention_weighted")),
+        scheduler=str(settings.get("scheduler", "none")),
         lr=float(settings.get("lr", 6e-4)),
         momentum=float(settings.get("momentum", 0.9)),
         weight_decay=float(settings.get("weight_decay", 0.0)),
         epochs=int(settings.get("epochs", 1)),
         batch_size=int(settings.get("batch_size", 1)),
     )
+
+
+def _setting_int_list(settings: dict[str, Any], key: str, default: list[int]) -> list[int]:
+    value = settings.get(key)
+    if value is None:
+        return [int(item) for item in default]
+    if isinstance(value, str):
+        raw_items = [item.strip() for item in value.split(",") if item.strip()]
+    elif isinstance(value, (list, tuple, set)):
+        raw_items = list(value)
+    else:
+        raw_items = [value]
+    out: list[int] = []
+    for item in raw_items:
+        parsed = int(item)
+        if parsed not in out:
+            out.append(parsed)
+    return out or [int(item) for item in default]
+
+
+def _architecture_candidates(settings: dict[str, Any], base: LocalMuAtSettings) -> list[LocalMuAtSettings]:
+    if not bool(settings.get("architecture_search_enabled", False)):
+        return [base]
+    embed_dims = _setting_int_list(settings, "architecture_search_embed_dims", [128, 256, 512])
+    num_layers = _setting_int_list(settings, "architecture_search_num_layers", [1, 2, 4])
+    attention_heads = _setting_int_list(settings, "architecture_search_attention_heads", [1, 2])
+    candidates: list[LocalMuAtSettings] = []
+    seen: set[tuple[int, int, int]] = set()
+    for embed_dim, layers, heads in product(embed_dims, num_layers, attention_heads):
+        width = int(embed_dim) * 3
+        if width % int(heads) != 0:
+            raise ValueError(f"Invalid MuAt architecture candidate: 3 * embed_dim={width} is not divisible by attention_heads={heads}")
+        key = (int(embed_dim), int(layers), int(heads))
+        if key in seen:
+            continue
+        seen.add(key)
+        candidates.append(
+            LocalMuAtSettings(
+                embed_dim=int(embed_dim),
+                attention_heads=int(heads),
+                num_layers=int(layers),
+                feature_dim=base.feature_dim,
+                dropout=base.dropout,
+                count_feature_mode=base.count_feature_mode,
+                pooling_mode=base.pooling_mode,
+                scheduler=base.scheduler,
+                lr=base.lr,
+                momentum=base.momentum,
+                weight_decay=base.weight_decay,
+                epochs=base.epochs,
+                batch_size=base.batch_size,
+            )
+        )
+    if len(candidates) < 18 and set(embed_dims) >= {128, 256, 512} and set(num_layers) >= {1, 2, 4} and set(attention_heads) >= {1, 2}:
+        raise ValueError("MuAt architecture search grid unexpectedly contains fewer than the required 18 candidates")
+    return candidates or [base]
+
+
+def _most_common_model_settings(rows: list[dict[str, object]], fallback: LocalMuAtSettings) -> LocalMuAtSettings:
+    values = [str(row.get("model_settings_json", "")) for row in rows if row.get("model_settings_json")]
+    if not values:
+        return fallback
+    counts = pd.Series(values).value_counts(sort=True)
+    payload = json.loads(str(counts.index[0]))
+    return LocalMuAtSettings(**{key: payload.get(key, getattr(fallback, key)) for key in asdict(fallback)})
 
 
 def _cache_key(maf_path: Path, patients: list[str], settings: dict[str, Any]) -> str:
@@ -256,11 +322,13 @@ def _write_fidelity_report(path: Path, *, official_available: bool, smoke_run: b
         "## Supported",
         "- TCGA WES SNV/MNV/indel mutation rows from bundled MC3.",
         "- Explicit motif, 1-Mb position, and genic/exonic/strand dictionaries.",
-        "- Separate modality embeddings, Q/K/V self-attention, skip connection, normalization, average pooling, and a 24-dimensional tumour-feature layer.",
+        "- Separate modality embeddings, stacked Q/K/V self-attention, residual/normalization blocks, attention-weighted set pooling, and a 24-dimensional tumour-feature layer.",
+        "- Limited architecture search over embedding size, self-attention layer count, and attention-head count before outer-fold refitting.",
         "",
         "## Partial",
         "- Motif recovery uses MC3 `CONTEXT` where available; rows without reference context fall back to `N` flanks.",
         "- `cancer_type_top20` uses the fixed manuscript class list and canonical matched-feature folds; `tcga_20_type` uses the MuAt-style top-20-by-count label loader.",
+        "- The source paper clearly describes sequence-context encodings, but the exact auxiliary biological annotation vocabulary is not fully specified in the bundled manuscript sources. This implementation uses deterministic MAF/VEP-derived genic, exonic, and strand tokens; broader Bio MAF v4 external-resource features are part of the tabular benchmark rather than this MuAt-compatible event bag.",
         "",
         "## Unsupported In Bundled TCGA WES",
         "- PCAWG WGS training, GEL/ICGC/CRC external validation, SV/MEI modalities, and official pretrained checkpoint claims unless the official MuAt CLI/checkpoints are configured and executed.",
@@ -301,19 +369,6 @@ def _safe_spearman(y_true: np.ndarray, y_pred: np.ndarray) -> float:
         return float("nan")
     value = spearmanr(np.asarray(y_true, dtype=float), np.asarray(y_pred, dtype=float), nan_policy="omit").correlation
     return float(value) if value is not None and np.isfinite(value) else float("nan")
-
-
-def _cox_negative_partial_log_likelihood(torch_module: Any, risk: Any, time_values: Any, event_values: Any) -> Any:
-    """Mini-batch Cox partial likelihood where larger risk means shorter survival."""
-
-    order = torch_module.argsort(time_values, descending=True)
-    risk = risk[order].reshape(-1)
-    event = event_values[order].float().reshape(-1)
-    log_risk_set = torch_module.logcumsumexp(risk, dim=0)
-    observed = event.sum()
-    if float(observed.detach().cpu()) <= 0.0:
-        return risk.sum() * 0.0
-    return -((risk - log_risk_set) * event).sum() / observed.clamp_min(1.0)
 
 
 def _checkpoint_paths(checkpoint_dir: Path, endpoint: str, fold: int) -> dict[str, Path]:
@@ -438,8 +493,7 @@ def _endpoint_validation_score(metric: str, task: str, y_true: Any, prediction: 
     if task == "regression":
         return _safe_spearman(np.asarray(y_true, dtype=float), prediction.reshape(-1))
     if task == "survival":
-        y_frame = pd.DataFrame(y_true)
-        return harrell_c_index(y_frame["time"].to_numpy(dtype=float), y_frame["event"].to_numpy(dtype=int), prediction.reshape(-1))
+        raise ValueError("MuAt-compatible survival endpoints are disabled; use the main scikit-survival Cox pipeline")
     return float("nan")
 
 
@@ -447,7 +501,7 @@ def _default_selection_metric(endpoint: str, task: str) -> str:
     if task == "regression":
         return "spearman"
     if task == "survival":
-        return "c_index"
+        raise ValueError("MuAt-compatible survival endpoints are disabled; use the main scikit-survival Cox pipeline")
     if task == "multiclass" and str(endpoint) in TCGA_WES_TOP20_ENDPOINTS:
         return "balanced_accuracy"
     return "macro_auroc"
@@ -672,12 +726,24 @@ def _fit_predict_local(
     ctx: RunnerContext,
     device: Any,
 ) -> tuple[dict[str, object], pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    if task == "survival":
+        raise ValueError("MuAt-compatible survival endpoints are disabled; use the main scikit-survival Cox pipeline")
+
     import torch
     from torch.utils.data import DataLoader, Subset, TensorDataset
 
     from utils.muat_compatible import MuAtCompatibleModel
 
     local = _settings(settings)
+    architecture_candidates = _architecture_candidates(settings, local)
+    architecture_search_enabled = len(architecture_candidates) > 1
+    architecture_search_epochs = max(
+        1,
+        min(
+            int(local.epochs),
+            int(settings.get("architecture_search_epochs", local.epochs)),
+        ),
+    )
     smoke_run = bool(settings.get("smoke_run", True))
     primary_scope = "smoke_oof" if smoke_run else "pooled_global_oof"
     patient_index = pd.Index(patients, name="sample")
@@ -734,13 +800,6 @@ def _fit_predict_local(
         classes = np.array(["value"], dtype=object)
         y_np = pd.Series(labels.loc[common]).astype(float).to_numpy(dtype=np.float32)
         y_split = y_np
-    elif task == "survival":
-        classes = np.array(["risk"], dtype=object)
-        y_frame = pd.DataFrame(labels).loc[common, ["time", "event"]].copy()
-        y_frame["time"] = pd.to_numeric(y_frame["time"], errors="coerce").astype(float)
-        y_frame["event"] = pd.to_numeric(y_frame["event"], errors="coerce").astype(int)
-        y_np = y_frame
-        y_split = y_frame
     else:
         raise ValueError(f"Unsupported MuAt-compatible task for endpoint={endpoint}: {task}")
 
@@ -777,6 +836,9 @@ def _fit_predict_local(
             "groups": stable_sha256(list(map(str, group_arr))) if group_arr is not None else "",
             "classes": list(map(str, classes)),
             "model": asdict(local),
+            "architecture_search_enabled": bool(architecture_search_enabled),
+            "architecture_search_epochs": int(architecture_search_epochs),
+            "architecture_candidates": [asdict(candidate) for candidate in architecture_candidates],
             "nested_validation": bool(settings.get("nested_validation", False)) and not smoke_run,
             "selection_metric": str((settings.get("selection_metric_by_endpoint") or {}).get(endpoint) or settings.get("selection_metric") or settings.get("primary_metric") or default_selection_metric).lower(),
             "canonical_split_source": canonical_split_source,
@@ -796,10 +858,6 @@ def _fit_predict_local(
     if task == "regression":
         fingerprint_payload["regression_target_standardization"] = "fold_local_zscore_v1"
         fingerprint_payload["regression_prediction_scale"] = "outer_train_inverse_transform_v1"
-    if task == "survival":
-        fingerprint_payload["survival_loss"] = "mini_batch_cox_partial_likelihood_v1"
-        fingerprint_payload["survival_risk_scale"] = "outer_train_risk_zscore_v1"
-        fingerprint_payload["early_stopping_patience"] = int((settings.get("early_stopping_patience_by_endpoint") or {}).get(endpoint, settings.get("early_stopping_patience", 0) or 0))
     fingerprint = stable_sha256(fingerprint_payload)
 
     fold_rows: list[dict[str, object]] = []
@@ -809,45 +867,33 @@ def _fit_predict_local(
     feature_frames: list[pd.DataFrame] = []
     preload_tensors = bool(settings.get("preload_tensors_to_device", getattr(device, "type", str(device)) == "cuda"))
     effective_batch_size = int(local.batch_size)
-    if task == "survival":
-        effective_batch_size = int(settings.get("survival_batch_size", max(8, local.batch_size)))
-    elif task == "regression":
+    if task == "regression":
         effective_batch_size = int(settings.get("regression_batch_size", local.batch_size))
     effective_batch_size = max(1, effective_batch_size)
     if preload_tensors:
         x_tensor = torch.from_numpy(x_np).long().to(device)
         mask_tensor = torch.from_numpy(mask_np).bool().to(device)
         y_tensor = None
-        y_time_tensor = None
-        y_event_tensor = None
         if task in {"binary", "multiclass"}:
             y_tensor = torch.from_numpy(np.asarray(y_np, dtype=np.int64)).long().to(device)
         elif task == "regression":
             y_tensor = torch.from_numpy(np.asarray(y_np, dtype=np.float32)).float().to(device)
-        elif task == "survival":
-            y_time_tensor = torch.from_numpy(y_np["time"].to_numpy(dtype=np.float32)).float().to(device)
-            y_event_tensor = torch.from_numpy(y_np["event"].to_numpy(dtype=np.float32)).float().to(device)
         base_dataset = None
     else:
         x_tensor = None
         mask_tensor = None
         y_tensor = None
-        y_time_tensor = None
-        y_event_tensor = None
         if task in {"binary", "multiclass"}:
             base_dataset = TensorDataset(torch.from_numpy(x_np).long(), torch.from_numpy(mask_np).bool(), torch.from_numpy(np.asarray(y_np, dtype=np.int64)).long())
         elif task == "regression":
             base_dataset = TensorDataset(torch.from_numpy(x_np).long(), torch.from_numpy(mask_np).bool(), torch.from_numpy(np.asarray(y_np, dtype=np.float32)).float())
         else:
-            base_dataset = TensorDataset(
-                torch.from_numpy(x_np).long(),
-                torch.from_numpy(mask_np).bool(),
-                torch.from_numpy(y_np["time"].to_numpy(dtype=np.float32)).float(),
-                torch.from_numpy(y_np["event"].to_numpy(dtype=np.float32)).float(),
-            )
+            raise ValueError(f"Unsupported MuAt-compatible task for endpoint={endpoint}: {task}")
     use_amp = bool(settings.get("amp", True)) and getattr(device, "type", str(device)) == "cuda"
     trim_to_observed = bool(settings.get("trim_to_observed_events", True))
-    nested_validation = bool(settings.get("nested_validation", False)) and not smoke_run
+    nested_validation = bool(settings.get("nested_validation", False)) and (
+        not smoke_run or bool(settings.get("nested_validation_in_smoke", False))
+    )
     selection_metric = str((settings.get("selection_metric_by_endpoint") or {}).get(endpoint) or settings.get("selection_metric") or settings.get("primary_metric") or default_selection_metric).lower()
     dataloader_workers = int(settings.get("dataloader_workers", 0))
     train_loader_args: dict[str, object] = {
@@ -860,18 +906,32 @@ def _fit_predict_local(
         train_loader_args["persistent_workers"] = True
         train_loader_args["prefetch_factor"] = int(settings.get("prefetch_factor", 2))
 
-    def make_model() -> Any:
+    def make_model(model_settings: LocalMuAtSettings) -> Any:
         return MuAtCompatibleModel(
             motif_vocab_size=len(dictionaries.motif),
             position_vocab_size=len(dictionaries.position),
             annotation_vocab_size=len(dictionaries.annotation),
             n_outputs=len(classes) if task in {"binary", "multiclass"} else 1,
-            embed_dim=local.embed_dim,
-            attention_heads=local.attention_heads,
-            feature_dim=local.feature_dim,
-            dropout=local.dropout,
-            count_feature_mode=local.count_feature_mode,
+            embed_dim=model_settings.embed_dim,
+            attention_heads=model_settings.attention_heads,
+            num_layers=model_settings.num_layers,
+            feature_dim=model_settings.feature_dim,
+            dropout=model_settings.dropout,
+            count_feature_mode=model_settings.count_feature_mode,
+            pooling_mode=model_settings.pooling_mode,
         ).to(device)
+
+    def make_scheduler(optimizer: Any, model_settings: LocalMuAtSettings, max_epochs: int) -> Any:
+        mode = str(model_settings.scheduler or "none").strip().lower()
+        if mode in {"", "none", "off", "disabled"}:
+            return None
+        if mode in {"cosine", "cosine_annealing"}:
+            return torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=max(1, int(max_epochs)))
+        if mode in {"step", "steplr"}:
+            step_size = max(1, int(settings.get("scheduler_step_size", max(1, int(max_epochs) // 3))))
+            gamma = float(settings.get("scheduler_gamma", 0.5))
+            return torch.optim.lr_scheduler.StepLR(optimizer, step_size=step_size, gamma=gamma)
+        raise ValueError(f"Unsupported MuAt scheduler: {mode}")
 
     def train_one_epoch(
         model: Any,
@@ -891,46 +951,23 @@ def _fit_predict_local(
             assert x_tensor is not None and mask_tensor is not None
             order = np.asarray(indices, dtype=np.int64).copy()
             np.random.default_rng(int(settings.get("seed", 20260524)) + int(fold_seed) * 100_000 + int(epoch)).shuffle(order)
-            if task == "survival":
-                assert y_time_tensor is not None and y_event_tensor is not None
-                batches = (
-                    (
-                        x_tensor[torch.as_tensor(order[start : start + effective_batch_size], dtype=torch.long, device=device)],
-                        mask_tensor[torch.as_tensor(order[start : start + effective_batch_size], dtype=torch.long, device=device)],
-                        y_time_tensor[torch.as_tensor(order[start : start + effective_batch_size], dtype=torch.long, device=device)],
-                        y_event_tensor[torch.as_tensor(order[start : start + effective_batch_size], dtype=torch.long, device=device)],
-                    )
-                    for start in range(0, len(order), effective_batch_size)
+            assert y_tensor is not None
+            batches = (
+                (
+                    x_tensor[torch.as_tensor(order[start : start + effective_batch_size], dtype=torch.long, device=device)],
+                    mask_tensor[torch.as_tensor(order[start : start + effective_batch_size], dtype=torch.long, device=device)],
+                    y_tensor[torch.as_tensor(order[start : start + effective_batch_size], dtype=torch.long, device=device)],
                 )
-            else:
-                assert y_tensor is not None
-                batches = (
-                    (
-                        x_tensor[torch.as_tensor(order[start : start + effective_batch_size], dtype=torch.long, device=device)],
-                        mask_tensor[torch.as_tensor(order[start : start + effective_batch_size], dtype=torch.long, device=device)],
-                        y_tensor[torch.as_tensor(order[start : start + effective_batch_size], dtype=torch.long, device=device)],
-                    )
-                    for start in range(0, len(order), effective_batch_size)
-                )
+                for start in range(0, len(order), effective_batch_size)
+            )
         else:
             assert loader is not None
             batches = loader
         for batch in batches:
-            if task == "survival":
-                batch_x, batch_mask, batch_time, batch_event = batch
-                batch_y = None
-            else:
-                batch_x, batch_mask, batch_y = batch
-                batch_time = None
-                batch_event = None
+            batch_x, batch_mask, batch_y = batch
             batch_x = batch_x.to(device, non_blocking=True)
             batch_mask = batch_mask.to(device, non_blocking=True)
-            if batch_y is not None:
-                batch_y = batch_y.to(device, non_blocking=True)
-            if batch_time is not None:
-                batch_time = batch_time.to(device, non_blocking=True)
-            if batch_event is not None:
-                batch_event = batch_event.to(device, non_blocking=True)
+            batch_y = batch_y.to(device, non_blocking=True)
             batch_x, batch_mask = _trim_to_observed_events(batch_x, batch_mask, enabled=trim_to_observed)
             optimizer.zero_grad(set_to_none=True)
             with _torch_autocast(torch, device, use_amp):
@@ -941,7 +978,7 @@ def _fit_predict_local(
                     target = (batch_y.float().reshape(-1) - float(target_mean)) / max(float(target_scale), 1e-6)
                     loss = loss_fn(logits.reshape(-1), target)
                 else:
-                    loss = _cox_negative_partial_log_likelihood(torch, logits.reshape(-1), batch_time.float().reshape(-1), batch_event.float().reshape(-1))
+                    raise ValueError(f"Unsupported MuAt-compatible task for endpoint={endpoint}: {task}")
             if scaler is not None:
                 scaler.scale(loss).backward()
                 scaler.step(optimizer)
@@ -952,11 +989,17 @@ def _fit_predict_local(
             losses.append(float(loss.detach().cpu()))
         return float(np.mean(losses)) if losses else float("nan")
 
-    def predict_arrays(model: Any, indices: np.ndarray, *, return_attention: bool = False) -> tuple[np.ndarray, np.ndarray, Any]:
+    def predict_arrays(
+        model: Any,
+        indices: np.ndarray,
+        *,
+        model_settings: LocalMuAtSettings,
+        return_attention: bool = False,
+    ) -> tuple[np.ndarray, np.ndarray, Any]:
         model.eval()
-        eval_batch_size = max(1, int(settings.get("eval_batch_size", local.batch_size)))
+        eval_batch_size = max(1, int(settings.get("eval_batch_size", model_settings.batch_size)))
         outputs_np = np.zeros((len(indices), len(classes) if task in {"binary", "multiclass"} else 1), dtype=float)
-        features = np.zeros((len(indices), local.feature_dim), dtype=float)
+        features = np.zeros((len(indices), model_settings.feature_dim), dtype=float)
         attentions: list[tuple[np.ndarray, np.ndarray, np.ndarray]] = []
         with torch.no_grad():
             for start in range(0, len(indices), eval_batch_size):
@@ -1035,87 +1078,147 @@ def _fit_predict_local(
         elif task == "regression":
             loss_fn = torch.nn.MSELoss()
         else:
-            loss_fn = None
+            raise ValueError(f"Unsupported MuAt-compatible task for endpoint={endpoint}: {task}")
 
         inner_train_n = float("nan")
         inner_val_n = float("nan")
         selected_epoch = int(local.epochs)
         selected_inner_score = float("nan")
-        selection_history: list[dict[str, object]] = []
+        selected_local = architecture_candidates[0]
+        candidate_results: list[dict[str, object]] = []
+        selected_architecture_candidate_id = 1
+        inner_train_idx = np.asarray(train_idx)
+        inner_val_idx = np.asarray([], dtype=int)
         if nested_validation:
             inner_train_idx, inner_val_idx = inner_train_val_split(split_task, y_split, np.asarray(train_idx), groups=group_arr, seed=int(settings.get("seed", 20260524)) + int(fold))
             inner_train_n = int(len(inner_train_idx))
             inner_val_n = int(len(inner_val_idx))
-            selector_model = make_model()
-            selector_optimizer = torch.optim.SGD(selector_model.parameters(), lr=local.lr, momentum=local.momentum, weight_decay=local.weight_decay)
-            selector_scaler = _new_grad_scaler(torch, use_amp)
-            selector_target_mean = 0.0
-            selector_target_scale = 1.0
-            if task == "regression":
-                selector_targets = np.asarray(y_np, dtype=float)[inner_train_idx]
-                selector_target_mean = float(np.nanmean(selector_targets))
-                selector_target_scale = float(np.nanstd(selector_targets))
-                if not np.isfinite(selector_target_scale) or selector_target_scale <= 0:
-                    selector_target_scale = 1.0
-            if base_dataset is not None:
-                selector_ds = Subset(base_dataset, list(map(int, inner_train_idx)))
-                selector_generator = torch.Generator()
-                selector_generator.manual_seed(int(settings.get("seed", 20260524)) + int(fold) * 10 + 1)
-                selector_loader = DataLoader(selector_ds, generator=selector_generator, **train_loader_args)
-            else:
-                selector_loader = None
-            best_epoch = 1
-            best_score = -np.inf
             progress_interval = max(1, int(settings.get("progress_interval_epochs", 10)))
             early_patience = int((settings.get("early_stopping_patience_by_endpoint") or {}).get(endpoint, settings.get("early_stopping_patience", 0) or 0))
-            for epoch in range(1, local.epochs + 1):
-                train_loss = train_one_epoch(
-                    selector_model,
-                    selector_optimizer,
-                    selector_scaler,
-                    inner_train_idx,
-                    fold_seed=int(fold) * 10 + 1,
-                    epoch=epoch,
-                    loader=selector_loader,
-                    target_mean=selector_target_mean,
-                    target_scale=selector_target_scale,
-                )
-                val_prediction, _val_features, _val_attention = predict_arrays(selector_model, inner_val_idx, return_attention=False)
-                if task == "survival":
-                    val_truth = y_np.iloc[inner_val_idx]
-                else:
-                    val_truth = np.asarray(y_np)[inner_val_idx]
-                val_score = _endpoint_validation_score(selection_metric, task, val_truth, val_prediction, len(classes))
-                selection_history.append({"epoch": int(epoch), "train_loss": float(train_loss), "validation_score": float(val_score)})
-                if np.isfinite(val_score) and (val_score > best_score or (val_score == best_score and epoch < best_epoch)):
-                    best_score = float(val_score)
-                    best_epoch = int(epoch)
-                if epoch == 1 or epoch == local.epochs or epoch % progress_interval == 0:
-                    print(
-                        f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
-                        f"selection_epoch={epoch}/{local.epochs} inner_{selection_metric}={val_score:.6g}",
-                        flush=True,
-                    )
-                if early_patience > 0 and epoch - best_epoch >= early_patience:
-                    print(
-                        f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
-                        f"selection_early_stop_epoch={epoch} best_epoch={best_epoch} patience={early_patience}",
-                        flush=True,
-                    )
-                    break
-            selected_epoch = int(best_epoch)
-            selected_inner_score = float(best_score)
-            del selector_model, selector_optimizer
-            if device.type == "cuda":
-                torch.cuda.empty_cache()
+            best_candidate_score = -np.inf
+            best_candidate_epoch = 1
             print(
                 f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
+                f"architecture_search_candidates={len(architecture_candidates)} search_epochs={architecture_search_epochs}",
+                flush=True,
+            )
+            for candidate_id, candidate_local in enumerate(architecture_candidates, start=1):
+                torch.manual_seed(int(settings.get("seed", 20260524)) + int(fold) * 1000 + int(candidate_id))
+                if device.type == "cuda":
+                    torch.cuda.manual_seed_all(int(settings.get("seed", 20260524)) + int(fold) * 1000 + int(candidate_id))
+                selector_model = make_model(candidate_local)
+                selector_optimizer = torch.optim.SGD(
+                    selector_model.parameters(),
+                    lr=candidate_local.lr,
+                    momentum=candidate_local.momentum,
+                    weight_decay=candidate_local.weight_decay,
+                )
+                selector_scheduler = make_scheduler(selector_optimizer, candidate_local, architecture_search_epochs)
+                selector_scaler = _new_grad_scaler(torch, use_amp)
+                selector_target_mean = 0.0
+                selector_target_scale = 1.0
+                if task == "regression":
+                    selector_targets = np.asarray(y_np, dtype=float)[inner_train_idx]
+                    selector_target_mean = float(np.nanmean(selector_targets))
+                    selector_target_scale = float(np.nanstd(selector_targets))
+                    if not np.isfinite(selector_target_scale) or selector_target_scale <= 0:
+                        selector_target_scale = 1.0
+                if base_dataset is not None:
+                    selector_ds = Subset(base_dataset, list(map(int, inner_train_idx)))
+                    selector_generator = torch.Generator()
+                    selector_generator.manual_seed(int(settings.get("seed", 20260524)) + int(fold) * 10 + int(candidate_id))
+                    selector_loader = DataLoader(selector_ds, generator=selector_generator, **train_loader_args)
+                else:
+                    selector_loader = None
+                candidate_best_epoch = 1
+                candidate_best_score = -np.inf
+                selection_history: list[dict[str, object]] = []
+                for epoch in range(1, architecture_search_epochs + 1):
+                    train_loss = train_one_epoch(
+                        selector_model,
+                        selector_optimizer,
+                        selector_scaler,
+                        inner_train_idx,
+                        fold_seed=int(fold) * 10 + int(candidate_id),
+                        epoch=epoch,
+                        loader=selector_loader,
+                        target_mean=selector_target_mean,
+                        target_scale=selector_target_scale,
+                    )
+                    if selector_scheduler is not None:
+                        selector_scheduler.step()
+                    val_prediction, _val_features, _val_attention = predict_arrays(
+                        selector_model,
+                        inner_val_idx,
+                        model_settings=candidate_local,
+                        return_attention=False,
+                    )
+                    val_truth = np.asarray(y_np)[inner_val_idx]
+                    val_score = _endpoint_validation_score(selection_metric, task, val_truth, val_prediction, len(classes))
+                    selection_history.append({"epoch": int(epoch), "train_loss": float(train_loss), "validation_score": float(val_score)})
+                    if np.isfinite(val_score) and (val_score > candidate_best_score or (val_score == candidate_best_score and epoch < candidate_best_epoch)):
+                        candidate_best_score = float(val_score)
+                        candidate_best_epoch = int(epoch)
+                    if epoch == 1 or epoch == architecture_search_epochs or epoch % progress_interval == 0:
+                        print(
+                            f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
+                            f"candidate={candidate_id}/{len(architecture_candidates)} "
+                            f"embed={candidate_local.embed_dim} layers={candidate_local.num_layers} heads={candidate_local.attention_heads} "
+                            f"selection_epoch={epoch}/{architecture_search_epochs} inner_{selection_metric}={val_score:.6g}",
+                            flush=True,
+                        )
+                    if early_patience > 0 and epoch - candidate_best_epoch >= early_patience:
+                        print(
+                            f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
+                            f"candidate={candidate_id} selection_early_stop_epoch={epoch} best_epoch={candidate_best_epoch} patience={early_patience}",
+                            flush=True,
+                        )
+                        break
+                candidate_results.append(
+                    {
+                        "candidate_id": int(candidate_id),
+                        "params": asdict(candidate_local),
+                        "selected_m_star": int(candidate_best_epoch),
+                        "selected_inner_score": float(candidate_best_score),
+                        "selection_history": selection_history,
+                    }
+                )
+                if np.isfinite(candidate_best_score) and (
+                    candidate_best_score > best_candidate_score
+                    or (candidate_best_score == best_candidate_score and candidate_id < selected_architecture_candidate_id)
+                ):
+                    best_candidate_score = float(candidate_best_score)
+                    best_candidate_epoch = int(candidate_best_epoch)
+                    selected_local = candidate_local
+                    selected_architecture_candidate_id = int(candidate_id)
+                del selector_model, selector_optimizer
+                if device.type == "cuda":
+                    torch.cuda.empty_cache()
+            selected_epoch = int(best_candidate_epoch)
+            selected_inner_score = float(best_candidate_score)
+            if not np.isfinite(selected_inner_score):
+                raise RuntimeError(f"No valid MuAt architecture candidate for endpoint={endpoint} fold={fold}")
+            print(
+                f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
+                f"selected_candidate={selected_architecture_candidate_id} embed={selected_local.embed_dim} "
+                f"layers={selected_local.num_layers} heads={selected_local.attention_heads} "
                 f"selected_epoch={selected_epoch} selected_inner_{selection_metric}={selected_inner_score:.6g}",
                 flush=True,
             )
+        else:
+            candidate_results = [
+                {
+                    "candidate_id": 1,
+                    "params": asdict(selected_local),
+                    "selected_m_star": int(selected_epoch),
+                    "selected_inner_score": selected_inner_score,
+                    "selection_history": [],
+                }
+            ]
 
-        model = make_model()
-        optimizer = torch.optim.SGD(model.parameters(), lr=local.lr, momentum=local.momentum, weight_decay=local.weight_decay)
+        model = make_model(selected_local)
+        optimizer = torch.optim.SGD(model.parameters(), lr=selected_local.lr, momentum=selected_local.momentum, weight_decay=selected_local.weight_decay)
+        scheduler = make_scheduler(optimizer, selected_local, selected_epoch)
         if base_dataset is not None:
             train_ds = Subset(base_dataset, list(map(int, train_idx)))
             generator = torch.Generator()
@@ -1132,6 +1235,8 @@ def _fit_predict_local(
                 if state.get("fingerprint") == fingerprint and int(state.get("selected_epoch", local.epochs)) == int(selected_epoch):
                     model.load_state_dict(state["model_state"])
                     optimizer.load_state_dict(state["optimizer_state"])
+                    if scheduler is not None and state.get("scheduler_state") is not None:
+                        scheduler.load_state_dict(state["scheduler_state"])
                     if scaler is not None and state.get("scaler_state") is not None:
                         scaler.load_state_dict(state["scaler_state"])
                     epoch_losses = [float(v) for v in state.get("epoch_losses", [])]
@@ -1162,6 +1267,8 @@ def _fit_predict_local(
                     target_scale=train_target_scale,
                 )
             )
+            if scheduler is not None:
+                scheduler.step()
             if epoch == 1 or epoch == selected_epoch or epoch % progress_interval == 0:
                 print(
                     f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
@@ -1180,25 +1287,17 @@ def _fit_predict_local(
                         "epoch_losses": epoch_losses,
                         "model_state": model.state_dict(),
                         "optimizer_state": optimizer.state_dict(),
+                        "scheduler_state": scheduler.state_dict() if scheduler is not None else None,
                         "scaler_state": scaler.state_dict() if scaler is not None else None,
                     },
                     tmp_path,
                 )
                 os.replace(tmp_path, paths["training"])
-        survival_risk_mean = 0.0
-        survival_risk_scale = 1.0
-        if task == "survival":
-            train_risk, _train_features, _train_attention = predict_arrays(model, np.asarray(train_idx), return_attention=False)
-            train_risk_values = train_risk[:, 0]
-            survival_risk_mean = float(np.nanmean(train_risk_values))
-            survival_risk_scale = float(np.nanstd(train_risk_values))
-            if not np.isfinite(survival_risk_scale) or survival_risk_scale <= 0:
-                survival_risk_scale = 1.0
         model.eval()
         fold_output = np.zeros((len(test_idx), len(classes) if task in {"binary", "multiclass"} else 1), dtype=float)
-        fold_features = np.zeros((len(test_idx), local.feature_dim), dtype=float)
+        fold_features = np.zeros((len(test_idx), selected_local.feature_dim), dtype=float)
         fold_attention_rows: list[dict[str, object]] = []
-        eval_batch_size = max(1, int(settings.get("eval_batch_size", local.batch_size)))
+        eval_batch_size = max(1, int(settings.get("eval_batch_size", selected_local.batch_size)))
         with torch.no_grad():
             for start in range(0, len(test_idx), eval_batch_size):
                 batch_positions = np.asarray(test_idx[start : start + eval_batch_size], dtype=np.int64)
@@ -1289,25 +1388,7 @@ def _fit_predict_local(
                 }
             )
         else:
-            fold_raw_risk = fold_output[:, 0]
-            fold_pred = (fold_raw_risk - float(survival_risk_mean)) / max(float(survival_risk_scale), 1e-6)
-            fold_truth = y_np.iloc[test_idx].copy()
-            fold_score = harrell_c_index(fold_truth["time"].to_numpy(dtype=float), fold_truth["event"].to_numpy(dtype=int), fold_pred)
-            fold_pred_frame = pd.DataFrame(
-                {
-                    "benchmark": benchmark,
-                    "endpoint": endpoint,
-                    "representation": LOCAL_REPRESENTATION,
-                    "learner": "muat_compatible_qkv_attention",
-                    "sample": common[test_idx].astype(str),
-                    "time": fold_truth["time"].to_numpy(dtype=float),
-                    "event": fold_truth["event"].to_numpy(dtype=int),
-                    "true_value": fold_truth["event"].to_numpy(dtype=int),
-                    "risk_score": fold_pred,
-                    "raw_risk_score": fold_raw_risk,
-                    "fold": int(fold),
-                }
-            )
+            raise ValueError(f"Unsupported MuAt-compatible task for endpoint={endpoint}: {task}")
         fold_feature_frame = pd.DataFrame(fold_features, columns=[f"muat_feature_{i + 1}" for i in range(fold_features.shape[1])])
         fold_feature_frame.insert(0, "sample", common[test_idx].astype(str))
         fold_feature_frame.insert(0, "endpoint", endpoint)
@@ -1330,26 +1411,19 @@ def _fit_predict_local(
                     "outer_test_n": int(len(test_idx)),
                     "inner_train_n": inner_train_n,
                     "inner_val_n": inner_val_n,
-                    "epochs": int(local.epochs),
+                    "epochs": int(selected_local.epochs),
                     "selected_m_star": int(selected_epoch),
                     "selected_inner_score": selected_inner_score,
                     "selection_metric": selection_metric,
-                    "candidate_count": 1,
-                    "candidate_results_json": json.dumps(
-                        [
-                            {
-                                "candidate_id": 1,
-                                "params": asdict(local),
-                                "selected_m_star": int(selected_epoch),
-                                "selected_inner_score": selected_inner_score,
-                                "selection_history": selection_history,
-                            }
-                        ],
-                        sort_keys=True,
-                    ),
+                    "candidate_count": int(len(candidate_results)),
+                    "architecture_candidate_count": int(len(architecture_candidates)),
+                    "architecture_search_enabled": bool(architecture_search_enabled),
+                    "architecture_search_epochs": int(architecture_search_epochs),
+                    "selected_architecture_candidate_id": int(selected_architecture_candidate_id),
+                    "candidate_results_json": json.dumps(candidate_results, sort_keys=True),
                     "nested_validation": bool(nested_validation),
                     "batch_size": int(effective_batch_size),
-                    "configured_batch_size": int(local.batch_size),
+                    "configured_batch_size": int(selected_local.batch_size),
                     "eval_batch_size": int(eval_batch_size),
                     "train_loss_last": epoch_losses[-1] if epoch_losses else float("nan"),
                     "fold_score": fold_score,
@@ -1357,13 +1431,11 @@ def _fit_predict_local(
                     "balanced_accuracy": fold_score if task in {"binary", "multiclass"} and selection_metric == "balanced_accuracy" else float("nan"),
                     "macro_auroc": fold_score if task in {"binary", "multiclass"} and selection_metric == "macro_auroc" else float("nan"),
                     "spearman": fold_score if task == "regression" else float("nan"),
-                    "c_index": fold_score if task == "survival" else float("nan"),
+                    "c_index": float("nan"),
                     "target_mean": train_target_mean if task == "regression" else float("nan"),
                     "target_scale": train_target_scale if task == "regression" else float("nan"),
-                    "risk_mean": survival_risk_mean if task == "survival" else float("nan"),
-                    "risk_scale": survival_risk_scale if task == "survival" else float("nan"),
                     "checkpoint_path": str(paths["meta"]),
-                    "model_settings_json": json.dumps(asdict(local), sort_keys=True),
+                    "model_settings_json": json.dumps(asdict(selected_local), sort_keys=True),
                 }
             ]
         )
@@ -1441,16 +1513,14 @@ def _fit_predict_local(
         pred_values = pred_frame["pred_value"].to_numpy(dtype=float)
         spearman = _safe_spearman(np.asarray(y_np, dtype=float), pred_values)
         score = spearman
-    elif task == "survival":
-        primary_metric = "c_index"
-        risk = pred_frame["risk_score"].to_numpy(dtype=float)
-        time_values = pred_frame["time"].to_numpy(dtype=float)
-        event_values = pred_frame["event"].to_numpy(dtype=int)
-        c_index = harrell_c_index(time_values, event_values, risk)
-        score = c_index
     else:
-        primary_metric = "score"
-        score = float("nan")
+        raise ValueError(f"Unsupported MuAt-compatible task for endpoint={endpoint}: {task}")
+    selected_overall = _most_common_model_settings(fold_rows, local)
+    selected_architecture_counts: dict[str, int] = {}
+    for row in fold_rows:
+        value = str(row.get("model_settings_json", ""))
+        if value:
+            selected_architecture_counts[value] = selected_architecture_counts.get(value, 0) + 1
     result_row = {
         "experiment_id": EXPERIMENT_ID,
         "benchmark": benchmark,
@@ -1474,7 +1544,7 @@ def _fit_predict_local(
         "n_samples": int(len(common)),
         "n_classes": int(len(classes) if task in {"binary", "multiclass"} else 1),
         "primary_metric_scope": primary_scope,
-        "validation_protocol": "outer_train_inner_validation_epoch_selection" if nested_validation else "fixed_epoch_outer_oof",
+        "validation_protocol": "outer_train_inner_validation_architecture_and_epoch_selection" if nested_validation else "fixed_epoch_outer_oof",
         "official_muat": False,
         "n_folds": int(n_splits),
         "checkpoint_fingerprint": fingerprint,
@@ -1487,8 +1557,13 @@ def _fit_predict_local(
         "canonical_split_signature": canonical_split_signature,
         "dictionary_mode": str(settings.get("dictionary_mode", "observed")),
         "dictionary_sizes_json": json.dumps(dictionaries.sizes(), sort_keys=True),
+        "architecture_search_enabled": bool(architecture_search_enabled),
+        "architecture_candidate_count": int(len(architecture_candidates)),
+        "architecture_search_epochs": int(architecture_search_epochs),
+        "architecture_candidates_json": json.dumps([asdict(candidate) for candidate in architecture_candidates], sort_keys=True),
+        "selected_architecture_counts_json": json.dumps(selected_architecture_counts, sort_keys=True),
         **{f"calibration_{k}": v for k, v in calibration.items()},
-        **asdict(local),
+        **asdict(selected_overall),
     }
     if task == "multiclass" and str(endpoint) in TCGA_WES_TOP20_ENDPOINTS:
         result_row.update(
@@ -1519,6 +1594,7 @@ def _fit_predict_local(
 
 
 def run(ctx: RunnerContext) -> None:
+    warnings.filterwarnings("ignore", message="y_pred contains classes not in y_true", category=UserWarning)
     settings = dict(((ctx.settings.get("experiments") or {}).get(EXPERIMENT_ID) or {}))
     registry = load_endpoint_registry(settings.get("endpoint_registry") or ctx.settings.get("endpoint_registry"))
     primary_endpoint = str(settings.get("primary_endpoint") or settings.get("primary_task") or PRIMARY_ENDPOINT)
@@ -1772,6 +1848,9 @@ def run(ctx: RunnerContext) -> None:
         n_classes = int(pd.to_numeric(top20_rows.iloc[0].get("n_classes"), errors="coerce"))
         if n_samples != 8800 or n_classes != 20:
             raise RuntimeError(f"MuAt-compatible cancer_type_top20 expected n=8800/classes=20, got n={n_samples}/classes={n_classes}")
+        metrics = set(top20_rows.get("metric", pd.Series(dtype=str)).astype(str))
+        if metrics != {"balanced_accuracy"}:
+            raise RuntimeError(f"MuAt-compatible cancer_type_top20 must use balanced_accuracy, got metrics={sorted(metrics)}")
     atomic_write_csv(sanitize_frame(results), results_path, index=False)
     _write_main_panel_model_comparison(ctx, output_prefix, results)
     if pred_frames:
@@ -1816,6 +1895,12 @@ def run(ctx: RunnerContext) -> None:
         "dictionary_sizes": manifest_dictionary_sizes,
         "dictionary_mode": dictionary_mode,
         "count_feature_mode": str(settings.get("count_feature_mode", "none")),
+        "pooling_mode": str(settings.get("pooling_mode", "attention_weighted")),
+        "architecture_search_enabled": bool(settings.get("architecture_search_enabled", False)),
+        "architecture_search_embed_dims": settings.get("architecture_search_embed_dims"),
+        "architecture_search_num_layers": settings.get("architecture_search_num_layers"),
+        "architecture_search_attention_heads": settings.get("architecture_search_attention_heads"),
+        "architecture_search_epochs": settings.get("architecture_search_epochs"),
     }
     atomic_write_json(manifest_path, manifest)
     write_summary_csv(

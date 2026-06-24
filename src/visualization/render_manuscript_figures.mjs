@@ -62,7 +62,7 @@ const endpointLabel = registryMap("endpoint", {
 const modelLabel = registryMap("model_family", {
   elastic_net: "Elastic net",
   XGBoost: "XGBoost",
-  cox_ph: "Cox PH",
+  cox_ph: "CoxNet",
   "MuAt-compatible reimplementation": "MuAt-compatible",
 });
 
@@ -210,7 +210,7 @@ function formatQ(value) {
   return `q=${q.toFixed(3)}`;
 }
 
-const mainEndpointOrder = ["damage_class", "HRD_Score", "hrd_binary_24", "hrd_binary_33", "hrd_binary_42", "cancer_type_top20", "OS"];
+const mainEndpointOrder = ["damage_class", "HRD_Score", "hrd_binary_24", "hrd_binary_33", "hrd_binary_42", "cancer_type_top20"];
 const tabularReps = ["burden_only", "signatures_only", "MAF_stack_only", "signatures_plus_MAF_stack"];
 const muatRep = "MuAt_style_attention_MIL";
 
@@ -229,7 +229,7 @@ function bestTabular(rows, endpoint) {
 }
 
 function benchmarkTabular(rows, endpoint) {
-  const preferredModel = endpoint === "OS" ? "cox_ph" : "XGBoost";
+  const preferredModel = "XGBoost";
   return scoreRows(rows).find(r =>
     r.endpoint === endpoint &&
     r.representation_family === "signatures_plus_MAF_stack" &&
@@ -514,9 +514,9 @@ function barFigureV2(stem, title, csvName, outDir, options = {}) {
   models.forEach((model, mi) => {
     const x0 = margin.left + mi * (facetW + facetGap);
     const modelTag = model === "elastic_net" ? "EN" : "XGB";
-    const panelLabel = model === "XGBoost" && endpoints.includes("OS") ? "XGBoost / Cox PH for OS" : labelModel(model);
+    const panelLabel = labelModel(model);
     body.push(`<text x="${x0}" y="126" class="panel-title">${esc(panelLabel)}</text>`);
-    body.push(chip(x0 + (model === "XGBoost" && endpoints.includes("OS") ? 278 : 112), 124, model === "XGBoost" && endpoints.includes("OS") ? "XGB+COX" : modelTag, { width: model === "XGBoost" && endpoints.includes("OS") ? 74 : 44, fill: "#E0F2FE", stroke: "#BAE6FD" }));
+    body.push(chip(x0 + 112, 124, modelTag, { width: 44, fill: "#E0F2FE", stroke: "#BAE6FD" }));
     [0, 0.25, 0.5, 0.75, 1].forEach(t => {
       if (t <= max + 1e-9) {
         const x = x0 + t / max * barW;
@@ -526,12 +526,7 @@ function barFigureV2(stem, title, csvName, outDir, options = {}) {
     });
     body.push(`<text x="${x0 + barW / 2}" y="${height - 36}" text-anchor="middle" class="small">OOF primary metric</text>`);
     endpoints.forEach((ep, ei) => {
-      if (ep === "OS" && model === "elastic_net") {
-        const noteY = margin.top + ei * groupH + groupH / 2 + 4;
-        body.push(textBlock(x0 + 18, noteY - 8, ["Survival uses Cox PH", "shown in the right panel"], { cls: "tiny", lineHeight: 13 }));
-        return;
-      }
-      const lookupModel = ep === "OS" && rows.some(r => r.endpoint === ep && r.model_family === "cox_ph") ? "cox_ph" : model;
+      const lookupModel = model;
       const baseY = margin.top + ei * groupH + 18;
       const winner = rows
         .filter(d => d.endpoint === ep && d.model_family === lookupModel)
@@ -569,8 +564,7 @@ function barFigureV2(stem, title, csvName, outDir, options = {}) {
       });
       body.push(`<text x="${zero}" y="${height - 36}" text-anchor="middle" class="small">Paired delta</text>`);
       endpoints.forEach((ep, ei) => {
-        if (ep === "OS" && model === "elastic_net") return;
-        const testModel = ep === "OS" && rows.some(r => r.endpoint === ep && r.model_family === "cox_ph") ? "cox_ph" : model;
+        const testModel = model;
         const test = findTest(tests, ep, testModel, options.deltaComparison);
         if (!test) return;
         const delta = num(test.delta);
@@ -613,12 +607,11 @@ function barFigureV2(stem, title, csvName, outDir, options = {}) {
         body.push(`<line x1="${center}" y1="${margin.top - 12}" x2="${center}" y2="${height - margin.bottom + 8}" stroke="#CBD5E1" stroke-width="1.1"><title>${esc(long)}</title></line>`);
       });
       endpoints.forEach((ep, ei) => {
-        if (ep === "OS" && model === "elastic_net") return;
         const cy = margin.top + ei * groupH + groupH / 2 + 1;
         const glyphY = cy - 10;
         const labelY = cy + 17;
         contrastDefs.forEach(([id, short, long], ci) => {
-          const testModel = ep === "OS" && rows.some(r => r.endpoint === ep && r.model_family === "cox_ph") ? "cox_ph" : model;
+          const testModel = model;
           const test = findTest(tests, ep, testModel, id);
           if (!test) return;
           const colX = cx0 + ci * colW;
@@ -722,7 +715,7 @@ function muatComparatorFigure(stem, title, csvName, outDir) {
     const muat = muatForEndpoint(rows, ep);
     const series = [
       { key: "best", label: `Best tabular: ${rowTitle(best)}`, short: "Best tabular", row: best, color: "#111827" },
-      { key: "default", label: `Default tabular: ${rowTitle(defaultTabular)}`, short: ep === "OS" ? "Sig+MAF Cox" : "Sig+MAF XGB", row: defaultTabular, color: palette.signatures_plus_MAF_stack },
+      { key: "default", label: `Default tabular: ${rowTitle(defaultTabular)}`, short: "Sig+MAF XGB", row: defaultTabular, color: palette.signatures_plus_MAF_stack },
       { key: "muat", label: "MuAt-compatible event-bag model", short: "MuAt-compatible", row: muat, color: palette.MuAt_style_attention_MIL },
     ];
     series.forEach((item, si) => {
@@ -770,7 +763,7 @@ function muatComparatorFigure(stem, title, csvName, outDir) {
 function heatFacetFigure(stem, title, csvName, outDir) {
   const rows = readCsv(csvName);
   requireMeasured(rows, stem);
-  const endpoints = ["damage_class", "HRD_Score", "hrd_binary_24", "hrd_binary_33", "hrd_binary_42", "cancer_type_top20", "OS", "PFI"].filter(ep => rows.some(r => r.endpoint === ep));
+  const endpoints = mainEndpointOrder.filter(ep => rows.some(r => r.endpoint === ep));
   const reps = ["burden_only", "signatures_only", "MAF_stack_only", "signatures_plus_MAF_stack"];
   const models = ["elastic_net", "XGBoost"];
   const cellW = 176, cellH = 50, left = 235, top = 154, facetGap = 70;
@@ -782,7 +775,7 @@ function heatFacetFigure(stem, title, csvName, outDir) {
   const body = [
     `<rect width="${width}" height="${height}" fill="#FFFFFF"/>`,
     `<text x="44" y="50" class="title">${esc(title)}</text>`,
-    `<text x="44" y="78" class="subtitle">Canonical 5-fold OOF values. Figure 5 is faceted by model family, so each cell matches Figures 2-4 exactly.</text>`,
+    `<text x="44" y="78" class="subtitle">Canonical 5-fold OOF values faceted by model family.</text>`,
   ];
   reps.forEach((rep, j) => {
     const cx = left + j * cellW + (cellW - 8) / 2;
@@ -818,7 +811,7 @@ function heatFacetFigureV2(stem, title, csvName, outDir) {
   const endpoints = mainEndpointOrder.filter(ep => rows.some(r => r.endpoint === ep));
   const reps = ["burden_only", "signatures_only", "MAF_stack_only", "signatures_plus_MAF_stack", "MuAt_style_attention_MIL"];
   const models = ["elastic_net", "XGBoost"];
-  const tests = pairwiseTests("figure_5");
+  const tests = pairwiseTests("figure_4");
   const comparisonForRep = {
     signatures_only: "signatures_vs_burden",
     MAF_stack_only: "maf_stack_vs_signatures",
@@ -847,7 +840,7 @@ function heatFacetFigureV2(stem, title, csvName, outDir) {
     body.push(`<text x="44" y="${y0 - 18}" class="panel-title">${esc(labelModel(model))}</text>`);
     body.push(chip(150, y0 - 20, model === "elastic_net" ? "EN" : "XGB", { width: 44, fill: "#E0F2FE", stroke: "#BAE6FD" }));
     endpoints.forEach((ep, i) => {
-      const lookupModel = ep === "OS" && rows.some(r => r.endpoint === ep && r.model_family === "cox_ph") ? "cox_ph" : model;
+      const lookupModel = model;
       const rowY = y0 + i * cellH;
       if (i % 2 === 0) body.push(`<rect x="36" y="${rowY - 5}" width="${width - 72}" height="${cellH - 2}" class="row-band"/>`);
       const contextRow = rows.find(r => r.endpoint === ep && r.model_family === lookupModel) || rows.find(r => r.endpoint === ep);
@@ -909,35 +902,34 @@ function heatFacetFigureV3(stem, title, csvName, outDir) {
   const rows = readCsv(csvName);
   requireMeasured(rows, stem);
   const endpoints = mainEndpointsPresent(rows);
+  const hasMuat = rows.some(r => r.representation_family === muatRep);
   const cellW = 126, cellH = 76;
   const left = 310, top = 214, bottom = 128, groupGap = 44;
   const group1X = left;
   const group2X = group1X + tabularReps.length * cellW + groupGap;
-  const muatX = group2X + tabularReps.length * cellW + groupGap;
+  const muatX = hasMuat ? group2X + tabularReps.length * cellW + groupGap : null;
   const muatW = 188;
-  const width = muatX + muatW + 70;
+  const width = hasMuat ? muatX + muatW + 70 : group2X + tabularReps.length * cellW + 70;
   const height = top + endpoints.length * cellH + bottom;
   const visibleRows = [];
   endpoints.forEach(ep => {
     tabularReps.forEach(rep => {
-      if (ep !== "OS") {
-        const en = rows.find(r => r.endpoint === ep && r.model_family === "elastic_net" && r.representation_family === rep);
-        if (en) visibleRows.push(en);
-      }
-      const model = ep === "OS" ? "cox_ph" : "XGBoost";
+      const en = rows.find(r => r.endpoint === ep && r.model_family === "elastic_net" && r.representation_family === rep);
+      if (en) visibleRows.push(en);
+      const model = "XGBoost";
       const xgb = rows.find(r => r.endpoint === ep && r.model_family === model && r.representation_family === rep);
       if (xgb) visibleRows.push(xgb);
     });
-    const muat = muatForEndpoint(rows, ep);
-    if (muat) visibleRows.push(muat);
+    const muat = hasMuat ? muatForEndpoint(rows, ep) : null;
+    if (hasMuat && muat) visibleRows.push(muat);
   });
   const vals = visibleRows.map(r => num(r.primary_score)).filter(Number.isFinite);
   const min = Math.min(...vals), max = Math.max(...vals);
   const body = [
     `<rect width="${width}" height="${height}" fill="#FFFFFF"/>`,
     `<text x="44" y="50" class="title">${esc(title)}</text>`,
-    `<text x="44" y="82" class="subtitle">Absolute canonical 5-fold OOF scores. MuAt-compatible is separated as a direct event-bag model, not nested under Elastic net or XGBoost.</text>`,
-    `<text x="44" y="108" class="tiny">Black outline marks the best displayed score within each endpoint. OS is evaluated with Cox PH; Elastic net cells are intentionally not applicable for survival.</text>`,
+    `<text x="44" y="82" class="subtitle">Absolute canonical 5-fold OOF scores for non-survival model-comparison endpoints.${hasMuat ? " MuAt-compatible is separated as a direct event-bag model, not nested under Elastic net or XGBoost." : " MuAt-compatible results are kept in the dedicated HRD comparator figure."}</text>`,
+    `<text x="44" y="108" class="tiny">Black outline marks the best displayed score within each endpoint. Cox survival rows are reported in the manuscript tables, not in this model-comparison figure.</text>`,
   ];
   const header = (x, w, titleText, subtitleText) => {
     body.push(`<rect x="${x - 10}" y="128" width="${w + 20}" height="64" rx="7" fill="#F8FAFC" stroke="#E2E8F0"/>`);
@@ -950,16 +942,16 @@ function heatFacetFigureV3(stem, title, csvName, outDir) {
     MAF_stack_only: "Bio MAF v4",
     signatures_plus_MAF_stack: "Sig + Bio MAF",
   };
-  header(group1X, tabularReps.length * cellW - 10, "Tabular linear model", "Elastic net; non-survival endpoints");
-  header(group2X, tabularReps.length * cellW - 10, "Tabular nonlinear / survival", "XGBoost; Cox PH for OS");
-  header(muatX, muatW - 10, "Direct event-set model", "MuAt-compatible");
+  header(group1X, tabularReps.length * cellW - 10, "Tabular linear model", "Elastic net");
+  header(group2X, tabularReps.length * cellW - 10, "Tabular nonlinear model", "XGBoost");
+  if (hasMuat) header(muatX, muatW - 10, "Direct event-set model", "MuAt-compatible");
   tabularReps.forEach((rep, j) => {
     const lx1 = group1X + j * cellW + (cellW - 10) / 2;
     const lx2 = group2X + j * cellW + (cellW - 10) / 2;
     body.push(textBlock(lx1, 204, [shortRep[rep] || labelRep(rep)], { cls: "tiny", anchor: "middle", lineHeight: 12 }));
     body.push(textBlock(lx2, 204, [shortRep[rep] || labelRep(rep)], { cls: "tiny", anchor: "middle", lineHeight: 12 }));
   });
-  body.push(textBlock(muatX + (muatW - 10) / 2, 204, ["MuAt-compatible"], { cls: "tiny", anchor: "middle", lineHeight: 12 }));
+  if (hasMuat) body.push(textBlock(muatX + (muatW - 10) / 2, 204, ["MuAt-compatible"], { cls: "tiny", anchor: "middle", lineHeight: 12 }));
 
   const drawCell = (row, x, y, w, h, winner, opts = {}) => {
     if (!row) {
@@ -983,30 +975,28 @@ function heatFacetFigureV3(stem, title, csvName, outDir) {
     body.push(textBlock(44, rowY + 27, wrapWords(labelEndpoint(ep, contextRow), 25), { cls: "label", lineHeight: 15 }));
     body.push(endpointContext(contextRow, 44, rowY + 52));
     const rowCandidates = [];
-    if (ep !== "OS") {
-      tabularReps.forEach(rep => {
-        const row = rows.find(r => r.endpoint === ep && r.model_family === "elastic_net" && r.representation_family === rep);
-        if (row) rowCandidates.push(row);
-      });
-    }
-    const model2 = ep === "OS" ? "cox_ph" : "XGBoost";
+    tabularReps.forEach(rep => {
+      const row = rows.find(r => r.endpoint === ep && r.model_family === "elastic_net" && r.representation_family === rep);
+      if (row) rowCandidates.push(row);
+    });
+    const model2 = "XGBoost";
     tabularReps.forEach(rep => {
       const row = rows.find(r => r.endpoint === ep && r.model_family === model2 && r.representation_family === rep);
       if (row) rowCandidates.push(row);
     });
-    const muat = muatForEndpoint(rows, ep);
-    if (muat) rowCandidates.push(muat);
+    const muat = hasMuat ? muatForEndpoint(rows, ep) : null;
+    if (hasMuat && muat) rowCandidates.push(muat);
     rowCandidates.sort((a, b) => num(b.primary_score) - num(a.primary_score));
     const winner = rowCandidates[0] || null;
     tabularReps.forEach((rep, j) => {
-      const en = ep === "OS" ? null : rows.find(r => r.endpoint === ep && r.model_family === "elastic_net" && r.representation_family === rep);
-      drawCell(en, group1X + j * cellW, rowY, cellW - 10, cellH - 12, winner, { naText: "Cox only" });
+      const en = rows.find(r => r.endpoint === ep && r.model_family === "elastic_net" && r.representation_family === rep);
+      drawCell(en, group1X + j * cellW, rowY, cellW - 10, cellH - 12, winner);
       const xgb = rows.find(r => r.endpoint === ep && r.model_family === model2 && r.representation_family === rep);
       drawCell(xgb, group2X + j * cellW, rowY, cellW - 10, cellH - 12, winner);
     });
-    drawCell(muat, muatX, rowY, muatW - 10, cellH - 12, winner);
+    if (hasMuat) drawCell(muat, muatX, rowY, muatW - 10, cellH - 12, winner);
     const best = bestTabular(rows, ep);
-    if (best && muat) {
+    if (hasMuat && best && muat) {
       const delta = num(muat.primary_score) - num(best.primary_score);
       const color = delta >= 0 ? gainColor : lossColor;
       body.push(`<text x="${muatX + (muatW - 10) / 2}" y="${rowY + 64}" text-anchor="middle" class="tiny" style="fill:${color}">vs best tabular ${formatSigned(delta)}</text>`);
@@ -1018,8 +1008,9 @@ function heatFacetFigureV3(stem, title, csvName, outDir) {
   body.push(`<text x="${legendX}" y="${legendY + 22}" class="tiny">${min.toFixed(2)}</text>`);
   body.push(`<text x="${legendX + 140}" y="${legendY + 22}" text-anchor="middle" class="tiny">OOF score</text>`);
   body.push(`<text x="${legendX + 280}" y="${legendY + 22}" text-anchor="end" class="tiny">${max.toFixed(2)}</text>`);
-  body.push(`<rect x="${legendX + 380}" y="${legendY - 16}" width="22" height="18" fill="#F8FAFC" stroke="#E2E8F0"/><text x="${legendX + 412}" y="${legendY - 2}" class="small">not applicable</text>`);
-  body.push(`<rect x="${legendX + 560}" y="${legendY - 17}" width="22" height="18" fill="#FFFFFF" stroke="#111827" stroke-width="2.4"/><text x="${legendX + 592}" y="${legendY - 2}" class="small">best within endpoint</text>`);
+  const bestLegendX = hasMuat ? legendX + 560 : legendX + 380;
+  if (hasMuat) body.push(`<rect x="${legendX + 380}" y="${legendY - 16}" width="22" height="18" fill="#F8FAFC" stroke="#E2E8F0"/><text x="${legendX + 412}" y="${legendY - 2}" class="small">not applicable</text>`);
+  body.push(`<rect x="${bestLegendX}" y="${legendY - 17}" width="22" height="18" fill="#FFFFFF" stroke="#111827" stroke-width="2.4"/><text x="${bestLegendX + 32}" y="${legendY - 2}" class="small">best within endpoint</text>`);
   return writeAsset(stem, svgShell(width, height, body.join("\n")), outDir);
 }
 
@@ -1152,7 +1143,68 @@ function s3MeasuredFigure(stem, title, csvName, outDir) {
   });
   const footY = height - 48;
   body.push(`<rect x="44" y="${footY - 20}" width="${width - 88}" height="42" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>`);
-  body.push(`<text x="66" y="${footY + 5}" class="tiny">S3 is intentionally scoped to supplementary checks; main endpoint ranking is shown once in Figure 5 to reduce redundant result panels.</text>`);
+  body.push(`<text x="66" y="${footY + 5}" class="tiny">S3 is intentionally scoped to supplementary checks; main endpoint ranking is reported in Figures 2-4 and the manuscript tables.</text>`);
+  return writeAsset(stem, svgShell(width, height, body.join("\n")), outDir);
+}
+
+function survivalCoxFigure(stem, title, csvName, outDir) {
+  const rows = readCsv(csvName)
+    .filter(r => String(r.status || "measured") === "measured")
+    .filter(r => String(r.model_family) === "cox_ph" && Number.isFinite(num(r.primary_score)));
+  if (!rows.length) return noMeasuredRowsFigure(stem, title, outDir);
+  const order = Object.fromEntries(tabularReps.map((rep, i) => [rep, i]));
+  rows.sort((a, b) => (order[a.representation_family] ?? 99) - (order[b.representation_family] ?? 99));
+  const width = 1320;
+  const height = 560;
+  const left = 340;
+  const right = 120;
+  const top = 148;
+  const rowH = 72;
+  const plotW = width - left - right;
+  const scores = rows.map(r => num(r.primary_score)).filter(Number.isFinite);
+  const minScore = Math.min(0.5, ...scores);
+  const maxScore = Math.max(...scores, 0.65);
+  const axisMin = Math.max(0, Math.floor((minScore - 0.035) * 20) / 20);
+  const axisMax = Math.min(1, Math.ceil((maxScore + 0.035) * 20) / 20);
+  const xFor = value => left + (num(value) - axisMin) / Math.max(axisMax - axisMin, 1e-9) * plotW;
+  const body = [
+    `<rect width="${width}" height="${height}" fill="#FFFFFF"/>`,
+    `<text x="44" y="52" class="title">${esc(title)}</text>`,
+    `<text x="44" y="82" class="subtitle">Five-fold out-of-fold Harrell C-index for the overall-survival CoxNet benchmark. Higher values indicate better risk ranking.</text>`,
+    `<text x="44" y="108" class="tiny">Cox estimators use the scikit-survival CoxNet workflow; survival rows are intentionally separated from non-survival model-comparison figures.</text>`,
+  ];
+  const axisY = top + rows.length * rowH + 28;
+  for (let t = axisMin; t <= axisMax + 1e-9; t += 0.05) {
+    const x = xFor(t);
+    body.push(`<line x1="${x}" y1="${top - 18}" x2="${x}" y2="${axisY - 16}" class="grid"/>`);
+    body.push(`<text x="${x}" y="${axisY + 12}" text-anchor="middle" class="tiny">${t.toFixed(2)}</text>`);
+  }
+  const chanceX = xFor(0.5);
+  body.push(`<line x1="${chanceX}" y1="${top - 28}" x2="${chanceX}" y2="${axisY - 12}" stroke="#64748B" stroke-width="1.4" stroke-dasharray="6,5"/>`);
+  body.push(`<text x="${chanceX + 8}" y="${top - 12}" class="tiny">0.50 reference</text>`);
+  body.push(`<line x1="${left}" y1="${axisY - 16}" x2="${left + plotW}" y2="${axisY - 16}" class="axis"/>`);
+  rows.forEach((r, i) => {
+    const y = top + i * rowH;
+    if (i % 2 === 0) body.push(`<rect x="36" y="${y - 14}" width="${width - 72}" height="${rowH - 8}" class="row-band"/>`);
+    body.push(textBlock(52, y + 17, wrapWords(labelRep(r.representation_family, r), 30), { cls: "label", lineHeight: 15 }));
+    const featureBits = [];
+    const n = num(r.n_samples);
+    const nf = num(r.n_features);
+    if (Number.isFinite(n)) featureBits.push(`n=${formatInt(n)}`);
+    if (Number.isFinite(nf)) featureBits.push(`${formatInt(nf)} features`);
+    if (String(r.selected_feature_sets || "").trim()) featureBits.push("nested block selection");
+    body.push(`<text x="52" y="${y + 44}" class="tiny">${esc(featureBits.join(" | "))}</text>`);
+    const v = num(r.primary_score);
+    const x0 = xFor(0.5);
+    const x1 = xFor(v);
+    const barX = Math.min(x0, x1);
+    const barW = Math.max(2, Math.abs(x1 - x0));
+    const fill = palette[r.representation_family] || "#2563EB";
+    body.push(`<rect x="${barX}" y="${y}" width="${barW}" height="34" rx="5" fill="${fill}" fill-opacity="0.88"><title>${esc(labelRep(r.representation_family, r))}: C-index ${v.toFixed(3)}</title></rect>`);
+    body.push(`<circle cx="${x1}" cy="${y + 17}" r="5.2" fill="#111827"/>`);
+    body.push(`<text x="${Math.min(width - right + 8, x1 + 14)}" y="${y + 22}" class="value">${v.toFixed(3)}</text>`);
+  });
+  body.push(`<text x="${left + plotW / 2}" y="${height - 38}" text-anchor="middle" class="small">Harrell C-index</text>`);
   return writeAsset(stem, svgShell(width, height, body.join("\n")), outDir);
 }
 
@@ -1335,9 +1387,9 @@ function conceptualOverviewV2(stem, outDir) {
   body.push(`<rect x="1532" y="210" width="310" height="236" rx="8" class="card"/>`);
   body.push(`<text x="1560" y="250" class="panel-title">Paired tabular models</text>`);
   body.push(textBlock(1560, 284, ["Elastic net and XGBoost", "5-fold out-of-fold predictions", "same endpoint splits and metrics"], { cls: "small", lineHeight: 22 }));
-  body.push(chip(1560, 382, "mAUROC", { width: 72, fill: "#DBEAFE", stroke: "#BFDBFE" }));
-  body.push(chip(1648, 382, "AUROC", { width: 66, fill: "#DBEAFE", stroke: "#BFDBFE" }));
-  body.push(chip(1728, 382, "Bal acc", { width: 70, fill: "#FDE68A", stroke: "#FCD34D" }));
+  body.push(chip(1560, 382, "AUROC", { width: 66, fill: "#DBEAFE", stroke: "#BFDBFE" }));
+  body.push(chip(1640, 382, "Bal acc", { width: 70, fill: "#FDE68A", stroke: "#FCD34D" }));
+  body.push(chip(1724, 382, "C-index", { width: 72, fill: "#E0F2FE", stroke: "#BAE6FD" }));
   body.push(chip(1560, 414, "rho", { width: 50, fill: "#DCFCE7", stroke: "#BBF7D0" }));
   body.push(`<path d="M1454 424 C1488 424 1498 328 1532 328" fill="none" class="rule" marker-end="url(#arrow)"/>`);
 
@@ -1452,7 +1504,12 @@ assets.push(barFigureV2(
     note: "Contrast signs are candidate minus baseline. Intervals are shown for bootstrap tests; DeLong rows carry p/q markers without bootstrap CIs.",
   },
 ));
-assets.push(heatFacetFigureV3("figure_5_cross_endpoint_summary", "Figure 5. Cross-endpoint representation summary", "figure_5_cross_endpoint_summary.csv", figuresDir));
+assets.push(survivalCoxFigure(
+  "figure_5_overall_survival_cox",
+  "Figure 5. Overall survival CoxNet benchmark",
+  "figure_5_overall_survival_cox.csv",
+  figuresDir,
+));
 assets.push(representationConstruction("figure_s1_representation_construction", supplementDir));
 assets.push(calibrationFigure("figure_s2_calibration_thresholds", "Supplementary Figure S2. Calibration and reliability", "figure_s2_calibration_thresholds.csv", supplementDir));
 assets.push(s3MeasuredFigure("figure_s3_feature_importance", "Supplementary Figure S3. Supplementary representation checks", "figure_s3_feature_importance.csv", supplementDir));

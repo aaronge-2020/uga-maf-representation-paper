@@ -687,9 +687,7 @@ def _current_row(row: dict[str, object], ctx: RunnerContext, *, tuned: bool = Fa
             return False
     score = pd.to_numeric(pd.Series([row.get("score")]), errors="coerce").iloc[0]
     if str(row.get("learner")) == "cox_ph" and str(row.get("linear_solver", "")) not in {
-        "lifelines_penalized_cox_ph_nested_v3_conditioned_variance_stepcap",
-        "lifelines_penalized_cox_ph_nested_v4_conditioned_variance_highdim_stepcap",
-        "fast_breslow_elasticnet_cox_nested_v1",
+        "sksurv_coxnet_nested_v1_conditioned_variance",
     }:
         return False
     if str(row.get("learner")) == "linear" and str(row.get("linear_solver", "")) not in {"sgd_log_loss_elasticnet_v1", "elastic_net_coordinate_descent_v1", "logistic_saga_elasticnet_nested_v1", "elastic_net_coordinate_descent_nested_v1"}:

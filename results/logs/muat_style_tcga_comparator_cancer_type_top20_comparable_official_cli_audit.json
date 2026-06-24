@@ -1,0 +1,30 @@
+{
+  "pretrained_wes_predict_ensemble_command": {
+    "command": [
+      "muat",
+      "predict-ensemble",
+      "pretrained",
+      "wes",
+      "--mutation-type",
+      "snv+mnv+indel",
+      "--input-filepath",
+      "${REPRO_ROOT}_datasets\\datasets\\tcga_mc3\\raw\\mc3.v0.2.8.PUBLIC.maf.gz",
+      "--result-dir",
+      "${REPRO_ROOT}\\results\\tables\\muat_style_tcga_comparator_official_muat"
+    ],
+    "fingerprint": "e728cd014d2befa8f70f879b540cd39b86acfd936db7a0284229ed4114b9379c",
+    "inputs": [
+      {
+        "mtime_ns": 1778724940880000000,
+        "path": "${REPRO_ROOT}_datasets\\datasets\\tcga_mc3\\raw\\mc3.v0.2.8.PUBLIC.maf.gz",
+        "size": 753339089
+      }
+    ]
+  },
+  "status": "not_available",
+  "version": {
+    "available": false,
+    "executable": null,
+    "version": null
+  }
+}

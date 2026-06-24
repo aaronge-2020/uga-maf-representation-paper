@@ -53,7 +53,7 @@ except ImportError:  # pragma: no cover - threadpoolctl is a scikit-learn depend
 LINEAR_L1_GRID = [0.0, 0.25, 0.5, 0.75, 1.0]
 LOGISTIC_C_GRID = [0.001, 0.01, 0.1, 1.0, 10.0]
 ELASTIC_ALPHA_GRID = [1e-4, 1e-3, 1e-2, 1e-1, 1.0, 10.0]
-COX_PENALIZER_GRID = [1e-4, 1e-3, 1e-2, 1e-1, 1.0, 10.0]
+COX_ALPHA_GRID = [1e-4, 1e-3, 1e-2, 1e-1, 1.0, 10.0]
 
 
 @dataclass
@@ -150,31 +150,17 @@ def topk_accuracy(y_true: np.ndarray, proba: np.ndarray, k: int) -> float:
 def harrell_c_index(time: Iterable[float], event: Iterable[int], risk: Iterable[float]) -> float:
     """Harrell C-index where higher risk means shorter survival."""
     try:
-        from lifelines.utils import concordance_index
+        from sksurv.metrics import concordance_index_censored
+    except ImportError as exc:
+        raise RuntimeError("scikit-survival is required for Cox survival endpoints") from exc
 
-        return float(concordance_index(np.asarray(time, dtype=float), -np.asarray(risk, dtype=float), np.asarray(event, dtype=int)))
-    except Exception:
-        pass
-
-    t = np.asarray(time, dtype=float)
-    e = np.asarray(event, dtype=int)
-    r = np.asarray(risk, dtype=float)
-    concordant = 0.0
-    permissible = 0.0
-    n = len(t)
-    for i in range(n):
-        if e[i] != 1 or not np.isfinite(t[i]) or not np.isfinite(r[i]):
-            continue
-        later = np.where(t[i] < t)[0]
-        for j in later:
-            if not np.isfinite(r[j]):
-                continue
-            permissible += 1.0
-            if r[i] > r[j]:
-                concordant += 1.0
-            elif r[i] == r[j]:
-                concordant += 0.5
-    return float(concordant / permissible) if permissible > 0 else float("nan")
+    t = np.asarray(time, dtype=np.float64)
+    e = np.asarray(event, dtype=bool)
+    r = np.asarray(risk, dtype=np.float64)
+    valid = np.isfinite(t) & np.isfinite(r)
+    if not bool(np.any(valid & e)):
+        return float("nan")
+    return float(concordance_index_censored(e[valid], t[valid], r[valid])[0])
 
 
 def _split_y(task: str, y: Any) -> np.ndarray:
@@ -304,11 +290,38 @@ def _ranked_candidates(candidates: list[dict[str, Any]], seed: int, limit: int |
     return shuffled[: int(limit)] if limit is not None and limit > 0 else shuffled
 
 
-def _linear_candidates(task: str, seed: int, limit: int | None = None) -> list[dict[str, Any]]:
+def _survival_candidate_options(task: str, n_features: int, settings: dict[str, Any]) -> dict[str, Any]:
+    if task != "survival":
+        return {}
+    high_dim = int(n_features) >= int(settings.get("cox_high_dim_feature_threshold", 500))
+    min_alpha = settings.get("cox_high_dim_min_alpha") if high_dim else settings.get("cox_min_alpha")
+    if min_alpha is None:
+        min_alpha = settings.get("coxnet_min_alpha", 1e-2)
+    return {
+        "cox_min_alpha": float(min_alpha) if min_alpha is not None else None,
+    }
+
+
+def _linear_candidates(
+    task: str,
+    seed: int,
+    limit: int | None = None,
+    *,
+    cox_min_alpha: float | None = None,
+) -> list[dict[str, Any]]:
     if task == "regression":
         grid = [{"alpha": a, "l1_ratio": l1} for a, l1 in product(ELASTIC_ALPHA_GRID, LINEAR_L1_GRID)]
     elif task == "survival":
-        grid = [{"penalizer": p, "l1_ratio": l1} for p, l1 in product(COX_PENALIZER_GRID, LINEAR_L1_GRID)]
+        grid = [
+            {
+                "alpha": alpha,
+                "l1_ratio": l1_ratio,
+                "cox_model": "coxnet",
+            }
+            for alpha, l1_ratio in product(COX_ALPHA_GRID, LINEAR_L1_GRID)
+            if (cox_min_alpha is None or float(alpha) >= float(cox_min_alpha))
+            and float(l1_ratio) > 0.0
+        ]
     else:
         grid = [{"C": c, "l1_ratio": l1} for c, l1 in product(LOGISTIC_C_GRID, LINEAR_L1_GRID)]
     return _ranked_candidates(grid, seed, limit)
@@ -316,7 +329,12 @@ def _linear_candidates(task: str, seed: int, limit: int | None = None) -> list[d
 
 def _linear_candidate_limit(task: str, n_features: int, settings: dict[str, Any]) -> int | None:
     high_dim_threshold = int(settings.get("linear_high_dim_classification_solver_min_features", settings.get("linear_process_backend_min_features", 500)))
-    if task in {"binary", "multiclass"} and int(n_features) >= high_dim_threshold:
+    if task == "survival":
+        value = settings.get(
+            "cox_random_search_trials",
+            settings.get("linear_random_search_trials", settings.get("random_search_trials", settings.get("optuna_trials", None))),
+        )
+    elif task in {"binary", "multiclass"} and int(n_features) >= high_dim_threshold:
         value = settings.get("linear_high_dim_random_search_trials", settings.get("linear_random_search_trials", settings.get("random_search_trials", settings.get("optuna_trials", None))))
     else:
         value = settings.get("linear_random_search_trials")
@@ -546,95 +564,53 @@ def _cox_design_frames(
     return train_df, pred_df
 
 
+def _survival_structured_y(labels: pd.DataFrame) -> np.ndarray:
+    try:
+        from sksurv.util import Surv
+    except ImportError as exc:
+        raise RuntimeError("scikit-survival is required for Cox survival endpoints") from exc
+
+    frame = pd.DataFrame(labels).loc[:, ["time", "event"]].copy()
+    time = pd.to_numeric(frame["time"], errors="coerce").to_numpy(dtype=np.float64)
+    event = pd.to_numeric(frame["event"], errors="coerce").fillna(0).to_numpy(dtype=bool)
+    if not bool(np.any(event)):
+        raise RuntimeError("Cox survival fitting requires at least one observed event")
+    if not bool(np.isfinite(time).all()):
+        raise RuntimeError("Cox survival fitting received non-finite time values")
+    return Surv.from_arrays(event=event, time=time)
+
+
 def _cox_fit_predict_frames(train_df: pd.DataFrame, pred_df: pd.DataFrame, params: dict[str, Any], settings: dict[str, Any] | None = None) -> np.ndarray:
     settings = settings or {}
-    feature_count = max(0, int(train_df.attrs.get("raw_feature_count", int(train_df.shape[1]) - 2)))
-    high_dim = feature_count >= int(settings.get("cox_high_dim_feature_threshold", 500))
-    if high_dim and str(settings.get("cox_high_dim_backend", "fast_breslow")) == "fast_breslow":
-        return _fast_breslow_cox_fit_predict_frames(train_df, pred_df, params, settings)
-
-    try:
-        from lifelines import CoxPHFitter
-    except ImportError as exc:
-        raise RuntimeError("lifelines is required for Cox survival endpoints") from exc
-
-    batch_mode = settings.get("cox_batch_mode", True)
-    fit_options: dict[str, Any] = {}
-    max_steps = settings.get("cox_high_dim_max_steps") if high_dim and settings.get("cox_high_dim_max_steps") is not None else settings.get("cox_max_steps")
-    precision = settings.get("cox_high_dim_precision") if high_dim and settings.get("cox_high_dim_precision") is not None else settings.get("cox_precision")
-    if max_steps is not None:
-        fit_options["max_steps"] = int(max_steps)
-    if precision is not None:
-        fit_options["precision"] = float(precision)
-    if settings.get("cox_r_precision") is not None:
-        fit_options["r_precision"] = float(settings["cox_r_precision"])
-    with warnings.catch_warnings():
-        warnings.simplefilter("ignore")
-        cph = CoxPHFitter(penalizer=float(params["penalizer"]), l1_ratio=float(params["l1_ratio"]))
-        cph.fit(
-            train_df,
-            duration_col="time",
-            event_col="event",
-            show_progress=False,
-            batch_mode=bool(batch_mode),
-            fit_options=fit_options or None,
-        )
-    return cph.predict_partial_hazard(pred_df).to_numpy(dtype=np.float64).reshape(-1)
-
-
-def _breslow_cox_gradient(x: np.ndarray, time: np.ndarray, event: np.ndarray, beta: np.ndarray) -> np.ndarray:
-    order = np.argsort(-time, kind="mergesort")
-    x_sorted = x[order]
-    time_sorted = time[order]
-    event_sorted = event[order].astype(bool)
-    eta = np.clip(x_sorted @ beta, -50.0, 50.0)
-    exp_eta = np.exp(eta)
-    weighted_x = x_sorted * exp_eta[:, None]
-    cum_exp = np.cumsum(exp_eta)
-    cum_x = np.cumsum(weighted_x, axis=0)
-
-    new_group = np.r_[True, time_sorted[1:] != time_sorted[:-1]]
-    group_id = np.cumsum(new_group) - 1
-    group_starts = np.flatnonzero(new_group)
-    group_ends = np.r_[group_starts[1:] - 1, len(time_sorted) - 1]
-    risk_exp = cum_exp[group_ends][group_id]
-    risk_x = cum_x[group_ends][group_id]
-
-    if not np.any(event_sorted):
-        return np.zeros(x.shape[1], dtype=np.float64)
-    expected = risk_x[event_sorted] / np.maximum(risk_exp[event_sorted], 1e-12)[:, None]
-    gradient = -(x_sorted[event_sorted] - expected).sum(axis=0)
-    return gradient / max(1, int(event_sorted.sum()))
-
-
-def _soft_threshold(values: np.ndarray, threshold: float) -> np.ndarray:
-    return np.sign(values) * np.maximum(np.abs(values) - float(threshold), 0.0)
-
-
-def _fast_breslow_cox_fit_predict_frames(train_df: pd.DataFrame, pred_df: pd.DataFrame, params: dict[str, Any], settings: dict[str, Any]) -> np.ndarray:
     feature_cols = [column for column in train_df.columns if column not in {"time", "event"}]
     if not feature_cols:
-        raise RuntimeError("No Cox covariates available for fast Breslow optimizer")
+        raise RuntimeError("No Cox covariates available after fold-local variance filtering")
     x_train = train_df[feature_cols].to_numpy(dtype=np.float64, copy=False)
     x_pred = pred_df[feature_cols].to_numpy(dtype=np.float64, copy=False)
-    time = train_df["time"].to_numpy(dtype=np.float64)
-    event = train_df["event"].to_numpy(dtype=np.int8)
-    beta = np.zeros(x_train.shape[1], dtype=np.float64)
-    penalizer = float(params["penalizer"])
+    y_structured = _survival_structured_y(train_df[["time", "event"]])
+    alpha = max(float(params.get("alpha", params.get("penalizer", 0.0))), 1e-12)
     l1_ratio = float(params["l1_ratio"])
-    max_iter = max(1, int(settings.get("cox_fast_max_iter", settings.get("cox_high_dim_max_steps", 5))))
-    learning_rate = float(settings.get("cox_fast_learning_rate", 0.05)) / (1.0 + penalizer)
-    l2_weight = penalizer * max(0.0, 1.0 - l1_ratio)
-    l1_weight = penalizer * max(0.0, l1_ratio)
-    for _ in range(max_iter):
-        grad = _breslow_cox_gradient(x_train, time, event, beta)
-        if l2_weight:
-            grad = grad + l2_weight * beta
-        beta = beta - learning_rate * grad
-        if l1_weight:
-            beta = _soft_threshold(beta, learning_rate * l1_weight)
-        beta = np.nan_to_num(beta, nan=0.0, posinf=0.0, neginf=0.0)
-    return np.asarray(x_pred @ beta, dtype=np.float64).reshape(-1)
+    if not (0.0 < l1_ratio <= 1.0):
+        raise RuntimeError(f"scikit-survival CoxNet requires 0 < l1_ratio <= 1; received {l1_ratio}")
+
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        from sksurv.linear_model import CoxnetSurvivalAnalysis
+
+        model = CoxnetSurvivalAnalysis(
+            alphas=[float(alpha)],
+            l1_ratio=min(max(l1_ratio, 1e-8), 1.0),
+            max_iter=max(1, int(settings.get("coxnet_max_iter", settings.get("cox_max_iter", 100000)))),
+            tol=float(settings.get("coxnet_tol", settings.get("cox_tol", 1e-7))),
+        )
+        model.fit(x_train, y_structured)
+        coef = np.asarray(getattr(model, "coef_", np.array([])), dtype=np.float64)
+        if coef.size == 0 or not np.isfinite(coef).all():
+            raise RuntimeError("scikit-survival CoxNet fit produced non-finite or missing coefficients")
+        pred = np.asarray(model.predict(x_pred), dtype=np.float64).reshape(-1)
+        if pred.shape[0] != x_pred.shape[0] or not np.isfinite(pred).all():
+            raise RuntimeError("scikit-survival CoxNet prediction sanity check failed")
+        return pred
 
 
 def _cox_fit_predict_scaled(x_train_scaled: np.ndarray, y_train: pd.DataFrame, x_pred_scaled: np.ndarray, params: dict[str, Any]) -> np.ndarray:
@@ -855,7 +831,12 @@ def _search_and_predict_fold(
         limit = int(settings.get("random_search_trials", settings.get("optuna_trials", 10)))
         candidates = _xgb_candidates(seed, max(1, limit))
     else:
-        candidates = _linear_candidates(task, seed, _linear_candidate_limit(task, int(x.shape[1]), settings))
+        candidates = _linear_candidates(
+            task,
+            seed,
+            _linear_candidate_limit(task, int(x.shape[1]), settings),
+            **_survival_candidate_options(task, int(x.shape[1]), settings),
+        )
 
     if learner != "xgboost":
         x_inner_scaled, x_val_scaled = _scale_pair(x_inner, x_val)
@@ -1002,7 +983,12 @@ def _search_and_predict_feature_set_fold(
         model_candidates = _xgb_candidates(seed, max(1, limit))
     else:
         max_input_features = max(int(np.asarray(matrix).shape[1]) for matrix in x_by_feature_set.values())
-        model_candidates = _linear_candidates(task, seed, _linear_candidate_limit(task, max_input_features, settings))
+        model_candidates = _linear_candidates(
+            task,
+            seed,
+            _linear_candidate_limit(task, max_input_features, settings),
+            **_survival_candidate_options(task, max_input_features, settings),
+        )
     fit_settings = settings
     if _is_high_dim_linear_classification(task, learner, max_input_features if learner != "xgboost" else 0, settings) and bool(
         settings.get("linear_force_sgd_in_feature_set_search", True)
@@ -1450,8 +1436,21 @@ def _candidate_checkpoint_manifest(
         "xgb_max_rounds",
         "xgb_n_jobs",
     ]
+    survival_keys = [
+        "cox_tol",
+        "cox_max_iter",
+        "coxnet_min_alpha",
+        "coxnet_max_iter",
+        "coxnet_tol",
+        "cox_drop_conditioned_low_variance",
+        "cox_min_feature_std",
+        "cox_random_search_trials",
+        "cox_min_alpha",
+        "cox_high_dim_feature_threshold",
+        "cox_high_dim_min_alpha",
+    ]
     return {
-        "version": 2,
+        "version": 3,
         "task": task,
         "learner": learner,
         "seed": int(seed),
@@ -1464,6 +1463,7 @@ def _candidate_checkpoint_manifest(
         "candidates": _json_safe(flat_candidates),
         "linear_settings": {key: _json_safe(settings.get(key)) for key in linear_keys if key in settings},
         "xgb_settings": {key: _json_safe(settings.get(key)) for key in xgb_keys if key in settings},
+        "survival_settings": {key: _json_safe(settings.get(key)) for key in survival_keys if key in settings},
     }
 
 
@@ -1523,9 +1523,13 @@ def _checkpoint_manifest(
     y: Any,
     feature_arrays: dict[str, np.ndarray],
     model_candidate_count: int,
+    settings: dict[str, Any] | None = None,
+    max_feature_count: int | None = None,
 ) -> dict[str, Any]:
+    settings = dict(settings or {})
+    candidate_feature_count = int(max_feature_count if max_feature_count is not None else max(int(arr.shape[1]) for arr in feature_arrays.values()))
     return {
-        "version": 2,
+        "version": 3,
         "task": task,
         "benchmark": benchmark,
         "endpoint": endpoint,
@@ -1541,6 +1545,8 @@ def _checkpoint_manifest(
         "feature_sets": {name: int(arr.shape[1]) for name, arr in sorted(feature_arrays.items())},
         "feature_digests": {name: _matrix_digest(arr) for name, arr in sorted(feature_arrays.items())},
         "model_candidate_count": int(model_candidate_count),
+        "linear_candidate_limit": _linear_candidate_limit(task, candidate_feature_count, settings) if learner != "xgboost" else None,
+        "survival_candidate_options": _json_safe(_survival_candidate_options(task, candidate_feature_count, settings)),
     }
 
 
@@ -1645,7 +1651,14 @@ def evaluate_nested_feature_set_oof(
     if learner == "xgboost":
         model_candidate_count = max(1, int(settings.get("xgb_feature_set_random_search_trials", settings.get("random_search_trials", settings.get("optuna_trials", 10)))))
     else:
-        model_candidate_count = len(_linear_candidates(task, seed, _linear_candidate_limit(task, max_feature_count, settings)))
+        model_candidate_count = len(
+            _linear_candidates(
+                task,
+                seed,
+                _linear_candidate_limit(task, max_feature_count, settings),
+                **_survival_candidate_options(task, max_feature_count, settings),
+            )
+        )
     checkpoint_manifest = _checkpoint_manifest(
         task=task,
         benchmark=benchmark,
@@ -1660,6 +1673,8 @@ def evaluate_nested_feature_set_oof(
         y=y,
         feature_arrays=feature_arrays,
         model_candidate_count=model_candidate_count,
+        settings=settings,
+        max_feature_count=max_feature_count,
     )
     checkpoint_paths = _feature_set_checkpoint_paths(settings)
     if bool(settings.get("fold_checkpoint_resume", True)):
@@ -1786,7 +1801,7 @@ def _primary_metric(task: str, endpoint: str | None = None, settings: dict[str, 
         return "auroc"
     if task == "survival":
         return "c_index"
-    if endpoint_name == "cancer_type_top20":
+    if task in {"multiclass", "multiclass_grouped"}:
         return "balanced_accuracy"
     return "macro_auroc"
 
@@ -1809,12 +1824,7 @@ def _solver_label(learner: str, task: str, n_features: int, settings: dict[str, 
     if learner == "linear" and task == "regression":
         return "elastic_net_coordinate_descent_nested_v1"
     if learner == "cox_ph" or task == "survival":
-        high_dim = int(n_features) >= int(settings.get("cox_high_dim_feature_threshold", 500))
-        if high_dim and str(settings.get("cox_high_dim_backend", "fast_breslow")) == "fast_breslow":
-            return "fast_breslow_elasticnet_cox_nested_v1"
-        if high_dim:
-            return "lifelines_penalized_cox_ph_nested_v4_conditioned_variance_highdim_stepcap"
-        return "lifelines_penalized_cox_ph_nested_v3_conditioned_variance_stepcap"
+        return "sksurv_coxnet_nested_v1_conditioned_variance"
     return ""
 
 

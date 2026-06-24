@@ -28,12 +28,14 @@ import pandas as pd
 if str(Path(__file__).resolve().parents[1]) not in sys.path:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from utils.config import BUNDLE_ROOT, enabled as experiment_enabled, load_yaml, resolve_paths_map
+from utils.config import BUNDLE_ROOT, DATASETS_ROOT, enabled as experiment_enabled, load_yaml, resolve_paths_map
 from utils.checkpointing import atomic_write_csv, atomic_write_json
 from utils.stat_tests import bh_qvalues, paired_bootstrap_delta, paired_delong_auc
 
 
 MAIN_ENDPOINTS = ["damage_class", "HRD_Score", "hrd_binary_24", "hrd_binary_33", "hrd_binary_42", "cancer_type_top20", "OS"]
+SURVIVAL_MAIN_ENDPOINTS = {"OS"}
+FIGURE_MODEL_COMPARISON_ENDPOINTS = [endpoint for endpoint in MAIN_ENDPOINTS if endpoint not in SURVIVAL_MAIN_ENDPOINTS]
 TCGA_TOP20_ENDPOINTS = {"cancer_type_top20", "tcga_20_type"}
 SUPPLEMENTARY_ENDPOINTS = ["HRD_TAI", "HRD_LST", "HRD_LOH", "PARPi7", "eCARD", "PFI"]
 MANUSCRIPT_ENDPOINTS = MAIN_ENDPOINTS + SUPPLEMENTARY_ENDPOINTS
@@ -67,12 +69,15 @@ MANUSCRIPT_EXCLUDED_ENDPOINT_PATTERN = re.compile(
     "|".join(re.escape(term) for term in MANUSCRIPT_EXCLUDED_ENDPOINT_LABEL_TERMS),
     flags=re.IGNORECASE,
 )
-MUAT_MAIN_ENDPOINTS = ["damage_class", "HRD_Score", "hrd_binary_33", "cancer_type_top20", "OS"]
-MAIN_REPRESENTATIONS = [
+MUAT_MAIN_ENDPOINTS = ["HRD_Score", "hrd_binary_33"]
+TABULAR_MAIN_REPRESENTATIONS = [
     "burden_only",
     "signatures_only",
     "MAF_stack_only",
     "signatures_plus_MAF_stack",
+]
+MAIN_REPRESENTATIONS = [
+    *TABULAR_MAIN_REPRESENTATIONS,
     "MuAt_style_attention_MIL",
 ]
 MODEL_FAMILIES = ["elastic_net", "XGBoost", "cox_ph", "MuAt-compatible reimplementation", "MuAt-style attention MIL"]
@@ -88,9 +93,6 @@ MAIN_COMPARISONS = [
     ("figure_4", "maf_stack_vs_signatures", "MAF_stack_only", "signatures_only"),
     ("figure_4", "sig_maf_vs_signatures", "signatures_plus_MAF_stack", "signatures_only"),
     ("figure_4", "sig_maf_vs_maf_stack", "signatures_plus_MAF_stack", "MAF_stack_only"),
-    ("figure_5", "signatures_vs_burden", "signatures_only", "burden_only"),
-    ("figure_5", "maf_stack_vs_signatures", "MAF_stack_only", "signatures_only"),
-    ("figure_5", "sig_maf_vs_signatures", "signatures_plus_MAF_stack", "signatures_only"),
 ]
 REQUIRED_ENDPOINT_FILES = [
     "main_manuscript_complete_panel_endpoint_results.csv",
@@ -179,7 +181,7 @@ REQUIRED_MANUSCRIPT_FILES = [
     "figures/figure_2_signature_baselines.png",
     "figures/figure_3_geometry_vs_signatures.png",
     "figures/figure_4_maf_stack_vs_signatures.png",
-    "figures/figure_5_cross_endpoint_summary.png",
+    "figures/figure_5_overall_survival_cox.png",
     "supplement/figure_s1_representation_construction.png",
     "supplement/figure_s2_calibration_thresholds.png",
     "supplement/figure_s3_feature_importance.png",
@@ -228,10 +230,10 @@ TABLE_NOTES = {
         "Main endpoints are evaluated with five outer folds, inner validation tuning, and pooled out-of-fold predictions where model-based.",
     ],
     "table_2_full_performance_metrics": [
-        "EN = elastic net; XGB = XGBoost. Values are endpoint-specific primary out-of-fold scores.",
+        "EN = elastic net; XGB = XGBoost. Non-survival rows report EN / XGB scores; survival rows report CoxNet C-index separately.",
     ],
     "table_3_hyperparameters_feature_dimensionality": [
-        "Feature dimensionality is shown as the observed range across main endpoints and model families.",
+        "Feature-dimensionality ranges are observed across endpoint/model rows because spectrum channels vary by endpoint data source and Bio MAF v4 blocks are selected within each outer fold's inner-validation split; MuAt-compatible is an event-bag model rather than a fixed tabular vector.",
     ],
     "table_4_label_mapping": [
         "AUROC = area under the receiver operating characteristic curve; HRD = homologous recombination deficiency; KME = kernel mean embedding; MAF = mutation annotation format.",
@@ -1115,7 +1117,7 @@ def _bio_maf_v4_nested_selection_tables() -> tuple[pd.DataFrame, pd.DataFrame]:
     detail_rows = []
     for _, row in selected.iterrows():
         details = _bio_maf_v4_feature_set_details(row.get("selected_feature_set"), row.get("selected_feature_count"))
-        model_label = {"linear": "Elastic net", "xgboost": "XGBoost", "cox_ph": "Cox PH"}.get(
+        model_label = {"linear": "Elastic net", "xgboost": "XGBoost", "cox_ph": "CoxNet"}.get(
             str(row.get("learner")),
             _display_label("model_family", row.get("learner")),
         )
@@ -2999,8 +3001,8 @@ def _figure_bio_maf_v4_nested_selection(stem: Path) -> None:
         "Bio MAF v4\nXGBoost",
         "Signatures + Bio MAF v4\nElastic net",
         "Signatures + Bio MAF v4\nXGBoost",
-        "Bio MAF v4\nCox PH",
-        "Signatures + Bio MAF v4\nCox PH",
+        "Bio MAF v4\nCoxNet",
+        "Signatures + Bio MAF v4\nCoxNet",
     ]
     column_order = [value for value in column_order if value in set(plot["Model group"])] + [
         value for value in _ordered_unique(plot["Model group"].tolist()) if value not in column_order
@@ -3224,6 +3226,25 @@ def _configured_muat_output_prefix(settings: dict[str, Any]) -> str:
     return "muat_style_tcga_comparator" if not tag else f"muat_style_tcga_comparator_{tag}"
 
 
+def _accepted_muat_output_prefixes(settings: dict[str, Any]) -> list[str]:
+    prefixes = [
+        _configured_muat_output_prefix(settings),
+        "muat_style_tcga_comparator_main_endpoints_comparable",
+    ]
+    out: list[str] = []
+    seen: set[str] = set()
+    for prefix in prefixes:
+        if prefix and prefix not in seen:
+            out.append(prefix)
+            seen.add(prefix)
+    return out
+
+
+def _source_matches_prefix(source_name: str, prefix: str) -> bool:
+    source_name = str(source_name or "")
+    return source_name == prefix or source_name.startswith(f"{prefix}_")
+
+
 def _configured_muat_endpoints(settings: dict[str, Any] | None) -> list[str]:
     if not settings or not experiment_enabled(settings, "muat_style_tcga_comparator"):
         return []
@@ -3240,6 +3261,29 @@ def _configured_muat_endpoints(settings: dict[str, Any] | None) -> list[str]:
     return []
 
 
+def _measured_muat_endpoints(
+    canonical: pd.DataFrame,
+    settings: dict[str, Any] | None = None,
+    *,
+    include_survival: bool = False,
+) -> list[str]:
+    configured = set(_configured_muat_endpoints(settings))
+    measured = canonical[
+        canonical["representation_family"].astype(str).eq("MuAt_style_attention_MIL")
+        & canonical["model_family"].astype(str).eq("MuAt-compatible reimplementation")
+        & canonical["status"].astype(str).eq("measured")
+    ] if not canonical.empty else pd.DataFrame()
+    measured_set = set(measured.get("endpoint", pd.Series(dtype=str)).astype(str))
+    preferred = _ordered_unique([*_configured_muat_endpoints(settings), *MUAT_MAIN_ENDPOINTS, *MAIN_ENDPOINTS])
+    endpoints = [endpoint for endpoint in preferred if endpoint in measured_set]
+    if not endpoints and not configured and not measured.empty:
+        endpoints = _ordered_unique(measured["endpoint"].astype(str).tolist())
+    endpoints = [endpoint for endpoint in endpoints if endpoint in MAIN_ENDPOINTS]
+    if not include_survival:
+        endpoints = [endpoint for endpoint in endpoints if endpoint not in SURVIVAL_MAIN_ENDPOINTS]
+    return endpoints
+
+
 def _filter_current_muat_outputs(endpoint_results: pd.DataFrame, settings: dict[str, Any]) -> pd.DataFrame:
     if endpoint_results.empty or "endpoint" not in endpoint_results.columns:
         return endpoint_results
@@ -3247,12 +3291,12 @@ def _filter_current_muat_outputs(endpoint_results: pd.DataFrame, settings: dict[
     muat_mask = source_ids.eq("muat_style_tcga_comparator")
     if not muat_mask.any():
         return endpoint_results
-    expected_prefix = _configured_muat_output_prefix(settings)
-    expected_endpoints = set(_configured_muat_endpoints(settings))
+    accepted_prefixes = _accepted_muat_output_prefixes(settings)
+    expected_endpoints = set(_configured_muat_endpoints(settings)) | set(MUAT_MAIN_ENDPOINTS)
     source_names = endpoint_results.get("source_file", endpoint_results.get("bundle_table", pd.Series("", index=endpoint_results.index))).fillna("").astype(str)
     if "bundle_table" in endpoint_results.columns:
         source_names = source_names.mask(source_names.eq(""), endpoint_results["bundle_table"].fillna("").astype(str))
-    current_muat = source_names.str.startswith(expected_prefix) & endpoint_results["endpoint"].astype(str).isin(expected_endpoints)
+    current_muat = source_names.map(lambda name: any(_source_matches_prefix(name, prefix) for prefix in accepted_prefixes)) & endpoint_results["endpoint"].astype(str).isin(expected_endpoints)
     return endpoint_results.loc[~muat_mask | current_muat].copy()
 
 
@@ -3260,7 +3304,7 @@ def _is_current_source_inventory_table(name: str, settings: dict[str, Any]) -> b
     if name.startswith("main_manuscript_complete_panel"):
         return experiment_enabled(settings, "main_manuscript_complete_panel")
     if name.startswith("muat_style_tcga_comparator"):
-        return name.startswith(_configured_muat_output_prefix(settings))
+        return any(_source_matches_prefix(name, prefix) for prefix in _accepted_muat_output_prefixes(settings))
     return name.startswith(("proposed_clinical_bio_v4", "quick_bio_v4"))
 
 
@@ -3337,7 +3381,9 @@ def _model_family(raw: str, experiment_id: str) -> str:
 
 def _metric_name(row: pd.Series) -> str:
     endpoint = _clean_endpoint(_text(row, ["endpoint", "Endpoint", "benchmark", "analysis_set"], ""))
-    if endpoint in TCGA_TOP20_ENDPOINTS and pd.notna(_num(row, ["oof_balanced_accuracy", "balanced_accuracy", "mean_balanced_accuracy"])):
+    task = _text(row, ["task", "endpoint_type"], "").lower()
+    has_balanced_accuracy = pd.notna(_num(row, ["oof_balanced_accuracy", "balanced_accuracy", "mean_balanced_accuracy"]))
+    if has_balanced_accuracy and (endpoint in TCGA_TOP20_ENDPOINTS or "multiclass" in task):
         return "balanced_accuracy"
     metric = _text(row, ["metric", "metric_name", "primary_metric_name", "primary_metric", "Metric"], "")
     if metric:
@@ -3355,7 +3401,8 @@ def _metric_name(row: pd.Series) -> str:
 
 def _primary_score(row: pd.Series) -> float:
     endpoint = _clean_endpoint(_text(row, ["endpoint", "Endpoint", "benchmark", "analysis_set"], ""))
-    if endpoint in TCGA_TOP20_ENDPOINTS:
+    task = _text(row, ["task", "endpoint_type"], "").lower()
+    if endpoint in TCGA_TOP20_ENDPOINTS or "multiclass" in task:
         balanced = _num(row, ["oof_balanced_accuracy", "balanced_accuracy", "mean_balanced_accuracy"])
         if pd.notna(balanced):
             return balanced
@@ -3519,8 +3566,8 @@ def _figure_1(figures_dir: Path) -> None:
             (0.38, 0.72, "Signatures", "Burden plus SBS96/ID83/DBS78 channel spectra; canonical spectra baseline."),
             (0.38, 0.48, "Geometry", "Supplementary UGA and channel KME atlas variants are kept separate from the main production panel."),
             (0.38, 0.24, "MAF Stack", "Gene, pathway, consequence, locus, VAF, and locus-topography aggregations."),
-            (0.73, 0.58, "Models and Endpoints", "Nested elastic-net/logistic, XGBoost, and Cox PH. Main endpoints: Kucab, HRD_Score, HRD33, cancer type, OS survival."),
-            (0.73, 0.30, "Event-Set Comparator", "The MuAt-compatible reimplementation operates directly on TCGA-WES event bags for the comparable MC3/HRD/survival endpoints."),
+            (0.73, 0.58, "Models and Endpoints", "Nested elastic-net/logistic and XGBoost for non-survival endpoints; CoxNet survival is reported separately in Figure 5 and tables."),
+            (0.73, 0.30, "Event-Set Comparator", "The MuAt-compatible reimplementation operates directly on mutation event bags for measured comparator endpoints."),
         ],
     )
 
@@ -3834,7 +3881,7 @@ def _write_tables(df: pd.DataFrame, side_tables: dict[str, pd.DataFrame], manusc
             {
                 "Representation": sub["representation_family_display"].iloc[0],
                 "Input signal": specs["input_signal"],
-                "Feature dimensionality": _format_feature_range(sub["n_features"]),
+                "Feature dimensionality": _format_feature_range(sub["n_features"]) or "Event bag",
                 "Context/atlas": "; ".join(_ordered_unique(sub["atlas_status_display"].tolist())),
                 "Evaluated models": "; ".join(models),
                 "Manuscript role": specs["role"],
@@ -4016,8 +4063,8 @@ def _expected_canonical_slots(settings: dict[str, Any] | None = None) -> set[tup
         "MAF_stack_only",
         "signatures_plus_MAF_stack",
     ]
-    muat_endpoints = set(_configured_muat_endpoints(settings)) if settings is not None else set(MUAT_MAIN_ENDPOINTS)
-    survival_endpoints = {"OS"}
+    muat_endpoints = set(_configured_muat_endpoints(settings)) if settings is not None else set()
+    survival_endpoints = SURVIVAL_MAIN_ENDPOINTS
     slots: set[tuple[str, str, str]] = set()
     for endpoint in MAIN_ENDPOINTS:
         if endpoint in survival_endpoints:
@@ -4054,13 +4101,14 @@ def _canonical_main_results(df: pd.DataFrame, tables_dir: Path, *, strict: bool,
     sort_cols = ["endpoint", "representation_family", "model_family", "source_priority", "primary_score"]
     work = work.sort_values(sort_cols, ascending=[True, True, True, False, False])
     canonical = work.groupby(["endpoint", "representation_family", "model_family"], as_index=False).head(1).copy()
-    top20_non_balanced = canonical[
-        canonical["endpoint"].astype(str).eq("cancer_type_top20")
+    multiclass_non_balanced = canonical[
+        canonical["task"].astype(str).str.contains("multiclass", case=False, na=False)
+        & pd.to_numeric(canonical["balanced_accuracy"], errors="coerce").notna()
         & ~canonical["metric"].astype(str).eq("balanced_accuracy")
     ]
-    if strict and not top20_non_balanced.empty:
-        detail = top20_non_balanced.loc[:, ["endpoint", "representation_family", "model_family", "metric"]].to_dict("records")
-        raise ValueError(f"Canonical cancer_type_top20 rows must use balanced_accuracy: {json.dumps(detail, indent=2)}")
+    if strict and not multiclass_non_balanced.empty:
+        detail = multiclass_non_balanced.loc[:, ["endpoint", "representation_family", "model_family", "metric"]].to_dict("records")
+        raise ValueError(f"Canonical multiclass rows with balanced accuracy must use balanced_accuracy: {json.dumps(detail, indent=2)}")
     canonical["status"] = "measured"
     canonical["canonical_source"] = canonical["experiment_id"]
     canonical["canonical_slot_id"] = (
@@ -4082,11 +4130,45 @@ def _canonical_main_results(df: pd.DataFrame, tables_dir: Path, *, strict: bool,
     return canonical.reset_index(drop=True)
 
 
-def _read_prediction_file(tables_dir: Path, name: str, cache: dict[str, pd.DataFrame]) -> pd.DataFrame:
-    if name not in cache:
-        path = tables_dir / name
-        cache[name] = pd.read_csv(path, low_memory=False)
-    return cache[name]
+def _prediction_file_candidates(tables_dir: Path, name: str) -> list[Path]:
+    """Return local and dataset-backed prediction-file candidates.
+
+    Large OOF tables may be kept outside the Git checkout for upload/reviewer
+    workflows. Figure regeneration should still work from those declared
+    restore locations without re-running model training.
+    """
+
+    candidates = [tables_dir / name]
+    manifest_path = BUNDLE_ROOT / "manifests" / "dataset_assets_manifest.csv"
+    if manifest_path.exists():
+        try:
+            manifest = pd.read_csv(manifest_path, dtype=str).fillna("")
+        except Exception:
+            manifest = pd.DataFrame()
+        if not manifest.empty:
+            destination = f"results/tables/{name}".replace("\\", "/")
+            restore_matches = manifest[
+                manifest.get("restore_destination", pd.Series(dtype=str)).astype(str).str.replace("\\", "/", regex=False).eq(destination)
+            ]
+            for _, row in restore_matches.iterrows():
+                relative = str(row.get("dataset_relative_path") or "").strip()
+                if relative:
+                    candidates.append(DATASETS_ROOT / relative)
+    out: list[Path] = []
+    seen: set[str] = set()
+    for path in candidates:
+        key = str(path.resolve()) if path.exists() else str(path)
+        if key not in seen:
+            out.append(path)
+            seen.add(key)
+    return out
+
+
+def _read_prediction_file(path: Path, cache: dict[str, pd.DataFrame]) -> pd.DataFrame:
+    key = str(path.resolve()) if path.exists() else str(path)
+    if key not in cache:
+        cache[key] = pd.read_csv(path, low_memory=False)
+    return cache[key]
 
 
 def _oof_representation_aliases(representation: str, family: str) -> list[str]:
@@ -4099,16 +4181,25 @@ def _canonical_oof_predictions(canonical: pd.DataFrame, tables_dir: Path, *, str
     missing: list[dict[str, str]] = []
     for _, row in canonical.iterrows():
         oof_name = str(row.get("oof_prediction_file", ""))
-        pred = _read_prediction_file(tables_dir, oof_name, cache)
         learner = str(row.get("model_label", "")).strip()
         if not learner or learner.lower() in {"nan", "none"}:
             learner = "linear" if str(row.get("model_family")) == "elastic_net" else "xgboost"
         aliases = _oof_representation_aliases(str(row["representation"]), str(row["representation_family"]))
-        slot = pred[
-            pred["endpoint"].astype(str).eq(str(row["endpoint"]))
-            & pred["representation"].astype(str).isin(aliases)
-            & pred["learner"].astype(str).eq(learner)
-        ].copy()
+        slot = pd.DataFrame()
+        searched_paths: list[str] = []
+        for prediction_path in _prediction_file_candidates(tables_dir, oof_name):
+            if not prediction_path.exists():
+                searched_paths.append(str(prediction_path))
+                continue
+            pred = _read_prediction_file(prediction_path, cache)
+            searched_paths.append(str(prediction_path))
+            slot = pred[
+                pred["endpoint"].astype(str).eq(str(row["endpoint"]))
+                & pred["representation"].astype(str).isin(aliases)
+                & pred["learner"].astype(str).eq(learner)
+            ].copy()
+            if not slot.empty:
+                break
         if slot.empty:
             missing.append(
                 {
@@ -4117,6 +4208,7 @@ def _canonical_oof_predictions(canonical: pd.DataFrame, tables_dir: Path, *, str
                     "representation_family": str(row["representation_family"]),
                     "model_family": str(row["model_family"]),
                     "oof_prediction_file": oof_name,
+                    "searched_paths": ";".join(searched_paths),
                 }
             )
             continue
@@ -4365,6 +4457,37 @@ def _canonical_plot_grid(canonical: pd.DataFrame, *, endpoints: list[str], famil
     return pd.DataFrame(rows)
 
 
+def _survival_cox_plot_data(canonical: pd.DataFrame) -> pd.DataFrame:
+    rows = canonical[
+        canonical["endpoint"].astype(str).isin(SURVIVAL_MAIN_ENDPOINTS)
+        & canonical["model_family"].astype(str).eq("cox_ph")
+        & canonical["representation_family"].astype(str).isin(TABULAR_MAIN_REPRESENTATIONS)
+    ].copy()
+    order = {name: idx for idx, name in enumerate(TABULAR_MAIN_REPRESENTATIONS)}
+    if rows.empty:
+        rows = pd.DataFrame(
+            [
+                {
+                    "endpoint": endpoint,
+                    "endpoint_tier": "main",
+                    "representation_family": family,
+                    "model_family": "cox_ph",
+                    "metric": "c_index",
+                    "primary_score": np.nan,
+                    "status": "missing",
+                    "na_reason": "missing canonical measured Cox survival row",
+                }
+                for endpoint in sorted(SURVIVAL_MAIN_ENDPOINTS)
+                for family in TABULAR_MAIN_REPRESENTATIONS
+            ]
+        )
+    else:
+        rows["status"] = "measured"
+        rows["na_reason"] = ""
+    rows["_order"] = rows["representation_family"].map(order).fillna(99)
+    return rows.sort_values(["endpoint", "_order", "representation_family"], kind="mergesort").drop(columns=["_order"], errors="ignore").reset_index(drop=True)
+
+
 def _calibration_plot_data(canonical: pd.DataFrame, oof: pd.DataFrame) -> pd.DataFrame:
     endpoints = ["damage_class", "hrd_binary_24", "hrd_binary_33", "hrd_binary_42", "cancer_type_top20"]
     rows: list[dict[str, object]] = []
@@ -4542,27 +4665,24 @@ def _write_plot_data(
 ) -> None:
     plot_dir = manuscript_dir / "plot_data"
     plot_dir.mkdir(parents=True, exist_ok=True)
+    muat_figure_endpoints = _measured_muat_endpoints(canonical, settings)
     files = {
         "figure_2_signature_baselines.csv": _attach_plot_tests(
-            _canonical_plot_grid(canonical, endpoints=MAIN_ENDPOINTS, families=["burden_only", "signatures_only"], model_families=MODEL_FAMILIES, settings=settings),
+            _canonical_plot_grid(canonical, endpoints=FIGURE_MODEL_COMPARISON_ENDPOINTS, families=["burden_only", "signatures_only"], model_families=MODEL_FAMILIES, settings=settings),
             tests,
             "figure_2",
         ),
         "figure_3_geometry_vs_signatures.csv": _attach_plot_tests(
-            _canonical_plot_grid(canonical, endpoints=MUAT_MAIN_ENDPOINTS, families=MAIN_REPRESENTATIONS, model_families=MODEL_FAMILIES, settings=settings),
+            _canonical_plot_grid(canonical, endpoints=muat_figure_endpoints, families=MAIN_REPRESENTATIONS, model_families=MODEL_FAMILIES, settings=settings),
             tests,
             "figure_3",
         ),
         "figure_4_maf_stack_vs_signatures.csv": _attach_plot_tests(
-            _canonical_plot_grid(canonical, endpoints=MAIN_ENDPOINTS, families=["signatures_only", "MAF_stack_only", "signatures_plus_MAF_stack"], model_families=MODEL_FAMILIES, settings=settings),
+            _canonical_plot_grid(canonical, endpoints=FIGURE_MODEL_COMPARISON_ENDPOINTS, families=["signatures_only", "MAF_stack_only", "signatures_plus_MAF_stack"], model_families=MODEL_FAMILIES, settings=settings),
             tests,
             "figure_4",
         ),
-        "figure_5_cross_endpoint_summary.csv": _attach_plot_tests(
-            _canonical_plot_grid(canonical, endpoints=MAIN_ENDPOINTS, families=MAIN_REPRESENTATIONS, model_families=MODEL_FAMILIES, settings=settings),
-            tests,
-            "figure_5",
-        ),
+        "figure_5_overall_survival_cox.csv": _survival_cox_plot_data(canonical),
         "figure_s2_calibration_thresholds.csv": _calibration_plot_data(canonical, canonical_oof),
     }
     s3_measured, s3_missing = _s3_measured_plot_data(df)
@@ -4603,7 +4723,12 @@ def _write_plot_data(
             "files": sorted(files),
             "benchmark_completeness": "benchmark_completeness.csv",
             "main_endpoints": MAIN_ENDPOINTS,
+            "figure_model_comparison_endpoints": FIGURE_MODEL_COMPARISON_ENDPOINTS,
+            "survival_figure": "figure_5_overall_survival_cox.csv",
+            "survival_endpoints_reported_separately_from_model_comparison_figures": sorted(SURVIVAL_MAIN_ENDPOINTS),
+            "muat_figure_endpoints": muat_figure_endpoints,
             "main_representations": MAIN_REPRESENTATIONS,
+            "tabular_main_representations": TABULAR_MAIN_REPRESENTATIONS,
             "canonical_results": "canonical/main_panel_results.csv",
             "canonical_pairwise_tests": "canonical/main_panel_pairwise_tests.csv",
         },
@@ -4725,10 +4850,10 @@ def _write_figures(df: pd.DataFrame, manuscript_dir: Path) -> None:
     figures_dir.mkdir(parents=True, exist_ok=True)
     supp_dir.mkdir(parents=True, exist_ok=True)
     _figure_1(figures_dir)
-    _barplot(df, figures_dir / "figure_2_signature_baselines", "Figure 2. Burden and Signature Baselines", ["burden_only", "signatures_only"])
+    _barplot(df, figures_dir / "figure_2_signature_baselines", "Figure 2. Burden and Signature Baselines", ["burden_only", "signatures_only"], endpoints=FIGURE_MODEL_COMPARISON_ENDPOINTS)
     _barplot(df, figures_dir / "figure_3_geometry_vs_signatures", "Figure 3. MuAt-Compatible Event-Bag Comparator", MAIN_REPRESENTATIONS, endpoints=MUAT_MAIN_ENDPOINTS)
-    _barplot(df, figures_dir / "figure_4_maf_stack_vs_signatures", "Figure 4. MAF-Stack Biology Adds to Spectra", ["signatures_only", "MAF_stack_only", "signatures_plus_MAF_stack"])
-    _heatmap(df, figures_dir / "figure_5_cross_endpoint_summary", "Figure 5. Main Endpoint Representation Summary", MAIN_REPRESENTATIONS, main_only=True)
+    _barplot(df, figures_dir / "figure_4_maf_stack_vs_signatures", "Figure 4. MAF-Stack Biology Adds to Spectra", ["signatures_only", "MAF_stack_only", "signatures_plus_MAF_stack"], endpoints=FIGURE_MODEL_COMPARISON_ENDPOINTS)
+    _barplot(df, figures_dir / "figure_5_overall_survival_cox", "Figure 5. Overall Survival CoxNet C-index", TABULAR_MAIN_REPRESENTATIONS, endpoints=sorted(SURVIVAL_MAIN_ENDPOINTS))
     _write_text_panel(
         supp_dir / "figure_s1_representation_construction",
         "Supplementary Figure S1. Representation Construction Details",
@@ -4737,7 +4862,7 @@ def _write_figures(df: pd.DataFrame, manuscript_dir: Path) -> None:
             (0.38, 0.58, "MuAt-Compatible", "Encode mutation motif, 1-Mb position, and annotation tokens for the event-bag attention comparator."),
             (0.73, 0.58, "MAF Stack", "Aggregate genes, pathways, consequences, VAF summaries, and genomic locus/topography bins."),
             (0.03, 0.25, "UGA Variants", "Supplementary channel projections use the production UGA channel atlas and ID payload encoder."),
-            (0.38, 0.25, "Models", "Nested elastic-net/logistic, XGBoost, and Cox PH with pooled OOF metrics."),
+            (0.38, 0.25, "Models", "Nested elastic-net/logistic and XGBoost for non-survival model-comparison figures; CoxNet survival is reported separately in Figure 5 and tables."),
             (0.73, 0.25, "Outputs", "OOF metrics, feature dimensions, atlas status, and endpoint-tier labels are normalized into manuscript tables."),
         ],
     )
@@ -4753,17 +4878,35 @@ def _validate_plot_data(manuscript_dir: Path) -> None:
         raise FileNotFoundError("Canonical main-panel results or pairwise tests are missing")
     canonical = pd.read_csv(canonical_path)
     tests = pd.read_csv(tests_path)
-    for name in [
+    model_comparison_plot_names = [
         "figure_2_signature_baselines.csv",
         "figure_3_geometry_vs_signatures.csv",
         "figure_4_maf_stack_vs_signatures.csv",
-        "figure_5_cross_endpoint_summary.csv",
-    ]:
+    ]
+    for name in model_comparison_plot_names:
         frame = pd.read_csv(plot_dir / name)
         bad = frame[~frame["status"].astype(str).eq("measured")]
         if not bad.empty:
             cols = ["endpoint", "representation_family", "model_family", "status", "na_reason"]
             raise ValueError(f"{name} contains non-measured main slots: {bad.loc[:, [c for c in cols if c in bad.columns]].to_dict('records')}")
+        survival_rows = frame[
+            frame["endpoint"].astype(str).isin(SURVIVAL_MAIN_ENDPOINTS)
+            | frame["model_family"].astype(str).eq("cox_ph")
+        ]
+        if not survival_rows.empty:
+            cols = ["endpoint", "representation_family", "model_family"]
+            raise ValueError(f"{name} contains survival/Cox rows that belong in tables, not model-comparison figures: {survival_rows.loc[:, [c for c in cols if c in survival_rows.columns]].to_dict('records')}")
+        canonical_muat = set(
+            canonical.loc[
+                canonical["representation_family"].astype(str).eq("MuAt_style_attention_MIL")
+                & canonical["model_family"].astype(str).eq("MuAt-compatible reimplementation"),
+                "endpoint",
+            ].astype(str)
+        )
+        figure_muat = set(frame.loc[frame["representation_family"].astype(str).eq("MuAt_style_attention_MIL"), "endpoint"].astype(str))
+        unsupported_muat = sorted(figure_muat - canonical_muat)
+        if unsupported_muat:
+            raise ValueError(f"{name} contains MuAt rows for endpoints without measured MuAt canonical results: {unsupported_muat}")
         merged = frame.merge(
             canonical[["endpoint", "representation_family", "model_family", "primary_score"]],
             on=["endpoint", "representation_family", "model_family"],
@@ -4776,18 +4919,34 @@ def _validate_plot_data(manuscript_dir: Path) -> None:
         delta = (pd.to_numeric(merged["primary_score_plot"], errors="coerce") - pd.to_numeric(merged["primary_score_canonical"], errors="coerce")).abs()
         if (delta > 1e-12).any():
             raise ValueError(f"{name} values differ from canonical main-panel results")
-    fig5 = pd.read_csv(plot_dir / "figure_5_cross_endpoint_summary.csv")
-    for name in ["figure_2_signature_baselines.csv", "figure_3_geometry_vs_signatures.csv", "figure_4_maf_stack_vs_signatures.csv"]:
-        frame = pd.read_csv(plot_dir / name)
-        merged = frame.merge(
-            fig5[["endpoint", "representation_family", "model_family", "primary_score"]],
-            on=["endpoint", "representation_family", "model_family"],
-            suffixes=("_figure", "_figure5"),
-            how="left",
-        )
-        delta = (pd.to_numeric(merged["primary_score_figure"], errors="coerce") - pd.to_numeric(merged["primary_score_figure5"], errors="coerce")).abs()
-        if (delta > 1e-12).any():
-            raise ValueError(f"{name} and Figure 5 disagree for at least one shared slot")
+    survival_plot = pd.read_csv(plot_dir / "figure_5_overall_survival_cox.csv")
+    if survival_plot.empty:
+        raise ValueError("figure_5_overall_survival_cox.csv is empty")
+    survival_bad_status = survival_plot[~survival_plot["status"].astype(str).eq("measured")]
+    if not survival_bad_status.empty:
+        cols = ["endpoint", "representation_family", "model_family", "status", "na_reason"]
+        raise ValueError(f"figure_5_overall_survival_cox.csv contains non-measured rows: {survival_bad_status.loc[:, [c for c in cols if c in survival_bad_status.columns]].to_dict('records')}")
+    bad_survival = survival_plot[
+        ~survival_plot["endpoint"].astype(str).isin(SURVIVAL_MAIN_ENDPOINTS)
+        | ~survival_plot["model_family"].astype(str).eq("cox_ph")
+    ]
+    if not bad_survival.empty:
+        cols = ["endpoint", "representation_family", "model_family", "status"]
+        raise ValueError(f"figure_5_overall_survival_cox.csv contains non-survival rows: {bad_survival.loc[:, [c for c in cols if c in bad_survival.columns]].to_dict('records')}")
+    survival_merged = survival_plot.merge(
+        canonical[["endpoint", "representation_family", "model_family", "primary_score"]],
+        on=["endpoint", "representation_family", "model_family"],
+        suffixes=("_plot", "_canonical"),
+        how="left",
+    )
+    if survival_merged["primary_score_canonical"].isna().any():
+        raise ValueError("figure_5_overall_survival_cox.csv contains rows not found in canonical main-panel results")
+    survival_delta = (
+        pd.to_numeric(survival_merged["primary_score_plot"], errors="coerce")
+        - pd.to_numeric(survival_merged["primary_score_canonical"], errors="coerce")
+    ).abs()
+    if (survival_delta > 1e-12).any():
+        raise ValueError("figure_5_overall_survival_cox.csv values differ from canonical main-panel results")
     s3 = pd.read_csv(plot_dir / "figure_s3_feature_importance.csv")
     if not s3.empty:
         if "status" in s3.columns and (~s3["status"].astype(str).eq("measured")).any():
@@ -4870,7 +5029,12 @@ def _sig_endpoints(tests: pd.DataFrame, comparison_name: str, *, model_family: s
     )
 
 
-def _write_manuscript_text(manuscript_dir: Path, canonical: pd.DataFrame, pairwise_tests: pd.DataFrame) -> None:
+def _write_manuscript_text(
+    manuscript_dir: Path,
+    canonical: pd.DataFrame,
+    pairwise_tests: pd.DataFrame,
+    settings: dict[str, Any] | None = None,
+) -> None:
     text_dir = manuscript_dir / "text"
     text_dir.mkdir(parents=True, exist_ok=True)
     figure_tests = pairwise_tests[pairwise_tests["figure_id"].astype(str).isin(["figure_2", "figure_3", "figure_4"])].copy()
@@ -4895,20 +5059,6 @@ def _write_manuscript_text(manuscript_dir: Path, canonical: pd.DataFrame, pairwi
     sig_over_burden_xgb = _sig_count(figure_tests, "signatures_vs_burden", positive=True, model_family="XGBoost")
     sig_over_burden_xgb_n = _tested_count(figure_tests, "signatures_vs_burden", model_family="XGBoost")
     sig_maf_over_sig_xgb = _sig_endpoints(figure_tests, "sig_maf_vs_signatures", model_family="XGBoost", positive=True)
-    xgb_winners: list[str] = []
-    elastic_winners: list[str] = []
-    for endpoint_name in MAIN_ENDPOINTS:
-        for model_name, winners in [("XGBoost", xgb_winners), ("elastic_net", elastic_winners)]:
-            subset = canonical[
-                canonical["endpoint"].astype(str).eq(endpoint_name)
-                & canonical["model_family"].astype(str).eq(model_name)
-            ].copy()
-            if subset.empty:
-                continue
-            subset["_score_numeric"] = pd.to_numeric(subset["primary_score"], errors="coerce")
-            best = subset.sort_values("_score_numeric", ascending=False).iloc[0]
-            winners.append(f"{_display_label('endpoint', endpoint_name)}: {_display_label('representation_family', str(best['representation_family']))}")
-
     table2_rows = table_shapes.get("tables/table_2_full_performance_metrics.csv", (len(canonical), 0))[0]
     table_s2_rows = table_shapes.get("supplement/table_s2_sensitivity_analyses.csv", (0, 0))[0]
     table_s5_rows = table_shapes.get("supplement/table_s5_bio_maf_v4_feature_guide.csv", (0, 0))[0]
@@ -4928,6 +5078,26 @@ def _write_manuscript_text(manuscript_dir: Path, canonical: pd.DataFrame, pairwi
     hrd_thresholds = f"{hrd24}, {hrd33}, and {hrd42}"
     cancer_type = _display_label("endpoint", "cancer_type_top20")
     os_cox = _display_label("endpoint", "OS")
+    muat_measured_non_survival = _measured_muat_endpoints(canonical, settings, include_survival=False)
+    muat_measured_all = _measured_muat_endpoints(canonical, settings, include_survival=True)
+    muat_measured_labels = [_display_label("endpoint", endpoint) for endpoint in muat_measured_non_survival]
+    muat_measured_clause = ", ".join(muat_measured_labels) if muat_measured_labels else "the measured comparator endpoints"
+    muat_missing_main = [
+        endpoint
+        for endpoint in FIGURE_MODEL_COMPARISON_ENDPOINTS
+        if endpoint not in set(muat_measured_non_survival)
+    ]
+    muat_missing_clause = "non-HRD endpoints in the tabular panel" if muat_missing_main else "no active endpoints"
+    muat_score_clauses = [
+        f"{_display_label('endpoint', endpoint)} {s(endpoint, 'MuAt-compatible reimplementation', 'MuAt_style_attention_MIL')}"
+        for endpoint in muat_measured_non_survival
+    ]
+    muat_score_sentence = "; ".join(muat_score_clauses)
+    muat_baseline_clauses = [
+        f"{_display_label('endpoint', endpoint)}: {s(endpoint, 'MuAt-compatible reimplementation', 'MuAt_style_attention_MIL')} for MuAt-compatible versus {s(endpoint, 'XGBoost', 'signatures_plus_MAF_stack')} for {sig_maf} {xgboost}"
+        for endpoint in muat_measured_non_survival
+    ]
+    muat_baseline_sentence = "; ".join(muat_baseline_clauses)
 
     lines = [
         "# Manuscript Captions And Results Text",
@@ -4942,60 +5112,60 @@ def _write_manuscript_text(manuscript_dir: Path, canonical: pd.DataFrame, pairwi
         "Each sample is represented as a catalogue of somatic mutation events, which can be transformed into complementary tabular feature families. "
         "Signature features summarize mutation spectra, geometry features encode sequence-context distributions from FASTA-derived windows or UGA/channel encodings, "
         "and MAF-stack features aggregate event-level biological annotations such as gene, locus, consequence, and burden summaries. "
-        "Combined representations concatenate process-level spectra with event-level biology. These tabular representations are evaluated with nested elastic-net/logistic, XGBoost, and Cox PH models "
-        "across mechanistic, HRD, cancer-type, and survival endpoints. A MuAt-compatible event-bag comparator is measured directly on MC3 mutation events rather than presented only as a conceptual alternative.",
+        "Combined representations concatenate process-level spectra with event-level biology. Non-survival tabular endpoints are evaluated with nested elastic-net/logistic and XGBoost models, while survival endpoints are reported separately with scikit-survival CoxNet C-index. "
+        f"A MuAt-compatible event-bag comparator is measured directly on mutation events for {muat_measured_clause} rather than presented only as a conceptual alternative.",
         "",
         "### Figure 2. Signature baselines compared with mutational burden.",
         "",
-        f"Nested five-fold out-of-fold performance is shown for {burden} and {signatures} across the main endpoint families. "
-        f"Primary metrics are pooled Spearman correlation for continuous {hrd_score}, AUROC for binary endpoints, macro-AUROC for {damage}, balanced accuracy for {cancer_type}, and Harrell C-index for Cox survival endpoints. "
+        f"Nested five-fold out-of-fold performance is shown for {burden} and {signatures} across the non-survival model-comparison endpoints. "
+        f"Primary metrics are pooled Spearman correlation for continuous {hrd_score}, AUROC for binary endpoints, and balanced accuracy for multiclass endpoints ({damage} and {cancer_type}). "
         f"{signatures} improve over {burden} for {xgboost} on {damage} ({s('damage_class', 'XGBoost', 'signatures_only')} vs {s('damage_class', 'XGBoost', 'burden_only')}), "
         f"{hrd_score} ({s('HRD_Score', 'XGBoost', 'signatures_only')} vs {s('HRD_Score', 'XGBoost', 'burden_only')}), "
         f"{hrd33} ({s('hrd_binary_33', 'XGBoost', 'signatures_only')} vs {s('hrd_binary_33', 'XGBoost', 'burden_only')}), "
         f"and {cancer_type} ({s('cancer_type_top20', 'XGBoost', 'signatures_only')} vs {s('cancer_type_top20', 'XGBoost', 'burden_only')}). "
-        f"Cox PH survival rows are reported separately with {os_cox} C-index.",
+        f"CoxNet survival rows are reported separately with {os_cox} C-index.",
         "",
         "### Figure 3. MuAt-compatible event-bag comparator.",
         "",
-        f"The MuAt-compatible reimplementation is evaluated on the same TCGA-WES samples and held-out folds used by the main tabular benchmark for {hrd_score}, {hrd_thresholds}, {cancer_type}, and {os_cox}. "
-        f"Its pooled balanced accuracy is {s('cancer_type_top20', 'MuAt-compatible reimplementation', 'MuAt_style_attention_MIL')}, compared with "
-        f"{s('cancer_type_top20', 'XGBoost', 'signatures_plus_MAF_stack')} for the strongest tabular signature-plus-MAF XGBoost baseline. "
-        "This makes the neural event-bag comparison directly comparable to the manuscript endpoints rather than to the original MuAt paper's TCGA-20 task.",
+        f"The MuAt-compatible reimplementation is evaluated on measured comparator endpoints with the same held-out folds used by the corresponding tabular benchmark: {muat_measured_clause}. "
+        f"The non-survival MuAt-compatible primary scores are {muat_score_sentence}. "
+        f"The directly comparable tabular baselines are {muat_baseline_sentence}. "
+        f"MuAt-compatible rows are shown only where measured; no MuAt-compatible result is reported for {muat_missing_clause}.",
         "",
         "### Figure 4. Event-level MAF-stack features and combined signature-plus-event representations.",
         "",
         f"This figure compares {signatures}, {maf_stack}, and {sig_maf} for each endpoint and model family. "
-        f"{xgboost} with {sig_maf} gives the strongest results for {hrd_score} ({s('HRD_Score', 'XGBoost', 'signatures_plus_MAF_stack')}), "
+        f"{xgboost} with {sig_maf} gives the strongest non-survival tabular results for {hrd_score} ({s('HRD_Score', 'XGBoost', 'signatures_plus_MAF_stack')}), "
         f"{hrd33} ({s('hrd_binary_33', 'XGBoost', 'signatures_plus_MAF_stack')}), "
-        f"{cancer_type} ({s('cancer_type_top20', 'XGBoost', 'signatures_plus_MAF_stack')}), "
-        f"and Cox PH {os_cox} ({s('OS', 'cox_ph', 'signatures_plus_MAF_stack')}). "
+        f"and {cancer_type} ({s('cancer_type_top20', 'XGBoost', 'signatures_plus_MAF_stack')}). "
         f"{maf_stack} alone improves over {signatures} for {xgboost} {cancer_type} ({s('cancer_type_top20', 'XGBoost', 'MAF_stack_only')} vs {s('cancer_type_top20', 'XGBoost', 'signatures_only')}), "
         f"but underperforms {signatures} for {damage} ({s('damage_class', 'XGBoost', 'MAF_stack_only')} vs {s('damage_class', 'XGBoost', 'signatures_only')}). "
         f"The combined representation improves over {maf_stack} in {sig_maf_over_maf} of 10 tested Figure 4 comparisons at q < 0.05, showing that process-level spectra and event-level biology are complementary.",
         "",
-        "### Figure 5. Cross-endpoint summary of representation tradeoffs.",
+        "### Figure 5. Overall survival CoxNet benchmark.",
         "",
-        f"A canonical heatmap summarizes all five main representations across the main endpoint families and two model families. Values exactly match the canonical rows used in Figures 2-4. "
-        f"For {xgboost}, {sig_maf} is evaluated across non-survival endpoints, while Cox PH rows report C-index for {os_cox} and other CDR survival endpoints. "
-        f"For {elastic_net}, the winners are {', '.join(elastic_winners)}. No single representation wins everywhere, but the combined signature-plus-MAF representation is the strongest practical default for XGBoost tabular models.",
+        f"The survival benchmark is shown separately as Harrell C-index for scikit-survival CoxNet risk ranking. "
+        f"For {os_cox}, {burden} reached {s('OS', 'cox_ph', 'burden_only')}, {signatures} reached {s('OS', 'cox_ph', 'signatures_only')}, "
+        f"{maf_stack} reached {s('OS', 'cox_ph', 'MAF_stack_only')}, and {sig_maf} reached {s('OS', 'cox_ph', 'signatures_plus_MAF_stack')}. "
+        "Keeping survival in its own panel avoids mixing time-to-event C-index with the non-survival model-comparison metrics.",
         "",
         "### Table 1. Datasets, endpoints, and evaluation design.",
         "",
         "This table summarizes the seven main manuscript endpoints, sample counts, task types, data sources, primary metrics, and label definitions. "
         f"The main panel includes {damage}, {hrd_score}, {hrd_thresholds}, MC3 {cancer_type}, and TCGA CDR {os_cox}. "
-        "Supplementary endpoints are listed separately in Supplementary Table S1. Model-based results use five outer folds with an inner validation split and pooled global out-of-fold metrics.",
+        "Supplementary endpoints are listed separately in Supplementary Table S1. Model-based results use five outer folds with one inner validation split and pooled global out-of-fold metrics; the single inner split is retained as a leakage-prevention and runtime compromise for the current expensive rerun.",
         "",
         "### Table 2. Main-panel performance matrix.",
         "",
         f"This table is the compact numeric backbone for the main manuscript figures, containing {table2_rows} endpoint rows. "
-        "Each representation column reports elastic-net and XGBoost scores as EN / XGB, using the endpoint-specific primary metric. "
+        "Non-survival representation columns report elastic-net and XGBoost scores as EN / XGB, using the endpoint-specific primary metric; survival rows report CoxNet C-index separately. "
         "Full provenance-heavy versions with run identifiers, cache keys, and source files are retained under `tables/technical/`.",
         "",
         "### Table 3. Representation summary and dimensionality.",
         "",
         "This table summarizes the main representations, their input signal, feature dimensionality range, context or atlas status, evaluated models, and manuscript role. "
         f"{burden} features are compact with a median of 3 features; {signatures} have a median of 182 features; "
-        f"{maf_stack} dimensionality reflects the selected Bio MAF v4 feature block within each outer fold, and {sig_maf} adds the same nested-selected biology blocks to mutational spectra. "
+        f"{maf_stack} dimensionality varies because predeclared Bio MAF v4 feature blocks are selected inside each outer fold's inner-validation split, and {sig_maf} adds the same nested-selected biology blocks to mutational spectra. "
         f"The {muat_label} comparator is reported separately as an event-bag neural model with learned tumour-level features. These values make the performance/complexity tradeoff explicit.",
         "",
         "### Table 4. Key terminology and abbreviations.",
@@ -5077,28 +5247,27 @@ def _write_manuscript_text(manuscript_dir: Path, canonical: pd.DataFrame, pairwi
         "",
         "## Results Section Text",
         "",
-        f"We first established the strength of conventional mutational spectra relative to a minimal burden baseline. In the canonical main panel, {xgboost} models using {signatures} outperformed {burden} across the main endpoint families: "
-        f"{damage} improved from {s('damage_class', 'XGBoost', 'burden_only')} to {s('damage_class', 'XGBoost', 'signatures_only')} macro-AUROC, "
+        f"We first established the strength of conventional mutational spectra relative to a minimal burden baseline. In the canonical main panel, {xgboost} models using {signatures} outperformed {burden} across the non-survival model-comparison endpoints: "
+        f"{damage} improved from {s('damage_class', 'XGBoost', 'burden_only')} to {s('damage_class', 'XGBoost', 'signatures_only')} balanced accuracy, "
         f"{hrd_score} from {s('HRD_Score', 'XGBoost', 'burden_only')} to {s('HRD_Score', 'XGBoost', 'signatures_only')} Spearman correlation, "
         f"{hrd33} from {s('hrd_binary_33', 'XGBoost', 'burden_only')} to {s('hrd_binary_33', 'XGBoost', 'signatures_only')} AUROC, "
         f"{cancer_type} from {s('cancer_type_top20', 'XGBoost', 'burden_only')} to {s('cancer_type_top20', 'XGBoost', 'signatures_only')} balanced accuracy, "
-        f"with survival endpoints reported by Cox PH C-index rather than binary OS AUROC. "
+        f"Survival is reported separately as CoxNet C-index rather than being mixed into the elastic-net/XGBoost comparison figures. "
         f"These gains were statistically significant for {sig_over_burden_xgb} of {sig_over_burden_xgb_n} tested {xgboost} comparisons after FDR correction. {elastic_net} models showed the same qualitative gain for Kucab and cancer-type prediction, but not for every clinical or HRD endpoint; "
         f"in particular, {burden} exceeded {signatures} for {elastic_net} {hrd33}. Thus, signatures are a strong baseline, but their advantage depends on both endpoint and model class.",
         "",
-        f"We also added a direct neural event-bag comparator. The MuAt-compatible reimplementation uses mutation motif, 1-Mb position-bin, and annotation tokens with a Q/K/V attention architecture, and is evaluated on the manuscript's fixed 20-class TCGA-WES cancer-type endpoint. "
-        f"On the exact same {cancer_type} outer folds, it reached {s('cancer_type_top20', 'MuAt-compatible reimplementation', 'MuAt_style_attention_MIL')} balanced accuracy, below the {sig_maf} {xgboost} tabular benchmark "
-        f"({s('cancer_type_top20', 'XGBoost', 'signatures_plus_MAF_stack')}). This result should be interpreted as a faithful, comparable local reimplementation rather than as a claim about the official pretrained MuAt model.",
+        f"We also added a direct neural event-bag comparator. The MuAt-compatible reimplementation uses mutation motif, 1-Mb position-bin, and annotation tokens with a Q/K/V attention architecture, and is evaluated on measured comparator endpoints ({muat_measured_clause}) using the corresponding manuscript outer folds. "
+        f"Across these HRD endpoints, the directly comparable scores are {muat_baseline_sentence}. This result should be interpreted as a faithful, comparable local reimplementation rather than as a claim about the official pretrained MuAt model; endpoints without measured MuAt-compatible OOF outputs are not displayed as comparator results.",
         "",
         f"Event-level MAF-stack features provided a complementary source of biological information. {maf_stack} alone was particularly useful for cancer-type prediction with {xgboost}, improving over {signatures} from {s('cancer_type_top20', 'XGBoost', 'signatures_only')} to {s('cancer_type_top20', 'XGBoost', 'MAF_stack_only')} balanced accuracy. "
         f"However, it was not uniformly better than spectra: for {damage}, {maf_stack} alone was lower than {signatures} with {xgboost} ({s('damage_class', 'XGBoost', 'MAF_stack_only')} vs {s('damage_class', 'XGBoost', 'signatures_only')}), "
         "consistent with the idea that mechanistic mutagen exposure is better captured by sequence-context or spectral information than by event-level gene/locus aggregates alone.",
         "",
-        f"The strongest overall pattern emerged from combining spectra with event-level MAF features. {sig_maf} was the best overall representation for most main endpoint families with {xgboost}: "
+        f"The strongest overall pattern emerged from combining spectra with event-level MAF features. {sig_maf} was the best overall representation for most non-survival main endpoints with {xgboost}: "
         f"{hrd_score} reached {s('HRD_Score', 'XGBoost', 'signatures_plus_MAF_stack')} Spearman correlation, "
         f"{hrd33} reached {s('hrd_binary_33', 'XGBoost', 'signatures_plus_MAF_stack')} AUROC, "
-        f"{cancer_type} reached {s('cancer_type_top20', 'XGBoost', 'signatures_plus_MAF_stack')} balanced accuracy, "
-        f"and Cox PH {os_cox} reached {s('OS', 'cox_ph', 'signatures_plus_MAF_stack')} C-index. "
+        f"and {cancer_type} reached {s('cancer_type_top20', 'XGBoost', 'signatures_plus_MAF_stack')} balanced accuracy. "
+        f"In the separately reported survival analysis, CoxNet {os_cox} reached {s('OS', 'cox_ph', 'signatures_plus_MAF_stack')} C-index. "
         f"The only main endpoint where it did not win was {damage}, where {signatures} remained slightly higher for {xgboost}. "
         f"In pairwise tests, {sig_maf} significantly improved over {maf_stack} alone in {sig_maf_over_maf} of 10 Figure 4 comparisons and significantly improved over {signatures} alone for {xgboost} {', '.join(_display_label('endpoint', endpoint) for endpoint in sig_maf_over_sig_xgb)}.",
         "",
@@ -5108,8 +5277,8 @@ def _write_manuscript_text(manuscript_dir: Path, canonical: pd.DataFrame, pairwi
         "",
         "## Statistical Notes",
         "",
-        f"Primary metrics are pooled Spearman correlation for {hrd_score}, AUROC for binary endpoints, macro-AUROC for {damage}, balanced accuracy for {cancer_type}, and Harrell C-index for Cox survival endpoints. "
-        "Statistical statements refer to canonical/main_panel_pairwise_tests.csv, using paired DeLong tests for binary AUROC and paired bootstrap tests for balanced accuracy, macro-AUROC, C-index, or Spearman correlation.",
+        f"Primary metrics are pooled Spearman correlation for {hrd_score}, AUROC for binary endpoints, balanced accuracy for multiclass endpoints ({damage} and {cancer_type}), and Harrell C-index for CoxNet survival endpoints. "
+        "Statistical statements refer to canonical/main_panel_pairwise_tests.csv, using paired DeLong tests for binary AUROC and paired bootstrap tests for balanced accuracy, C-index, or Spearman correlation.",
         "",
     ]
     text = "\n".join(lines)
@@ -5280,7 +5449,7 @@ def _validate(manuscript_dir: Path, df: pd.DataFrame, *, strict: bool) -> None:
                 "figure_2_signature_baselines",
                 "figure_3_geometry_vs_signatures",
                 "figure_4_maf_stack_vs_signatures",
-                "figure_5_cross_endpoint_summary",
+                "figure_5_overall_survival_cox",
             ],
             "supplement": [
                 "figure_s1_representation_construction",
@@ -5353,7 +5522,7 @@ def make_all_figures(*, settings: dict[str, Any] | None = None, paths: dict[str,
     measured_only_main = bool(strict or (settings.get("outputs") or {}).get("strict_plot_completeness", False))
     _write_plot_data(normalized, canonical, canonical_oof, pairwise_tests, manuscript_dir, measured_only_main=measured_only_main, settings=settings)
     _write_label_mapping(manuscript_dir)
-    _write_manuscript_text(manuscript_dir, canonical, pairwise_tests)
+    _write_manuscript_text(manuscript_dir, canonical, pairwise_tests, settings=settings)
     renderer = str((settings.get("outputs") or {}).get("visualization_renderer", "matplotlib")).lower()
     if renderer == "d3":
         _run_d3_renderer(manuscript_dir, strict=strict)

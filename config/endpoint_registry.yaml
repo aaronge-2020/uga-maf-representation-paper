@@ -77,7 +77,8 @@ target_gene_ablation_qc:
 
 muat_style_tcga_comparator:
   endpoints:
-    - cancer_type_top20
+    - HRD_Score
+    - hrd_binary_33
 
 kucab_sparsity_control:
   budgets:

@@ -517,26 +517,42 @@ if nn is not None:
             n_outputs: int,
             embed_dim: int = 128,
             attention_heads: int = 1,
+            num_layers: int = 1,
             feature_dim: int = 24,
             dropout: float = 0.1,
             count_feature_mode: str = "none",
+            pooling_mode: str = "attention_weighted",
         ) -> None:
             super().__init__()
             width = int(embed_dim) * 3
             if width % int(attention_heads) != 0:
                 raise ValueError(f"3 * embed_dim ({width}) must be divisible by attention_heads ({attention_heads})")
+            num_layers = max(1, int(num_layers))
             count_feature_mode = str(count_feature_mode or "none").strip().lower()
             if count_feature_mode not in {"none", "log_count", "log_count_density"}:
                 raise ValueError(f"Unsupported count_feature_mode: {count_feature_mode}")
+            pooling_mode = str(pooling_mode or "attention_weighted").strip().lower()
+            if pooling_mode != "attention_weighted":
+                raise ValueError("MuAtCompatibleModel now supports only attention_weighted pooling")
             self.count_feature_mode = count_feature_mode
+            self.pooling_mode = pooling_mode
+            self.num_layers = num_layers
             self.motif_embedding = nn.Embedding(int(motif_vocab_size), int(embed_dim), padding_idx=0)
             self.position_embedding = nn.Embedding(int(position_vocab_size), int(embed_dim), padding_idx=0)
             self.annotation_embedding = nn.Embedding(int(annotation_vocab_size), int(embed_dim), padding_idx=0)
             self.dropout = nn.Dropout(float(dropout))
-            self.attention = nn.MultiheadAttention(width, int(attention_heads), dropout=float(dropout), batch_first=True)
-            self.norm1 = nn.LayerNorm(width)
-            self.fc_event = nn.Sequential(nn.Linear(width, width), nn.ReLU(), nn.Dropout(float(dropout)), nn.Linear(width, width))
-            self.norm2 = nn.LayerNorm(width)
+            self.attention_layers = nn.ModuleList(
+                [nn.MultiheadAttention(width, int(attention_heads), dropout=float(dropout), batch_first=True) for _ in range(num_layers)]
+            )
+            self.norm1_layers = nn.ModuleList([nn.LayerNorm(width) for _ in range(num_layers)])
+            self.event_layers = nn.ModuleList(
+                [
+                    nn.Sequential(nn.Linear(width, width), nn.ReLU(), nn.Dropout(float(dropout)), nn.Linear(width, width))
+                    for _ in range(num_layers)
+                ]
+            )
+            self.norm2_layers = nn.ModuleList([nn.LayerNorm(width) for _ in range(num_layers)])
+            self.pool_score = nn.Linear(width, 1)
             count_width = 0 if count_feature_mode == "none" else (2 if count_feature_mode == "log_count_density" else 1)
             self.feature_layer = nn.Linear(width + count_width, int(feature_dim))
             self.classifier = nn.Linear(int(feature_dim), int(n_outputs))
@@ -556,19 +572,29 @@ if nn is not None:
                 dim=-1,
             )
             z = self.dropout(z)
-            attended, weights = self.attention(
-                z,
-                z,
-                z,
-                key_padding_mask=~mask,
-                need_weights=return_attention,
-                average_attn_weights=False,
-            )
-            z = self.norm1(z + attended)
-            z = self.norm2(z + self.fc_event(z))
+            for attention, norm1, event_layer, norm2 in zip(
+                self.attention_layers,
+                self.norm1_layers,
+                self.event_layers,
+                self.norm2_layers,
+            ):
+                attended, _weights = attention(
+                    z,
+                    z,
+                    z,
+                    key_padding_mask=~mask,
+                    need_weights=False,
+                    average_attn_weights=False,
+                )
+                z = norm1(z + attended)
+                z = norm2(z + event_layer(z))
             valid = mask.unsqueeze(-1).to(z.dtype)
             event_count = valid.sum(dim=1).clamp_min(1.0)
-            pooled = (z * valid).sum(dim=1) / event_count
+            pool_logits = self.pool_score(z).squeeze(-1).masked_fill(~mask, torch.finfo(z.dtype).min)
+            pool_weights = torch.softmax(pool_logits, dim=1).unsqueeze(-1) * valid
+            weight_sum = pool_weights.sum(dim=1, keepdim=True).clamp_min(torch.finfo(z.dtype).eps)
+            pool_weights = pool_weights / weight_sum
+            pooled = (z * pool_weights).sum(dim=1)
             if self.count_feature_mode != "none":
                 log_count = torch.log1p(event_count)
                 if self.count_feature_mode == "log_count_density":
@@ -579,7 +605,7 @@ if nn is not None:
             features = self.feature_layer(pooled)
             logits = self.classifier(features)
             if return_attention:
-                return logits, features, weights
+                return logits, features, pool_weights.squeeze(-1).unsqueeze(1).unsqueeze(1)
             return logits, features
 
 else:

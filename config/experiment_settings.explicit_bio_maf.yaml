@@ -29,20 +29,15 @@ cox_candidate_n_jobs: 8
 cox_max_candidate_n_jobs: 8
 cox_blas_threads: 4
 cox_final_blas_threads: 32
-cox_batch_mode: true
 cox_drop_conditioned_low_variance: true
-cox_max_steps: 25
-cox_precision: 1.0e-5
-cox_r_precision: 1.0e-8
+coxnet_min_alpha: 1.0e-2
+coxnet_max_iter: 100000
+coxnet_tol: 1.0e-7
 cox_high_dim_feature_threshold: 500
-cox_high_dim_backend: fast_breslow
 cox_high_dim_candidate_n_jobs: 8
 cox_high_dim_max_candidate_n_jobs: 8
 cox_high_dim_blas_threads: 1
-cox_high_dim_max_steps: 5
-cox_high_dim_precision: 1.0e-4
-cox_fast_max_iter: 20
-cox_fast_learning_rate: 0.05
+cox_high_dim_min_alpha: 1.0e-2
 cox_min_feature_std: 1.0e-8
 endpoint_registry: config/endpoint_registry.yaml
 
@@ -75,20 +70,15 @@ experiments:
     cox_max_candidate_n_jobs: 8
     cox_blas_threads: 4
     cox_final_blas_threads: 32
-    cox_batch_mode: true
     cox_drop_conditioned_low_variance: true
-    cox_max_steps: 25
-    cox_precision: 1.0e-5
-    cox_r_precision: 1.0e-8
+    coxnet_min_alpha: 1.0e-2
+    coxnet_max_iter: 100000
+    coxnet_tol: 1.0e-7
     cox_high_dim_feature_threshold: 500
-    cox_high_dim_backend: fast_breslow
     cox_high_dim_candidate_n_jobs: 8
     cox_high_dim_max_candidate_n_jobs: 8
     cox_high_dim_blas_threads: 1
-    cox_high_dim_max_steps: 5
-    cox_high_dim_precision: 1.0e-4
-    cox_fast_max_iter: 20
-    cox_fast_learning_rate: 0.05
+    cox_high_dim_min_alpha: 1.0e-2
     cox_min_feature_std: 1.0e-8
     allow_transductive_maf_features: false
     maf_stack_builder: frozen_biological_v4_nested_fs
@@ -148,8 +138,16 @@ experiments:
     eval_batch_size: 1
     embed_dim: 128
     attention_heads: 1
+    num_layers: 1
+    pooling_mode: attention_weighted
+    architecture_search_enabled: true
+    architecture_search_embed_dims: [128, 256, 512]
+    architecture_search_num_layers: [1, 2, 4]
+    architecture_search_attention_heads: [1, 2]
+    architecture_search_epochs: 3
     feature_dim: 24
     dropout: 0.1
+    scheduler: cosine
     lr: 0.0006
     momentum: 0.9
     weight_decay: 0.0

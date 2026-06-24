@@ -21,7 +21,7 @@
   "dataset_read_audit": {
     "datasets_dir": "../github_exports_datasets",
     "outside_datasets_dir_reads": 0,
-    "read_count": 1266,
+    "read_count": 1262,
     "sample_relative_paths": [
       "caches/features/muat_style_tcga_comparator/fold_checkpoints/full/cancer_type_top20_fold01_attention.csv",
       "caches/features/muat_style_tcga_comparator/fold_checkpoints/full/cancer_type_top20_fold01_features.csv",
@@ -103,23 +103,19 @@
     "data_manifest": {
       "dataset_backed_examples": [],
       "dataset_backed_files_checked": 0,
-      "manifest_rows": 28,
-      "repo_files_checked": 28
+      "manifest_rows": 31,
+      "repo_files_checked": 31
     },
     "large_assets_manifest": {
       "dataset_backed_examples": [
+        "results/large_tables/main_manuscript_complete_panel_oof_predictions.csv",
         "references/grch37/GCF_000001405.13/GCF_000001405.13_GRCh37_genomic.fna",
         "references/grch37/GCF_000001405.13/GCF_000001405.13_GRCh37_genomic.fna.gz",
-        "caches/features/muat_style_tcga_comparator/muat_compatible_events_10f18a9f7c8ff6375b994efc.csv.gz",
-        "results/manuscript_large/canonical/main_panel_oof_predictions.csv",
-        "results/large_tables/main_manuscript_complete_panel_oof_predictions.csv",
-        "results/large_tables/muat_style_tcga_comparator_cancer_type_top20_comparable_muat_compatible_events.tsv.gz",
-        "results/large_tables/muat_style_tcga_comparator_main_endpoints_comparable_muat_compatible_events.tsv.gz",
-        "results/large_tables/muat_style_tcga_comparator_muat_compatible_events.tsv.gz"
+        "results/manuscript_large/canonical/main_panel_oof_predictions.csv"
       ],
-      "dataset_backed_files_checked": 8,
-      "manifest_rows": 43,
-      "repo_files_checked": 35
+      "dataset_backed_files_checked": 4,
+      "manifest_rows": 4,
+      "repo_files_checked": 0
     },
     "reproducibility_manifest": "passed"
   },
@@ -136,7 +132,7 @@
       "../github_exports_datasets"
     ],
     "outside_root_reads": 0,
-    "read_count": 237,
+    "read_count": 201,
     "sample_relative_paths": [
       "config/endpoint_registry.yaml",
       "config/experiment_settings.explicit_bio_maf.yaml",
@@ -165,10 +161,13 @@
       "config/feature_resources/resource_manifest.json",
       "config/paths.yaml",
       "config/paths_example.yaml",
+      "data/desktop.ini",
       "data/grch37/assembly_data_report.jsonl",
       "data/grch37/data_summary.tsv",
       "data/grch37/dataset_catalog.json",
+      "data/grch37/desktop.ini",
       "data/grch37/gcf_000001405.13/chr_mapping.json",
+      "data/grch37/gcf_000001405.13/desktop.ini",
       "data/grch37/gcf_000001405.13/gcf_000001405.13_grch37_genomic.fna.fai",
       "data/processed/desktop.ini",
       "data/processed/readme.md",
@@ -184,13 +183,10 @@
       "docs/main_figure_overlap_improvement_proposals.md",
       "docs/muat_replication_rigor.md",
       "docs/representation_specs/sa_uga_observed_atlas.md",
-      "docs/representation_specs/standard_sbs96_id83.md",
-      "docs/representation_specs/uga_kme_rbf.md",
-      "docs/reviewer_audit_smart_goal.md",
-      "docs/reviewer_quickstart.md"
+      "docs/representation_specs/standard_sbs96_id83.md"
     ],
-    "unique_read_count": 210
+    "unique_read_count": 167
   },
   "status": "passed",
-  "validated_utc": "2026-06-12T13:02:05.757931+00:00"
+  "validated_utc": "2026-06-17T01:35:06.540422+00:00"
 }

@@ -1,9 +1,1 @@
 endpoint,tumour_type,n_patients,included,reason,n_run_patients,n_run_events
-damage_class,Alkylating and aldehyde adduct stress,63,True,primary MuAt-compatible task,63,35817
-damage_class,Aromatic and heterocyclic amines,47,True,primary MuAt-compatible task,47,16639
-damage_class,Environmental organ-specific DNA adducts,29,True,primary MuAt-compatible task,29,14975
-damage_class,Nitroaromatic and nitro-PAH adducts,36,True,primary MuAt-compatible task,36,31663
-damage_class,Oxidative and radiation-like stress,19,True,primary MuAt-compatible task,19,12059
-damage_class,PAH bulky adducts,41,True,primary MuAt-compatible task,41,50962
-damage_class,Platinum and crosslinking therapy,12,True,primary MuAt-compatible task,12,6468
-damage_class,Replication stress and DNA repair inhibition,12,True,primary MuAt-compatible task,12,3375

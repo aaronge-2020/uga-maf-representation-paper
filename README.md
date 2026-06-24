@@ -22,7 +22,7 @@ python src/run_all_experiments.py --config config/experiment_settings.strict_no_
 The active experiment graph is intentionally small:
 
 - `main_manuscript_complete_panel`: nested out-of-fold evaluation for burden, mutational signatures, Bio MAF v4, and signatures + Bio MAF v4 across the manuscript endpoints.
-- `muat_style_tcga_comparator`: MuAt-compatible event-bag comparator on configured TCGA endpoints.
+- `muat_style_tcga_comparator`: MuAt-compatible event-bag comparator for raw HRD score and HRD-33 high/low.
 - `src/utils/make_all_figures.py`: canonical manuscript tables, figures, supplements, plot data, and text.
 
 For a preflight without expensive jobs:
@@ -30,6 +30,28 @@ For a preflight without expensive jobs:
 ```bash
 python src/run_all_experiments.py --config config/experiment_settings.strict_no_leakage.yaml --paths config/paths.yaml --dry-run
 ```
+
+## Runtime Expectations
+
+The last recorded cold strict rerun on this Windows workstation took about 28 hours before small figure-rendering and validation overhead:
+
+- `main_manuscript_complete_panel`: 22,315.5 seconds, or 6.2 hours, from `results/logs/main_manuscript_complete_panel_manifest.json`.
+- `muat_style_tcga_comparator`: the only recorded cold MuAt timing is the superseded cancer-type run, 78,235.7 seconds, or 21.7 hours, from `results/logs/muat_style_tcga_comparator_cancer_type_top20_comparable_manifest.json` using CPU execution with `torch_num_threads=8` and `event_cache_hit=false`. The active HRD-only MuAt comparator has no separate completed cold-run timing log yet.
+- Combined recorded model time: 100,551.3 seconds, or 27.9 hours.
+
+Checkpoint and cache reuse can shorten reruns. The figure-only command below is the fast path for changing figure layout, labels, captions, or manuscript text and does not rerun model training. In the strict manuscript profile, the MuAt-compatible comparator is active only for `HRD_Score` and `hrd_binary_33`; Figure 3 is the dedicated MuAt comparison, Figure 4 is the final non-survival model-comparison panel, and Figure 5 reports overall-survival CoxNet C-index separately.
+
+## Regenerate Figures Without Rerunning Models
+
+Manuscript tables, plot-data CSVs, text, and figures are regenerated from existing result tables with:
+
+```bash
+python src/utils/make_all_figures.py --config config/experiment_settings.strict_no_leakage.yaml --paths config/paths.yaml --strict
+```
+
+This is the intended fast path for changing figure layout, labels, endpoint display rules, captions, or manuscript plot-data assembly. It does not rerun model training. If an out-of-fold prediction table is stored in the sibling dataset bundle rather than the Git checkout, the figure generator resolves the declared dataset-backed restore copy from `manifests/dataset_assets_manifest.csv`.
+
+Primary model-evaluation metrics are selected in `src/utils/nested_oof.py` via `_primary_metric`, with optional config overrides through `primary_metric_by_endpoint` or `primary_metric`. Multiclass endpoints default to balanced accuracy; binary endpoints use AUROC; regression endpoints use Spearman correlation; survival endpoints use Harrell C-index. Changing a model-selection metric affects future model runs, while changing figure display or plot-data assembly only requires the figure command above.
 
 Reviewer workflow wrappers are still available:
 
