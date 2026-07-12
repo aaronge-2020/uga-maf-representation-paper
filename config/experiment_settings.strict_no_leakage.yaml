@@ -147,7 +147,12 @@ experiments:
     architecture_search_embed_dims: [128, 256, 512]
     architecture_search_num_layers: [1, 2, 4]
     architecture_search_attention_heads: [1, 2]
+    # RANKING budget only -- used to order the 18 architecture candidates against each other.
     architecture_search_epochs: 3
+    # The ranked winner is then retrained for the full `epochs` budget on the inner split to
+    # choose its stopping epoch. Without this the final model inherited the stopping epoch from
+    # the 3-epoch search and was refit for <= 3 epochs instead of 150.
+    final_epoch_selection: true
     feature_dim: 24
     dropout: 0.1
     count_feature_mode: log_count
@@ -157,7 +162,14 @@ experiments:
     weight_decay: 0.0
     max_events_per_sample: 5000
     maf_chunksize: 500000
-    dictionary_mode: fixed_hash
+    # Exact one-hot token dictionaries, as in MuAt Methods ("Preparing MuAt inputs..."):
+    # positions enumerated from the GRCh37 assembly, annotations from the 16-value
+    # genic/exonic/strand grammar, motifs one slot per distinct observed token. The previous
+    # `fixed_hash` mode hashed into FEWER buckets than the vocabulary contains (1,024 motif
+    # buckets vs ~3,400 TCGA-WES motifs; 2,048 position buckets vs ~3,100 1-Mb bins), forcing
+    # unrelated motifs and unrelated genomic regions to share embeddings.
+    dictionary_mode: exact
+    # Retained for the fixed_hash sensitivity arm only; ignored when dictionary_mode is `exact`.
     motif_hash_buckets: 1024
     position_hash_buckets: 2048
     annotation_hash_buckets: 256

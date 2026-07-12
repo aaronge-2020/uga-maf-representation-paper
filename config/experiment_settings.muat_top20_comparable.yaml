@@ -42,7 +42,19 @@ experiments:
     architecture_search_embed_dims: [128, 256, 512]
     architecture_search_num_layers: [1, 2, 4]
     architecture_search_attention_heads: [1, 2]
+    # RANKING budget only -- see final_epoch_selection below.
     architecture_search_epochs: 3
+    final_epoch_selection: true
+
+    # Inner-validation early stopping for the full-length epoch-selection pass. n=8,800 at
+    # minibatch size 1 is ~7,000 optimiser steps per epoch, so a strict 150-epoch sweep plus the
+    # refit is roughly 12M steps and will not finish overnight on a single consumer GPU.
+    #
+    # This is the same mechanism the tabular panel already uses ("XGBoost used seeded candidate
+    # search with inner-validation early stopping"), and it cannot change which epoch is selected
+    # unless the validation score improves again after 25 consecutive epochs of no improvement.
+    # Set to 0 for a strictly faithful full-150 sweep.
+    early_stopping_patience: 25
     feature_dim: 24
     dropout: 0.1
     scheduler: cosine
@@ -51,7 +63,8 @@ experiments:
     weight_decay: 0.0
     max_events_per_sample: 5000
     maf_chunksize: 500000
-    dictionary_mode: fixed_hash
+    # Exact one-hot dictionaries (MuAt Methods). See strict_no_leakage config for rationale.
+    dictionary_mode: exact
     motif_hash_buckets: 1024
     position_hash_buckets: 2048
     annotation_hash_buckets: 256

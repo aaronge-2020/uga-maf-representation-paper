@@ -1,0 +1,7 @@
+stage,description,endpoint,metric,score,accuracy,balanced_accuracy,top5_accuracy,dictionary
+a,A  before (bug + hashed dicts),HRD_Score,spearman,0.4765848148371565,,,,fixed_hash
+a,A  before (bug + hashed dicts),hrd_binary_33,auroc,0.7581816159883075,0.7357512953367875,0.6365456105233057,1.0,fixed_hash
+b,B  epoch fix only,HRD_Score,spearman,0.503205929376541,,,,fixed_hash
+b,B  epoch fix only,hrd_binary_33,auroc,0.727429066183713,0.7370466321243523,0.6398897467670702,1.0,fixed_hash
+c,C  epoch fix + exact dicts,HRD_Score,spearman,0.5041218292489439,,,,exact
+c,C  epoch fix + exact dicts,hrd_binary_33,auroc,0.7028246433450894,0.7227979274611399,0.6079337845137102,1.0,exact

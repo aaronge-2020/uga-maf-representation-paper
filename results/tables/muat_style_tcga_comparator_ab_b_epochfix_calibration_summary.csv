@@ -1,0 +1,3 @@
+endpoint,calibration_ece,calibration_mean_confidence,calibration_accuracy,calibration_n_bins_used
+HRD_Score,,,,
+hrd_binary_33,0.06723417766353627,0.7882864364070595,0.7370466321243523,5.0

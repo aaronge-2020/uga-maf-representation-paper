@@ -14,8 +14,30 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from utils.config import BUNDLE_ROOT, DATASETS_ROOT, REPRO_ROOT, enabled, load_yaml, resolve_paths_map
-from utils.runner_support import RunnerContext, ensure_output_dirs
+
+def _preset_datasets_dir(argv: list[str]) -> None:
+    """Honour --datasets-dir before utils.config is imported.
+
+    utils.config computes DATASETS_ROOT at import time from CGR_DATASETS_DIR, falling back to
+    ../github_exports_datasets. Anything parsed by argparse would therefore arrive too late. If we
+    do not set the environment variable here, an incorrect bundle location is not reported at all:
+    validate_environment() records the paths as "missing" and the run proceeds until a runner dies
+    inside pandas with a FileNotFoundError several minutes later.
+    """
+
+    for index, token in enumerate(argv):
+        if token == "--datasets-dir" and index + 1 < len(argv):
+            os.environ["CGR_DATASETS_DIR"] = str(Path(argv[index + 1]).expanduser().resolve())
+            return
+        if token.startswith("--datasets-dir="):
+            os.environ["CGR_DATASETS_DIR"] = str(Path(token.split("=", 1)[1]).expanduser().resolve())
+            return
+
+
+_preset_datasets_dir(sys.argv[1:])
+
+from utils.config import BUNDLE_ROOT, DATASETS_ROOT, REPRO_ROOT, enabled, load_yaml, resolve_paths_map  # noqa: E402
+from utils.runner_support import RunnerContext, ensure_output_dirs  # noqa: E402
 
 
 RUNNERS = {
@@ -33,6 +55,12 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", required=True, help="Experiment settings YAML.")
     parser.add_argument("--paths", default="config/paths.yaml", help="Raw-data path YAML.")
+    parser.add_argument(
+        "--datasets-dir",
+        default=None,
+        help="Dataset bundle root (the folder containing datasets/, references/, resources/). "
+             "Equivalent to setting CGR_DATASETS_DIR. Defaults to ../github_exports_datasets.",
+    )
     parser.add_argument("--dry-run", action="store_true", help="Resolve paths and log planned commands without running expensive jobs.")
     parser.add_argument("--only", choices=sorted(RUNNERS), nargs="*", help="Optional subset of experiment ids to run.")
     parser.add_argument("--skip-figures", action="store_true", help="Do not regenerate manuscript tables/figures after experiment runners.")
@@ -146,6 +174,32 @@ def main() -> None:
     if blocking and args.dry_run:
         print(json.dumps({"environment_check": "failed", "missing": blocking}, indent=2, default=str), flush=True)
         raise SystemExit("dry-run environment check failed: missing required paths/assets")
+
+    # Fail fast on a mis-resolved dataset bundle. This check previously ran only under --dry-run,
+    # so a wrong --datasets-dir / CGR_DATASETS_DIR was recorded as "missing" in environment_checks
+    # and the run continued regardless, until a runner raised FileNotFoundError inside pandas
+    # minutes later. Both runners read mc3_source_dir unconditionally, so its absence is fatal.
+    # Everything else (kucab, pcawg, grch37) is endpoint-dependent and stays advisory.
+    print(f"[env] datasets_root = {DATASETS_ROOT}", flush=True)
+    if not args.dry_run:
+        fatal: list[str] = []
+        if not DATASETS_ROOT.exists():
+            fatal.append(f"dataset bundle directory does not exist: {DATASETS_ROOT}")
+        mc3_dir = (paths.get("raw_data") or {}).get("mc3_source_dir")
+        if mc3_dir is None or not Path(mc3_dir).exists():
+            fatal.append(f"raw_data.mc3_source_dir does not exist: {mc3_dir}")
+        if fatal:
+            for item in fatal:
+                print(f"[env] FATAL  {item}", flush=True)
+            raise SystemExit(
+                "\nThe dataset bundle could not be resolved.\n"
+                "  Point at it explicitly :  --datasets-dir <bundle>   (or set CGR_DATASETS_DIR)\n"
+                "  Fetch it               :  python scripts/fetch_datasets.py --minimal\n"
+                f"  Currently resolved to  :  {DATASETS_ROOT}\n"
+            )
+        if blocking:
+            names = sorted({str(row.get("name")) for row in blocking})
+            print(f"[env] advisory: paths not present (fine unless an enabled endpoint needs them): {names}", flush=True)
 
     started = time.time()
     selected = set(args.only or RUNNERS)

@@ -9,13 +9,14 @@ This module intentionally separates two concepts:
 
 from __future__ import annotations
 
+import gc
 import gzip
 import hashlib
 import json
 import math
 import shutil
 import subprocess
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Iterable, Mapping, Sequence
 
@@ -138,6 +139,118 @@ def mutation_motif_token(row: Mapping[str, object]) -> str:
     return f"{left}[{ref or 'N'}>{alt or 'N'}]{right}"
 
 
+def muat_symbolic_motif_token(row: Mapping[str, object]) -> str:
+    """Return a bounded, MuAt-style three-symbol mutation window.
+
+    MuAt encodes every variant as a sequence s in Sigma^3, where Sigma is {A,C,G,T} plus a set of
+    mutation symbols M: six pyrimidine-referenced substitutions, single-base deletions of A/C/G/T,
+    single-base insertions of A/C/G/T, plus SV breakpoint and MEI symbols that whole-exome data
+    cannot supply. Their examples: ApCpG>ApTpG is ``A[C>T]G``; a diadenine deletion preceded by a
+    cytosine is ``C[del A][del A]``.
+
+    ``mutation_motif_token`` (the legacy grammar) instead emits one token per distinct allele
+    string of up to 12 characters, so a 12-base substitution becomes a single motif and the
+    vocabulary is unbounded and data-dependent (1,464 tokens on 772 HRD samples).
+
+    This function bounds the vocabulary by construction, as MuAt does. Deviation to note: our WES
+    alphabet excludes SV/MEI symbols, and we take the first two mutated positions of an MNV or
+    indel rather than enumerating every window MuAt's grammar admits, so the reachable vocabulary
+    is smaller than their 3,692 tokens.
+    """
+
+    ref = clean_allele(row.get("Reference_Allele"))
+    alt = choose_alt(ref, row.get("Tumor_Seq_Allele1"), row.get("Tumor_Seq_Allele2"))
+    variant_type = str(row.get("Variant_Type") or "").upper()
+    left, mid, right = _context_flanks(row.get("CONTEXT"))
+
+    def substitution_symbol(ref_base: str, alt_base: str) -> str:
+        """Pyrimidine-referenced substitution symbol, or the base itself if unchanged."""
+        if ref_base not in DNA or alt_base not in DNA:
+            return "N"
+        if ref_base == alt_base:
+            return ref_base
+        if ref_base in {"A", "G"}:
+            ref_base = reverse_complement(ref_base)
+            alt_base = reverse_complement(alt_base)
+        return f"{ref_base}>{alt_base}"
+
+    # Single-base substitution: canonicalise the whole trinucleotide to a pyrimidine reference.
+    if len(ref) == 1 and len(alt) == 1 and set(ref + alt).issubset(DNA):
+        if ref in {"A", "G"}:
+            tri = reverse_complement(left + mid + right)
+            left, right = tri[0], tri[2]
+            ref, alt = reverse_complement(ref), reverse_complement(alt)
+        return f"{left}[{ref}>{alt}]{right}"
+
+    is_insertion = "INS" in variant_type or (bool(alt) and len(alt) > len(ref))
+    is_deletion = "DEL" in variant_type or (bool(ref) and len(ref) > len(alt))
+
+    if is_insertion:
+        inserted = alt[len(ref):] if ref and alt.startswith(ref) else alt
+        inserted = "".join(base for base in inserted if base in DNA) or "N"
+        first = inserted[0]
+        if len(inserted) >= 2:
+            return f"{left}[ins{first}][ins{inserted[1]}]"
+        return f"{left}[ins{first}]{right}"
+
+    if is_deletion:
+        deleted = ref[len(alt):] if alt and ref.startswith(alt) else ref
+        deleted = "".join(base for base in deleted if base in DNA) or "N"
+        first = deleted[0]
+        if len(deleted) >= 2:
+            return f"{left}[del{first}][del{deleted[1]}]"
+        return f"{left}[del{first}]{right}"
+
+    # Multi-nucleotide substitution: two adjacent substitution symbols, as in MuAt's Sigma^3.
+    if len(ref) > 1 and len(ref) == len(alt):
+        first = substitution_symbol(ref[0], alt[0])
+        second = substitution_symbol(ref[1], alt[1])
+        return f"{left}[{first}][{second}]"
+
+    return f"{left}[{(ref or 'N')[0]}>{(alt or 'N')[0]}]{right}"
+
+
+def transcriptional_strand_class(row: Mapping[str, object]) -> str:
+    """Return MuAt's four-class transcriptional-strand attribute.
+
+    MuAt: "we categorize each mutation into one of four mutually exclusive classes (strand):
+    mutation's pyrimidine reference base is on the (1) same or (2) opposite strand as a gene, or
+    (3) mutation overlaps two genes on opposite strands, or (4) mutation is intergenic."
+
+    The legacy ``annotation_token`` instead read the MAF ``STRAND`` field straight through as
+    +/-/0/na, which has the same cardinality but an entirely different meaning: it records the
+    gene's orientation, not the orientation of the pyrimidine reference base relative to the gene.
+    That destroys the transcriptional strand asymmetry the attribute exists to capture.
+
+    MC3 gives one row per variant with a single Hugo_Symbol, so class (3) is not recoverable; we
+    emit ``unknown`` in its place and keep the cardinality at four.
+    """
+
+    classification = str(row.get("Variant_Classification") or row.get("Consequence") or "").upper()
+    gene = str(row.get("Hugo_Symbol") or "").strip()
+    if not gene or gene in {".", "NA", "UNKNOWN", "NONE"} or "IGR" in classification or "INTERGENIC" in classification:
+        return "intergenic"
+
+    raw_strand = row.get("STRAND") if row.get("STRAND") not in (None, "") else row.get("Strand")
+    text = str(raw_strand or "").strip()
+    if text in {"1", "+1", "+"}:
+        gene_strand = 1
+    elif text in {"-1", "-"}:
+        gene_strand = -1
+    else:
+        return "unknown"
+
+    ref = clean_allele(row.get("Reference_Allele"))
+    base = ref[0] if ref else ""
+    if base not in DNA:
+        return "unknown"
+
+    # MAF reference alleles are reported on the plus strand. If the reference base is a pyrimidine
+    # (C or T) the pyrimidine sits on the plus strand; otherwise it sits on the minus strand.
+    pyrimidine_strand = 1 if base in {"C", "T"} else -1
+    return "same" if pyrimidine_strand == gene_strand else "opposite"
+
+
 def annotation_token(row: Mapping[str, object]) -> str:
     """Return the MuAt genic/exonic/strand annotation token."""
 
@@ -157,6 +270,32 @@ def annotation_token(row: Mapping[str, object]) -> str:
     strand_map = {"1": "+", "+1": "+", "+": "+", "-1": "-", "-": "-", "0": "0", ".": "na", "": "na"}
     strand = strand_map.get(raw_strand, "na")
     return f"{genic}_{exonic}_{strand}"
+
+
+LEGACY_STRAND_CLASSES = ("+", "-", "0", "na")
+MUAT_STRAND_CLASSES = ("same", "opposite", "intergenic", "unknown")
+
+
+def muat_annotation_token(row: Mapping[str, object]) -> str:
+    """Genic x exonic x transcriptional-strand annotation token (MuAt's 2 x 2 x 4)."""
+
+    legacy = annotation_token(row)
+    genic, exonic, _legacy_strand = legacy.split("_", 2)
+    return f"{genic}_{exonic}_{transcriptional_strand_class(row)}"
+
+
+def motif_token_for(row: Mapping[str, object], grammar: str = "legacy") -> str:
+    grammar = str(grammar or "legacy").strip().lower()
+    if grammar in {"muat", "muat_symbolic", "symbolic"}:
+        return muat_symbolic_motif_token(row)
+    return mutation_motif_token(row)
+
+
+def annotation_token_for(row: Mapping[str, object], strand_mode: str = "legacy") -> str:
+    strand_mode = str(strand_mode or "legacy").strip().lower()
+    if strand_mode in {"transcriptional", "muat"}:
+        return muat_annotation_token(row)
+    return annotation_token(row)
 
 
 def maf_header_columns(maf_path: str | Path) -> list[str]:
@@ -182,15 +321,34 @@ def build_muat_event_table(
     patients: Sequence[str],
     *,
     chunksize: int = 250_000,
+    motif_grammar: str = "legacy",
+    annotation_strand: str = "legacy",
 ) -> pd.DataFrame:
-    """Convert MC3/MAF rows into MuAt-compatible mutation-event rows."""
+    """Convert MC3/MAF rows into MuAt-compatible mutation-event rows.
+
+    ``motif_grammar`` and ``annotation_strand`` select the input representation:
+
+    * ``legacy`` reproduces the tokens the manuscript results were produced with: one motif token
+      per distinct allele string of up to 12 characters (unbounded vocabulary), and the MAF
+      ``STRAND`` field passed through as +/-/0/na.
+    * ``muat_symbolic`` / ``transcriptional`` follow the paper: a bounded three-symbol mutation
+      window, and the four-class transcriptional-strand attribute defined relative to the
+      pyrimidine reference base.
+
+    Both are held as options rather than one replacing the other, because the tokenisation is
+    itself a representation choice and the difference between them is a measurable result.
+    """
 
     patient_set = set(map(str, patients))
     available = set(maf_header_columns(maf_path))
     usecols = [column for column in MAF_COMPATIBLE_USECOLS if column in available]
     if "Tumor_Sample_Barcode" not in usecols:
         raise ValueError("MAF input is missing Tumor_Sample_Barcode")
-    rows: list[dict[str, object]] = []
+
+    # One DataFrame per chunk rather than one giant list of dicts. MC3 yields ~3.4M events, and a
+    # list of 3.4M Python dicts costs several GB of pure interpreter overhead before it is ever
+    # converted. Materialising each chunk immediately bounds that cost to one chunk at a time.
+    frames: list[pd.DataFrame] = []
     for chunk in pd.read_csv(maf_path, sep="\t", usecols=usecols, dtype=str, chunksize=chunksize):
         chunk["sample"] = chunk["Tumor_Sample_Barcode"].astype(str).str[:12]
         chunk = chunk[chunk["sample"].isin(patient_set)].copy()
@@ -198,17 +356,18 @@ def build_muat_event_table(
             continue
         chunk["position"] = pd.to_numeric(chunk.get("Start_Position"), errors="coerce").fillna(0).astype(np.int64)
         chunk = chunk.sort_values(["sample", "Chromosome", "position"], kind="mergesort")
+        chunk_rows: list[dict[str, object]] = []
         for record in chunk.to_dict(orient="records"):
             ref = clean_allele(record.get("Reference_Allele"))
             alt = choose_alt(ref, record.get("Tumor_Seq_Allele1"), record.get("Tumor_Seq_Allele2"))
-            rows.append(
+            chunk_rows.append(
                 {
                     "sample": str(record.get("sample")),
                     "chromosome": normalize_chromosome(record.get("Chromosome")),
                     "position": int(record.get("position") or 0),
-                    "motif": mutation_motif_token(record),
+                    "motif": motif_token_for(record, motif_grammar),
                     "position_token": position_bin_token(record.get("Chromosome"), record.get("position")),
-                    "annotation": annotation_token(record),
+                    "annotation": annotation_token_for(record, annotation_strand),
                     "variant_type": str(record.get("Variant_Type") or ""),
                     "variant_classification": str(record.get("Variant_Classification") or ""),
                     "gene": str(record.get("Hugo_Symbol") or ""),
@@ -217,29 +376,72 @@ def build_muat_event_table(
                     "context": str(record.get("CONTEXT") or ""),
                 }
             )
-    if not rows:
+        if chunk_rows:
+            frames.append(pd.DataFrame(chunk_rows))
+        del chunk, chunk_rows
+        gc.collect()
+    if not frames:
         return pd.DataFrame(columns=["sample", "chromosome", "position", "motif", "position_token", "annotation"])
-    return pd.DataFrame(rows).sort_values(["sample", "chromosome", "position", "motif"], kind="mergesort").reset_index(drop=True)
+    events = pd.concat(frames, ignore_index=True, copy=False)
+    del frames
+    gc.collect()
+    return events.sort_values(["sample", "chromosome", "position", "motif"], kind="mergesort").reset_index(drop=True)
+
+
+# MuAt's three modalities. The architecture was hardcoded to exactly these, which is why an
+# extended event representation had nowhere to go: Bio MAF v4's driver, hotspot and pathway
+# annotations could only ever enter the benchmark as tabular features, never as event tokens.
+# Note that gene identity is not among them -- MuAt does not use it.
+CORE_MODALITIES = ("motif", "position", "annotation")
+
+# Column in the event table that each modality reads from.
+MODALITY_COLUMNS = {
+    "motif": "motif",
+    "position": "position_token",
+    "annotation": "annotation",
+    "gene": "gene_token",
+    "consequence": "consequence_token",
+    "impact": "impact_token",
+}
 
 
 @dataclass(frozen=True)
 class MuAtDictionaries:
+    """Token dictionaries, one per categorical event modality.
+
+    ``extra`` holds any modality beyond MuAt's three. It is ordered, and the order defines the
+    column order of the encoded event tensor.
+    """
+
     motif: dict[str, int]
     position: dict[str, int]
     annotation: dict[str, int]
+    extra: dict[str, dict[str, int]] = field(default_factory=dict)
+
+    def ordered(self) -> list[tuple[str, dict[str, int]]]:
+        core = [("motif", self.motif), ("position", self.position), ("annotation", self.annotation)]
+        return core + [(name, mapping) for name, mapping in self.extra.items()]
+
+    def names(self) -> list[str]:
+        return [name for name, _ in self.ordered()]
 
     def sizes(self) -> dict[str, int]:
-        return {"motif": len(self.motif), "position": len(self.position), "annotation": len(self.annotation)}
+        return {name: len(mapping) for name, mapping in self.ordered()}
 
     def to_jsonable(self) -> dict[str, dict[str, int]]:
-        return {"motif": self.motif, "position": self.position, "annotation": self.annotation}
+        return {name: mapping for name, mapping in self.ordered()}
 
     @classmethod
     def from_jsonable(cls, payload: Mapping[str, Mapping[str, int]]) -> "MuAtDictionaries":
+        def coerce(mapping: Mapping[str, int]) -> dict[str, int]:
+            return {str(k): int(v) for k, v in mapping.items()}
+
+        extra = {name: coerce(mapping) for name, mapping in payload.items() if name not in CORE_MODALITIES}
         return cls(
-            motif={str(k): int(v) for k, v in payload["motif"].items()},
-            position={str(k): int(v) for k, v in payload["position"].items()},
-            annotation={str(k): int(v) for k, v in payload["annotation"].items()},
+            motif=coerce(payload["motif"]),
+            position=coerce(payload["position"]),
+            annotation=coerce(payload["annotation"]),
+            extra=extra,
         )
 
 
@@ -266,6 +468,84 @@ def build_fixed_hash_dictionaries(*, motif_buckets: int = 1024, position_buckets
         motif=fixed_hash_dictionary("motif", int(motif_buckets)),
         position=fixed_hash_dictionary("position", int(position_buckets)),
         annotation=fixed_hash_dictionary("annotation", int(annotation_buckets)),
+    )
+
+
+# GRCh37/hg19 primary-assembly sequence lengths. These are a property of the reference build,
+# not of any cohort, so enumerating position bins from them introduces no dependence on which
+# tumours are in a training or held-out fold.
+GRCH37_CHROMOSOME_LENGTHS: dict[str, int] = {
+    "1": 249250621, "2": 243199373, "3": 198022430, "4": 191154276, "5": 180915260,
+    "6": 171115067, "7": 159138663, "8": 146364022, "9": 141213431, "10": 135534747,
+    "11": 135006516, "12": 133851895, "13": 115169878, "14": 107349540, "15": 102531392,
+    "16": 90354753, "17": 81195210, "18": 78077248, "19": 59128983, "20": 63025520,
+    "21": 48129895, "22": 51304566, "X": 155270560, "Y": 59373566, "MT": 16569,
+}
+
+
+def enumerate_position_tokens(*, bin_size: int = 1_000_000) -> list[str]:
+    """Enumerate every 1-Mb position-bin token in GRCh37.
+
+    MuAt uses an exact one-hot dictionary of 2,915 position tokens covering all 1-Mb genomic
+    bins (Sanjaya et al. 2023, "Preparing MuAt inputs from somatic variant callsets"). The bins
+    are a function of the reference assembly alone, so they can be enumerated up front.
+    """
+
+    tokens: list[str] = []
+    for chromosome, length in GRCH37_CHROMOSOME_LENGTHS.items():
+        n_bins = int(math.ceil(int(length) / int(bin_size)))
+        tokens.extend(f"chr{chromosome}_{index}" for index in range(n_bins))
+    return tokens
+
+
+def enumerate_annotation_tokens(*, strand_mode: str = "legacy") -> list[str]:
+    """Enumerate the 16 genic x exonic x strand annotation values.
+
+    MuAt's annotation dictionary contains 2 x 2 x 4 = 16 values. Both strand vocabularies here
+    have cardinality four, so the product is 16 either way.
+    """
+
+    strand_mode = str(strand_mode or "legacy").strip().lower()
+    strands = MUAT_STRAND_CLASSES if strand_mode in {"transcriptional", "muat"} else LEGACY_STRAND_CLASSES
+    return [
+        f"{genic}_{exonic}_{strand}"
+        for genic in ("yes", "no")
+        for exonic in ("yes", "no")
+        for strand in strands
+    ]
+
+
+def build_exact_dictionaries(events: pd.DataFrame, *, bin_size: int = 1_000_000, strand_mode: str = "legacy") -> MuAtDictionaries:
+    """Build collision-free token dictionaries.
+
+    This replaces ``build_fixed_hash_dictionaries``, which hashed tokens into fewer buckets than
+    the vocabularies actually contain (1,024 motif buckets against a TCGA-WES motif space of
+    ~3,400; 2,048 position buckets against ~3,100 genomic bins). That guaranteed collisions:
+    unrelated mutation motifs, and unrelated genomic regions, were forced to share a single
+    embedding vector.
+
+    Hashing was introduced to prevent held-out samples from influencing the token dictionary.
+    That risk does not apply here:
+
+    * position tokens are enumerated from the GRCh37 assembly;
+    * annotation tokens are enumerated from the genic/exonic/strand grammar;
+    * motif tokens are collected from the event table without reference to any label.
+
+    Motifs observed only in a held-out fold receive a randomly initialised embedding that no
+    gradient ever reaches, which is behaviourally identical to mapping them to ``<UNK>``. No
+    label information crosses the fold boundary.
+    """
+
+    return MuAtDictionaries(
+        motif=_dictionary(events.get("motif", pd.Series(dtype=str)).astype(str)),
+        position=_dictionary(
+            list(enumerate_position_tokens(bin_size=int(bin_size)))
+            + list(events.get("position_token", pd.Series(dtype=str)).astype(str))
+        ),
+        annotation=_dictionary(
+            list(enumerate_annotation_tokens(strand_mode=strand_mode))
+            + list(events.get("annotation", pd.Series(dtype=str)).astype(str))
+        ),
     )
 
 
@@ -312,29 +592,58 @@ def encode_events(
     dictionaries: MuAtDictionaries,
     *,
     max_events: int,
+    seed: int = 20260524,
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
-    """Encode event rows as integer modality tensors plus a valid-event mask."""
+    """Encode event rows as integer modality tensors plus a valid-event mask.
+
+    Tumours carrying more than ``max_events`` mutations are down-sampled with a deterministic,
+    per-sample RNG. The previous behaviour took ``head(max_events)`` after sorting by
+    ``chromosome``; because that column holds strings, the sort was lexicographic
+    (1, 10, 11, ... 19, 2, 20, 21, 22, 3, 4, ... 9, X, Y), so truncation systematically discarded
+    chromosomes 3-9, X and Y rather than sampling uniformly. This only affects tumours above the
+    cap -- which are precisely the POLE-proofreading and MSI hypermutators, whose regional
+    mutation distribution carries the most tumour-type signal.
+    """
 
     patient_list = [str(patient) for patient in patients]
     patient_to_row = {patient: i for i, patient in enumerate(patient_list)}
-    x = np.zeros((len(patient_list), int(max_events), 3), dtype=np.int64)
+    # int32 rather than int64: every vocabulary here is far below 2^31, and this tensor is the
+    # single largest allocation in the run. For cancer_type_top20 (8,800 x 5,000 x 3) it is
+    # 528 MB instead of 1.06 GB, on host and again on device when preload_tensors_to_device is on.
+    # torch.nn.Embedding accepts IntTensor indices.
+    x = np.zeros((len(patient_list), int(max_events), 3), dtype=np.int32)
     mask = np.zeros((len(patient_list), int(max_events)), dtype=bool)
     counts = np.zeros(len(patient_list), dtype=np.int32)
     if events.empty:
         return x, mask, counts
     dicts = dictionaries.to_jsonable()
+    n_truncated = 0
     for sample, sample_events in events.groupby("sample", sort=False):
         sample = str(sample)
         if sample not in patient_to_row:
             continue
         row_idx = patient_to_row[sample]
-        limited = sample_events.sort_values(["chromosome", "position", "motif"], kind="mergesort").head(int(max_events))
+        ordered = sample_events.sort_values(["chromosome", "position", "motif"], kind="mergesort")
+        if len(ordered) > int(max_events):
+            digest = hashlib.sha256(f"{int(seed)}::{sample}".encode("utf-8")).digest()
+            rng = np.random.default_rng(int.from_bytes(digest[:8], "big"))
+            keep = np.sort(rng.choice(len(ordered), size=int(max_events), replace=False))
+            limited = ordered.iloc[keep]
+            n_truncated += 1
+        else:
+            limited = ordered
         for event_idx, record in enumerate(limited.to_dict(orient="records")):
             x[row_idx, event_idx, 0] = dicts["motif"].get(str(record.get("motif")), dicts["motif"][UNK_TOKEN])
             x[row_idx, event_idx, 1] = dicts["position"].get(str(record.get("position_token")), dicts["position"][UNK_TOKEN])
             x[row_idx, event_idx, 2] = dicts["annotation"].get(str(record.get("annotation")), dicts["annotation"][UNK_TOKEN])
             mask[row_idx, event_idx] = True
             counts[row_idx] += 1
+    if n_truncated:
+        print(
+            f"[muat_compatible] {n_truncated} tumour(s) exceeded max_events={int(max_events)} "
+            f"and were down-sampled with a seeded per-sample RNG (seed={int(seed)})",
+            flush=True,
+        )
     return x, mask, counts
 
 
@@ -511,10 +820,12 @@ if nn is not None:
         def __init__(
             self,
             *,
-            motif_vocab_size: int,
-            position_vocab_size: int,
-            annotation_vocab_size: int,
             n_outputs: int,
+            motif_vocab_size: int | None = None,
+            position_vocab_size: int | None = None,
+            annotation_vocab_size: int | None = None,
+            modality_vocab_sizes: Sequence[int] | None = None,
+            numeric_features: int = 0,
             embed_dim: int = 128,
             attention_heads: int = 1,
             num_layers: int = 1,
@@ -523,10 +834,36 @@ if nn is not None:
             count_feature_mode: str = "none",
             pooling_mode: str = "attention_weighted",
         ) -> None:
+            """Mutation-attention over a bag of events.
+
+            MuAt uses exactly three modalities (motif, 1-Mb position, genic/exonic/strand), and
+            this class was hardcoded to them: three named embeddings and a fixed width of
+            3 * embed_dim. An extended event representation therefore had nowhere to go.
+
+            ``modality_vocab_sizes`` generalises that to any number of categorical token streams,
+            and ``numeric_features`` adds continuous per-event channels (variant allele fraction,
+            read depth) through a learned projection into one further embed_dim-wide block. Passing
+            the three named vocab sizes reproduces the original architecture exactly.
+            """
+
             super().__init__()
-            width = int(embed_dim) * 3
+            if modality_vocab_sizes is None:
+                if motif_vocab_size is None or position_vocab_size is None or annotation_vocab_size is None:
+                    raise ValueError("Provide modality_vocab_sizes, or all three of the named MuAt vocab sizes")
+                modality_vocab_sizes = [int(motif_vocab_size), int(position_vocab_size), int(annotation_vocab_size)]
+            modality_vocab_sizes = [int(size) for size in modality_vocab_sizes]
+            if not modality_vocab_sizes:
+                raise ValueError("At least one categorical modality is required")
+            numeric_features = max(0, int(numeric_features))
+
+            n_blocks = len(modality_vocab_sizes) + (1 if numeric_features else 0)
+            width = int(embed_dim) * n_blocks
             if width % int(attention_heads) != 0:
-                raise ValueError(f"3 * embed_dim ({width}) must be divisible by attention_heads ({attention_heads})")
+                raise ValueError(
+                    f"{n_blocks} * embed_dim ({width}) must be divisible by attention_heads ({attention_heads})"
+                )
+            self.modality_vocab_sizes = list(modality_vocab_sizes)
+            self.numeric_features = numeric_features
             num_layers = max(1, int(num_layers))
             count_feature_mode = str(count_feature_mode or "none").strip().lower()
             if count_feature_mode not in {"none", "log_count", "log_count_density"}:
@@ -537,9 +874,15 @@ if nn is not None:
             self.count_feature_mode = count_feature_mode
             self.pooling_mode = pooling_mode
             self.num_layers = num_layers
-            self.motif_embedding = nn.Embedding(int(motif_vocab_size), int(embed_dim), padding_idx=0)
-            self.position_embedding = nn.Embedding(int(position_vocab_size), int(embed_dim), padding_idx=0)
-            self.annotation_embedding = nn.Embedding(int(annotation_vocab_size), int(embed_dim), padding_idx=0)
+            self.modality_embeddings = nn.ModuleList(
+                [nn.Embedding(size, int(embed_dim), padding_idx=0) for size in self.modality_vocab_sizes]
+            )
+            # Continuous per-event channels (e.g. variant allele fraction) get their own
+            # embed_dim-wide block so they sit alongside the token embeddings rather than being
+            # forced through a vocabulary.
+            self.numeric_projection = (
+                nn.Linear(self.numeric_features, int(embed_dim)) if self.numeric_features else None
+            )
             self.dropout = nn.Dropout(float(dropout))
             self.attention_layers = nn.ModuleList(
                 [nn.MultiheadAttention(width, int(attention_heads), dropout=float(dropout), batch_first=True) for _ in range(num_layers)]
@@ -557,20 +900,30 @@ if nn is not None:
             self.feature_layer = nn.Linear(width + count_width, int(feature_dim))
             self.classifier = nn.Linear(int(feature_dim), int(n_outputs))
 
-        def forward(self, x: "torch.Tensor", mask: "torch.Tensor", *, return_attention: bool = False):
+        def forward(
+            self,
+            x: "torch.Tensor",
+            mask: "torch.Tensor",
+            numeric: "torch.Tensor | None" = None,
+            *,
+            return_attention: bool = False,
+        ):
             mask = mask.bool()
             empty = ~mask.any(dim=1)
             if torch.any(empty):
                 mask = mask.clone()
                 mask[empty, 0] = True
-            z = torch.cat(
-                [
-                    self.motif_embedding(x[:, :, 0]),
-                    self.position_embedding(x[:, :, 1]),
-                    self.annotation_embedding(x[:, :, 2]),
-                ],
-                dim=-1,
-            )
+            if x.shape[-1] != len(self.modality_embeddings):
+                raise ValueError(
+                    f"event tensor has {x.shape[-1]} modality columns but the model was built for "
+                    f"{len(self.modality_embeddings)}"
+                )
+            parts = [embedding(x[:, :, i]) for i, embedding in enumerate(self.modality_embeddings)]
+            if self.numeric_projection is not None:
+                if numeric is None:
+                    raise ValueError("model expects numeric event features but none were supplied")
+                parts.append(self.numeric_projection(numeric.to(parts[0].dtype)))
+            z = torch.cat(parts, dim=-1)
             z = self.dropout(z)
             for attention, norm1, event_layer, norm2 in zip(
                 self.attention_layers,
@@ -590,11 +943,22 @@ if nn is not None:
                 z = norm2(z + event_layer(z))
             valid = mask.unsqueeze(-1).to(z.dtype)
             event_count = valid.sum(dim=1).clamp_min(1.0)
-            pool_logits = self.pool_score(z).squeeze(-1).masked_fill(~mask, torch.finfo(z.dtype).min)
-            pool_weights = torch.softmax(pool_logits, dim=1).unsqueeze(-1) * valid
-            weight_sum = pool_weights.sum(dim=1, keepdim=True).clamp_min(torch.finfo(z.dtype).eps)
+            # Attention-weighted set pooling, computed in float32.
+            #
+            # Under autocast, LayerNorm returns float32 but nn.Linear returns float16, so `z` and
+            # `self.pool_score(z)` have different dtypes. Taking the mask fill value from
+            # torch.finfo(z.dtype) therefore tried to write -3.4e38 (float32 min) into a float16
+            # tensor and raised "value cannot be converted to type at::Half without overflow".
+            # This line could only ever run with AMP disabled, i.e. on CPU.
+            #
+            # Promoting the pooling logits to float32 fixes the dtype mismatch and is also the
+            # numerically correct place to do a softmax over up to 5,000 masked events.
+            pool_logits = self.pool_score(z).squeeze(-1).float()
+            pool_logits = pool_logits.masked_fill(~mask, torch.finfo(pool_logits.dtype).min)
+            pool_weights = torch.softmax(pool_logits, dim=1).unsqueeze(-1) * valid.float()
+            weight_sum = pool_weights.sum(dim=1, keepdim=True).clamp_min(torch.finfo(pool_weights.dtype).eps)
             pool_weights = pool_weights / weight_sum
-            pooled = (z * pool_weights).sum(dim=1)
+            pooled = (z.float() * pool_weights).sum(dim=1).to(z.dtype)
             if self.count_feature_mode != "none":
                 log_count = torch.log1p(event_count)
                 if self.count_feature_mode == "log_count_density":

@@ -20,6 +20,9 @@ Thumbs.db
 results/work/
 results/cache/
 results/checkpoints/
+# Pre-existing stage outputs moved aside by scripts/run_muat_ablation.py before a rerun, so a
+# failed stage cannot be misreported using the previous run's files.
+results/archive/
 results/manuscript/**
 !results/manuscript/
 !results/manuscript/.gitignore

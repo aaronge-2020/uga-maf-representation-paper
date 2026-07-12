@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import gc
 import json
 import os
 import time
@@ -30,6 +31,7 @@ from utils.endpoint_registry import (
 from utils.muat_compatible import (
     OfficialMuAtCLI,
     build_dictionaries,
+    build_exact_dictionaries,
     build_fixed_hash_dictionaries,
     build_muat_event_table,
     collect_maf_patients,
@@ -292,6 +294,19 @@ def _most_common_model_settings(rows: list[dict[str, object]], fallback: LocalMu
 
 
 def _cache_key(maf_path: Path, patients: list[str], settings: dict[str, Any]) -> str:
+    """Key for the cached MuAt event table.
+
+    The cached artefact is the raw event table produced by ``build_muat_event_table``: motif,
+    position and annotation as plain strings, *before* any dictionary is applied. Token hashing
+    and dictionary construction both happen downstream of the cache. Keying on ``dictionary_mode``
+    or the hash-bucket sizes therefore forced a full re-parse of the 718 MB MC3 MAF whenever only
+    the dictionary changed, producing an identical event table each time.
+
+    ``max_events_per_sample`` is likewise not a property of this artefact: the cap is applied in
+    ``encode_events``, not here. It is retained in the key only because older caches were written
+    with it and dropping it would silently reuse them.
+    """
+
     stat = maf_path.stat()
     payload = {
         "maf_path": str(maf_path),
@@ -302,10 +317,11 @@ def _cache_key(maf_path: Path, patients: list[str], settings: dict[str, Any]) ->
             "max_events_per_sample": settings.get("max_events_per_sample"),
             "maf_chunksize": settings.get("maf_chunksize"),
             "preprocessor": "muat_compatible_v1",
-            "dictionary_mode": settings.get("dictionary_mode", "observed"),
-            "motif_hash_buckets": settings.get("motif_hash_buckets"),
-            "position_hash_buckets": settings.get("position_hash_buckets"),
-            "annotation_hash_buckets": settings.get("annotation_hash_buckets"),
+            # These DO change the event table: they select the motif grammar and the strand
+            # semantics that the tokens are built from. Unlike dictionary_mode, they must be in
+            # the key or a run would silently reuse a table built under the other grammar.
+            "motif_grammar": str(settings.get("motif_grammar", "legacy")),
+            "annotation_strand": str(settings.get("annotation_strand", "legacy")),
         },
     }
     return stable_sha256(payload)[:24]
@@ -854,6 +870,20 @@ def _fit_predict_local(
             "annotation_hash_buckets": settings.get("annotation_hash_buckets"),
             "trim_to_observed_events": bool(settings.get("trim_to_observed_events", True)),
             "n_splits": int(n_splits),
+            # These MUST be in the fingerprint. Fold checkpoints are reused whenever the
+            # fingerprint matches and resume_checkpoints is on (the default, and set in every
+            # manuscript config). Without these keys, a checkpoint written by the pre-fix code --
+            # where the final model trained for <= architecture_search_epochs instead of `epochs`,
+            # and where token dictionaries were hash-collided -- has the same fingerprint as a
+            # post-fix run with identical settings, so the fixed run would silently reuse the
+            # buggy results and report them as fixed.
+            "final_epoch_selection": bool(settings.get("final_epoch_selection", True)),
+            "training_protocol": "inner_full_length_epoch_selection_v2",
+            "event_truncation": "seeded_per_sample_subsample_v2",
+            # The input representation itself. encoded_events_digest already covers the resulting
+            # tensor, but naming these explicitly keeps the fingerprint self-describing.
+            "motif_grammar": str(settings.get("motif_grammar", "legacy")),
+            "annotation_strand": str(settings.get("annotation_strand", "legacy")),
         }
     if task == "regression":
         fingerprint_payload["regression_target_standardization"] = "fold_local_zscore_v1"
@@ -870,8 +900,11 @@ def _fit_predict_local(
     if task == "regression":
         effective_batch_size = int(settings.get("regression_batch_size", local.batch_size))
     effective_batch_size = max(1, effective_batch_size)
+    # Token ids stay int32. nn.Embedding accepts IntTensor indices, and this tensor is the largest
+    # allocation in the run: .long() here would double it (1.06 GB vs 528 MB for cancer_type_top20),
+    # both in host RAM and again in VRAM when preload_tensors_to_device is set.
     if preload_tensors:
-        x_tensor = torch.from_numpy(x_np).long().to(device)
+        x_tensor = torch.from_numpy(x_np).int().to(device)
         mask_tensor = torch.from_numpy(mask_np).bool().to(device)
         y_tensor = None
         if task in {"binary", "multiclass"}:
@@ -884,9 +917,9 @@ def _fit_predict_local(
         mask_tensor = None
         y_tensor = None
         if task in {"binary", "multiclass"}:
-            base_dataset = TensorDataset(torch.from_numpy(x_np).long(), torch.from_numpy(mask_np).bool(), torch.from_numpy(np.asarray(y_np, dtype=np.int64)).long())
+            base_dataset = TensorDataset(torch.from_numpy(x_np).int(), torch.from_numpy(mask_np).bool(), torch.from_numpy(np.asarray(y_np, dtype=np.int64)).long())
         elif task == "regression":
-            base_dataset = TensorDataset(torch.from_numpy(x_np).long(), torch.from_numpy(mask_np).bool(), torch.from_numpy(np.asarray(y_np, dtype=np.float32)).float())
+            base_dataset = TensorDataset(torch.from_numpy(x_np).int(), torch.from_numpy(mask_np).bool(), torch.from_numpy(np.asarray(y_np, dtype=np.float32)).float())
         else:
             raise ValueError(f"Unsupported MuAt-compatible task for endpoint={endpoint}: {task}")
     use_amp = bool(settings.get("amp", True)) and getattr(device, "type", str(device)) == "cuda"
@@ -1010,7 +1043,7 @@ def _fit_predict_local(
                     test_x = x_tensor[batch_index]
                     test_mask = mask_tensor[batch_index]
                 else:
-                    test_x = torch.as_tensor(x_np[batch_positions], dtype=torch.long, device=device)
+                    test_x = torch.as_tensor(x_np[batch_positions], dtype=torch.int32, device=device)
                     test_mask = torch.as_tensor(mask_np[batch_positions], dtype=torch.bool, device=device)
                 test_x, test_mask = _trim_to_observed_events(test_x, test_mask, enabled=trim_to_observed)
                 with _torch_autocast(torch, device, use_amp):
@@ -1096,84 +1129,122 @@ def _fit_predict_local(
             progress_interval = max(1, int(settings.get("progress_interval_epochs", 10)))
             early_patience = int((settings.get("early_stopping_patience_by_endpoint") or {}).get(endpoint, settings.get("early_stopping_patience", 0) or 0))
             best_candidate_score = -np.inf
-            best_candidate_epoch = 1
+
+            def run_inner_pass(
+                model_settings: LocalMuAtSettings,
+                n_epochs: int,
+                *,
+                seed_tag: int,
+                label: str,
+            ) -> tuple[int, float, list[dict[str, object]]]:
+                """Train ``model_settings`` on the inner-training split, scoring the inner-validation
+                split once per epoch.
+
+                Returns ``(best_epoch, best_score, history)``. This is used for two distinct
+                purposes with two distinct budgets: ranking architecture candidates against each
+                other (a short budget is acceptable), and choosing the stopping epoch for the
+                architecture we actually refit (which must use the full training budget).
+                """
+
+                pass_seed = int(settings.get("seed", 20260524)) + int(fold) * 1000 + int(seed_tag)
+                torch.manual_seed(pass_seed)
+                if device.type == "cuda":
+                    torch.cuda.manual_seed_all(pass_seed)
+                pass_model = make_model(model_settings)
+                pass_optimizer = torch.optim.SGD(
+                    pass_model.parameters(),
+                    lr=model_settings.lr,
+                    momentum=model_settings.momentum,
+                    weight_decay=model_settings.weight_decay,
+                )
+                # The learning-rate trajectory must match the one used in the outer refit, which
+                # anneals over ``local.epochs``. Annealing over the (shorter) selection budget
+                # would mean the epoch we select was reached under a different LR schedule than
+                # the one the refit will follow.
+                pass_scheduler = make_scheduler(pass_optimizer, model_settings, int(local.epochs))
+                pass_scaler = _new_grad_scaler(torch, use_amp)
+                pass_target_mean = 0.0
+                pass_target_scale = 1.0
+                if task == "regression":
+                    pass_targets = np.asarray(y_np, dtype=float)[inner_train_idx]
+                    pass_target_mean = float(np.nanmean(pass_targets))
+                    pass_target_scale = float(np.nanstd(pass_targets))
+                    if not np.isfinite(pass_target_scale) or pass_target_scale <= 0:
+                        pass_target_scale = 1.0
+                if base_dataset is not None:
+                    pass_ds = Subset(base_dataset, list(map(int, inner_train_idx)))
+                    pass_generator = torch.Generator()
+                    pass_generator.manual_seed(int(settings.get("seed", 20260524)) + int(fold) * 10 + int(seed_tag))
+                    pass_loader = DataLoader(pass_ds, generator=pass_generator, **train_loader_args)
+                else:
+                    pass_loader = None
+                total_epochs = max(1, int(n_epochs))
+                pass_best_epoch = 1
+                pass_best_score = -np.inf
+                history: list[dict[str, object]] = []
+                for epoch in range(1, total_epochs + 1):
+                    train_loss = train_one_epoch(
+                        pass_model,
+                        pass_optimizer,
+                        pass_scaler,
+                        inner_train_idx,
+                        fold_seed=int(fold) * 10 + int(seed_tag),
+                        epoch=epoch,
+                        loader=pass_loader,
+                        target_mean=pass_target_mean,
+                        target_scale=pass_target_scale,
+                    )
+                    if pass_scheduler is not None:
+                        pass_scheduler.step()
+                    val_prediction, _val_features, _val_attention = predict_arrays(
+                        pass_model,
+                        inner_val_idx,
+                        model_settings=model_settings,
+                        return_attention=False,
+                    )
+                    val_truth = np.asarray(y_np)[inner_val_idx]
+                    val_score = _endpoint_validation_score(selection_metric, task, val_truth, val_prediction, len(classes))
+                    history.append({"epoch": int(epoch), "train_loss": float(train_loss), "validation_score": float(val_score)})
+                    if np.isfinite(val_score) and (val_score > pass_best_score or (val_score == pass_best_score and epoch < pass_best_epoch)):
+                        pass_best_score = float(val_score)
+                        pass_best_epoch = int(epoch)
+                    if epoch == 1 or epoch == total_epochs or epoch % progress_interval == 0:
+                        print(
+                            f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
+                            f"{label} "
+                            f"embed={model_settings.embed_dim} layers={model_settings.num_layers} heads={model_settings.attention_heads} "
+                            f"selection_epoch={epoch}/{total_epochs} inner_{selection_metric}={val_score:.6g}",
+                            flush=True,
+                        )
+                    if early_patience > 0 and epoch - pass_best_epoch >= early_patience:
+                        print(
+                            f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
+                            f"{label} selection_early_stop_epoch={epoch} best_epoch={pass_best_epoch} patience={early_patience}",
+                            flush=True,
+                        )
+                        break
+                # Drop the Python-side references before asking CUDA to release the memory.
+                # empty_cache() only frees blocks torch already considers unreferenced, so calling
+                # it while the model object is still alive is a no-op. With 18 candidates per fold
+                # (up to embed 512 / 4 layers) the leaked allocations add up fast.
+                del pass_model, pass_optimizer, pass_scheduler, pass_scaler, pass_loader
+                gc.collect()
+                if device.type == "cuda":
+                    torch.cuda.empty_cache()
+                return int(pass_best_epoch), float(pass_best_score), history
+
             print(
                 f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
                 f"architecture_search_candidates={len(architecture_candidates)} search_epochs={architecture_search_epochs}",
                 flush=True,
             )
             for candidate_id, candidate_local in enumerate(architecture_candidates, start=1):
-                torch.manual_seed(int(settings.get("seed", 20260524)) + int(fold) * 1000 + int(candidate_id))
-                if device.type == "cuda":
-                    torch.cuda.manual_seed_all(int(settings.get("seed", 20260524)) + int(fold) * 1000 + int(candidate_id))
-                selector_model = make_model(candidate_local)
-                selector_optimizer = torch.optim.SGD(
-                    selector_model.parameters(),
-                    lr=candidate_local.lr,
-                    momentum=candidate_local.momentum,
-                    weight_decay=candidate_local.weight_decay,
+                candidate_best_epoch, candidate_best_score, selection_history = run_inner_pass(
+                    candidate_local,
+                    architecture_search_epochs,
+                    seed_tag=candidate_id,
+                    label=f"candidate={candidate_id}/{len(architecture_candidates)}",
                 )
-                selector_scheduler = make_scheduler(selector_optimizer, candidate_local, architecture_search_epochs)
-                selector_scaler = _new_grad_scaler(torch, use_amp)
-                selector_target_mean = 0.0
-                selector_target_scale = 1.0
-                if task == "regression":
-                    selector_targets = np.asarray(y_np, dtype=float)[inner_train_idx]
-                    selector_target_mean = float(np.nanmean(selector_targets))
-                    selector_target_scale = float(np.nanstd(selector_targets))
-                    if not np.isfinite(selector_target_scale) or selector_target_scale <= 0:
-                        selector_target_scale = 1.0
-                if base_dataset is not None:
-                    selector_ds = Subset(base_dataset, list(map(int, inner_train_idx)))
-                    selector_generator = torch.Generator()
-                    selector_generator.manual_seed(int(settings.get("seed", 20260524)) + int(fold) * 10 + int(candidate_id))
-                    selector_loader = DataLoader(selector_ds, generator=selector_generator, **train_loader_args)
-                else:
-                    selector_loader = None
-                candidate_best_epoch = 1
-                candidate_best_score = -np.inf
-                selection_history: list[dict[str, object]] = []
-                for epoch in range(1, architecture_search_epochs + 1):
-                    train_loss = train_one_epoch(
-                        selector_model,
-                        selector_optimizer,
-                        selector_scaler,
-                        inner_train_idx,
-                        fold_seed=int(fold) * 10 + int(candidate_id),
-                        epoch=epoch,
-                        loader=selector_loader,
-                        target_mean=selector_target_mean,
-                        target_scale=selector_target_scale,
-                    )
-                    if selector_scheduler is not None:
-                        selector_scheduler.step()
-                    val_prediction, _val_features, _val_attention = predict_arrays(
-                        selector_model,
-                        inner_val_idx,
-                        model_settings=candidate_local,
-                        return_attention=False,
-                    )
-                    val_truth = np.asarray(y_np)[inner_val_idx]
-                    val_score = _endpoint_validation_score(selection_metric, task, val_truth, val_prediction, len(classes))
-                    selection_history.append({"epoch": int(epoch), "train_loss": float(train_loss), "validation_score": float(val_score)})
-                    if np.isfinite(val_score) and (val_score > candidate_best_score or (val_score == candidate_best_score and epoch < candidate_best_epoch)):
-                        candidate_best_score = float(val_score)
-                        candidate_best_epoch = int(epoch)
-                    if epoch == 1 or epoch == architecture_search_epochs or epoch % progress_interval == 0:
-                        print(
-                            f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
-                            f"candidate={candidate_id}/{len(architecture_candidates)} "
-                            f"embed={candidate_local.embed_dim} layers={candidate_local.num_layers} heads={candidate_local.attention_heads} "
-                            f"selection_epoch={epoch}/{architecture_search_epochs} inner_{selection_metric}={val_score:.6g}",
-                            flush=True,
-                        )
-                    if early_patience > 0 and epoch - candidate_best_epoch >= early_patience:
-                        print(
-                            f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
-                            f"candidate={candidate_id} selection_early_stop_epoch={epoch} best_epoch={candidate_best_epoch} patience={early_patience}",
-                            flush=True,
-                        )
-                        break
                 candidate_results.append(
                     {
                         "candidate_id": int(candidate_id),
@@ -1181,6 +1252,7 @@ def _fit_predict_local(
                         "selected_m_star": int(candidate_best_epoch),
                         "selected_inner_score": float(candidate_best_score),
                         "selection_history": selection_history,
+                        "stage": "architecture_search",
                     }
                 )
                 if np.isfinite(candidate_best_score) and (
@@ -1188,21 +1260,48 @@ def _fit_predict_local(
                     or (candidate_best_score == best_candidate_score and candidate_id < selected_architecture_candidate_id)
                 ):
                     best_candidate_score = float(candidate_best_score)
-                    best_candidate_epoch = int(candidate_best_epoch)
                     selected_local = candidate_local
                     selected_architecture_candidate_id = int(candidate_id)
-                del selector_model, selector_optimizer
-                if device.type == "cuda":
-                    torch.cuda.empty_cache()
-            selected_epoch = int(best_candidate_epoch)
-            selected_inner_score = float(best_candidate_score)
+                    selected_epoch = int(candidate_best_epoch)
+                    selected_inner_score = float(candidate_best_score)
             if not np.isfinite(selected_inner_score):
                 raise RuntimeError(f"No valid MuAt architecture candidate for endpoint={endpoint} fold={fold}")
+
+            # ``architecture_search_epochs`` is a ranking budget, not a training budget. Previously
+            # the epoch chosen inside that short search was reused verbatim as the refit budget, so
+            # with architecture_search_epochs=3 the final model was trained for <= 3 epochs instead
+            # of the configured 150 (MuAt: "training for 150 epochs"). Re-run the selected
+            # architecture at full length on the same inner split to recover the true stopping epoch.
+            if bool(settings.get("final_epoch_selection", True)) and int(architecture_search_epochs) < int(local.epochs):
+                print(
+                    f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
+                    f"final_epoch_selection candidate={selected_architecture_candidate_id} "
+                    f"budget={int(local.epochs)} (architecture ranked over {architecture_search_epochs} epochs)",
+                    flush=True,
+                )
+                final_epoch, final_score, final_history = run_inner_pass(
+                    selected_local,
+                    int(local.epochs),
+                    seed_tag=1000 + int(selected_architecture_candidate_id),
+                    label="final_epoch_selection",
+                )
+                selected_epoch = int(final_epoch)
+                selected_inner_score = float(final_score)
+                candidate_results.append(
+                    {
+                        "candidate_id": int(selected_architecture_candidate_id),
+                        "params": asdict(selected_local),
+                        "selected_m_star": int(final_epoch),
+                        "selected_inner_score": float(final_score),
+                        "selection_history": final_history,
+                        "stage": "final_epoch_selection",
+                    }
+                )
             print(
                 f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
                 f"selected_candidate={selected_architecture_candidate_id} embed={selected_local.embed_dim} "
                 f"layers={selected_local.num_layers} heads={selected_local.attention_heads} "
-                f"selected_epoch={selected_epoch} selected_inner_{selection_metric}={selected_inner_score:.6g}",
+                f"selected_epoch={selected_epoch}/{int(local.epochs)} selected_inner_{selection_metric}={selected_inner_score:.6g}",
                 flush=True,
             )
         else:
@@ -1218,7 +1317,9 @@ def _fit_predict_local(
 
         model = make_model(selected_local)
         optimizer = torch.optim.SGD(model.parameters(), lr=selected_local.lr, momentum=selected_local.momentum, weight_decay=selected_local.weight_decay)
-        scheduler = make_scheduler(optimizer, selected_local, selected_epoch)
+        # T_max is the full training budget, not the selected stopping epoch: the refit must follow
+        # the same LR trajectory under which ``selected_epoch`` was chosen on the inner split.
+        scheduler = make_scheduler(optimizer, selected_local, int(local.epochs))
         if base_dataset is not None:
             train_ds = Subset(base_dataset, list(map(int, train_idx)))
             generator = torch.Generator()
@@ -1307,7 +1408,7 @@ def _fit_predict_local(
                     test_x = x_tensor[batch_index]
                     test_mask = mask_tensor[batch_index]
                 else:
-                    test_x = torch.as_tensor(x_np[batch_positions], dtype=torch.long, device=device)
+                    test_x = torch.as_tensor(x_np[batch_positions], dtype=torch.int32, device=device)
                     test_mask = torch.as_tensor(mask_np[batch_positions], dtype=torch.bool, device=device)
                 test_x, test_mask = _trim_to_observed_events(test_x, test_mask, enabled=trim_to_observed)
                 with _torch_autocast(torch, device, use_amp):
@@ -1350,6 +1451,14 @@ def _fit_predict_local(
                             "n_events": int(valid.sum()),
                         }
                     )
+        # Release the refit model before the next fold allocates its own. Without this the previous
+        # fold's model, optimizer state and autograd graph stay resident for the whole of the next
+        # fold's 18-candidate architecture search.
+        del model, optimizer, scheduler, scaler, loader
+        gc.collect()
+        if device.type == "cuda":
+            torch.cuda.empty_cache()
+
         if task in {"binary", "multiclass"}:
             pred = np.argmax(fold_output, axis=1)
             fold_truth = np.asarray(y_np)[test_idx]
@@ -1722,7 +1831,13 @@ def run(ctx: RunnerContext) -> None:
             events = pd.read_csv(events_cache_path, sep="\t")
             cache_hit = True
         else:
-            events = build_muat_event_table(maf_path, patients, chunksize=int(settings.get("maf_chunksize", 250_000)))
+            events = build_muat_event_table(
+                maf_path,
+                patients,
+                chunksize=int(settings.get("maf_chunksize", 250_000)),
+                motif_grammar=str(settings.get("motif_grammar", "legacy")),
+                annotation_strand=str(settings.get("annotation_strand", "legacy")),
+            )
             events.to_csv(events_cache_path, sep="\t", index=False, compression="gzip")
             cache_hit = False
         events.to_csv(event_table_path, sep="\t", index=False, compression="gzip")
@@ -1737,6 +1852,12 @@ def run(ctx: RunnerContext) -> None:
                 motif_buckets=motif_buckets,
                 position_buckets=position_buckets,
                 annotation_buckets=annotation_buckets,
+            )
+        elif dictionary_mode == "exact":
+            events_for_encoding = events
+            dictionaries = build_exact_dictionaries(
+                events,
+                strand_mode=str(settings.get("annotation_strand", "legacy")),
             )
         else:
             events_for_encoding = events
@@ -1756,7 +1877,13 @@ def run(ctx: RunnerContext) -> None:
             task_audit["n_run_events"] = task_audit["n_run_events"].fillna(0).astype(int)
             task_audit_frames[0] = task_audit
 
-        x, mask, event_counts = encode_events(events_for_encoding, patients, dictionaries, max_events=int(settings.get("max_events_per_sample", 128)))
+        x, mask, event_counts = encode_events(
+            events_for_encoding,
+            patients,
+            dictionaries,
+            max_events=int(settings.get("max_events_per_sample", 128)),
+            seed=int(settings.get("seed", 20260524)),
+        )
         manifest_total_events += int(len(events))
         manifest_event_counts.append(event_counts)
         for endpoint, (endpoint_task, endpoint_labels) in labels_by_endpoint.items():
@@ -1795,6 +1922,12 @@ def run(ctx: RunnerContext) -> None:
                 position_buckets=position_buckets,
                 annotation_buckets=annotation_buckets,
             )
+        elif dictionary_mode == "exact":
+            kucab_events_for_encoding = kucab_events
+            kucab_dictionaries = build_exact_dictionaries(
+                kucab_events,
+                strand_mode=str(settings.get("annotation_strand", "legacy")),
+            )
         else:
             kucab_events_for_encoding = kucab_events
             kucab_dictionaries = build_dictionaries(kucab_events)
@@ -1805,7 +1938,13 @@ def run(ctx: RunnerContext) -> None:
             dict_summary = pd.concat([prior_dict, dict_summary], ignore_index=True, sort=False)
         atomic_write_csv(dict_summary, dictionary_path, index=False)
         kucab_patients = kucab_labels.index.astype(str).tolist()
-        kucab_x, kucab_mask, kucab_event_counts = encode_events(kucab_events_for_encoding, kucab_patients, kucab_dictionaries, max_events=int(settings.get("kucab_max_events_per_sample", settings.get("max_events_per_sample", 5000))))
+        kucab_x, kucab_mask, kucab_event_counts = encode_events(
+            kucab_events_for_encoding,
+            kucab_patients,
+            kucab_dictionaries,
+            max_events=int(settings.get("kucab_max_events_per_sample", settings.get("max_events_per_sample", 5000))),
+            seed=int(settings.get("seed", 20260524)),
+        )
         manifest_total_events += int(len(kucab_events))
         manifest_event_counts.append(kucab_event_counts)
         row, pred, folds, attention, features, splits = _fit_predict_local(

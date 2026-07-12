@@ -1,0 +1,4 @@
+modality,n_tokens,pad_index,unk_index,example_tokens,benchmark
+motif,11329,0,1,<PAD>;<UNK>;A[AAGCACCAAATT>TAAGCACCAAAT]T;A[ACA>TAC]A;A[ACT>CTC]T;A[AGACCCAGACTA>GACCCAGACTAT]C;A[AGGGAGTTAATG>GGGAGTTAATGC]G;A[ATC>CCT]C,tcga_mc3_wes
+position,3116,0,1,<PAD>;<UNK>;chr10_0;chr10_1;chr10_10;chr10_100;chr10_101;chr10_102,tcga_mc3_wes
+annotation,18,0,1,<PAD>;<UNK>;no_no_+;no_no_-;no_no_0;no_no_na;no_yes_+;no_yes_-,tcga_mc3_wes

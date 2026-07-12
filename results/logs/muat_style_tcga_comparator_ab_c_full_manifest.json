@@ -1,0 +1,45 @@
+{
+  "architecture_search_attention_heads": [
+    1,
+    2
+  ],
+  "architecture_search_embed_dims": [
+    128,
+    256,
+    512
+  ],
+  "architecture_search_enabled": true,
+  "architecture_search_epochs": 3,
+  "architecture_search_num_layers": [
+    1,
+    2,
+    4
+  ],
+  "count_feature_mode": "log_count",
+  "dictionary_mode": "exact",
+  "dictionary_sizes": {
+    "annotation": 18,
+    "motif": 1464,
+    "position": 3116
+  },
+  "elapsed_seconds": 5723.434,
+  "encoded_event_count_max": 5000,
+  "encoded_event_count_median": 64.0,
+  "encoded_event_count_min": 3,
+  "event_cache_hit": true,
+  "event_cache_key": "7b63056d2af6e433541cfa3d",
+  "event_cache_path": "${REPRO_ROOT}\\results\\cache\\features\\muat_style_tcga_comparator\\muat_compatible_events_7b63056d2af6e433541cfa3d.csv.gz",
+  "max_events_per_sample": 5000,
+  "n_events": 104792,
+  "n_patients": 772,
+  "official_cli_status": "not_available",
+  "pooling_mode": "attention_weighted",
+  "primary_endpoint": "HRD_Score",
+  "representation": "MuAt-compatible reimplementation",
+  "secondary_endpoints": [
+    "hrd_binary_33"
+  ],
+  "smoke_run": false,
+  "torch_device": "cuda",
+  "torch_num_threads": 8
+}
