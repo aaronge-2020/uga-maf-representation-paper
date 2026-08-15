@@ -1,0 +1,25 @@
+{
+  "endpoint": "cancer_type_top20",
+  "task": "multiclass",
+  "n_samples": 8800,
+  "n_features_available": 948,
+  "n_train": 7040,
+  "n_heldout": 1760,
+  "inner_folds": 2,
+  "tolerance": 0.01,
+  "best_inner_score": 0.5787188061452959,
+  "winner_setting": 2,
+  "winner_params": {
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "colsample_bytree": 0.6,
+    "min_child_weight": 3,
+    "max_depth": 5
+  },
+  "winner_inner_score": 0.5689538170868877,
+  "heldout_score": 0.631926686688872,
+  "n_features_selected": 314,
+  "selection_fraction": 0.33122362869198313,
+  "shap_figure": "results/figures/feature_selection_cancer_type_top20_shap_summary.png",
+  "protocol": "80/20 split; inner k-fold tunes sparsity; sparsest within tolerance; refit on train; scored once on held-out"
+}

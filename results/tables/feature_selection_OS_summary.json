@@ -1,0 +1,25 @@
+{
+  "endpoint": "OS",
+  "task": "survival",
+  "n_samples": 9986,
+  "n_features_available": 948,
+  "n_train": 7988,
+  "n_heldout": 1998,
+  "inner_folds": 2,
+  "tolerance": 0.01,
+  "best_inner_score": 0.6390783029319775,
+  "winner_setting": 4,
+  "winner_params": {
+    "reg_alpha": 5.0,
+    "reg_lambda": 5.0,
+    "colsample_bytree": 0.4,
+    "min_child_weight": 10,
+    "max_depth": 4
+  },
+  "winner_inner_score": 0.6296320959168226,
+  "heldout_score": 0.6107670381125837,
+  "n_features_selected": 92,
+  "selection_fraction": 0.0970464135021097,
+  "shap_figure": "results/figures/feature_selection_OS_shap_summary.png",
+  "protocol": "80/20 split; inner k-fold tunes sparsity; sparsest within tolerance; refit on train; scored once on held-out"
+}
