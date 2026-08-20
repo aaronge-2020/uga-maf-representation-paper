@@ -1,0 +1,1920 @@
+{
+  "candidate_rows": [
+    {
+      "candidate_id": 1,
+      "feature_count": 121,
+      "feature_set": "v4_compact_biology_only",
+      "m_star": 32,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 5.0,
+        "subsample": 0.7
+      },
+      "score": 0.421808584348761,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 2,
+      "feature_count": 121,
+      "feature_set": "v4_compact_biology_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 0.85
+      },
+      "score": 0.38186130599052975,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 3,
+      "feature_count": 121,
+      "feature_set": "v4_compact_biology_only",
+      "m_star": 29,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      },
+      "score": 0.3914114640588275,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 4,
+      "feature_count": 121,
+      "feature_set": "v4_compact_biology_only",
+      "m_star": 29,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 2.0,
+        "subsample": 0.85
+      },
+      "score": 0.39924977824482655,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 5,
+      "feature_count": 121,
+      "feature_set": "v4_compact_biology_only",
+      "m_star": 158,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.01,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 0.85
+      },
+      "score": 0.4197364562441835,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 6,
+      "feature_count": 121,
+      "feature_set": "v4_compact_biology_only",
+      "m_star": 45,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.08,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 2.0,
+        "subsample": 0.85
+      },
+      "score": 0.38627948271117635,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 7,
+      "feature_count": 121,
+      "feature_set": "v4_compact_biology_only",
+      "m_star": 29,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.1,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 10.0,
+        "subsample": 1.0
+      },
+      "score": 0.35429595762814425,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 8,
+      "feature_count": 121,
+      "feature_set": "v4_compact_biology_only",
+      "m_star": 47,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.7
+      },
+      "score": 0.41579038958157827,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 9,
+      "feature_count": 121,
+      "feature_set": "v4_compact_biology_only",
+      "m_star": 24,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.3661205443625223,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 10,
+      "feature_count": 121,
+      "feature_set": "v4_compact_biology_only",
+      "m_star": 16,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.08,
+        "max_depth": 4,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 1.0,
+        "subsample": 0.7
+      },
+      "score": 0.39969675388288467,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 11,
+      "feature_count": 137,
+      "feature_set": "v4_compact_plus_driver_evidence_tiers",
+      "m_star": 47,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 5.0,
+        "subsample": 0.7
+      },
+      "score": 0.39693660190532526,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 12,
+      "feature_count": 137,
+      "feature_set": "v4_compact_plus_driver_evidence_tiers",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 0.85
+      },
+      "score": 0.3945083771358087,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 13,
+      "feature_count": 137,
+      "feature_set": "v4_compact_plus_driver_evidence_tiers",
+      "m_star": 24,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      },
+      "score": 0.4028500623592906,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 14,
+      "feature_count": 137,
+      "feature_set": "v4_compact_plus_driver_evidence_tiers",
+      "m_star": 33,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 2.0,
+        "subsample": 0.85
+      },
+      "score": 0.41148822625403403,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 15,
+      "feature_count": 137,
+      "feature_set": "v4_compact_plus_driver_evidence_tiers",
+      "m_star": 159,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.01,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 0.85
+      },
+      "score": 0.4171277661965077,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 16,
+      "feature_count": 137,
+      "feature_set": "v4_compact_plus_driver_evidence_tiers",
+      "m_star": 38,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.08,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 2.0,
+        "subsample": 0.85
+      },
+      "score": 0.4047484964583398,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 17,
+      "feature_count": 137,
+      "feature_set": "v4_compact_plus_driver_evidence_tiers",
+      "m_star": 31,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.1,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 10.0,
+        "subsample": 1.0
+      },
+      "score": 0.4010154410857632,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 18,
+      "feature_count": 137,
+      "feature_set": "v4_compact_plus_driver_evidence_tiers",
+      "m_star": 39,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.7
+      },
+      "score": 0.42015700479417933,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 19,
+      "feature_count": 137,
+      "feature_set": "v4_compact_plus_driver_evidence_tiers",
+      "m_star": 54,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.39910379654036165,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 20,
+      "feature_count": 137,
+      "feature_set": "v4_compact_plus_driver_evidence_tiers",
+      "m_star": 25,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.08,
+        "max_depth": 4,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 1.0,
+        "subsample": 0.7
+      },
+      "score": 0.32458291574051346,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 21,
+      "feature_count": 923,
+      "feature_set": "v4_compact_plus_exact_driver_genes",
+      "m_star": 46,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 5.0,
+        "subsample": 0.7
+      },
+      "score": 0.3908201180134309,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 22,
+      "feature_count": 923,
+      "feature_set": "v4_compact_plus_exact_driver_genes",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 0.85
+      },
+      "score": 0.39836582245646085,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 23,
+      "feature_count": 923,
+      "feature_set": "v4_compact_plus_exact_driver_genes",
+      "m_star": 27,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      },
+      "score": 0.38667425050714954,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 24,
+      "feature_count": 923,
+      "feature_set": "v4_compact_plus_exact_driver_genes",
+      "m_star": 45,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 2.0,
+        "subsample": 0.85
+      },
+      "score": 0.3935319310771976,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 25,
+      "feature_count": 923,
+      "feature_set": "v4_compact_plus_exact_driver_genes",
+      "m_star": 159,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.01,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 0.85
+      },
+      "score": 0.40048951206908373,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 26,
+      "feature_count": 923,
+      "feature_set": "v4_compact_plus_exact_driver_genes",
+      "m_star": 32,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.08,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 2.0,
+        "subsample": 0.85
+      },
+      "score": 0.4083122788558122,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 27,
+      "feature_count": 923,
+      "feature_set": "v4_compact_plus_exact_driver_genes",
+      "m_star": 33,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.1,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 10.0,
+        "subsample": 1.0
+      },
+      "score": 0.36796687812337797,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 28,
+      "feature_count": 923,
+      "feature_set": "v4_compact_plus_exact_driver_genes",
+      "m_star": 37,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.7
+      },
+      "score": 0.35131272377071265,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 29,
+      "feature_count": 923,
+      "feature_set": "v4_compact_plus_exact_driver_genes",
+      "m_star": 44,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.37907537325894775,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 30,
+      "feature_count": 923,
+      "feature_set": "v4_compact_plus_exact_driver_genes",
+      "m_star": 35,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.08,
+        "max_depth": 4,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 1.0,
+        "subsample": 0.7
+      },
+      "score": 0.39010147949504714,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 31,
+      "feature_count": 125,
+      "feature_set": "v4_compact_plus_hotspot_summary",
+      "m_star": 51,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 5.0,
+        "subsample": 0.7
+      },
+      "score": 0.39208176366341857,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 32,
+      "feature_count": 125,
+      "feature_set": "v4_compact_plus_hotspot_summary",
+      "m_star": 159,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 0.85
+      },
+      "score": 0.36075331363441376,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 33,
+      "feature_count": 125,
+      "feature_set": "v4_compact_plus_hotspot_summary",
+      "m_star": 16,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      },
+      "score": 0.4024688334356363,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 34,
+      "feature_count": 125,
+      "feature_set": "v4_compact_plus_hotspot_summary",
+      "m_star": 32,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 2.0,
+        "subsample": 0.85
+      },
+      "score": 0.4117266982287443,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 35,
+      "feature_count": 125,
+      "feature_set": "v4_compact_plus_hotspot_summary",
+      "m_star": 157,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.01,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 0.85
+      },
+      "score": 0.39845122120416115,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 36,
+      "feature_count": 125,
+      "feature_set": "v4_compact_plus_hotspot_summary",
+      "m_star": 53,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.08,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 2.0,
+        "subsample": 0.85
+      },
+      "score": 0.39696077136222163,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 37,
+      "feature_count": 125,
+      "feature_set": "v4_compact_plus_hotspot_summary",
+      "m_star": 31,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.1,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 10.0,
+        "subsample": 1.0
+      },
+      "score": 0.36042358706455224,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 38,
+      "feature_count": 125,
+      "feature_set": "v4_compact_plus_hotspot_summary",
+      "m_star": 64,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.7
+      },
+      "score": 0.40247140753458166,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 39,
+      "feature_count": 125,
+      "feature_set": "v4_compact_plus_hotspot_summary",
+      "m_star": 52,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.40032354846506246,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 40,
+      "feature_count": 125,
+      "feature_set": "v4_compact_plus_hotspot_summary",
+      "m_star": 21,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.08,
+        "max_depth": 4,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 1.0,
+        "subsample": 0.7
+      },
+      "score": 0.40653187629316284,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 41,
+      "feature_count": 943,
+      "feature_set": "v4_full_core",
+      "m_star": 49,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 5.0,
+        "subsample": 0.7
+      },
+      "score": 0.42280758856714207,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 42,
+      "feature_count": 943,
+      "feature_set": "v4_full_core",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 0.85
+      },
+      "score": 0.41068096639369706,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 43,
+      "feature_count": 943,
+      "feature_set": "v4_full_core",
+      "m_star": 24,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      },
+      "score": 0.40024942879724706,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 44,
+      "feature_count": 943,
+      "feature_set": "v4_full_core",
+      "m_star": 43,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 2.0,
+        "subsample": 0.85
+      },
+      "score": 0.4306481603843069,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 45,
+      "feature_count": 943,
+      "feature_set": "v4_full_core",
+      "m_star": 158,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.01,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 0.85
+      },
+      "score": 0.41599824691088655,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 46,
+      "feature_count": 943,
+      "feature_set": "v4_full_core",
+      "m_star": 24,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.08,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 2.0,
+        "subsample": 0.85
+      },
+      "score": 0.4032021436784632,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 47,
+      "feature_count": 943,
+      "feature_set": "v4_full_core",
+      "m_star": 25,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.1,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 10.0,
+        "subsample": 1.0
+      },
+      "score": 0.4030745507380928,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 48,
+      "feature_count": 943,
+      "feature_set": "v4_full_core",
+      "m_star": 37,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.7
+      },
+      "score": 0.4128288254632163,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 49,
+      "feature_count": 943,
+      "feature_set": "v4_full_core",
+      "m_star": 63,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.3725463973026895,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 50,
+      "feature_count": 943,
+      "feature_set": "v4_full_core",
+      "m_star": 22,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.08,
+        "max_depth": 4,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 1.0,
+        "subsample": 0.7
+      },
+      "score": 0.3661833849504528,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 51,
+      "feature_count": 948,
+      "feature_set": "v4_full_core_plus_optional_controls",
+      "m_star": 28,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 5.0,
+        "subsample": 0.7
+      },
+      "score": 0.39508199891281465,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 52,
+      "feature_count": 948,
+      "feature_set": "v4_full_core_plus_optional_controls",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 0.85
+      },
+      "score": 0.4218198634286459,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 53,
+      "feature_count": 948,
+      "feature_set": "v4_full_core_plus_optional_controls",
+      "m_star": 31,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      },
+      "score": 0.44899922335711656,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 54,
+      "feature_count": 948,
+      "feature_set": "v4_full_core_plus_optional_controls",
+      "m_star": 40,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 2.0,
+        "subsample": 0.85
+      },
+      "score": 0.43328585378025825,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 55,
+      "feature_count": 948,
+      "feature_set": "v4_full_core_plus_optional_controls",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.01,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 0.85
+      },
+      "score": 0.40168026064550894,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 56,
+      "feature_count": 948,
+      "feature_set": "v4_full_core_plus_optional_controls",
+      "m_star": 53,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.08,
+        "max_depth": 2,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 2.0,
+        "subsample": 0.85
+      },
+      "score": 0.43325523913485625,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 57,
+      "feature_count": 948,
+      "feature_set": "v4_full_core_plus_optional_controls",
+      "m_star": 25,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.1,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 10.0,
+        "subsample": 1.0
+      },
+      "score": 0.4245893186602678,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 58,
+      "feature_count": 948,
+      "feature_set": "v4_full_core_plus_optional_controls",
+      "m_star": 46,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.7
+      },
+      "score": 0.3937559013777701,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 59,
+      "feature_count": 948,
+      "feature_set": "v4_full_core_plus_optional_controls",
+      "m_star": 30,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.38256866542902856,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 60,
+      "feature_count": 948,
+      "feature_set": "v4_full_core_plus_optional_controls",
+      "m_star": 32,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.08,
+        "max_depth": 4,
+        "min_child_weight": 1.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 1.0,
+        "subsample": 0.7
+      },
+      "score": 0.4183539633097142,
+      "status": "ok"
+    }
+  ],
+  "completed_candidates": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "manifest": {
+    "candidates": [
+      {
+        "candidate_id": 1,
+        "feature_set": "v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 5.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 2,
+        "feature_set": "v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.01,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 3,
+        "feature_set": "v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 10.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 4,
+        "feature_set": "v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 2.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 5,
+        "feature_set": "v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.01,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 6,
+        "feature_set": "v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.08,
+          "max_depth": 2,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 2.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 7,
+        "feature_set": "v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.1,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.0,
+          "reg_lambda": 10.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 8,
+        "feature_set": "v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 9,
+        "feature_set": "v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 10,
+        "feature_set": "v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.08,
+          "max_depth": 4,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 1.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 11,
+        "feature_set": "v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 5.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 12,
+        "feature_set": "v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.01,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 13,
+        "feature_set": "v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 10.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 14,
+        "feature_set": "v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 2.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 15,
+        "feature_set": "v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.01,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 16,
+        "feature_set": "v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.08,
+          "max_depth": 2,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 2.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 17,
+        "feature_set": "v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.1,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.0,
+          "reg_lambda": 10.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 18,
+        "feature_set": "v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 19,
+        "feature_set": "v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 20,
+        "feature_set": "v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.08,
+          "max_depth": 4,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 1.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 21,
+        "feature_set": "v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 5.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 22,
+        "feature_set": "v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.01,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 23,
+        "feature_set": "v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 10.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 24,
+        "feature_set": "v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 2.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 25,
+        "feature_set": "v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.01,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 26,
+        "feature_set": "v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.08,
+          "max_depth": 2,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 2.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 27,
+        "feature_set": "v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.1,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.0,
+          "reg_lambda": 10.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 28,
+        "feature_set": "v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 29,
+        "feature_set": "v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 30,
+        "feature_set": "v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.08,
+          "max_depth": 4,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 1.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 31,
+        "feature_set": "v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 5.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 32,
+        "feature_set": "v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.01,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 33,
+        "feature_set": "v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 10.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 34,
+        "feature_set": "v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 2.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 35,
+        "feature_set": "v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.01,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 36,
+        "feature_set": "v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.08,
+          "max_depth": 2,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 2.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 37,
+        "feature_set": "v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.1,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.0,
+          "reg_lambda": 10.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 38,
+        "feature_set": "v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 39,
+        "feature_set": "v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 40,
+        "feature_set": "v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.08,
+          "max_depth": 4,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 1.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 41,
+        "feature_set": "v4_full_core",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 5.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 42,
+        "feature_set": "v4_full_core",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.01,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 43,
+        "feature_set": "v4_full_core",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 10.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 44,
+        "feature_set": "v4_full_core",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 2.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 45,
+        "feature_set": "v4_full_core",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.01,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 46,
+        "feature_set": "v4_full_core",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.08,
+          "max_depth": 2,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 2.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 47,
+        "feature_set": "v4_full_core",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.1,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.0,
+          "reg_lambda": 10.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 48,
+        "feature_set": "v4_full_core",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 49,
+        "feature_set": "v4_full_core",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 50,
+        "feature_set": "v4_full_core",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.08,
+          "max_depth": 4,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 1.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 51,
+        "feature_set": "v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 5.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 52,
+        "feature_set": "v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.01,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 53,
+        "feature_set": "v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 10.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 54,
+        "feature_set": "v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 2.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 55,
+        "feature_set": "v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.01,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 56,
+        "feature_set": "v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.08,
+          "max_depth": 2,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 2.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 57,
+        "feature_set": "v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.1,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.0,
+          "reg_lambda": 10.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 58,
+        "feature_set": "v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 59,
+        "feature_set": "v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 60,
+        "feature_set": "v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.08,
+          "max_depth": 4,
+          "min_child_weight": 1.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 1.0,
+          "subsample": 0.7
+        }
+      }
+    ],
+    "feature_counts": {
+      "v4_compact_biology_only": 121,
+      "v4_compact_plus_driver_evidence_tiers": 137,
+      "v4_compact_plus_exact_driver_genes": 923,
+      "v4_compact_plus_hotspot_summary": 125,
+      "v4_full_core": 943,
+      "v4_full_core_plus_optional_controls": 948
+    },
+    "feature_digests": {
+      "v4_compact_biology_only": "1b60316a5da88ae48076c91a:0e02af12c26c2948cea061c4",
+      "v4_compact_plus_driver_evidence_tiers": "46108b90442e103b6fe9bae3:9d4e78842619d2592fa436e4",
+      "v4_compact_plus_exact_driver_genes": "5038f1b3fa2ca3dfe4096fed:b74b896d4c145892329dbc41",
+      "v4_compact_plus_hotspot_summary": "6be2b47bd428450d650ae5c4:12001d161037961486081dbf",
+      "v4_full_core": "f07375612466ba4531bbedd6:5ab0f0e3faedc1503cf104c5",
+      "v4_full_core_plus_optional_controls": "8ff60608d55d883c718e9a4e:cef976f786b4a1c0294b07e1"
+    },
+    "labels_digest": "7f014dce254c1298c289d5db",
+    "learner": "xgboost",
+    "linear_settings": {
+      "linear_high_dim_classification_solver": "sgd_log_loss",
+      "linear_high_dim_classification_solver_min_features": 500,
+      "linear_sgd_average": true,
+      "linear_sgd_max_iter": 200,
+      "linear_sgd_n_iter_no_change": 5,
+      "linear_sgd_tol": 0.001
+    },
+    "n_classes": 0,
+    "primary_metric": "spearman",
+    "seed": 917764,
+    "split_digest": "348097a4a649bfae810e5443",
+    "survival_settings": {
+      "cox_drop_conditioned_low_variance": true,
+      "cox_high_dim_feature_threshold": 500,
+      "cox_high_dim_min_alpha": 0.01,
+      "cox_min_feature_std": 1e-08,
+      "coxnet_max_iter": 100000,
+      "coxnet_min_alpha": 0.01,
+      "coxnet_tol": 1e-07
+    },
+    "task": "regression",
+    "version": 3,
+    "xgb_settings": {
+      "tree_method": "gpu_hist",
+      "xgb_estimators": 160,
+      "xgb_learning_rate": 0.05,
+      "xgb_max_depth": 2,
+      "xgb_n_jobs": 32
+    }
+  },
+  "status": "completed",
+  "updated_unix": 1786814647.09
+}

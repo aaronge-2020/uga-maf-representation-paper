@@ -1,0 +1,43 @@
+endpoint=cancer_type_top20 task=multiclass n=8800 features=948
+split: train=7040 heldout=1760
+
+inner 5-fold CV over 6 sparsity settings
+  setting 1: alpha=0     colsample=0.8 score=0.6451±0.0109 features=662
+  setting 2: alpha=0.1   colsample=0.6 score=0.6469±0.0085 features=427
+  setting 3: alpha=1     colsample=0.5 score=0.6490±0.0047 features=317
+  setting 4: alpha=5     colsample=0.4 score=0.6385±0.0069 features=216
+  setting 5: alpha=10    colsample=0.3 score=0.6153±0.0093 features=177
+  setting 6: alpha=25    colsample=0.3 score=0.5670±0.0103 features=152
+
+winner: setting 3 (score 0.6490 vs best 0.6490, 317 features)
+refitting on the full training split
+held-out score = 0.6968   features used = 347 / 948
+computing SHAP values on 1760 held-out samples
+SHAP summary plot -> results\figures\feature_selection_cancer_type_top20_shap_summary.png
+
+==========================================================================
+cancer_type_top20: 347 of 948 features carry signal (36.6%)
+==========================================================================
+                                                                         feature   total_gain  gain_rank  mean_abs_shap  shap_rank
+                                                   vep_impact_fraction__modifier 13233.148438          1       0.262502        2.0
+                                   vep_consequence_fraction__3_prime_utr_variant 12032.309570          2       0.289571        1.0
+residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count  9636.534180          3       0.123803        5.0
+                                                                     id_fraction  7756.213867          4       0.130858        4.0
+                                  driver_gene_role_matched_event_log_count__IDH1  7476.194336          5       0.036426       41.0
+                                    driver_gene_functional_event_log_count__TP53  7320.446289          6       0.176081        3.0
+                                    driver_gene_functional_event_log_count__PTEN  5636.557129          7       0.048781       26.0
+                                                          cancer_hotspot_max_vaf  5212.542480          8       0.100530        6.0
+                                    vep_consequence_fraction__frameshift_variant  5120.716309          9       0.085346       10.0
+                                               vep_biotype_count__protein_coding  5097.708984         10       0.033330       46.0
+                                                                         vaf_std  4848.540527         11       0.094952        7.0
+                                   driver_gene_role_matched_event_log_count__APC  4844.495117         12       0.036143       43.0
+                                                      vep_impact_count__modifier  4545.650391         13       0.068655       11.0
+                                                        vep_canonical_count__yes  4507.730957         14       0.026309       66.0
+                                    driver_gene_functional_event_log_count__IDH1  4376.904297         15       0.022810       73.0
+                                                                      vaf_median  4157.551270         16       0.089585        8.0
+                                                        vep_impact_fraction__low  4138.607422         17       0.057852       22.0
+                                    vep_consequence_fraction__synonymous_variant  4089.403809         18       0.060179       20.0
+                                     driver_gene_functional_event_log_count__VHL  3816.736328         19       0.021544       77.0
+                                       vep_consequence_count__synonymous_variant  3341.268066         20       0.045664       32.0
+
+written -> results/tables/feature_selection_cancer_type_top20_*

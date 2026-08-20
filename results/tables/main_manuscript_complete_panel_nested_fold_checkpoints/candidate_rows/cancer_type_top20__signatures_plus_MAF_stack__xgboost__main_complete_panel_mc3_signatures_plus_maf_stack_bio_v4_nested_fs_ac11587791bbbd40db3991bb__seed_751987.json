@@ -1,0 +1,2232 @@
+{
+  "candidate_rows": [
+    {
+      "candidate_id": 1,
+      "feature_count": 182,
+      "feature_set": "signatures_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.03,
+        "max_depth": 5,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 10.0,
+        "subsample": 0.7
+      },
+      "score": 0.49018460959360766,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 2,
+      "feature_count": 182,
+      "feature_set": "signatures_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      },
+      "score": 0.5019706693484511,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 3,
+      "feature_count": 182,
+      "feature_set": "signatures_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.4944778479272853,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 4,
+      "feature_count": 182,
+      "feature_set": "signatures_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 0.5,
+        "subsample": 0.7
+      },
+      "score": 0.5012916480985514,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 5,
+      "feature_count": 182,
+      "feature_set": "signatures_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 10.0,
+        "subsample": 1.0
+      },
+      "score": 0.3522615749090563,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 6,
+      "feature_count": 182,
+      "feature_set": "signatures_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.49337099914306276,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 7,
+      "feature_count": 182,
+      "feature_set": "signatures_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.03,
+        "max_depth": 4,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.48341644958097635,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 8,
+      "feature_count": 182,
+      "feature_set": "signatures_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 5.0,
+        "subsample": 1.0
+      },
+      "score": 0.4982380045238147,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 9,
+      "feature_count": 182,
+      "feature_set": "signatures_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.48341438647564317,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 10,
+      "feature_count": 182,
+      "feature_set": "signatures_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.01,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 1.0
+      },
+      "score": 0.431360392556669,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 11,
+      "feature_count": 303,
+      "feature_set": "signatures_plus_v4_compact_biology_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.03,
+        "max_depth": 5,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 10.0,
+        "subsample": 0.7
+      },
+      "score": 0.6167377869669075,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 12,
+      "feature_count": 303,
+      "feature_set": "signatures_plus_v4_compact_biology_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      },
+      "score": 0.638560786642443,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 13,
+      "feature_count": 303,
+      "feature_set": "signatures_plus_v4_compact_biology_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.6455171092377687,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 14,
+      "feature_count": 303,
+      "feature_set": "signatures_plus_v4_compact_biology_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 0.5,
+        "subsample": 0.7
+      },
+      "score": 0.6411106965337398,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 15,
+      "feature_count": 303,
+      "feature_set": "signatures_plus_v4_compact_biology_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 10.0,
+        "subsample": 1.0
+      },
+      "score": 0.4711638004144663,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 16,
+      "feature_count": 303,
+      "feature_set": "signatures_plus_v4_compact_biology_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.6438320615465055,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 17,
+      "feature_count": 303,
+      "feature_set": "signatures_plus_v4_compact_biology_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.03,
+        "max_depth": 4,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.6284757638871007,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 18,
+      "feature_count": 303,
+      "feature_set": "signatures_plus_v4_compact_biology_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 5.0,
+        "subsample": 1.0
+      },
+      "score": 0.6440494808392329,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 19,
+      "feature_count": 303,
+      "feature_set": "signatures_plus_v4_compact_biology_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.625237684653414,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 20,
+      "feature_count": 303,
+      "feature_set": "signatures_plus_v4_compact_biology_only",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.01,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 1.0
+      },
+      "score": 0.5737434488846265,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 21,
+      "feature_count": 319,
+      "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.03,
+        "max_depth": 5,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 10.0,
+        "subsample": 0.7
+      },
+      "score": 0.6214113908990984,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 22,
+      "feature_count": 319,
+      "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      },
+      "score": 0.6453986916826913,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 23,
+      "feature_count": 319,
+      "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.6574417841013255,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 24,
+      "feature_count": 319,
+      "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 0.5,
+        "subsample": 0.7
+      },
+      "score": 0.6567692916944583,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 25,
+      "feature_count": 319,
+      "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 10.0,
+        "subsample": 1.0
+      },
+      "score": 0.47011236680972013,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 26,
+      "feature_count": 319,
+      "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.6386168241141703,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 27,
+      "feature_count": 319,
+      "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.03,
+        "max_depth": 4,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.642302104305714,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 28,
+      "feature_count": 319,
+      "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 5.0,
+        "subsample": 1.0
+      },
+      "score": 0.646597525809611,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 29,
+      "feature_count": 319,
+      "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.6321725860829324,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 30,
+      "feature_count": 319,
+      "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.01,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 1.0
+      },
+      "score": 0.5865064125034098,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 31,
+      "feature_count": 1105,
+      "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.03,
+        "max_depth": 5,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 10.0,
+        "subsample": 0.7
+      },
+      "score": 0.6874705019848946,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 32,
+      "feature_count": 1105,
+      "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      },
+      "score": 0.7084104319826469,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 33,
+      "feature_count": 1105,
+      "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.7264217554610235,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 34,
+      "feature_count": 1105,
+      "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 0.5,
+        "subsample": 0.7
+      },
+      "score": 0.7200085633612558,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 35,
+      "feature_count": 1105,
+      "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 10.0,
+        "subsample": 1.0
+      },
+      "score": 0.5635688103132734,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 36,
+      "feature_count": 1105,
+      "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.7175945872569564,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 37,
+      "feature_count": 1105,
+      "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.03,
+        "max_depth": 4,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.7027905132503547,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 38,
+      "feature_count": 1105,
+      "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 5.0,
+        "subsample": 1.0
+      },
+      "score": 0.7220704299821362,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 39,
+      "feature_count": 1105,
+      "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.7084742485784263,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 40,
+      "feature_count": 1105,
+      "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.01,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 1.0
+      },
+      "score": 0.6683998915896124,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 41,
+      "feature_count": 307,
+      "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.03,
+        "max_depth": 5,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 10.0,
+        "subsample": 0.7
+      },
+      "score": 0.6306531757737488,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 42,
+      "feature_count": 307,
+      "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      },
+      "score": 0.6549175249655839,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 43,
+      "feature_count": 307,
+      "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.6615800030585093,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 44,
+      "feature_count": 307,
+      "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 0.5,
+        "subsample": 0.7
+      },
+      "score": 0.6593965178346992,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 45,
+      "feature_count": 307,
+      "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 10.0,
+        "subsample": 1.0
+      },
+      "score": 0.46800439180975567,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 46,
+      "feature_count": 307,
+      "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.6467872490101744,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 47,
+      "feature_count": 307,
+      "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.03,
+        "max_depth": 4,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.6458074477551362,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 48,
+      "feature_count": 307,
+      "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 5.0,
+        "subsample": 1.0
+      },
+      "score": 0.6517568813742044,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 49,
+      "feature_count": 307,
+      "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.6353303547984258,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 50,
+      "feature_count": 307,
+      "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.01,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 1.0
+      },
+      "score": 0.5914475350761486,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 51,
+      "feature_count": 1125,
+      "feature_set": "signatures_plus_v4_full_core",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.03,
+        "max_depth": 5,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 10.0,
+        "subsample": 0.7
+      },
+      "score": 0.699702780961313,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 52,
+      "feature_count": 1125,
+      "feature_set": "signatures_plus_v4_full_core",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      },
+      "score": 0.7231574500321295,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 53,
+      "feature_count": 1125,
+      "feature_set": "signatures_plus_v4_full_core",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.7217460457098464,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 54,
+      "feature_count": 1125,
+      "feature_set": "signatures_plus_v4_full_core",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 0.5,
+        "subsample": 0.7
+      },
+      "score": 0.7276947004163096,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 55,
+      "feature_count": 1125,
+      "feature_set": "signatures_plus_v4_full_core",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 10.0,
+        "subsample": 1.0
+      },
+      "score": 0.5732686800931445,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 56,
+      "feature_count": 1125,
+      "feature_set": "signatures_plus_v4_full_core",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.7164020797532717,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 57,
+      "feature_count": 1125,
+      "feature_set": "signatures_plus_v4_full_core",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.03,
+        "max_depth": 4,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.7067846967373954,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 58,
+      "feature_count": 1125,
+      "feature_set": "signatures_plus_v4_full_core",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 5.0,
+        "subsample": 1.0
+      },
+      "score": 0.7205878237310781,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 59,
+      "feature_count": 1125,
+      "feature_set": "signatures_plus_v4_full_core",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.7139738435377232,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 60,
+      "feature_count": 1125,
+      "feature_set": "signatures_plus_v4_full_core",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.01,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 1.0
+      },
+      "score": 0.6677797020419145,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 61,
+      "feature_count": 1130,
+      "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.03,
+        "max_depth": 5,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 10.0,
+        "subsample": 0.7
+      },
+      "score": 0.6915480748322295,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 62,
+      "feature_count": 1130,
+      "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 10.0,
+        "subsample": 0.85
+      },
+      "score": 0.7143480418431075,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 63,
+      "feature_count": 1130,
+      "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.7280690195495454,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 64,
+      "feature_count": 1130,
+      "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 0.5,
+        "subsample": 0.7
+      },
+      "score": 0.7254913266344514,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 65,
+      "feature_count": 1130,
+      "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.01,
+        "max_depth": 2,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 10.0,
+        "subsample": 1.0
+      },
+      "score": 0.5772650463185403,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 66,
+      "feature_count": 1130,
+      "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.05,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.7109543457035526,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 67,
+      "feature_count": 1130,
+      "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.85,
+        "learning_rate": 0.03,
+        "max_depth": 4,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 0.5,
+        "subsample": 0.85
+      },
+      "score": 0.7086213437064515,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 68,
+      "feature_count": 1130,
+      "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_child_weight": 3.0,
+        "reg_alpha": 0.1,
+        "reg_lambda": 5.0,
+        "subsample": 1.0
+      },
+      "score": 0.7218143982294721,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 69,
+      "feature_count": 1130,
+      "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 10.0,
+        "reg_alpha": 0.01,
+        "reg_lambda": 0.5,
+        "subsample": 1.0
+      },
+      "score": 0.7139738435377232,
+      "status": "ok"
+    },
+    {
+      "candidate_id": 70,
+      "feature_count": 1130,
+      "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+      "m_star": 160,
+      "params": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.01,
+        "max_depth": 5,
+        "min_child_weight": 5.0,
+        "reg_alpha": 0.5,
+        "reg_lambda": 1.0,
+        "subsample": 1.0
+      },
+      "score": 0.6677797020419145,
+      "status": "ok"
+    }
+  ],
+  "completed_candidates": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70
+  ],
+  "manifest": {
+    "candidates": [
+      {
+        "candidate_id": 1,
+        "feature_set": "signatures_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.03,
+          "max_depth": 5,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 10.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 2,
+        "feature_set": "signatures_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 3,
+        "feature_set": "signatures_only",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 4,
+        "feature_set": "signatures_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.0,
+          "reg_lambda": 0.5,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 5,
+        "feature_set": "signatures_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.01,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 10.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 6,
+        "feature_set": "signatures_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 4,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 7,
+        "feature_set": "signatures_only",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 8,
+        "feature_set": "signatures_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 5.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 9,
+        "feature_set": "signatures_only",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 10,
+        "feature_set": "signatures_only",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.01,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 11,
+        "feature_set": "signatures_plus_v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.03,
+          "max_depth": 5,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 10.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 12,
+        "feature_set": "signatures_plus_v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 13,
+        "feature_set": "signatures_plus_v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 14,
+        "feature_set": "signatures_plus_v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.0,
+          "reg_lambda": 0.5,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 15,
+        "feature_set": "signatures_plus_v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.01,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 10.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 16,
+        "feature_set": "signatures_plus_v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 4,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 17,
+        "feature_set": "signatures_plus_v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 18,
+        "feature_set": "signatures_plus_v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 5.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 19,
+        "feature_set": "signatures_plus_v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 20,
+        "feature_set": "signatures_plus_v4_compact_biology_only",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.01,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 21,
+        "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.03,
+          "max_depth": 5,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 10.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 22,
+        "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 23,
+        "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 24,
+        "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.0,
+          "reg_lambda": 0.5,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 25,
+        "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.01,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 10.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 26,
+        "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 4,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 27,
+        "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 28,
+        "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 5.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 29,
+        "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 30,
+        "feature_set": "signatures_plus_v4_compact_plus_driver_evidence_tiers",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.01,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 31,
+        "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.03,
+          "max_depth": 5,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 10.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 32,
+        "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 33,
+        "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 34,
+        "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.0,
+          "reg_lambda": 0.5,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 35,
+        "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.01,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 10.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 36,
+        "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 4,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 37,
+        "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 38,
+        "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 5.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 39,
+        "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 40,
+        "feature_set": "signatures_plus_v4_compact_plus_exact_driver_genes",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.01,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 41,
+        "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.03,
+          "max_depth": 5,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 10.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 42,
+        "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 43,
+        "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 44,
+        "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.0,
+          "reg_lambda": 0.5,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 45,
+        "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.01,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 10.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 46,
+        "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 4,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 47,
+        "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 48,
+        "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 5.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 49,
+        "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 50,
+        "feature_set": "signatures_plus_v4_compact_plus_hotspot_summary",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.01,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 51,
+        "feature_set": "signatures_plus_v4_full_core",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.03,
+          "max_depth": 5,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 10.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 52,
+        "feature_set": "signatures_plus_v4_full_core",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 53,
+        "feature_set": "signatures_plus_v4_full_core",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 54,
+        "feature_set": "signatures_plus_v4_full_core",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.0,
+          "reg_lambda": 0.5,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 55,
+        "feature_set": "signatures_plus_v4_full_core",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.01,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 10.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 56,
+        "feature_set": "signatures_plus_v4_full_core",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 4,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 57,
+        "feature_set": "signatures_plus_v4_full_core",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 58,
+        "feature_set": "signatures_plus_v4_full_core",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 5.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 59,
+        "feature_set": "signatures_plus_v4_full_core",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 60,
+        "feature_set": "signatures_plus_v4_full_core",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.01,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 61,
+        "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.03,
+          "max_depth": 5,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 10.0,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 62,
+        "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 63,
+        "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 64,
+        "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.0,
+          "reg_lambda": 0.5,
+          "subsample": 0.7
+        }
+      },
+      {
+        "candidate_id": 65,
+        "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.01,
+          "max_depth": 2,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 10.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 66,
+        "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.05,
+          "max_depth": 4,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.05,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 67,
+        "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.85,
+          "learning_rate": 0.03,
+          "max_depth": 4,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 0.5,
+          "subsample": 0.85
+        }
+      },
+      {
+        "candidate_id": 68,
+        "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_child_weight": 3.0,
+          "reg_alpha": 0.1,
+          "reg_lambda": 5.0,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 69,
+        "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_child_weight": 10.0,
+          "reg_alpha": 0.01,
+          "reg_lambda": 0.5,
+          "subsample": 1.0
+        }
+      },
+      {
+        "candidate_id": 70,
+        "feature_set": "signatures_plus_v4_full_core_plus_optional_controls",
+        "params": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.01,
+          "max_depth": 5,
+          "min_child_weight": 5.0,
+          "reg_alpha": 0.5,
+          "reg_lambda": 1.0,
+          "subsample": 1.0
+        }
+      }
+    ],
+    "feature_counts": {
+      "signatures_only": 182,
+      "signatures_plus_v4_compact_biology_only": 303,
+      "signatures_plus_v4_compact_plus_driver_evidence_tiers": 319,
+      "signatures_plus_v4_compact_plus_exact_driver_genes": 1105,
+      "signatures_plus_v4_compact_plus_hotspot_summary": 307,
+      "signatures_plus_v4_full_core": 1125,
+      "signatures_plus_v4_full_core_plus_optional_controls": 1130
+    },
+    "feature_digests": {
+      "signatures_only": "d89887ea97d7513758da471c:57d5b2954178e2b620bb5401",
+      "signatures_plus_v4_compact_biology_only": "eaf7c14fd7f53431e2e5eb39:75784ef9bab8d3ac4f24ac29",
+      "signatures_plus_v4_compact_plus_driver_evidence_tiers": "82629b650e1113e68b465f84:c4cf55956ff9b0b448deef32",
+      "signatures_plus_v4_compact_plus_exact_driver_genes": "4b3a9f9693f887e73fa42df2:b19e5988cc54da50497c18e2",
+      "signatures_plus_v4_compact_plus_hotspot_summary": "927427d02112261e95b4f385:07881f84893ec0c9f57a03f7",
+      "signatures_plus_v4_full_core": "fd25dfba5f8e76be8daae304:d1faf26d30ac0175378c6a68",
+      "signatures_plus_v4_full_core_plus_optional_controls": "ed6c60a88d2e585277d0f270:607252839b23dd254f4b889d"
+    },
+    "labels_digest": "1e050a771d361c6e1d93d535",
+    "learner": "xgboost",
+    "linear_settings": {
+      "linear_high_dim_classification_solver": "sgd_log_loss",
+      "linear_high_dim_classification_solver_min_features": 500,
+      "linear_sgd_average": true,
+      "linear_sgd_max_iter": 200,
+      "linear_sgd_n_iter_no_change": 5,
+      "linear_sgd_tol": 0.001
+    },
+    "n_classes": 20,
+    "primary_metric": "balanced_accuracy",
+    "seed": 751987,
+    "split_digest": "5740874d2ecc07e8bb1042b1",
+    "survival_settings": {
+      "cox_drop_conditioned_low_variance": true,
+      "cox_high_dim_feature_threshold": 500,
+      "cox_high_dim_min_alpha": 0.01,
+      "cox_min_feature_std": 1e-08,
+      "coxnet_max_iter": 100000,
+      "coxnet_min_alpha": 0.01,
+      "coxnet_tol": 1e-07
+    },
+    "task": "multiclass",
+    "version": 3,
+    "xgb_settings": {
+      "tree_method": "gpu_hist",
+      "xgb_estimators": 160,
+      "xgb_learning_rate": 0.05,
+      "xgb_max_depth": 2,
+      "xgb_n_jobs": 32
+    }
+  },
+  "status": "completed",
+  "updated_unix": 1786856289.335
+}

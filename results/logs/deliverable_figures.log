@@ -1,0 +1,8 @@
+[survival] -> results\figures\figure_S_survival_cancer_type_baseline.png
+[sparsity] -> results\figures\figure_S_feature_selection_sparsity.png
+[shap-blocks] -> results\figures\figure_S_shap_by_block.png
+
+3 figure(s) written to results/figures/
+  figure_S_survival_cancer_type_baseline.png
+  figure_S_feature_selection_sparsity.png
+  figure_S_shap_by_block.png

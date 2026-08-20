@@ -9,7 +9,21 @@ openpyxl==3.1.5
 statsmodels==0.14.4
 optuna==4.1.0
 scikit-survival==0.27.0
+
+# WARNING: installing this file will give you a CPU-ONLY build of PyTorch.
+#
+# The MuAt comparator needs CUDA. Plain `pip install torch==2.5.1` resolves against PyPI, which
+# serves the CPU wheel on Windows, and it overwrites an existing CUDA build without any error --
+# the run then proceeds 20-50x slower with no indication anything is wrong.
+#
+# After ANY pip install in this project, verify:
+#     python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
+# Expect "2.5.1+cu121 True". If it prints False, reinstall the CUDA build:
+#     pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121 --force-reinstall
+#
+# scripts/run_all_deliverables.py --preflight also checks this before spending GPU hours.
 torch==2.5.1
+
 requests==2.32.3
 setuptools<81
 tabulate==0.9.0

@@ -4704,18 +4704,36 @@ def _write_plot_data(
         completeness.append(temp)
     benchmark_completeness = pd.concat(completeness, ignore_index=True, sort=False)
     atomic_write_csv(benchmark_completeness, plot_dir / "benchmark_completeness.csv", index=False)
+    # Table S3 documents which planned combinations produced no measured result. It must be
+    # written even when nothing is missing: "every combination ran" is a meaningful completeness
+    # statement, and the strict validator requires these artifacts unconditionally. Previously
+    # this block was guarded by `if not s3_missing.empty`, so a fully complete benchmark skipped
+    # the table and then failed validation with "Missing manuscript artifacts" -- i.e. the run
+    # failed precisely because it succeeded.
+    s3_path = manuscript_dir / "supplement" / "table_s3_completeness_and_na_reasons.csv"
+    tables_dir = manuscript_dir / "tables"
     if not s3_missing.empty:
-        s3_path = manuscript_dir / "supplement" / "table_s3_completeness_and_na_reasons.csv"
         s3_technical = _add_display_columns(s3_missing)
-        _write_table_csv_html(s3_technical, _technical_path(manuscript_dir / "tables" / "technical", s3_path))
+        _write_table_csv_html(s3_technical, _technical_path(tables_dir / "technical", s3_path))
         s3_public = (
             s3_technical.groupby(["representation_family_display", "na_reason"], dropna=False)
             .agg(**{"Missing combinations": ("endpoint_display", "size"), "Example endpoints": ("endpoint_display", lambda x: "; ".join(_ordered_unique(list(x))[:5]))})
             .reset_index()
             .rename(columns={"representation_family_display": "Representation/analysis family", "na_reason": "Reason"})
         )
-        tables_dir = manuscript_dir / "tables"
-        _write_supplement_public_table(s3_public, s3_path, tables_dir, tables_dir / "publication")
+    else:
+        s3_public = pd.DataFrame(
+            [
+                {
+                    "Representation/analysis family": "All families",
+                    "Reason": "No unmeasured combinations; every planned endpoint x representation x learner produced a measured out-of-fold result",
+                    "Missing combinations": 0,
+                    "Example endpoints": "",
+                }
+            ]
+        )
+        _write_table_csv_html(s3_public, _technical_path(tables_dir / "technical", s3_path))
+    _write_supplement_public_table(s3_public, s3_path, tables_dir, tables_dir / "publication")
     atomic_write_json(
         plot_dir / "plot_data_manifest.json",
         {

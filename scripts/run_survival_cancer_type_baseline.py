@@ -200,7 +200,10 @@ def main() -> int:
         common = labels.index.astype(str).intersection(cancer_type.index.astype(str))
         common = common.intersection(bio_maf.index.astype(str))
         common = pd.Index(sorted(set(map(str, common))))
-        print(f"  cohort after intersection: n={len(common)} (survival ∩ cancer type ∩ Bio MAF v4)", flush=True)
+        # ASCII only: the default Windows console codepage (cp1252) cannot encode characters like
+        # the set-intersection sign, and an UnicodeEncodeError in a progress message is enough to
+        # abort the whole stage.
+        print(f"  cohort after intersection: n={len(common)} (survival AND cancer type AND Bio MAF v4)", flush=True)
 
         surv = labels.loc[common]
         ct_design = one_hot_cancer_type(cancer_type.loc[common])

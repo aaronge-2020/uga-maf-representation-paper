@@ -244,7 +244,7 @@ def archive_stale_outputs(key: str) -> None:
 
 def run_stage(key: str, datasets_dir: Path) -> tuple[int, float]:
     stage = STAGES[key]
-    _hr(f"STAGE {key.upper()} — {stage['label']}")
+    _hr(f"STAGE {key.upper()} - {stage['label']}")
     archive_stale_outputs(key)
     LOG_DIR.mkdir(parents=True, exist_ok=True)
     log_path = LOG_DIR / f"ablation_{key}.log"
@@ -293,10 +293,14 @@ def report(stages: list[str]) -> int:
 
     _hr("RESULTS")
     rows = []
-    for key in stages:
+    # Load every stage that has results on disk, not only the stages just run. The comparison
+    # table always displays all four HRD arms, so loading only the current stage made previously
+    # completed arms print as "(no result)" even though their tables were present.
+    for key in STAGES:
         frame = _read_stage(key)
         if frame is None:
-            print(f"[report] no results for stage {key}")
+            if key in stages:
+                print(f"[report] no results for stage {key}")
             continue
         for _, row in frame.iterrows():
             rows.append(

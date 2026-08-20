@@ -597,17 +597,55 @@ def _cox_fit_predict_frames(train_df: pd.DataFrame, pred_df: pd.DataFrame, param
         warnings.simplefilter("ignore")
         from sksurv.linear_model import CoxnetSurvivalAnalysis
 
-        model = CoxnetSurvivalAnalysis(
-            alphas=[float(alpha)],
-            l1_ratio=min(max(l1_ratio, 1e-8), 1.0),
-            max_iter=max(1, int(settings.get("coxnet_max_iter", settings.get("cox_max_iter", 100000)))),
-            tol=float(settings.get("coxnet_tol", settings.get("cox_tol", 1e-7))),
-        )
-        model.fit(x_train, y_structured)
+        l1_ratio_clipped = min(max(l1_ratio, 1e-8), 1.0)
+        max_iter = max(1, int(settings.get("coxnet_max_iter", settings.get("cox_max_iter", 100000))))
+        tol = float(settings.get("coxnet_tol", settings.get("cox_tol", 1e-7)))
+
+        def _fit_single() -> Any:
+            model = CoxnetSurvivalAnalysis(
+                alphas=[float(alpha)], l1_ratio=l1_ratio_clipped, max_iter=max_iter, tol=tol
+            )
+            model.fit(x_train, y_structured)
+            return model, None
+
+        def _fit_path() -> Any:
+            """Fit down a decreasing alpha path, warm-starting into the target alpha.
+
+            CoxNet is a coordinate-descent solver: it is designed to be fitted along a decreasing
+            sequence of alphas, where each fit warm-starts from the previous solution. Fitting a
+            single small alpha cold gives the solver no starting point, and on high-dimensional
+            designs the coefficients can blow up before it converges, which raises
+
+                ArithmeticError: Numerical error, because weights are too large.
+
+            The path below starts at a strongly regularised alpha and steps down to the requested
+            one. The returned solution is the one at the requested alpha, so this is a
+            numerically-stable route to the same estimate rather than a different model.
+            """
+            path_len = max(2, int(settings.get("coxnet_path_length", 12)))
+            path_factor = float(settings.get("coxnet_path_start_factor", 1000.0))
+            alphas = np.geomspace(float(alpha) * path_factor, float(alpha), num=path_len)
+            model = CoxnetSurvivalAnalysis(
+                alphas=[float(value) for value in alphas],
+                l1_ratio=l1_ratio_clipped,
+                max_iter=max_iter,
+                tol=tol,
+            )
+            model.fit(x_train, y_structured)
+            return model, float(alpha)
+
+        try:
+            model, predict_alpha = _fit_single()
+        except (ArithmeticError, ValueError):
+            model, predict_alpha = _fit_path()
+
         coef = np.asarray(getattr(model, "coef_", np.array([])), dtype=np.float64)
         if coef.size == 0 or not np.isfinite(coef).all():
             raise RuntimeError("scikit-survival CoxNet fit produced non-finite or missing coefficients")
-        pred = np.asarray(model.predict(x_pred), dtype=np.float64).reshape(-1)
+        if predict_alpha is None:
+            pred = np.asarray(model.predict(x_pred), dtype=np.float64).reshape(-1)
+        else:
+            pred = np.asarray(model.predict(x_pred, alpha=predict_alpha), dtype=np.float64).reshape(-1)
         if pred.shape[0] != x_pred.shape[0] or not np.isfinite(pred).all():
             raise RuntimeError("scikit-survival CoxNet prediction sanity check failed")
         return pred

@@ -4,26 +4,31 @@
     "muat_style_tcga_comparator"
   ],
   "bundle_root": "${BUNDLE_ROOT}",
-  "completed_utc": "2026-07-11T15:02:13+00:00",
-  "config": "config/experiment_settings.muat_ab_c_full.yaml",
+  "completed_utc": "2026-08-20T08:53:38+00:00",
+  "config": "config\\experiment_settings.strict_no_leakage.yaml",
   "dry_run": false,
-  "elapsed_seconds": 5738.036,
+  "elapsed_seconds": 404.068,
   "experiments": [
     {
+      "elapsed_seconds": 170.175,
       "experiment_id": "main_manuscript_complete_panel",
-      "status": "skipped"
+      "status": "completed"
     },
     {
-      "elapsed_seconds": 5738.036,
+      "elapsed_seconds": 62.517,
       "experiment_id": "muat_style_tcga_comparator",
+      "status": "completed"
+    },
+    {
+      "experiment_id": "make_all_figures",
       "status": "completed"
     }
   ],
   "feature_cache_dir": "${BUNDLE_ROOT}/results/cache/features",
-  "paths": "config/paths.yaml",
+  "paths": "config\\paths.yaml",
   "refresh_cache": false,
   "repro_root": "${BUNDLE_ROOT}",
-  "run_id": "20260711T132634Z",
-  "runtime_profile": "muat-ab-c-full",
-  "tree_method": "hist"
+  "run_id": "20260820T084654Z",
+  "runtime_profile": "strict-no-leakage-affected-rerun",
+  "tree_method": "gpu_hist"
 }

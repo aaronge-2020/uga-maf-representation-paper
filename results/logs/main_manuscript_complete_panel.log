@@ -62,3 +62,510 @@ completed endpoint=damage_class representation=standard_sbs96_dbs78_id83 learner
 completed endpoint=damage_class representation=standard_sbs96_dbs78_id83 learner=xgboost seconds=40.322
 completed endpoint=damage_class representation=MAF_stack_only learner=linear seconds=3.369
 completed endpoint=damage_class representation=signatures_plus_MAF_stack learner=linear seconds=4.833
+main_manuscript_complete_panel started 2026-08-15T16:40:54.049029+00:00
+{
+  "allow_transductive_maf_features": "False",
+  "candidate_memmap_max_nbytes": "10M",
+  "cox_blas_threads": "4",
+  "cox_candidate_n_jobs": "8",
+  "cox_drop_conditioned_low_variance": "True",
+  "cox_final_blas_threads": "32",
+  "cox_high_dim_blas_threads": "1",
+  "cox_high_dim_candidate_n_jobs": "8",
+  "cox_high_dim_feature_threshold": "500",
+  "cox_high_dim_max_candidate_n_jobs": "8",
+  "cox_high_dim_min_alpha": "0.01",
+  "cox_max_candidate_n_jobs": "8",
+  "cox_min_feature_std": "1e-08",
+  "coxnet_max_iter": "100000",
+  "coxnet_min_alpha": "0.01",
+  "coxnet_tol": "1e-07",
+  "d_context": "6",
+  "d_payload": "6",
+  "enabled": "True",
+  "endpoint_registry_minimums": "{'binary_min_per_class': 25, 'multiclass_min_per_class': 50, 'survival_min_samples': 200, 'survival_min_events': 25}",
+  "kucab_endpoints": "['damage_class']",
+  "learners": "['linear', 'xgboost']",
+  "linear_candidate_n_jobs": "32",
+  "linear_high_dim_candidate_n_jobs": "16",
+  "linear_high_dim_classification_solver": "sgd_log_loss",
+  "linear_high_dim_classification_solver_min_features": "500",
+  "linear_multiclass_process_backend": "False",
+  "linear_process_backend_min_features": "500",
+  "linear_sgd_average": "True",
+  "linear_sgd_max_iter": "200",
+  "linear_sgd_n_iter_no_change": "5",
+  "linear_sgd_tol": "0.001",
+  "maf_bio_chunksize": "350000",
+  "maf_bio_v4_include_signatures_only_candidate": "True",
+  "maf_stack_builder": "frozen_biological_v4_nested_fs",
+  "main_mc3_endpoints": "['HRD_Score', 'HRD_TAI', 'HRD_LST', 'HRD_LOH', 'PARPi7', 'eCARD', 'hrd_binary_24', 'hrd_binary_33', 'hrd_binary_42', 'cancer_type_top20']",
+  "random_search_trials": "10",
+  "representations": "['burden_only', 'signatures_only', 'MAF_stack_only', 'signatures_plus_MAF_stack']",
+  "survival_endpoints": "['OS', 'PFI']",
+  "xgb_estimators": "160",
+  "xgb_learning_rate": "0.05",
+  "xgb_max_depth": "2"
+}
+completed endpoint=PFI representation=burden_only learner=cox_ph seconds=3.784
+completed endpoint=PFI representation=standard_sbs96_id83 learner=cox_ph seconds=3.672
+main_manuscript_complete_panel started 2026-08-15T16:45:43.637573+00:00
+{
+  "allow_transductive_maf_features": "False",
+  "candidate_memmap_max_nbytes": "10M",
+  "cox_blas_threads": "4",
+  "cox_candidate_n_jobs": "8",
+  "cox_drop_conditioned_low_variance": "True",
+  "cox_final_blas_threads": "32",
+  "cox_high_dim_blas_threads": "1",
+  "cox_high_dim_candidate_n_jobs": "8",
+  "cox_high_dim_feature_threshold": "500",
+  "cox_high_dim_max_candidate_n_jobs": "8",
+  "cox_high_dim_min_alpha": "0.01",
+  "cox_max_candidate_n_jobs": "8",
+  "cox_min_feature_std": "1e-08",
+  "coxnet_max_iter": "100000",
+  "coxnet_min_alpha": "0.01",
+  "coxnet_tol": "1e-07",
+  "d_context": "6",
+  "d_payload": "6",
+  "enabled": "True",
+  "endpoint_registry_minimums": "{'binary_min_per_class': 25, 'multiclass_min_per_class': 50, 'survival_min_samples': 200, 'survival_min_events': 25}",
+  "kucab_endpoints": "['damage_class']",
+  "learners": "['linear', 'xgboost']",
+  "linear_candidate_n_jobs": "32",
+  "linear_high_dim_candidate_n_jobs": "16",
+  "linear_high_dim_classification_solver": "sgd_log_loss",
+  "linear_high_dim_classification_solver_min_features": "500",
+  "linear_multiclass_process_backend": "False",
+  "linear_process_backend_min_features": "500",
+  "linear_sgd_average": "True",
+  "linear_sgd_max_iter": "200",
+  "linear_sgd_n_iter_no_change": "5",
+  "linear_sgd_tol": "0.001",
+  "maf_bio_chunksize": "350000",
+  "maf_bio_v4_include_signatures_only_candidate": "True",
+  "maf_stack_builder": "frozen_biological_v4_nested_fs",
+  "main_mc3_endpoints": "['HRD_Score', 'HRD_TAI', 'HRD_LST', 'HRD_LOH', 'PARPi7', 'eCARD', 'hrd_binary_24', 'hrd_binary_33', 'hrd_binary_42', 'cancer_type_top20']",
+  "random_search_trials": "10",
+  "representations": "['burden_only', 'signatures_only', 'MAF_stack_only', 'signatures_plus_MAF_stack']",
+  "survival_endpoints": "['OS', 'PFI']",
+  "xgb_estimators": "160",
+  "xgb_learning_rate": "0.05",
+  "xgb_max_depth": "2"
+}
+completed endpoint=HRD_Score representation=burden_only learner=linear seconds=1.21
+completed endpoint=HRD_Score representation=burden_only learner=xgboost seconds=1.667
+completed endpoint=HRD_Score representation=standard_sbs96_id83 learner=linear seconds=1.889
+completed endpoint=HRD_Score representation=standard_sbs96_id83 learner=xgboost seconds=10.211
+completed endpoint=HRD_Score representation=MAF_stack_only learner=linear seconds=120.513
+completed endpoint=HRD_Score representation=MAF_stack_only learner=xgboost seconds=82.771
+completed endpoint=HRD_Score representation=signatures_plus_MAF_stack learner=linear seconds=178.361
+completed endpoint=HRD_Score representation=signatures_plus_MAF_stack learner=xgboost seconds=146.133
+completed endpoint=HRD_TAI representation=burden_only learner=linear seconds=0.412
+completed endpoint=HRD_TAI representation=burden_only learner=xgboost seconds=1.139
+completed endpoint=HRD_TAI representation=standard_sbs96_id83 learner=linear seconds=2.248
+completed endpoint=HRD_TAI representation=standard_sbs96_id83 learner=xgboost seconds=9.111
+completed endpoint=HRD_TAI representation=MAF_stack_only learner=linear seconds=101.527
+completed endpoint=HRD_TAI representation=MAF_stack_only learner=xgboost seconds=77.327
+completed endpoint=HRD_TAI representation=signatures_plus_MAF_stack learner=linear seconds=175.681
+completed endpoint=HRD_TAI representation=signatures_plus_MAF_stack learner=xgboost seconds=162.147
+completed endpoint=HRD_LST representation=burden_only learner=linear seconds=0.428
+completed endpoint=HRD_LST representation=burden_only learner=xgboost seconds=1.369
+completed endpoint=HRD_LST representation=standard_sbs96_id83 learner=linear seconds=2.484
+completed endpoint=HRD_LST representation=standard_sbs96_id83 learner=xgboost seconds=10.338
+completed endpoint=HRD_LST representation=MAF_stack_only learner=linear seconds=108.012
+completed endpoint=HRD_LST representation=MAF_stack_only learner=xgboost seconds=75.455
+completed endpoint=HRD_LST representation=signatures_plus_MAF_stack learner=linear seconds=178.163
+completed endpoint=HRD_LST representation=signatures_plus_MAF_stack learner=xgboost seconds=164.501
+completed endpoint=HRD_LOH representation=burden_only learner=linear seconds=0.425
+completed endpoint=HRD_LOH representation=burden_only learner=xgboost seconds=1.307
+completed endpoint=HRD_LOH representation=standard_sbs96_id83 learner=linear seconds=2.058
+completed endpoint=HRD_LOH representation=standard_sbs96_id83 learner=xgboost seconds=9.246
+completed endpoint=HRD_LOH representation=MAF_stack_only learner=linear seconds=103.827
+completed endpoint=HRD_LOH representation=MAF_stack_only learner=xgboost seconds=78.147
+completed endpoint=HRD_LOH representation=signatures_plus_MAF_stack learner=linear seconds=188.552
+completed endpoint=HRD_LOH representation=signatures_plus_MAF_stack learner=xgboost seconds=152.025
+completed endpoint=PARPi7 representation=burden_only learner=linear seconds=0.418
+completed endpoint=PARPi7 representation=burden_only learner=xgboost seconds=1.027
+completed endpoint=PARPi7 representation=standard_sbs96_id83 learner=linear seconds=1.073
+completed endpoint=PARPi7 representation=standard_sbs96_id83 learner=xgboost seconds=6.57
+completed endpoint=PARPi7 representation=MAF_stack_only learner=linear seconds=101.077
+completed endpoint=PARPi7 representation=MAF_stack_only learner=xgboost seconds=57.508
+completed endpoint=PARPi7 representation=signatures_plus_MAF_stack learner=linear seconds=193.224
+completed endpoint=PARPi7 representation=signatures_plus_MAF_stack learner=xgboost seconds=97.178
+completed endpoint=eCARD representation=burden_only learner=linear seconds=0.425
+completed endpoint=eCARD representation=burden_only learner=xgboost seconds=1.28
+completed endpoint=eCARD representation=standard_sbs96_id83 learner=linear seconds=0.791
+completed endpoint=eCARD representation=standard_sbs96_id83 learner=xgboost seconds=7.483
+completed endpoint=eCARD representation=MAF_stack_only learner=linear seconds=101.098
+completed endpoint=eCARD representation=MAF_stack_only learner=xgboost seconds=51.808
+completed endpoint=eCARD representation=signatures_plus_MAF_stack learner=linear seconds=177.101
+completed endpoint=eCARD representation=signatures_plus_MAF_stack learner=xgboost seconds=116.813
+completed endpoint=hrd_binary_24 representation=burden_only learner=linear seconds=0.956
+completed endpoint=hrd_binary_24 representation=burden_only learner=xgboost seconds=0.986
+completed endpoint=hrd_binary_24 representation=standard_sbs96_id83 learner=linear seconds=9.756
+completed endpoint=hrd_binary_24 representation=standard_sbs96_id83 learner=xgboost seconds=4.523
+completed endpoint=hrd_binary_24 representation=MAF_stack_only learner=linear seconds=27.498
+completed endpoint=hrd_binary_24 representation=MAF_stack_only learner=xgboost seconds=32.75
+completed endpoint=hrd_binary_24 representation=signatures_plus_MAF_stack learner=linear seconds=38.91
+completed endpoint=hrd_binary_24 representation=signatures_plus_MAF_stack learner=xgboost seconds=66.446
+completed endpoint=hrd_binary_33 representation=burden_only learner=linear seconds=1.021
+completed endpoint=hrd_binary_33 representation=burden_only learner=xgboost seconds=1.021
+completed endpoint=hrd_binary_33 representation=standard_sbs96_id83 learner=linear seconds=16.457
+completed endpoint=hrd_binary_33 representation=standard_sbs96_id83 learner=xgboost seconds=5.051
+completed endpoint=hrd_binary_33 representation=MAF_stack_only learner=linear seconds=31.102
+completed endpoint=hrd_binary_33 representation=MAF_stack_only learner=xgboost seconds=39.824
+completed endpoint=hrd_binary_33 representation=signatures_plus_MAF_stack learner=linear seconds=44.414
+completed endpoint=hrd_binary_33 representation=signatures_plus_MAF_stack learner=xgboost seconds=88.855
+completed endpoint=hrd_binary_42 representation=burden_only learner=linear seconds=0.995
+completed endpoint=hrd_binary_42 representation=burden_only learner=xgboost seconds=1.185
+completed endpoint=hrd_binary_42 representation=standard_sbs96_id83 learner=linear seconds=19.675
+completed endpoint=hrd_binary_42 representation=standard_sbs96_id83 learner=xgboost seconds=5.324
+completed endpoint=hrd_binary_42 representation=MAF_stack_only learner=linear seconds=26.72
+completed endpoint=hrd_binary_42 representation=MAF_stack_only learner=xgboost seconds=33.858
+completed endpoint=hrd_binary_42 representation=signatures_plus_MAF_stack learner=linear seconds=45.714
+completed endpoint=hrd_binary_42 representation=signatures_plus_MAF_stack learner=xgboost seconds=76.869
+completed endpoint=cancer_type_top20 representation=burden_only learner=linear seconds=13.339
+completed endpoint=cancer_type_top20 representation=burden_only learner=xgboost seconds=65.263
+completed endpoint=cancer_type_top20 representation=standard_sbs96_id83 learner=linear seconds=2122.713
+completed endpoint=cancer_type_top20 representation=standard_sbs96_id83 learner=xgboost seconds=1214.115
+completed endpoint=cancer_type_top20 representation=MAF_stack_only learner=linear seconds=8403.414
+completed endpoint=cancer_type_top20 representation=MAF_stack_only learner=xgboost seconds=5780.303
+completed endpoint=cancer_type_top20 representation=signatures_plus_MAF_stack learner=linear seconds=13176.322
+main_manuscript_complete_panel started 2026-08-17T17:31:04.823232+00:00
+{
+  "allow_transductive_maf_features": "False",
+  "candidate_memmap_max_nbytes": "10M",
+  "cox_blas_threads": "4",
+  "cox_candidate_n_jobs": "8",
+  "cox_drop_conditioned_low_variance": "True",
+  "cox_final_blas_threads": "32",
+  "cox_high_dim_blas_threads": "1",
+  "cox_high_dim_candidate_n_jobs": "8",
+  "cox_high_dim_feature_threshold": "500",
+  "cox_high_dim_max_candidate_n_jobs": "8",
+  "cox_high_dim_min_alpha": "0.01",
+  "cox_max_candidate_n_jobs": "8",
+  "cox_min_feature_std": "1e-08",
+  "coxnet_max_iter": "100000",
+  "coxnet_min_alpha": "0.01",
+  "coxnet_tol": "1e-07",
+  "d_context": "6",
+  "d_payload": "6",
+  "enabled": "True",
+  "endpoint_registry_minimums": "{'binary_min_per_class': 25, 'multiclass_min_per_class': 50, 'survival_min_samples': 200, 'survival_min_events': 25}",
+  "kucab_endpoints": "['damage_class']",
+  "learners": "['linear', 'xgboost']",
+  "linear_candidate_n_jobs": "32",
+  "linear_high_dim_candidate_n_jobs": "16",
+  "linear_high_dim_classification_solver": "sgd_log_loss",
+  "linear_high_dim_classification_solver_min_features": "500",
+  "linear_multiclass_process_backend": "False",
+  "linear_process_backend_min_features": "500",
+  "linear_sgd_average": "True",
+  "linear_sgd_max_iter": "200",
+  "linear_sgd_n_iter_no_change": "5",
+  "linear_sgd_tol": "0.001",
+  "maf_bio_chunksize": "350000",
+  "maf_bio_v4_include_signatures_only_candidate": "True",
+  "maf_stack_builder": "frozen_biological_v4_nested_fs",
+  "main_mc3_endpoints": "['HRD_Score', 'HRD_TAI', 'HRD_LST', 'HRD_LOH', 'PARPi7', 'eCARD', 'hrd_binary_24', 'hrd_binary_33', 'hrd_binary_42', 'cancer_type_top20']",
+  "random_search_trials": "10",
+  "representations": "['burden_only', 'signatures_only', 'MAF_stack_only', 'signatures_plus_MAF_stack']",
+  "survival_endpoints": "['OS', 'PFI']",
+  "xgb_estimators": "160",
+  "xgb_learning_rate": "0.05",
+  "xgb_max_depth": "2"
+}
+completed endpoint=cancer_type_top20 representation=signatures_plus_MAF_stack learner=xgboost seconds=11829.337
+completed endpoint=OS representation=burden_only learner=cox_ph seconds=4.008
+completed endpoint=OS representation=standard_sbs96_id83 learner=cox_ph seconds=5.48
+completed endpoint=OS representation=MAF_stack_only learner=cox_ph seconds=72.584
+completed endpoint=OS representation=signatures_plus_MAF_stack learner=cox_ph seconds=612.757
+completed endpoint=PFI representation=burden_only learner=cox_ph seconds=4.15
+completed endpoint=PFI representation=standard_sbs96_id83 learner=cox_ph seconds=5.233
+completed endpoint=PFI representation=MAF_stack_only learner=cox_ph seconds=50.906
+main_manuscript_complete_panel started 2026-08-17T21:19:31.133627+00:00
+{
+  "allow_transductive_maf_features": "False",
+  "candidate_memmap_max_nbytes": "10M",
+  "cox_blas_threads": "4",
+  "cox_candidate_n_jobs": "8",
+  "cox_drop_conditioned_low_variance": "True",
+  "cox_final_blas_threads": "32",
+  "cox_high_dim_blas_threads": "1",
+  "cox_high_dim_candidate_n_jobs": "8",
+  "cox_high_dim_feature_threshold": "500",
+  "cox_high_dim_max_candidate_n_jobs": "8",
+  "cox_high_dim_min_alpha": "0.01",
+  "cox_max_candidate_n_jobs": "8",
+  "cox_min_feature_std": "1e-08",
+  "coxnet_max_iter": "100000",
+  "coxnet_min_alpha": "0.01",
+  "coxnet_tol": "1e-07",
+  "d_context": "6",
+  "d_payload": "6",
+  "enabled": "True",
+  "endpoint_registry_minimums": "{'binary_min_per_class': 25, 'multiclass_min_per_class': 50, 'survival_min_samples': 200, 'survival_min_events': 25}",
+  "kucab_endpoints": "['damage_class']",
+  "learners": "['linear', 'xgboost']",
+  "linear_candidate_n_jobs": "32",
+  "linear_high_dim_candidate_n_jobs": "16",
+  "linear_high_dim_classification_solver": "sgd_log_loss",
+  "linear_high_dim_classification_solver_min_features": "500",
+  "linear_multiclass_process_backend": "False",
+  "linear_process_backend_min_features": "500",
+  "linear_sgd_average": "True",
+  "linear_sgd_max_iter": "200",
+  "linear_sgd_n_iter_no_change": "5",
+  "linear_sgd_tol": "0.001",
+  "maf_bio_chunksize": "350000",
+  "maf_bio_v4_include_signatures_only_candidate": "True",
+  "maf_stack_builder": "frozen_biological_v4_nested_fs",
+  "main_mc3_endpoints": "['HRD_Score', 'HRD_TAI', 'HRD_LST', 'HRD_LOH', 'PARPi7', 'eCARD', 'hrd_binary_24', 'hrd_binary_33', 'hrd_binary_42', 'cancer_type_top20']",
+  "random_search_trials": "10",
+  "representations": "['burden_only', 'signatures_only', 'MAF_stack_only', 'signatures_plus_MAF_stack']",
+  "survival_endpoints": "['OS', 'PFI']",
+  "xgb_estimators": "160",
+  "xgb_learning_rate": "0.05",
+  "xgb_max_depth": "2"
+}
+completed endpoint=PFI representation=signatures_plus_MAF_stack learner=cox_ph seconds=61.617
+main_manuscript_complete_panel started 2026-08-17T21:42:19.456637+00:00
+{
+  "allow_transductive_maf_features": "False",
+  "candidate_memmap_max_nbytes": "10M",
+  "cox_blas_threads": "4",
+  "cox_candidate_n_jobs": "8",
+  "cox_drop_conditioned_low_variance": "True",
+  "cox_final_blas_threads": "32",
+  "cox_high_dim_blas_threads": "1",
+  "cox_high_dim_candidate_n_jobs": "8",
+  "cox_high_dim_feature_threshold": "500",
+  "cox_high_dim_max_candidate_n_jobs": "8",
+  "cox_high_dim_min_alpha": "0.01",
+  "cox_max_candidate_n_jobs": "8",
+  "cox_min_feature_std": "1e-08",
+  "coxnet_max_iter": "100000",
+  "coxnet_min_alpha": "0.01",
+  "coxnet_tol": "1e-07",
+  "d_context": "6",
+  "d_payload": "6",
+  "enabled": "True",
+  "endpoint_registry_minimums": "{'binary_min_per_class': 25, 'multiclass_min_per_class': 50, 'survival_min_samples': 200, 'survival_min_events': 25}",
+  "kucab_endpoints": "['damage_class']",
+  "learners": "['linear', 'xgboost']",
+  "linear_candidate_n_jobs": "32",
+  "linear_high_dim_candidate_n_jobs": "16",
+  "linear_high_dim_classification_solver": "sgd_log_loss",
+  "linear_high_dim_classification_solver_min_features": "500",
+  "linear_multiclass_process_backend": "False",
+  "linear_process_backend_min_features": "500",
+  "linear_sgd_average": "True",
+  "linear_sgd_max_iter": "200",
+  "linear_sgd_n_iter_no_change": "5",
+  "linear_sgd_tol": "0.001",
+  "maf_bio_chunksize": "350000",
+  "maf_bio_v4_include_signatures_only_candidate": "True",
+  "maf_stack_builder": "frozen_biological_v4_nested_fs",
+  "main_mc3_endpoints": "['HRD_Score', 'HRD_TAI', 'HRD_LST', 'HRD_LOH', 'PARPi7', 'eCARD', 'hrd_binary_24', 'hrd_binary_33', 'hrd_binary_42', 'cancer_type_top20']",
+  "random_search_trials": "10",
+  "representations": "['burden_only', 'signatures_only', 'MAF_stack_only', 'signatures_plus_MAF_stack']",
+  "survival_endpoints": "['OS', 'PFI']",
+  "xgb_estimators": "160",
+  "xgb_learning_rate": "0.05",
+  "xgb_max_depth": "2"
+}
+main_manuscript_complete_panel started 2026-08-19T21:18:29.017673+00:00
+{
+  "allow_transductive_maf_features": "False",
+  "candidate_memmap_max_nbytes": "10M",
+  "cox_blas_threads": "4",
+  "cox_candidate_n_jobs": "8",
+  "cox_drop_conditioned_low_variance": "True",
+  "cox_final_blas_threads": "32",
+  "cox_high_dim_blas_threads": "1",
+  "cox_high_dim_candidate_n_jobs": "8",
+  "cox_high_dim_feature_threshold": "500",
+  "cox_high_dim_max_candidate_n_jobs": "8",
+  "cox_high_dim_min_alpha": "0.01",
+  "cox_max_candidate_n_jobs": "8",
+  "cox_min_feature_std": "1e-08",
+  "coxnet_max_iter": "100000",
+  "coxnet_min_alpha": "0.01",
+  "coxnet_tol": "1e-07",
+  "d_context": "6",
+  "d_payload": "6",
+  "enabled": "True",
+  "endpoint_registry_minimums": "{'binary_min_per_class': 25, 'multiclass_min_per_class': 50, 'survival_min_samples': 200, 'survival_min_events': 25}",
+  "kucab_endpoints": "['damage_class']",
+  "learners": "['linear', 'xgboost']",
+  "linear_candidate_n_jobs": "32",
+  "linear_high_dim_candidate_n_jobs": "16",
+  "linear_high_dim_classification_solver": "sgd_log_loss",
+  "linear_high_dim_classification_solver_min_features": "500",
+  "linear_multiclass_process_backend": "False",
+  "linear_process_backend_min_features": "500",
+  "linear_sgd_average": "True",
+  "linear_sgd_max_iter": "200",
+  "linear_sgd_n_iter_no_change": "5",
+  "linear_sgd_tol": "0.001",
+  "maf_bio_chunksize": "350000",
+  "maf_bio_v4_include_signatures_only_candidate": "True",
+  "maf_stack_builder": "frozen_biological_v4_nested_fs",
+  "main_mc3_endpoints": "['HRD_Score', 'HRD_TAI', 'HRD_LST', 'HRD_LOH', 'PARPi7', 'eCARD', 'hrd_binary_24', 'hrd_binary_33', 'hrd_binary_42', 'cancer_type_top20']",
+  "random_search_trials": "10",
+  "representations": "['burden_only', 'signatures_only', 'MAF_stack_only', 'signatures_plus_MAF_stack']",
+  "survival_endpoints": "['OS', 'PFI']",
+  "xgb_estimators": "160",
+  "xgb_learning_rate": "0.05",
+  "xgb_max_depth": "2"
+}
+main_manuscript_complete_panel started 2026-08-19T21:35:58.808228+00:00
+{
+  "allow_transductive_maf_features": "False",
+  "candidate_memmap_max_nbytes": "10M",
+  "cox_blas_threads": "4",
+  "cox_candidate_n_jobs": "8",
+  "cox_drop_conditioned_low_variance": "True",
+  "cox_final_blas_threads": "32",
+  "cox_high_dim_blas_threads": "1",
+  "cox_high_dim_candidate_n_jobs": "8",
+  "cox_high_dim_feature_threshold": "500",
+  "cox_high_dim_max_candidate_n_jobs": "8",
+  "cox_high_dim_min_alpha": "0.01",
+  "cox_max_candidate_n_jobs": "8",
+  "cox_min_feature_std": "1e-08",
+  "coxnet_max_iter": "100000",
+  "coxnet_min_alpha": "0.01",
+  "coxnet_tol": "1e-07",
+  "d_context": "6",
+  "d_payload": "6",
+  "enabled": "True",
+  "endpoint_registry_minimums": "{'binary_min_per_class': 25, 'multiclass_min_per_class': 50, 'survival_min_samples': 200, 'survival_min_events': 25}",
+  "kucab_endpoints": "['damage_class']",
+  "learners": "['linear', 'xgboost']",
+  "linear_candidate_n_jobs": "32",
+  "linear_high_dim_candidate_n_jobs": "16",
+  "linear_high_dim_classification_solver": "sgd_log_loss",
+  "linear_high_dim_classification_solver_min_features": "500",
+  "linear_multiclass_process_backend": "False",
+  "linear_process_backend_min_features": "500",
+  "linear_sgd_average": "True",
+  "linear_sgd_max_iter": "200",
+  "linear_sgd_n_iter_no_change": "5",
+  "linear_sgd_tol": "0.001",
+  "maf_bio_chunksize": "350000",
+  "maf_bio_v4_include_signatures_only_candidate": "True",
+  "maf_stack_builder": "frozen_biological_v4_nested_fs",
+  "main_mc3_endpoints": "['HRD_Score', 'HRD_TAI', 'HRD_LST', 'HRD_LOH', 'PARPi7', 'eCARD', 'hrd_binary_24', 'hrd_binary_33', 'hrd_binary_42', 'cancer_type_top20']",
+  "random_search_trials": "10",
+  "representations": "['burden_only', 'signatures_only', 'MAF_stack_only', 'signatures_plus_MAF_stack']",
+  "survival_endpoints": "['OS', 'PFI']",
+  "xgb_estimators": "160",
+  "xgb_learning_rate": "0.05",
+  "xgb_max_depth": "2"
+}
+completed endpoint=damage_class representation=burden_only learner=linear seconds=2.09
+completed endpoint=damage_class representation=burden_only learner=xgboost seconds=1.87
+completed endpoint=damage_class representation=standard_sbs96_dbs78_id83 learner=linear seconds=39.101
+completed endpoint=damage_class representation=standard_sbs96_dbs78_id83 learner=xgboost seconds=16.569
+completed endpoint=damage_class representation=MAF_stack_only learner=linear seconds=28.217
+completed endpoint=damage_class representation=MAF_stack_only learner=xgboost seconds=62.603
+completed endpoint=damage_class representation=signatures_plus_MAF_stack learner=linear seconds=42.07
+completed endpoint=damage_class representation=signatures_plus_MAF_stack learner=xgboost seconds=75.656
+main_manuscript_complete_panel started 2026-08-20T08:33:55.195286+00:00
+{
+  "allow_transductive_maf_features": "False",
+  "candidate_memmap_max_nbytes": "10M",
+  "cox_blas_threads": "4",
+  "cox_candidate_n_jobs": "8",
+  "cox_drop_conditioned_low_variance": "True",
+  "cox_final_blas_threads": "32",
+  "cox_high_dim_blas_threads": "1",
+  "cox_high_dim_candidate_n_jobs": "8",
+  "cox_high_dim_feature_threshold": "500",
+  "cox_high_dim_max_candidate_n_jobs": "8",
+  "cox_high_dim_min_alpha": "0.01",
+  "cox_max_candidate_n_jobs": "8",
+  "cox_min_feature_std": "1e-08",
+  "coxnet_max_iter": "100000",
+  "coxnet_min_alpha": "0.01",
+  "coxnet_tol": "1e-07",
+  "d_context": "6",
+  "d_payload": "6",
+  "enabled": "True",
+  "endpoint_registry_minimums": "{'binary_min_per_class': 25, 'multiclass_min_per_class': 50, 'survival_min_samples': 200, 'survival_min_events': 25}",
+  "kucab_endpoints": "['damage_class']",
+  "learners": "['linear', 'xgboost']",
+  "linear_candidate_n_jobs": "32",
+  "linear_high_dim_candidate_n_jobs": "16",
+  "linear_high_dim_classification_solver": "sgd_log_loss",
+  "linear_high_dim_classification_solver_min_features": "500",
+  "linear_multiclass_process_backend": "False",
+  "linear_process_backend_min_features": "500",
+  "linear_sgd_average": "True",
+  "linear_sgd_max_iter": "200",
+  "linear_sgd_n_iter_no_change": "5",
+  "linear_sgd_tol": "0.001",
+  "maf_bio_chunksize": "350000",
+  "maf_bio_v4_include_signatures_only_candidate": "True",
+  "maf_stack_builder": "frozen_biological_v4_nested_fs",
+  "main_mc3_endpoints": "['HRD_Score', 'HRD_TAI', 'HRD_LST', 'HRD_LOH', 'PARPi7', 'eCARD', 'hrd_binary_24', 'hrd_binary_33', 'hrd_binary_42', 'cancer_type_top20']",
+  "random_search_trials": "10",
+  "representations": "['burden_only', 'signatures_only', 'MAF_stack_only', 'signatures_plus_MAF_stack']",
+  "survival_endpoints": "['OS', 'PFI']",
+  "xgb_estimators": "160",
+  "xgb_learning_rate": "0.05",
+  "xgb_max_depth": "2"
+}
+completed endpoint=damage_class representation=MAF_stack_only learner=linear seconds=35.931
+completed endpoint=damage_class representation=signatures_plus_MAF_stack learner=linear seconds=49.155
+main_manuscript_complete_panel started 2026-08-20T08:46:56.709009+00:00
+{
+  "allow_transductive_maf_features": "False",
+  "candidate_memmap_max_nbytes": "10M",
+  "cox_blas_threads": "4",
+  "cox_candidate_n_jobs": "8",
+  "cox_drop_conditioned_low_variance": "True",
+  "cox_final_blas_threads": "32",
+  "cox_high_dim_blas_threads": "1",
+  "cox_high_dim_candidate_n_jobs": "8",
+  "cox_high_dim_feature_threshold": "500",
+  "cox_high_dim_max_candidate_n_jobs": "8",
+  "cox_high_dim_min_alpha": "0.01",
+  "cox_max_candidate_n_jobs": "8",
+  "cox_min_feature_std": "1e-08",
+  "coxnet_max_iter": "100000",
+  "coxnet_min_alpha": "0.01",
+  "coxnet_tol": "1e-07",
+  "d_context": "6",
+  "d_payload": "6",
+  "enabled": "True",
+  "endpoint_registry_minimums": "{'binary_min_per_class': 25, 'multiclass_min_per_class': 50, 'survival_min_samples': 200, 'survival_min_events': 25}",
+  "kucab_endpoints": "['damage_class']",
+  "learners": "['linear', 'xgboost']",
+  "linear_candidate_n_jobs": "32",
+  "linear_high_dim_candidate_n_jobs": "16",
+  "linear_high_dim_classification_solver": "sgd_log_loss",
+  "linear_high_dim_classification_solver_min_features": "500",
+  "linear_multiclass_process_backend": "False",
+  "linear_process_backend_min_features": "500",
+  "linear_sgd_average": "True",
+  "linear_sgd_max_iter": "200",
+  "linear_sgd_n_iter_no_change": "5",
+  "linear_sgd_tol": "0.001",
+  "maf_bio_chunksize": "350000",
+  "maf_bio_v4_include_signatures_only_candidate": "True",
+  "maf_stack_builder": "frozen_biological_v4_nested_fs",
+  "main_mc3_endpoints": "['HRD_Score', 'HRD_TAI', 'HRD_LST', 'HRD_LOH', 'PARPi7', 'eCARD', 'hrd_binary_24', 'hrd_binary_33', 'hrd_binary_42', 'cancer_type_top20']",
+  "random_search_trials": "10",
+  "representations": "['burden_only', 'signatures_only', 'MAF_stack_only', 'signatures_plus_MAF_stack']",
+  "survival_endpoints": "['OS', 'PFI']",
+  "xgb_estimators": "160",
+  "xgb_learning_rate": "0.05",
+  "xgb_max_depth": "2"
+}
+completed endpoint=damage_class representation=MAF_stack_only learner=linear seconds=35.421
+completed endpoint=damage_class representation=signatures_plus_MAF_stack learner=linear seconds=48.713

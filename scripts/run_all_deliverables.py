@@ -152,7 +152,7 @@ def preflight(stages: list[str]) -> list[str]:
 
 def run_stage(key: str) -> tuple[int, float]:
     stage = STAGES[key]
-    _hr(f"STAGE {key.upper()} — {stage['label']}")
+    _hr(f"STAGE {key.upper()} - {stage['label']}")
     LOG_DIR.mkdir(parents=True, exist_ok=True)
     log_path = LOG_DIR / f"deliverable_{key}.log"
     print(f"log: {log_path}", flush=True)

@@ -1,0 +1,548 @@
+
+==============================================================================
+PREFLIGHT
+==============================================================================
+python        : 3.12.10
+torch         : 2.5.1+cu121
+cuda          : YES  NVIDIA GeForce RTX 3080  (10.0 GB)
+split manifest: ok (40 MB)
+datasets dir  : C:\TensorLabMarylandProject\hf_bundle\github_exports_datasets
+                mc3 maf ok (718 MB), mc3 clinical ok, hrd cohort ok
+stages        : d
+muat cache    : present (C:\TensorLabMarylandProject\uga-maf-representation-paper\results\cache\features\muat_style_tcga_comparator) -- pass --clear-cache if these predate the fixes
+
+all clear.
+
+==============================================================================
+STAGE D — D  + MuAt-faithful tokens
+==============================================================================
+log: C:\TensorLabMarylandProject\uga-maf-representation-paper\results\logs\ablation_d.log
+[env] datasets_root = C:\TensorLabMarylandProject\hf_bundle\github_exports_datasets
+[env] advisory: paths not present (fine unless an enabled endpoint needs them): ['GRCh37', 'raw_data.kucab_raw_dir', 'raw_data.pcawg_dir']
+[muat_style_tcga_comparator] starting
+[muat_compatible] 2 tumour(s) exceeded max_events=5000 and were down-sampled with a seeded per-sample RNG (seed=20260524)
+[muat_style_tcga_comparator] training endpoint=HRD_Score fold=1/5 train=617 test=155 epochs=150
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 architecture_search_candidates=18 search_epochs=3
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.506742
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=3/3 inner_spearman=0.511087
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.566419
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.5103
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.483684
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=3/3 inner_spearman=0.520404
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.436608
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=3/3 inner_spearman=0.488804
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=1/3 inner_spearman=0.542171
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.461439
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.382481
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.477973
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.383039
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=3/3 inner_spearman=0.549457
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.545221
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=3/3 inner_spearman=-0.0314434
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.355657
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=3/3 inner_spearman=0.331278
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.40849
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=3/3 inner_spearman=0.546388
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=1/3 inner_spearman=0.323175
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.523748
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.416205
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.437226
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.24654
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_spearman=-0.42399
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.298737
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.243363
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_spearman=-0.252099
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_spearman=0.447191
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.393919
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_spearman=0.0420501
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_spearman=0.435132
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.488297
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.386788
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.410734
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 final_epoch_selection candidate=4 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 final_epoch_selection embed=128 layers=2 heads=2 selection_epoch=1/150 inner_spearman=0.443778
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 final_epoch_selection embed=128 layers=2 heads=2 selection_epoch=25/150 inner_spearman=0.462584
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 final_epoch_selection selection_early_stop_epoch=29 best_epoch=4 patience=25
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 selected_candidate=4 embed=128 layers=2 heads=2 selected_epoch=4/150 selected_inner_spearman=0.531596
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 epoch=1/4 loss=0.970045
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=1/5 epoch=4/4 loss=0.613491
+[muat_style_tcga_comparator] completed endpoint=HRD_Score fold=1/5 spearman=0.528334
+[muat_style_tcga_comparator] training endpoint=HRD_Score fold=2/5 train=617 test=155 epochs=150
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 architecture_search_candidates=18 search_epochs=3
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.395726
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=3/3 inner_spearman=0.43776
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.462775
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.398249
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.537124
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=3/3 inner_spearman=0.487282
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.450323
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=3/3 inner_spearman=0.505162
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=1/3 inner_spearman=0.401106
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.465374
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.443155
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.443233
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.454222
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=3/3 inner_spearman=0.3731
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.423214
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.401432
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.27155
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=3/3 inner_spearman=0.337293
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.45261
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=3/3 inner_spearman=0.366362
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=1/3 inner_spearman=0.447476
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.456243
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.448549
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.446572
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.32652
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_spearman=0.427406
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.239079
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.104329
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.343314
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_spearman=0.131744
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.237733
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_spearman=0.365799
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_spearman=0.270417
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.467073
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.256837
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.411041
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 final_epoch_selection candidate=4 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 final_epoch_selection embed=128 layers=2 heads=2 selection_epoch=1/150 inner_spearman=0.433227
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 final_epoch_selection embed=128 layers=2 heads=2 selection_epoch=25/150 inner_spearman=0.474942
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 final_epoch_selection selection_early_stop_epoch=42 best_epoch=17 patience=25
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 selected_candidate=4 embed=128 layers=2 heads=2 selected_epoch=17/150 selected_inner_spearman=0.522927
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 epoch=1/17 loss=0.957335
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=2/5 epoch=17/17 loss=0.159824
+[muat_style_tcga_comparator] completed endpoint=HRD_Score fold=2/5 spearman=0.439092
+[muat_style_tcga_comparator] training endpoint=HRD_Score fold=3/5 train=618 test=154 epochs=150
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 architecture_search_candidates=18 search_epochs=3
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.524333
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=3/3 inner_spearman=0.571972
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.484027
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.615923
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.526372
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=3/3 inner_spearman=0.525742
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.489006
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=3/3 inner_spearman=0.569034
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=1/3 inner_spearman=0.54692
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.521098
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.516316
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.561764
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.502372
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=3/3 inner_spearman=0.386011
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.530457
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.559738
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.421049
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=3/3 inner_spearman=0.472137
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.462106
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=3/3 inner_spearman=0.481191
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=1/3 inner_spearman=0.334766
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.348635
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.437823
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.523994
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.289745
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_spearman=0.439861
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.474238
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.330154
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.228623
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_spearman=-0.236316
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.310188
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_spearman=nan
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_spearman=-0.0201177
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.529706
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.14955
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_spearman=-0.343925
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 final_epoch_selection candidate=2 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=1/150 inner_spearman=0.460507
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=25/150 inner_spearman=0.539944
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=50/150 inner_spearman=0.534075
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 final_epoch_selection selection_early_stop_epoch=70 best_epoch=45 patience=25
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 selected_candidate=2 embed=128 layers=1 heads=2 selected_epoch=45/150 selected_inner_spearman=0.562323
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 epoch=1/45 loss=0.964052
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 epoch=25/45 loss=0.0927225
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=3/5 epoch=45/45 loss=0.0422968
+[muat_style_tcga_comparator] completed endpoint=HRD_Score fold=3/5 spearman=0.496268
+[muat_style_tcga_comparator] training endpoint=HRD_Score fold=4/5 train=618 test=154 epochs=150
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 architecture_search_candidates=18 search_epochs=3
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.261944
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=3/3 inner_spearman=0.475278
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.552782
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.52235
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.527876
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=3/3 inner_spearman=0.637769
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.570346
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=3/3 inner_spearman=0.549282
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=1/3 inner_spearman=0.427374
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.571546
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.575047
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.552738
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.427377
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=3/3 inner_spearman=0.391076
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.413105
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.455821
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.440815
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=3/3 inner_spearman=0.57813
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.613679
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=3/3 inner_spearman=0.491173
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=1/3 inner_spearman=-0.496842
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.366733
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.336062
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.440587
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.164063
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_spearman=0.159411
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.0104502
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.213582
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.434724
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_spearman=0.0632201
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.246686
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_spearman=0.452784
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_spearman=0.446286
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.470783
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.523377
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.375243
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 final_epoch_selection candidate=3 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=1/150 inner_spearman=0.555947
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=25/150 inner_spearman=0.566085
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 final_epoch_selection selection_early_stop_epoch=40 best_epoch=15 patience=25
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 selected_candidate=3 embed=128 layers=2 heads=1 selected_epoch=15/150 selected_inner_spearman=0.632194
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 epoch=1/15 loss=0.980672
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=4/5 epoch=15/15 loss=0.21641
+[muat_style_tcga_comparator] completed endpoint=HRD_Score fold=4/5 spearman=0.645758
+[muat_style_tcga_comparator] training endpoint=HRD_Score fold=5/5 train=618 test=154 epochs=150
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 architecture_search_candidates=18 search_epochs=3
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.542345
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=3/3 inner_spearman=0.491941
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.572291
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.609391
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.61313
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=3/3 inner_spearman=0.679691
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.50608
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=3/3 inner_spearman=0.646522
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=1/3 inner_spearman=0.605211
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.570774
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.588486
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.525924
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.447255
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=3/3 inner_spearman=0.37649
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=1/3 inner_spearman=0.575648
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.494686
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.405641
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=3/3 inner_spearman=0.613275
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.436938
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=3/3 inner_spearman=0.47091
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=1/3 inner_spearman=0.485812
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.456737
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.56753
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.550914
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_spearman=0.504999
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_spearman=-0.373702
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_spearman=-0.120995
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_spearman=0.342205
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_spearman=0.00237135
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_spearman=-0.142956
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_spearman=0.38581
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_spearman=-0.0142247
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_spearman=0.219607
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_spearman=0.223794
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_spearman=0.346083
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_spearman=0.514585
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 final_epoch_selection candidate=3 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=1/150 inner_spearman=0.356899
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=25/150 inner_spearman=0.527137
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 final_epoch_selection selection_early_stop_epoch=28 best_epoch=3 patience=25
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 selected_candidate=3 embed=128 layers=2 heads=1 selected_epoch=3/150 selected_inner_spearman=0.584504
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 epoch=1/3 loss=0.945342
+[muat_style_tcga_comparator] endpoint=HRD_Score fold=5/5 epoch=3/3 loss=0.679665
+[muat_style_tcga_comparator] completed endpoint=HRD_Score fold=5/5 spearman=0.599389
+[muat_style_tcga_comparator] training endpoint=hrd_binary_33 fold=1/5 train=617 test=155 epochs=150
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 architecture_search_candidates=18 search_epochs=3
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.665682
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.772853
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.803881
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.799645
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.775217
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.784574
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.740642
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.786348
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.749901
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.763101
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.770587
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.760638
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.757683
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.705575
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.746946
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.726753
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.644799
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.767435
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.780142
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.758668
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.781225
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.820922
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.71513
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.712273
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.649626
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.71119
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.520489
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.715524
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.632585
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.705181
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.669622
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.716312
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.717987
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.706954
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.681245
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.724389
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 final_epoch_selection candidate=11 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 final_epoch_selection embed=256 layers=4 heads=1 selection_epoch=1/150 inner_auroc=0.71119
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 final_epoch_selection embed=256 layers=4 heads=1 selection_epoch=25/150 inner_auroc=0.695626
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 final_epoch_selection selection_early_stop_epoch=32 best_epoch=7 patience=25
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 selected_candidate=11 embed=256 layers=4 heads=1 selected_epoch=7/150 selected_inner_auroc=0.779649
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 epoch=1/7 loss=0.634166
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=1/5 epoch=7/7 loss=0.374251
+[muat_style_tcga_comparator] completed endpoint=hrd_binary_33 fold=1/5 auroc=0.828507
+[muat_style_tcga_comparator] training endpoint=hrd_binary_33 fold=2/5 train=617 test=155 epochs=150
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 architecture_search_candidates=18 search_epochs=3
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.814519
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.837569
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.835205
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.821513
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.792159
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.814125
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.776497
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.794917
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.827817
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.840918
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.815307
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.836978
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.796789
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.783097
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.814125
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.824764
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.780536
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.810284
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.780831
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.838357
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.810678
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.877463
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.799744
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.827029
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.789795
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.741332
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.745961
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.764184
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.791765
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.74606
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.841608
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.839736
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.804374
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.716312
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.76645
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.78753
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 final_epoch_selection candidate=11 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 final_epoch_selection embed=256 layers=4 heads=1 selection_epoch=1/150 inner_auroc=0.816982
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 final_epoch_selection embed=256 layers=4 heads=1 selection_epoch=25/150 inner_auroc=0.81117
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 final_epoch_selection selection_early_stop_epoch=29 best_epoch=4 patience=25
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 selected_candidate=11 embed=256 layers=4 heads=1 selected_epoch=4/150 selected_inner_auroc=0.863771
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 epoch=1/4 loss=0.630123
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=2/5 epoch=4/4 loss=0.459062
+[muat_style_tcga_comparator] completed endpoint=hrd_binary_33 fold=2/5 auroc=0.776891
+[muat_style_tcga_comparator] training endpoint=hrd_binary_33 fold=3/5 train=618 test=154 epochs=150
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 architecture_search_candidates=18 search_epochs=3
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.834121
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.803191
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.832841
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.81314
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.747537
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.76182
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.778172
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.809299
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.783491
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.81314
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.811564
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.797675
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.792652
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.732959
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.804768
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.82762
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.843578
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.797577
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.788613
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.793046
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.766548
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.838652
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.785067
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.763987
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.695232
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.695922
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.791174
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.773148
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.8224
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.76251
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.791667
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.752069
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.783688
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.740544
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.768519
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.841411
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 final_epoch_selection candidate=9 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 final_epoch_selection embed=256 layers=2 heads=1 selection_epoch=1/150 inner_auroc=0.790485
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 final_epoch_selection embed=256 layers=2 heads=1 selection_epoch=25/150 inner_auroc=0.828704
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 final_epoch_selection embed=256 layers=2 heads=1 selection_epoch=50/150 inner_auroc=0.802108
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 final_epoch_selection selection_early_stop_epoch=51 best_epoch=26 patience=25
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 selected_candidate=9 embed=256 layers=2 heads=1 selected_epoch=26/150 selected_inner_auroc=0.836781
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 epoch=1/26 loss=0.630776
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 epoch=25/26 loss=0.11949
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=3/5 epoch=26/26 loss=0.165295
+[muat_style_tcga_comparator] completed endpoint=hrd_binary_33 fold=3/5 auroc=0.80314
+[muat_style_tcga_comparator] training endpoint=hrd_binary_33 fold=4/5 train=618 test=154 epochs=150
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 architecture_search_candidates=18 search_epochs=3
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.798956
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.802797
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.762017
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.790977
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.766942
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.834811
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.798365
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.80723
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.839046
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.849685
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.842987
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.803093
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.827029
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.774527
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.739559
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.800532
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.816194
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.790583
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.754433
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.736407
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.802994
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.800926
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.737293
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.714441
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.716017
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.819543
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.721336
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.781225
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.736111
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.789007
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.73227
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.749409
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.788022
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.767041
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.727935
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.797675
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 final_epoch_selection candidate=5 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=1/150 inner_auroc=0.812943
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=25/150 inner_auroc=0.774724
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 final_epoch_selection selection_early_stop_epoch=26 best_epoch=1 patience=25
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 selected_candidate=5 embed=128 layers=4 heads=1 selected_epoch=1/150 selected_inner_auroc=0.812943
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=4/5 epoch=1/1 loss=0.624629
+[muat_style_tcga_comparator] completed endpoint=hrd_binary_33 fold=4/5 auroc=0.729966
+[muat_style_tcga_comparator] training endpoint=hrd_binary_33 fold=5/5 train=618 test=154 epochs=150
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 architecture_search_candidates=18 search_epochs=3
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.681442
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.730398
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.757782
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.769898
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.711485
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.761426
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.755615
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.787136
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.769602
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.793243
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.684693
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.759949
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.723503
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.713751
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.754925
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.727738
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.764086
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.771474
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.746749
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.775315
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.760047
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.795016
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.743302
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.73227
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_auroc=0.702522
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_auroc=0.672478
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_auroc=0.666962
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_auroc=0.642632
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_auroc=0.669129
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_auroc=0.687845
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_auroc=0.664401
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_auroc=0.714539
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_auroc=0.759949
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_auroc=0.74734
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_auroc=0.705772
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_auroc=0.257388
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 final_epoch_selection candidate=10 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 final_epoch_selection embed=256 layers=2 heads=2 selection_epoch=1/150 inner_auroc=0.744878
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 final_epoch_selection embed=256 layers=2 heads=2 selection_epoch=25/150 inner_auroc=0.744188
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 final_epoch_selection selection_early_stop_epoch=38 best_epoch=13 patience=25
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 selected_candidate=10 embed=256 layers=2 heads=2 selected_epoch=13/150 selected_inner_auroc=0.788613
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 epoch=1/13 loss=0.613547
+[muat_style_tcga_comparator] endpoint=hrd_binary_33 fold=5/5 epoch=13/13 loss=0.144819
+[muat_style_tcga_comparator] completed endpoint=hrd_binary_33 fold=5/5 auroc=0.714754
+[muat_style_tcga_comparator] done
+{
+  "active_runners": [
+    "main_manuscript_complete_panel",
+    "muat_style_tcga_comparator"
+  ],
+  "bundle_root": "${BUNDLE_ROOT}",
+  "completed_utc": "2026-08-17T19:55:55+00:00",
+  "config": "config/experiment_settings.muat_ab_d_faithful.yaml",
+  "dry_run": false,
+  "elapsed_seconds": 8596.994,
+  "experiments": [
+    {
+      "experiment_id": "main_manuscript_complete_panel",
+      "status": "skipped"
+    },
+    {
+      "elapsed_seconds": 8596.978,
+      "experiment_id": "muat_style_tcga_comparator",
+      "status": "completed"
+    }
+  ],
+  "feature_cache_dir": "${BUNDLE_ROOT}/results/cache/features",
+  "paths": "config/paths.yaml",
+  "refresh_cache": false,
+  "repro_root": "${BUNDLE_ROOT}",
+  "run_id": "20260817T173238Z",
+  "runtime_profile": "muat-ab-d-faithful",
+  "tree_method": "hist"
+}
+
+[stage d] exit=0 elapsed=143.3 min
+
+==============================================================================
+SUMMARY
+==============================================================================
+  D      ok                 D  + MuAt-faithful tokens
+
+total runtime: 143.3 min
+
+==============================================================================
+RESULTS
+==============================================================================
+
+HRD_Score  (spearman)
+------------------------------------------------------------------
+  A  (no result)          A  before (bug + hashed dicts)
+  B  (no result)          B  epoch fix only
+  C  (no result)          C  epoch fix + exact dicts
+  D  0.4815   D  + MuAt-faithful tokens
+  (arm A produced no result, so no deltas are shown)
+
+hrd_binary_33  (auroc)
+------------------------------------------------------------------
+  A  (no result)          A  before (bug + hashed dicts)
+  B  (no result)          B  epoch fix only
+  C  (no result)          C  epoch fix + exact dicts
+  D  0.7335   D  + MuAt-faithful tokens
+  (arm A produced no result, so no deltas are shown)
+
+[report] written -> results\tables\muat_ablation_summary.csv
+[report] tabular baselines for HRD: HRD_Score 0.781 (Spearman), hrd_binary_33 0.867 (AUROC)

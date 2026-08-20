@@ -99,6 +99,10 @@ def _require_hub():
 MINIMAL_PATTERNS = [
     f"{BUNDLE_PREFIX}/datasets/tcga_mc3/**",
     f"{BUNDLE_PREFIX}/datasets/tcga_brca_hrd/**",
+    # Kucab damage_class is one of the five main-panel endpoints, and its event features are
+    # built against the GRCh37 reference. Omitting it made the main panel fail at the last
+    # endpoint, after every MC3 endpoint had already completed.
+    f"{BUNDLE_PREFIX}/datasets/kucab_mendeley/**",
     f"{BUNDLE_PREFIX}/references/grch37/**",
     f"{BUNDLE_PREFIX}/results/large_tables/main_manuscript_complete_panel_oof_predictions.csv",
     f"{BUNDLE_PREFIX}/*.csv",

@@ -1,0 +1,33 @@
+
+=== OS ===
+  cohort after intersection: n=9986 (survival AND cancer type AND Bio MAF v4)
+  cancer types present: 33
+  [cancer_type] n=9986 features=33 events=3061
+  [cancer_type] C-index = 0.7416
+  [bio_maf] n=9986 features=948 events=3061
+C:\TensorLabMarylandProject\uga-maf-representation-paper\src\utils\nested_oof.py:608: UserWarning: all coefficients are zero, consider decreasing alpha.
+  model.fit(x_train, y_structured)
+  [bio_maf] C-index = 0.6377
+  [cancer_type_plus_bio_maf] n=9986 features=981 events=3061
+  [cancer_type_plus_bio_maf] C-index = 0.7429
+
+==========================================================================
+RESULT
+==========================================================================
+
+OS  (Harrell C-index, pooled out-of-fold, identical folds across arms)
+--------------------------------------------------------------------------
+  cancer_type                0.7416   (33 features)
+  bio_maf                    0.6377   (948 features)
+  cancer_type_plus_bio_maf   0.7429   (981 features)
+
+  bio_maf vs cancer_type: delta = -0.1039  95% CI [-0.1153, -0.0923]  p = 0.000  *
+  cancer_type_plus_bio_maf vs cancer_type: delta = +0.0013  95% CI [-0.0028, +0.0054]  p = 0.512
+  cancer_type_plus_bio_maf vs bio_maf: delta = +0.1052  95% CI [+0.0952, +0.1150]  p = 0.000  *
+
+Reading the result:
+  cancer_type_plus_bio_maf vs cancer_type is the answer to Jeya's question.
+  If that delta is not clearly positive, Bio MAF v4 adds nothing to survival
+  prediction once cancer type is known, and the survival claim needs rewording.
+
+written -> results/tables/survival_cancer_type_baseline_summary.csv

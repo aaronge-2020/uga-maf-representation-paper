@@ -214,7 +214,7 @@ def main() -> int:
         grid_rows.append(row)
         print(
             f"  setting {i}: alpha={params['reg_alpha']:<5g} colsample={params['colsample_bytree']} "
-            f"score={row['inner_score_mean']:.4f}±{row['inner_score_sd']:.4f} features={row['n_features_mean']:.0f}",
+            f"score={row['inner_score_mean']:.4f} +/- {row['inner_score_sd']:.4f} features={row['n_features_mean']:.0f}",
             flush=True,
         )
 

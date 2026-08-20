@@ -1,4 +1,4 @@
 modality,n_tokens,pad_index,unk_index,example_tokens,benchmark
-motif,1026,0,1,<PAD>;<UNK>;motif_hash_0000;motif_hash_0001;motif_hash_0002;motif_hash_0003;motif_hash_0004;motif_hash_0005,tcga_mc3_wes
-position,2050,0,1,<PAD>;<UNK>;position_hash_0000;position_hash_0001;position_hash_0002;position_hash_0003;position_hash_0004;position_hash_0005,tcga_mc3_wes
-annotation,258,0,1,<PAD>;<UNK>;annotation_hash_0000;annotation_hash_0001;annotation_hash_0002;annotation_hash_0003;annotation_hash_0004;annotation_hash_0005,tcga_mc3_wes
+motif,1464,0,1,<PAD>;<UNK>;A[AGGGAGTTAATG>GGGAGTTAATGC]G;A[C>A]A;A[C>A]C;A[C>A]G;A[C>A]T;A[C>G]A,tcga_mc3_wes
+position,3116,0,1,<PAD>;<UNK>;chr10_0;chr10_1;chr10_10;chr10_100;chr10_101;chr10_102,tcga_mc3_wes
+annotation,18,0,1,<PAD>;<UNK>;no_no_+;no_no_-;no_no_0;no_no_na;no_yes_+;no_yes_-,tcga_mc3_wes

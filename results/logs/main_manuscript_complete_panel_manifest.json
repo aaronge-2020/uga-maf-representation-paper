@@ -1,6 +1,6 @@
 {
-  "completed_utc": "2026-06-12T20:21:13+00:00",
-  "elapsed_seconds": 22315.523,
+  "completed_utc": "2026-08-20T08:49:44+00:00",
+  "elapsed_seconds": 168.066,
   "endpoint_audit": "main_manuscript_complete_panel_endpoint_audit.csv",
   "endpoint_results": "main_manuscript_complete_panel_endpoint_results.csv",
   "feature_manifest": "main_manuscript_complete_panel_feature_manifest.csv",
