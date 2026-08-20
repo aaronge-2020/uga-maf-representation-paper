@@ -1,0 +1,44 @@
+label_domain,machine_name,display_name,long_description,used_in_figures,used_in_tables
+atlas_status,no UGA atlas,No UGA atlas,Representation does not use the UGA channel atlas.,True,True
+calibration_mode,multiclass_confidence_accuracy,Confidence versus correctness,Multiclass reliability plot using maximum predicted confidence versus correctness.,True,False
+calibration_mode,binary_positive_probability,Positive-class probability,Binary reliability plot using the predicted probability of the positive class.,True,False
+comparison_name,maf_stack_vs_signatures,MAF stack vs signatures,Event-level MAF stack compared with mutational signatures.,False,True
+comparison_name,sig_maf_vs_maf_stack,Signatures + MAF vs MAF stack,Signatures plus MAF stack compared with MAF stack alone.,False,True
+comparison_name,sig_maf_vs_signatures,Signatures + MAF vs signatures,Signatures plus MAF stack compared with mutational signatures alone.,False,True
+comparison_name,signatures_vs_burden,Signatures vs burden,Mutational signatures compared with mutational burden.,False,True
+endpoint,cancer_type_top20,Cancer type (top 20),Classification among twenty fixed TCGA cancer types with at least 184 matched MC3-feature patients.,True,True
+endpoint,HRD_Score,HRD score,Continuous homologous recombination deficiency score.,True,True
+endpoint,hrd_binary_24,HRD24 high/low,HRD-high versus HRD-low using threshold 24.,True,True
+endpoint,hrd_binary_33,HRD33 high/low,HRD-high versus HRD-low using threshold 33.,True,True
+endpoint,hrd_binary_42,HRD42 high/low,HRD-high versus HRD-low using threshold 42.,True,True
+endpoint,damage_class,Kucab damage class,Kucab DNA damage class from mutagen-treated clone catalogues.,True,True
+endpoint,OS,Overall survival,Overall survival time-to-event endpoint.,True,True
+endpoint_tier,main,Main,Endpoint belongs to the main manuscript panel.,True,True
+metric,auroc,AUROC,Area under the receiver operating characteristic curve.,True,True
+metric,balanced_accuracy,Balanced accuracy,Balanced classification accuracy.,True,True
+metric,c_index,Harrell C-index,Harrell concordance index for survival risk scores.,True,True
+metric,spearman,Spearman r,Spearman rank correlation.,True,True
+model_family,cox_ph,CoxNet,scikit-survival CoxNet proportional-hazards model.,True,True
+model_family,elastic_net,Elastic net,Elastic-net regularized linear or generalized linear model.,True,True
+model_family,MuAt-compatible reimplementation,MuAt-compatible,Local MuAt-compatible Q/K/V attention model trained on MC3 mutation bags without official checkpoints.,True,True
+model_family,XGBoost,XGBoost,Gradient-boosted tree model implemented with XGBoost.,True,True
+model_label,cox_ph,CoxNet,scikit-survival CoxNet proportional-hazards model.,True,True
+model_label,linear,Linear,Linear,True,True
+model_label,muat_compatible_qkv_attention,Muat Compatible Qkv Attention,Muat Compatible Qkv Attention,True,True
+model_label,xgboost,XGBoost,XGBoost,True,True
+representation,MAF_stack_only,Bio MAF v4,Bio MAF v4 event-level feature blocks selected inside nested cross-validation.,True,True
+representation,MuAt-compatible reimplementation,Muat Compatible Reimplementation,Muat Compatible Reimplementation,True,True
+representation,burden_only,Mutational burden,Mutation burden summary features.,True,True
+representation,standard_sbs96_dbs78_id83,SBS96 + DBS78 + ID83 spectra,"Standard SBS96, DBS78, and ID83 mutation spectra.",True,True
+representation,standard_sbs96_id83,SBS96 + ID83 spectra,Standard SBS96 and ID83 mutation spectra.,True,True
+representation,signatures_plus_MAF_stack,Signatures + Bio MAF v4,Mutational signature features plus Bio MAF v4 feature blocks selected inside nested cross-validation.,True,True
+representation_family,MAF_stack_only,Bio MAF v4,"Bio MAF v4 event-level feature blocks selected inside nested cross-validation, without mutational signature features.",True,True
+representation_family,MuAt_style_attention_MIL,MuAt-compatible,"TCGA-WES MuAt-compatible event-bag comparator over mutation motif, position, and annotation tokens.",True,True
+representation_family,burden_only,Mutational burden,Minimal mutational burden summaries.,True,True
+representation_family,signatures_only,Mutational signatures,"Canonical mutational spectra such as SBS96, DBS78, and ID83.",True,True
+representation_family,signatures_plus_MAF_stack,Signatures + Bio MAF v4,Mutational signature features plus Bio MAF v4 feature blocks selected inside nested cross-validation.,True,True
+task,binary,Binary classification,Binary classification task.,True,True
+task,multiclass_grouped,Grouped multiclass,Grouped multiclass classification task.,True,True
+task,multiclass,Multiclass classification,Multiclass classification task.,True,True
+task,regression,Regression,Continuous regression task.,True,True
+task,survival,Survival,Survival,True,True

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Supplementary Figure S4B technical feature-distribution summary</title>
+<style>
+body {
+  background: #ffffff;
+  color: #111111;
+  font-family: "Times New Roman", Times, serif;
+  margin: 28px auto;
+  max-width: 940px;
+  padding: 0 18px;
+}
+.manuscript-table-block {
+  margin: 0 auto;
+}
+.table-number {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 22px;
+  text-align: center;
+}
+.table-title {
+  font-size: 15px;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  margin: 0 0 24px;
+  text-align: center;
+}
+.table-wrap {
+  overflow-x: auto;
+}
+table.manuscript-table {
+  border-top: 1.5px solid #111111;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 14px;
+  line-height: 1.12;
+  width: 100%;
+}
+table.manuscript-table thead {
+  border-bottom: 1.5px solid #111111;
+}
+table.manuscript-table th {
+  font-weight: 400;
+  padding: 8px 10px 10px;
+  text-align: center;
+  vertical-align: bottom;
+}
+table.manuscript-table td {
+  border: 0;
+  padding: 2px 10px;
+  vertical-align: top;
+}
+table.manuscript-table tbody tr:last-child td {
+  border-bottom: 1.5px solid #111111;
+  padding-bottom: 7px;
+}
+table.manuscript-table td:first-child {
+  padding-left: 0;
+  text-align: left;
+}
+table.manuscript-table td.numeric {
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  white-space: nowrap;
+}
+table.manuscript-table td.long-text {
+  min-width: 12rem;
+}
+.table-notes {
+  font-size: 13px;
+  line-height: 1.18;
+  margin-top: 14px;
+  text-align: left;
+}
+.table-notes p {
+  margin: 0 0 5px;
+}
+.note-label {
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+}
+</style>
+</head>
+<body>
+<div class="manuscript-table-block">
+<div class="table-title">Supplementary Figure S4B technical feature-distribution summary</div>
+<div class="table-wrap">
+<table class="manuscript-table">
+<thead><tr><th>Feature</th><th>Display name</th><th>Feature family</th><th>Plain-English meaning</th><th>N top-20 samples</th><th>Nonzero samples</th><th>Nonzero percent</th><th>Mean</th><th>Median</th><th>P25</th><th>P75</th><th>P95</th><th>Max</th><th>Source feature matrix</th></tr></thead>
+<tbody>
+<tr><td>vep_consequence_count__missense_variant</td><td>Missense mutation count</td><td>Compact VEP annotation</td><td class="long-text">log1p count of mutations where VEP says one amino acid changed.</td><td class="numeric">8800</td><td class="numeric">8790</td><td class="numeric">99.89</td><td class="numeric">4.241471523613637</td><td class="numeric">4.0943446</td><td class="numeric">3.4011974</td><td class="numeric">4.955827</td><td class="numeric">6.565265</td><td class="numeric">10.279421</td><td class="long-text">results\cache\features\main_complete_panel_mc3_maf_stack_bio_v4_nested_fs_15d698606a129584e3f82812\features.csv.gz</td></tr>
+<tr><td>vep_impact_fraction__high</td><td>High-impact fraction</td><td>Compact VEP annotation</td><td>fraction of annotated mutations with VEP HIGH impact.</td><td class="numeric">8800</td><td class="numeric">8501</td><td class="numeric">96.6</td><td class="numeric">0.09097409282507954</td><td class="numeric">0.085807845</td><td class="numeric">0.0625</td><td class="numeric">0.11111111</td><td class="numeric">0.17283951</td><td class="numeric">0.9647378</td><td class="long-text">results\cache\features\main_complete_panel_mc3_maf_stack_bio_v4_nested_fs_15d698606a129584e3f82812\features.csv.gz</td></tr>
+<tr><td>vaf_max</td><td>Maximum allele fraction</td><td>Allele-fraction summary</td><td class="long-text">largest share of tumor DNA reads carrying any mutation in the sample.</td><td class="numeric">8800</td><td class="numeric">8800</td><td class="numeric">100.0</td><td class="numeric">0.6810220600029545</td><td class="numeric">0.704375175</td><td class="numeric">0.5309461225</td><td class="numeric">0.8548387</td><td class="numeric">0.988426768</td><td class="numeric">1.0</td><td class="long-text">results\cache\features\main_complete_panel_mc3_maf_stack_bio_v4_nested_fs_15d698606a129584e3f82812\features.csv.gz</td></tr>
+<tr><td class="long-text">driver_evidence_high_or_moderate_impact_log_count__source_count_4</td><td>4-source cancer-gene hits</td><td>Evidence-confidence control</td><td class="long-text">log1p count of high/moderate-impact mutations in genes named by 4+ external cancer resources.</td><td class="numeric">8800</td><td class="numeric">7827</td><td class="numeric">88.94</td><td class="numeric">1.3251297056931817</td><td class="numeric">1.3862944</td><td class="numeric">0.6931472</td><td class="numeric">1.7917595</td><td class="numeric">2.7080503</td><td class="numeric">5.587249</td><td class="long-text">results\cache\features\main_complete_panel_mc3_maf_stack_bio_v4_nested_fs_15d698606a129584e3f82812\features.csv.gz</td></tr>
+<tr><td>driver_gene_functional_event_log_count__TP53</td><td>TP53 protein-affecting count</td><td>Exact cancer-gene identity</td><td class="long-text">log1p count of TP53 mutations predicted to change or disrupt TP53 protein.</td><td class="numeric">8800</td><td class="numeric">3478</td><td class="numeric">39.52</td><td class="numeric">0.29983441154545454</td><td class="numeric">0.0</td><td class="numeric">0.0</td><td class="numeric">0.6931472</td><td class="numeric">1.0986123</td><td class="numeric">1.609438</td><td class="long-text">results\cache\features\main_complete_panel_mc3_maf_stack_bio_v4_nested_fs_15d698606a129584e3f82812\features.csv.gz</td></tr>
+<tr><td>driver_gene_role_matched_event_log_count__TP53</td><td>TP53 cancer-role-fit count</td><td>Exact cancer-gene identity</td><td class="long-text">log1p count of TP53 mutations fitting TP53&#x27;s tumor-suppressor role.</td><td class="numeric">8800</td><td class="numeric">1205</td><td class="numeric">13.69</td><td class="numeric">0.09976381501136362</td><td class="numeric">0.0</td><td class="numeric">0.0</td><td class="numeric">0.0</td><td class="numeric">0.6931472</td><td class="numeric">1.609438</td><td class="long-text">results\cache\features\main_complete_panel_mc3_maf_stack_bio_v4_nested_fs_15d698606a129584e3f82812\features.csv.gz</td></tr>
+<tr><td>cancer_hotspot_residue_log_count</td><td>Hotspot residue count</td><td>Cancer hotspot summary</td><td class="long-text">log1p count of mutations hitting recurrent Cancer Hotspots protein residues.</td><td class="numeric">8800</td><td class="numeric">6139</td><td class="numeric">69.76</td><td class="numeric">0.6912441209090908</td><td class="numeric">0.6931472</td><td class="numeric">0.0</td><td class="numeric">1.0986123</td><td class="numeric">1.609438</td><td class="numeric">3.295837</td><td class="long-text">results\cache\features\main_complete_panel_mc3_maf_stack_bio_v4_nested_fs_15d698606a129584e3f82812\features.csv.gz</td></tr>
+<tr><td>cancer_hotspot_max_vaf</td><td>Maximum hotspot allele fraction</td><td>Cancer hotspot summary</td><td>largest allele fraction among hotspot-matched mutations.</td><td class="numeric">8800</td><td class="numeric">6139</td><td class="numeric">69.76</td><td class="numeric">0.32933433002</td><td class="numeric">0.32678531</td><td class="numeric">0.0</td><td class="numeric">0.5294118</td><td class="numeric">0.8485606549999989</td><td class="numeric">1.0</td><td class="long-text">results\cache\features\main_complete_panel_mc3_maf_stack_bio_v4_nested_fs_15d698606a129584e3f82812\features.csv.gz</td></tr>
+<tr><td>log10_id_burden</td><td>Insertion/deletion burden</td><td>Optional burden control</td><td>log10(1 + insertion/deletion event count).</td><td class="numeric">8800</td><td class="numeric">8013</td><td class="numeric">91.06</td><td class="numeric">0.76501293605</td><td class="numeric">0.69897</td><td class="numeric">0.47712126</td><td class="numeric">1.0</td><td class="numeric">1.5563025</td><td class="numeric">3.6232493</td><td class="long-text">results\cache\features\main_complete_panel_mc3_maf_stack_bio_v4_nested_fs_15d698606a129584e3f82812\features.csv.gz</td></tr>
+<tr><td>id_fraction</td><td>Insertion/deletion fraction</td><td>Optional burden control</td><td>insertion/deletion events divided by SBS + DBS + ID events.</td><td class="numeric">8800</td><td class="numeric">8013</td><td class="numeric">91.06</td><td class="numeric">0.050664610778798864</td><td class="numeric">0.037037037</td><td class="numeric">0.017983591</td><td class="numeric">0.066176474</td><td class="numeric">0.151188766</td><td class="numeric">0.994575</td><td class="long-text">results\cache\features\main_complete_panel_mc3_maf_stack_bio_v4_nested_fs_15d698606a129584e3f82812\features.csv.gz</td></tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</body>
+</html>

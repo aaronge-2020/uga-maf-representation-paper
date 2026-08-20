@@ -1,0 +1,49 @@
+<!doctype html><html><head><meta charset="utf-8"><title>figure_5_overall_survival_cox</title><script></script><style>body{margin:0;background:white}.wrap{padding:24px}</style></head><body><div class="wrap"><svg xmlns="http://www.w3.org/2000/svg" width="1320" height="560" viewBox="0 0 1320 560">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <linearGradient id="heat" x1="0" x2="1"><stop offset="0%" stop-color="#EFF6FF"/><stop offset="100%" stop-color="#1D4ED8"/></linearGradient>
+  </defs>
+  <style>
+  text{font-family:Inter,Arial,sans-serif;letter-spacing:0}.title{font-size:30px;font-weight:760;fill:#111827}.subtitle{font-size:15px;fill:#475569}.panel-title{font-size:17px;font-weight:760;fill:#111827}.label{font-size:14px;fill:#111827}.small{font-size:12px;fill:#475569}.tiny{font-size:10px;fill:#64748B}.value{font-size:14px;font-weight:740;fill:#111827}.cell-value{font-size:16px;font-weight:780;fill:#111827}.cell-value-light{font-size:16px;font-weight:780;fill:#FFFFFF}.sig{font-size:13px;font-weight:800;fill:#111827}.badge-text{font-size:10px;font-weight:760;fill:#334155}.axis{stroke:#CBD5E1;stroke-width:1}.grid{stroke:#E2E8F0;stroke-width:1}.rule{stroke:#334155;stroke-width:1.8}.card{fill:#FFFFFF;stroke:#CBD5E1;stroke-width:1.2}.soft{fill:#F8FAFC}.row-band{fill:#F8FAFC}.chip{fill:#F1F5F9;stroke:#CBD5E1}.shadow{filter:drop-shadow(0 2px 3px rgba(15,23,42,.10))}
+  </style><rect width="1320" height="560" fill="#FFFFFF"/>
+<text x="44" y="52" class="title">Figure 5. Overall survival CoxNet benchmark</text>
+<text x="44" y="82" class="subtitle">Five-fold out-of-fold Harrell C-index for the overall-survival CoxNet benchmark. Higher values indicate better risk ranking.</text>
+<text x="44" y="108" class="tiny">Cox estimators use the scikit-survival CoxNet workflow; survival rows are intentionally separated from non-survival model-comparison figures.</text>
+<line x1="340" y1="130" x2="340" y2="448" class="grid"/>
+<text x="340" y="476" text-anchor="middle" class="tiny">0.45</text>
+<line x1="512" y1="130" x2="512" y2="448" class="grid"/>
+<text x="512" y="476" text-anchor="middle" class="tiny">0.50</text>
+<line x1="684.0000000000002" y1="130" x2="684.0000000000002" y2="448" class="grid"/>
+<text x="684.0000000000002" y="476" text-anchor="middle" class="tiny">0.55</text>
+<line x1="856.0000000000003" y1="130" x2="856.0000000000003" y2="448" class="grid"/>
+<text x="856.0000000000003" y="476" text-anchor="middle" class="tiny">0.60</text>
+<line x1="1028.0000000000005" y1="130" x2="1028.0000000000005" y2="448" class="grid"/>
+<text x="1028.0000000000005" y="476" text-anchor="middle" class="tiny">0.65</text>
+<line x1="1200.000000000001" y1="130" x2="1200.000000000001" y2="448" class="grid"/>
+<text x="1200.000000000001" y="476" text-anchor="middle" class="tiny">0.70</text>
+<line x1="512" y1="120" x2="512" y2="452" stroke="#64748B" stroke-width="1.4" stroke-dasharray="6,5"/>
+<text x="520" y="136" class="tiny">0.50 reference</text>
+<line x1="340" y1="448" x2="1200" y2="448" class="axis"/>
+<rect x="36" y="134" width="1248" height="64" class="row-band"/>
+<text x="52" y="165" class="label">Mutational burden</text>
+<text x="52" y="192" class="tiny">n=9,986 | 3 features</text>
+<rect x="512" y="148" width="288.25124275134203" height="34" rx="5" fill="#4B5563" fill-opacity="0.88"><title>Mutational burden: C-index 0.584</title></rect>
+<circle cx="800.251242751342" cy="165" r="5.2" fill="#111827"/>
+<text x="814.251242751342" y="170" class="value">0.584</text>
+<text x="52" y="237" class="label">Mutational signatures</text>
+<text x="52" y="264" class="tiny">n=9,986 | 182 features</text>
+<rect x="512" y="220" width="367.74677771994595" height="34" rx="5" fill="#2563EB" fill-opacity="0.88"><title>Mutational signatures: C-index 0.607</title></rect>
+<circle cx="879.746777719946" cy="237" r="5.2" fill="#111827"/>
+<text x="893.746777719946" y="242" class="value">0.607</text>
+<rect x="36" y="278" width="1248" height="64" class="row-band"/>
+<text x="52" y="309" class="label">Bio MAF v4</text>
+<text x="52" y="336" class="tiny">n=9,986 | 948 features</text>
+<rect x="512" y="292" width="459.3078732287278" height="34" rx="5" fill="#059669" fill-opacity="0.88"><title>Bio MAF v4: C-index 0.634</title></rect>
+<circle cx="971.3078732287278" cy="309" r="5.2" fill="#111827"/>
+<text x="985.3078732287278" y="314" class="value">0.634</text>
+<text x="52" y="381" class="label">Signatures + Bio MAF v4</text>
+<text x="52" y="408" class="tiny">n=9,986 | 1,130 features</text>
+<rect x="512" y="364" width="517.7179806868212" height="34" rx="5" fill="#D97706" fill-opacity="0.88"><title>Signatures + Bio MAF v4: C-index 0.650</title></rect>
+<circle cx="1029.7179806868212" cy="381" r="5.2" fill="#111827"/>
+<text x="1043.7179806868212" y="386" class="value">0.650</text>
+<text x="770" y="522" text-anchor="middle" class="small">Harrell C-index</text></svg></div></body></html>

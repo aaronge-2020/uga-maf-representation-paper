@@ -1,4 +1,12 @@
-# Generated manuscript outputs are local/regenerated and are not committed.
-*
-!.gitignore
-!.gitkeep
+# Generated manuscript outputs ARE tracked, so collaborators get the figures and tables without
+# having to rerun the whole pipeline (they were previously excluded, which meant the figures could
+# only be shared out of band).
+#
+# One exception: canonical/ is ~69 MB and holds a duplicate of
+# results/tables/main_manuscript_complete_panel_oof_predictions.csv, which is itself ignored for
+# size. Tracking it would add ~69 MB of undeltifiable data to git history on every regeneration.
+canonical/
+
+# Scratch and lock files from atomic writes.
+*.tmp
+*.tmp.*

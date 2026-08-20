@@ -227,9 +227,79 @@ def figure_shap_blocks(plt, endpoints: list[str]) -> Path | None:
     return out
 
 
+ABLATION_LABELS = {
+    "full": "Full model",
+    "no_hrd_genes": "minus HRD/HRR gene features",
+    "no_vaf": "minus VAF features",
+}
+
+
+def figure_hrd_ablation(plt) -> Path | None:
+    """Paired deltas from removing each candidate shortcut, per HRD endpoint."""
+    comp_path = TABLES / "hrd_shortcut_ablation_comparisons.csv"
+    summary_path = TABLES / "hrd_shortcut_ablation_summary.csv"
+    if not comp_path.exists() or not summary_path.exists():
+        print("[hrd-ablation] no ablation tables; skipping")
+        return None
+    comparisons = pd.read_csv(comp_path)
+    summary = pd.read_csv(summary_path)
+
+    endpoints = list(dict.fromkeys(summary["endpoint"].astype(str)))
+    fig, axes = plt.subplots(1, 2, figsize=(13.5, 4.6), gridspec_kw={"width_ratios": [1.15, 1]})
+
+    # Left: absolute score per arm, grouped by endpoint.
+    ax = axes[0]
+    arms = [a for a in ABLATION_LABELS if a in set(summary["arm"].astype(str))]
+    width = 0.8 / max(1, len(arms))
+    palette = {"full": NAVY, "no_hrd_genes": BLUE, "no_vaf": "#7FA3D1"}
+    for j, arm in enumerate(arms):
+        vals, xs = [], []
+        for i, endpoint in enumerate(endpoints):
+            row = summary[(summary["endpoint"] == endpoint) & (summary["arm"] == arm)]
+            if row.empty:
+                continue
+            vals.append(float(row["score"].iloc[0]))
+            xs.append(i + j * width - 0.4 + width / 2)
+        ax.bar(xs, vals, width=width * 0.92, label=ABLATION_LABELS[arm], color=palette.get(arm, BLUE))
+    ax.set_xticks(range(len(endpoints)))
+    ax.set_xticklabels(endpoints, fontsize=9)
+    ax.set_ylabel("Score (Spearman r / AUROC)", fontsize=10)
+    ax.set_ylim(0.6, 1.0)
+    ax.set_title("HRD performance with shortcuts removed", fontsize=11, loc="left")
+    ax.legend(frameon=False, fontsize=9, loc="lower right")
+    _style(ax)
+    ax.grid(axis="y", color="#E5E7EB", linewidth=0.8)
+
+    # Right: paired deltas with bootstrap CIs. A CI crossing zero means the shortcut is not
+    # carrying the result, which is the defensible outcome.
+    ax2 = axes[1]
+    rows = comparisons.sort_values(["candidate", "endpoint"]).reset_index(drop=True)
+    ypos = np.arange(len(rows))
+    deltas = rows["delta"].to_numpy(dtype=float)
+    lows = deltas - rows["ci_low"].to_numpy(dtype=float)
+    highs = rows["ci_high"].to_numpy(dtype=float) - deltas
+    colors = [RED if row["ci_high"] < 0 else (GREEN if row["ci_low"] > 0 else GREY) for _, row in rows.iterrows()]
+    ax2.errorbar(deltas, ypos, xerr=[lows, highs], fmt="none", ecolor=GREY, capsize=4, linewidth=1.4)
+    ax2.scatter(deltas, ypos, s=70, c=colors, zorder=3)
+    ax2.axvline(0.0, color=NAVY, linestyle="--", linewidth=1.2)
+    ax2.set_yticks(ypos)
+    ax2.set_yticklabels([f"{r['endpoint']}\n{ABLATION_LABELS.get(r['candidate'], r['candidate'])}" for _, r in rows.iterrows()], fontsize=8)
+    ax2.invert_yaxis()
+    ax2.set_xlabel("Change vs full model (95% paired bootstrap CI)", fontsize=10)
+    ax2.set_title("Cost of removing each shortcut", fontsize=11, loc="left")
+    _style(ax2)
+
+    fig.tight_layout()
+    out = FIGURES / "figure_S_hrd_shortcut_ablation.png"
+    fig.savefig(out, dpi=250, bbox_inches="tight")
+    plt.close(fig)
+    print(f"[hrd-ablation] -> {out.relative_to(REPO_ROOT)}")
+    return out
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--only", nargs="+", choices=["survival", "sparsity", "shap"], default=None)
+    parser.add_argument("--only", nargs="+", choices=["survival", "sparsity", "shap", "hrd_ablation"], default=None)
     parser.add_argument("--endpoints", nargs="+", default=["cancer_type_top20", "OS"])
     args = parser.parse_args()
 
@@ -241,7 +311,7 @@ def main() -> int:
         raise SystemExit("matplotlib is required: pip install matplotlib")
 
     FIGURES.mkdir(parents=True, exist_ok=True)
-    wanted = set(args.only or ["survival", "sparsity", "shap"])
+    wanted = set(args.only or ["survival", "sparsity", "shap", "hrd_ablation"])
     made = []
     if "survival" in wanted:
         made.append(figure_survival(plt))
@@ -249,6 +319,8 @@ def main() -> int:
         made.append(figure_sparsity(plt, args.endpoints))
     if "shap" in wanted:
         made.append(figure_shap_blocks(plt, args.endpoints))
+    if "hrd_ablation" in wanted:
+        made.append(figure_hrd_ablation(plt))
 
     made = [path for path in made if path]
     print(f"\n{len(made)} figure(s) written to results/figures/")

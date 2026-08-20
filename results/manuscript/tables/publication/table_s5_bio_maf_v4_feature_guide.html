@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Supplementary Table S5. Bio MAF v4 feature guide</title>
+<style>
+body {
+  background: #ffffff;
+  color: #111111;
+  font-family: "Times New Roman", Times, serif;
+  margin: 28px auto;
+  max-width: 940px;
+  padding: 0 18px;
+}
+.manuscript-table-block {
+  margin: 0 auto;
+}
+.table-number {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 22px;
+  text-align: center;
+}
+.table-title {
+  font-size: 15px;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  margin: 0 0 24px;
+  text-align: center;
+}
+.table-wrap {
+  overflow-x: auto;
+}
+table.manuscript-table {
+  border-top: 1.5px solid #111111;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 14px;
+  line-height: 1.12;
+  width: 100%;
+}
+table.manuscript-table thead {
+  border-bottom: 1.5px solid #111111;
+}
+table.manuscript-table th {
+  font-weight: 400;
+  padding: 8px 10px 10px;
+  text-align: center;
+  vertical-align: bottom;
+}
+table.manuscript-table td {
+  border: 0;
+  padding: 2px 10px;
+  vertical-align: top;
+}
+table.manuscript-table tbody tr:last-child td {
+  border-bottom: 1.5px solid #111111;
+  padding-bottom: 7px;
+}
+table.manuscript-table td:first-child {
+  padding-left: 0;
+  text-align: left;
+}
+table.manuscript-table td.numeric {
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  white-space: nowrap;
+}
+table.manuscript-table td.long-text {
+  min-width: 12rem;
+}
+.table-notes {
+  font-size: 13px;
+  line-height: 1.18;
+  margin-top: 14px;
+  text-align: left;
+}
+.table-notes p {
+  margin: 0 0 5px;
+}
+.note-label {
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+}
+</style>
+</head>
+<body>
+<div class="manuscript-table-block">
+<div class="table-number">Supplementary Table S5</div>
+<div class="table-title">Bio MAF v4 feature guide</div>
+<div class="table-wrap">
+<table class="manuscript-table">
+<thead><tr><th>Feature block</th><th>Features</th><th>Strict Bio MAF v4 core</th><th>Where the count comes from</th><th>Plain-English meaning</th><th>How to read one feature</th><th>How feature values are calculated</th><th>Source / grounding</th><th>Key terms decoded</th><th>Why included</th><th>Nested-CV use</th><th>Example feature name</th><th>Toy MAF input for example</th><th>Exact example calculation</th><th>How to interpret the example</th><th>Share of full Bio MAF v4 universe</th><th>Core feature total</th><th>Full feature total including optional controls</th><th>Candidate feature-set size derivations</th></tr></thead>
+<tbody>
+<tr><td>Compact biological annotation core</td><td class="numeric">121</td><td>Yes</td><td class="long-text">121 = 100 Ensembl VEP annotation features + 5 allele-fraction measurements + 12 OncoKB cancer-role measurements + 4 non-OncoKB cancer-gene measurements. The 100 VEP features are 50 fixed VEP labels x 2 value types: a log-count and a fraction. The 50 VEP labels are 5 IMPACT labels, 26 consequence labels, 3 canonical-transcript labels, 7 transcript-biotype labels, 5 SIFT labels, and 4 PolyPhen labels.</td><td class="long-text">Describes what kinds of mutations the tumor has, how disruptive they look, what cancer-gene groups they hit, and how large those mutations appear in the tumor DNA.</td><td class="long-text">`vep_impact_count__high` means the tumor has more mutations predicted to strongly disrupt a gene; `vaf_max` means the largest mutation is present in a larger share of tumor DNA reads.</td><td class="long-text">VEP count features are log1p(number of matching mutations). VEP fraction features are matching mutations divided by total annotated mutations. Allele-fraction features are mean, standard deviation, median, 90th percentile, and maximum. Cancer-role count and unique-gene features use log1p(count); max-VAF features use the largest allele fraction.</td><td class="long-text">Ensembl VEP fields, allele-fraction fields in the MAF, and the vendored OncoKB Cancer Gene List.</td><td class="long-text">Bio MAF = a biologically annotated feature matrix built from MAF fields plus fixed external references; it is not the raw MAF file and it is not mutational signatures. MAF = Mutation Annotation Format, the mutation table for a tumor. VEP = Ensembl Variant Effect Predictor, a standard tool that labels the likely effect of each mutation. A VEP label/category is one allowed value from a fixed VEP field. SIFT and PolyPhen are VEP-reported predictions about whether a protein change is likely damaging. Biotype means transcript class, such as protein-coding or long non-coding RNA. Canonical transcript means the main/reference transcript used for a gene. Allele fraction/VAF means the fraction of tumor DNA reads carrying the mutation. OncoKB roles are curated cancer-gene roles such as oncogene or tumor suppressor.</td><td class="long-text">These are standard mutation-file annotations and do not require choosing genes based on the endpoint being predicted.</td><td>Included in every Bio MAF v4 candidate block.</td><td class="long-text">`vep_consequence_count__missense_variant`; paired feature `vep_consequence_fraction__missense_variant`</td><td class="long-text">A toy tumor has 7 annotated mutations. VEP labels 3 of them as `missense_variant`, meaning the mutation changes one amino acid in the protein.</td><td class="long-text">`vep_consequence_count__missense_variant` = log1p(3) = 1.386. `vep_consequence_fraction__missense_variant` = 3 / 7 = 0.429.</td><td class="long-text">The tumor has 3 missense mutations, and missense mutations make up 42.9% of its annotated mutation list. The count tells the model absolute amount; the fraction tells the model composition.</td><td>12.8%</td><td class="numeric">943</td><td class="numeric">948</td><td class="long-text">Nested-CV Bio MAF candidate feature-set sizes: compact only = 121 (100 VEP effect-label features + 5 allele-fraction summary features + 12 OncoKB role-summary features + 4 non-OncoKB cancer-gene summary features); compact + evidence-confidence controls = 121 + 16 = 137; compact + hotspots = 121 + 4 = 125; compact + exact cancer-gene identity = 121 + 802 = 923; full strict core = 121 + 16 + 802 + 4 = 943; full + optional controls = 943 + 5 = 948. Mutational signatures are separate from Bio MAF; signatures + Bio MAF models add signature-matrix features on top of the selected Bio MAF candidate.</td></tr>
+<tr><td>External evidence-confidence controls</td><td class="numeric">16</td><td>Yes, evidence-control block</td><td class="long-text">16 = 4 evidence-confidence groups x 4 named measurements. A gene&#x27;s evidence-confidence group is the number of external cancer references that include the gene: 1 source, 2 sources, 3 sources, or 4+ sources. The 4 measurements per group are: high-or-moderate VEP-impact mutation count, high VEP-impact mutation count, unique genes with high-or-moderate VEP-impact mutations, and maximum allele fraction among high-or-moderate VEP-impact mutations.</td><td class="long-text">This is not a biological mechanism by itself. It is a low-dimensional control that tests whether mutations in better-established cancer genes add signal without naming the exact gene.</td><td class="long-text">`driver_evidence_high_impact_log_count__source_count_3` means the tumor has more strongly disruptive mutations in genes supported by 3 trusted sources.</td><td class="long-text">Count and unique-gene features use log1p(count). The max-VAF feature is the largest allele fraction among matching mutations in that evidence-confidence group.</td><td class="long-text">OncoKB, COSMIC CGC v99 flag from the OncoKB list, IntOGen 2024 driver compendium, Vogelstein 2013, plus Cancer Hotspots v3 for hotspot genes.</td><td class="long-text">Evidence-confidence group means how many independent external cancer resources include a gene. It should not be interpreted as biology inside the tumor; it is a way to summarize external confidence in whether the gene is a cancer gene. Vogelstein refers to the curated cancer-driver gene list from Vogelstein and colleagues&#x27; cancer genome landscape work. Nested CV means nested cross-validation: feature-block choice happens inside training folds, while held-out outer folds estimate performance.</td><td class="long-text">Included as a predeclared sensitivity/control block: it lets nested CV test a collapsed evidence-confidence signal against compact biology, exact-gene features, hotspot features, and full-core combinations. It is not selected using held-out labels.</td><td class="long-text">Competes as the compact + evidence-confidence candidate; also part of the full-core and full-core + optional-control candidates.</td><td class="long-text">`driver_evidence_high_or_moderate_impact_log_count__source_count_4`</td><td class="long-text">In the fixed reference table, TP53 and BRCA1 are in the 4-source evidence-confidence group. A toy tumor has one high/moderate-impact TP53 mutation and one high/moderate-impact BRCA1 mutation.</td><td class="long-text">`driver_evidence_high_or_moderate_impact_log_count__source_count_4` = log1p(2) = 1.099 because 2 mutations match the 4-source group and the high/moderate-impact rule.</td><td class="long-text">The tumor has two disruptive mutations in genes that many external cancer resources agree are cancer genes. This feature does not say TP53 or BRCA1 specifically; it summarizes the confidence level of the genes hit.</td><td>1.7%</td><td class="numeric">943</td><td class="numeric">948</td><td class="long-text">Nested-CV Bio MAF candidate feature-set sizes: compact only = 121 (100 VEP effect-label features + 5 allele-fraction summary features + 12 OncoKB role-summary features + 4 non-OncoKB cancer-gene summary features); compact + evidence-confidence controls = 121 + 16 = 137; compact + hotspots = 121 + 4 = 125; compact + exact cancer-gene identity = 121 + 802 = 923; full strict core = 121 + 16 + 802 + 4 = 943; full + optional controls = 943 + 5 = 948. Mutational signatures are separate from Bio MAF; signatures + Bio MAF models add signature-matrix features on top of the selected Bio MAF candidate.</td></tr>
+<tr><td>Exact consensus driver-gene identity</td><td class="numeric">802</td><td>Yes</td><td class="long-text">802 = 401 externally supported cancer genes x 2 named measurements per gene. The 401 genes are fixed before modeling by a written external-resource rule: selected genes have at least 3 sources of support among OncoKB, COSMIC CGC, IntOGen, and Vogelstein, or are Cancer Hotspots v3 genes. The 2 measurements are a protein-affecting mutation count and a cancer-role-fit mutation count.</td><td class="long-text">Records which specific known cancer genes are changed in the tumor, using a fixed gene list created before modeling without endpoint labels or model performance.</td><td class="long-text">`driver_gene_functional_event_log_count__TP53` means TP53 has a mutation likely to affect the TP53 protein. `driver_gene_role_matched_event_log_count__TP53` means the mutation fits TP53&#x27;s usual cancer role as a gene that is often damaged or lost.</td><td class="long-text">Both exact-gene features are per-tumor, per-gene log-counts, not averages. Protein-affecting mutation count = log1p(number of mutations in that patient&#x27;s tumor and that gene that are likely to change or disrupt the encoded protein). A mutation is counted as protein-affecting if VEP IMPACT is HIGH or MODERATE, or if the VEP consequence is one of these predefined coding/protein-affecting terms: stop gained/lost, frameshift, splice acceptor/donor, start lost, transcript ablation, missense, in-frame insertion/deletion, protein_altering_variant, or coding_sequence_variant. Cancer-role-fit mutation count = log1p(number of mutations in that patient&#x27;s tumor and that gene whose mutation type fits the gene&#x27;s externally curated cancer role): loss-like events for tumor suppressor genes, activating-like or hotspot events for oncogenes, and either pattern for both-role/ambiguous genes.</td><td class="long-text">Fixed gene panel from OncoKB, COSMIC CGC v99 flag in OncoKB, IntOGen 2024, Vogelstein 2013, and Cancer Hotspots v3.</td><td class="long-text">Fixed before modeling means the gene list is created once from external resources before cross-validation begins; no endpoint labels, fold results, or model performance are used to choose genes. Protein-affecting means likely to change or disrupt the gene&#x27;s protein product by fixed VEP rules. Cancer-role-fit means the mutation type is consistent with how that gene is known to act in cancer. COSMIC CGC is the COSMIC Cancer Gene Census. IntOGen is an external cancer-driver gene compendium. Cancer Hotspots is a catalogue of recurrently mutated cancer sites.</td><td class="long-text">Many cancer-type and HRD signals depend on which cancer gene is altered, not just on the generic consequence category.</td><td class="long-text">Competes as `v4_compact_plus_exact_driver_genes`; also part of `v4_full_core` and `v4_full_core_plus_optional_controls`.</td><td class="long-text">`driver_gene_functional_event_log_count__TP53`; paired feature `driver_gene_role_matched_event_log_count__TP53`</td><td class="long-text">A toy tumor has one TP53 frameshift mutation and one TP53 synonymous mutation. The frameshift disrupts the protein; the synonymous mutation does not change the protein sequence.</td><td class="long-text">`driver_gene_functional_event_log_count__TP53` = log1p(1) = 0.693 because only the frameshift is protein-affecting. `driver_gene_role_matched_event_log_count__TP53` = log1p(1) = 0.693 because TP53 is curated as a tumor-suppressor gene and a frameshift is a loss-like event.</td><td class="long-text">The tumor has a TP53 mutation that both affects the protein and fits TP53&#x27;s known cancer role as a gene commonly damaged or lost in cancer. The synonymous TP53 mutation does not add to either example count.</td><td>84.6%</td><td class="numeric">943</td><td class="numeric">948</td><td class="long-text">Nested-CV Bio MAF candidate feature-set sizes: compact only = 121 (100 VEP effect-label features + 5 allele-fraction summary features + 12 OncoKB role-summary features + 4 non-OncoKB cancer-gene summary features); compact + evidence-confidence controls = 121 + 16 = 137; compact + hotspots = 121 + 4 = 125; compact + exact cancer-gene identity = 121 + 802 = 923; full strict core = 121 + 16 + 802 + 4 = 943; full + optional controls = 943 + 5 = 948. Mutational signatures are separate from Bio MAF; signatures + Bio MAF models add signature-matrix features on top of the selected Bio MAF candidate.</td></tr>
+<tr><td>Cancer hotspot summaries</td><td class="numeric">4</td><td>Yes</td><td class="long-text">4 named hotspot measurements: exact hotspot count, recurrent protein-site count, number of genes with hotspot hits, and largest allele fraction among hotspot mutations.</td><td class="long-text">Measures whether mutations fall at protein sites repeatedly seen in cancer.</td><td class="long-text">`cancer_hotspot_residue_log_count` means the tumor has more mutations at protein positions repeatedly seen in cancer.</td><td class="long-text">Exact hotspot, recurrent protein-site, and unique-gene features use log1p(count). The hotspot max-VAF feature is the largest allele fraction among hotspot mutations.</td><td>Cancer Hotspots v3 / cBioPortal Cancer Hotspots resource.</td><td class="long-text">A cancer hotspot is a position in a protein that is recurrently mutated across cancer datasets. Recurrent does not mean the mutation occurs repeatedly in the same patient; it means the same site is observed across tumors.</td><td class="long-text">Hotspots capture activating driver-like signal that may be missed by generic high/moderate-impact consequence labels.</td><td class="long-text">Competes as `v4_compact_plus_hotspot_summary`; also part of `v4_full_core` and `v4_full_core_plus_optional_controls`.</td><td class="long-text">`cancer_hotspot_residue_log_count`; paired feature `cancer_hotspot_max_vaf`</td><td class="long-text">A toy tumor has two mutations whose gene/protein positions match Cancer Hotspots recurrent residues. Their allele fractions are 0.21 and 0.47.</td><td class="long-text">`cancer_hotspot_residue_log_count` = log1p(2) = 1.099. `cancer_hotspot_max_vaf` = max(0.21, 0.47) = 0.47.</td><td class="long-text">The tumor has two mutations at protein positions repeatedly observed across cancer datasets. The maximum allele fraction says the strongest hotspot mutation is present in 47% of tumor DNA reads covering that site.</td><td>0.4%</td><td class="numeric">943</td><td class="numeric">948</td><td class="long-text">Nested-CV Bio MAF candidate feature-set sizes: compact only = 121 (100 VEP effect-label features + 5 allele-fraction summary features + 12 OncoKB role-summary features + 4 non-OncoKB cancer-gene summary features); compact + evidence-confidence controls = 121 + 16 = 137; compact + hotspots = 121 + 4 = 125; compact + exact cancer-gene identity = 121 + 802 = 923; full strict core = 121 + 16 + 802 + 4 = 943; full + optional controls = 943 + 5 = 948. Mutational signatures are separate from Bio MAF; signatures + Bio MAF models add signature-matrix features on top of the selected Bio MAF candidate.</td></tr>
+<tr><td>Optional burden and event-composition controls</td><td class="numeric">5</td><td>No</td><td class="long-text">5 named mutation-count controls: single-base mutation count, double-base mutation count, insertion/deletion count, double-base mutation fraction, and insertion/deletion fraction.</td><td class="long-text">Measures broad mutation load and the basic mix of mutation types directly from the MAF.</td><td class="long-text">`log10_id_burden` means the tumor has more insertion/deletion events after compressing very large counts.</td><td class="long-text">Burden controls use log10(1 + event count). Fraction controls are event-class count divided by the total number of single-base, double-base, and insertion/deletion events.</td><td class="long-text">COSMIC SBS/DBS/ID event-class definitions applied directly to MAF event types.</td><td class="long-text">SBS means single-base substitution, DBS means double-base substitution, and ID means insertion/deletion. These controls count event classes from the MAF; they are separate from COSMIC mutational-signature exposures.</td><td class="long-text">Provides a sensitivity/control block because broad mutation burden can be predictive but can also dominate biology.</td><td>Only appears in `v4_full_core_plus_optional_controls`.</td><td>`log10_id_burden`; paired feature `id_fraction`</td><td class="long-text">A toy tumor has 80 single-base substitutions, 2 double-base substitutions, and 18 insertion/deletion events.</td><td class="long-text">`log10_id_burden` = log10(18 + 1) = 1.279. `id_fraction` = 18 / (80 + 2 + 18) = 0.180.</td><td class="long-text">The tumor has 18 insertion/deletion events after compressing the count so very high-burden tumors do not dominate. Insertions/deletions make up 18.0% of the simple event mix.</td><td>0.5%</td><td class="numeric">943</td><td class="numeric">948</td><td class="long-text">Nested-CV Bio MAF candidate feature-set sizes: compact only = 121 (100 VEP effect-label features + 5 allele-fraction summary features + 12 OncoKB role-summary features + 4 non-OncoKB cancer-gene summary features); compact + evidence-confidence controls = 121 + 16 = 137; compact + hotspots = 121 + 4 = 125; compact + exact cancer-gene identity = 121 + 802 = 923; full strict core = 121 + 16 + 802 + 4 = 943; full + optional controls = 943 + 5 = 948. Mutational signatures are separate from Bio MAF; signatures + Bio MAF models add signature-matrix features on top of the selected Bio MAF candidate.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="table-notes">
+<p><span class="note-label">Note.</span> Rows summarize the predeclared Bio MAF v4 feature blocks. The technical table gives the exact feature-level glossary used by the benchmark.</p>
+</div>
+</div>
+</body>
+</html>

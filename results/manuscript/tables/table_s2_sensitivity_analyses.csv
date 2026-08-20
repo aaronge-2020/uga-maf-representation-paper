@@ -1,0 +1,7 @@
+Endpoint,N,Metric(s),Best baseline/event-level,Best geometry/sensitivity,Best overall,Interpretation
+HRD LOH,772,Spearman r,Signatures + Bio MAF v4 / XGBoost (Spearman r 0.650),,Signatures + Bio MAF v4 / XGBoost (Spearman r 0.650),Best result comes from baseline or event-level feature families.
+HRD LST,772,Spearman r,Signatures + Bio MAF v4 / XGBoost (Spearman r 0.713),,Signatures + Bio MAF v4 / XGBoost (Spearman r 0.713),Best result comes from baseline or event-level feature families.
+HRD TAI,772,Spearman r,Signatures + Bio MAF v4 / XGBoost (Spearman r 0.772),,Signatures + Bio MAF v4 / XGBoost (Spearman r 0.772),Best result comes from baseline or event-level feature families.
+PARPi7,772,Spearman r,Signatures + Bio MAF v4 / XGBoost (Spearman r 0.363),,Signatures + Bio MAF v4 / XGBoost (Spearman r 0.363),Best result comes from baseline or event-level feature families.
+PFI survival,"9,857",Harrell C-index,Signatures + Bio MAF v4 / CoxNet (Harrell C-index 0.630),,Signatures + Bio MAF v4 / CoxNet (Harrell C-index 0.630),Best result comes from baseline or event-level feature families.
+eCARD,772,Spearman r,Bio MAF v4 / XGBoost (Spearman r 0.535),,Bio MAF v4 / XGBoost (Spearman r 0.535),Best result comes from baseline or event-level feature families.

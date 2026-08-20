@@ -1,0 +1,180 @@
+<!doctype html><html><head><meta charset="utf-8"><title>figure_2_signature_baselines</title><script></script><style>body{margin:0;background:white}.wrap{padding:24px}</style></head><body><div class="wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2120" height="812" viewBox="0 0 2120 812">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <linearGradient id="heat" x1="0" x2="1"><stop offset="0%" stop-color="#EFF6FF"/><stop offset="100%" stop-color="#1D4ED8"/></linearGradient>
+  </defs>
+  <style>
+  text{font-family:Inter,Arial,sans-serif;letter-spacing:0}.title{font-size:30px;font-weight:760;fill:#111827}.subtitle{font-size:15px;fill:#475569}.panel-title{font-size:17px;font-weight:760;fill:#111827}.label{font-size:14px;fill:#111827}.small{font-size:12px;fill:#475569}.tiny{font-size:10px;fill:#64748B}.value{font-size:14px;font-weight:740;fill:#111827}.cell-value{font-size:16px;font-weight:780;fill:#111827}.cell-value-light{font-size:16px;font-weight:780;fill:#FFFFFF}.sig{font-size:13px;font-weight:800;fill:#111827}.badge-text{font-size:10px;font-weight:760;fill:#334155}.axis{stroke:#CBD5E1;stroke-width:1}.grid{stroke:#E2E8F0;stroke-width:1}.rule{stroke:#334155;stroke-width:1.8}.card{fill:#FFFFFF;stroke:#CBD5E1;stroke-width:1.2}.soft{fill:#F8FAFC}.row-band{fill:#F8FAFC}.chip{fill:#F1F5F9;stroke:#CBD5E1}.shadow{filter:drop-shadow(0 2px 3px rgba(15,23,42,.10))}
+  </style><rect width="2120" height="812" fill="#FFFFFF"/>
+<text x="44" y="50" class="title">Figure 2. Burden and signature baselines</text>
+<text x="44" y="80" class="subtitle">5-fold OOF scores with paired tests. Metrics: Balanced accuracy, Spearman r, AUROC.</text>
+<text x="44" y="106" class="tiny">Endpoint labels show metric, task, and n. Delta intervals are paired 95% bootstrap CIs where available.</text>
+<rect x="36" y="146" width="2048" height="90" class="row-band"/>
+<text x="52" y="184" class="label">Kucab damage class</text>
+<rect x="52" y="199" width="65.6" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="84.8" y="213" text-anchor="middle" class="badge-text" fill="#334155">Bal acc</text><rect x="118" y="199" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="145" y="213" text-anchor="middle" class="badge-text" fill="#334155">multi</text><text x="184" y="213" class="tiny">n=259</text>
+<text x="52" y="274" class="label">HRD score</text>
+<rect x="52" y="289" width="50" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="77" y="303" text-anchor="middle" class="badge-text" fill="#334155">rho</text><rect x="118" y="289" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="145" y="303" text-anchor="middle" class="badge-text" fill="#334155">reg</text><text x="184" y="303" class="tiny">n=772</text>
+<rect x="36" y="326" width="2048" height="90" class="row-band"/>
+<text x="52" y="364" class="label">HRD24 high/low</text>
+<rect x="52" y="379" width="52" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="78" y="393" text-anchor="middle" class="badge-text" fill="#334155">AUROC</text><rect x="118" y="379" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="145" y="393" text-anchor="middle" class="badge-text" fill="#334155">binary</text><text x="184" y="393" class="tiny">n=772</text>
+<text x="52" y="454" class="label">HRD33 high/low</text>
+<rect x="52" y="469" width="52" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="78" y="483" text-anchor="middle" class="badge-text" fill="#334155">AUROC</text><rect x="118" y="469" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="145" y="483" text-anchor="middle" class="badge-text" fill="#334155">binary</text><text x="184" y="483" class="tiny">n=772</text>
+<rect x="36" y="506" width="2048" height="90" class="row-band"/>
+<text x="52" y="544" class="label">HRD42 high/low</text>
+<rect x="52" y="559" width="52" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="78" y="573" text-anchor="middle" class="badge-text" fill="#334155">AUROC</text><rect x="118" y="559" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="145" y="573" text-anchor="middle" class="badge-text" fill="#334155">binary</text><text x="184" y="573" class="tiny">n=772</text>
+<text x="52" y="634" class="label">Cancer type (top 20)</text>
+<rect x="52" y="649" width="65.6" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="84.8" y="663" text-anchor="middle" class="badge-text" fill="#334155">Bal acc</text><rect x="118" y="649" width="54" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1"/><text x="145" y="663" text-anchor="middle" class="badge-text" fill="#334155">multi</text><text x="184" y="663" class="tiny">n=8,800</text>
+<text x="250" y="126" class="panel-title">Elastic net</text>
+<rect x="362" y="111" width="44" height="20" rx="10" fill="#E0F2FE" stroke="#BAE6FD"/><text x="384" y="125" text-anchor="middle" class="badge-text" fill="#334155">EN</text>
+<line x1="250" y1="130" x2="250" y2="706" class="grid"/>
+<text x="250" y="750" text-anchor="middle" class="tiny">0.00</text>
+<line x1="384.71736171197733" y1="130" x2="384.71736171197733" y2="706" class="grid"/>
+<text x="384.71736171197733" y="750" text-anchor="middle" class="tiny">0.25</text>
+<line x1="519.4347234239547" y1="130" x2="519.4347234239547" y2="706" class="grid"/>
+<text x="519.4347234239547" y="750" text-anchor="middle" class="tiny">0.50</text>
+<line x1="654.1520851359319" y1="130" x2="654.1520851359319" y2="706" class="grid"/>
+<text x="654.1520851359319" y="750" text-anchor="middle" class="tiny">0.75</text>
+<text x="512" y="776" text-anchor="middle" class="small">OOF primary metric</text>
+<rect x="250" y="172" width="96.09587755590175" height="15" rx="3" fill="#4B5563" stroke="none" stroke-width="0"><title>Kucab damage class | Elastic net | Mutational burden: 0.178; n=259; 1 features</title></rect>
+<text x="354.0958775559018" y="185" class="tiny">0.18</text>
+<rect x="250" y="196" width="178.32637759059637" height="15" rx="3" fill="#2563EB" stroke="#111827" stroke-width="1.6"><title>Kucab damage class | Elastic net | Mutational signatures: 0.331; n=259; 261 features</title></rect>
+<text x="436.3263775905964" y="209" class="tiny">0.33</text>
+<rect x="250" y="262" width="267.9734377338512" height="15" rx="3" fill="#4B5563" stroke="#111827" stroke-width="1.6"><title>HRD score | Elastic net | Mutational burden: 0.497; n=772; 3 features</title></rect>
+<text x="525.9734377338511" y="275" class="tiny">0.50</text>
+<rect x="250" y="286" width="232.0300541554038" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>HRD score | Elastic net | Mutational signatures: 0.431; n=772; 182 features</title></rect>
+<text x="490.03005415540383" y="299" class="tiny">0.43</text>
+<rect x="250" y="352" width="404.3898104052352" height="15" rx="3" fill="#4B5563" stroke="none" stroke-width="0"><title>HRD24 high/low | Elastic net | Mutational burden: 0.750; n=772; 3 features</title></rect>
+<text x="662.3898104052353" y="365" class="tiny">0.75</text>
+<rect x="250" y="376" width="408.30817863719795" height="15" rx="3" fill="#2563EB" stroke="#111827" stroke-width="1.6"><title>HRD24 high/low | Elastic net | Mutational signatures: 0.758; n=772; 182 features</title></rect>
+<text x="666.3081786371979" y="389" class="tiny">0.76</text>
+<rect x="250" y="442" width="424.8649918599258" height="15" rx="3" fill="#4B5563" stroke="#111827" stroke-width="1.6"><title>HRD33 high/low | Elastic net | Mutational burden: 0.788; n=772; 3 features</title></rect>
+<text x="682.8649918599258" y="455" class="tiny">0.79</text>
+<rect x="250" y="466" width="416.8820261562166" height="15" rx="3" fill="#2563EB" stroke="none" stroke-width="0"><title>HRD33 high/low | Elastic net | Mutational signatures: 0.774; n=772; 182 features</title></rect>
+<text x="674.8820261562166" y="479" class="tiny">0.77</text>
+<rect x="250" y="532" width="444.3045009396476" height="15" rx="3" fill="#4B5563" stroke="none" stroke-width="0"><title>HRD42 high/low | Elastic net | Mutational burden: 0.825; n=772; 3 features</title></rect>
+<text x="702.3045009396476" y="545" class="tiny">0.82</text>
+<rect x="250" y="556" width="462.62490699968583" height="15" rx="3" fill="#2563EB" stroke="#111827" stroke-width="1.6"><title>HRD42 high/low | Elastic net | Mutational signatures: 0.859; n=772; 182 features</title></rect>
+<text x="720.6249069996859" y="569" class="tiny">0.86</text>
+<rect x="250" y="622" width="133.27343440848148" height="15" rx="3" fill="#4B5563" stroke="none" stroke-width="0"><title>Cancer type (top 20) | Elastic net | Mutational burden: 0.247; n=8,800; 3 features</title></rect>
+<text x="391.2734344084815" y="635" class="tiny">0.25</text>
+<rect x="250" y="646" width="283.63299483856304" height="15" rx="3" fill="#2563EB" stroke="#111827" stroke-width="1.6"><title>Cancer type (top 20) | Elastic net | Mutational signatures: 0.526; n=8,800; 182 features</title></rect>
+<text x="541.632994838563" y="659" class="tiny">0.53</text>
+<text x="962" y="126" text-anchor="middle" class="small">Signatures - burden</text>
+<line x1="962" y1="130" x2="962" y2="706" stroke="#64748B" stroke-width="1.4"/>
+<rect x="957" y="134" width="10" height="572" fill="#64748B" opacity=".06"/>
+<line x1="816" y1="714" x2="816" y2="721" stroke="#64748B"/>
+<text x="816" y="750" text-anchor="middle" class="tiny">-0.30</text>
+<line x1="962" y1="714" x2="962" y2="721" stroke="#64748B"/>
+<text x="962" y="750" text-anchor="middle" class="tiny">+0.00</text>
+<line x1="1108" y1="714" x2="1108" y2="721" stroke="#64748B"/>
+<text x="1108" y="750" text-anchor="middle" class="tiny">+0.30</text>
+<text x="962" y="776" text-anchor="middle" class="small">Paired delta</text>
+<line x1="1002.3178206174891" y1="193" x2="1067.8243190579274" y2="193" stroke="#047857" stroke-width="2.2" opacity=".75"><title>95% interval +0.083 to +0.217</title></line>
+<line x1="1002.3178206174891" y1="188" x2="1002.3178206174891" y2="198" stroke="#047857" stroke-width="1.4"/>
+<line x1="1067.8243190579274" y1="188" x2="1067.8243190579274" y2="198" stroke="#047857" stroke-width="1.4"/>
+<circle cx="1036.2644504792513" cy="193" r="5" fill="#047857"><title>Kucab damage class | Elastic net | delta=+0.153; q=0.007</title></circle>
+<rect x="1032.2" y="205" width="71.80000000000001" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1068.1" y="218" text-anchor="middle" class="tiny" style="fill:#047857">+0.153 **</text>
+<line x1="899.6014496031444" y1="283" x2="960.7805869192149" y2="283" stroke="#B91C1C" stroke-width="2.2" opacity=".75"><title>95% interval -0.128 to -0.003</title></line>
+<line x1="899.6014496031444" y1="278" x2="899.6014496031444" y2="288" stroke="#B91C1C" stroke-width="1.4"/>
+<line x1="960.7805869192149" y1="278" x2="960.7805869192149" y2="288" stroke="#B91C1C" stroke-width="1.4"/>
+<circle cx="929.5311721341894" cy="283" r="5" fill="#B91C1C"><title>HRD score | Elastic net | delta=-0.067; q=0.064</title></circle>
+<rect x="820" y="295" width="65.6" height="17" rx="8" fill="#FEF2F2" stroke="#FECACA" opacity=".96"/><text x="852.8" y="308" text-anchor="middle" class="tiny" style="fill:#B91C1C">-0.067 .</text>
+<line x1="962" y1="373" x2="962" y2="373" stroke="#047857" stroke-width="2.2" opacity=".75"><title>95% interval +0.000 to +0.000</title></line>
+<line x1="962" y1="368" x2="962" y2="378" stroke="#047857" stroke-width="1.4"/>
+<line x1="962" y1="368" x2="962" y2="378" stroke="#047857" stroke-width="1.4"/>
+<circle cx="965.5387777454753" cy="373" r="5" fill="#047857"><title>HRD24 high/low | Elastic net | delta=+0.007; q=0.684</title></circle>
+<rect x="1050.8" y="385" width="53.2" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1077.4" y="398" text-anchor="middle" class="tiny" style="fill:#047857">+0.007</text>
+<line x1="962" y1="463" x2="962" y2="463" stroke="#B91C1C" stroke-width="2.2" opacity=".75"><title>95% interval +0.000 to +0.000</title></line>
+<line x1="962" y1="458" x2="962" y2="468" stroke="#B91C1C" stroke-width="1.4"/>
+<line x1="962" y1="458" x2="962" y2="468" stroke="#B91C1C" stroke-width="1.4"/>
+<circle cx="954.7903811732808" cy="463" r="5" fill="#B91C1C"><title>HRD33 high/low | Elastic net | delta=-0.015; q=0.471</title></circle>
+<rect x="820" y="475" width="53.2" height="17" rx="8" fill="#FEF2F2" stroke="#FECACA" opacity=".96"/><text x="846.6" y="488" text-anchor="middle" class="tiny" style="fill:#B91C1C">-0.015</text>
+<line x1="962" y1="553" x2="962" y2="553" stroke="#047857" stroke-width="2.2" opacity=".75"><title>95% interval +0.000 to +0.000</title></line>
+<line x1="962" y1="548" x2="962" y2="558" stroke="#047857" stroke-width="1.4"/>
+<line x1="962" y1="548" x2="962" y2="558" stroke="#047857" stroke-width="1.4"/>
+<circle cx="978.5456234369418" cy="553" r="5" fill="#047857"><title>HRD42 high/low | Elastic net | delta=+0.034; q=0.095</title></circle>
+<rect x="1050.8" y="565" width="53.2" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1077.4" y="578" text-anchor="middle" class="tiny" style="fill:#047857">+0.034</text>
+<line x1="1093.4165335281832" y1="643" x2="1104.7028595704323" y2="643" stroke="#047857" stroke-width="2.2" opacity=".75"><title>95% interval +0.270 to +0.293</title></line>
+<line x1="1093.4165335281832" y1="638" x2="1093.4165335281832" y2="648" stroke="#047857" stroke-width="1.4"/>
+<line x1="1104.7028595704323" y1="638" x2="1104.7028595704323" y2="648" stroke="#047857" stroke-width="1.4"/>
+<circle cx="1099.2015760171412" cy="643" r="5" fill="#047857"><title>Cancer type (top 20) | Elastic net | delta=+0.282; q=0.007</title></circle>
+<rect x="1032.2" y="655" width="71.80000000000001" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="1068.1" y="668" text-anchor="middle" class="tiny" style="fill:#047857">+0.282 **</text>
+<text x="1190" y="126" class="panel-title">XGBoost</text>
+<rect x="1302" y="111" width="44" height="20" rx="10" fill="#E0F2FE" stroke="#BAE6FD"/><text x="1324" y="125" text-anchor="middle" class="badge-text" fill="#334155">XGB</text>
+<line x1="1190" y1="130" x2="1190" y2="706" class="grid"/>
+<text x="1190" y="750" text-anchor="middle" class="tiny">0.00</text>
+<line x1="1324.7173617119774" y1="130" x2="1324.7173617119774" y2="706" class="grid"/>
+<text x="1324.7173617119774" y="750" text-anchor="middle" class="tiny">0.25</text>
+<line x1="1459.4347234239547" y1="130" x2="1459.4347234239547" y2="706" class="grid"/>
+<text x="1459.4347234239547" y="750" text-anchor="middle" class="tiny">0.50</text>
+<line x1="1594.1520851359319" y1="130" x2="1594.1520851359319" y2="706" class="grid"/>
+<text x="1594.1520851359319" y="750" text-anchor="middle" class="tiny">0.75</text>
+<text x="1452" y="776" text-anchor="middle" class="small">OOF primary metric</text>
+<rect x="1190" y="172" width="77.9086286882775" height="15" rx="3" fill="#4B5563" stroke="none" stroke-width="0"><title>Kucab damage class | XGBoost | Mutational burden: 0.145; n=259; 1 features</title></rect>
+<text x="1275.9086286882775" y="185" class="tiny">0.14</text>
+<rect x="1190" y="196" width="134.7230440852732" height="15" rx="3" fill="#2563EB" stroke="#111827" stroke-width="1.6"><title>Kucab damage class | XGBoost | Mutational signatures: 0.250; n=259; 261 features</title></rect>
+<text x="1332.7230440852732" y="209" class="tiny">0.25</text>
+<rect x="1190" y="262" width="323.1856332008624" height="15" rx="3" fill="#4B5563" stroke="none" stroke-width="0"><title>HRD score | XGBoost | Mutational burden: 0.600; n=772; 3 features</title></rect>
+<text x="1521.1856332008624" y="275" class="tiny">0.60</text>
+<rect x="1190" y="286" width="373.2614364603161" height="15" rx="3" fill="#2563EB" stroke="#111827" stroke-width="1.6"><title>HRD score | XGBoost | Mutational signatures: 0.693; n=772; 182 features</title></rect>
+<text x="1571.261436460316" y="299" class="tiny">0.69</text>
+<rect x="1190" y="352" width="417.5694450673696" height="15" rx="3" fill="#4B5563" stroke="none" stroke-width="0"><title>HRD24 high/low | XGBoost | Mutational burden: 0.775; n=772; 3 features</title></rect>
+<text x="1615.5694450673695" y="365" class="tiny">0.77</text>
+<rect x="1190" y="376" width="446.8524619566315" height="15" rx="3" fill="#2563EB" stroke="#111827" stroke-width="1.6"><title>HRD24 high/low | XGBoost | Mutational signatures: 0.829; n=772; 182 features</title></rect>
+<text x="1644.8524619566315" y="389" class="tiny">0.83</text>
+<rect x="1190" y="442" width="430.5022925740196" height="15" rx="3" fill="#4B5563" stroke="none" stroke-width="0"><title>HRD33 high/low | XGBoost | Mutational burden: 0.799; n=772; 3 features</title></rect>
+<text x="1628.5022925740195" y="455" class="tiny">0.80</text>
+<rect x="1190" y="466" width="457.8177325945128" height="15" rx="3" fill="#2563EB" stroke="#111827" stroke-width="1.6"><title>HRD33 high/low | XGBoost | Mutational signatures: 0.850; n=772; 182 features</title></rect>
+<text x="1655.8177325945128" y="479" class="tiny">0.85</text>
+<rect x="1190" y="532" width="451.71756562377715" height="15" rx="3" fill="#4B5563" stroke="none" stroke-width="0"><title>HRD42 high/low | XGBoost | Mutational burden: 0.838; n=772; 3 features</title></rect>
+<text x="1649.717565623777" y="545" class="tiny">0.84</text>
+<rect x="1190" y="556" width="486.2791387206463" height="15" rx="3" fill="#2563EB" stroke="#111827" stroke-width="1.6"><title>HRD42 high/low | XGBoost | Mutational signatures: 0.902; n=772; 182 features</title></rect>
+<text x="1684.2791387206462" y="569" class="tiny">0.90</text>
+<rect x="1190" y="622" width="137.3820800931805" height="15" rx="3" fill="#4B5563" stroke="none" stroke-width="0"><title>Cancer type (top 20) | XGBoost | Mutational burden: 0.255; n=8,800; 3 features</title></rect>
+<text x="1335.3820800931805" y="635" class="tiny">0.25</text>
+<rect x="1190" y="646" width="289.99138851360186" height="15" rx="3" fill="#2563EB" stroke="#111827" stroke-width="1.6"><title>Cancer type (top 20) | XGBoost | Mutational signatures: 0.538; n=8,800; 182 features</title></rect>
+<text x="1487.9913885136018" y="659" class="tiny">0.54</text>
+<text x="1902" y="126" text-anchor="middle" class="small">Signatures - burden</text>
+<line x1="1902" y1="130" x2="1902" y2="706" stroke="#64748B" stroke-width="1.4"/>
+<rect x="1897" y="134" width="10" height="572" fill="#64748B" opacity=".06"/>
+<line x1="1756" y1="714" x2="1756" y2="721" stroke="#64748B"/>
+<text x="1756" y="750" text-anchor="middle" class="tiny">-0.30</text>
+<line x1="1902" y1="714" x2="1902" y2="721" stroke="#64748B"/>
+<text x="1902" y="750" text-anchor="middle" class="tiny">+0.00</text>
+<line x1="2048" y1="714" x2="2048" y2="721" stroke="#64748B"/>
+<text x="2048" y="750" text-anchor="middle" class="tiny">+0.30</text>
+<text x="1902" y="776" text-anchor="middle" class="small">Paired delta</text>
+<line x1="1936.011873595895" y1="193" x2="1972.132765293858" y2="193" stroke="#047857" stroke-width="2.2" opacity=".75"><title>95% interval +0.070 to +0.144</title></line>
+<line x1="1936.011873595895" y1="188" x2="1936.011873595895" y2="198" stroke="#047857" stroke-width="1.4"/>
+<line x1="1972.132765293858" y1="188" x2="1972.132765293858" y2="198" stroke="#047857" stroke-width="1.4"/>
+<circle cx="1953.3105397264712" cy="193" r="5" fill="#047857"><title>Kucab damage class | XGBoost | delta=+0.105; q=0.007</title></circle>
+<rect x="1972.2" y="205" width="71.80000000000001" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2008.1" y="218" text-anchor="middle" class="tiny" style="fill:#047857">+0.105 **</text>
+<line x1="1939.8732953754684" y1="283" x2="1969.2603323708172" y2="283" stroke="#047857" stroke-width="2.2" opacity=".75"><title>95% interval +0.078 to +0.138</title></line>
+<line x1="1939.8732953754684" y1="278" x2="1939.8732953754684" y2="288" stroke="#047857" stroke-width="1.4"/>
+<line x1="1969.2603323708172" y1="278" x2="1969.2603323708172" y2="288" stroke="#047857" stroke-width="1.4"/>
+<circle cx="1954.6412826052904" cy="283" r="5" fill="#047857"><title>HRD score | XGBoost | delta=+0.108; q=0.007</title></circle>
+<rect x="1972.2" y="295" width="71.80000000000001" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2008.1" y="308" text-anchor="middle" class="tiny" style="fill:#047857">+0.108 **</text>
+<line x1="1902" y1="373" x2="1902" y2="373" stroke="#047857" stroke-width="2.2" opacity=".75"><title>95% interval +0.000 to +0.000</title></line>
+<line x1="1902" y1="368" x2="1902" y2="378" stroke="#047857" stroke-width="1.4"/>
+<line x1="1902" y1="368" x2="1902" y2="378" stroke="#047857" stroke-width="1.4"/>
+<circle cx="1926.4555700541557" cy="373" r="5" fill="#047857"><title>HRD24 high/low | XGBoost | delta=+0.050; q=0.004</title></circle>
+<rect x="1972.2" y="385" width="71.80000000000001" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2008.1" y="398" text-anchor="middle" class="tiny" style="fill:#047857">+0.050 **</text>
+<line x1="1902" y1="463" x2="1902" y2="463" stroke="#047857" stroke-width="2.2" opacity=".75"><title>95% interval +0.000 to +0.000</title></line>
+<line x1="1902" y1="458" x2="1902" y2="468" stroke="#047857" stroke-width="1.4"/>
+<line x1="1902" y1="458" x2="1902" y2="468" stroke="#047857" stroke-width="1.4"/>
+<circle cx="1918.5473315752126" cy="463" r="5" fill="#047857"><title>HRD33 high/low | XGBoost | delta=+0.034; q=0.018</title></circle>
+<rect x="1978.4" y="475" width="65.6" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2011.2" y="488" text-anchor="middle" class="tiny" style="fill:#047857">+0.034 *</text>
+<line x1="1902" y1="553" x2="1902" y2="553" stroke="#047857" stroke-width="2.2" opacity=".75"><title>95% interval +0.000 to +0.000</title></line>
+<line x1="1902" y1="548" x2="1902" y2="558" stroke="#047857" stroke-width="1.4"/>
+<line x1="1902" y1="548" x2="1902" y2="558" stroke="#047857" stroke-width="1.4"/>
+<circle cx="1927.3530903894248" cy="553" r="5" fill="#047857"><title>HRD42 high/low | XGBoost | delta=+0.052; q=0.007</title></circle>
+<rect x="1972.2" y="565" width="71.80000000000001" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2008.1" y="578" text-anchor="middle" class="tiny" style="fill:#047857">+0.052 **</text>
+<line x1="2035.4267763053945" y1="643" x2="2047.0054121438993" y2="643" stroke="#047857" stroke-width="2.2" opacity=".75"><title>95% interval +0.274 to +0.298</title></line>
+<line x1="2035.4267763053945" y1="638" x2="2035.4267763053945" y2="648" stroke="#047857" stroke-width="1.4"/>
+<line x1="2047.0054121438993" y1="638" x2="2047.0054121438993" y2="648" stroke="#047857" stroke-width="1.4"/>
+<circle cx="2041.0816098911719" cy="643" r="5" fill="#047857"><title>Cancer type (top 20) | XGBoost | delta=+0.286; q=0.007</title></circle>
+<rect x="1972.2" y="655" width="71.80000000000001" height="17" rx="8" fill="#ECFDF5" stroke="#A7F3D0" opacity=".96"/><text x="2008.1" y="668" text-anchor="middle" class="tiny" style="fill:#047857">+0.286 **</text>
+<rect x="52" y="778" width="14" height="14" rx="2" fill="#4B5563"/><text x="74" y="790" class="small">Mutational burden (3 feat)</text>
+<rect x="276" y="778" width="14" height="14" rx="2" fill="#2563EB"/><text x="298" y="790" class="small">Mutational signatures (182 feat)</text>
+<text x="1690" y="790" class="tiny">Paired-test FDR:</text><text x="1802" y="790" class="tiny">* q&lt;0.05</text><text x="1880" y="790" class="tiny">** q&lt;0.01</text><text x="1964" y="790" class="tiny">*** q&lt;0.001</text>
+<line x1="1400" y1="102" x2="1428" y2="102" stroke="#047857" stroke-width="3"/><text x="1436" y="106" class="tiny">positive favors candidate</text><line x1="1620" y1="102" x2="1648" y2="102" stroke="#B91C1C" stroke-width="3"/><text x="1656" y="106" class="tiny">negative favors baseline</text></svg></div></body></html>

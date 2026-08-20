@@ -1,0 +1,14 @@
+representation_family,representation_family_display,model_family,model_display,atlas_status,atlas_status_display,rows,median_features,max_features,folds,repeats,xgb_estimators,linear_model,tuning
+MAF_stack_only,Bio MAF v4,XGBoost,XGBoost,no UGA atlas,No UGA atlas,11,948.0,2980.0,5.0,1.0,,,10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings
+MAF_stack_only,Bio MAF v4,cox_ph,CoxNet,no UGA atlas,No UGA atlas,2,948.0,948.0,5.0,1.0,,,10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings
+MAF_stack_only,Bio MAF v4,elastic_net,Elastic net,no UGA atlas,No UGA atlas,11,948.0,2980.0,5.0,1.0,,elastic-net linear model,10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings
+MuAt_style_attention_MIL,MuAt-compatible,MuAt-compatible reimplementation,MuAt-compatible,no UGA atlas,No UGA atlas,2,,,5.0,1.0,,,10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings
+burden_only,Mutational burden,XGBoost,XGBoost,no UGA atlas,No UGA atlas,11,3.0,3.0,5.0,1.0,,,10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings
+burden_only,Mutational burden,cox_ph,CoxNet,no UGA atlas,No UGA atlas,2,3.0,3.0,5.0,1.0,,,10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings
+burden_only,Mutational burden,elastic_net,Elastic net,no UGA atlas,No UGA atlas,11,3.0,3.0,5.0,1.0,,elastic-net linear model,10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings
+signatures_only,Mutational signatures,XGBoost,XGBoost,no UGA atlas,No UGA atlas,11,182.0,261.0,5.0,1.0,,,10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings
+signatures_only,Mutational signatures,cox_ph,CoxNet,no UGA atlas,No UGA atlas,2,182.0,182.0,5.0,1.0,,,10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings
+signatures_only,Mutational signatures,elastic_net,Elastic net,no UGA atlas,No UGA atlas,11,182.0,261.0,5.0,1.0,,elastic-net linear model,10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings
+signatures_plus_MAF_stack,Signatures + Bio MAF v4,XGBoost,XGBoost,no UGA atlas,No UGA atlas,11,1130.0,3241.0,5.0,1.0,,,10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings
+signatures_plus_MAF_stack,Signatures + Bio MAF v4,cox_ph,CoxNet,no UGA atlas,No UGA atlas,2,1130.0,1130.0,5.0,1.0,,,10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings
+signatures_plus_MAF_stack,Signatures + Bio MAF v4,elastic_net,Elastic net,no UGA atlas,No UGA atlas,11,1130.0,3241.0,5.0,1.0,,elastic-net linear model,10 Optuna trials where endpoint-specific tuning is used; otherwise frozen settings

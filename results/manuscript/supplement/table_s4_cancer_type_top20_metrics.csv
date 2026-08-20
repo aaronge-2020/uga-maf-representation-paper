@@ -1,0 +1,9 @@
+Representation,Model,N,Macro-AUROC,Micro-AUROC,Accuracy,Balanced accuracy,Macro-F1,Cohen's kappa,Top-3 accuracy,Top-5 accuracy
+Bio MAF v4,Elastic net,"8,800",0.865,0.869,0.579,0.571,0.585,0.552,0.794,0.879
+Bio MAF v4,XGBoost,"8,800",0.959,0.964,0.662,0.662,0.664,0.641,0.864,0.929
+Mutational burden,Elastic net,"8,800",0.780,0.795,0.242,0.247,0.208,0.203,0.496,0.642
+Mutational burden,XGBoost,"8,800",0.808,0.835,0.287,0.255,0.239,0.237,0.560,0.700
+Mutational signatures,Elastic net,"8,800",0.917,0.921,0.509,0.526,0.504,0.482,0.780,0.876
+Mutational signatures,XGBoost,"8,800",0.935,0.943,0.561,0.538,0.547,0.532,0.817,0.899
+Signatures + Bio MAF v4,Elastic net,"8,800",0.921,0.924,0.675,0.672,0.678,0.655,0.867,0.914
+Signatures + Bio MAF v4,XGBoost,"8,800",0.975,0.978,0.739,0.738,0.744,0.723,0.910,0.956

@@ -1,0 +1,8 @@
+Endpoint,Task,Metric,N,Burden,Signatures,Bio MAF v4,Signatures + bio MAF,MuAt-compatible,Best model
+Kucab damage class,Grouped multiclass,Balanced accuracy,259,0.178 / 0.145,0.331 / 0.250,0.293 / 0.174,0.204 / 0.198,,"Mutational signatures (Elastic net, 0.331)"
+HRD score,Regression,Spearman r,772,0.497 / 0.600,0.431 / 0.693,0.714 / 0.741,0.733 / 0.767,0.519,"Signatures + Bio MAF v4 (XGBoost, 0.767)"
+HRD24 high/low,Binary classification,AUROC,772,0.750 / 0.775,0.758 / 0.829,0.781 / 0.832,0.811 / 0.848,,"Signatures + Bio MAF v4 (XGBoost, 0.848)"
+HRD33 high/low,Binary classification,AUROC,772,0.788 / 0.799,0.774 / 0.850,0.769 / 0.856,0.797 / 0.901,0.729,"Signatures + Bio MAF v4 (XGBoost, 0.901)"
+HRD42 high/low,Binary classification,AUROC,772,0.825 / 0.838,0.859 / 0.902,0.791 / 0.875,0.824 / 0.897,,"Mutational signatures (XGBoost, 0.902)"
+Cancer type (top 20),Multiclass classification,Balanced accuracy,"8,800",0.247 / 0.255,0.526 / 0.538,0.571 / 0.662,0.672 / 0.738,,"Signatures + Bio MAF v4 (XGBoost, 0.738)"
+Overall survival,Survival,Harrell C-index,"9,986",0.584,0.607,0.634,0.650,,"Signatures + Bio MAF v4 (CoxNet, 0.650)"
