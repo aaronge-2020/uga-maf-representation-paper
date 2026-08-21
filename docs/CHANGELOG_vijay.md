@@ -1,5 +1,9 @@
 # MuAt Comparator — Change Log (Vijay)
 
+> **Results from the completed August 2026 rerun are in
+> [`docs/results_summary_2026-08.md`](results_summary_2026-08.md).** This file records what was
+> changed and why; that one records what the changes produced.
+
 **Date:** 11 July 2026
 **Branch:** `codex/coxnet-muat-manuscript-updates` (base commit `38f507c`)
 **Scope:** MuAt-compatible comparator fidelity + rerun enablement. No changes to the tabular panel, the CoxNet survival path, or the manuscript text.

@@ -118,3 +118,285 @@ C:\TensorLabMarylandProject\uga-maf-representation-paper\src\runners\run_muat_st
 [muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.359451
 [muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.119469
 [muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.0748361
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.241685
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.141092
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.189647
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.082448
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.266029
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.187954
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.261879
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.0740798
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.275461
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.332828
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection candidate=5 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=1/150 inner_balanced_accuracy=0.23658
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=10/150 inner_balanced_accuracy=0.465195
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=20/150 inner_balanced_accuracy=0.477088
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=30/150 inner_balanced_accuracy=0.505907
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=40/150 inner_balanced_accuracy=0.534339
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=50/150 inner_balanced_accuracy=0.513706
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=60/150 inner_balanced_accuracy=0.53107
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=70/150 inner_balanced_accuracy=0.546366
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=80/150 inner_balanced_accuracy=0.557481
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=90/150 inner_balanced_accuracy=0.566291
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=100/150 inner_balanced_accuracy=0.568407
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection embed=128 layers=4 heads=1 selection_epoch=110/150 inner_balanced_accuracy=0.568731
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 final_epoch_selection selection_early_stop_epoch=119 best_epoch=94 patience=25
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 selected_candidate=5 embed=128 layers=4 heads=1 selected_epoch=94/150 selected_inner_balanced_accuracy=0.579088
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 epoch=1/94 loss=2.28437
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 epoch=10/94 loss=1.24012
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 epoch=20/94 loss=0.807565
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 epoch=30/94 loss=0.567459
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 epoch=40/94 loss=0.333295
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 epoch=50/94 loss=0.215825
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 epoch=60/94 loss=0.128062
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 epoch=70/94 loss=0.035228
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 epoch=80/94 loss=0.0109032
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 epoch=90/94 loss=0.00391795
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=2/5 epoch=94/94 loss=0.00286639
+[muat_style_tcga_comparator] completed endpoint=cancer_type_top20 fold=2/5 balanced_accuracy=0.601335
+[muat_style_tcga_comparator] training endpoint=cancer_type_top20 fold=3/5 train=7040 test=1760 epochs=150
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 architecture_search_candidates=18 search_epochs=3
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.271623
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.334118
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.271717
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.356773
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.260245
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.298436
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.291878
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.335036
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.2558
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.372098
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.289397
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.369936
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.234538
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.2695
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.257881
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.250318
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.296205
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.297841
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.265554
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.374538
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.289884
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.416636
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.344362
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.331057
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.171009
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.156535
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.22946
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.192566
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.230228
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.149774
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.201884
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.0739605
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.275488
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.05
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.298269
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.310849
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 final_epoch_selection candidate=11 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 final_epoch_selection embed=256 layers=4 heads=1 selection_epoch=1/150 inner_balanced_accuracy=0.279754
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 final_epoch_selection embed=256 layers=4 heads=1 selection_epoch=10/150 inner_balanced_accuracy=0.0552585
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 final_epoch_selection embed=256 layers=4 heads=1 selection_epoch=20/150 inner_balanced_accuracy=0.05
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 final_epoch_selection embed=256 layers=4 heads=1 selection_epoch=30/150 inner_balanced_accuracy=0.0504902
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 final_epoch_selection selection_early_stop_epoch=32 best_epoch=7 patience=25
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 selected_candidate=11 embed=256 layers=4 heads=1 selected_epoch=7/150 selected_inner_balanced_accuracy=0.424486
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 epoch=1/7 loss=2.24917
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=3/5 epoch=7/7 loss=1.65808
+[muat_style_tcga_comparator] completed endpoint=cancer_type_top20 fold=3/5 balanced_accuracy=0.357707
+[muat_style_tcga_comparator] training endpoint=cancer_type_top20 fold=4/5 train=7040 test=1760 epochs=150
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 architecture_search_candidates=18 search_epochs=3
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.26505
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.357288
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.2719
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.384796
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.29452
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.335803
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.304742
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.35469
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.296732
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.380111
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.25048
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.382881
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.24607
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.270208
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.234461
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.277897
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.311085
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.290489
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.219395
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.34355
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.290244
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.305468
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.314558
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.314603
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.0917865
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.0801229
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.188515
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.169437
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.0858121
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.105004
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.232062
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.176524
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.192015
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.05
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.28589
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.260726
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection candidate=2 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=1/150 inner_balanced_accuracy=0.280403
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=10/150 inner_balanced_accuracy=0.468132
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=20/150 inner_balanced_accuracy=0.510704
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=30/150 inner_balanced_accuracy=0.484368
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=40/150 inner_balanced_accuracy=0.504731
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=50/150 inner_balanced_accuracy=0.518275
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=60/150 inner_balanced_accuracy=0.539234
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=70/150 inner_balanced_accuracy=0.531375
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=80/150 inner_balanced_accuracy=0.550859
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=90/150 inner_balanced_accuracy=0.559162
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=100/150 inner_balanced_accuracy=0.564883
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=110/150 inner_balanced_accuracy=0.555951
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection embed=128 layers=1 heads=2 selection_epoch=120/150 inner_balanced_accuracy=0.559536
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 final_epoch_selection selection_early_stop_epoch=124 best_epoch=99 patience=25
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 selected_candidate=2 embed=128 layers=1 heads=2 selected_epoch=99/150 selected_inner_balanced_accuracy=0.569279
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 epoch=1/99 loss=2.34622
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 epoch=10/99 loss=1.31031
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 epoch=20/99 loss=0.821443
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 epoch=30/99 loss=0.541647
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 epoch=40/99 loss=0.417878
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 epoch=50/99 loss=0.301208
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 epoch=60/99 loss=0.181053
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 epoch=70/99 loss=0.124942
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 epoch=80/99 loss=0.0874974
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 epoch=90/99 loss=0.0320192
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=4/5 epoch=99/99 loss=0.0198227
+[muat_style_tcga_comparator] completed endpoint=cancer_type_top20 fold=4/5 balanced_accuracy=0.586503
+[muat_style_tcga_comparator] training endpoint=cancer_type_top20 fold=5/5 train=7040 test=1760 epochs=150
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 architecture_search_candidates=18 search_epochs=3
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.319729
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=1/18 embed=128 layers=1 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.379131
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.305652
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=2/18 embed=128 layers=1 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.379271
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.304094
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=3/18 embed=128 layers=2 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.368228
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.345593
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=4/18 embed=128 layers=2 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.336113
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.308995
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=5/18 embed=128 layers=4 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.314902
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.334442
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=6/18 embed=128 layers=4 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.371126
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.267657
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=7/18 embed=256 layers=1 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.29643
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.255557
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=8/18 embed=256 layers=1 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.252617
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.297883
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=9/18 embed=256 layers=2 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.319517
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.311616
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=10/18 embed=256 layers=2 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.315136
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.31451
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=11/18 embed=256 layers=4 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.363605
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.358654
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=12/18 embed=256 layers=4 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.374974
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.0969838
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=13/18 embed=512 layers=1 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.155595
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.188168
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=14/18 embed=512 layers=1 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.146067
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.212902
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=15/18 embed=512 layers=2 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.114752
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.228877
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=16/18 embed=512 layers=2 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.0879259
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=1/3 inner_balanced_accuracy=0.297054
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=17/18 embed=512 layers=4 heads=1 selection_epoch=3/3 inner_balanced_accuracy=0.122027
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=1/3 inner_balanced_accuracy=0.281977
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 candidate=18/18 embed=512 layers=4 heads=2 selection_epoch=3/3 inner_balanced_accuracy=0.320522
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection candidate=3 budget=150 (architecture ranked over 3 epochs)
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=1/150 inner_balanced_accuracy=0.322275
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=10/150 inner_balanced_accuracy=0.449543
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=20/150 inner_balanced_accuracy=0.479582
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=30/150 inner_balanced_accuracy=0.496725
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=40/150 inner_balanced_accuracy=0.5214
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=50/150 inner_balanced_accuracy=0.533218
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=60/150 inner_balanced_accuracy=0.529341
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=70/150 inner_balanced_accuracy=0.549818
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=80/150 inner_balanced_accuracy=0.554314
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=90/150 inner_balanced_accuracy=0.561214
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=100/150 inner_balanced_accuracy=0.568748
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection embed=128 layers=2 heads=1 selection_epoch=110/150 inner_balanced_accuracy=0.568269
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 final_epoch_selection selection_early_stop_epoch=111 best_epoch=86 patience=25
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 selected_candidate=3 embed=128 layers=2 heads=1 selected_epoch=86/150 selected_inner_balanced_accuracy=0.578263
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 epoch=1/86 loss=2.28274
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 epoch=10/86 loss=1.27021
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 epoch=20/86 loss=0.819843
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 epoch=30/86 loss=0.520941
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 epoch=40/86 loss=0.343716
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 epoch=50/86 loss=0.237162
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 epoch=60/86 loss=0.133925
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 epoch=70/86 loss=0.0624917
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 epoch=80/86 loss=0.0396112
+[muat_style_tcga_comparator] endpoint=cancer_type_top20 fold=5/5 epoch=86/86 loss=0.0166212
+[muat_style_tcga_comparator] completed endpoint=cancer_type_top20 fold=5/5 balanced_accuracy=0.597697
+[muat_style_tcga_comparator] done
+{
+  "active_runners": [
+    "main_manuscript_complete_panel",
+    "muat_style_tcga_comparator"
+  ],
+  "bundle_root": "${BUNDLE_ROOT}",
+  "completed_utc": "2026-08-21T00:13:32+00:00",
+  "config": "config/experiment_settings.muat_top20_comparable.yaml",
+  "dry_run": false,
+  "elapsed_seconds": 95410.923,
+  "experiments": [
+    {
+      "experiment_id": "main_manuscript_complete_panel",
+      "status": "skipped"
+    },
+    {
+      "elapsed_seconds": 95410.917,
+      "experiment_id": "muat_style_tcga_comparator",
+      "status": "completed"
+    }
+  ],
+  "feature_cache_dir": "${BUNDLE_ROOT}/results/cache/features",
+  "paths": "config/paths.yaml",
+  "refresh_cache": false,
+  "repro_root": "${BUNDLE_ROOT}",
+  "run_id": "20260819T214321Z",
+  "runtime_profile": "muat-compatible-top20-comparable",
+  "tree_method": "hist"
+}
+
+[stage top20] exit=0 elapsed=1590.2 min
+
+==============================================================================
+SUMMARY
+==============================================================================
+  TOP20  ok                 cancer_type_top20 (full fix)
+
+total runtime: 1590.2 min
+
+==============================================================================
+RESULTS
+==============================================================================
+
+HRD_Score  (spearman)
+------------------------------------------------------------------
+  A  0.4766   A  before (bug + hashed dicts)
+  B  0.5032  (+0.0266 vs A)   B  epoch fix only
+  C  0.5041  (+0.0275 vs A)   C  epoch fix + exact dicts
+  D  0.4815  (+0.0049 vs A)   D  + MuAt-faithful tokens
+
+hrd_binary_33  (auroc)
+------------------------------------------------------------------
+  A  0.7582   A  before (bug + hashed dicts)
+  B  0.7274  (-0.0308 vs A)   B  epoch fix only
+  C  0.7028  (-0.0554 vs A)   C  epoch fix + exact dicts
+  D  0.7335  (-0.0247 vs A)   D  + MuAt-faithful tokens
+
+cancer_type_top20  (MuAt's own benchmark)
+------------------------------------------------------------------
+  MuAt-compatible, fixed     accuracy 0.5703409090909091   top-5 0.8711363636363636
+  MuAt, published            accuracy 0.641          top-5 0.906
+  previous MuAt-compatible   accuracy 0.539          top-5 0.861
+  Signatures+MAF / XGBoost   accuracy 0.744          top-5 0.955
+
+[report] written -> results\tables\muat_ablation_summary.csv
+[report] tabular baselines for HRD: HRD_Score 0.781 (Spearman), hrd_binary_33 0.867 (AUROC)
