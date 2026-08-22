@@ -1,0 +1,55 @@
+{
+  "endpoint": "cancer_type_top20",
+  "representation": "signatures_plus_MAF_stack",
+  "task": "multiclass",
+  "class_order": [
+    "BLCA",
+    "BRCA",
+    "CESC",
+    "COAD",
+    "ESCA",
+    "GBM",
+    "HNSC",
+    "KIRC",
+    "KIRP",
+    "LGG",
+    "LIHC",
+    "LUAD",
+    "LUSC",
+    "OV",
+    "PRAD",
+    "SARC",
+    "SKCM",
+    "STAD",
+    "THCA",
+    "UCEC"
+  ],
+  "n_features": 1130,
+  "n_training_samples": 8800,
+  "hyperparameters": {
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 2.0,
+    "n_estimators": 300
+  },
+  "selection": {
+    "method": "5-fold cross-validation over 4 candidate settings, fitted on the full cohort",
+    "metric": "balanced_accuracy",
+    "cv_score": 0.7547367057798519
+  },
+  "preprocessing": {
+    "scaler": null,
+    "note": "XGBoost is fitted on raw features in this pipeline; only the linear and Cox learners are standardised. Apply column reordering and NaN->0 fill only.",
+    "nan_fill": 0.0
+  },
+  "provenance": {
+    "created_utc": "2026-08-22T00:47:53+00:00",
+    "seed": 20260821,
+    "model_sha256": "5f4213ab6fc74d712c9110d9e8bff812ea4742f044d196fd2239b0ee12ba3cac",
+    "xgboost_version": "3.4.1",
+    "training_cohort": "TCGA (all samples with this endpoint and representation)"
+  },
+  "caveat": "This model is fitted on the entire TCGA cohort and has NOT been evaluated on held-out TCGA data. All manuscript metrics come from nested out-of-fold predictions of separate fold models. Results from this frozen model on an external cohort are a genuine out-of-sample test, but the model itself is a new artefact and should be described as such in Methods."
+}
