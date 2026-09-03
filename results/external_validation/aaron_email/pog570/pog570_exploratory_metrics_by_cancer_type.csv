@@ -1,0 +1,1313 @@
+cancer_type,n,analysis,cutoff,metric,estimate
+Adrenocortical Carcinoma,4,continuous,,pearson_r,-0.8441130044850961
+Adrenocortical Carcinoma,4,continuous,,spearman_rho,-0.7999999999999999
+Adrenocortical Carcinoma,4,continuous,,mae,17.025002479553223
+Adrenocortical Carcinoma,4,continuous,,rmse,22.849449889038404
+Adrenocortical Carcinoma,4,continuous,,r2,-4.524839790811399
+Adrenocortical Carcinoma,4,fixed_cutoff,24,accuracy,0.5
+Adrenocortical Carcinoma,4,fixed_cutoff,24,balanced_accuracy,0.5
+Adrenocortical Carcinoma,4,fixed_cutoff,24,sensitivity,1.0
+Adrenocortical Carcinoma,4,fixed_cutoff,24,specificity,0.0
+Adrenocortical Carcinoma,4,fixed_cutoff,24,precision,0.5
+Adrenocortical Carcinoma,4,fixed_cutoff,24,f1,0.6666666666666666
+Adrenocortical Carcinoma,4,fixed_cutoff,24,auroc,0.0
+Adrenocortical Carcinoma,4,fixed_cutoff,24,average_precision,0.41666666666666663
+Adrenocortical Carcinoma,4,fixed_cutoff,24,prevalence,0.5
+Adrenocortical Carcinoma,4,fixed_cutoff,33,accuracy,0.25
+Adrenocortical Carcinoma,4,fixed_cutoff,33,balanced_accuracy,
+Adrenocortical Carcinoma,4,fixed_cutoff,33,sensitivity,0.0
+Adrenocortical Carcinoma,4,fixed_cutoff,33,specificity,0.25
+Adrenocortical Carcinoma,4,fixed_cutoff,33,precision,0.0
+Adrenocortical Carcinoma,4,fixed_cutoff,33,f1,0.0
+Adrenocortical Carcinoma,4,fixed_cutoff,33,auroc,
+Adrenocortical Carcinoma,4,fixed_cutoff,33,average_precision,
+Adrenocortical Carcinoma,4,fixed_cutoff,33,prevalence,0.0
+Adrenocortical Carcinoma,4,fixed_cutoff,42,accuracy,0.75
+Adrenocortical Carcinoma,4,fixed_cutoff,42,balanced_accuracy,
+Adrenocortical Carcinoma,4,fixed_cutoff,42,sensitivity,0.0
+Adrenocortical Carcinoma,4,fixed_cutoff,42,specificity,0.75
+Adrenocortical Carcinoma,4,fixed_cutoff,42,precision,0.0
+Adrenocortical Carcinoma,4,fixed_cutoff,42,f1,0.0
+Adrenocortical Carcinoma,4,fixed_cutoff,42,auroc,
+Adrenocortical Carcinoma,4,fixed_cutoff,42,average_precision,
+Adrenocortical Carcinoma,4,fixed_cutoff,42,prevalence,0.0
+Ampullary Cancer,1,continuous,,pearson_r,
+Ampullary Cancer,1,continuous,,spearman_rho,
+Ampullary Cancer,1,continuous,,mae,10.528247833251953
+Ampullary Cancer,1,continuous,,rmse,10.528247833251953
+Ampullary Cancer,1,continuous,,r2,
+Ampullary Cancer,1,fixed_cutoff,24,accuracy,1.0
+Ampullary Cancer,1,fixed_cutoff,24,balanced_accuracy,
+Ampullary Cancer,1,fixed_cutoff,24,sensitivity,1.0
+Ampullary Cancer,1,fixed_cutoff,24,specificity,
+Ampullary Cancer,1,fixed_cutoff,24,precision,1.0
+Ampullary Cancer,1,fixed_cutoff,24,f1,1.0
+Ampullary Cancer,1,fixed_cutoff,24,auroc,
+Ampullary Cancer,1,fixed_cutoff,24,average_precision,
+Ampullary Cancer,1,fixed_cutoff,24,prevalence,1.0
+Ampullary Cancer,1,fixed_cutoff,33,accuracy,1.0
+Ampullary Cancer,1,fixed_cutoff,33,balanced_accuracy,
+Ampullary Cancer,1,fixed_cutoff,33,sensitivity,1.0
+Ampullary Cancer,1,fixed_cutoff,33,specificity,
+Ampullary Cancer,1,fixed_cutoff,33,precision,1.0
+Ampullary Cancer,1,fixed_cutoff,33,f1,1.0
+Ampullary Cancer,1,fixed_cutoff,33,auroc,
+Ampullary Cancer,1,fixed_cutoff,33,average_precision,
+Ampullary Cancer,1,fixed_cutoff,33,prevalence,1.0
+Ampullary Cancer,1,fixed_cutoff,42,accuracy,1.0
+Ampullary Cancer,1,fixed_cutoff,42,balanced_accuracy,
+Ampullary Cancer,1,fixed_cutoff,42,sensitivity,1.0
+Ampullary Cancer,1,fixed_cutoff,42,specificity,
+Ampullary Cancer,1,fixed_cutoff,42,precision,1.0
+Ampullary Cancer,1,fixed_cutoff,42,f1,1.0
+Ampullary Cancer,1,fixed_cutoff,42,auroc,
+Ampullary Cancer,1,fixed_cutoff,42,average_precision,
+Ampullary Cancer,1,fixed_cutoff,42,prevalence,1.0
+Anal Cancer,6,continuous,,pearson_r,-0.38168597557122397
+Anal Cancer,6,continuous,,spearman_rho,-0.3142857142857143
+Anal Cancer,6,continuous,,mae,20.947027842203777
+Anal Cancer,6,continuous,,rmse,25.83638600251257
+Anal Cancer,6,continuous,,r2,-2.4115102640757784
+Anal Cancer,6,fixed_cutoff,24,accuracy,0.3333333333333333
+Anal Cancer,6,fixed_cutoff,24,balanced_accuracy,0.375
+Anal Cancer,6,fixed_cutoff,24,sensitivity,0.5
+Anal Cancer,6,fixed_cutoff,24,specificity,0.25
+Anal Cancer,6,fixed_cutoff,24,precision,0.25
+Anal Cancer,6,fixed_cutoff,24,f1,0.3333333333333333
+Anal Cancer,6,fixed_cutoff,24,auroc,0.25
+Anal Cancer,6,fixed_cutoff,24,average_precision,0.325
+Anal Cancer,6,fixed_cutoff,24,prevalence,0.3333333333333333
+Anal Cancer,6,fixed_cutoff,33,accuracy,0.5
+Anal Cancer,6,fixed_cutoff,33,balanced_accuracy,0.3
+Anal Cancer,6,fixed_cutoff,33,sensitivity,0.0
+Anal Cancer,6,fixed_cutoff,33,specificity,0.6
+Anal Cancer,6,fixed_cutoff,33,precision,0.0
+Anal Cancer,6,fixed_cutoff,33,f1,0.0
+Anal Cancer,6,fixed_cutoff,33,auroc,0.19999999999999996
+Anal Cancer,6,fixed_cutoff,33,average_precision,0.2
+Anal Cancer,6,fixed_cutoff,33,prevalence,0.16666666666666666
+Anal Cancer,6,fixed_cutoff,42,accuracy,0.8333333333333334
+Anal Cancer,6,fixed_cutoff,42,balanced_accuracy,
+Anal Cancer,6,fixed_cutoff,42,sensitivity,0.0
+Anal Cancer,6,fixed_cutoff,42,specificity,0.8333333333333334
+Anal Cancer,6,fixed_cutoff,42,precision,0.0
+Anal Cancer,6,fixed_cutoff,42,f1,0.0
+Anal Cancer,6,fixed_cutoff,42,auroc,
+Anal Cancer,6,fixed_cutoff,42,average_precision,
+Anal Cancer,6,fixed_cutoff,42,prevalence,0.0
+Appendiceal Cancer,3,continuous,,pearson_r,0.5599220888819207
+Appendiceal Cancer,3,continuous,,spearman_rho,0.5
+Appendiceal Cancer,3,continuous,,mae,21.188248952229817
+Appendiceal Cancer,3,continuous,,rmse,21.664645762755498
+Appendiceal Cancer,3,continuous,,r2,-14.880495805380143
+Appendiceal Cancer,3,fixed_cutoff,24,accuracy,0.6666666666666666
+Appendiceal Cancer,3,fixed_cutoff,24,balanced_accuracy,0.5
+Appendiceal Cancer,3,fixed_cutoff,24,sensitivity,1.0
+Appendiceal Cancer,3,fixed_cutoff,24,specificity,0.0
+Appendiceal Cancer,3,fixed_cutoff,24,precision,0.6666666666666666
+Appendiceal Cancer,3,fixed_cutoff,24,f1,0.8
+Appendiceal Cancer,3,fixed_cutoff,24,auroc,0.5
+Appendiceal Cancer,3,fixed_cutoff,24,average_precision,0.8333333333333333
+Appendiceal Cancer,3,fixed_cutoff,24,prevalence,0.6666666666666666
+Appendiceal Cancer,3,fixed_cutoff,33,accuracy,0.3333333333333333
+Appendiceal Cancer,3,fixed_cutoff,33,balanced_accuracy,0.5
+Appendiceal Cancer,3,fixed_cutoff,33,sensitivity,1.0
+Appendiceal Cancer,3,fixed_cutoff,33,specificity,0.0
+Appendiceal Cancer,3,fixed_cutoff,33,precision,0.3333333333333333
+Appendiceal Cancer,3,fixed_cutoff,33,f1,0.5
+Appendiceal Cancer,3,fixed_cutoff,33,auroc,1.0
+Appendiceal Cancer,3,fixed_cutoff,33,average_precision,1.0
+Appendiceal Cancer,3,fixed_cutoff,33,prevalence,0.3333333333333333
+Appendiceal Cancer,3,fixed_cutoff,42,accuracy,0.0
+Appendiceal Cancer,3,fixed_cutoff,42,balanced_accuracy,
+Appendiceal Cancer,3,fixed_cutoff,42,sensitivity,0.0
+Appendiceal Cancer,3,fixed_cutoff,42,specificity,0.0
+Appendiceal Cancer,3,fixed_cutoff,42,precision,0.0
+Appendiceal Cancer,3,fixed_cutoff,42,f1,0.0
+Appendiceal Cancer,3,fixed_cutoff,42,auroc,
+Appendiceal Cancer,3,fixed_cutoff,42,average_precision,
+Appendiceal Cancer,3,fixed_cutoff,42,prevalence,0.0
+Bladder Cancer,1,continuous,,pearson_r,
+Bladder Cancer,1,continuous,,spearman_rho,
+Bladder Cancer,1,continuous,,mae,11.412185668945312
+Bladder Cancer,1,continuous,,rmse,11.412185668945312
+Bladder Cancer,1,continuous,,r2,
+Bladder Cancer,1,fixed_cutoff,24,accuracy,1.0
+Bladder Cancer,1,fixed_cutoff,24,balanced_accuracy,
+Bladder Cancer,1,fixed_cutoff,24,sensitivity,1.0
+Bladder Cancer,1,fixed_cutoff,24,specificity,
+Bladder Cancer,1,fixed_cutoff,24,precision,1.0
+Bladder Cancer,1,fixed_cutoff,24,f1,1.0
+Bladder Cancer,1,fixed_cutoff,24,auroc,
+Bladder Cancer,1,fixed_cutoff,24,average_precision,
+Bladder Cancer,1,fixed_cutoff,24,prevalence,1.0
+Bladder Cancer,1,fixed_cutoff,33,accuracy,1.0
+Bladder Cancer,1,fixed_cutoff,33,balanced_accuracy,
+Bladder Cancer,1,fixed_cutoff,33,sensitivity,1.0
+Bladder Cancer,1,fixed_cutoff,33,specificity,
+Bladder Cancer,1,fixed_cutoff,33,precision,1.0
+Bladder Cancer,1,fixed_cutoff,33,f1,1.0
+Bladder Cancer,1,fixed_cutoff,33,auroc,
+Bladder Cancer,1,fixed_cutoff,33,average_precision,
+Bladder Cancer,1,fixed_cutoff,33,prevalence,1.0
+Bladder Cancer,1,fixed_cutoff,42,accuracy,1.0
+Bladder Cancer,1,fixed_cutoff,42,balanced_accuracy,
+Bladder Cancer,1,fixed_cutoff,42,sensitivity,1.0
+Bladder Cancer,1,fixed_cutoff,42,specificity,
+Bladder Cancer,1,fixed_cutoff,42,precision,1.0
+Bladder Cancer,1,fixed_cutoff,42,f1,1.0
+Bladder Cancer,1,fixed_cutoff,42,auroc,
+Bladder Cancer,1,fixed_cutoff,42,average_precision,
+Bladder Cancer,1,fixed_cutoff,42,prevalence,1.0
+Bone Cancer,11,continuous,,pearson_r,0.4548399558950774
+Bone Cancer,11,continuous,,spearman_rho,0.3545454545454546
+Bone Cancer,11,continuous,,mae,20.43767721002752
+Bone Cancer,11,continuous,,rmse,23.585491554891135
+Bone Cancer,11,continuous,,r2,-3.7575151850570228
+Bone Cancer,11,fixed_cutoff,24,accuracy,0.36363636363636365
+Bone Cancer,11,fixed_cutoff,24,balanced_accuracy,0.5
+Bone Cancer,11,fixed_cutoff,24,sensitivity,1.0
+Bone Cancer,11,fixed_cutoff,24,specificity,0.0
+Bone Cancer,11,fixed_cutoff,24,precision,0.36363636363636365
+Bone Cancer,11,fixed_cutoff,24,f1,0.5333333333333333
+Bone Cancer,11,fixed_cutoff,24,auroc,0.8928571428571428
+Bone Cancer,11,fixed_cutoff,24,average_precision,0.8541666666666666
+Bone Cancer,11,fixed_cutoff,24,prevalence,0.36363636363636365
+Bone Cancer,11,fixed_cutoff,33,accuracy,0.6363636363636364
+Bone Cancer,11,fixed_cutoff,33,balanced_accuracy,0.75
+Bone Cancer,11,fixed_cutoff,33,sensitivity,1.0
+Bone Cancer,11,fixed_cutoff,33,specificity,0.5
+Bone Cancer,11,fixed_cutoff,33,precision,0.42857142857142855
+Bone Cancer,11,fixed_cutoff,33,f1,0.6
+Bone Cancer,11,fixed_cutoff,33,auroc,0.7916666666666666
+Bone Cancer,11,fixed_cutoff,33,average_precision,0.6666666666666667
+Bone Cancer,11,fixed_cutoff,33,prevalence,0.2727272727272727
+Bone Cancer,11,fixed_cutoff,42,accuracy,0.5454545454545454
+Bone Cancer,11,fixed_cutoff,42,balanced_accuracy,
+Bone Cancer,11,fixed_cutoff,42,sensitivity,0.0
+Bone Cancer,11,fixed_cutoff,42,specificity,0.5454545454545454
+Bone Cancer,11,fixed_cutoff,42,precision,0.0
+Bone Cancer,11,fixed_cutoff,42,f1,0.0
+Bone Cancer,11,fixed_cutoff,42,auroc,
+Bone Cancer,11,fixed_cutoff,42,average_precision,
+Bone Cancer,11,fixed_cutoff,42,prevalence,0.0
+Breast Sarcoma,1,continuous,,pearson_r,
+Breast Sarcoma,1,continuous,,spearman_rho,
+Breast Sarcoma,1,continuous,,mae,27.839277267456055
+Breast Sarcoma,1,continuous,,rmse,27.839277267456055
+Breast Sarcoma,1,continuous,,r2,
+Breast Sarcoma,1,fixed_cutoff,24,accuracy,0.0
+Breast Sarcoma,1,fixed_cutoff,24,balanced_accuracy,
+Breast Sarcoma,1,fixed_cutoff,24,sensitivity,0.0
+Breast Sarcoma,1,fixed_cutoff,24,specificity,0.0
+Breast Sarcoma,1,fixed_cutoff,24,precision,0.0
+Breast Sarcoma,1,fixed_cutoff,24,f1,0.0
+Breast Sarcoma,1,fixed_cutoff,24,auroc,
+Breast Sarcoma,1,fixed_cutoff,24,average_precision,
+Breast Sarcoma,1,fixed_cutoff,24,prevalence,0.0
+Breast Sarcoma,1,fixed_cutoff,33,accuracy,1.0
+Breast Sarcoma,1,fixed_cutoff,33,balanced_accuracy,
+Breast Sarcoma,1,fixed_cutoff,33,sensitivity,0.0
+Breast Sarcoma,1,fixed_cutoff,33,specificity,1.0
+Breast Sarcoma,1,fixed_cutoff,33,precision,0.0
+Breast Sarcoma,1,fixed_cutoff,33,f1,0.0
+Breast Sarcoma,1,fixed_cutoff,33,auroc,
+Breast Sarcoma,1,fixed_cutoff,33,average_precision,
+Breast Sarcoma,1,fixed_cutoff,33,prevalence,0.0
+Breast Sarcoma,1,fixed_cutoff,42,accuracy,1.0
+Breast Sarcoma,1,fixed_cutoff,42,balanced_accuracy,
+Breast Sarcoma,1,fixed_cutoff,42,sensitivity,0.0
+Breast Sarcoma,1,fixed_cutoff,42,specificity,1.0
+Breast Sarcoma,1,fixed_cutoff,42,precision,0.0
+Breast Sarcoma,1,fixed_cutoff,42,f1,0.0
+Breast Sarcoma,1,fixed_cutoff,42,auroc,
+Breast Sarcoma,1,fixed_cutoff,42,average_precision,
+Breast Sarcoma,1,fixed_cutoff,42,prevalence,0.0
+CNS Cancer,7,continuous,,pearson_r,-0.516642877493865
+CNS Cancer,7,continuous,,spearman_rho,-0.3243374865704013
+CNS Cancer,7,continuous,,mae,22.027975627354213
+CNS Cancer,7,continuous,,rmse,23.950573095108773
+CNS Cancer,7,continuous,,r2,-6.642160855797515
+CNS Cancer,7,fixed_cutoff,24,accuracy,0.14285714285714285
+CNS Cancer,7,fixed_cutoff,24,balanced_accuracy,0.5
+CNS Cancer,7,fixed_cutoff,24,sensitivity,1.0
+CNS Cancer,7,fixed_cutoff,24,specificity,0.0
+CNS Cancer,7,fixed_cutoff,24,precision,0.14285714285714285
+CNS Cancer,7,fixed_cutoff,24,f1,0.25
+CNS Cancer,7,fixed_cutoff,24,auroc,0.16666666666666663
+CNS Cancer,7,fixed_cutoff,24,average_precision,0.16666666666666666
+CNS Cancer,7,fixed_cutoff,24,prevalence,0.14285714285714285
+CNS Cancer,7,fixed_cutoff,33,accuracy,0.8571428571428571
+CNS Cancer,7,fixed_cutoff,33,balanced_accuracy,
+CNS Cancer,7,fixed_cutoff,33,sensitivity,0.0
+CNS Cancer,7,fixed_cutoff,33,specificity,0.8571428571428571
+CNS Cancer,7,fixed_cutoff,33,precision,0.0
+CNS Cancer,7,fixed_cutoff,33,f1,0.0
+CNS Cancer,7,fixed_cutoff,33,auroc,
+CNS Cancer,7,fixed_cutoff,33,average_precision,
+CNS Cancer,7,fixed_cutoff,33,prevalence,0.0
+CNS Cancer,7,fixed_cutoff,42,accuracy,1.0
+CNS Cancer,7,fixed_cutoff,42,balanced_accuracy,
+CNS Cancer,7,fixed_cutoff,42,sensitivity,0.0
+CNS Cancer,7,fixed_cutoff,42,specificity,1.0
+CNS Cancer,7,fixed_cutoff,42,precision,0.0
+CNS Cancer,7,fixed_cutoff,42,f1,0.0
+CNS Cancer,7,fixed_cutoff,42,auroc,
+CNS Cancer,7,fixed_cutoff,42,average_precision,
+CNS Cancer,7,fixed_cutoff,42,prevalence,0.0
+Cancer of Unknown Primary,1,continuous,,pearson_r,
+Cancer of Unknown Primary,1,continuous,,spearman_rho,
+Cancer of Unknown Primary,1,continuous,,mae,3.8888511657714844
+Cancer of Unknown Primary,1,continuous,,rmse,3.8888511657714844
+Cancer of Unknown Primary,1,continuous,,r2,
+Cancer of Unknown Primary,1,fixed_cutoff,24,accuracy,1.0
+Cancer of Unknown Primary,1,fixed_cutoff,24,balanced_accuracy,
+Cancer of Unknown Primary,1,fixed_cutoff,24,sensitivity,1.0
+Cancer of Unknown Primary,1,fixed_cutoff,24,specificity,
+Cancer of Unknown Primary,1,fixed_cutoff,24,precision,1.0
+Cancer of Unknown Primary,1,fixed_cutoff,24,f1,1.0
+Cancer of Unknown Primary,1,fixed_cutoff,24,auroc,
+Cancer of Unknown Primary,1,fixed_cutoff,24,average_precision,
+Cancer of Unknown Primary,1,fixed_cutoff,24,prevalence,1.0
+Cancer of Unknown Primary,1,fixed_cutoff,33,accuracy,1.0
+Cancer of Unknown Primary,1,fixed_cutoff,33,balanced_accuracy,
+Cancer of Unknown Primary,1,fixed_cutoff,33,sensitivity,1.0
+Cancer of Unknown Primary,1,fixed_cutoff,33,specificity,
+Cancer of Unknown Primary,1,fixed_cutoff,33,precision,1.0
+Cancer of Unknown Primary,1,fixed_cutoff,33,f1,1.0
+Cancer of Unknown Primary,1,fixed_cutoff,33,auroc,
+Cancer of Unknown Primary,1,fixed_cutoff,33,average_precision,
+Cancer of Unknown Primary,1,fixed_cutoff,33,prevalence,1.0
+Cancer of Unknown Primary,1,fixed_cutoff,42,accuracy,1.0
+Cancer of Unknown Primary,1,fixed_cutoff,42,balanced_accuracy,
+Cancer of Unknown Primary,1,fixed_cutoff,42,sensitivity,0.0
+Cancer of Unknown Primary,1,fixed_cutoff,42,specificity,1.0
+Cancer of Unknown Primary,1,fixed_cutoff,42,precision,0.0
+Cancer of Unknown Primary,1,fixed_cutoff,42,f1,0.0
+Cancer of Unknown Primary,1,fixed_cutoff,42,auroc,
+Cancer of Unknown Primary,1,fixed_cutoff,42,average_precision,
+Cancer of Unknown Primary,1,fixed_cutoff,42,prevalence,0.0
+Cervical Cancer,5,continuous,,pearson_r,0.13226299827281934
+Cervical Cancer,5,continuous,,spearman_rho,-0.4103913408340617
+Cervical Cancer,5,continuous,,mae,14.093827438354491
+Cervical Cancer,5,continuous,,rmse,16.308997474495577
+Cervical Cancer,5,continuous,,r2,-0.15765754971754498
+Cervical Cancer,5,fixed_cutoff,24,accuracy,0.6
+Cervical Cancer,5,fixed_cutoff,24,balanced_accuracy,0.5
+Cervical Cancer,5,fixed_cutoff,24,sensitivity,1.0
+Cervical Cancer,5,fixed_cutoff,24,specificity,0.0
+Cervical Cancer,5,fixed_cutoff,24,precision,0.6
+Cervical Cancer,5,fixed_cutoff,24,f1,0.75
+Cervical Cancer,5,fixed_cutoff,24,auroc,0.3333333333333333
+Cervical Cancer,5,fixed_cutoff,24,average_precision,0.7
+Cervical Cancer,5,fixed_cutoff,24,prevalence,0.6
+Cervical Cancer,5,fixed_cutoff,33,accuracy,0.6
+Cervical Cancer,5,fixed_cutoff,33,balanced_accuracy,0.6666666666666666
+Cervical Cancer,5,fixed_cutoff,33,sensitivity,0.3333333333333333
+Cervical Cancer,5,fixed_cutoff,33,specificity,1.0
+Cervical Cancer,5,fixed_cutoff,33,precision,1.0
+Cervical Cancer,5,fixed_cutoff,33,f1,0.5
+Cervical Cancer,5,fixed_cutoff,33,auroc,0.3333333333333333
+Cervical Cancer,5,fixed_cutoff,33,average_precision,0.7
+Cervical Cancer,5,fixed_cutoff,33,prevalence,0.6
+Cervical Cancer,5,fixed_cutoff,42,accuracy,0.6
+Cervical Cancer,5,fixed_cutoff,42,balanced_accuracy,0.375
+Cervical Cancer,5,fixed_cutoff,42,sensitivity,0.0
+Cervical Cancer,5,fixed_cutoff,42,specificity,0.75
+Cervical Cancer,5,fixed_cutoff,42,precision,0.0
+Cervical Cancer,5,fixed_cutoff,42,f1,0.0
+Cervical Cancer,5,fixed_cutoff,42,auroc,0.25
+Cervical Cancer,5,fixed_cutoff,42,average_precision,0.25
+Cervical Cancer,5,fixed_cutoff,42,prevalence,0.2
+Colorectal Cancer,74,continuous,,pearson_r,0.224518408777916
+Colorectal Cancer,74,continuous,,spearman_rho,0.14769860741169955
+Colorectal Cancer,74,continuous,,mae,24.994265762535303
+Colorectal Cancer,74,continuous,,rmse,27.898828552189812
+Colorectal Cancer,74,continuous,,r2,-4.27891268681431
+Colorectal Cancer,74,fixed_cutoff,24,accuracy,0.4594594594594595
+Colorectal Cancer,74,fixed_cutoff,24,balanced_accuracy,0.5238095238095238
+Colorectal Cancer,74,fixed_cutoff,24,sensitivity,1.0
+Colorectal Cancer,74,fixed_cutoff,24,specificity,0.047619047619047616
+Colorectal Cancer,74,fixed_cutoff,24,precision,0.4444444444444444
+Colorectal Cancer,74,fixed_cutoff,24,f1,0.6153846153846154
+Colorectal Cancer,74,fixed_cutoff,24,auroc,0.5379464285714286
+Colorectal Cancer,74,fixed_cutoff,24,average_precision,0.47241147455967114
+Colorectal Cancer,74,fixed_cutoff,24,prevalence,0.43243243243243246
+Colorectal Cancer,74,fixed_cutoff,33,accuracy,0.21621621621621623
+Colorectal Cancer,74,fixed_cutoff,33,balanced_accuracy,0.5396825396825397
+Colorectal Cancer,74,fixed_cutoff,33,sensitivity,1.0
+Colorectal Cancer,74,fixed_cutoff,33,specificity,0.07936507936507936
+Colorectal Cancer,74,fixed_cutoff,33,precision,0.15942028985507245
+Colorectal Cancer,74,fixed_cutoff,33,f1,0.275
+Colorectal Cancer,74,fixed_cutoff,33,auroc,0.5901875901875901
+Colorectal Cancer,74,fixed_cutoff,33,average_precision,0.21050780626423202
+Colorectal Cancer,74,fixed_cutoff,33,prevalence,0.14864864864864866
+Colorectal Cancer,74,fixed_cutoff,42,accuracy,0.36486486486486486
+Colorectal Cancer,74,fixed_cutoff,42,balanced_accuracy,0.6690140845070423
+Colorectal Cancer,74,fixed_cutoff,42,sensitivity,1.0
+Colorectal Cancer,74,fixed_cutoff,42,specificity,0.3380281690140845
+Colorectal Cancer,74,fixed_cutoff,42,precision,0.06
+Colorectal Cancer,74,fixed_cutoff,42,f1,0.11320754716981132
+Colorectal Cancer,74,fixed_cutoff,42,auroc,0.8075117370892019
+Colorectal Cancer,74,fixed_cutoff,42,average_precision,0.13846153846153847
+Colorectal Cancer,74,fixed_cutoff,42,prevalence,0.04054054054054054
+Embryonal Tumor,2,continuous,,pearson_r,
+Embryonal Tumor,2,continuous,,spearman_rho,
+Embryonal Tumor,2,continuous,,mae,26.122407913208008
+Embryonal Tumor,2,continuous,,rmse,27.34969989664101
+Embryonal Tumor,2,continuous,,r2,-1.3086607544331024
+Embryonal Tumor,2,fixed_cutoff,24,accuracy,0.5
+Embryonal Tumor,2,fixed_cutoff,24,balanced_accuracy,0.5
+Embryonal Tumor,2,fixed_cutoff,24,sensitivity,1.0
+Embryonal Tumor,2,fixed_cutoff,24,specificity,0.0
+Embryonal Tumor,2,fixed_cutoff,24,precision,0.5
+Embryonal Tumor,2,fixed_cutoff,24,f1,0.6666666666666666
+Embryonal Tumor,2,fixed_cutoff,24,auroc,1.0
+Embryonal Tumor,2,fixed_cutoff,24,average_precision,1.0
+Embryonal Tumor,2,fixed_cutoff,24,prevalence,0.5
+Embryonal Tumor,2,fixed_cutoff,33,accuracy,0.5
+Embryonal Tumor,2,fixed_cutoff,33,balanced_accuracy,0.5
+Embryonal Tumor,2,fixed_cutoff,33,sensitivity,1.0
+Embryonal Tumor,2,fixed_cutoff,33,specificity,0.0
+Embryonal Tumor,2,fixed_cutoff,33,precision,0.5
+Embryonal Tumor,2,fixed_cutoff,33,f1,0.6666666666666666
+Embryonal Tumor,2,fixed_cutoff,33,auroc,1.0
+Embryonal Tumor,2,fixed_cutoff,33,average_precision,1.0
+Embryonal Tumor,2,fixed_cutoff,33,prevalence,0.5
+Embryonal Tumor,2,fixed_cutoff,42,accuracy,0.5
+Embryonal Tumor,2,fixed_cutoff,42,balanced_accuracy,
+Embryonal Tumor,2,fixed_cutoff,42,sensitivity,0.0
+Embryonal Tumor,2,fixed_cutoff,42,specificity,0.5
+Embryonal Tumor,2,fixed_cutoff,42,precision,0.0
+Embryonal Tumor,2,fixed_cutoff,42,f1,0.0
+Embryonal Tumor,2,fixed_cutoff,42,auroc,
+Embryonal Tumor,2,fixed_cutoff,42,average_precision,
+Embryonal Tumor,2,fixed_cutoff,42,prevalence,0.0
+Endometrial Cancer,12,continuous,,pearson_r,0.3946318491479649
+Endometrial Cancer,12,continuous,,spearman_rho,0.4063053516362408
+Endometrial Cancer,12,continuous,,mae,26.03058449427287
+Endometrial Cancer,12,continuous,,rmse,29.122770960793908
+Endometrial Cancer,12,continuous,,r2,-5.727158002457723
+Endometrial Cancer,12,fixed_cutoff,24,accuracy,0.3333333333333333
+Endometrial Cancer,12,fixed_cutoff,24,balanced_accuracy,0.5555555555555556
+Endometrial Cancer,12,fixed_cutoff,24,sensitivity,1.0
+Endometrial Cancer,12,fixed_cutoff,24,specificity,0.1111111111111111
+Endometrial Cancer,12,fixed_cutoff,24,precision,0.2727272727272727
+Endometrial Cancer,12,fixed_cutoff,24,f1,0.42857142857142855
+Endometrial Cancer,12,fixed_cutoff,24,auroc,0.5925925925925926
+Endometrial Cancer,12,fixed_cutoff,24,average_precision,0.5575757575757576
+Endometrial Cancer,12,fixed_cutoff,24,prevalence,0.25
+Endometrial Cancer,12,fixed_cutoff,33,accuracy,0.3333333333333333
+Endometrial Cancer,12,fixed_cutoff,33,balanced_accuracy,
+Endometrial Cancer,12,fixed_cutoff,33,sensitivity,0.0
+Endometrial Cancer,12,fixed_cutoff,33,specificity,0.3333333333333333
+Endometrial Cancer,12,fixed_cutoff,33,precision,0.0
+Endometrial Cancer,12,fixed_cutoff,33,f1,0.0
+Endometrial Cancer,12,fixed_cutoff,33,auroc,
+Endometrial Cancer,12,fixed_cutoff,33,average_precision,
+Endometrial Cancer,12,fixed_cutoff,33,prevalence,0.0
+Endometrial Cancer,12,fixed_cutoff,42,accuracy,0.6666666666666666
+Endometrial Cancer,12,fixed_cutoff,42,balanced_accuracy,
+Endometrial Cancer,12,fixed_cutoff,42,sensitivity,0.0
+Endometrial Cancer,12,fixed_cutoff,42,specificity,0.6666666666666666
+Endometrial Cancer,12,fixed_cutoff,42,precision,0.0
+Endometrial Cancer,12,fixed_cutoff,42,f1,0.0
+Endometrial Cancer,12,fixed_cutoff,42,auroc,
+Endometrial Cancer,12,fixed_cutoff,42,average_precision,
+Endometrial Cancer,12,fixed_cutoff,42,prevalence,0.0
+Esophagogastric Cancer,18,continuous,,pearson_r,0.6692512751007018
+Esophagogastric Cancer,18,continuous,,spearman_rho,0.6180885981479114
+Esophagogastric Cancer,18,continuous,,mae,22.438095304701065
+Esophagogastric Cancer,18,continuous,,rmse,24.65470906852407
+Esophagogastric Cancer,18,continuous,,r2,-1.7205342590086534
+Esophagogastric Cancer,18,fixed_cutoff,24,accuracy,0.5555555555555556
+Esophagogastric Cancer,18,fixed_cutoff,24,balanced_accuracy,0.5
+Esophagogastric Cancer,18,fixed_cutoff,24,sensitivity,1.0
+Esophagogastric Cancer,18,fixed_cutoff,24,specificity,0.0
+Esophagogastric Cancer,18,fixed_cutoff,24,precision,0.5555555555555556
+Esophagogastric Cancer,18,fixed_cutoff,24,f1,0.7142857142857143
+Esophagogastric Cancer,18,fixed_cutoff,24,auroc,0.8125
+Esophagogastric Cancer,18,fixed_cutoff,24,average_precision,0.8567704517704517
+Esophagogastric Cancer,18,fixed_cutoff,24,prevalence,0.5555555555555556
+Esophagogastric Cancer,18,fixed_cutoff,33,accuracy,0.3888888888888889
+Esophagogastric Cancer,18,fixed_cutoff,33,balanced_accuracy,0.5769230769230769
+Esophagogastric Cancer,18,fixed_cutoff,33,sensitivity,1.0
+Esophagogastric Cancer,18,fixed_cutoff,33,specificity,0.15384615384615385
+Esophagogastric Cancer,18,fixed_cutoff,33,precision,0.3125
+Esophagogastric Cancer,18,fixed_cutoff,33,f1,0.47619047619047616
+Esophagogastric Cancer,18,fixed_cutoff,33,auroc,0.676923076923077
+Esophagogastric Cancer,18,fixed_cutoff,33,average_precision,0.4408119658119658
+Esophagogastric Cancer,18,fixed_cutoff,33,prevalence,0.2777777777777778
+Esophagogastric Cancer,18,fixed_cutoff,42,accuracy,0.4444444444444444
+Esophagogastric Cancer,18,fixed_cutoff,42,balanced_accuracy,0.6875
+Esophagogastric Cancer,18,fixed_cutoff,42,sensitivity,1.0
+Esophagogastric Cancer,18,fixed_cutoff,42,specificity,0.375
+Esophagogastric Cancer,18,fixed_cutoff,42,precision,0.16666666666666666
+Esophagogastric Cancer,18,fixed_cutoff,42,f1,0.2857142857142857
+Esophagogastric Cancer,18,fixed_cutoff,42,auroc,0.71875
+Esophagogastric Cancer,18,fixed_cutoff,42,average_precision,0.25
+Esophagogastric Cancer,18,fixed_cutoff,42,prevalence,0.1111111111111111
+Gastrointestinal Neuroendocrine Tumor,2,continuous,,pearson_r,
+Gastrointestinal Neuroendocrine Tumor,2,continuous,,spearman_rho,
+Gastrointestinal Neuroendocrine Tumor,2,continuous,,mae,29.9754581451416
+Gastrointestinal Neuroendocrine Tumor,2,continuous,,rmse,30.10895502399725
+Gastrointestinal Neuroendocrine Tumor,2,continuous,,r2,-43.76786037714021
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,24,accuracy,0.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,24,balanced_accuracy,
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,24,sensitivity,0.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,24,specificity,0.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,24,precision,0.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,24,f1,0.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,24,auroc,
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,24,average_precision,
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,24,prevalence,0.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,33,accuracy,0.5
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,33,balanced_accuracy,
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,33,sensitivity,0.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,33,specificity,0.5
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,33,precision,0.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,33,f1,0.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,33,auroc,
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,33,average_precision,
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,33,prevalence,0.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,42,accuracy,1.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,42,balanced_accuracy,
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,42,sensitivity,0.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,42,specificity,1.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,42,precision,0.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,42,f1,0.0
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,42,auroc,
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,42,average_precision,
+Gastrointestinal Neuroendocrine Tumor,2,fixed_cutoff,42,prevalence,0.0
+Gastrointestinal Stromal Tumor,4,continuous,,pearson_r,0.05920961789795601
+Gastrointestinal Stromal Tumor,4,continuous,,spearman_rho,-0.39999999999999997
+Gastrointestinal Stromal Tumor,4,continuous,,mae,14.37670373916626
+Gastrointestinal Stromal Tumor,4,continuous,,rmse,16.717870121305015
+Gastrointestinal Stromal Tumor,4,continuous,,r2,-6.657183051858165
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,24,accuracy,0.5
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,24,balanced_accuracy,0.5
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,24,sensitivity,1.0
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,24,specificity,0.0
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,24,precision,0.5
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,24,f1,0.6666666666666666
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,24,auroc,0.25
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,24,average_precision,0.5
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,24,prevalence,0.5
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,33,accuracy,0.5
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,33,balanced_accuracy,
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,33,sensitivity,0.0
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,33,specificity,0.5
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,33,precision,0.0
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,33,f1,0.0
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,33,auroc,
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,33,average_precision,
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,33,prevalence,0.0
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,42,accuracy,0.75
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,42,balanced_accuracy,
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,42,sensitivity,0.0
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,42,specificity,0.75
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,42,precision,0.0
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,42,f1,0.0
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,42,auroc,
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,42,average_precision,
+Gastrointestinal Stromal Tumor,4,fixed_cutoff,42,prevalence,0.0
+Germ Cell Tumor,1,continuous,,pearson_r,
+Germ Cell Tumor,1,continuous,,spearman_rho,
+Germ Cell Tumor,1,continuous,,mae,19.463886260986328
+Germ Cell Tumor,1,continuous,,rmse,19.463886260986328
+Germ Cell Tumor,1,continuous,,r2,
+Germ Cell Tumor,1,fixed_cutoff,24,accuracy,1.0
+Germ Cell Tumor,1,fixed_cutoff,24,balanced_accuracy,
+Germ Cell Tumor,1,fixed_cutoff,24,sensitivity,1.0
+Germ Cell Tumor,1,fixed_cutoff,24,specificity,
+Germ Cell Tumor,1,fixed_cutoff,24,precision,1.0
+Germ Cell Tumor,1,fixed_cutoff,24,f1,1.0
+Germ Cell Tumor,1,fixed_cutoff,24,auroc,
+Germ Cell Tumor,1,fixed_cutoff,24,average_precision,
+Germ Cell Tumor,1,fixed_cutoff,24,prevalence,1.0
+Germ Cell Tumor,1,fixed_cutoff,33,accuracy,1.0
+Germ Cell Tumor,1,fixed_cutoff,33,balanced_accuracy,
+Germ Cell Tumor,1,fixed_cutoff,33,sensitivity,1.0
+Germ Cell Tumor,1,fixed_cutoff,33,specificity,
+Germ Cell Tumor,1,fixed_cutoff,33,precision,1.0
+Germ Cell Tumor,1,fixed_cutoff,33,f1,1.0
+Germ Cell Tumor,1,fixed_cutoff,33,auroc,
+Germ Cell Tumor,1,fixed_cutoff,33,average_precision,
+Germ Cell Tumor,1,fixed_cutoff,33,prevalence,1.0
+Germ Cell Tumor,1,fixed_cutoff,42,accuracy,0.0
+Germ Cell Tumor,1,fixed_cutoff,42,balanced_accuracy,
+Germ Cell Tumor,1,fixed_cutoff,42,sensitivity,0.0
+Germ Cell Tumor,1,fixed_cutoff,42,specificity,0.0
+Germ Cell Tumor,1,fixed_cutoff,42,precision,0.0
+Germ Cell Tumor,1,fixed_cutoff,42,f1,0.0
+Germ Cell Tumor,1,fixed_cutoff,42,auroc,
+Germ Cell Tumor,1,fixed_cutoff,42,average_precision,
+Germ Cell Tumor,1,fixed_cutoff,42,prevalence,0.0
+Glioma,7,continuous,,pearson_r,-0.10769706368739196
+Glioma,7,continuous,,spearman_rho,-0.03603749850782236
+Glioma,7,continuous,,mae,24.691919599260604
+Glioma,7,continuous,,rmse,26.288054685887566
+Glioma,7,continuous,,r2,-11.050544177666385
+Glioma,7,fixed_cutoff,24,accuracy,0.14285714285714285
+Glioma,7,fixed_cutoff,24,balanced_accuracy,0.5
+Glioma,7,fixed_cutoff,24,sensitivity,1.0
+Glioma,7,fixed_cutoff,24,specificity,0.0
+Glioma,7,fixed_cutoff,24,precision,0.14285714285714285
+Glioma,7,fixed_cutoff,24,f1,0.25
+Glioma,7,fixed_cutoff,24,auroc,0.16666666666666663
+Glioma,7,fixed_cutoff,24,average_precision,0.16666666666666666
+Glioma,7,fixed_cutoff,24,prevalence,0.14285714285714285
+Glioma,7,fixed_cutoff,33,accuracy,0.14285714285714285
+Glioma,7,fixed_cutoff,33,balanced_accuracy,
+Glioma,7,fixed_cutoff,33,sensitivity,0.0
+Glioma,7,fixed_cutoff,33,specificity,0.14285714285714285
+Glioma,7,fixed_cutoff,33,precision,0.0
+Glioma,7,fixed_cutoff,33,f1,0.0
+Glioma,7,fixed_cutoff,33,auroc,
+Glioma,7,fixed_cutoff,33,average_precision,
+Glioma,7,fixed_cutoff,33,prevalence,0.0
+Glioma,7,fixed_cutoff,42,accuracy,1.0
+Glioma,7,fixed_cutoff,42,balanced_accuracy,
+Glioma,7,fixed_cutoff,42,sensitivity,0.0
+Glioma,7,fixed_cutoff,42,specificity,1.0
+Glioma,7,fixed_cutoff,42,precision,0.0
+Glioma,7,fixed_cutoff,42,f1,0.0
+Glioma,7,fixed_cutoff,42,auroc,
+Glioma,7,fixed_cutoff,42,average_precision,
+Glioma,7,fixed_cutoff,42,prevalence,0.0
+Head and Neck Cancer,5,continuous,,pearson_r,0.15953387042622102
+Head and Neck Cancer,5,continuous,,spearman_rho,0.19999999999999998
+Head and Neck Cancer,5,continuous,,mae,16.93378601074219
+Head and Neck Cancer,5,continuous,,rmse,17.797600134106908
+Head and Neck Cancer,5,continuous,,r2,-1.0643546046243628
+Head and Neck Cancer,5,fixed_cutoff,24,accuracy,0.6
+Head and Neck Cancer,5,fixed_cutoff,24,balanced_accuracy,0.5
+Head and Neck Cancer,5,fixed_cutoff,24,sensitivity,1.0
+Head and Neck Cancer,5,fixed_cutoff,24,specificity,0.0
+Head and Neck Cancer,5,fixed_cutoff,24,precision,0.6
+Head and Neck Cancer,5,fixed_cutoff,24,f1,0.75
+Head and Neck Cancer,5,fixed_cutoff,24,auroc,0.8333333333333333
+Head and Neck Cancer,5,fixed_cutoff,24,average_precision,0.9166666666666665
+Head and Neck Cancer,5,fixed_cutoff,24,prevalence,0.6
+Head and Neck Cancer,5,fixed_cutoff,33,accuracy,0.4
+Head and Neck Cancer,5,fixed_cutoff,33,balanced_accuracy,0.625
+Head and Neck Cancer,5,fixed_cutoff,33,sensitivity,1.0
+Head and Neck Cancer,5,fixed_cutoff,33,specificity,0.25
+Head and Neck Cancer,5,fixed_cutoff,33,precision,0.25
+Head and Neck Cancer,5,fixed_cutoff,33,f1,0.4
+Head and Neck Cancer,5,fixed_cutoff,33,auroc,0.25
+Head and Neck Cancer,5,fixed_cutoff,33,average_precision,0.25
+Head and Neck Cancer,5,fixed_cutoff,33,prevalence,0.2
+Head and Neck Cancer,5,fixed_cutoff,42,accuracy,0.4
+Head and Neck Cancer,5,fixed_cutoff,42,balanced_accuracy,0.25
+Head and Neck Cancer,5,fixed_cutoff,42,sensitivity,0.0
+Head and Neck Cancer,5,fixed_cutoff,42,specificity,0.5
+Head and Neck Cancer,5,fixed_cutoff,42,precision,0.0
+Head and Neck Cancer,5,fixed_cutoff,42,f1,0.0
+Head and Neck Cancer,5,fixed_cutoff,42,auroc,0.25
+Head and Neck Cancer,5,fixed_cutoff,42,average_precision,0.25
+Head and Neck Cancer,5,fixed_cutoff,42,prevalence,0.2
+Hepatobiliary Cancer,15,continuous,,pearson_r,0.37475461722467207
+Hepatobiliary Cancer,15,continuous,,spearman_rho,0.20930266048628227
+Hepatobiliary Cancer,15,continuous,,mae,18.846667989095053
+Hepatobiliary Cancer,15,continuous,,rmse,21.789784884345103
+Hepatobiliary Cancer,15,continuous,,r2,-2.2307752130241854
+Hepatobiliary Cancer,15,fixed_cutoff,24,accuracy,0.4
+Hepatobiliary Cancer,15,fixed_cutoff,24,balanced_accuracy,0.55
+Hepatobiliary Cancer,15,fixed_cutoff,24,sensitivity,1.0
+Hepatobiliary Cancer,15,fixed_cutoff,24,specificity,0.1
+Hepatobiliary Cancer,15,fixed_cutoff,24,precision,0.35714285714285715
+Hepatobiliary Cancer,15,fixed_cutoff,24,f1,0.5263157894736842
+Hepatobiliary Cancer,15,fixed_cutoff,24,auroc,0.6
+Hepatobiliary Cancer,15,fixed_cutoff,24,average_precision,0.638095238095238
+Hepatobiliary Cancer,15,fixed_cutoff,24,prevalence,0.3333333333333333
+Hepatobiliary Cancer,15,fixed_cutoff,33,accuracy,0.4666666666666667
+Hepatobiliary Cancer,15,fixed_cutoff,33,balanced_accuracy,0.4807692307692308
+Hepatobiliary Cancer,15,fixed_cutoff,33,sensitivity,0.5
+Hepatobiliary Cancer,15,fixed_cutoff,33,specificity,0.46153846153846156
+Hepatobiliary Cancer,15,fixed_cutoff,33,precision,0.125
+Hepatobiliary Cancer,15,fixed_cutoff,33,f1,0.2
+Hepatobiliary Cancer,15,fixed_cutoff,33,auroc,0.5
+Hepatobiliary Cancer,15,fixed_cutoff,33,average_precision,0.3214285714285714
+Hepatobiliary Cancer,15,fixed_cutoff,33,prevalence,0.13333333333333333
+Hepatobiliary Cancer,15,fixed_cutoff,42,accuracy,0.7333333333333333
+Hepatobiliary Cancer,15,fixed_cutoff,42,balanced_accuracy,0.8571428571428572
+Hepatobiliary Cancer,15,fixed_cutoff,42,sensitivity,1.0
+Hepatobiliary Cancer,15,fixed_cutoff,42,specificity,0.7142857142857143
+Hepatobiliary Cancer,15,fixed_cutoff,42,precision,0.2
+Hepatobiliary Cancer,15,fixed_cutoff,42,f1,0.3333333333333333
+Hepatobiliary Cancer,15,fixed_cutoff,42,auroc,0.9285714285714286
+Hepatobiliary Cancer,15,fixed_cutoff,42,average_precision,0.5
+Hepatobiliary Cancer,15,fixed_cutoff,42,prevalence,0.06666666666666667
+Mature B-Cell Neoplasms,8,continuous,,pearson_r,-0.18323344689442553
+Mature B-Cell Neoplasms,8,continuous,,spearman_rho,0.22893227903814295
+Mature B-Cell Neoplasms,8,continuous,,mae,36.3831889629364
+Mature B-Cell Neoplasms,8,continuous,,rmse,39.11432708248415
+Mature B-Cell Neoplasms,8,continuous,,r2,-27.201485403051667
+Mature B-Cell Neoplasms,8,fixed_cutoff,24,accuracy,0.125
+Mature B-Cell Neoplasms,8,fixed_cutoff,24,balanced_accuracy,0.5
+Mature B-Cell Neoplasms,8,fixed_cutoff,24,sensitivity,1.0
+Mature B-Cell Neoplasms,8,fixed_cutoff,24,specificity,0.0
+Mature B-Cell Neoplasms,8,fixed_cutoff,24,precision,0.125
+Mature B-Cell Neoplasms,8,fixed_cutoff,24,f1,0.2222222222222222
+Mature B-Cell Neoplasms,8,fixed_cutoff,24,auroc,0.4285714285714286
+Mature B-Cell Neoplasms,8,fixed_cutoff,24,average_precision,0.2
+Mature B-Cell Neoplasms,8,fixed_cutoff,24,prevalence,0.125
+Mature B-Cell Neoplasms,8,fixed_cutoff,33,accuracy,0.25
+Mature B-Cell Neoplasms,8,fixed_cutoff,33,balanced_accuracy,
+Mature B-Cell Neoplasms,8,fixed_cutoff,33,sensitivity,0.0
+Mature B-Cell Neoplasms,8,fixed_cutoff,33,specificity,0.25
+Mature B-Cell Neoplasms,8,fixed_cutoff,33,precision,0.0
+Mature B-Cell Neoplasms,8,fixed_cutoff,33,f1,0.0
+Mature B-Cell Neoplasms,8,fixed_cutoff,33,auroc,
+Mature B-Cell Neoplasms,8,fixed_cutoff,33,average_precision,
+Mature B-Cell Neoplasms,8,fixed_cutoff,33,prevalence,0.0
+Mature B-Cell Neoplasms,8,fixed_cutoff,42,accuracy,0.5
+Mature B-Cell Neoplasms,8,fixed_cutoff,42,balanced_accuracy,
+Mature B-Cell Neoplasms,8,fixed_cutoff,42,sensitivity,0.0
+Mature B-Cell Neoplasms,8,fixed_cutoff,42,specificity,0.5
+Mature B-Cell Neoplasms,8,fixed_cutoff,42,precision,0.0
+Mature B-Cell Neoplasms,8,fixed_cutoff,42,f1,0.0
+Mature B-Cell Neoplasms,8,fixed_cutoff,42,auroc,
+Mature B-Cell Neoplasms,8,fixed_cutoff,42,average_precision,
+Mature B-Cell Neoplasms,8,fixed_cutoff,42,prevalence,0.0
+Mature T and NK Neoplasms,3,continuous,,pearson_r,-0.9984618808810501
+Mature T and NK Neoplasms,3,continuous,,spearman_rho,-0.8660254037844387
+Mature T and NK Neoplasms,3,continuous,,mae,23.17071596781413
+Mature T and NK Neoplasms,3,continuous,,rmse,23.355361836720785
+Mature T and NK Neoplasms,3,continuous,,r2,-2453.628169358691
+Mature T and NK Neoplasms,3,fixed_cutoff,24,accuracy,0.6666666666666666
+Mature T and NK Neoplasms,3,fixed_cutoff,24,balanced_accuracy,
+Mature T and NK Neoplasms,3,fixed_cutoff,24,sensitivity,0.0
+Mature T and NK Neoplasms,3,fixed_cutoff,24,specificity,0.6666666666666666
+Mature T and NK Neoplasms,3,fixed_cutoff,24,precision,0.0
+Mature T and NK Neoplasms,3,fixed_cutoff,24,f1,0.0
+Mature T and NK Neoplasms,3,fixed_cutoff,24,auroc,
+Mature T and NK Neoplasms,3,fixed_cutoff,24,average_precision,
+Mature T and NK Neoplasms,3,fixed_cutoff,24,prevalence,0.0
+Mature T and NK Neoplasms,3,fixed_cutoff,33,accuracy,1.0
+Mature T and NK Neoplasms,3,fixed_cutoff,33,balanced_accuracy,
+Mature T and NK Neoplasms,3,fixed_cutoff,33,sensitivity,0.0
+Mature T and NK Neoplasms,3,fixed_cutoff,33,specificity,1.0
+Mature T and NK Neoplasms,3,fixed_cutoff,33,precision,0.0
+Mature T and NK Neoplasms,3,fixed_cutoff,33,f1,0.0
+Mature T and NK Neoplasms,3,fixed_cutoff,33,auroc,
+Mature T and NK Neoplasms,3,fixed_cutoff,33,average_precision,
+Mature T and NK Neoplasms,3,fixed_cutoff,33,prevalence,0.0
+Mature T and NK Neoplasms,3,fixed_cutoff,42,accuracy,1.0
+Mature T and NK Neoplasms,3,fixed_cutoff,42,balanced_accuracy,
+Mature T and NK Neoplasms,3,fixed_cutoff,42,sensitivity,0.0
+Mature T and NK Neoplasms,3,fixed_cutoff,42,specificity,1.0
+Mature T and NK Neoplasms,3,fixed_cutoff,42,precision,0.0
+Mature T and NK Neoplasms,3,fixed_cutoff,42,f1,0.0
+Mature T and NK Neoplasms,3,fixed_cutoff,42,auroc,
+Mature T and NK Neoplasms,3,fixed_cutoff,42,average_precision,
+Mature T and NK Neoplasms,3,fixed_cutoff,42,prevalence,0.0
+Melanoma,20,continuous,,pearson_r,0.4989683285372595
+Melanoma,20,continuous,,spearman_rho,0.4061803899044709
+Melanoma,20,continuous,,mae,12.710673809051514
+Melanoma,20,continuous,,rmse,14.720722288569279
+Melanoma,20,continuous,,r2,-0.32467129027083597
+Melanoma,20,fixed_cutoff,24,accuracy,0.5
+Melanoma,20,fixed_cutoff,24,balanced_accuracy,0.5353535353535354
+Melanoma,20,fixed_cutoff,24,sensitivity,0.8888888888888888
+Melanoma,20,fixed_cutoff,24,specificity,0.18181818181818182
+Melanoma,20,fixed_cutoff,24,precision,0.47058823529411764
+Melanoma,20,fixed_cutoff,24,f1,0.6153846153846154
+Melanoma,20,fixed_cutoff,24,auroc,0.7070707070707071
+Melanoma,20,fixed_cutoff,24,average_precision,0.7828282828282829
+Melanoma,20,fixed_cutoff,24,prevalence,0.45
+Melanoma,20,fixed_cutoff,33,accuracy,0.85
+Melanoma,20,fixed_cutoff,33,balanced_accuracy,0.8125
+Melanoma,20,fixed_cutoff,33,sensitivity,0.75
+Melanoma,20,fixed_cutoff,33,specificity,0.875
+Melanoma,20,fixed_cutoff,33,precision,0.6
+Melanoma,20,fixed_cutoff,33,f1,0.6666666666666666
+Melanoma,20,fixed_cutoff,33,auroc,0.78125
+Melanoma,20,fixed_cutoff,33,average_precision,0.8055555555555556
+Melanoma,20,fixed_cutoff,33,prevalence,0.2
+Melanoma,20,fixed_cutoff,42,accuracy,0.95
+Melanoma,20,fixed_cutoff,42,balanced_accuracy,0.75
+Melanoma,20,fixed_cutoff,42,sensitivity,0.5
+Melanoma,20,fixed_cutoff,42,specificity,1.0
+Melanoma,20,fixed_cutoff,42,precision,1.0
+Melanoma,20,fixed_cutoff,42,f1,0.6666666666666666
+Melanoma,20,fixed_cutoff,42,auroc,0.5555555555555556
+Melanoma,20,fixed_cutoff,42,average_precision,0.5555555555555556
+Melanoma,20,fixed_cutoff,42,prevalence,0.1
+Mesothelioma,6,continuous,,pearson_r,0.16983811884202543
+Mesothelioma,6,continuous,,spearman_rho,0.7142857142857143
+Mesothelioma,6,continuous,,mae,22.32066059112549
+Mesothelioma,6,continuous,,rmse,23.818416601053617
+Mesothelioma,6,continuous,,r2,-3.4709743646515925
+Mesothelioma,6,fixed_cutoff,24,accuracy,0.16666666666666666
+Mesothelioma,6,fixed_cutoff,24,balanced_accuracy,0.5
+Mesothelioma,6,fixed_cutoff,24,sensitivity,1.0
+Mesothelioma,6,fixed_cutoff,24,specificity,0.0
+Mesothelioma,6,fixed_cutoff,24,precision,0.16666666666666666
+Mesothelioma,6,fixed_cutoff,24,f1,0.2857142857142857
+Mesothelioma,6,fixed_cutoff,24,auroc,0.6
+Mesothelioma,6,fixed_cutoff,24,average_precision,0.3333333333333333
+Mesothelioma,6,fixed_cutoff,24,prevalence,0.16666666666666666
+Mesothelioma,6,fixed_cutoff,33,accuracy,0.5
+Mesothelioma,6,fixed_cutoff,33,balanced_accuracy,0.3
+Mesothelioma,6,fixed_cutoff,33,sensitivity,0.0
+Mesothelioma,6,fixed_cutoff,33,specificity,0.6
+Mesothelioma,6,fixed_cutoff,33,precision,0.0
+Mesothelioma,6,fixed_cutoff,33,f1,0.0
+Mesothelioma,6,fixed_cutoff,33,auroc,0.6
+Mesothelioma,6,fixed_cutoff,33,average_precision,0.3333333333333333
+Mesothelioma,6,fixed_cutoff,33,prevalence,0.16666666666666666
+Mesothelioma,6,fixed_cutoff,42,accuracy,1.0
+Mesothelioma,6,fixed_cutoff,42,balanced_accuracy,
+Mesothelioma,6,fixed_cutoff,42,sensitivity,0.0
+Mesothelioma,6,fixed_cutoff,42,specificity,1.0
+Mesothelioma,6,fixed_cutoff,42,precision,0.0
+Mesothelioma,6,fixed_cutoff,42,f1,0.0
+Mesothelioma,6,fixed_cutoff,42,auroc,
+Mesothelioma,6,fixed_cutoff,42,average_precision,
+Mesothelioma,6,fixed_cutoff,42,prevalence,0.0
+Miscellaneous Neuroepithelial Tumor,1,continuous,,pearson_r,
+Miscellaneous Neuroepithelial Tumor,1,continuous,,spearman_rho,
+Miscellaneous Neuroepithelial Tumor,1,continuous,,mae,15.763408660888672
+Miscellaneous Neuroepithelial Tumor,1,continuous,,rmse,15.763408660888672
+Miscellaneous Neuroepithelial Tumor,1,continuous,,r2,
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,24,accuracy,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,24,balanced_accuracy,
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,24,sensitivity,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,24,specificity,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,24,precision,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,24,f1,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,24,auroc,
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,24,average_precision,
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,24,prevalence,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,33,accuracy,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,33,balanced_accuracy,
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,33,sensitivity,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,33,specificity,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,33,precision,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,33,f1,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,33,auroc,
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,33,average_precision,
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,33,prevalence,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,42,accuracy,1.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,42,balanced_accuracy,
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,42,sensitivity,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,42,specificity,1.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,42,precision,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,42,f1,0.0
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,42,auroc,
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,42,average_precision,
+Miscellaneous Neuroepithelial Tumor,1,fixed_cutoff,42,prevalence,0.0
+Nerve Sheath Tumor,1,continuous,,pearson_r,
+Nerve Sheath Tumor,1,continuous,,spearman_rho,
+Nerve Sheath Tumor,1,continuous,,mae,20.548248291015625
+Nerve Sheath Tumor,1,continuous,,rmse,20.548248291015625
+Nerve Sheath Tumor,1,continuous,,r2,
+Nerve Sheath Tumor,1,fixed_cutoff,24,accuracy,1.0
+Nerve Sheath Tumor,1,fixed_cutoff,24,balanced_accuracy,
+Nerve Sheath Tumor,1,fixed_cutoff,24,sensitivity,1.0
+Nerve Sheath Tumor,1,fixed_cutoff,24,specificity,
+Nerve Sheath Tumor,1,fixed_cutoff,24,precision,1.0
+Nerve Sheath Tumor,1,fixed_cutoff,24,f1,1.0
+Nerve Sheath Tumor,1,fixed_cutoff,24,auroc,
+Nerve Sheath Tumor,1,fixed_cutoff,24,average_precision,
+Nerve Sheath Tumor,1,fixed_cutoff,24,prevalence,1.0
+Nerve Sheath Tumor,1,fixed_cutoff,33,accuracy,0.0
+Nerve Sheath Tumor,1,fixed_cutoff,33,balanced_accuracy,
+Nerve Sheath Tumor,1,fixed_cutoff,33,sensitivity,0.0
+Nerve Sheath Tumor,1,fixed_cutoff,33,specificity,0.0
+Nerve Sheath Tumor,1,fixed_cutoff,33,precision,0.0
+Nerve Sheath Tumor,1,fixed_cutoff,33,f1,0.0
+Nerve Sheath Tumor,1,fixed_cutoff,33,auroc,
+Nerve Sheath Tumor,1,fixed_cutoff,33,average_precision,
+Nerve Sheath Tumor,1,fixed_cutoff,33,prevalence,0.0
+Nerve Sheath Tumor,1,fixed_cutoff,42,accuracy,0.0
+Nerve Sheath Tumor,1,fixed_cutoff,42,balanced_accuracy,
+Nerve Sheath Tumor,1,fixed_cutoff,42,sensitivity,0.0
+Nerve Sheath Tumor,1,fixed_cutoff,42,specificity,0.0
+Nerve Sheath Tumor,1,fixed_cutoff,42,precision,0.0
+Nerve Sheath Tumor,1,fixed_cutoff,42,f1,0.0
+Nerve Sheath Tumor,1,fixed_cutoff,42,auroc,
+Nerve Sheath Tumor,1,fixed_cutoff,42,average_precision,
+Nerve Sheath Tumor,1,fixed_cutoff,42,prevalence,0.0
+Non-Small Cell Lung Cancer,61,continuous,,pearson_r,0.599334676487671
+Non-Small Cell Lung Cancer,61,continuous,,spearman_rho,0.6038075953752043
+Non-Small Cell Lung Cancer,61,continuous,,mae,22.60220562043737
+Non-Small Cell Lung Cancer,61,continuous,,rmse,25.437500603202608
+Non-Small Cell Lung Cancer,61,continuous,,r2,-2.2078315593888047
+Non-Small Cell Lung Cancer,61,fixed_cutoff,24,accuracy,0.4426229508196721
+Non-Small Cell Lung Cancer,61,fixed_cutoff,24,balanced_accuracy,0.5
+Non-Small Cell Lung Cancer,61,fixed_cutoff,24,sensitivity,1.0
+Non-Small Cell Lung Cancer,61,fixed_cutoff,24,specificity,0.0
+Non-Small Cell Lung Cancer,61,fixed_cutoff,24,precision,0.4426229508196721
+Non-Small Cell Lung Cancer,61,fixed_cutoff,24,f1,0.6136363636363636
+Non-Small Cell Lung Cancer,61,fixed_cutoff,24,auroc,0.7962962962962963
+Non-Small Cell Lung Cancer,61,fixed_cutoff,24,average_precision,0.8203687650735634
+Non-Small Cell Lung Cancer,61,fixed_cutoff,24,prevalence,0.4426229508196721
+Non-Small Cell Lung Cancer,61,fixed_cutoff,33,accuracy,0.5245901639344263
+Non-Small Cell Lung Cancer,61,fixed_cutoff,33,balanced_accuracy,0.6623188405797101
+Non-Small Cell Lung Cancer,61,fixed_cutoff,33,sensitivity,0.9333333333333333
+Non-Small Cell Lung Cancer,61,fixed_cutoff,33,specificity,0.391304347826087
+Non-Small Cell Lung Cancer,61,fixed_cutoff,33,precision,0.3333333333333333
+Non-Small Cell Lung Cancer,61,fixed_cutoff,33,f1,0.49122807017543857
+Non-Small Cell Lung Cancer,61,fixed_cutoff,33,auroc,0.8608695652173914
+Non-Small Cell Lung Cancer,61,fixed_cutoff,33,average_precision,0.6981014384282636
+Non-Small Cell Lung Cancer,61,fixed_cutoff,33,prevalence,0.2459016393442623
+Non-Small Cell Lung Cancer,61,fixed_cutoff,42,accuracy,0.5081967213114754
+Non-Small Cell Lung Cancer,61,fixed_cutoff,42,balanced_accuracy,0.7413793103448276
+Non-Small Cell Lung Cancer,61,fixed_cutoff,42,sensitivity,1.0
+Non-Small Cell Lung Cancer,61,fixed_cutoff,42,specificity,0.4827586206896552
+Non-Small Cell Lung Cancer,61,fixed_cutoff,42,precision,0.09090909090909091
+Non-Small Cell Lung Cancer,61,fixed_cutoff,42,f1,0.16666666666666666
+Non-Small Cell Lung Cancer,61,fixed_cutoff,42,auroc,0.9137931034482759
+Non-Small Cell Lung Cancer,61,fixed_cutoff,42,average_precision,0.3
+Non-Small Cell Lung Cancer,61,fixed_cutoff,42,prevalence,0.04918032786885246
+Ovarian Cancer,28,continuous,,pearson_r,0.6068707715292775
+Ovarian Cancer,28,continuous,,spearman_rho,0.6015882610780131
+Ovarian Cancer,28,continuous,,mae,21.34459856578282
+Ovarian Cancer,28,continuous,,rmse,24.52352689443429
+Ovarian Cancer,28,continuous,,r2,-0.5922015700219192
+Ovarian Cancer,28,fixed_cutoff,24,accuracy,0.4642857142857143
+Ovarian Cancer,28,fixed_cutoff,24,balanced_accuracy,0.5
+Ovarian Cancer,28,fixed_cutoff,24,sensitivity,1.0
+Ovarian Cancer,28,fixed_cutoff,24,specificity,0.0
+Ovarian Cancer,28,fixed_cutoff,24,precision,0.4642857142857143
+Ovarian Cancer,28,fixed_cutoff,24,f1,0.6341463414634146
+Ovarian Cancer,28,fixed_cutoff,24,auroc,0.8256410256410256
+Ovarian Cancer,28,fixed_cutoff,24,average_precision,0.8289778848602376
+Ovarian Cancer,28,fixed_cutoff,24,prevalence,0.4642857142857143
+Ovarian Cancer,28,fixed_cutoff,33,accuracy,0.5714285714285714
+Ovarian Cancer,28,fixed_cutoff,33,balanced_accuracy,0.6470588235294118
+Ovarian Cancer,28,fixed_cutoff,33,sensitivity,1.0
+Ovarian Cancer,28,fixed_cutoff,33,specificity,0.29411764705882354
+Ovarian Cancer,28,fixed_cutoff,33,precision,0.4782608695652174
+Ovarian Cancer,28,fixed_cutoff,33,f1,0.6470588235294118
+Ovarian Cancer,28,fixed_cutoff,33,auroc,0.8342245989304813
+Ovarian Cancer,28,fixed_cutoff,33,average_precision,0.8223665223665224
+Ovarian Cancer,28,fixed_cutoff,33,prevalence,0.39285714285714285
+Ovarian Cancer,28,fixed_cutoff,42,accuracy,0.5357142857142857
+Ovarian Cancer,28,fixed_cutoff,42,balanced_accuracy,0.6
+Ovarian Cancer,28,fixed_cutoff,42,sensitivity,0.75
+Ovarian Cancer,28,fixed_cutoff,42,specificity,0.45
+Ovarian Cancer,28,fixed_cutoff,42,precision,0.35294117647058826
+Ovarian Cancer,28,fixed_cutoff,42,f1,0.48
+Ovarian Cancer,28,fixed_cutoff,42,auroc,0.85
+Ovarian Cancer,28,fixed_cutoff,42,average_precision,0.8462301587301587
+Ovarian Cancer,28,fixed_cutoff,42,prevalence,0.2857142857142857
+Pancreatic Cancer,43,continuous,,pearson_r,0.5275965991016187
+Pancreatic Cancer,43,continuous,,spearman_rho,0.44193988059675043
+Pancreatic Cancer,43,continuous,,mae,22.912905493447948
+Pancreatic Cancer,43,continuous,,rmse,25.317894614594252
+Pancreatic Cancer,43,continuous,,r2,-3.1935618046815923
+Pancreatic Cancer,43,fixed_cutoff,24,accuracy,0.32558139534883723
+Pancreatic Cancer,43,fixed_cutoff,24,balanced_accuracy,0.532258064516129
+Pancreatic Cancer,43,fixed_cutoff,24,sensitivity,1.0
+Pancreatic Cancer,43,fixed_cutoff,24,specificity,0.06451612903225806
+Pancreatic Cancer,43,fixed_cutoff,24,precision,0.2926829268292683
+Pancreatic Cancer,43,fixed_cutoff,24,f1,0.4528301886792453
+Pancreatic Cancer,43,fixed_cutoff,24,auroc,0.8010752688172043
+Pancreatic Cancer,43,fixed_cutoff,24,average_precision,0.7206368116650376
+Pancreatic Cancer,43,fixed_cutoff,24,prevalence,0.27906976744186046
+Pancreatic Cancer,43,fixed_cutoff,33,accuracy,0.3953488372093023
+Pancreatic Cancer,43,fixed_cutoff,33,balanced_accuracy,0.6666666666666666
+Pancreatic Cancer,43,fixed_cutoff,33,sensitivity,1.0
+Pancreatic Cancer,43,fixed_cutoff,33,specificity,0.3333333333333333
+Pancreatic Cancer,43,fixed_cutoff,33,precision,0.13333333333333333
+Pancreatic Cancer,43,fixed_cutoff,33,f1,0.23529411764705882
+Pancreatic Cancer,43,fixed_cutoff,33,auroc,0.9038461538461539
+Pancreatic Cancer,43,fixed_cutoff,33,average_precision,0.6738095238095239
+Pancreatic Cancer,43,fixed_cutoff,33,prevalence,0.09302325581395349
+Pancreatic Cancer,43,fixed_cutoff,42,accuracy,0.6744186046511628
+Pancreatic Cancer,43,fixed_cutoff,42,balanced_accuracy,
+Pancreatic Cancer,43,fixed_cutoff,42,sensitivity,0.0
+Pancreatic Cancer,43,fixed_cutoff,42,specificity,0.6744186046511628
+Pancreatic Cancer,43,fixed_cutoff,42,precision,0.0
+Pancreatic Cancer,43,fixed_cutoff,42,f1,0.0
+Pancreatic Cancer,43,fixed_cutoff,42,auroc,
+Pancreatic Cancer,43,fixed_cutoff,42,average_precision,
+Pancreatic Cancer,43,fixed_cutoff,42,prevalence,0.0
+Prostate Cancer,3,continuous,,pearson_r,-0.5546309767482244
+Prostate Cancer,3,continuous,,spearman_rho,-0.5
+Prostate Cancer,3,continuous,,mae,21.16019566853841
+Prostate Cancer,3,continuous,,rmse,21.534692801187052
+Prostate Cancer,3,continuous,,r2,-0.5954460804179955
+Prostate Cancer,3,fixed_cutoff,24,accuracy,0.3333333333333333
+Prostate Cancer,3,fixed_cutoff,24,balanced_accuracy,0.5
+Prostate Cancer,3,fixed_cutoff,24,sensitivity,1.0
+Prostate Cancer,3,fixed_cutoff,24,specificity,0.0
+Prostate Cancer,3,fixed_cutoff,24,precision,0.3333333333333333
+Prostate Cancer,3,fixed_cutoff,24,f1,0.5
+Prostate Cancer,3,fixed_cutoff,24,auroc,0.0
+Prostate Cancer,3,fixed_cutoff,24,average_precision,0.3333333333333333
+Prostate Cancer,3,fixed_cutoff,24,prevalence,0.3333333333333333
+Prostate Cancer,3,fixed_cutoff,33,accuracy,0.3333333333333333
+Prostate Cancer,3,fixed_cutoff,33,balanced_accuracy,0.5
+Prostate Cancer,3,fixed_cutoff,33,sensitivity,1.0
+Prostate Cancer,3,fixed_cutoff,33,specificity,0.0
+Prostate Cancer,3,fixed_cutoff,33,precision,0.3333333333333333
+Prostate Cancer,3,fixed_cutoff,33,f1,0.5
+Prostate Cancer,3,fixed_cutoff,33,auroc,0.0
+Prostate Cancer,3,fixed_cutoff,33,average_precision,0.3333333333333333
+Prostate Cancer,3,fixed_cutoff,33,prevalence,0.3333333333333333
+Prostate Cancer,3,fixed_cutoff,42,accuracy,0.3333333333333333
+Prostate Cancer,3,fixed_cutoff,42,balanced_accuracy,0.25
+Prostate Cancer,3,fixed_cutoff,42,sensitivity,0.0
+Prostate Cancer,3,fixed_cutoff,42,specificity,0.5
+Prostate Cancer,3,fixed_cutoff,42,precision,0.0
+Prostate Cancer,3,fixed_cutoff,42,f1,0.0
+Prostate Cancer,3,fixed_cutoff,42,auroc,0.0
+Prostate Cancer,3,fixed_cutoff,42,average_precision,0.3333333333333333
+Prostate Cancer,3,fixed_cutoff,42,prevalence,0.3333333333333333
+Renal Cell Carcinoma,5,continuous,,pearson_r,0.6878043091691681
+Renal Cell Carcinoma,5,continuous,,spearman_rho,0.39999999999999997
+Renal Cell Carcinoma,5,continuous,,mae,8.265689468383789
+Renal Cell Carcinoma,5,continuous,,rmse,8.742527505756264
+Renal Cell Carcinoma,5,continuous,,r2,-1.196315723819105
+Renal Cell Carcinoma,5,fixed_cutoff,24,accuracy,0.6
+Renal Cell Carcinoma,5,fixed_cutoff,24,balanced_accuracy,0.5
+Renal Cell Carcinoma,5,fixed_cutoff,24,sensitivity,1.0
+Renal Cell Carcinoma,5,fixed_cutoff,24,specificity,0.0
+Renal Cell Carcinoma,5,fixed_cutoff,24,precision,0.6
+Renal Cell Carcinoma,5,fixed_cutoff,24,f1,0.75
+Renal Cell Carcinoma,5,fixed_cutoff,24,auroc,0.6666666666666666
+Renal Cell Carcinoma,5,fixed_cutoff,24,average_precision,0.8666666666666667
+Renal Cell Carcinoma,5,fixed_cutoff,24,prevalence,0.6
+Renal Cell Carcinoma,5,fixed_cutoff,33,accuracy,0.8
+Renal Cell Carcinoma,5,fixed_cutoff,33,balanced_accuracy,0.875
+Renal Cell Carcinoma,5,fixed_cutoff,33,sensitivity,1.0
+Renal Cell Carcinoma,5,fixed_cutoff,33,specificity,0.75
+Renal Cell Carcinoma,5,fixed_cutoff,33,precision,0.5
+Renal Cell Carcinoma,5,fixed_cutoff,33,f1,0.6666666666666666
+Renal Cell Carcinoma,5,fixed_cutoff,33,auroc,1.0
+Renal Cell Carcinoma,5,fixed_cutoff,33,average_precision,1.0
+Renal Cell Carcinoma,5,fixed_cutoff,33,prevalence,0.2
+Renal Cell Carcinoma,5,fixed_cutoff,42,accuracy,0.8
+Renal Cell Carcinoma,5,fixed_cutoff,42,balanced_accuracy,
+Renal Cell Carcinoma,5,fixed_cutoff,42,sensitivity,0.0
+Renal Cell Carcinoma,5,fixed_cutoff,42,specificity,0.8
+Renal Cell Carcinoma,5,fixed_cutoff,42,precision,0.0
+Renal Cell Carcinoma,5,fixed_cutoff,42,f1,0.0
+Renal Cell Carcinoma,5,fixed_cutoff,42,auroc,
+Renal Cell Carcinoma,5,fixed_cutoff,42,average_precision,
+Renal Cell Carcinoma,5,fixed_cutoff,42,prevalence,0.0
+Salivary Gland Cancer,7,continuous,,pearson_r,0.892183293965999
+Salivary Gland Cancer,7,continuous,,spearman_rho,0.7567874686642697
+Salivary Gland Cancer,7,continuous,,mae,27.954145431518555
+Salivary Gland Cancer,7,continuous,,rmse,28.60845438403885
+Salivary Gland Cancer,7,continuous,,r2,-3.731446372102165
+Salivary Gland Cancer,7,fixed_cutoff,24,accuracy,0.42857142857142855
+Salivary Gland Cancer,7,fixed_cutoff,24,balanced_accuracy,0.5
+Salivary Gland Cancer,7,fixed_cutoff,24,sensitivity,1.0
+Salivary Gland Cancer,7,fixed_cutoff,24,specificity,0.0
+Salivary Gland Cancer,7,fixed_cutoff,24,precision,0.42857142857142855
+Salivary Gland Cancer,7,fixed_cutoff,24,f1,0.6
+Salivary Gland Cancer,7,fixed_cutoff,24,auroc,1.0
+Salivary Gland Cancer,7,fixed_cutoff,24,average_precision,1.0
+Salivary Gland Cancer,7,fixed_cutoff,24,prevalence,0.42857142857142855
+Salivary Gland Cancer,7,fixed_cutoff,33,accuracy,0.5714285714285714
+Salivary Gland Cancer,7,fixed_cutoff,33,balanced_accuracy,0.75
+Salivary Gland Cancer,7,fixed_cutoff,33,sensitivity,1.0
+Salivary Gland Cancer,7,fixed_cutoff,33,specificity,0.5
+Salivary Gland Cancer,7,fixed_cutoff,33,precision,0.25
+Salivary Gland Cancer,7,fixed_cutoff,33,f1,0.4
+Salivary Gland Cancer,7,fixed_cutoff,33,auroc,1.0
+Salivary Gland Cancer,7,fixed_cutoff,33,average_precision,1.0
+Salivary Gland Cancer,7,fixed_cutoff,33,prevalence,0.14285714285714285
+Salivary Gland Cancer,7,fixed_cutoff,42,accuracy,0.5714285714285714
+Salivary Gland Cancer,7,fixed_cutoff,42,balanced_accuracy,
+Salivary Gland Cancer,7,fixed_cutoff,42,sensitivity,0.0
+Salivary Gland Cancer,7,fixed_cutoff,42,specificity,0.5714285714285714
+Salivary Gland Cancer,7,fixed_cutoff,42,precision,0.0
+Salivary Gland Cancer,7,fixed_cutoff,42,f1,0.0
+Salivary Gland Cancer,7,fixed_cutoff,42,auroc,
+Salivary Gland Cancer,7,fixed_cutoff,42,average_precision,
+Salivary Gland Cancer,7,fixed_cutoff,42,prevalence,0.0
+Sex Cord Stromal Tumor,2,continuous,,pearson_r,
+Sex Cord Stromal Tumor,2,continuous,,spearman_rho,
+Sex Cord Stromal Tumor,2,continuous,,mae,25.168715476989746
+Sex Cord Stromal Tumor,2,continuous,,rmse,25.237665149108956
+Sex Cord Stromal Tumor,2,continuous,,r2,-635.9397421785488
+Sex Cord Stromal Tumor,2,fixed_cutoff,24,accuracy,0.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,24,balanced_accuracy,
+Sex Cord Stromal Tumor,2,fixed_cutoff,24,sensitivity,0.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,24,specificity,0.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,24,precision,0.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,24,f1,0.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,24,auroc,
+Sex Cord Stromal Tumor,2,fixed_cutoff,24,average_precision,
+Sex Cord Stromal Tumor,2,fixed_cutoff,24,prevalence,0.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,33,accuracy,1.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,33,balanced_accuracy,
+Sex Cord Stromal Tumor,2,fixed_cutoff,33,sensitivity,0.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,33,specificity,1.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,33,precision,0.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,33,f1,0.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,33,auroc,
+Sex Cord Stromal Tumor,2,fixed_cutoff,33,average_precision,
+Sex Cord Stromal Tumor,2,fixed_cutoff,33,prevalence,0.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,42,accuracy,1.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,42,balanced_accuracy,
+Sex Cord Stromal Tumor,2,fixed_cutoff,42,sensitivity,0.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,42,specificity,1.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,42,precision,0.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,42,f1,0.0
+Sex Cord Stromal Tumor,2,fixed_cutoff,42,auroc,
+Sex Cord Stromal Tumor,2,fixed_cutoff,42,average_precision,
+Sex Cord Stromal Tumor,2,fixed_cutoff,42,prevalence,0.0
+"Skin Cancer, Non-Melanoma",7,continuous,,pearson_r,0.46369574630546545
+"Skin Cancer, Non-Melanoma",7,continuous,,spearman_rho,0.03571428571428572
+"Skin Cancer, Non-Melanoma",7,continuous,,mae,20.369307926722936
+"Skin Cancer, Non-Melanoma",7,continuous,,rmse,22.610427438063688
+"Skin Cancer, Non-Melanoma",7,continuous,,r2,-1.7163673842621145
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,24,accuracy,0.2857142857142857
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,24,balanced_accuracy,0.5
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,24,sensitivity,1.0
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,24,specificity,0.0
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,24,precision,0.2857142857142857
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,24,f1,0.4444444444444444
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,24,auroc,0.5
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,24,average_precision,0.6428571428571428
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,24,prevalence,0.2857142857142857
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,33,accuracy,0.7142857142857143
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,33,balanced_accuracy,0.65
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,33,sensitivity,0.5
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,33,specificity,0.8
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,33,precision,0.5
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,33,f1,0.5
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,33,auroc,0.5
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,33,average_precision,0.6428571428571428
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,33,prevalence,0.2857142857142857
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,42,accuracy,0.8571428571428571
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,42,balanced_accuracy,
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,42,sensitivity,0.0
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,42,specificity,0.8571428571428571
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,42,precision,0.0
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,42,f1,0.0
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,42,auroc,
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,42,average_precision,
+"Skin Cancer, Non-Melanoma",7,fixed_cutoff,42,prevalence,0.0
+Small Bowel Cancer,2,continuous,,pearson_r,
+Small Bowel Cancer,2,continuous,,spearman_rho,
+Small Bowel Cancer,2,continuous,,mae,30.98744297027588
+Small Bowel Cancer,2,continuous,,rmse,31.193328132414056
+Small Bowel Cancer,2,continuous,,r2,-8.730237199764542
+Small Bowel Cancer,2,fixed_cutoff,24,accuracy,0.0
+Small Bowel Cancer,2,fixed_cutoff,24,balanced_accuracy,
+Small Bowel Cancer,2,fixed_cutoff,24,sensitivity,0.0
+Small Bowel Cancer,2,fixed_cutoff,24,specificity,0.0
+Small Bowel Cancer,2,fixed_cutoff,24,precision,0.0
+Small Bowel Cancer,2,fixed_cutoff,24,f1,0.0
+Small Bowel Cancer,2,fixed_cutoff,24,auroc,
+Small Bowel Cancer,2,fixed_cutoff,24,average_precision,
+Small Bowel Cancer,2,fixed_cutoff,24,prevalence,0.0
+Small Bowel Cancer,2,fixed_cutoff,33,accuracy,0.5
+Small Bowel Cancer,2,fixed_cutoff,33,balanced_accuracy,
+Small Bowel Cancer,2,fixed_cutoff,33,sensitivity,0.0
+Small Bowel Cancer,2,fixed_cutoff,33,specificity,0.5
+Small Bowel Cancer,2,fixed_cutoff,33,precision,0.0
+Small Bowel Cancer,2,fixed_cutoff,33,f1,0.0
+Small Bowel Cancer,2,fixed_cutoff,33,auroc,
+Small Bowel Cancer,2,fixed_cutoff,33,average_precision,
+Small Bowel Cancer,2,fixed_cutoff,33,prevalence,0.0
+Small Bowel Cancer,2,fixed_cutoff,42,accuracy,0.5
+Small Bowel Cancer,2,fixed_cutoff,42,balanced_accuracy,
+Small Bowel Cancer,2,fixed_cutoff,42,sensitivity,0.0
+Small Bowel Cancer,2,fixed_cutoff,42,specificity,0.5
+Small Bowel Cancer,2,fixed_cutoff,42,precision,0.0
+Small Bowel Cancer,2,fixed_cutoff,42,f1,0.0
+Small Bowel Cancer,2,fixed_cutoff,42,auroc,
+Small Bowel Cancer,2,fixed_cutoff,42,average_precision,
+Small Bowel Cancer,2,fixed_cutoff,42,prevalence,0.0
+Small Cell Lung Cancer,2,continuous,,pearson_r,
+Small Cell Lung Cancer,2,continuous,,spearman_rho,
+Small Cell Lung Cancer,2,continuous,,mae,26.85767364501953
+Small Cell Lung Cancer,2,continuous,,rmse,27.24179784297265
+Small Cell Lung Cancer,2,continuous,,r2,-19.61432082548304
+Small Cell Lung Cancer,2,fixed_cutoff,24,accuracy,0.0
+Small Cell Lung Cancer,2,fixed_cutoff,24,balanced_accuracy,
+Small Cell Lung Cancer,2,fixed_cutoff,24,sensitivity,0.0
+Small Cell Lung Cancer,2,fixed_cutoff,24,specificity,0.0
+Small Cell Lung Cancer,2,fixed_cutoff,24,precision,0.0
+Small Cell Lung Cancer,2,fixed_cutoff,24,f1,0.0
+Small Cell Lung Cancer,2,fixed_cutoff,24,auroc,
+Small Cell Lung Cancer,2,fixed_cutoff,24,average_precision,
+Small Cell Lung Cancer,2,fixed_cutoff,24,prevalence,0.0
+Small Cell Lung Cancer,2,fixed_cutoff,33,accuracy,0.5
+Small Cell Lung Cancer,2,fixed_cutoff,33,balanced_accuracy,
+Small Cell Lung Cancer,2,fixed_cutoff,33,sensitivity,0.0
+Small Cell Lung Cancer,2,fixed_cutoff,33,specificity,0.5
+Small Cell Lung Cancer,2,fixed_cutoff,33,precision,0.0
+Small Cell Lung Cancer,2,fixed_cutoff,33,f1,0.0
+Small Cell Lung Cancer,2,fixed_cutoff,33,auroc,
+Small Cell Lung Cancer,2,fixed_cutoff,33,average_precision,
+Small Cell Lung Cancer,2,fixed_cutoff,33,prevalence,0.0
+Small Cell Lung Cancer,2,fixed_cutoff,42,accuracy,1.0
+Small Cell Lung Cancer,2,fixed_cutoff,42,balanced_accuracy,
+Small Cell Lung Cancer,2,fixed_cutoff,42,sensitivity,0.0
+Small Cell Lung Cancer,2,fixed_cutoff,42,specificity,1.0
+Small Cell Lung Cancer,2,fixed_cutoff,42,precision,0.0
+Small Cell Lung Cancer,2,fixed_cutoff,42,f1,0.0
+Small Cell Lung Cancer,2,fixed_cutoff,42,auroc,
+Small Cell Lung Cancer,2,fixed_cutoff,42,average_precision,
+Small Cell Lung Cancer,2,fixed_cutoff,42,prevalence,0.0
+Soft Tissue Sarcoma,31,continuous,,pearson_r,0.46998726251891676
+Soft Tissue Sarcoma,31,continuous,,spearman_rho,0.4988393890019825
+Soft Tissue Sarcoma,31,continuous,,mae,22.008640227779264
+Soft Tissue Sarcoma,31,continuous,,rmse,25.193656721788567
+Soft Tissue Sarcoma,31,continuous,,r2,-1.0371321129693167
+Soft Tissue Sarcoma,31,fixed_cutoff,24,accuracy,0.41935483870967744
+Soft Tissue Sarcoma,31,fixed_cutoff,24,balanced_accuracy,0.5
+Soft Tissue Sarcoma,31,fixed_cutoff,24,sensitivity,1.0
+Soft Tissue Sarcoma,31,fixed_cutoff,24,specificity,0.0
+Soft Tissue Sarcoma,31,fixed_cutoff,24,precision,0.41935483870967744
+Soft Tissue Sarcoma,31,fixed_cutoff,24,f1,0.5909090909090909
+Soft Tissue Sarcoma,31,fixed_cutoff,24,auroc,0.8034188034188035
+Soft Tissue Sarcoma,31,fixed_cutoff,24,average_precision,0.7438414597621759
+Soft Tissue Sarcoma,31,fixed_cutoff,24,prevalence,0.41935483870967744
+Soft Tissue Sarcoma,31,fixed_cutoff,33,accuracy,0.4838709677419355
+Soft Tissue Sarcoma,31,fixed_cutoff,33,balanced_accuracy,0.6114130434782609
+Soft Tissue Sarcoma,31,fixed_cutoff,33,sensitivity,0.875
+Soft Tissue Sarcoma,31,fixed_cutoff,33,specificity,0.34782608695652173
+Soft Tissue Sarcoma,31,fixed_cutoff,33,precision,0.3181818181818182
+Soft Tissue Sarcoma,31,fixed_cutoff,33,f1,0.4666666666666667
+Soft Tissue Sarcoma,31,fixed_cutoff,33,auroc,0.6847826086956522
+Soft Tissue Sarcoma,31,fixed_cutoff,33,average_precision,0.38977844761092845
+Soft Tissue Sarcoma,31,fixed_cutoff,33,prevalence,0.25806451612903225
+Soft Tissue Sarcoma,31,fixed_cutoff,42,accuracy,0.6129032258064516
+Soft Tissue Sarcoma,31,fixed_cutoff,42,balanced_accuracy,0.6076923076923078
+Soft Tissue Sarcoma,31,fixed_cutoff,42,sensitivity,0.6
+Soft Tissue Sarcoma,31,fixed_cutoff,42,specificity,0.6153846153846154
+Soft Tissue Sarcoma,31,fixed_cutoff,42,precision,0.23076923076923078
+Soft Tissue Sarcoma,31,fixed_cutoff,42,f1,0.3333333333333333
+Soft Tissue Sarcoma,31,fixed_cutoff,42,auroc,0.6
+Soft Tissue Sarcoma,31,fixed_cutoff,42,average_precision,0.22871635610766045
+Soft Tissue Sarcoma,31,fixed_cutoff,42,prevalence,0.16129032258064516
+Thymic Tumor,4,continuous,,pearson_r,0.8235883733607783
+Thymic Tumor,4,continuous,,spearman_rho,0.9486832980505139
+Thymic Tumor,4,continuous,,mae,28.82584047317505
+Thymic Tumor,4,continuous,,rmse,29.045277616422133
+Thymic Tumor,4,continuous,,r2,-102.0385528934391
+Thymic Tumor,4,fixed_cutoff,24,accuracy,0.25
+Thymic Tumor,4,fixed_cutoff,24,balanced_accuracy,
+Thymic Tumor,4,fixed_cutoff,24,sensitivity,0.0
+Thymic Tumor,4,fixed_cutoff,24,specificity,0.25
+Thymic Tumor,4,fixed_cutoff,24,precision,0.0
+Thymic Tumor,4,fixed_cutoff,24,f1,0.0
+Thymic Tumor,4,fixed_cutoff,24,auroc,
+Thymic Tumor,4,fixed_cutoff,24,average_precision,
+Thymic Tumor,4,fixed_cutoff,24,prevalence,0.0
+Thymic Tumor,4,fixed_cutoff,33,accuracy,0.75
+Thymic Tumor,4,fixed_cutoff,33,balanced_accuracy,
+Thymic Tumor,4,fixed_cutoff,33,sensitivity,0.0
+Thymic Tumor,4,fixed_cutoff,33,specificity,0.75
+Thymic Tumor,4,fixed_cutoff,33,precision,0.0
+Thymic Tumor,4,fixed_cutoff,33,f1,0.0
+Thymic Tumor,4,fixed_cutoff,33,auroc,
+Thymic Tumor,4,fixed_cutoff,33,average_precision,
+Thymic Tumor,4,fixed_cutoff,33,prevalence,0.0
+Thymic Tumor,4,fixed_cutoff,42,accuracy,1.0
+Thymic Tumor,4,fixed_cutoff,42,balanced_accuracy,
+Thymic Tumor,4,fixed_cutoff,42,sensitivity,0.0
+Thymic Tumor,4,fixed_cutoff,42,specificity,1.0
+Thymic Tumor,4,fixed_cutoff,42,precision,0.0
+Thymic Tumor,4,fixed_cutoff,42,f1,0.0
+Thymic Tumor,4,fixed_cutoff,42,auroc,
+Thymic Tumor,4,fixed_cutoff,42,average_precision,
+Thymic Tumor,4,fixed_cutoff,42,prevalence,0.0
+Thyroid Cancer,4,continuous,,pearson_r,0.988732032016301
+Thyroid Cancer,4,continuous,,spearman_rho,0.7999999999999999
+Thyroid Cancer,4,continuous,,mae,29.631252765655518
+Thyroid Cancer,4,continuous,,rmse,29.678122267570046
+Thyroid Cancer,4,continuous,,r2,-14.401808810121741
+Thyroid Cancer,4,fixed_cutoff,24,accuracy,0.0
+Thyroid Cancer,4,fixed_cutoff,24,balanced_accuracy,
+Thyroid Cancer,4,fixed_cutoff,24,sensitivity,0.0
+Thyroid Cancer,4,fixed_cutoff,24,specificity,0.0
+Thyroid Cancer,4,fixed_cutoff,24,precision,0.0
+Thyroid Cancer,4,fixed_cutoff,24,f1,0.0
+Thyroid Cancer,4,fixed_cutoff,24,auroc,
+Thyroid Cancer,4,fixed_cutoff,24,average_precision,
+Thyroid Cancer,4,fixed_cutoff,24,prevalence,0.0
+Thyroid Cancer,4,fixed_cutoff,33,accuracy,0.25
+Thyroid Cancer,4,fixed_cutoff,33,balanced_accuracy,
+Thyroid Cancer,4,fixed_cutoff,33,sensitivity,0.0
+Thyroid Cancer,4,fixed_cutoff,33,specificity,0.25
+Thyroid Cancer,4,fixed_cutoff,33,precision,0.0
+Thyroid Cancer,4,fixed_cutoff,33,f1,0.0
+Thyroid Cancer,4,fixed_cutoff,33,auroc,
+Thyroid Cancer,4,fixed_cutoff,33,average_precision,
+Thyroid Cancer,4,fixed_cutoff,33,prevalence,0.0
+Thyroid Cancer,4,fixed_cutoff,42,accuracy,0.75
+Thyroid Cancer,4,fixed_cutoff,42,balanced_accuracy,
+Thyroid Cancer,4,fixed_cutoff,42,sensitivity,0.0
+Thyroid Cancer,4,fixed_cutoff,42,specificity,0.75
+Thyroid Cancer,4,fixed_cutoff,42,precision,0.0
+Thyroid Cancer,4,fixed_cutoff,42,f1,0.0
+Thyroid Cancer,4,fixed_cutoff,42,auroc,
+Thyroid Cancer,4,fixed_cutoff,42,average_precision,
+Thyroid Cancer,4,fixed_cutoff,42,prevalence,0.0
+Uterine Sarcoma,3,continuous,,pearson_r,0.7593921714069969
+Uterine Sarcoma,3,continuous,,spearman_rho,1.0
+Uterine Sarcoma,3,continuous,,mae,12.686126073201498
+Uterine Sarcoma,3,continuous,,rmse,17.105853673925143
+Uterine Sarcoma,3,continuous,,r2,-0.5601256334263298
+Uterine Sarcoma,3,fixed_cutoff,24,accuracy,0.6666666666666666
+Uterine Sarcoma,3,fixed_cutoff,24,balanced_accuracy,0.5
+Uterine Sarcoma,3,fixed_cutoff,24,sensitivity,1.0
+Uterine Sarcoma,3,fixed_cutoff,24,specificity,0.0
+Uterine Sarcoma,3,fixed_cutoff,24,precision,0.6666666666666666
+Uterine Sarcoma,3,fixed_cutoff,24,f1,0.8
+Uterine Sarcoma,3,fixed_cutoff,24,auroc,1.0
+Uterine Sarcoma,3,fixed_cutoff,24,average_precision,1.0
+Uterine Sarcoma,3,fixed_cutoff,24,prevalence,0.6666666666666666
+Uterine Sarcoma,3,fixed_cutoff,33,accuracy,0.6666666666666666
+Uterine Sarcoma,3,fixed_cutoff,33,balanced_accuracy,
+Uterine Sarcoma,3,fixed_cutoff,33,sensitivity,0.0
+Uterine Sarcoma,3,fixed_cutoff,33,specificity,0.6666666666666666
+Uterine Sarcoma,3,fixed_cutoff,33,precision,0.0
+Uterine Sarcoma,3,fixed_cutoff,33,f1,0.0
+Uterine Sarcoma,3,fixed_cutoff,33,auroc,
+Uterine Sarcoma,3,fixed_cutoff,33,average_precision,
+Uterine Sarcoma,3,fixed_cutoff,33,prevalence,0.0
+Uterine Sarcoma,3,fixed_cutoff,42,accuracy,1.0
+Uterine Sarcoma,3,fixed_cutoff,42,balanced_accuracy,
+Uterine Sarcoma,3,fixed_cutoff,42,sensitivity,0.0
+Uterine Sarcoma,3,fixed_cutoff,42,specificity,1.0
+Uterine Sarcoma,3,fixed_cutoff,42,precision,0.0
+Uterine Sarcoma,3,fixed_cutoff,42,f1,0.0
+Uterine Sarcoma,3,fixed_cutoff,42,auroc,
+Uterine Sarcoma,3,fixed_cutoff,42,average_precision,
+Uterine Sarcoma,3,fixed_cutoff,42,prevalence,0.0
+Vaginal Cancer,2,continuous,,pearson_r,
+Vaginal Cancer,2,continuous,,spearman_rho,
+Vaginal Cancer,2,continuous,,mae,29.706754684448242
+Vaginal Cancer,2,continuous,,rmse,29.723276092159402
+Vaginal Cancer,2,continuous,,r2,-219.8682854126837
+Vaginal Cancer,2,fixed_cutoff,24,accuracy,0.5
+Vaginal Cancer,2,fixed_cutoff,24,balanced_accuracy,0.5
+Vaginal Cancer,2,fixed_cutoff,24,sensitivity,1.0
+Vaginal Cancer,2,fixed_cutoff,24,specificity,0.0
+Vaginal Cancer,2,fixed_cutoff,24,precision,0.5
+Vaginal Cancer,2,fixed_cutoff,24,f1,0.6666666666666666
+Vaginal Cancer,2,fixed_cutoff,24,auroc,1.0
+Vaginal Cancer,2,fixed_cutoff,24,average_precision,1.0
+Vaginal Cancer,2,fixed_cutoff,24,prevalence,0.5
+Vaginal Cancer,2,fixed_cutoff,33,accuracy,0.0
+Vaginal Cancer,2,fixed_cutoff,33,balanced_accuracy,
+Vaginal Cancer,2,fixed_cutoff,33,sensitivity,0.0
+Vaginal Cancer,2,fixed_cutoff,33,specificity,0.0
+Vaginal Cancer,2,fixed_cutoff,33,precision,0.0
+Vaginal Cancer,2,fixed_cutoff,33,f1,0.0
+Vaginal Cancer,2,fixed_cutoff,33,auroc,
+Vaginal Cancer,2,fixed_cutoff,33,average_precision,
+Vaginal Cancer,2,fixed_cutoff,33,prevalence,0.0
+Vaginal Cancer,2,fixed_cutoff,42,accuracy,0.0
+Vaginal Cancer,2,fixed_cutoff,42,balanced_accuracy,
+Vaginal Cancer,2,fixed_cutoff,42,sensitivity,0.0
+Vaginal Cancer,2,fixed_cutoff,42,specificity,0.0
+Vaginal Cancer,2,fixed_cutoff,42,precision,0.0
+Vaginal Cancer,2,fixed_cutoff,42,f1,0.0
+Vaginal Cancer,2,fixed_cutoff,42,auroc,
+Vaginal Cancer,2,fixed_cutoff,42,average_precision,
+Vaginal Cancer,2,fixed_cutoff,42,prevalence,0.0

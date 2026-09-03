@@ -1,0 +1,10 @@
+{
+  "source_file": "POG570_mutations.maf.gz",
+  "source_sha256": "5ac448892ad470ef2d30b77993306ca57b2342328617b21c8bf5d556bf6b99c6",
+  "source_bytes": 671067428,
+  "converted_file": "results/external_validation/aaron_email/pog570/sigprofiler_input/POG570.txt",
+  "converted_sha256": "7f16753145ef727f17a850823aae9d656b8a808af0f7ae772d209d2fc00580d0",
+  "mutation_rows": 8141138,
+  "samples_in_maf": 570,
+  "coordinate_conversion": "none; POG MAF Start_Position/End_Position are one-based"
+}

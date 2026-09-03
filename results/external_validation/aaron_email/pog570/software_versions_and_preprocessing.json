@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-09-03T05:41:14.714056+00:00",
+  "git_commit": "9615458441a64272368b5a62432b437209796231",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+  "platform": "macOS-15.7.7-arm64-arm-64bit-Mach-O",
+  "numpy": "2.1.3",
+  "pandas": "2.2.3",
+  "scipy": "1.18.1",
+  "scikit_learn": "1.9.0",
+  "xgboost": "3.4.1",
+  "model_file": "results/frozen_models/HRD_Score__signatures_plus_MAF_stack/model.ubj",
+  "model_sha256": "6099b82375d44e902cbc45575db0f7d6e81e92175c663d274151fd8b3398b681",
+  "clinical_sha256": "1ff24eb0bee60cf1f6c4d8faa83eb7e94e353707b6946035941662450722d6ea",
+  "mutation_maf_sha256": "5ac448892ad470ef2d30b77993306ca57b2342328617b21c8bf5d556bf6b99c6",
+  "copy_number_sha256": "8ab4d9a9ddd0e6ae85ca437e40a2d99b2243ca90fa56a6c6899d8504ab188304",
+  "copy_number_used_as_model_input": false,
+  "prespecified_cutoffs": [
+    24,
+    33,
+    42
+  ],
+  "usable_samples": 570,
+  "excluded_samples": 0,
+  "preprocessing": [
+    "POG standard one-based MAF coordinates passed unchanged to SigProfilerMatrixGenerator GRCh37",
+    "SBS96 and ID83 channels normalized within sample; burdens transformed as log10(1+n)",
+    "Bio-MAF v4 generated with the fixed repo resources and feature schema",
+    "signature columns colliding with Bio-MAF controls prefixed with sig__",
+    "columns reordered exactly as feature_order.txt; NaN filled with zero; no scaling",
+    "frozen model applied once without fitting or tuning on POG570"
+  ],
+  "model_caveat": "Vijay's freeze script selected hyperparameters by TCGA-only CV and refit this new artifact on all eligible TCGA samples.",
+  "cohort_difference_note": "POG570 comprises advanced/metastatic or recurrent cancers profiled by whole-genome sequencing, whereas the TCGA training cohort predominantly comprises untreated primary tumors represented by MC3 exome mutation calls.",
+  "SigProfilerMatrixGenerator": "1.3.6",
+  "SigProfilerMatrixGenerator_current_environment": "not installed",
+  "sigprofiler_log": "results/external_validation/aaron_email/pog570/sigprofiler_output/logs/SigProfilerMatrixGenerator_POG570_GRCh372026-08-22.out",
+  "sigprofiler_skipped_mutations": 97,
+  "sigprofiler_version_from_log": "1.3.6"
+}

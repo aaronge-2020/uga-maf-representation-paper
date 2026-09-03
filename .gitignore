@@ -14,6 +14,7 @@ venv/
 .vscode/
 desktop.ini
 .DS_Store
+.Rhistory
 Thumbs.db
 
 # Regenerable runtime work areas
@@ -23,6 +24,10 @@ results/checkpoints/
 # Pre-existing stage outputs moved aside by scripts/run_muat_ablation.py before a rerun, so a
 # failed stage cannot be misreported using the previous run's files.
 results/archive/
+results/external_validation/**/bio_maf_features/
+results/external_validation/**/bio_maf_staging/
+results/external_validation/**/sigprofiler_input/
+results/external_validation/**/sigprofiler_output/
 # Generated manuscript outputs (figures, tables, supplement) are now tracked so collaborators can
 # read them straight from GitHub. See results/manuscript/.gitignore for the one exclusion:
 # canonical/, which is a ~69 MB duplicate of the already-ignored oof_predictions table.
