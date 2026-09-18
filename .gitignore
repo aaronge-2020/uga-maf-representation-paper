@@ -41,7 +41,11 @@ cgr_validation_results/research/experiments/supporting/2026_05_14_unified_uga_lo
 cgr_validation_results/research/assets/EXP023_tcga_brca_hrd/TCGA-BRCA/sigprofiler_results/Assignment_Solution/Activities/Decomposed_MutationType_Probabilities.txt
 data/GRCH37/GCF_000001405.13/GCF_000001405.13_GRCh37_genomic.fna
 data/GRCH37/GCF_000001405.13/GCF_000001405.13_GRCh37_genomic.fna.gz
-results/tables/main_manuscript_complete_panel_oof_predictions.csv
+# main_manuscript_complete_panel_oof_predictions.csv is NO LONGER ignored. It is the canonical
+# split manifest that every MuAt config requires and that external-validation work compares
+# against, so keeping it out of the repo meant collaborators could not get it from a clone.
+# .gitattributes already routes it through Git LFS, so the ~58 MB does not enter git history
+# directly. The 69 MB duplicate under results/manuscript/canonical/ stays ignored.
 results/tables/unified_locked_data_tcga_signature_endpoints_signature_exposure_predictions_checkpoint.csv
 results/tables/muat_style_tcga_comparator_cancer_type_top20_comparable_muat_compatible_events.tsv.gz
 results/tables/muat_style_tcga_comparator_main_endpoints_comparable_muat_compatible_events.tsv.gz

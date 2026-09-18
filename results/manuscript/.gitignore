@@ -3,8 +3,10 @@
 # only be shared out of band).
 #
 # One exception: canonical/ is ~69 MB and holds a duplicate of
-# results/tables/main_manuscript_complete_panel_oof_predictions.csv, which is itself ignored for
-# size. Tracking it would add ~69 MB of undeltifiable data to git history on every regeneration.
+# results/tables/main_manuscript_complete_panel_oof_predictions.csv. That source table is now
+# tracked through Git LFS, so collaborators can get it from a clone; this copy stays ignored
+# because tracking a second, undeltifiable 69 MB duplicate would grow history on every
+# regeneration for no added content.
 canonical/
 
 # Scratch and lock files from atomic writes.

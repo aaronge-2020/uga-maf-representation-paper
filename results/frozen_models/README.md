@@ -50,7 +50,42 @@ and should be described as such.
 
 ## Available models
 
-- `cancer_type_top20__signatures_plus_MAF_stack` — multiclass, 1130 features, n=8800, CV balanced_accuracy 0.7547
-- `cancer_type_top20__standard_sbs96_id83` — multiclass, 182 features, n=8800, CV balanced_accuracy 0.5500
-- `hrd_binary_33__signatures_plus_MAF_stack` — binary, 1130 features, n=772, CV auroc 0.9045
-- `HRD_Score__signatures_plus_MAF_stack` — regression, 1130 features, n=772, CV spearman 0.7722
+| Directory | Task | Features | n | CV score |
+|---|---|---|---|---|
+| `HRD_Score__signatures_plus_MAF_stack` | regression | 1130 | 772 | spearman 0.7722 |
+| `HRD_Score__standard_sbs96_id83` | regression | 182 | 772 | spearman 0.6919 |
+| `cancer_type_top20__signatures_plus_MAF_stack` | 20-class | 1130 | 9986 | accuracy 0.7547 |
+| `cancer_type_top20__standard_sbs96_id83` | 20-class | 182 | 9986 | accuracy 0.5500 |
+| `hrd_binary_33__signatures_plus_MAF_stack` | binary | 1130 | 772 | AUROC 0.9045 |
+
+The two `HRD_Score` rows are the paired comparison: the 182-feature signature-only model loses
+about 0.08 spearman relative to the 1130-feature stack, which is the cost of dropping the Bio
+MAF v4 annotation block. Run the 182-feature model wherever the external cohort cannot be
+annotated identically, and report both if it can.
+
+## Canonical split manifest
+
+External comparisons against the manuscript numbers need the out-of-fold prediction table:
+
+```
+results/tables/main_manuscript_complete_panel_oof_predictions.csv
+```
+
+It is tracked through Git LFS, so `git clone` plus `git lfs pull` retrieves it. Verify before
+use:
+
+| Property | Value |
+|---|---|
+| Size | 57,960,349 bytes |
+| SHA-256 | `84d7472c14383f6f7adac162aa4372e85f7823cdd686294fd03c8f50d6d0e99c` |
+| Rebuilt | 20 August 2026 |
+
+Two superseded copies are in circulation and neither matches the current results:
+
+- `bcf31b56...` at 42,670,877 bytes, the June 2026 pre-rebuild export. This hash appeared in
+  the manifests until now and is the one most likely to be quoted from an older note. It no
+  longer exists anywhere in the project.
+- `f1c4bec3...` at 57,976,322 bytes, the copy on the Hugging Face dataset
+  (`vjdeara/cgr_tensorlab_umsom`, uploaded 11 June 2026). Close to the current file in size but
+  not identical, and one rebuild behind. Use the repository copy, not the Hugging Face copy,
+  until the dataset is refreshed.
