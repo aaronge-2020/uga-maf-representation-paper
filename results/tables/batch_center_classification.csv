@@ -1,0 +1,2 @@
+model,n_samples,centers,cv_accuracy,majority_baseline,manuscript_cv_accuracy,manuscript_majority_baseline
+multinomial_logistic_regression_lbfgs_standardized_5fold_stratified,10206,08;09;10;32,0.697,0.583,0.697,0.583
