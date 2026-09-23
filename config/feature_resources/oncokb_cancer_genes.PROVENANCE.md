@@ -29,16 +29,30 @@ This yields 1,246 genes: 445 oncogene, 340 tumor suppressor, 68 both,
   after the pipeline's gene-symbol normalization, and their OncoKB gene types
   agree 401/401 with the panel's documented `oncokb_gene_type` values.
 - Rebuilding the 16 `oncokb_role_*` columns from the MC3 MAF with this file
-  reproduces the published feature matrix
-  (`results/tables/quick_bio_v4_maf_features.csv.gz`) with Pearson r = 0.96
-  across the role columns (see `~/workspace/analyses/verify_910/rebuild_role_cols_check.py`).
+  (script: `~/workspace/analyses/verify_910/rebuild_role_cols_check.py`,
+  standalone re-run 2026-09-23 with identical role logic) does NOT reproduce the
+  published feature matrix (`results/tables/quick_bio_v4_maf_features.csv.gz`)
+  bit-identically: 15 of the 16 columns differ, and exactly one column matches
+  (`oncokb_role_max_vaf_high_or_moderate_impact__tumor_suppressor`, 0 differing
+  samples). Per-column Pearson correlations between rebuilt and published columns
+  range from 0.95 to 1.00 (for example, r = 0.9590 for the oncogene
+  high-or-moderate-impact log-count column, r = 0.9599 for the tumor-suppressor
+  equivalent; maximum-VAF columns correlate at 0.99 to 1.00). The previously
+  quoted r = 0.96 described that one oncogene count column only, not all 16
+  columns combined.
+- For that one oncogene high-or-moderate-impact count column, the rebuilt values
+  never fall below the published values across all 10,224 samples (rebuilt mean
+  1.31 vs published mean 0.75; 8,588 samples differ upward), consistent with this
+  file's role assignments being a superset of the historical ones for that
+  column. This superset property was checked for that column only and is not
+  established for the other 15 columns.
 
 ## Known limitation: version drift
 OncoKB updates its gene list continuously and the API is not versioned. The
-published feature matrix was built with an earlier OncoKB snapshot whose exact
-role assignments are a strict subset of this file's (a rebuild with this file
-never undercounts relative to the published role columns, correlation 0.96,
-but is not bit-identical). The exact historical snapshot is not recoverable
+published feature matrix was built with an earlier OncoKB snapshot. A from-scratch
+rebuild of the 16 role-aggregate columns with this file produces columns that
+closely track (per-column r 0.95 to 1.00) but do not exactly equal the published
+ones (15 of 16 differ). The exact historical snapshot is not recoverable
 from public sources (no git history, no web archive of the API endpoint).
 
 Consequence: a from-scratch rebuild of the feature matrix with this file will
