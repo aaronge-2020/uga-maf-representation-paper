@@ -1,0 +1,7 @@
+summary,eta2_across_centers,eta2_median_within_type,eta2_max_within_type,eta2_max_type,manuscript_across,manuscript_median,manuscript_max,manuscript_max_type
+Modifier fraction,0.294,0.134,0.291,KIRP,0.293,0.134,0.292,KIRP
+3' UTR fraction,0.309,0.158,0.178,KIRP,0.308,0.158,0.18,KIRP
+Indel fraction,0.034,0.024,0.045,KIRP,0.033,0.024,0.045,KIRP
+Log SBS burden,0.002,0.002,0.036,KIRC,0.003,0.002,0.033,KIRC
+Mean VAF,0.035,0.011,0.064,KIRP,0.035,0.011,0.063,KIRP
+Max VAF,0.02,0.002,0.007,KIRP,0.021,0.002,0.007,KIRP
