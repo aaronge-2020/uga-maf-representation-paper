@@ -1,0 +1,4 @@
+endpoint,reference,candidate,delta,ci_low,ci_high,p_two_sided
+OS,clinical,clinical_plus_cancer_type,0.11064805328759897,0.1015618434247368,0.11941337828228583,0.0
+OS,clinical_plus_cancer_type,clinical_plus_cancer_type_plus_bio_maf,-0.0035943398663521586,-0.0065560253659136345,-0.0005610810901516403,0.02
+OS,clinical,clinical_plus_cancer_type_plus_bio_maf,0.10705371342124681,0.09774925223855321,0.11616885652289362,0.0

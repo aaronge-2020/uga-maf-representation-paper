@@ -1,11 +1,13 @@
 {
-  "created_or_refreshed_at_utc": "2026-06-02T23:09:12.422028+00:00",
+  "created_or_refreshed_at_utc": "2026-09-23T10:30:00+00:00",
   "files": {
     "curated_pathways.yaml": "3c918c1a63309de35508435b47cf4bb362ed9784a1025293d0893a2ff106f1cf",
     "hgnc_symbol_aliases.tsv": "de25023d42816a075fb1c12847daa4acecd00a618a43f51a6325bccdea097ed0",
-    "oncokb_cancer_genes.tsv": "0a93e0b0d506902e5b7e5dea7c96d501b58bde95d924ac756c29d5634cfc3822"
+    "oncokb_cancer_genes.tsv": "1ef55e04e29522d89a4c72795e215955489a5ee0d8ff896a9ed9d75319603f2d"
   },
   "hgnc_complete_set_url": "https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt",
   "oncokb_cancer_gene_url": "https://public.api.oncokb.org/api/v1/utils/cancerGeneList",
-  "resource_profile": "explicit_biological_maf_v2"
+  "resource_profile": "explicit_biological_maf_v2",
+  "oncokb_download_date_utc": "2026-09-23",
+  "oncokb_note": "Replaced all-False stub with real download from oncokb_cancer_gene_url; see oncokb_cancer_genes.PROVENANCE.md for version-drift caveat."
 }

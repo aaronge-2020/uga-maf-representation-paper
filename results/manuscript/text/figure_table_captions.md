@@ -18,7 +18,7 @@ The MuAt-compatible reimplementation is evaluated on measured comparator endpoin
 
 ### Figure 4. Event-level MAF-stack features and combined signature-plus-event representations.
 
-This figure compares Mutational signatures, Bio MAF v4, and Signatures + Bio MAF v4 for each endpoint and model family. XGBoost with Signatures + Bio MAF v4 gives the strongest non-survival tabular results for HRD score (0.767), HRD33 high/low (0.901), and Cancer type (top 20) (0.738). Bio MAF v4 alone improves over Mutational signatures for XGBoost Cancer type (top 20) (0.662 vs 0.538), but underperforms Mutational signatures for Kucab damage class (0.174 vs 0.250). The combined representation improves over Bio MAF v4 in 4 of 10 tested Figure 4 comparisons at q < 0.05, showing that process-level spectra and event-level biology are complementary.
+This figure compares Mutational signatures, Bio MAF v4, and Signatures + Bio MAF v4 for each endpoint and model family. XGBoost with Signatures + Bio MAF v4 gives the strongest non-survival tabular results for HRD score (0.767), HRD33 high/low (0.901), and Cancer type (top 20) (0.738). Bio MAF v4 alone improves over Mutational signatures for XGBoost Cancer type (top 20) (0.662 vs 0.538), but underperforms Mutational signatures for Kucab damage class (0.174 vs 0.250). The combined representation was the strongest tabular performer for HRD score, HRD33 high/low, and cancer type with XGBoost, while spectra alone remained best for Kucab damage class, showing that process-level spectra and event-level biology are complementary but endpoint-dependent.
 
 ### Figure 5. Overall survival CoxNet benchmark.
 
