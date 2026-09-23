@@ -113,14 +113,17 @@ def v4_feature_columns() -> tuple[list[str], list[str], dict[str, list[str]]]:
     base_core, _base_all, _base_blocks = base.feature_columns()
     panel, _tiers, _roles, _residues, _variants = load_v4_resources()
     tier_cols = [f"driver_evidence_{metric}__source_count_{tier}" for tier in range(1, 5) for metric in DRIVER_TIER_METRICS]
+    # Genes whose OncoKB role is INSUFFICIENT_EVIDENCE have no documented,
+    # externally curated role, so we do not emit a role-matched column for
+    # them (their plain functional-event column is retained).
+    no_role_genes = set(
+        panel.loc[panel["oncokb_gene_type"] == "INSUFFICIENT_EVIDENCE", "gene"].astype(str)
+    )
     exact_cols = []
     for gene in panel["gene"].astype(str).tolist():
-        exact_cols.extend(
-            [
-                f"driver_gene_functional_event_log_count__{gene}",
-                f"driver_gene_role_matched_event_log_count__{gene}",
-            ]
-        )
+        exact_cols.append(f"driver_gene_functional_event_log_count__{gene}")
+        if gene not in no_role_genes:
+            exact_cols.append(f"driver_gene_role_matched_event_log_count__{gene}")
     hotspot_cols = list(HOTSPOT_FEATURES)
     core = [*base_core, *tier_cols, *exact_cols, *hotspot_cols]
     all_cols = [*core, *base.OPTIONAL_CONTROLS]
@@ -235,7 +238,9 @@ def build_bio_v4_features(paths: dict, output_dir: Path, *, chunksize: int, forc
         for (sample, gene), count in functional.groupby(["sample", "_gene"], observed=True).size().items():
             matrix.at[sample, f"driver_gene_functional_event_log_count__{gene}"] += float(count)
         for (sample, gene), count in role_matched.groupby(["sample", "_gene"], observed=True).size().items():
-            matrix.at[sample, f"driver_gene_role_matched_event_log_count__{gene}"] += float(count)
+            col = f"driver_gene_role_matched_event_log_count__{gene}"
+            if col in matrix.columns:
+                matrix.at[sample, col] += float(count)
 
         hs_residue = chunk[chunk["_hotspot_residue"]]
         hs_exact = chunk[chunk["_hotspot_exact"]]
