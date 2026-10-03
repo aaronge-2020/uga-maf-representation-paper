@@ -1,0 +1,69 @@
+{
+  "hrd_spearman": {
+    "muat_mean": 0.5272348,
+    "sigmaf_mean": 0.7765034,
+    "mean_diff": 0.2492686,
+    "ci_lower": 0.2009828484921171,
+    "ci_upper": 0.2975543515078829,
+    "p_value": 0.000137669248938505,
+    "t_stat": 14.333018804450463,
+    "fold_diffs": [
+      0.21518199999999998,
+      0.309142,
+      0.24074000000000007,
+      0.26388500000000004,
+      0.21739399999999998
+    ],
+    "muat_folds": [
+      0.552736,
+      0.448335,
+      0.513346,
+      0.522408,
+      0.599349
+    ],
+    "sigmaf_folds": [
+      0.767918,
+      0.757477,
+      0.754086,
+      0.786293,
+      0.816743
+    ]
+  },
+  "hrd33_auroc": {
+    "muat_mean": 0.7513306,
+    "sigmaf_mean": 0.9110638,
+    "mean_diff": 0.1597332,
+    "ci_lower": 0.10949132830736928,
+    "ci_upper": 0.2099750716926307,
+    "p_value": 0.0009090829363777438,
+    "t_stat": 8.827108671244638,
+    "fold_diffs": [
+      0.15139899999999995,
+      0.16272600000000004,
+      0.22554399999999997,
+      0.141976,
+      0.11702100000000004
+    ],
+    "muat_folds": [
+      0.761919,
+      0.746651,
+      0.714875,
+      0.742295,
+      0.790913
+    ],
+    "sigmaf_folds": [
+      0.913318,
+      0.909377,
+      0.940419,
+      0.884271,
+      0.907934
+    ]
+  },
+  "notes": {
+    "muat_source": "muat_style_tcga_comparator_ab_c_full_fold_metrics.csv (post-fix, exact dicts)",
+    "sigmaf_source": "main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)",
+    "folds_paired": "Paired by fold number on identical test splits. Verified: per-fold test-set sizes match the main benchmark exactly (HRD: 155/155/154/154/154; cancer typing: 1760x5), the MuAt run documented reuse of the main benchmark's split definitions, and per-sample test membership is recorded in muat_style_tcga_comparator_ab_c_full_split_manifest.csv. A per-sample cross-check against the main run's OOF predictions was not possible locally (predictions file is a Git LFS pointer).",
+    "discrepancy": "Fold means (0.527/0.751) from muat_style_tcga_comparator_ab_c_full_fold_metrics.csv. These are the values displayed in the manuscript. Pooled OOF values are 0.504/0.703 (muat_ablation_summary.csv, stage C). Vijay's email cited 0.519/0.729; no reply to clarification request as of 2026-10-03, so the repo-grounded fold means are used for internal consistency with the paired test.",
+    "estimator": "fold-mean: average of per-fold scores, matching Table 1 note"
+  }
+}

@@ -1,0 +1,46 @@
+{
+ "n_samples": 913,
+ "accuracy": 0.6144578313253012,
+ "accuracy_ci95": [
+  0.5826944140197152,
+  0.6451259583789705
+ ],
+ "balanced_accuracy": 0.5566586484534405,
+ "balanced_accuracy_ci95": [
+  0.5237557805184715,
+  0.5952110605037476
+ ],
+ "macro_f1": 0.3151992763231869,
+ "macro_f1_ci95": [
+  0.2987659154459399,
+  0.39784143030282326
+ ],
+ "top3_accuracy": 0.7732749178532311,
+ "top3_accuracy_ci95": [
+  0.7458926615553122,
+  0.8017524644030668
+ ],
+ "per_type_recall": {
+  "BRCA": 0.8461538461538461,
+  "ESCA": 0.7731958762886598,
+  "HNSC": 0.15384615384615385,
+  "KIRC": 0.8243243243243243,
+  "LIHC": 0.8275862068965517,
+  "OV": 0.6666666666666666,
+  "PRAD": 0.03333333333333333,
+  "SKCM": 0.7285714285714285,
+  "STAD": 0.15625
+ },
+ "sha256_ok": true,
+ "comparators": {
+  "spectra_only_pcawg_accuracy": 0.479,
+  "spectra_only_pcawg_balanced_accuracy": 0.365,
+  "internal_tcga_cv_accuracy": 0.738
+ },
+ "macro_f1_9class": 0.56,
+ "macro_f1_9class_ci95": [
+  0.516,
+  0.602
+ ],
+ "note": "macro_f1 is over all 20 predicted classes (11 absent in PCAWG); macro_f1_9class restricts to the 9 PCAWG classes present."
+}

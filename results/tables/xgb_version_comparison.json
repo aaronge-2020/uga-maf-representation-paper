@@ -1,0 +1,216 @@
+{
+  "question": "Reviewer: \"batch effects do not drive the Table 1 ranking\" was tested under xgboost 3.4.1 while Table 1 ran under 1.6.2. Rerun the batch-effect sensitivity analyses under 1.6.2 and compare.",
+  "protocol_note": "Both analyses rerun from scratch under each xgboost version with identical data, seed (20261002), splits, and hyperparameters; 95% CIs are t-based (mean +/- 2.776*SEM, df=4), matching the declared Methods construction. Analysis 1 cohort: 1,757 deduped samples, 5 multi-center types. Analysis 2 cohort: 8,861 rows (paper center cohort: top-20 types, centers 01/08/09/10), TSS-grouped folds over 566 tissue source sites.",
+  "reproduction_fidelity_vs_recorded_jsons": {
+    "multicenter_5types": "EXACT: the 3.4.1 rerun reproduces all recorded fold scores to 6 decimal places for all 4 representations.",
+    "center_stratified": "APPROXIMATE: the 3.4.1 rerun is close (standard mean 0.7427 vs recorded 0.7465; grouped mean 0.7480 vs recorded 0.7398) but not exact. The recorded JSON reports n_samples=8801; the reconstructed cohort from the documented files is n=8861 (the paper center cohort). The 60-sample difference could not be resolved from the available files (no generating script was found; 4 cohort variants x row orders tested). n_centers=566 matches the TSS grouping used here. The version comparison below is unaffected: both versions ran the identical protocol."
+  },
+  "analyses": {
+    "multicenter_5types": {
+      "v341": {
+        "burden_only": {
+          "mean": 0.4818,
+          "ci_lower": 0.4622,
+          "ci_upper": 0.5014,
+          "fold_scores": [
+            0.4993,
+            0.4621,
+            0.4793,
+            0.496,
+            0.4722
+          ],
+          "n_features": 3
+        },
+        "spectra_only": {
+          "mean": 0.7786,
+          "ci_lower": 0.7621,
+          "ci_upper": 0.7951,
+          "fold_scores": [
+            0.7936,
+            0.7909,
+            0.7734,
+            0.7623,
+            0.7728
+          ],
+          "n_features": 182
+        },
+        "bio_maf_only": {
+          "mean": 0.8514,
+          "ci_lower": 0.8283,
+          "ci_upper": 0.8745,
+          "fold_scores": [
+            0.8439,
+            0.8688,
+            0.8732,
+            0.8408,
+            0.8304
+          ],
+          "n_features": 948
+        },
+        "sig_plus_maf": {
+          "mean": 0.9003,
+          "ci_lower": 0.8846,
+          "ci_upper": 0.916,
+          "fold_scores": [
+            0.8822,
+            0.9164,
+            0.9035,
+            0.9042,
+            0.8953
+          ],
+          "n_features": 1130
+        }
+      },
+      "v162": {
+        "burden_only": {
+          "mean": 0.4727,
+          "ci_lower": 0.4391,
+          "ci_upper": 0.5063,
+          "fold_scores": [
+            0.5084,
+            0.4396,
+            0.4745,
+            0.487,
+            0.454
+          ],
+          "n_features": 3
+        },
+        "spectra_only": {
+          "mean": 0.7701,
+          "ci_lower": 0.7633,
+          "ci_upper": 0.7769,
+          "fold_scores": [
+            0.7697,
+            0.7689,
+            0.7637,
+            0.7694,
+            0.7789
+          ],
+          "n_features": 182
+        },
+        "bio_maf_only": {
+          "mean": 0.8608,
+          "ci_lower": 0.8381,
+          "ci_upper": 0.8835,
+          "fold_scores": [
+            0.851,
+            0.8846,
+            0.8762,
+            0.8477,
+            0.8446
+          ],
+          "n_features": 948
+        },
+        "sig_plus_maf": {
+          "mean": 0.8971,
+          "ci_lower": 0.8776,
+          "ci_upper": 0.9166,
+          "fold_scores": [
+            0.8811,
+            0.913,
+            0.9084,
+            0.9036,
+            0.8795
+          ],
+          "n_features": 1130
+        }
+      },
+      "recorded_v341_reference": {
+        "burden_only": {
+          "mean": 0.4818
+        },
+        "spectra_only": {
+          "mean": 0.7786
+        },
+        "bio_maf_only": {
+          "mean": 0.8514
+        },
+        "sig_plus_maf": {
+          "mean": 0.9003
+        }
+      },
+      "ranking_v341": [
+        "burden_only",
+        "spectra_only",
+        "bio_maf_only",
+        "sig_plus_maf"
+      ],
+      "ranking_v162": [
+        "burden_only",
+        "spectra_only",
+        "bio_maf_only",
+        "sig_plus_maf"
+      ],
+      "ranking_recorded": [
+        "burden_only",
+        "spectra_only",
+        "bio_maf_only",
+        "sig_plus_maf"
+      ],
+      "ranking_same": true
+    },
+    "center_stratified_gap": {
+      "v341": {
+        "standard": {
+          "mean": 0.7427,
+          "ci_lower": 0.7321,
+          "ci_upper": 0.7532,
+          "fold_scores": [
+            0.7427,
+            0.7344,
+            0.7494,
+            0.7341,
+            0.7527
+          ]
+        },
+        "grouped": {
+          "mean": 0.748,
+          "ci_lower": 0.7356,
+          "ci_upper": 0.7604,
+          "fold_scores": [
+            0.7517,
+            0.7546,
+            0.7567,
+            0.745,
+            0.732
+          ]
+        },
+        "gap_standard_minus_grouped": -0.0054,
+        "n_samples": 8861,
+        "n_centers_tss": 566,
+        "stack_order": "maffirst"
+      },
+      "v162": {
+        "standard": {
+          "mean": 0.748,
+          "ci_lower": 0.7353,
+          "ci_upper": 0.7606,
+          "fold_scores": [
+            0.7547,
+            0.7311,
+            0.7559,
+            0.7459,
+            0.7522
+          ]
+        },
+        "grouped": {
+          "mean": 0.7467,
+          "ci_lower": 0.7313,
+          "ci_upper": 0.762,
+          "fold_scores": [
+            0.7483,
+            0.7565,
+            0.7581,
+            0.7429,
+            0.7275
+          ]
+        },
+        "gap_standard_minus_grouped": 0.0013,
+        "n_samples": 8861,
+        "n_centers_tss": 566,
+        "stack_order": "maffirst"
+      }
+    }
+  },
+  "conclusion": "The batch-effect conclusion is version-robust in the sense that matters: the representation ranking (sig_plus_maf > bio_maf_only > spectra_only > burden_only) is identical under xgboost 1.6.2 and 3.4.1 (ranking_same=True), and the center-stratified gap is negligible under both versions (1.6.2 gap +0.0013, 3.4.1 gap -0.0054; |gap| < 0.01 in both, vs recorded +0.0067). Point estimates differ slightly between versions (expected: the two releases use different histogram/RNG internals), so version-specific means and CIs are reported separately rather than pooled; the qualitative findings, ranking holds and the standard-vs-grouped gap is near zero, do not depend on the version."
+}

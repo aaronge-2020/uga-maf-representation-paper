@@ -1,0 +1,58 @@
+[
+ {
+  "contrast": "burden_only vs standard_sbs96_id83",
+  "endpoint": "cancer_type_top20",
+  "mean_diff": -0.28320446516642994,
+  "raw_p": 2.5000928578995092e-08,
+  "n": 5,
+  "bh_q": 1.7500650005296564e-07
+ },
+ {
+  "contrast": "burden_only vs standard_sbs96_id83",
+  "endpoint": "HRD_Score",
+  "mean_diff": -0.08203963947459729,
+  "raw_p": 0.03887742692498296,
+  "n": 5,
+  "bh_q": 0.05442839769497614
+ },
+ {
+  "contrast": "burden_only vs standard_sbs96_id83",
+  "endpoint": "hrd_binary_33",
+  "mean_diff": -0.053026192047477314,
+  "raw_p": 0.14055873022766363,
+  "n": 5,
+  "bh_q": 0.14055873022766363
+ },
+ {
+  "contrast": "burden_only vs standard_sbs96_id83",
+  "endpoint": "OS",
+  "mean_diff": -0.02326457565969886,
+  "raw_p": 0.0014749468540764894,
+  "n": 5,
+  "bh_q": 0.0025811569946338564
+ },
+ {
+  "contrast": "signatures_plus_MAF_stack vs standard_sbs96_id83",
+  "endpoint": "cancer_type_top20",
+  "mean_diff": 0.1995909003950666,
+  "raw_p": 3.3113494711308505e-05,
+  "n": 5,
+  "bh_q": 0.00011589723148957978
+ },
+ {
+  "contrast": "signatures_plus_MAF_stack vs standard_sbs96_id83",
+  "endpoint": "HRD_Score",
+  "mean_diff": 0.0822462952655603,
+  "raw_p": 0.0014081483860382223,
+  "n": 5,
+  "bh_q": 0.0025811569946338564
+ },
+ {
+  "contrast": "signatures_plus_MAF_stack vs standard_sbs96_id83",
+  "endpoint": "hrd_binary_33",
+  "mean_diff": 0.0368489812229168,
+  "raw_p": 0.05830901478562458,
+  "n": 5,
+  "bh_q": 0.06802718391656201
+ }
+]
