@@ -41,6 +41,11 @@ try:
 except ImportError:  # pragma: no cover - direct execution from src/utils.
     from endpoint_registry import CANCER_TYPE_ENDPOINT_CLASSES, build_cdr_cancer_type_labels
 
+try:
+    from utils.oncokb_fetch import ensure_oncokb_tsv
+except ImportError:  # pragma: no cover - direct execution from src/utils.
+    from oncokb_fetch import ensure_oncokb_tsv
+
 
 BUNDLE_ROOT = Path(__file__).resolve().parents[2]
 REPRO_ROOT = BUNDLE_ROOT
@@ -284,7 +289,9 @@ def build_base_bio_features(paths: dict, output_dir: Path, *, chunksize: int, fo
     standard_path = mc3_dir / "features" / "features_standard_sbs96_id83.csv.gz"
     sample_ids = pd.read_csv(standard_path, index_col=0, usecols=[0]).index.astype(str).tolist()
     sample_set = set(sample_ids)
-    role_lookup = load_oncokb_roles(BUNDLE_ROOT / "config" / "feature_resources" / "oncokb_cancer_genes.tsv")
+    role_lookup = load_oncokb_roles(
+        ensure_oncokb_tsv(BUNDLE_ROOT / "config" / "feature_resources" / "oncokb_cancer_genes.tsv")
+    )
 
     raw_counts = pd.DataFrame(0.0, index=pd.Index(sample_ids, name="sample"), columns=all_cols, dtype=np.float64)
     total_events = pd.Series(0.0, index=raw_counts.index)

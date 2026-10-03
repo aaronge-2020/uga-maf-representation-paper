@@ -1,0 +1,221 @@
+{
+  "xgboost_version": "3.4.1",
+  "model": "frozen cancer_type_top20__signatures_plus_MAF_stack (actual winner)",
+  "n_features_total": 1130,
+  "n_samples_center_cohort": 8861,
+  "seed_eta": 20260822,
+  "top50_composition": {
+    "n_maf": 46,
+    "n_sig": 4,
+    "sig_features": [
+      "SBS96__T[C>T]C",
+      "SBS96__A[C>A]G",
+      "SBS96__T[C>G]A",
+      "sig__log10_sbs_burden"
+    ],
+    "sig_gains": {
+      "SBS96__T[C>T]C": 6.91,
+      "SBS96__A[C>A]G": 5.1,
+      "SBS96__T[C>G]A": 4.26,
+      "sig__log10_sbs_burden": 3.83
+    },
+    "top50_ranks_gains": {
+      "driver_gene_role_matched_event_log_count__IDH1": 36.19,
+      "driver_gene_functional_event_log_count__VHL": 30.14,
+      "driver_gene_role_matched_event_log_count__CDH1": 27.78,
+      "vep_biotype_count__protein_coding": 24.7,
+      "driver_gene_role_matched_event_log_count__PBRM1": 23.21,
+      "driver_gene_role_matched_event_log_count__GATA3": 19.83,
+      "driver_gene_role_matched_event_log_count__APC": 19.41,
+      "vep_canonical_count__yes": 18.97,
+      "driver_gene_functional_event_log_count__PTEN": 17.24,
+      "driver_gene_functional_event_log_count__APC": 16.48,
+      "driver_gene_role_matched_event_log_count__CDKN2A": 14.43,
+      "residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count": 13.22,
+      "driver_gene_functional_event_log_count__TSHR": 8.9,
+      "driver_gene_functional_event_log_count__PPP2R1A": 8.7,
+      "driver_gene_role_matched_event_log_count__MET": 8.7,
+      "driver_gene_functional_event_log_count__IDH1": 8.46,
+      "driver_gene_role_matched_event_log_count__MAP3K1": 7.66,
+      "driver_gene_role_matched_event_log_count__FAT1": 7.64,
+      "SBS96__T[C>T]C": 6.91,
+      "cancer_hotspot_residue_log_count": 6.59,
+      "driver_gene_functional_event_log_count__IDH2": 6.44,
+      "driver_gene_functional_event_log_count__ERCC2": 6.33,
+      "driver_gene_functional_event_log_count__SPOP": 6.17,
+      "driver_gene_functional_event_log_count__TP53": 6.05,
+      "driver_gene_functional_event_log_count__GATA3": 5.88,
+      "vep_impact_count__modifier": 5.86,
+      "vep_impact_fraction__modifier": 5.79,
+      "driver_gene_role_matched_event_log_count__NSD1": 5.71,
+      "driver_gene_role_matched_event_log_count__KRAS": 5.57,
+      "cancer_hotspot_unique_gene_log_count": 5.49,
+      "vep_consequence_count__synonymous_variant": 5.46,
+      "SBS96__A[C>A]G": 5.1,
+      "vep_impact_count__moderate": 5.05,
+      "driver_gene_functional_event_log_count__BRAF": 5.01,
+      "vep_consequence_count__inframe_deletion": 5.0,
+      "driver_gene_functional_event_log_count__MAP3K1": 4.82,
+      "driver_gene_role_matched_event_log_count__KDM6A": 4.76,
+      "driver_gene_role_matched_event_log_count__CDKN1A": 4.76,
+      "vep_polyphen_count__unknown": 4.69,
+      "driver_gene_functional_event_log_count__PIK3CA": 4.56,
+      "driver_gene_functional_event_log_count__FAS": 4.47,
+      "driver_gene_functional_event_log_count__KRAS": 4.45,
+      "vep_consequence_fraction__3_prime_utr_variant": 4.39,
+      "driver_gene_functional_event_log_count__CTNNB1": 4.29,
+      "SBS96__T[C>G]A": 4.26,
+      "driver_gene_role_matched_event_log_count__HRAS": 4.2,
+      "driver_gene_role_matched_event_log_count__NUTM1": 4.04,
+      "driver_gene_role_matched_event_log_count__PTEN": 4.03,
+      "driver_gene_role_matched_event_log_count__FBXO11": 3.98,
+      "sig__log10_sbs_burden": 3.83
+    }
+  },
+  "provenance": {
+    "top50_source": "gain importance from frozen winner booster (model.ubj), xgboost 3.4.1",
+    "eta2_maf": "exact, from quick_bio_v4_maf_features.csv.gz on n=8861 center cohort",
+    "eta2_sig_log10_sbs_burden": "proxy via Bio MAF log10_sbs_burden (same quantity: log10 total SNV burden)",
+    "eta2_sbs96_channels": "NOT measurable: TCGA signature matrix and TCGA MAF not on disk; 3 channels in top-50 handled via sensitivity grid",
+    "eta2_rest_sig_178": "NOT measurable; medians robust (902/1080 rest known); MW sensitivity covers"
+  },
+  "measurable_analysis_47_vs_902": {
+    "n_top_known": 47,
+    "n_rest_known": 902,
+    "median_eta_top_known": 0.00685,
+    "median_eta_rest_known": 0.00524,
+    "mannwhitney_p_known": 0.10570651094154507,
+    "frac_top_known_gt_0.10": 0.0638,
+    "frac_rest_known_gt_0.10": 0.0144,
+    "top50_eta_known": {
+      "vep_impact_fraction__modifier": 0.5726,
+      "vep_consequence_fraction__3_prime_utr_variant": 0.5297,
+      "vep_impact_count__modifier": 0.1239,
+      "driver_gene_functional_event_log_count__CTNNB1": 0.0811,
+      "sig__log10_sbs_burden": 0.0368,
+      "vep_polyphen_count__unknown": 0.0318,
+      "vep_canonical_count__yes": 0.0305,
+      "vep_biotype_count__protein_coding": 0.0299,
+      "vep_consequence_count__synonymous_variant": 0.0281,
+      "driver_gene_functional_event_log_count__VHL": 0.0279,
+      "vep_impact_count__moderate": 0.0252,
+      "vep_consequence_count__inframe_deletion": 0.0231,
+      "driver_gene_functional_event_log_count__IDH2": 0.0192,
+      "driver_gene_functional_event_log_count__GATA3": 0.0177,
+      "driver_gene_functional_event_log_count__PPP2R1A": 0.0145,
+      "residual_non_oncokb_positive_role_unique_high_or_moderate_impact_genes_log_count": 0.0133,
+      "driver_gene_functional_event_log_count__APC": 0.0122,
+      "driver_gene_role_matched_event_log_count__NUTM1": 0.0099,
+      "driver_gene_functional_event_log_count__TP53": 0.0077,
+      "driver_gene_functional_event_log_count__TSHR": 0.0073,
+      "driver_gene_functional_event_log_count__ERCC2": 0.0071,
+      "driver_gene_role_matched_event_log_count__KRAS": 0.0069,
+      "driver_gene_functional_event_log_count__KRAS": 0.0069,
+      "cancer_hotspot_unique_gene_log_count": 0.0069,
+      "cancer_hotspot_residue_log_count": 0.006,
+      "driver_gene_role_matched_event_log_count__CDKN2A": 0.0052,
+      "driver_gene_functional_event_log_count__PIK3CA": 0.005,
+      "driver_gene_role_matched_event_log_count__MET": 0.0049,
+      "driver_gene_functional_event_log_count__BRAF": 0.0049,
+      "driver_gene_role_matched_event_log_count__NSD1": 0.0043,
+      "driver_gene_functional_event_log_count__FAS": 0.0034,
+      "driver_gene_role_matched_event_log_count__KDM6A": 0.0034,
+      "driver_gene_role_matched_event_log_count__IDH1": 0.0034,
+      "driver_gene_role_matched_event_log_count__FAT1": 0.0034,
+      "driver_gene_functional_event_log_count__SPOP": 0.0034,
+      "driver_gene_role_matched_event_log_count__MAP3K1": 0.0032,
+      "driver_gene_role_matched_event_log_count__PTEN": 0.0031,
+      "driver_gene_functional_event_log_count__PTEN": 0.0029,
+      "driver_gene_role_matched_event_log_count__APC": 0.0027,
+      "driver_gene_functional_event_log_count__IDH1": 0.0027,
+      "driver_gene_functional_event_log_count__MAP3K1": 0.0025,
+      "driver_gene_role_matched_event_log_count__CDH1": 0.0024,
+      "driver_gene_role_matched_event_log_count__FBXO11": 0.0021,
+      "driver_gene_role_matched_event_log_count__GATA3": 0.0017,
+      "driver_gene_role_matched_event_log_count__PBRM1": 0.0014,
+      "driver_gene_role_matched_event_log_count__HRAS": 0.0013,
+      "driver_gene_role_matched_event_log_count__CDKN1A": 0.0006
+    }
+  },
+  "sensitivity_sbs96_grid": [
+    {
+      "assumed_sbs96_eta2": 0.0,
+      "median_top50": 0.00562,
+      "mannwhitney_p": 0.3739407652954443,
+      "frac_top50_gt_0.10": 0.06
+    },
+    {
+      "assumed_sbs96_eta2": 0.01,
+      "median_top50": 0.0069,
+      "mannwhitney_p": 0.06076818339188199,
+      "frac_top50_gt_0.10": 0.06
+    },
+    {
+      "assumed_sbs96_eta2": 0.05,
+      "median_top50": 0.0069,
+      "mannwhitney_p": 0.027570706589693003,
+      "frac_top50_gt_0.10": 0.06
+    },
+    {
+      "assumed_sbs96_eta2": 0.1,
+      "median_top50": 0.0069,
+      "mannwhitney_p": 0.02379562839470314,
+      "frac_top50_gt_0.10": 0.06
+    },
+    {
+      "assumed_sbs96_eta2": 0.2,
+      "median_top50": 0.0069,
+      "mannwhitney_p": 0.022925074181042438,
+      "frac_top50_gt_0.10": 0.12
+    },
+    {
+      "assumed_sbs96_eta2": 0.3,
+      "median_top50": 0.0069,
+      "mannwhitney_p": 0.02273541857661132,
+      "frac_top50_gt_0.10": 0.12
+    },
+    {
+      "assumed_sbs96_eta2": 0.5,
+      "median_top50": 0.0069,
+      "mannwhitney_p": 0.022547127782922522,
+      "frac_top50_gt_0.10": 0.12
+    },
+    {
+      "assumed_sbs96_eta2": 1.0,
+      "median_top50": 0.0069,
+      "mannwhitney_p": 0.022547127782922522,
+      "frac_top50_gt_0.10": 0.12
+    }
+  ],
+  "top5_eta_overall_known": {
+    "vep_impact_fraction__modifier": 0.5726,
+    "vep_consequence_fraction__3_prime_utr_variant": 0.5297,
+    "vep_impact_fraction__moderate": 0.3149,
+    "vep_consequence_fraction__missense_variant": 0.3113,
+    "vep_polyphen_fraction__unknown": 0.2847
+  },
+  "elapsed_minutes": 0.8,
+  "high_eta2_in_top50": {
+    "features": {
+      "vep_impact_fraction__modifier": {
+        "eta2": 0.5726,
+        "gain_rank": 27,
+        "gain": 5.8
+      },
+      "vep_consequence_fraction__3_prime_utr_variant": {
+        "eta2": 0.5297,
+        "gain_rank": 43,
+        "gain": 4.4
+      },
+      "vep_impact_count__modifier": {
+        "eta2": 0.1239,
+        "gain_rank": 26,
+        "gain": 5.9
+      }
+    },
+    "combined_gain_share": 0.0128,
+    "mechanism": "center 09 vs 08: modifier fraction mean 0.195 vs 0.103; 3pUTR fraction 0.107 vs 0.040 (all types). Consistent with capture-kit differences in non-coding/UTR coverage, i.e. genuine technical batch effect in VEP annotation-rate features.",
+    "interpretation": "The winner does use 3 center-loaded annotation features, but with modest weight (1.3% of total gain; ranks 26/27/43). The other 44 measurable top-50 features have median eta2 0.005."
+  },
+  "conclusion": "On the full 1130-feature winner, the top-50 by gain (46 MAF + 4 sig) shows median eta2 0.0069 vs 0.0052 background (measurable 47 vs 902; MW p=0.106, not significant). The set is dominated by clean driver-gene features, but 3 VEP annotation-rate features with high center eta2 (0.12-0.57) are included at modest weight (1.3% of gain). The 3 SBS96 channels in the top-50 could not be measured (TCGA signature matrix absent); sensitivity shows the MW p-value stays >0.05 only if their eta2 < ~0.02, and the median comparison is invariant regardless. Combined with cross-center OVR (0.77-0.94), PCAWG consortium transfer, and unchanged center-stratified CV gap, the ranking is not batch-driven, but the manuscript's 'p=0.85, no excess' phrasing (from the 910-model top-50) should be softened to the winner's numbers with the 3-feature caveat disclosed."
+}

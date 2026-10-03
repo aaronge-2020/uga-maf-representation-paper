@@ -1,0 +1,1397 @@
+gene,oncokb_gene_type,oncokb_source_count,oncokb_annotated,cosmic_cgc_v99_flag_in_oncokb,intogen_2024_driver,vogelstein_2013,cancer_hotspots_v3_gene,primary_driver_evidence_count,selected_for_v4_exact_gene_block,selection_rule
+A1CF,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AAMP,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ABCB1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ABCC3,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ABCC4,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ABI1,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ABL1,ONCOGENE,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ABL2,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ABRAXAS1,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ACACA,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ACKR3,ONCOGENE_AND_TSG,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ACP3,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ACSL3,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ACSL4,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ACSL6,,1,False,False,True,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ACSM3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ACTB,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ACTG1,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ACVR1,ONCOGENE,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ACVR1B,TSG,4,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ACVR2A,ONCOGENE_AND_TSG,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ADAMTS9,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ADAR,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ADARB2,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ADGRA2,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ADGRG4,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ADHFE1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AFDN,TSG,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AFF1,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AFF3,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AFF4,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AGGF1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AGK,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AGO1,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AGO2,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AIM2,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AIP,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AJUBA,TSG,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AKAP9,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+AKT1,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AKT1S1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AKT2,ONCOGENE,6,True,True,False,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AKT3,ONCOGENE,5,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ALB,NEITHER,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ALDH1A3,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ALDH1L2,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ALDH2,TSG,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ALK,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ALOX12B,ONCOGENE_AND_TSG,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ALOX15B,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ALOX5,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ALPK1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+AMER1,TSG,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ANK1,ONCOGENE_AND_TSG,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ANKRD11,TSG,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ANKRD26,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+APC,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+APCDD1,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+APEX1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+APH1A,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+APLNR,ONCOGENE_AND_TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+APOBEC3B,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AR,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARAF,ONCOGENE,5,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARFRP1,,2,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARHGAP26,ONCOGENE_AND_TSG,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARHGAP35,ONCOGENE_AND_TSG,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARHGAP5,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ARHGEF10,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ARHGEF10L,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ARHGEF12,ONCOGENE_AND_TSG,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARHGEF28,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARID1A,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARID1B,TSG,5,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARID2,TSG,6,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARID3A,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARID3B,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARID3C,INSUFFICIENT_EVIDENCE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARID4A,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARID4B,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARID5A,INSUFFICIENT_EVIDENCE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARID5B,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ARNT,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ART1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ASCL1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ASMTL,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ASPSCR1,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ASXL1,TSG,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ASXL2,TSG,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ASXL3,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATF1,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATF7IP,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ATG5,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATG7,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ATIC,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATM,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATMIN,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATP1A1,ONCOGENE_AND_TSG,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATP2B3,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATP6AP1,INSUFFICIENT_EVIDENCE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATP6V1B2,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATR,TSG,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATRIP,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATRX,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATXN2,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ATXN7,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AURKA,ONCOGENE,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AURKB,ONCOGENE,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AURKC,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AVIL,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AXIN1,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AXIN2,TSG,4,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+AXL,ONCOGENE,5,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+B2M,TSG,6,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BAALC,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BABAM1,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BABAM2,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BACH1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BACH2,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BAP1,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BARD1,TSG,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BAX,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BAZ1A,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+BBC3,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCL10,TSG,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCL11A,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCL11B,TSG,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCL2,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCL2L1,INSUFFICIENT_EVIDENCE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCL2L11,TSG,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCL2L2,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCL3,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCL6,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCL7A,TSG,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCL9,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCL9L,ONCOGENE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCLAF1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+BCOR,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCORL1,TSG,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BCR,ONCOGENE,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BIRC3,ONCOGENE_AND_TSG,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BIRC5,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BIRC6,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+BLM,TSG,5,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BMP6,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+BMPR1A,TSG,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BRAF,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BRCA1,TSG,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BRCA2,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BRD2,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BRD3,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BRD4,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BRD7,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+BRD9,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BRIP1,TSG,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BRSK1,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BTG1,TSG,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BTG2,TSG,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BTK,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BTLA,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+BUB1B,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CACNA1D,ONCOGENE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CAD,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CADM2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CALR,ONCOGENE,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CAMTA1,TSG,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CANT1,ONCOGENE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CARD11,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CARM1,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CARS1,INSUFFICIENT_EVIDENCE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CASP8,TSG,6,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CASR,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CASZ1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CAV1,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CBFA2T3,TSG,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CBFB,TSG,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CBL,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CBLB,TSG,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CBLC,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CCAR1,TSG,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CCDC6,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CCN6,ONCOGENE_AND_TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CCNB1IP1,INSUFFICIENT_EVIDENCE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CCNB3,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CCND1,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CCND2,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CCND3,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CCNE1,ONCOGENE,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CCNQ,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CCNT1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CCR7,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CCT2,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CCT6B,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CD19,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CD209,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CD22,NEITHER,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CD274,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CD276,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CD28,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CD36,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CD58,TSG,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CD70,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CD74,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CD79A,ONCOGENE,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CD79B,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDC42,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDC73,TSG,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDH1,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDH10,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CDH11,ONCOGENE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDH2,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDH4,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDK12,TSG,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDK4,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDK6,ONCOGENE,6,True,True,False,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDK8,ONCOGENE,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDKN1A,TSG,4,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDKN1B,TSG,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDKN1C,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDKN2A,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDKN2B,TSG,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDKN2C,TSG,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CDX2,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CEBPA,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CENPA,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CEP43,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CEP89,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CHCHD7,INSUFFICIENT_EVIDENCE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CHD2,TSG,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CHD4,ONCOGENE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CHD7,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CHEK1,TSG,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CHEK2,TSG,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CHIC2,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CHN1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CHRDL1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CHTF8,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CHUK,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CIC,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CIITA,TSG,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CILK1,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CKS1B,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CLIP1,ONCOGENE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CLP1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CLTC,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CLTCL1,INSUFFICIENT_EVIDENCE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CMTR2,TSG,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CNBP,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CNOT3,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CNOT9,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CNTRL,INSUFFICIENT_EVIDENCE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+COL1A1,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+COL2A1,TSG,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+COL5A1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+COL6A3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+COL6A6,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+COP1,ONCOGENE_AND_TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CPEB3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CPS1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CRBN,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CREB1,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CREB3L1,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CREB3L2,INSUFFICIENT_EVIDENCE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CREBBP,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CREM,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CRKL,ONCOGENE,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CRLF2,ONCOGENE,6,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CRTC1,ONCOGENE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CRTC3,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CSDE1,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CSF1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CSF1R,INSUFFICIENT_EVIDENCE,6,True,False,True,True,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CSF3R,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CSMD3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CSPG4,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CTC1,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CTCF,TSG,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CTDNEP1,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CTLA4,ONCOGENE,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CTNNA1,TSG,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CTNNA2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CTNNB1,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CTNND2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CTR9,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CUL3,TSG,4,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CUL4A,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CUX1,TSG,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CXCR4,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CYLD,TSG,5,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CYP17A1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CYP19A1,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+CYP2C8,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+CYSLTR2,ONCOGENE,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+D2HGDH,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DAXX,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DAZAP1,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DCAF12L2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+DCC,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+DCTN1,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DCUN1D1,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DDB2,TSG,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DDIT3,INSUFFICIENT_EVIDENCE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DDR1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DDR2,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DDX10,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DDX3X,TSG,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DDX4,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DDX41,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DDX5,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DDX6,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DEK,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DGCR8,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+DHX15,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DHX9,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+DICER1,TSG,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DIS3,TSG,4,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DIS3L2,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DKK1,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DKK2,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DKK3,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DKK4,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DLL3,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DNAJB1,INSUFFICIENT_EVIDENCE,4,True,True,False,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DNM2,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DNMT1,ONCOGENE,4,True,False,False,True,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DNMT3A,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DNMT3B,TSG,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DOT1L,ONCOGENE,5,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DPYD,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DROSHA,INSUFFICIENT_EVIDENCE,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DSP,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+DTX1,TSG,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DUSP16,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+DUSP2,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DUSP22,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DUSP4,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+DUSP9,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+E2F3,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EBF1,INSUFFICIENT_EVIDENCE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ECSIT,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ECT2L,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EED,TSG,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EFTUD2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+EGFL7,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EGFR,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EGR1,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EGR2,TSG,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EIF1AX,INSUFFICIENT_EVIDENCE,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EIF2B1,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EIF3E,INSUFFICIENT_EVIDENCE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EIF4A2,ONCOGENE,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EIF4E,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ELF3,ONCOGENE_AND_TSG,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ELF4,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ELK4,ONCOGENE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ELL,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ELL2,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ELN,ONCOGENE,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ELOC,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ELP2,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EML4,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EMSY,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EP300,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EP400,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EPAS1,INSUFFICIENT_EVIDENCE,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EPCAM,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EPHA2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+EPHA3,TSG,5,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EPHA5,INSUFFICIENT_EVIDENCE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EPHA7,ONCOGENE_AND_TSG,4,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EPHB1,ONCOGENE_AND_TSG,5,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EPHB4,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EPOR,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EPS15,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ERBB2,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ERBB3,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ERBB4,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ERC1,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ERCC1,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ERCC2,TSG,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ERCC3,TSG,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ERCC4,TSG,5,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ERCC5,TSG,4,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ERCC6,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ERF,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ERG,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ERRFI1,TSG,4,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ESCO1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ESCO2,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ESR1,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ESRRA,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ETAA1,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ETNK1,INSUFFICIENT_EVIDENCE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ETS1,ONCOGENE_AND_TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ETV1,ONCOGENE,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ETV4,ONCOGENE,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ETV5,ONCOGENE,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ETV6,TSG,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EWSR1,ONCOGENE,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EXOSC6,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EXT1,TSG,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EXT2,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EZH1,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EZH2,ONCOGENE_AND_TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EZHIP,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+EZR,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FAF1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FAM135B,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+FAM174B,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+FANCA,TSG,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FANCB,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FANCC,TSG,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FANCD2,TSG,4,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FANCE,TSG,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FANCF,TSG,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FANCG,TSG,4,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FANCI,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FANCL,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FANCM,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FAS,TSG,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FAT1,TSG,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FAT2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+FAT3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+FAT4,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FBLN2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+FBN2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+FBXO11,TSG,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FBXO31,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FBXW2,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FBXW7,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FCGR2B,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FCRL4,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FES,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FEV,INSUFFICIENT_EVIDENCE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGD1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+FGD5,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+FGF1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGF10,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGF12,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGF14,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGF19,ONCOGENE,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGF2,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGF23,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGF3,ONCOGENE,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGF4,ONCOGENE,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGF5,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGF6,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGF7,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGF8,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGF9,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGFR1,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGFR2,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGFR3,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FGFR4,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FH,TSG,5,True,True,False,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FHIT,TSG,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FIP1L1,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FLCN,TSG,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FLG,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+FLI1,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FLT1,ONCOGENE,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FLT3,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FLT4,ONCOGENE,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FLYWCH1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FMN2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+FNBP1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FNDC3B,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+FOLH1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FOLR1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FOXA1,ONCOGENE_AND_TSG,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FOXA2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+FOXF1,ONCOGENE_AND_TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FOXL2,ONCOGENE_AND_TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FOXN4,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FOXO1,TSG,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FOXO3,INSUFFICIENT_EVIDENCE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FOXO4,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FOXP1,ONCOGENE_AND_TSG,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FRS2,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FSTL1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FSTL3,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FUBP1,TSG,6,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FURIN,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FUS,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FYN,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+FZR1,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GAB1,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GAB2,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GABRA6,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GADD45B,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GAS7,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GATA1,INSUFFICIENT_EVIDENCE,6,True,True,False,True,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GATA2,ONCOGENE_AND_TSG,6,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GATA3,ONCOGENE_AND_TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GATA4,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GATA6,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GEN1,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GID4,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GLI1,ONCOGENE,4,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GMPS,,1,False,False,True,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GNA11,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GNA12,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GNA13,ONCOGENE_AND_TSG,4,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GNAI2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+GNAQ,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GNAS,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GNB1,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GOLGA5,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GOPC,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GPAA1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+GPC3,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GPC5,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+GPHN,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GPS2,TSG,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GRB7,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GREM1,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GRIN2A,TSG,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GRM3,INSUFFICIENT_EVIDENCE,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GSK3B,ONCOGENE,5,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GSTO1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GSTP1,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GTF2I,ONCOGENE,2,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+GTSE1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H1_2,INSUFFICIENT_EVIDENCE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H1_3,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H1_4,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H1_5,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H2AC11,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H2AC16,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H2AC17,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H2AC6,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H2BC11,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H2BC12,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H2BC17,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H2BC4,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H2BC5,NEITHER,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H2BC8,INSUFFICIENT_EVIDENCE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3C1,NEITHER,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3C10,NEITHER,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3C11,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3C12,NEITHER,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3C13,NEITHER,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3C14,NEITHER,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3C15,NEITHER,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3C2,ONCOGENE,6,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3C3,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3C4,NEITHER,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3C6,NEITHER,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3C7,NEITHER,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3C8,NEITHER,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3P6,NEITHER,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3_3A,ONCOGENE,6,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3_3B,INSUFFICIENT_EVIDENCE,4,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3_4,NEITHER,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H3_5,NEITHER,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H4C6,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+H4C9,INSUFFICIENT_EVIDENCE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HCAR3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+HDAC1,ONCOGENE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HDAC2,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HDAC4,ONCOGENE_AND_TSG,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HDAC7,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HERPUD1,INSUFFICIENT_EVIDENCE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HEY1,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HFE,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HGF,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HIF1A,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HIP1,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HIRA,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HLA_A,TSG,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HLA_B,TSG,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HLA_C,TSG,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HLA_DQA1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+HLF,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HMGA1,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HMGA2,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HNF1A,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HNF1B,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HNRNPA2B1,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HOOK3,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HOXA11,TSG,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HOXA13,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HOXA3,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HOXA9,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HOXB13,ONCOGENE_AND_TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HOXC11,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HOXC13,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HOXD11,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HOXD13,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HRAS,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HSD17B2,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HSD3B1,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HSP90AA1,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HSP90AB1,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+HSPG2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+HTATIP2,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ICOSLG,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ID1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ID3,TSG,5,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IDH1,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IDH2,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IFNAR1,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IFNGR1,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IGF1,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IGF1R,ONCOGENE,5,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IGF2,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IGH,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IGK,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IGL,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IKBKB,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IKBKE,ONCOGENE,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IKZF1,INSUFFICIENT_EVIDENCE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IKZF2,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IKZF3,ONCOGENE_AND_TSG,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IL10,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IL2,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IL21R,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IL2RA,NEITHER,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IL3,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IL6ST,ONCOGENE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IL7R,ONCOGENE,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ING1,TSG,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+INHA,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+INHBA,ONCOGENE_AND_TSG,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+INPP4A,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+INPP4B,TSG,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+INPP5D,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+INPPL1,TSG,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+INSR,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+INTS6,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IQGAP1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IRAK1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+IRF1,TSG,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IRF2,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IRF4,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IRF8,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IRS1,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IRS2,ONCOGENE,5,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+IRS4,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ITGAV,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ITK,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ITPKB,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+JAK1,ONCOGENE_AND_TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+JAK2,ONCOGENE,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+JAK3,ONCOGENE,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+JARID2,ONCOGENE_AND_TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+JAZF1,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+JUN,ONCOGENE,6,True,True,False,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KAT6A,INSUFFICIENT_EVIDENCE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KAT6B,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KAT7,ONCOGENE,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KBTBD4,INSUFFICIENT_EVIDENCE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KCNJ5,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KDM2B,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KDM3B,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+KDM4C,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KDM5A,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KDM5C,TSG,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KDM5D,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KDM6A,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KDR,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KDSR,INSUFFICIENT_EVIDENCE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KEAP1,TSG,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KEL,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KIAA1549,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KIF5B,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KIT,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KLF2,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KLF3,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KLF4,ONCOGENE_AND_TSG,5,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KLF5,ONCOGENE,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KLF6,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KLHL6,TSG,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KLK2,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KMT2A,TSG,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KMT2B,TSG,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KMT2C,TSG,6,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KMT2D,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KMT5A,INSUFFICIENT_EVIDENCE,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KNL1,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KNSTRN,INSUFFICIENT_EVIDENCE,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KRAS,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KSR2,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+KTN1,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+L1TD1,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LAG3,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LARP4B,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LASP1,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LATS1,TSG,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LATS2,TSG,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LCK,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LCP1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LDB1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+LEF1,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LGR5,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LIFR,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LMNA,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LMO1,ONCOGENE,5,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LMO2,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LPA,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+LPP,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LRIG3,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LRP1B,TSG,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LRP5,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LRP6,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LRRK2,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LSM14A,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+LTB,ONCOGENE_AND_TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LTK,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LYL1,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LYN,ONCOGENE,4,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LZTR1,TSG,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+LZTS1,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MACC1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+MAD2L2,ONCOGENE_AND_TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAF,INSUFFICIENT_EVIDENCE,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAFB,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAGED1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAGI2,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAL2,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MALT1,INSUFFICIENT_EVIDENCE,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAML2,INSUFFICIENT_EVIDENCE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAP2K1,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAP2K2,ONCOGENE,6,True,True,False,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAP2K4,TSG,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAP2K7,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+MAP3K1,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAP3K13,ONCOGENE,5,True,True,False,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAP3K14,ONCOGENE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAP3K21,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAP3K6,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAP3K7,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAP4K4,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAPK1,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAPK3,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAPKAP1,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MARK2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+MASTL,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MAX,TSG,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MB21D2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+MBD4,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MBD6,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MCL1,ONCOGENE,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MCM7,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+MDC1,INSUFFICIENT_EVIDENCE,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MDGA2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+MDH2,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MDM2,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MDM4,ONCOGENE,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MDS2,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MECOM,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MED12,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MED23,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+MEF2B,ONCOGENE,5,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MEF2C,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MEF2D,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MEN1,TSG,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MERTK,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MET,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MGA,TSG,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MGAM,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MIB1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MIB2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+MIDEAS,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MITF,ONCOGENE,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MKI67,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MKNK1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MLF1,ONCOGENE_AND_TSG,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MLH1,TSG,7,True,True,False,True,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MLH3,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MLLT1,INSUFFICIENT_EVIDENCE,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MLLT10,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MLLT11,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MLLT3,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MLLT6,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MN1,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MNX1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MOB3B,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MPEG1,NEITHER,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MPL,ONCOGENE,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MRE11,TSG,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MRTFA,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MS4A1,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MSH2,TSG,7,True,True,False,True,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MSH3,TSG,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MSH6,TSG,7,True,True,False,True,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MSI1,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MSI2,ONCOGENE,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MSN,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MST1,TSG,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MST1R,ONCOGENE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MTAP,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MTCP1,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MTHFD2,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MTHFR,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MTOR,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MUC1,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MUC6,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+MUTYH,TSG,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MYB,ONCOGENE,4,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MYBL1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MYC,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MYCL,ONCOGENE,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MYCN,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MYD88,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MYEOV,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+MYH11,TSG,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MYH9,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MYO18A,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MYO5A,ONCOGENE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+MYOD1,TSG,4,True,True,False,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+N4BP2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+NAB2,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NACA,,1,False,False,True,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NADK,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NBEA,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+NBEAP1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NBN,TSG,5,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NCAPH,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+NCKIPSD,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+NCOA1,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NCOA2,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NCOA3,ONCOGENE,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NCOA4,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NCOR1,TSG,5,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NCOR2,INSUFFICIENT_EVIDENCE,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NCSTN,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NDRG1,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NEGR1,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NF1,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NF2,TSG,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NFATC2,ONCOGENE_AND_TSG,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NFE2,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NFE2L2,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NFIB,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NFKB2,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NFKBIA,TSG,5,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NFKBIE,TSG,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NHERF1,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NIN,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NIPBL,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+NKTR,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+NKX2_1,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NKX3_1,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NOD1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NONO,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NOTCH1,ONCOGENE_AND_TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NOTCH2,ONCOGENE_AND_TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NOTCH3,ONCOGENE_AND_TSG,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NOTCH4,ONCOGENE_AND_TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NPM1,ONCOGENE_AND_TSG,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NPRL2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+NQO1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NR4A3,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NRAS,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NRG1,ONCOGENE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NRK,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+NSD1,TSG,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NSD2,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NSD3,INSUFFICIENT_EVIDENCE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NT5C2,ONCOGENE,5,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NT5C3A,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+NT5E,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NTHL1,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NTRK1,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NTRK2,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NTRK3,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NUF2,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NUMA1,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NUP214,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NUP93,INSUFFICIENT_EVIDENCE,4,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NUP98,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NUTM1,INSUFFICIENT_EVIDENCE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NUTM2A,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NUTM2B,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NUTM2D,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+NVL,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+NXF1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+OGA,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+OGT,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+OLIG2,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+OMD,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ONECUT2,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+P2RY8,TSG,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PABPC1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PAFAH1B2,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PAG1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PAK1,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PAK3,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PAK5,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PALB2,TSG,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PARP1,TSG,4,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PARP2,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PARP3,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PARP4,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PASK,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PATZ1,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PAX3,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PAX5,ONCOGENE_AND_TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PAX7,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PAX8,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PBRM1,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PBX1,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PC,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PCBP1,INSUFFICIENT_EVIDENCE,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PCLO,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PCM1,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PCMTD1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PCSK7,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PDCD1,ONCOGENE,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PDCD11,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PDCD1LG2,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PDE4DIP,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PDGFB,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PDGFRA,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PDGFRB,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PDK1,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PDPK1,INSUFFICIENT_EVIDENCE,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PDS5B,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PDZD2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PEG3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PER1,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PER3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PGBD5,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PGR,ONCOGENE,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PHF1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PHF19,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PHF6,TSG,6,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PHLPP1,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PHLPP2,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PHOX2B,TSG,4,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PI4KA,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PICALM,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PIGA,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PIK3C2B,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PIK3C2G,INSUFFICIENT_EVIDENCE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PIK3C3,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PIK3CA,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PIK3CB,ONCOGENE,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PIK3CD,ONCOGENE,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PIK3CG,ONCOGENE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PIK3R1,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PIK3R2,TSG,4,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PIK3R3,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PIM1,INSUFFICIENT_EVIDENCE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PLAG1,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PLCG1,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PLCG2,ONCOGENE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PLK2,INSUFFICIENT_EVIDENCE,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PLXNC1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PMAIP1,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PML,TSG,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PMS1,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PMS2,TSG,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PNRC1,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+POLD1,TSG,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+POLE,TSG,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+POLG,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+POLH,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+POLQ,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+POT1,TSG,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+POU2AF1,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+POU2F2,ONCOGENE,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+POU3F2,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+POU3F4,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+POU5F1,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PPARG,ONCOGENE,5,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PPFIBP1,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PPM1D,ONCOGENE,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PPP1CB,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PPP2R1A,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PPP2R2A,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PPP3CA,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PPP4R2,INSUFFICIENT_EVIDENCE,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PPP6C,TSG,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRCC,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRDM1,TSG,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRDM14,INSUFFICIENT_EVIDENCE,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRDM16,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRDM2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PREX2,INSUFFICIENT_EVIDENCE,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRF1,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRKACA,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRKAR1A,TSG,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRKCB,ONCOGENE,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRKCD,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PRKCI,ONCOGENE,4,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRKD1,INSUFFICIENT_EVIDENCE,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRKD2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PRKDC,ONCOGENE_AND_TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRKN,TSG,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRMT5,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRPF8,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRRX1,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRSS1,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRSS8,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PRUNE2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PSIP1,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PSMB2,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PSPC1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PTCH1,TSG,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTEN,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTH,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTK6,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTK7,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTMA,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PTP4A1,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTPN1,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTPN11,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTPN13,TSG,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTPN14,TSG,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTPN2,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTPN3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+PTPN6,,1,False,False,True,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTPRB,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTPRC,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTPRD,TSG,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTPRK,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTPRO,,2,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTPRS,TSG,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PTPRT,TSG,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PUM1,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+PWWP2A,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+QKI,TSG,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAB35,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RABEP1,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAC1,ONCOGENE,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAC2,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAD17,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAD21,TSG,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAD50,TSG,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAD51,TSG,5,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAD51B,TSG,5,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAD51C,TSG,4,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAD51D,TSG,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAD52,INSUFFICIENT_EVIDENCE,4,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAD54L,INSUFFICIENT_EVIDENCE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAF1,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RALGDS,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RANBP2,ONCOGENE,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RAP1B,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+RAP1GDS1,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RARA,INSUFFICIENT_EVIDENCE,6,True,True,False,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RASA1,TSG,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RASA2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+RASGEF1A,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RB1,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RBFOX1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+RBM10,TSG,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RBM15,ONCOGENE_AND_TSG,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RBM38,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+RBM39,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+RECQL,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RECQL4,TSG,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+REL,ONCOGENE,5,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RELA,ONCOGENE,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RELN,INSUFFICIENT_EVIDENCE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+REST,TSG,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RET,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+REV3L,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RGPD3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+RGS7,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+RHEB,ONCOGENE,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RHOA,ONCOGENE,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RHOH,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RHPN2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+RICTOR,ONCOGENE,5,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RIOK2,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RIPK1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+RIT1,ONCOGENE,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RMI2,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RNASEH2A,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RNASEH2B,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RNF213,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RNF217_AS1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RNF43,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RNF6,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ROBO1,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ROBO2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ROS1,ONCOGENE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RPL10,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RPL22,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RPL5,TSG,2,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RPN1,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RPS15,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RPS3A,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+RPS6KA3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+RPS6KA4,ONCOGENE,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RPS6KB1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RPS6KB2,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RPTOR,ONCOGENE,5,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RRAGC,ONCOGENE,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RRAS,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RRAS2,ONCOGENE,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RRN3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+RSPO2,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RSPO3,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RTEL1,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RUNX1,TSG,6,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RUNX1T1,ONCOGENE,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RUNX2,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RXRA,INSUFFICIENT_EVIDENCE,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+RYBP,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+S1PR2,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SALL4,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SAMD9,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SAMD9L,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SAMHD1,TSG,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SBDS,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SCG5,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SDC4,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SDCBP,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+SDHA,TSG,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SDHAF2,TSG,4,True,True,False,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SDHB,TSG,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SDHC,TSG,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SDHD,TSG,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SEC31A,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SEPTIN5,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SEPTIN6,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SEPTIN9,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SERP2,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SERPINB3,INSUFFICIENT_EVIDENCE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SERPINB4,INSUFFICIENT_EVIDENCE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SESN1,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SESN2,TSG,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SESN3,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SET,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SETBP1,ONCOGENE,5,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SETD1A,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SETD1B,INSUFFICIENT_EVIDENCE,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SETD2,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SETD3,INSUFFICIENT_EVIDENCE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SETD4,INSUFFICIENT_EVIDENCE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SETD5,INSUFFICIENT_EVIDENCE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SETD6,INSUFFICIENT_EVIDENCE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SETD7,INSUFFICIENT_EVIDENCE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SETDB1,ONCOGENE_AND_TSG,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SETDB2,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SF3B1,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SF3B2,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SFPQ,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SFRP1,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SFRP2,ONCOGENE_AND_TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SFRP4,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SGK1,ONCOGENE,4,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SH2B3,TSG,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SH2D1A,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SH3GL1,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SHOC2,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SHQ1,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SHTN1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+SIN3A,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+SIRPA,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+SIX1,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SLC1A2,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SLC34A2,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SLC45A3,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SLFN11,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SLIT2,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SLIT3,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SLX4,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMAD2,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMAD3,TSG,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMAD4,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMARCA1,ONCOGENE_AND_TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMARCA2,TSG,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMARCA4,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMARCB1,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMARCD1,INSUFFICIENT_EVIDENCE,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMARCE1,INSUFFICIENT_EVIDENCE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMC1A,TSG,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMC3,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMG1,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMO,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SMYD3,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SNCAIP,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SND1,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SNX29,,1,False,False,True,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SOCS1,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SOCS2,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SOCS3,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SOS1,ONCOGENE,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SOX10,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SOX17,TSG,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SOX2,ONCOGENE,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SOX21,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+SOX9,TSG,5,True,False,True,True,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SP140,TSG,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SPEN,TSG,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SPOP,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SPRED1,TSG,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SPRTN,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SQSTM1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SRC,ONCOGENE,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SRGAP3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+SRP72,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SRSF2,INSUFFICIENT_EVIDENCE,6,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SRSF3,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SS18,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SS18L1,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SSX1,INSUFFICIENT_EVIDENCE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SSX2,INSUFFICIENT_EVIDENCE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SSX4,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STAG1,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STAG2,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STAT1,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STAT2,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STAT3,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STAT4,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STAT5A,ONCOGENE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STAT5B,ONCOGENE,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STAT6,ONCOGENE,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STIL,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STK11,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STK19,ONCOGENE,3,True,False,False,False,True,1,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STK40,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+STRN,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SUFU,TSG,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SUSD2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+SUZ12,TSG,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SYK,ONCOGENE,6,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+SZT2,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TACSTD2,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TAF1,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TAF15,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TAF1L,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+TAL1,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TAL2,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TAP1,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TAP2,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TBL1XR1,ONCOGENE,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TBX3,TSG,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TCEA1,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TCF12,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TCF3,TSG,5,True,True,False,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TCF4,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+TCF7L2,TSG,4,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TCL1A,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TCL1B,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TEC,,1,False,False,True,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TEK,INSUFFICIENT_EVIDENCE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TENT5C,TSG,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TERC,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TERT,ONCOGENE,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TET1,TSG,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TET2,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TET3,TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TFAP4,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+TFE3,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TFEB,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TFG,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TFPT,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TFRC,,1,False,False,True,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TGFBR1,TSG,3,True,False,True,False,True,2,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TGFBR2,TSG,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TGIF1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+THRAP3,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+TIGAR,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TIPARP,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TLE1,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TLE2,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TLE3,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TLE4,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TLL2,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TLX1,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TLX3,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TMEM127,TSG,4,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TMEM30A,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TMPRSS2,INSUFFICIENT_EVIDENCE,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TMSB4X,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+TMSB4XP8,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TNC,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+TNFAIP3,TSG,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TNFRSF11A,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TNFRSF14,TSG,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TNFRSF17,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TNFRSF9,NEITHER,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TNFSF13,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TONSL,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TOP1,ONCOGENE,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TOP2A,ONCOGENE,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TOX,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TP53,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TP53BP1,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TP63,ONCOGENE_AND_TSG,5,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TPM3,ONCOGENE,3,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TPM4,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TPMT,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TPR,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRA,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRAF2,INSUFFICIENT_EVIDENCE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRAF3,TSG,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRAF5,TSG,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRAF7,INSUFFICIENT_EVIDENCE,5,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRB,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRD,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRG,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRIB3,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRIM24,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRIM27,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRIM33,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRIM49C,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+TRIP11,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRIP13,ONCOGENE_AND_TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TRMT12,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+TRRAP,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TSC1,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TSC2,TSG,6,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TSHR,ONCOGENE,5,True,False,True,True,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TTL,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TUSC3,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TYK2,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TYMS,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+TYRO3,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+U2AF1,ONCOGENE,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+U2AF2,INSUFFICIENT_EVIDENCE,3,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+UBA1,INSUFFICIENT_EVIDENCE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+UBE2A,ONCOGENE,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+UBR5,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+UBTF,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+UBXN11,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+UCHL1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+UPF1,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+USP1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+USP6,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+USP7,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+USP8,ONCOGENE,3,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+USP9X,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+VAV1,ONCOGENE,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+VAV2,ONCOGENE,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+VEGFA,ONCOGENE,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+VEGFB,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+VHL,TSG,7,True,True,True,True,True,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+VTCN1,INSUFFICIENT_EVIDENCE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+WAS,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+WDCP,,1,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+WDR90,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+WEE1,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+WIF1,TSG,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+WNK2,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+WNT1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+WRN,TSG,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+WT1,ONCOGENE_AND_TSG,7,True,True,True,True,False,4,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+WWOX,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+WWP1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+WWTR1,ONCOGENE,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+XBP1,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+XIAP,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+XPA,TSG,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+XPC,TSG,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+XPO1,ONCOGENE,6,True,True,True,False,True,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+XRCC1,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+XRCC2,TSG,4,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+XRCC3,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+YAP1,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+YES1,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+YPEL5,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+YWHAE,ONCOGENE,2,True,True,False,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+YY1,ONCOGENE,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+YY1AP1,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZBTB16,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZBTB20,ONCOGENE,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZBTB48,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZBTB7A,ONCOGENE_AND_TSG,2,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZBTB7B,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZCCHC8,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZCRB1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZEB1,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZFHX3,TSG,4,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZFP36L1,TSG,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZFP36L2,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZMYM2,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZMYM3,TSG,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZNF208,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZNF217,ONCOGENE,3,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZNF24,,1,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZNF274,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZNF292,TSG,1,True,False,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZNF331,,1,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZNF384,,2,False,True,False,False,False,1,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZNF395,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZNF429,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZNF521,,2,False,True,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZNF626,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZNF680,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZNF703,,2,False,False,False,False,False,0,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZNF721,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZNF750,TSG,1,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZNF780A,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZNF814,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZNF90,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZNF93,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence
+ZNRF3,TSG,2,True,False,True,False,False,2,False,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZRSR2,INSUFFICIENT_EVIDENCE,5,True,True,True,False,False,3,True,>=3 of OncoKB annotated / CGC flag / IntOGen / Vogelstein OR Cancer Hotspots v3 gene
+ZXDB,,0,False,False,True,False,False,1,False,not selected: only IntOGen support and no Cancer Hotspots v3 gene evidence

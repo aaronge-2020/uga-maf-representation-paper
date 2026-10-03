@@ -1,5 +1,14 @@
 # Provenance: oncokb_cancer_genes.tsv
 
+> Note (2026-10-03): this file is no longer committed to the repository.
+> OncoKB's Terms of Use (https://www.oncokb.org/terms) restrict
+> redistribution, so the table is fetched at build time from the OncoKB
+> public API by `config/feature_resources/fetch_oncokb_cancer_genes.py`
+> (repo pipeline) and `biomaf_v4/biomaf_v4/fetch_oncokb.py` (packaged tool);
+> both code paths download it automatically when it is missing. The notes
+> below document how the previously committed snapshot was derived and why a
+> fresh download is not bit-identical to it.
+
 ## What this file is
 Per-gene OncoKB role annotations (oncogene / tumor suppressor) used by the
 Bio MAF feature builder (`src/utils/bio_maf_base_features.py::load_oncokb_roles`)

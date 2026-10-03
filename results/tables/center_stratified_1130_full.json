@@ -1,0 +1,67 @@
+{
+  "standard_cv": {
+    "fold_scores": [
+      0.7341750128212186,
+      0.7425132013483087,
+      0.7527920766216811,
+      0.7524644657708315,
+      0.7505538318839778
+    ],
+    "mean": 0.7464997176892035,
+    "ci_lower": 0.739441016330845,
+    "ci_upper": 0.753558419047562
+  },
+  "center_stratified_cv": {
+    "fold_scores": [
+      0.7446464594734922,
+      0.7149062877421318,
+      0.7455215704451482,
+      0.7598424796893485,
+      0.7342763897276361
+    ],
+    "mean": 0.7398386374155514,
+    "ci_lower": 0.7252493023634643,
+    "ci_upper": 0.7544279724676386
+  },
+  "n_samples": 8801,
+  "n_features": 1130,
+  "n_classes": 20,
+  "n_centers": 566,
+  "center_type": "tss_tissue_source_site",
+  "classes": [
+    "BLCA",
+    "BRCA",
+    "CESC",
+    "COAD",
+    "ESCA",
+    "GBM",
+    "HNSC",
+    "KIRC",
+    "KIRP",
+    "LGG",
+    "LIHC",
+    "LUAD",
+    "LUSC",
+    "OV",
+    "PRAD",
+    "SARC",
+    "SKCM",
+    "STAD",
+    "THCA",
+    "UCEC"
+  ],
+  "seed": 20261002,
+  "xgb_config": {
+    "max_depth": 3,
+    "learning_rate": 0.1,
+    "n_estimators": 160,
+    "colsample_bytree": 0.85,
+    "subsample": 0.85,
+    "min_child_weight": 3.0,
+    "reg_alpha": 0.01,
+    "reg_lambda": 0.5,
+    "objective": "multi:softprob",
+    "tree_method": "hist",
+    "random_state": 20261002
+  }
+}

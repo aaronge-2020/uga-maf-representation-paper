@@ -1,0 +1,44 @@
+{
+ "comparison": "Sig+MAF/XGBoost minus MuAt-compatible, cancer-type balanced accuracy",
+ "sig_maf_folds": [
+  0.753177,
+  0.719634,
+  0.732421,
+  0.749567,
+  0.733926
+ ],
+ "muat_folds": [
+  0.607194,
+  0.601335,
+  0.357707,
+  0.586503,
+  0.597697
+ ],
+ "fold_differences": [
+  0.145983,
+  0.118299,
+  0.374714,
+  0.163064,
+  0.136229
+ ],
+ "mean_difference": 0.187658,
+ "ci95": [
+  0.056292,
+  0.319023
+ ],
+ "t_stat": 3.9656,
+ "df": 4,
+ "p_value": 0.016600215269427655,
+ "excluding_fold3": {
+  "mean_difference": 0.140894,
+  "t_stat": 15.0643,
+  "df": 3,
+  "p_value": 0.0006350039866666927,
+  "note": "post-hoc exploratory sensitivity; fold 3 diverged during MuAt-compatible training"
+ },
+ "sources": {
+  "sig_maf": "results/tables/main_manuscript_complete_panel_fold_metrics.csv (endpoint=cancer_type_top20, representation=signatures_plus_MAF_stack, learner=xgboost, metric=balanced_accuracy)",
+  "muat": "results/tables/muat_style_tcga_comparator_cancer_type_top20_comparable_fold_metrics.csv (balanced_accuracy column)"
+ },
+ "note": "Headline p=0.017 is exactly reproducible from these archived fold values. Vijay's fold-3 rerun will supersede these numbers."
+}

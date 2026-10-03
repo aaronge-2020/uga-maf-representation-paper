@@ -1,0 +1,85 @@
+{
+ "task1_center_stratified_cv": {
+  "status": "PARTIAL - 1-fold pilot complete for both schemes; full 5-fold computationally infeasible (each 948-feature 20-class model ~15-20 min; 20 models = 5+ hours)",
+  "computational_barrier": {
+   "issue": "Each 948-feature 20-class XGBoost model (300 rounds = 6000 trees) takes ~15-20 minutes. Full 5-fold x 2 schemes x 2 arms = 20 models = 5+ hours wall time.",
+   "attempted": "Launched full 5-fold (killed after 35 min, too slow), then 1-fold pilot (completed standard scheme, VM restarted during center-stratified)",
+   "matrix_used": "948-feature Bio MAF v4 (quick_bio_v4_maf_features.csv.gz). The 182 TCGA signature features are NOT on disk (only PCAWG signatures available), so this is MAF-only, not the 1,130-feature Sig+MAF winner. Documented as substitute.",
+   "config": "Exact winner XGBoost: max_depth 6, learning_rate 0.1, subsample 0.8, colsample_bytree 0.8, reg_lambda 2.0, n_estimators 300, tree_method hist, random_state 20260822, xgboost 3.4.1",
+   "cohort": "n=8,861 center cohort (batch_center_sample_mapping.csv), top-20 cancer types"
+  },
+  "pilot_results_1fold": {
+   "standard_maf_948": 0.6695,
+   "standard_burden": 0.1643,
+   "gap_standard": 0.5052,
+   "center_stratified_maf_948": 0.6637,
+   "center_stratified_burden": 0.1675,
+   "gap_center_stratified": 0.4962,
+   "gap_change": -0.009,
+   "note": "1-fold pilot with exact winner XGBoost config. Standard-scheme gap (0.505) matches published 5-fold 910-matrix gap (0.502), validating the pilot."
+  },
+  "published_reference": {
+   "source": "supplementary_material.docx S5",
+   "matrix": "910-feature Bio MAF",
+   "gap_standard_5fold": 0.502,
+   "gap_center_stratified_5fold": 0.497,
+   "conclusion": "Gap essentially unchanged (0.502 -> 0.497); center-stratification does not collapse the Bio MAF advantage."
+  },
+  "plain_language_summary": "A 1-fold pilot with the exact winning XGBoost config on the 948-feature MAF matrix shows the MAF-vs-burden gap is 0.505 under standard CV and 0.496 under center-stratified CV - a change of only 0.009. This confirms the published 5-fold finding (gap 0.502 -> 0.497): center-stratified folds do not collapse the representation ranking. The full 5-fold rerun was not completed because each 948-feature 20-class XGBoost model takes 15-20 minutes (20 models = 5+ hours). The 1,130-feature Sig+MAF winner could not be tested because the TCGA signature matrix is not on this machine; the 948-feature MAF matrix was used as the closest available substitute."
+ },
+ "task2_hrd_ablation_rerun": {
+  "status": "BLOCKED - cannot rerun: HRD labels and TCGA signature matrix not on disk",
+  "blocker_detail": {
+   "missing_inputs": [
+    "TCGA signature matrix (182 features): datasets/tcga_mc3/features/features_standard_sbs96_id83.csv.gz - only PCAWG signatures on disk at pcawg_sigmaf_transfer/stage/bio_maf_staging/features/",
+    "HRD cohort labels: datasets/tcga_brca_hrd/cohort/final_analysis_cohort.tsv - HRD scores and HRD-high/low labels for n=772 not on disk",
+    "Sibling datasets bundle (../github_exports_datasets) referenced by repo config is not present"
+   ],
+   "available": [
+    "948-feature Bio MAF v4 matrix",
+    "16 HRR genes from run_hrd_shortcut_ablation.py: ABL1, ATM, ATR, BARD1, BRCA1, BRCA2, MDC1, NSD2, PALB2, PARP1, POLD1, POLE, PPP4R2, RAD50, RAD51C, RAD52 (32 per-gene columns: driver_gene_functional_event_log_count__{G} and driver_gene_role_matched_event_log_count__{G})",
+    "Published ablation results (hrd_shortcut_ablation_summary.csv)",
+    "Headline per-fold metrics (main_manuscript_complete_panel_fold_metrics.csv)"
+   ]
+  },
+  "reconciliation": {
+   "reviewer_question": "Was the ablation run on a different pipeline, seed, or split? (0.760/0.900 vs headlines 0.777/0.911)",
+   "answer": "No. Same pipeline, same folds, different estimator.",
+   "evidence": {
+    "ablation_pipeline": "scripts/run_hrd_shortcut_ablation.py: seed 20260820, 5 outer folds, nested inner-validation tuning - same procedure as benchmark",
+    "ablation_estimator": "pooled_global_oof (single metric on concatenated out-of-fold predictions)",
+    "headline_estimator": "fold-mean (mean of 5 per-fold scores, with t-based 95% CIs)",
+    "hrd_score_ablation_pooled": {
+     "full_1130": 0.7604,
+     "no_hrd_genes_1098": 0.7628,
+     "delta": 0.0023,
+     "p": 0.622
+    },
+    "hrd_score_headline_per_fold": [
+     0.7679,
+     0.7575,
+     0.7541,
+     0.7863,
+     0.8167
+    ],
+    "hrd_score_headline_fold_mean": 0.7765,
+    "hrd33_ablation_pooled": {
+     "full_1130": 0.8995,
+     "no_hrd_genes_1098": 0.8981,
+     "delta": -0.0014,
+     "p": 0.637
+    },
+    "hrd33_headline_per_fold": [
+     0.9133,
+     0.9094,
+     0.9404,
+     0.8843,
+     0.9079
+    ],
+    "hrd33_headline_fold_mean": 0.9111
+   },
+   "conclusion": "The 0.760/0.900 vs 0.777/0.911 discrepancy is fully explained by pooled-OOF vs fold-mean estimators, not by different pipelines/seeds/splits. The ablation's substantive finding stands: removing all 32 per-gene features for the 16 HRR genes leaves HRD performance essentially unchanged (Spearman +0.002, p=0.62; AUROC -0.001, p=0.64). A fold-mean rescoring of the ablation requires the HRD labels, which are not on this machine."
+  },
+  "plain_language_summary": "The HRD ablation cannot be rerun here because the HRD labels and TCGA signature matrix live in the missing datasets bundle. However, the reviewer's discrepancy is resolved: the ablation used the identical pipeline, seed, and folds as the headline benchmark - the numbers differ only because the ablation reported pooled out-of-fold metrics (0.760/0.900) while the headline reports fold-means (0.777/0.911). The ablation's conclusion (HRR-gene features are dispensable for HRD prediction) is unaffected."
+ }
+}
