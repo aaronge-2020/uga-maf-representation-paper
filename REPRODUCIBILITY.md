@@ -67,3 +67,13 @@ python scripts/reproduce_manuscript.py --prepare-github-upload --datasets-dir ..
 Full regeneration writes `results/logs/run_all_experiments_manifest.json`. The MuAt-compatible top-20 comparator uses validated vendored fold checkpoint caches during release validation; those caches are listed in `manifests/large_assets_manifest.csv` and read from `../github_exports_datasets/`.
 
 This is computationally expensive. The GitHub-ready validation path above is intended for release QA and artifact integrity checks.
+
+## MuAt-compatible HRD comparator: frozen run identification
+
+The manuscript's MuAt-compatible HRD headline numbers (HRD-score Spearman 0.527, HRD33 AUROC 0.751, fold means with t-based 95% CIs) come from a single frozen run: `ab_c_full` (epoch fix + exact token dictionaries).
+
+- Fold-level metrics: `results/tables/muat_style_tcga_comparator_ab_c_full_fold_metrics.csv` (`dictionary_mode=exact` throughout). Selected epochs: HRD score 12/14/18/2/20; HRD33 34/2/1/21/9. No fold diverged.
+- Paired Sig+MAF vs MuAt-compatible tests: `results/tables/hrd_muat_paired_tests.json`.
+- Ablation ledger: `results/tables/muat_ablation_summary.csv` (stage C = "epoch fix + exact dicts").
+
+Correction note (2026-10-03): an earlier draft of this file tied the HRD headlines to the `ab_a_before` run (bug + hashed dictionaries), which the ledger labels "before (bug + hashed dicts)". That attribution was wrong; the manuscript, its supplement, and this file now cite only the frozen `ab_c_full` run.
