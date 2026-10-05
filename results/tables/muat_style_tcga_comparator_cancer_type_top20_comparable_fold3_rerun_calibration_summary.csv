@@ -1,0 +1,2 @@
+endpoint,calibration_ece,calibration_mean_confidence,calibration_accuracy,calibration_n_bins_used
+cancer_type_top20,0.26209078702059657,0.8377726052024148,0.5756818181818182,9

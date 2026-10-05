@@ -1,0 +1,30 @@
+{
+  "pretrained_wes_predict_ensemble_command": {
+    "command": [
+      "muat",
+      "predict-ensemble",
+      "pretrained",
+      "wes",
+      "--mutation-type",
+      "snv+mnv+indel",
+      "--input-filepath",
+      "C:\\TensorLabMarylandProject\\hf_bundle\\github_exports_datasets\\datasets\\tcga_mc3\\raw\\mc3.v0.2.8.PUBLIC.maf.gz",
+      "--result-dir",
+      "${REPRO_ROOT}\\results\\tables\\muat_style_tcga_comparator_official_muat"
+    ],
+    "fingerprint": "1348a4bfb9fb8b69d80cc5386a034e1a9e5f220852a067b5cbb107c1ad5053bb",
+    "inputs": [
+      {
+        "mtime_ns": 1783766156853148600,
+        "path": "C:\\TensorLabMarylandProject\\hf_bundle\\github_exports_datasets\\datasets\\tcga_mc3\\raw\\mc3.v0.2.8.PUBLIC.maf.gz",
+        "size": 753339089
+      }
+    ]
+  },
+  "status": "not_available",
+  "version": {
+    "available": false,
+    "executable": null,
+    "version": null
+  }
+}

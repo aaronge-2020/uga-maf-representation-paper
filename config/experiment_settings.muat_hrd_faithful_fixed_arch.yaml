@@ -1,0 +1,123 @@
+# MuAt-compatible HRD endpoints (HRD_Score, hrd_binary_33): FAITHFUL fixed-architecture protocol.
+#
+# Companion to config/experiment_settings.muat_top20_faithful_fixed_arch.yaml. Same recipe, same
+# source tags, applied to the two HRD endpoints so the whole MuAt column in the manuscript can be
+# one protocol verified against the official trainer. Read that file's header for the full
+# source-by-source justification; only the HRD-specific points are repeated here.
+#
+# HRD-specific notes
+#   - Official MuAt is a classifier (tumour type / subtype). HRD_Score regression is our
+#     extension with no official counterpart; epoch selection by Spearman is [OURS].
+#   - hrd_binary_33 selects the best epoch by validation ACCURACY to mirror the official
+#     best_ckpt rule [CODE]; AUROC remains the reported metric, as in the tabular panel.
+#   - count_feature_mode: none. Arms A to D used log_count. No count feature is described in the
+#     MuAt paper, so the faithful protocol omits it [OURS, off]; this is also what the cancer
+#     typing faithful run uses.
+#   - n = 772, so this is cheap: roughly 2 to 3 h per endpoint on an RTX 3080.
+#
+# Launch
+#   python src/run_all_experiments.py --config config/experiment_settings.muat_hrd_faithful_fixed_arch.yaml \
+#       --paths config/paths.yaml --datasets-dir ..\hf_bundle\github_exports_datasets
+
+runtime_profile: muat-compatible-hrd-faithful-fixed-arch
+tree_method: hist
+cv_folds: 5
+endpoint_registry: config/endpoint_registry.yaml
+
+feature_cache:
+  enabled: true
+  dir: results/cache/features
+  validate_fasta: true
+
+experiments:
+  main_manuscript_complete_panel:
+    enabled: false
+  muat_style_tcga_comparator:
+    enabled: true
+    output_tag: hrd_faithful_fixed_arch
+    endpoints:
+      - HRD_Score
+      - hrd_binary_33
+    primary_endpoint: HRD_Score
+    primary_task: HRD_Score
+    primary_metric: spearman
+    primary_metric_by_endpoint:
+      HRD_Score: spearman
+      hrd_binary_33: auroc
+    nested_validation: true
+    selection_metric: spearman
+    selection_metric_by_endpoint:
+      HRD_Score: spearman                      # [OURS] regression has no official counterpart
+      hrd_binary_33: accuracy                  # [CODE] official best_ckpt rule
+    split_manifest_by_endpoint:
+      HRD_Score:
+        source: results/tables/main_manuscript_complete_panel_oof_predictions.csv
+        endpoint: HRD_Score
+        representation: signatures_plus_MAF_stack
+        learner: xgboost
+      hrd_binary_33:
+        source: results/tables/main_manuscript_complete_panel_oof_predictions.csv
+        endpoint: hrd_binary_33
+        representation: signatures_plus_MAF_stack
+        learner: xgboost
+    require_canonical_split: true
+    run_manuscript_endpoints: false
+    secondary_endpoints:
+      - hrd_binary_33
+    smoke_run: false
+    folds: 5
+
+    # ---- Training recipe (see cancer typing faithful config for sources) ----------------------
+    epochs: 150                                # [PAPER]
+    batch_size: 1                              # [PAPER]
+    regression_batch_size: 1
+    eval_batch_size: 1
+    lr: 0.0006                                 # [PAPER]
+    momentum: 0.9                              # [PAPER, CODE]
+    weight_decay: 0.001                        # [CODE]
+    scheduler: none                            # [CODE] constant LR
+    early_stopping_patience: 0                 # [CODE] all epochs, keep best validation epoch
+    dropout: 0.1
+    max_events_per_sample: 5000                # [LEDGER]
+    count_feature_mode: none                   # [OURS, off]
+
+    # ---- Architecture: fixed, no search ------------------------------------------------------
+    embed_dim: 128                             # [LEDGER]
+    num_layers: 1                              # [LEDGER]
+    attention_heads: 1                         # [LEDGER]
+    feature_dim: 24                            # [PAPER]
+    pooling_mode: attention_weighted
+    architecture_search_enabled: false
+    final_epoch_selection: true
+
+    # ---- Harness guard: off (no search) -------------------------------------------------------
+    divergence_loss_margin: 0.0
+
+    # ---- Tokens: arm D grammar [PAPER] --------------------------------------------------------
+    dictionary_mode: exact
+    motif_grammar: muat_symbolic
+    annotation_strand: transcriptional
+    motif_hash_buckets: 1024
+    position_hash_buckets: 2048
+    annotation_hash_buckets: 256
+    maf_chunksize: 500000
+    official_mutation_type: snv+mnv+indel
+
+    # ---- Runtime ------------------------------------------------------------------------------
+    # Own checkpoint directory so nothing collides with the search-protocol HRD checkpoints.
+    checkpoint_subdir: full_faithful_fixed_arch
+    device: auto
+    amp: true
+    torch_num_threads: 8
+    dataloader_workers: 0
+    preload_tensors_to_device: true
+    trim_to_observed_events: true
+    resume_checkpoints: true
+    epoch_checkpoints: true
+    progress_interval_epochs: 10
+
+outputs:
+  make_figures_after_run: false
+  cleanup_work_dir_after_run: false
+  strict_manuscript: true
+  strict_no_leakage: true

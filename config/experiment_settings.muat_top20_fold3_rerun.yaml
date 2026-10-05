@@ -1,0 +1,143 @@
+# MuAt-compatible cancer_type_top20: fold 3 rerun under the SAME protocol as the 20 Aug 2026 run,
+# with the architecture-search harness guard enabled.
+#
+# Why this exists
+#   In the 20 Aug run (results/tables/muat_style_tcga_comparator_cancer_type_top20_comparable_*),
+#   fold 3's architecture search picked a 256-dim, 4-layer, 1-head candidate off a 3-epoch
+#   ranking. At full budget that candidate diverged (refit loss 1.658 vs 0.003-0.020 on folds
+#   1, 2, 4, 5; fold balanced accuracy 0.358 vs 0.587-0.607). It was never rerun.
+#
+# What changes relative to the 20 Aug run
+#   ONLY the two harness settings below (divergence_loss_factor, architecture_fallback_attempts).
+#   Nothing in the MuAt training recipe changes: same optimiser, LR, schedule, batch size, epoch
+#   budget, token dictionaries, event cap, candidate grid, ranking budget. Folds 1, 2, 4, 5 are
+#   reused from the 20 Aug checkpoints (compatible fingerprint below) and are byte-identical. The
+#   guard would not have altered their selection because no candidate diverged on those folds, so
+#   the pooled 5-fold result is a single consistent protocol.
+#
+# What deliberately does NOT change
+#   No gradient clipping. The official MuAt trainer (primasanjaya/muat, muat/trainer.py) exposes
+#   TrainerConfig.grad_norm_clip but defaults it to None and core.py never sets it; published MuAt
+#   training does not clip, so neither does this run.
+#
+# Known deviations from the official MuAt recipe carried over UNCHANGED from the 20 Aug run (so
+# fold 3 stays comparable to folds 1, 2, 4, 5). These are documented in
+# docs/muat_fidelity_audit_2026-10.md and are a group decision, not something to fix mid-run:
+#   - scheduler: cosine      (official: constant LR, no scheduler)
+#   - weight_decay: 0.0      (official TrainerConfig default: 0.001; 2023 paper value unverifiable)
+#   - early_stopping_patience: 25 and selection on balanced_accuracy
+#                            (official: all epochs, best checkpoint by validation accuracy)
+#   - per-fold architecture search over 18 candidates
+#                            (official: one fixed architecture per run)
+#
+# Launch
+#   python src/run_all_experiments.py --config config/experiment_settings.muat_top20_fold3_rerun.yaml \
+#       --paths config/paths.yaml --datasets-dir <bundle>
+#   Expected wall time on an RTX 3080: roughly 5 to 7 h for fold 3 (one 18-candidate 3-epoch
+#   ranking, one or more 150-epoch selection passes, one refit). Folds 1, 2, 4, 5 load in seconds.
+
+runtime_profile: muat-compatible-top20-comparable
+tree_method: hist
+cv_folds: 5
+endpoint_registry: config/endpoint_registry.yaml
+
+feature_cache:
+  enabled: true
+  dir: results/cache/features
+  validate_fasta: true
+
+experiments:
+  main_manuscript_complete_panel:
+    enabled: false
+  muat_style_tcga_comparator:
+    enabled: true
+    # v2 = additive-margin guard. v1 tables (ratio guard, see history note below) stay on disk
+    # under the un-suffixed tag.
+    output_tag: cancer_type_top20_comparable_fold3_rerun_v2
+    endpoints:
+      - cancer_type_top20
+    primary_task: cancer_type_top20
+    primary_metric: balanced_accuracy
+    nested_validation: true
+    selection_metric: balanced_accuracy
+    split_manifest_source: results/tables/main_manuscript_complete_panel_oof_predictions.csv
+    split_manifest_endpoint: cancer_type_top20
+    split_manifest_representation: signatures_plus_MAF_stack
+    split_manifest_learner: xgboost
+    require_canonical_split: true
+    paper_reference_accuracy: 0.641
+    paper_reference_top5_accuracy: 0.906
+    run_manuscript_endpoints: false
+    secondary_endpoints: []
+    smoke_run: false
+    folds: 5
+    epochs: 150
+    batch_size: 1
+    eval_batch_size: 1
+    embed_dim: 128
+    attention_heads: 1
+    num_layers: 1
+    pooling_mode: attention_weighted
+    architecture_search_enabled: true
+    architecture_search_embed_dims: [128, 256, 512]
+    architecture_search_num_layers: [1, 2, 4]
+    architecture_search_attention_heads: [1, 2]
+    architecture_search_epochs: 3
+    final_epoch_selection: true
+    early_stopping_patience: 25
+    feature_dim: 24
+    dropout: 0.1
+    scheduler: cosine
+    lr: 0.0006
+    momentum: 0.9
+    weight_decay: 0.0
+    max_events_per_sample: 5000
+    maf_chunksize: 500000
+    dictionary_mode: exact
+    motif_hash_buckets: 1024
+    position_hash_buckets: 2048
+    annotation_hash_buckets: 256
+    device: auto
+    amp: true
+    torch_num_threads: 8
+    dataloader_workers: 0
+    preload_tensors_to_device: true
+    trim_to_observed_events: true
+    resume_checkpoints: true
+    epoch_checkpoints: true
+    progress_interval_epochs: 10
+    official_mutation_type: snv+mnv+indel
+
+    # ---- The only changes relative to the 20 Aug run ------------------------------------------
+    # Harness guard: an inner pass whose epoch loss is non-finite, or rises more than 0.5 nats
+    # above its own best loss after a 3-epoch warm-up, is declared diverged and its candidate
+    # excluded. If the ranking winner diverges in its full-length pass, fall back to the
+    # next-ranked candidate (up to 3).
+    #
+    # History: the first attempt (run 20261002T202415Z) used a 3x RATIO rule and failed both
+    # ways on fold 3: it killed a healthy candidate whose loss wobbled 0.0006 -> 0.0019, then
+    # accepted a genuinely diverging one (1.55 -> 2.67, validation at chance) because 20-class
+    # cross-entropy saturates near ln 20 = 3.0 < 3 x 1.55. The additive margin separates those
+    # two cases by three orders of magnitude (0.001 vs 1.1). That run's fold 3 is a second
+    # replicate of the 20 Aug divergence (same candidate, balanced accuracy 0.390 vs 0.358) and
+    # is kept as results/tables/*_fold3_rerun_* for the record.
+    divergence_loss_margin: 0.5
+    divergence_warmup_epochs: 3
+    architecture_fallback_attempts: 3
+
+    # Fold 3 ignores its cached (diverged) checkpoint and retrains. The superseded files are
+    # renamed *.superseded_<utc>, not deleted.
+    force_retrain_folds: [3]
+
+    # Folds 1, 2, 4, 5 are loaded from the 20 Aug checkpoints. The guard settings above change the
+    # fingerprint, so this explicit opt-in is required; split, endpoint and fold are still verified.
+    allow_compatible_checkpoint_fingerprints: true
+    compatible_checkpoint_fingerprints:
+      cancer_type_top20:
+        - 876a04d478138629869b972af2fbce20aae789de6d48bd25260c827adf213f5e
+
+outputs:
+  make_figures_after_run: false
+  cleanup_work_dir_after_run: false
+  strict_manuscript: true
+  strict_no_leakage: true
