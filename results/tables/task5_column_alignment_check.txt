@@ -1,0 +1,23 @@
+--- Sig+MAF (signatures_plus_MAF_stack) ---
+model dir        : /home/hatch/workspace/somatic-mutation-repo/results/frozen_models/cancer_type_top20__signatures_plus_MAF_stack
+features table   : /home/hatch/workspace/pcawg_sigmaf_transfer/features/pcawg_sigmaf_1130_features.csv.gz
+schema features  : 1130
+table shape      : (913, 1130)
+missing from table: 0 []
+extra in table     : 0 []
+table column order == schema order: True
+name-based reindex is a no-op (name == position alignment): True
+ALIGNMENT_OK: True
+
+--- patterns-only (standard_sbs96_id83) ---
+model dir        : /home/hatch/workspace/somatic-mutation-repo/results/frozen_models/cancer_type_top20__standard_sbs96_id83
+features table   : /home/hatch/workspace/somatic-mutation-repo/results/external_validation/aaron_email/pcawg/pcawg_standard_sbs96_id83_features.csv.gz
+schema features  : 182
+table shape      : (913, 182)
+missing from table: 0 []
+extra in table     : 0 []
+table column order == schema order: True
+name-based reindex is a no-op (name == position alignment): True
+ALIGNMENT_OK: True
+
+OVERALL: PASS
