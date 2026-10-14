@@ -22,7 +22,7 @@
 
 - Exact MuAt auxiliary annotation inputs could not be fully reconstructed from the bundled sources.
 - The local event-bag model uses deterministic MAF/VEP-derived motif, 1-Mb position-bin, and genic/exonic/strand annotation tokens.
-- Broader external-resource annotations, including cancer-gene and hotspot resources, remain part of Bio MAF v4 tabular features rather than MuAt-compatible event inputs.
+- Broader external-resource annotations, including cancer-gene and hotspot resources, remain part of Bio MAF tabular features rather than MuAt-compatible event inputs.
 
 ## Manuscript Alignment
 

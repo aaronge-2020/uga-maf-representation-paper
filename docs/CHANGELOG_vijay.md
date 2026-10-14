@@ -197,7 +197,7 @@ Nothing has been moved or deleted. Reachability computed from the three entry po
 
 | File | Lines | Note |
 |---|---|---|
-| `src/utils/biological_maf_features.py` | 799 | **Nothing imports it.** Superseded by `bio_maf_base_features.py` + `quick_bio_v4_nested_feature_selection.py` (the "Bio MAF v4" stack that the manuscript actually uses). The only genuinely dead module in the tree. |
+| `src/utils/biological_maf_features.py` | 799 | **Nothing imports it.** Superseded by `bio_maf_base_features.py` + `quick_bio_v4_nested_feature_selection.py` (the "Bio MAF" stack that the manuscript actually uses). The only genuinely dead module in the tree. |
 | `scripts/rerun_survival_cox.py` | 284 | One-off script from the CoxNet swap. The main panel runner now uses CoxNet directly, so this has served its purpose. Keep only if we want it as provenance for the survival rerun. |
 
 ### Do NOT discard — standalone tools, not dead

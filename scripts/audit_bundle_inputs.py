@@ -59,10 +59,10 @@ BUNDLE_INPUTS: list[tuple[str, str, bool]] = [
 
 # Files the repo itself must carry (not part of the dataset bundle).
 REPO_INPUTS: list[tuple[str, str, bool]] = [
-    ("results/tables/quick_bio_v4_maf_features.csv.gz", "Bio MAF v4 features: survival baseline, feature selection", True),
+    ("results/tables/quick_bio_maf_features.csv.gz", "Bio MAF features: survival baseline, feature selection", True),
     ("results/tables/main_manuscript_complete_panel_oof_predictions.csv", "canonical split manifest for every MuAt config", True),
-    ("config/feature_resources/oncokb_cancer_genes.tsv", "Bio MAF v4 driver annotations", True),
-    ("config/feature_resources/curated_pathways.yaml", "Bio MAF v4 pathway blocks", True),
+    ("config/feature_resources/oncokb_cancer_genes.tsv", "Bio MAF driver annotations", True),
+    ("config/feature_resources/curated_pathways.yaml", "Bio MAF pathway blocks", True),
 ]
 
 

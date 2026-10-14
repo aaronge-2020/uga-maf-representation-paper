@@ -83,7 +83,7 @@ validation accuracy, arm D token grammar). No fold diverged; refit losses 0.24 t
 | 20 Aug search protocol (fold 3 diverged) | 0.5703 | 0.5502 | 0.8711 | 0.5525 |
 | **B: faithful fixed architecture** | **0.5485** | **0.5282** | **0.8607** | **0.5269** |
 | Published MuAt, TCGA WES, 7,352 tumours | 0.641 | not reported | 0.906 | not reported |
-| Tabular: Signatures + Bio MAF v4, XGBoost | 0.744 | 0.738 | 0.955 | |
+| Tabular: Signatures + Bio MAF, XGBoost | 0.744 | 0.738 | 0.955 | |
 
 Per fold (accuracy, the selection metric): 0.570, 0.543, 0.544, 0.547, 0.538. Fold 3 is
 unremarkable under this protocol (0.544), which confirms the 20 Aug fold-3 collapse was an

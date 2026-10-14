@@ -84,7 +84,7 @@ experiments:
     maf_stack_builder: frozen_biological_v4_nested_fs
     maf_bio_resources_dir: config/feature_resources
     maf_bio_include_locus_bins: true
-    maf_bio_v4_include_signatures_only_candidate: true
+    maf_bio_include_signatures_only_candidate: true
     maf_bio_chunksize: 350000
     main_mc3_endpoints:
       - HRD_Score

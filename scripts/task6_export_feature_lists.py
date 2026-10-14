@@ -4,13 +4,13 @@
 Reads the ACTUAL artefacts, never reconstructed from memory:
   mutation_count    <- <bundle>/datasets/tcga_mc3/features/features_burden_only.csv
   mutation_patterns <- <bundle>/datasets/tcga_mc3/features/features_standard_sbs96_id83.csv.gz
-  bio_maf_v4        <- results/tables/quick_bio_v4_maf_features.csv.gz
+  bio_maf        <- results/tables/quick_bio_maf_features.csv.gz
                        (the published 948-feature matrix; the current code
                        builder emits the corrected 910-feature set after
                        commit 7984d67 removed 38 undocumented role-matched
                        columns -- see task6_notes.md)
   sig_plus_maf      <- signature_matrix__-prefixed mutation_patterns columns
-                       concatenated with the bio_maf_v4 columns, exactly as
+                       concatenated with the bio_maf columns, exactly as
                        runners.run_main_manuscript_complete_panel builds the
                        signatures_plus_MAF_stack matrix (182 + 948 = 1130)
 
@@ -58,7 +58,7 @@ def main() -> None:
     mc3 = datasets_dir / "datasets" / "tcga_mc3"
     burden_path = mc3 / "features" / "features_burden_only.csv"
     standard_path = mc3 / "features" / "features_standard_sbs96_id83.csv.gz"
-    bio_path = REPO_ROOT / "results" / "tables" / "quick_bio_v4_maf_features.csv.gz"
+    bio_path = REPO_ROOT / "results" / "tables" / "quick_bio_maf_features.csv.gz"
     for path in (burden_path, standard_path, bio_path):
         if not path.exists():
             raise SystemExit(f"missing required input: {path}")
@@ -84,8 +84,8 @@ def main() -> None:
             f"Source: {standard_path} (header row of the deposited bundle file).",
             standard_cols,
         ),
-        "bio_maf_v4.txt": (
-            "Table 1 representation 'MAF_stack_only' (Bio MAF v4, 948 features). "
+        "bio_maf.txt": (
+            "Table 1 representation 'MAF_stack_only' (Bio MAF, 948 features). "
             f"Source: {bio_path.name} (header row of the published feature matrix, "
             f"minus the sample-id column). NOTE: this is the "
             "historical 948-feature matrix; the current code builder emits the "
@@ -94,7 +94,7 @@ def main() -> None:
         ),
         "sig_plus_maf.txt": (
             "Table 1 representation 'signatures_plus_MAF_stack' (Sig+MAF, 1130 features = "
-            "182 signature_matrix__-prefixed mutation-pattern columns + 948 Bio MAF v4 columns), "
+            "182 signature_matrix__-prefixed mutation-pattern columns + 948 Bio MAF columns), "
             "concatenated in exactly the order the production runner builds it.",
             sig_plus_maf_cols,
         ),
@@ -118,7 +118,7 @@ def main() -> None:
     # Sanity assertions against the manuscript's recorded counts.
     assert len(burden_cols) == 3, f"burden_only should have 3 features, got {len(burden_cols)}"
     assert len(standard_cols) == 182, f"standard_sbs96_id83 should have 182 features, got {len(standard_cols)}"
-    assert len(bio_feature_cols) == 948, f"bio_maf_v4 should have 948 features, got {len(bio_feature_cols)}"
+    assert len(bio_feature_cols) == 948, f"bio_maf should have 948 features, got {len(bio_feature_cols)}"
     assert len(sig_plus_maf_cols) == 1130, f"sig_plus_maf should have 1130 features, got {len(sig_plus_maf_cols)}"
     assert len(TCGA_CANCER_TYPE_TOP20) == 20
     print("counts verified: 3 / 182 / 948 / 1130 / 20")

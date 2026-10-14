@@ -1,7 +1,7 @@
-"""Shared fixed Bio MAF feature helpers used by the Bio MAF v4 builder.
+"""Shared fixed Bio MAF feature helpers used by the Bio MAF builder.
 
 This module keeps only the reusable fixed biological feature construction and
-nested feature-selection utilities required by Bio MAF v4 diagnostics. It uses
+nested feature-selection utilities required by Bio MAF diagnostics. It uses
 the standalone vendored resource paths under ``config/feature_resources``.
 """
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Individual-feature selection inside Bio MAF v4, with SHAP attribution.
+"""Individual-feature selection inside Bio MAF, with SHAP attribution.
 
 Two requests from the 1 Aug 2026 meeting are handled together here because they share the same
 fitted models.
@@ -54,7 +54,7 @@ from utils.endpoint_registry import (  # noqa: E402
     build_cdr_survival_labels,
 )
 
-BIO_MAF_CACHE = REPO_ROOT / "results/tables/quick_bio_v4_maf_features.csv.gz"
+BIO_MAF_CACHE = REPO_ROOT / "results/tables/quick_bio_maf_features.csv.gz"
 SEED = 20260801
 
 # Sparsity grid. Each setting trades feature count against fit. reg_alpha is the L1 penalty, which
@@ -72,7 +72,7 @@ SPARSITY_GRID = [
 
 def load_bio_maf() -> pd.DataFrame:
     if not BIO_MAF_CACHE.exists():
-        raise SystemExit(f"Bio MAF v4 feature table not found: {BIO_MAF_CACHE}")
+        raise SystemExit(f"Bio MAF feature table not found: {BIO_MAF_CACHE}")
     frame = pd.read_csv(BIO_MAF_CACHE)
     index_col = "sample" if "sample" in frame.columns else frame.columns[0]
     frame[index_col] = frame[index_col].astype(str).str[:12]
@@ -291,7 +291,7 @@ def main() -> int:
                 ax.set_yticks(range(len(top)))
                 ax.set_yticklabels([name[:58] for name in top["feature"]], fontsize=8)
                 ax.set_xlabel("mean |SHAP value|")
-                ax.set_title(f"Bio MAF v4 feature attribution — {args.endpoint}", fontsize=11)
+                ax.set_title(f"Bio MAF feature attribution — {args.endpoint}", fontsize=11)
                 ax.spines[["top", "right"]].set_visible(False)
                 shap_path = REPO_ROOT / f"results/figures/feature_selection_{args.endpoint}_shap_summary.png"
                 shap_path.parent.mkdir(parents=True, exist_ok=True)

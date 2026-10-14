@@ -10,7 +10,7 @@ Inputs (all verified against checkpoint digests before running):
   verified via samples_digest + labels_digest.
 - burden_only (3): features_burden_only.csv (git blob)
 - standard_sbs96_id83 (182): features_standard_sbs96_id83.csv.gz (git blob)
-- MAF_stack_only (948): results/tables/quick_bio_v4_maf_features.csv.gz
+- MAF_stack_only (948): results/tables/quick_bio_maf_features.csv.gz
 - signatures_plus_MAF_stack (1130): 182 + 948
 - feature sets: original 948-column v4 blocks (reconstructed, digests verified)
 """
@@ -67,7 +67,7 @@ EXPECTED_BAL_ACC = {
 # utils.feature_evaluation.stable_seed (the 20260518-based formula actually used
 # by evaluate_features() in the August production run), NOT nested_oof's.
 CACHE_MAF = "main_complete_panel_mc3_maf_stack_bio_v4_nested_fs_15d698606a129584e3f82812"
-CACHE_SIGMAF = "main_complete_panel_mc3_signatures_plus_maf_stack_bio_v4_nested_fs_ac11587791bbbd40db3991bb"
+CACHE_SIGMAF = "main_complete_panel_mc3_signatures_plus_maf_stack_bio_nested_fs_ac11587791bbbd40db3991bb"
 SEEDS = {
     ("burden_only", "linear"): fe_stable_seed("mc3_main", "cancer_type_top20", "linear", "burden_only"),
     ("burden_only", "xgboost"): fe_stable_seed("mc3_main", "cancer_type_top20", "xgboost", "burden_only"),
@@ -136,7 +136,7 @@ def verify_inputs(samples, labels, feature_sets_by_rep: dict) -> None:
     assert _label_digest("multiclass", y) == "1e050a771d361c6e1d93d535", "labels digest mismatch"
     print("[verify] samples + labels digests OK (n=8800)", flush=True)
     # Verify MAF feature-set digests against the Sig+MAF/xgboost checkpoint manifest.
-    d = json.load(open(REPO / "results/tables/main_manuscript_complete_panel_nested_fold_checkpoints/cancer_type_top20__signatures_plus_MAF_stack__xgboost__main_complete_panel_mc3_signatures_plus_maf_stack_bio_v4_nested_fs_ac11587791bbbd40db3991bb.json"))
+    d = json.load(open(REPO / "results/tables/main_manuscript_complete_panel_nested_fold_checkpoints/cancer_type_top20__signatures_plus_MAF_stack__xgboost__main_complete_panel_mc3_signatures_plus_maf_stack_bio_nested_fs_ac11587791bbbd40db3991bb.json"))
     expected = d["manifest"]["feature_digests"]
     got_sets = feature_sets_by_rep["signatures_plus_MAF_stack"]
     for name, exp in expected.items():
@@ -152,10 +152,10 @@ def verify_inputs(samples, labels, feature_sets_by_rep: dict) -> None:
 
 def build_feature_sets(samples) -> dict:
     """Build the four representation feature-set dicts, aligned to samples."""
-    from utils.quick_bio_v4_nested_feature_selection import v4_feature_columns, load_v4_resources
+    from utils.quick_bio_maf_nested_feature_selection import bio_maf_feature_columns, load_v4_resources
     from utils.bio_maf_base_features import OPTIONAL_CONTROLS
 
-    maf = pd.read_csv(REPO / "results/tables/quick_bio_v4_maf_features.csv.gz", index_col=0)
+    maf = pd.read_csv(REPO / "results/tables/quick_bio_maf_features.csv.gz", index_col=0)
     maf.index = maf.index.astype(str)
     std = pd.read_csv(FEAT / "features_standard_sbs96_id83.csv.gz", index_col=0)
     std.index = std.index.astype(str)
@@ -164,23 +164,23 @@ def build_feature_sets(samples) -> dict:
 
     # Reconstruct the ORIGINAL 948-column v4 blocks (current code excludes 38
     # role-matched columns; the original run interleaved them per gene).
-    _, _, blocks = v4_feature_columns()
+    _, _, blocks = bio_maf_feature_columns()
     panel, *_ = load_v4_resources()
     genes = panel["gene"].astype(str).tolist()
     orig_exact: list[str] = []
     for gene in genes:
         orig_exact.append(f"driver_gene_functional_event_log_count__{gene}")
         orig_exact.append(f"driver_gene_role_matched_event_log_count__{gene}")
-    base_core = blocks["v4_compact_biology_only"]
-    tier_cols = blocks["v4_compact_plus_driver_evidence_tiers"][len(base_core):]
-    hotspot_cols = blocks["v4_compact_plus_hotspot_summary"][len(base_core):]
+    base_core = blocks["compact_biology_only"]
+    tier_cols = blocks["compact_plus_driver_evidence_tiers"][len(base_core):]
+    hotspot_cols = blocks["compact_plus_hotspot_summary"][len(base_core):]
     orig_blocks = {
-        "v4_compact_biology_only": base_core,
-        "v4_compact_plus_driver_evidence_tiers": [*base_core, *tier_cols],
-        "v4_compact_plus_hotspot_summary": [*base_core, *hotspot_cols],
-        "v4_compact_plus_exact_driver_genes": [*base_core, *orig_exact],
-        "v4_full_core": [*base_core, *tier_cols, *orig_exact, *hotspot_cols],
-        "v4_full_core_plus_optional_controls": [*base_core, *tier_cols, *orig_exact, *hotspot_cols, *OPTIONAL_CONTROLS],
+        "compact_biology_only": base_core,
+        "compact_plus_driver_evidence_tiers": [*base_core, *tier_cols],
+        "compact_plus_hotspot_summary": [*base_core, *hotspot_cols],
+        "compact_plus_exact_driver_genes": [*base_core, *orig_exact],
+        "full_core": [*base_core, *tier_cols, *orig_exact, *hotspot_cols],
+        "full_core_plus_optional_controls": [*base_core, *tier_cols, *orig_exact, *hotspot_cols, *OPTIONAL_CONTROLS],
     }
 
     maf_al = maf.reindex(samples)
@@ -231,8 +231,8 @@ def run_combo(representation: str, learner: str, samples, labels, feature_sets: 
     ck_map = {
         ("MAF_stack_only", "linear"): "cancer_type_top20__MAF_stack_only__linear__main_complete_panel_mc3_maf_stack_bio_v4_nested_fs_15d698606a129584e3f82812.npz",
         ("MAF_stack_only", "xgboost"): "cancer_type_top20__MAF_stack_only__xgboost__main_complete_panel_mc3_maf_stack_bio_v4_nested_fs_15d698606a129584e3f82812.npz",
-        ("signatures_plus_MAF_stack", "linear"): "cancer_type_top20__signatures_plus_MAF_stack__linear__main_complete_panel_mc3_signatures_plus_maf_stack_bio_v4_nested_fs_ac11587791bbbd40db3991bb.npz",
-        ("signatures_plus_MAF_stack", "xgboost"): "cancer_type_top20__signatures_plus_MAF_stack__xgboost__main_complete_panel_mc3_signatures_plus_maf_stack_bio_v4_nested_fs_ac11587791bbbd40db3991bb.npz",
+        ("signatures_plus_MAF_stack", "linear"): "cancer_type_top20__signatures_plus_MAF_stack__linear__main_complete_panel_mc3_signatures_plus_maf_stack_bio_nested_fs_ac11587791bbbd40db3991bb.npz",
+        ("signatures_plus_MAF_stack", "xgboost"): "cancer_type_top20__signatures_plus_MAF_stack__xgboost__main_complete_panel_mc3_signatures_plus_maf_stack_bio_nested_fs_ac11587791bbbd40db3991bb.npz",
     }
     if (representation, learner) in ck_map:
         z = np.load(REPO / "results/tables/main_manuscript_complete_panel_nested_fold_checkpoints" / ck_map[(representation, learner)])

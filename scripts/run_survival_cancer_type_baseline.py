@@ -18,7 +18,7 @@ biology. This script measures which.
 Arms
 ----
     cancer_type              one-hot cancer type only            -> baseline C-index
-    bio_maf                  Bio MAF v4 features only            -> the manuscript's claim
+    bio_maf                  Bio MAF features only            -> the manuscript's claim
     cancer_type_plus_bio_maf both, concatenated                   -> incremental value
 
 The third arm is the one that answers the question. If it does not beat `cancer_type`, then Bio
@@ -51,7 +51,7 @@ from utils.nested_oof import evaluate_nested_oof  # noqa: E402
 # One seed for every arm, so the outer folds are identical and the comparison is paired.
 PAIRED_SEED = 20260801
 
-BIO_MAF_CACHE = REPO_ROOT / "results/tables/quick_bio_v4_maf_features.csv.gz"
+BIO_MAF_CACHE = REPO_ROOT / "results/tables/quick_bio_maf_features.csv.gz"
 
 ARMS = ("cancer_type", "bio_maf", "cancer_type_plus_bio_maf")
 
@@ -59,7 +59,7 @@ ARMS = ("cancer_type", "bio_maf", "cancer_type_plus_bio_maf")
 def load_bio_maf_features() -> pd.DataFrame:
     if not BIO_MAF_CACHE.exists():
         raise SystemExit(
-            f"Bio MAF v4 feature table not found at {BIO_MAF_CACHE}.\n"
+            f"Bio MAF feature table not found at {BIO_MAF_CACHE}.\n"
             "Regenerate it with the main panel runner, or run with --arms cancer_type to get the\n"
             "baseline alone (which needs only the CDR table)."
         )
@@ -203,7 +203,7 @@ def main() -> int:
         # ASCII only: the default Windows console codepage (cp1252) cannot encode characters like
         # the set-intersection sign, and an UnicodeEncodeError in a progress message is enough to
         # abort the whole stage.
-        print(f"  cohort after intersection: n={len(common)} (survival AND cancer type AND Bio MAF v4)", flush=True)
+        print(f"  cohort after intersection: n={len(common)} (survival AND cancer type AND Bio MAF)", flush=True)
 
         surv = labels.loc[common]
         ct_design = one_hot_cancer_type(cancer_type.loc[common])
@@ -280,7 +280,7 @@ def main() -> int:
 
     print("\nReading the result:")
     print("  cancer_type_plus_bio_maf vs cancer_type is the answer to Jeya's question.")
-    print("  If that delta is not clearly positive, Bio MAF v4 adds nothing to survival")
+    print("  If that delta is not clearly positive, Bio MAF adds nothing to survival")
     print("  prediction once cancer type is known, and the survival claim needs rewording.")
     print(f"\nwritten -> results/tables/survival_cancer_type_baseline_summary.csv")
     return 0

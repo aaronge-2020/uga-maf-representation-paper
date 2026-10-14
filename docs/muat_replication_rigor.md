@@ -19,7 +19,7 @@ The MuAt paper's TCGA-WES reference point is 7,352 tumours across 20 tumour type
 | Fixed architecture | A single 128-dimension, one-layer, one-head architecture could understate architecture sensitivity | Full configs run a limited inner-split search over embedding sizes 128/256/512, layer counts 1/2/4, and heads 1/2 |
 | Metric drift | Cancer-type text previously mixed accuracy, macro-AUROC, and balanced accuracy | `cancer_type_top20` uses balanced accuracy as the primary manuscript metric; accuracy/top-5 remain paper-facing comparability metrics |
 | Vocabulary leakage risk | Learned token dictionaries could be influenced by held-out samples | Manuscript configs use fixed-hash motif, position, and annotation dictionaries |
-| Biological feature mismatch | The paper is clear about sequence-context style encodings but less explicit about all auxiliary annotation tokens | The local event bag uses deterministic MAF/VEP-derived motif, 1-Mb position-bin, and genic/exonic/strand tokens; broader external-resource Bio MAF v4 annotations are tabular features, not MuAt inputs |
+| Biological feature mismatch | The paper is clear about sequence-context style encodings but less explicit about all auxiliary annotation tokens | The local event bag uses deterministic MAF/VEP-derived motif, 1-Mb position-bin, and genic/exonic/strand tokens; broader external-resource Bio MAF annotations are tabular features, not MuAt inputs |
 | Split comparability | Different folds can obscure whether model differences are real | Full manuscript comparator runs use canonical folds from `results/tables/main_manuscript_complete_panel_oof_predictions.csv` where those rows are available |
 
 ## Reviewer-Facing Framing

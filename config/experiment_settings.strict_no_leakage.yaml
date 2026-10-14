@@ -69,7 +69,7 @@ experiments:
     cox_min_feature_std: 1.0e-8
     allow_transductive_maf_features: false
     maf_stack_builder: frozen_biological_v4_nested_fs
-    maf_bio_v4_include_signatures_only_candidate: true
+    maf_bio_include_signatures_only_candidate: true
     maf_bio_chunksize: 350000
     main_mc3_endpoints:
       - HRD_Score

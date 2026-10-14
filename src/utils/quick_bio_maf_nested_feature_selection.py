@@ -1,7 +1,7 @@
 """Quick nested-CV smoke test for Clinical Bio v4 MAF feature selection.
 
 This runner intentionally stays outside the manuscript pipeline. It builds the
-frozen Bio MAF v4 feature matrix, then tests inner-loop feature-block selection
+frozen Bio MAF feature matrix, then tests inner-loop feature-block selection
 against prior quick benchmark arms without rewriting canonical manuscript files.
 """
 
@@ -80,7 +80,7 @@ def parse_amino_acids(row: pd.Series) -> tuple[str, str]:
 
 def load_v4_resources() -> tuple[pd.DataFrame, dict[str, int], dict[str, str], set[tuple[str, int]], set[tuple[str, int, str, str]]]:
     tables_dir = BUNDLE_ROOT / "results" / "tables"
-    resource_dir = BUNDLE_ROOT / "config" / "feature_resources" / "clinical_bio_v4_sources"
+    resource_dir = BUNDLE_ROOT / "config" / "feature_resources" / "clinical_bio_sources"
     evidence = pd.read_csv(tables_dir / "proposed_clinical_bio_v4_driver_gene_evidence_all_sources.csv")
     evidence["gene"] = evidence["gene"].map(base.normalize_gene)
     tiers = evidence.set_index("gene")["primary_driver_evidence_count"].fillna(0).astype(int).to_dict()
@@ -109,7 +109,7 @@ def load_v4_resources() -> tuple[pd.DataFrame, dict[str, int], dict[str, str], s
     return panel, tiers, role_lookup, residue_set, variant_set
 
 
-def v4_feature_columns() -> tuple[list[str], list[str], dict[str, list[str]]]:
+def bio_maf_feature_columns() -> tuple[list[str], list[str], dict[str, list[str]]]:
     base_core, _base_all, _base_blocks = base.feature_columns()
     panel, _tiers, _roles, _residues, _variants = load_v4_resources()
     tier_cols = [f"driver_evidence_{metric}__source_count_{tier}" for tier in range(1, 5) for metric in DRIVER_TIER_METRICS]
@@ -128,12 +128,12 @@ def v4_feature_columns() -> tuple[list[str], list[str], dict[str, list[str]]]:
     core = [*base_core, *tier_cols, *exact_cols, *hotspot_cols]
     all_cols = [*core, *base.OPTIONAL_CONTROLS]
     blocks = {
-        "v4_compact_biology_only": base_core,
-        "v4_compact_plus_driver_evidence_tiers": [*base_core, *tier_cols],
-        "v4_compact_plus_hotspot_summary": [*base_core, *hotspot_cols],
-        "v4_compact_plus_exact_driver_genes": [*base_core, *exact_cols],
-        "v4_full_core": core,
-        "v4_full_core_plus_optional_controls": all_cols,
+        "compact_biology_only": base_core,
+        "compact_plus_driver_evidence_tiers": [*base_core, *tier_cols],
+        "compact_plus_hotspot_summary": [*base_core, *hotspot_cols],
+        "compact_plus_exact_driver_genes": [*base_core, *exact_cols],
+        "full_core": core,
+        "full_core_plus_optional_controls": all_cols,
     }
     return core, all_cols, blocks
 
@@ -154,16 +154,16 @@ def is_role_matched(row: pd.Series, role_lookup: dict[str, str]) -> bool:
     return impact in {"high", "moderate"} or hotspot
 
 
-def build_bio_v4_features(paths: dict, output_dir: Path, *, chunksize: int, force: bool = False) -> pd.DataFrame:
-    cache_path = output_dir / "quick_bio_v4_maf_features.csv.gz"
-    audit_path = output_dir / "quick_bio_v4_maf_features_audit.json"
+def build_bio_maf_features(paths: dict, output_dir: Path, *, chunksize: int, force: bool = False) -> pd.DataFrame:
+    cache_path = output_dir / "quick_bio_maf_features.csv.gz"
+    audit_path = output_dir / "quick_bio_maf_features_audit.json"
     if cache_path.exists() and not force:
         features = pd.read_csv(cache_path, index_col=0)
         features.index = features.index.astype(str)
         return features.astype(np.float32)
 
     base_features, _schema = base.build_base_bio_features(paths, output_dir, chunksize=chunksize, force=force)
-    core_cols, all_cols, _blocks = v4_feature_columns()
+    core_cols, all_cols, _blocks = bio_maf_feature_columns()
     panel, tier_lookup, role_lookup, residue_set, variant_set = load_v4_resources()
     selected_genes = set(panel["gene"].astype(str))
     sample_ids = base_features.index.astype(str).tolist()
@@ -279,14 +279,14 @@ def build_bio_v4_features(paths: dict, output_dir: Path, *, chunksize: int, forc
         "rows_used": int(qc["rows_used"]),
         "nonzero_feature_count": int((matrix.sum(axis=0) != 0).sum()),
         "cache_path": str(cache_path),
-        "leakage_note": "Bio v4 schema and gene/hotspot resources are fixed before training; feature-set inclusion is selected inside the inner CV loop.",
+        "leakage_note": "Bio MAF schema and gene/hotspot resources are fixed before training; feature-set inclusion is selected inside the inner CV loop.",
     }
     audit_path.write_text(json.dumps(audit, indent=2), encoding="utf-8")
     return matrix
 
 
 def make_v4_candidate_sets(bio_v4: pd.DataFrame, signatures: pd.DataFrame, mode: str):
-    _core, _all, blocks = v4_feature_columns()
+    _core, _all, blocks = bio_maf_feature_columns()
     features = {"bio_v4": bio_v4, "signatures": signatures}
     if mode == "bio_v4_only":
         return features, {name: ("bio_v4", cols) for name, cols in blocks.items()}
@@ -325,7 +325,7 @@ def main() -> None:
     started = time.time()
     paths = base.load_paths(Path(args.paths))
     out_dir = BUNDLE_ROOT / "results" / "tables"
-    bio_v4 = build_bio_v4_features(paths, out_dir, chunksize=args.chunksize, force=bool(args.force_features))
+    bio_v4 = build_bio_maf_features(paths, out_dir, chunksize=args.chunksize, force=bool(args.force_features))
     standard = pd.read_csv(Path(paths["raw_data"]["mc3_source_dir"]) / "features" / "features_standard_sbs96_id83.csv.gz", index_col=0).fillna(0.0).astype(np.float32)
     standard.index = standard.index.astype(str)
     common = bio_v4.index.intersection(standard.index)

@@ -9,7 +9,7 @@ Reproduces the "Batch effects and confounding" analysis of the manuscript:
   (iii) within-type center comparisons for OV, KIRC, KIRP.
 
 Inputs (all paths relative to repo root):
-  results/tables/quick_bio_v4_maf_features_910.csv.gz
+  results/tables/quick_bio_maf_features_910.csv.gz
       910-feature matrix (sample + 910 features).
   results/tables/batch_center_sample_mapping.csv
       Per-tumor-sample mapping: sample (patient barcode) -> full-length MC3
@@ -60,7 +60,7 @@ from sklearn.model_selection import StratifiedKFold, cross_val_score
 from sklearn.preprocessing import StandardScaler
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MATRIX = os.path.join(REPO, "results", "tables", "quick_bio_v4_maf_features_910.csv.gz")
+MATRIX = os.path.join(REPO, "results", "tables", "quick_bio_maf_features_910.csv.gz")
 MAPPING = os.path.join(REPO, "results", "tables", "batch_center_sample_mapping.csv")
 OUT_ETASQ = os.path.join(REPO, "results", "tables", "batch_center_etasq.csv")
 OUT_WITHIN = os.path.join(REPO, "results", "tables", "batch_center_within_type.csv")

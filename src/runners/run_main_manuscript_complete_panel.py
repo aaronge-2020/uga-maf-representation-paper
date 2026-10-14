@@ -32,7 +32,7 @@ from utils.kucab_event_features import (
     standard_features_from_counts,
 )
 from utils.nested_oof import evaluate_nested_feature_set_oof, stable_seed
-from utils.quick_bio_v4_nested_feature_selection import build_bio_v4_features, v4_feature_columns
+from utils.quick_bio_maf_nested_feature_selection import build_bio_maf_features, bio_maf_feature_columns
 from utils.endpoint_registry import (
     CANCER_TYPE_ENDPOINT_CLASSES,
     HRD_BINARY,
@@ -61,13 +61,13 @@ MC3_SURVIVAL_ENDPOINTS = main_survival_endpoints(_REGISTRY)
 LEARNERS = ["linear", "xgboost"]
 SURVIVAL_LEARNERS = ["cox_ph"]
 MAF_MAIN_ONLY_LEARNERS = LEARNERS
-BIO_MAF_V4_MODEL_IDS = [
-    "maf_stack_bio_v4_nested_fs",
-    "signatures_plus_maf_stack_bio_v4_nested_fs",
+BIO_MAF_MODEL_IDS = [
+    "maf_stack_bio_nested_fs",
+    "signatures_plus_maf_stack_bio_nested_fs",
 ]
 MAF_REPRESENTATION = {
-    "maf_stack_bio_v4_nested_fs": "MAF_stack_only",
-    "signatures_plus_maf_stack_bio_v4_nested_fs": "signatures_plus_MAF_stack",
+    "maf_stack_bio_nested_fs": "MAF_stack_only",
+    "signatures_plus_maf_stack_bio_nested_fs": "signatures_plus_MAF_stack",
 }
 KUCAB_TABLES = [
     "denovo_subclone_subs_final.txt",
@@ -104,10 +104,10 @@ def _settings(ctx: RunnerContext) -> dict:
 def _maf_model_ids(settings: dict) -> list[str]:
     if bool(settings.get("allow_transductive_maf_features", False)):
         raise ValueError("The standalone manuscript export requires fold-isolated MAF feature construction.")
-    builder = str(settings.get("maf_stack_builder", "frozen_biological_v4_nested_fs"))
-    if builder != "frozen_biological_v4_nested_fs":
+    builder = str(settings.get("maf_stack_builder", "frozen_biological_nested_fs"))
+    if builder != "frozen_biological_nested_fs":
         raise ValueError(f"Unsupported active MAF stack builder for this export: {builder}")
-    return list(BIO_MAF_V4_MODEL_IDS)
+    return list(BIO_MAF_MODEL_IDS)
 
 
 def _load_mc3_endpoints(ctx: RunnerContext, requested: Iterable[str], survival_requested: Iterable[str], settings: dict) -> tuple[list[EndpointData], pd.DataFrame]:
@@ -260,38 +260,38 @@ def _load_mc3_maf_features(ctx: RunnerContext, model_id: str, settings: dict | N
     raw_dir = Path(ctx.paths["raw_data"]["mc3_source_dir"])
     maf_path = raw_dir / "raw" / "mc3.v0.2.8.PUBLIC.maf.gz"
     is_combined = model_id.startswith("id_plus_") or model_id.startswith("signatures_plus_")
-    if model_id in BIO_MAF_V4_MODEL_IDS:
+    if model_id in BIO_MAF_MODEL_IDS:
         standard_path = raw_dir / "features" / "features_standard_sbs96_id83.csv.gz"
-        _core_cols, _all_cols, v4_blocks = v4_feature_columns()
-        requested_sets = settings.get("maf_bio_v4_candidate_sets")
+        _core_cols, _all_cols, bio_maf_blocks = bio_maf_feature_columns()
+        requested_sets = settings.get("maf_bio_candidate_sets")
         if requested_sets:
             requested = {str(name) for name in requested_sets}
-            v4_blocks = {name: cols for name, cols in v4_blocks.items() if name in requested}
-            if not v4_blocks:
+            bio_maf_blocks = {name: cols for name, cols in bio_maf_blocks.items() if name in requested}
+            if not bio_maf_blocks:
                 raise ValueError(f"No valid Bio v4 candidate feature sets requested: {requested_sets}")
         tables_dir = Path(__file__).parents[2] / "results" / "tables"
-        v4_resource_dir = Path(__file__).parents[2] / "config" / "feature_resources" / "clinical_bio_v4_sources"
+        bio_maf_resource_dir = Path(__file__).parents[2] / "config" / "feature_resources" / "clinical_bio_sources"
         cache_key = make_cache_key(
             f"main_complete_panel_mc3_{model_id}",
             params={
                 "model_id": model_id,
                 "schema": 1,
-                "feature_builder": "frozen_biological_v4_nested_fs",
-                "candidate_feature_sets": sorted(v4_blocks),
-                "include_signatures_only_candidate": bool(settings.get("maf_bio_v4_include_signatures_only_candidate", True)),
+                "feature_builder": "frozen_biological_nested_fs",
+                "candidate_feature_sets": sorted(bio_maf_blocks),
+                "include_signatures_only_candidate": bool(settings.get("maf_bio_include_signatures_only_candidate", True)),
             },
             inputs={
                 "maf": file_fingerprint(maf_path),
                 "standard": file_fingerprint(standard_path) if is_combined else None,
                 "v4_manifest": file_fingerprint(tables_dir / "proposed_clinical_bio_v4_manifest.json") if (tables_dir / "proposed_clinical_bio_v4_manifest.json").exists() else None,
-                "v4_feature_table": file_fingerprint(tables_dir / "proposed_clinical_bio_v4_feature_table_exact.csv") if (tables_dir / "proposed_clinical_bio_v4_feature_table_exact.csv").exists() else None,
-                "v4_resources": directory_fingerprint(v4_resource_dir, patterns=("*.tsv", "*.txt", "*.xlsx", "*.json", "*.zip")) if v4_resource_dir.exists() else None,
+                "v4_feature_table": file_fingerprint(tables_dir / "proposed_clinical_bio_feature_table_exact.csv") if (tables_dir / "proposed_clinical_bio_feature_table_exact.csv").exists() else None,
+                "bio_maf_resources": directory_fingerprint(bio_maf_resource_dir, patterns=("*.tsv", "*.txt", "*.xlsx", "*.json", "*.zip")) if bio_maf_resource_dir.exists() else None,
                 "code": code_fingerprint(
                     [
                         Path(__file__),
                         Path(__file__).parents[1] / "utils" / "nested_oof.py",
                         Path(__file__).parents[1] / "utils" / "bio_maf_base_features.py",
-                        Path(__file__).parents[1] / "utils" / "quick_bio_v4_nested_feature_selection.py",
+                        Path(__file__).parents[1] / "utils" / "quick_bio_maf_nested_feature_selection.py",
                     ]
                 ),
             },
@@ -301,20 +301,20 @@ def _load_mc3_maf_features(ctx: RunnerContext, model_id: str, settings: dict | N
             candidate_sets: dict[str, list[str]] = {}
             if is_combined:
                 sig_cols = [col for col in frame.columns.astype(str) if col.startswith("signature_matrix__")]
-                if bool(settings.get("maf_bio_v4_include_signatures_only_candidate", True)):
+                if bool(settings.get("maf_bio_include_signatures_only_candidate", True)):
                     candidate_sets["signatures_only"] = list(sig_cols)
-                for name, cols in v4_blocks.items():
+                for name, cols in bio_maf_blocks.items():
                     candidate_sets[f"signatures_plus_{name}"] = [*sig_cols, *cols]
             else:
-                candidate_sets = {name: list(cols) for name, cols in v4_blocks.items()}
+                candidate_sets = {name: list(cols) for name, cols in bio_maf_blocks.items()}
             missing = {name: [col for col in cols if col not in frame.columns] for name, cols in candidate_sets.items()}
             missing = {name: cols for name, cols in missing.items() if cols}
             if missing:
                 first_name = next(iter(missing))
-                raise RuntimeError(f"Bio v4 feature matrix is missing columns for {first_name}: {missing[first_name][:10]}")
+                raise RuntimeError(f"Bio MAF feature matrix is missing columns for {first_name}: {missing[first_name][:10]}")
             frame.attrs["candidate_feature_sets"] = candidate_sets
             frame.attrs["candidate_feature_set_counts"] = {name: len(cols) for name, cols in candidate_sets.items()}
-            frame.attrs["feature_builder"] = "frozen_biological_v4_nested_fs"
+            frame.attrs["feature_builder"] = "frozen_biological_nested_fs"
             return frame
 
         cached = ctx.feature_cache.load_frame(cache_key, "features.csv.gz")
@@ -322,11 +322,11 @@ def _load_mc3_maf_features(ctx: RunnerContext, model_id: str, settings: dict | N
             cached.index = cached.index.astype(str)
             return attach_candidate_sets(cached.astype(np.float32)), cache_key
 
-        bio = build_bio_v4_features(
+        bio = build_bio_maf_features(
             ctx.paths,
             ctx.tables_dir,
             chunksize=int(settings.get("maf_bio_chunksize", 350_000)),
-            force=bool(ctx.refresh_cache or settings.get("maf_bio_v4_force_features", False)),
+            force=bool(ctx.refresh_cache or settings.get("maf_bio_force_features", False)),
         ).astype(np.float32)
         bio.index = bio.index.astype(str)
         frame = bio
@@ -347,16 +347,16 @@ def _load_mc3_maf_features(ctx: RunnerContext, model_id: str, settings: dict | N
                 "sample_count": int(frame.shape[0]),
                 "feature_count": int(frame.shape[1]),
                 "model_id": model_id,
-                "feature_builder": "frozen_biological_v4_nested_fs",
-                "leakage_status": "fixed external Bio MAF v4 schema/resources; predeclared feature blocks selected only inside each outer fold's inner validation split",
-                "schema_type": "named collision-free Bio MAF v4 features with nested feature-block selection",
+                "feature_builder": "frozen_biological_nested_fs",
+                "leakage_status": "fixed external Bio MAF schema/resources; predeclared feature blocks selected only inside each outer fold's inner validation split",
+                "schema_type": "named collision-free Bio MAF features with nested feature-block selection",
                 "candidate_feature_set_counts": candidate_counts,
                 "include_signatures": bool(is_combined),
             },
         )
         return frame, cache_key
 
-    raise ValueError(f"Unsupported active Bio MAF v4 model_id: {model_id}")
+    raise ValueError(f"Unsupported active Bio MAF model_id: {model_id}")
 
 
 def _normalize_token(value: object, fallback: str = "unknown") -> str:
@@ -923,14 +923,14 @@ def run(ctx: RunnerContext) -> None:
     for model_id in _maf_model_ids(settings):
         frame, cache_key = _load_mc3_maf_features(ctx, model_id, settings)
         representation = MAF_REPRESENTATION[model_id]
-        if model_id in BIO_MAF_V4_MODEL_IDS:
+        if model_id in BIO_MAF_MODEL_IDS:
             counts = frame.attrs.get("candidate_feature_set_counts") or {}
             construction = (
-                f"MC3/HRD {model_id}; Bio MAF v4 with fixed external resources and nested inner-loop "
+                f"MC3/HRD {model_id}; Bio MAF with fixed external resources and nested inner-loop "
                 f"feature-block selection ({json.dumps(counts, sort_keys=True)})"
             )
         else:
-            raise ValueError(f"Unsupported active Bio MAF v4 model_id: {model_id}")
+            raise ValueError(f"Unsupported active Bio MAF model_id: {model_id}")
         mc3_features[representation] = (frame, cache_key, construction)
 
     for endpoint in mc3_endpoints:

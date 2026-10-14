@@ -127,10 +127,10 @@ REQUIRED_MANUSCRIPT_FILES = [
     "tables/publication/table_s2_sensitivity_analyses.html",
     "tables/publication/table_s3_completeness_and_na_reasons.csv",
     "tables/publication/table_s3_completeness_and_na_reasons.html",
-    "tables/publication/table_s5_bio_maf_v4_feature_guide.csv",
-    "tables/publication/table_s5_bio_maf_v4_feature_guide.html",
-    "tables/publication/table_s6_bio_maf_v4_nested_feature_selection.csv",
-    "tables/publication/table_s6_bio_maf_v4_nested_feature_selection.html",
+    "tables/publication/table_s5_bio_maf_feature_guide.csv",
+    "tables/publication/table_s5_bio_maf_feature_guide.html",
+    "tables/publication/table_s6_bio_maf_nested_feature_selection.csv",
+    "tables/publication/table_s6_bio_maf_nested_feature_selection.html",
     "tables/technical/table_1_datasets_endpoints_technical.csv",
     "tables/technical/table_1_datasets_endpoints_technical.html",
     "tables/technical/table_2_full_performance_metrics_technical.csv",
@@ -149,10 +149,10 @@ REQUIRED_MANUSCRIPT_FILES = [
     "tables/table_s2_sensitivity_analyses.html",
     "tables/table_s3_completeness_and_na_reasons.csv",
     "tables/table_s3_completeness_and_na_reasons.html",
-    "tables/table_s5_bio_maf_v4_feature_guide.csv",
-    "tables/table_s5_bio_maf_v4_feature_guide.html",
-    "tables/table_s6_bio_maf_v4_nested_feature_selection.csv",
-    "tables/table_s6_bio_maf_v4_nested_feature_selection.html",
+    "tables/table_s5_bio_maf_feature_guide.csv",
+    "tables/table_s5_bio_maf_feature_guide.html",
+    "tables/table_s6_bio_maf_nested_feature_selection.csv",
+    "tables/table_s6_bio_maf_nested_feature_selection.html",
     "supplement/table_s0_source_inventory.csv",
     "supplement/table_s0_source_inventory.html",
     "supplement/table_s1_class_distribution_baselines.csv",
@@ -161,10 +161,10 @@ REQUIRED_MANUSCRIPT_FILES = [
     "supplement/table_s2_sensitivity_analyses.html",
     "supplement/table_s3_completeness_and_na_reasons.csv",
     "supplement/table_s3_completeness_and_na_reasons.html",
-    "supplement/table_s5_bio_maf_v4_feature_guide.csv",
-    "supplement/table_s5_bio_maf_v4_feature_guide.html",
-    "supplement/table_s6_bio_maf_v4_nested_feature_selection.csv",
-    "supplement/table_s6_bio_maf_v4_nested_feature_selection.html",
+    "supplement/table_s5_bio_maf_feature_guide.csv",
+    "supplement/table_s5_bio_maf_feature_guide.html",
+    "supplement/table_s6_bio_maf_nested_feature_selection.csv",
+    "supplement/table_s6_bio_maf_nested_feature_selection.html",
     "tables/technical/table_s0_source_inventory_technical.csv",
     "tables/technical/table_s0_source_inventory_technical.html",
     "tables/technical/table_s1_class_distribution_baselines_technical.csv",
@@ -173,10 +173,10 @@ REQUIRED_MANUSCRIPT_FILES = [
     "tables/technical/table_s2_sensitivity_analyses_technical.html",
     "tables/technical/table_s3_completeness_and_na_reasons_technical.csv",
     "tables/technical/table_s3_completeness_and_na_reasons_technical.html",
-    "tables/technical/table_s5_bio_maf_v4_feature_guide_technical.csv",
-    "tables/technical/table_s5_bio_maf_v4_feature_guide_technical.html",
-    "tables/technical/table_s6_bio_maf_v4_nested_feature_selection_by_fold.csv",
-    "tables/technical/table_s6_bio_maf_v4_nested_feature_selection_by_fold.html",
+    "tables/technical/table_s5_bio_maf_feature_guide_technical.csv",
+    "tables/technical/table_s5_bio_maf_feature_guide_technical.html",
+    "tables/technical/table_s6_bio_maf_nested_feature_selection_by_fold.csv",
+    "tables/technical/table_s6_bio_maf_nested_feature_selection_by_fold.html",
     "figures/figure_1_conceptual_overview.png",
     "figures/figure_2_signature_baselines.png",
     "figures/figure_3_geometry_vs_signatures.png",
@@ -185,12 +185,12 @@ REQUIRED_MANUSCRIPT_FILES = [
     "supplement/figure_s1_representation_construction.png",
     "supplement/figure_s2_calibration_thresholds.png",
     "supplement/figure_s3_feature_importance.png",
-    "supplement/figure_s4_bio_maf_v4_feature_map.png",
-    "supplement/figure_s4b_bio_maf_v4_feature_distributions.png",
-    "supplement/figure_s4c_bio_maf_v4_feature_distributions_by_cancer_type.png",
-    "supplement/figure_s5_bio_maf_v4_nested_feature_selection.png",
-    "tables/technical/table_s4b_bio_maf_v4_feature_distribution_summary.csv",
-    "tables/technical/table_s4b_bio_maf_v4_feature_distribution_summary.html",
+    "supplement/figure_s4_bio_maf_feature_map.png",
+    "supplement/figure_s4b_bio_maf_feature_distributions.png",
+    "supplement/figure_s4c_bio_maf_feature_distributions_by_cancer_type.png",
+    "supplement/figure_s5_bio_maf_nested_feature_selection.png",
+    "tables/technical/table_s4b_bio_maf_feature_distribution_summary.csv",
+    "tables/technical/table_s4b_bio_maf_feature_distribution_summary.html",
 ]
 LABEL_REGISTRY_PATH = BUNDLE_ROOT / "src" / "utils" / "label_registry.json"
 DISPLAY_COLUMN_SPECS = [
@@ -222,8 +222,8 @@ TABLE_TITLES = {
     "table_s2_sensitivity_analyses": "Supplementary Table S2. Headline supplementary results",
     "table_s3_completeness_and_na_reasons": "Supplementary Table S3. Non-applicability summary",
     "table_s4_cancer_type_top20_metrics": "Supplementary Table S4. TCGA top-20 cancer-type metrics",
-    "table_s5_bio_maf_v4_feature_guide": "Supplementary Table S5. Bio MAF v4 feature guide",
-    "table_s6_bio_maf_v4_nested_feature_selection": "Supplementary Table S6. Nested-CV Bio MAF v4 feature-block selections",
+    "table_s5_bio_maf_feature_guide": "Supplementary Table S5. Bio MAF feature guide",
+    "table_s6_bio_maf_nested_feature_selection": "Supplementary Table S6. Nested-CV Bio MAF feature-block selections",
 }
 TABLE_NOTES = {
     "table_1_datasets_endpoints": [
@@ -233,7 +233,7 @@ TABLE_NOTES = {
         "EN = elastic net; XGB = XGBoost. Non-survival rows report EN / XGB scores; survival rows report CoxNet C-index separately.",
     ],
     "table_3_hyperparameters_feature_dimensionality": [
-        "Feature-dimensionality ranges are observed across endpoint/model rows because spectrum channels vary by endpoint data source and Bio MAF v4 blocks are selected within each outer fold's inner-validation split; MuAt-compatible is an event-bag model rather than a fixed tabular vector.",
+        "Feature-dimensionality ranges are observed across endpoint/model rows because spectrum channels vary by endpoint data source and Bio MAF blocks are selected within each outer fold's inner-validation split; MuAt-compatible is an event-bag model rather than a fixed tabular vector.",
     ],
     "table_4_label_mapping": [
         "AUROC = area under the receiver operating characteristic curve; HRD = homologous recombination deficiency; KME = kernel mean embedding; MAF = mutation annotation format.",
@@ -253,11 +253,11 @@ TABLE_NOTES = {
     "table_s4_cancer_type_top20_metrics": [
         "Rows report pooled out-of-fold metrics for the fixed 20-class TCGA cancer-type endpoint. Balanced accuracy is the primary metric; other columns summarize classification behavior from the same predictions.",
     ],
-    "table_s5_bio_maf_v4_feature_guide": [
-        "Rows summarize the predeclared Bio MAF v4 feature blocks. The technical table gives the exact feature-level glossary used by the benchmark.",
+    "table_s5_bio_maf_feature_guide": [
+        "Rows summarize the predeclared Bio MAF feature blocks. The technical table gives the exact feature-level glossary used by the benchmark.",
     ],
-    "table_s6_bio_maf_v4_nested_feature_selection": [
-        "Rows summarize which predeclared Bio MAF v4 feature block was selected inside the inner loop of nested CV. This is block-level selection, not post-hoc individual gene selection.",
+    "table_s6_bio_maf_nested_feature_selection": [
+        "Rows summarize which predeclared Bio MAF feature block was selected inside the inner loop of nested CV. This is block-level selection, not post-hoc individual gene selection.",
     ],
 }
 HTML_COLUMN_LABELS = {
@@ -398,7 +398,7 @@ SCORE_HTML_COLUMNS = {
 MAIN_REPRESENTATION_SHORT_LABELS = {
     "burden_only": "Burden",
     "signatures_only": "Signatures",
-    "MAF_stack_only": "Bio MAF v4",
+    "MAF_stack_only": "Bio MAF",
     "signatures_plus_MAF_stack": "Signatures + bio MAF",
     "MuAt_style_attention_MIL": "MuAt-compatible",
 }
@@ -419,11 +419,11 @@ REPRESENTATION_SUMMARY_SPECS = {
         "role": "Canonical mutational-process baseline",
     },
     "MAF_stack_only": {
-        "input_signal": "Predeclared Bio MAF v4 blocks selected inside each outer fold's inner validation split",
+        "input_signal": "Predeclared Bio MAF blocks selected inside each outer fold's inner validation split",
         "role": "Interpretable event-level biological annotation comparator with nested feature-block selection",
     },
     "signatures_plus_MAF_stack": {
-        "input_signal": "Mutational spectra plus predeclared Bio MAF v4 blocks selected by nested validation",
+        "input_signal": "Mutational spectra plus predeclared Bio MAF blocks selected by nested validation",
         "role": "Combined practical default with inner-loop feature-block selection",
     },
     "MuAt_style_attention_MIL": {
@@ -454,7 +454,7 @@ KEY_GLOSSARY_ROWS = [
     ("UGA", "Universal genomic atlas/channel geometry representation used in supplementary analyses.", "Supplement"),
     ("Mutational burden", "Compact mutation-count baseline features.", "Tables 2 and 3"),
     ("Mutational signatures", "Canonical mutation-spectrum representation.", "Tables 2 and 3"),
-    ("Bio MAF v4", "Predeclared named cancer-gene, evidence-confidence, hotspot, consequence, allele-fraction, and event-annotation feature blocks selected inside nested CV.", "Tables 2 and 3"),
+    ("Bio MAF", "Predeclared named cancer-gene, evidence-confidence, hotspot, consequence, allele-fraction, and event-annotation feature blocks selected inside nested CV.", "Tables 2 and 3"),
     ("Signatures + bio MAF", "Combined spectra plus frozen named event-level MAF features.", "Tables 2 and 3"),
     ("XGBoost", "Gradient-boosted tree model used as the nonlinear learner.", "Model columns"),
 ]
@@ -837,9 +837,9 @@ def _ordered_unique(values: pd.Series | list[object]) -> list[str]:
     return out
 
 
-def _bio_maf_v4_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
+def _bio_maf_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
     tables_dir = BUNDLE_ROOT / "results" / "tables"
-    exact_path = tables_dir / "proposed_clinical_bio_v4_feature_table_exact.csv"
+    exact_path = tables_dir / "proposed_clinical_bio_feature_table_exact.csv"
     panel_path = tables_dir / "proposed_clinical_bio_v4_driver_gene_panel.csv"
     summary_path = tables_dir / "proposed_clinical_bio_v4_feature_summary.csv"
 
@@ -853,7 +853,7 @@ def _bio_maf_v4_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
             "optional_burden_and_event_composition_controls": 5,
         }
     else:
-        counts = exact["Bio MAF v4 block"].value_counts().to_dict()
+        counts = exact["Bio MAF block"].value_counts().to_dict()
     panel_count = 401
     if panel_path.exists():
         panel_count = int(pd.read_csv(panel_path)["gene"].nunique())
@@ -881,7 +881,7 @@ def _bio_maf_v4_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
         {
             "Feature block": "Compact biological annotation core",
             "Features": compact_count,
-            "Strict Bio MAF v4 core": "Yes",
+            "Strict Bio MAF core": "Yes",
             "Where the count comes from": "121 = 100 Ensembl VEP annotation features + 5 allele-fraction measurements + 12 OncoKB cancer-role measurements + 4 non-OncoKB cancer-gene measurements. The 100 VEP features are 50 fixed VEP labels x 2 value types: a log-count and a fraction. The 50 VEP labels are 5 IMPACT labels, 26 consequence labels, 3 canonical-transcript labels, 7 transcript-biotype labels, 5 SIFT labels, and 4 PolyPhen labels.",
             "Plain-English meaning": "Describes what kinds of mutations the tumor has, how disruptive they look, what cancer-gene groups they hit, and how large those mutations appear in the tumor DNA.",
             "How to read one feature": "`vep_impact_count__high` means the tumor has more mutations predicted to strongly disrupt a gene; `vaf_max` means the largest mutation is present in a larger share of tumor DNA reads.",
@@ -889,7 +889,7 @@ def _bio_maf_v4_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
             "Source / grounding": "Ensembl VEP fields, allele-fraction fields in the MAF, and the vendored OncoKB Cancer Gene List.",
             "Key terms decoded": "Bio MAF = a biologically annotated feature matrix built from MAF fields plus fixed external references; it is not the raw MAF file and it is not mutational signatures. MAF = Mutation Annotation Format, the mutation table for a tumor. VEP = Ensembl Variant Effect Predictor, a standard tool that labels the likely effect of each mutation. A VEP label/category is one allowed value from a fixed VEP field. SIFT and PolyPhen are VEP-reported predictions about whether a protein change is likely damaging. Biotype means transcript class, such as protein-coding or long non-coding RNA. Canonical transcript means the main/reference transcript used for a gene. Allele fraction/VAF means the fraction of tumor DNA reads carrying the mutation. OncoKB roles are curated cancer-gene roles such as oncogene or tumor suppressor.",
             "Why included": "These are standard mutation-file annotations and do not require choosing genes based on the endpoint being predicted.",
-            "Nested-CV use": "Included in every Bio MAF v4 candidate block.",
+            "Nested-CV use": "Included in every Bio MAF candidate block.",
             "Example feature name": "`vep_consequence_count__missense_variant`; paired feature `vep_consequence_fraction__missense_variant`",
             "Toy MAF input for example": "A toy tumor has 7 annotated mutations. VEP labels 3 of them as `missense_variant`, meaning the mutation changes one amino acid in the protein.",
             "Exact example calculation": "`vep_consequence_count__missense_variant` = log1p(3) = 1.386. `vep_consequence_fraction__missense_variant` = 3 / 7 = 0.429.",
@@ -898,7 +898,7 @@ def _bio_maf_v4_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
         {
             "Feature block": "External evidence-confidence controls",
             "Features": tier_count,
-            "Strict Bio MAF v4 core": "Yes, evidence-control block",
+            "Strict Bio MAF core": "Yes, evidence-control block",
             "Where the count comes from": "16 = 4 evidence-confidence groups x 4 named measurements. A gene's evidence-confidence group is the number of external cancer references that include the gene: 1 source, 2 sources, 3 sources, or 4+ sources. The 4 measurements per group are: high-or-moderate VEP-impact mutation count, high VEP-impact mutation count, unique genes with high-or-moderate VEP-impact mutations, and maximum allele fraction among high-or-moderate VEP-impact mutations.",
             "Plain-English meaning": "This is not a biological mechanism by itself. It is a low-dimensional control that tests whether mutations in better-established cancer genes add signal without naming the exact gene.",
             "How to read one feature": "`driver_evidence_high_impact_log_count__source_count_3` means the tumor has more strongly disruptive mutations in genes supported by 3 trusted sources.",
@@ -915,7 +915,7 @@ def _bio_maf_v4_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
         {
             "Feature block": "Exact consensus driver-gene identity",
             "Features": exact_count,
-            "Strict Bio MAF v4 core": "Yes",
+            "Strict Bio MAF core": "Yes",
             "Where the count comes from": f"{exact_count} = {panel_count} externally supported cancer genes x 2 named measurements per gene. The {panel_count} genes are fixed before modeling by a written external-resource rule: selected genes have at least 3 sources of support among OncoKB, COSMIC CGC, IntOGen, and Vogelstein, or are Cancer Hotspots v3 genes. The 2 measurements are a protein-affecting mutation count and a cancer-role-fit mutation count.",
             "Plain-English meaning": "Records which specific known cancer genes are changed in the tumor, using a fixed gene list created before modeling without endpoint labels or model performance.",
             "How to read one feature": "`driver_gene_functional_event_log_count__TP53` means TP53 has a mutation likely to affect the TP53 protein. `driver_gene_role_matched_event_log_count__TP53` means the mutation fits TP53's usual cancer role as a gene that is often damaged or lost.",
@@ -923,7 +923,7 @@ def _bio_maf_v4_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
             "Source / grounding": "Fixed gene panel from OncoKB, COSMIC CGC v99 flag in OncoKB, IntOGen 2024, Vogelstein 2013, and Cancer Hotspots v3.",
             "Key terms decoded": "Fixed before modeling means the gene list is created once from external resources before cross-validation begins; no endpoint labels, fold results, or model performance are used to choose genes. Protein-affecting means likely to change or disrupt the gene's protein product by fixed VEP rules. Cancer-role-fit means the mutation type is consistent with how that gene is known to act in cancer. COSMIC CGC is the COSMIC Cancer Gene Census. IntOGen is an external cancer-driver gene compendium. Cancer Hotspots is a catalogue of recurrently mutated cancer sites.",
             "Why included": "Many cancer-type and HRD signals depend on which cancer gene is altered, not just on the generic consequence category.",
-            "Nested-CV use": "Competes as `v4_compact_plus_exact_driver_genes`; also part of `v4_full_core` and `v4_full_core_plus_optional_controls`.",
+            "Nested-CV use": "Competes as `v4_compact_plus_exact_driver_genes`; also part of `full_core` and `v4_full_core_plus_optional_controls`.",
             "Example feature name": "`driver_gene_functional_event_log_count__TP53`; paired feature `driver_gene_role_matched_event_log_count__TP53`",
             "Toy MAF input for example": "A toy tumor has one TP53 frameshift mutation and one TP53 synonymous mutation. The frameshift disrupts the protein; the synonymous mutation does not change the protein sequence.",
             "Exact example calculation": "`driver_gene_functional_event_log_count__TP53` = log1p(1) = 0.693 because only the frameshift is protein-affecting. `driver_gene_role_matched_event_log_count__TP53` = log1p(1) = 0.693 because TP53 is curated as a tumor-suppressor gene and a frameshift is a loss-like event.",
@@ -932,7 +932,7 @@ def _bio_maf_v4_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
         {
             "Feature block": "Cancer hotspot summaries",
             "Features": hotspot_count,
-            "Strict Bio MAF v4 core": "Yes",
+            "Strict Bio MAF core": "Yes",
             "Where the count comes from": "4 named hotspot measurements: exact hotspot count, recurrent protein-site count, number of genes with hotspot hits, and largest allele fraction among hotspot mutations.",
             "Plain-English meaning": "Measures whether mutations fall at protein sites repeatedly seen in cancer.",
             "How to read one feature": "`cancer_hotspot_residue_log_count` means the tumor has more mutations at protein positions repeatedly seen in cancer.",
@@ -940,7 +940,7 @@ def _bio_maf_v4_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
             "Source / grounding": "Cancer Hotspots v3 / cBioPortal Cancer Hotspots resource.",
             "Key terms decoded": "A cancer hotspot is a position in a protein that is recurrently mutated across cancer datasets. Recurrent does not mean the mutation occurs repeatedly in the same patient; it means the same site is observed across tumors.",
             "Why included": "Hotspots capture activating driver-like signal that may be missed by generic high/moderate-impact consequence labels.",
-            "Nested-CV use": "Competes as `v4_compact_plus_hotspot_summary`; also part of `v4_full_core` and `v4_full_core_plus_optional_controls`.",
+            "Nested-CV use": "Competes as `v4_compact_plus_hotspot_summary`; also part of `full_core` and `v4_full_core_plus_optional_controls`.",
             "Example feature name": "`cancer_hotspot_residue_log_count`; paired feature `cancer_hotspot_max_vaf`",
             "Toy MAF input for example": "A toy tumor has two mutations whose gene/protein positions match Cancer Hotspots recurrent residues. Their allele fractions are 0.21 and 0.47.",
             "Exact example calculation": "`cancer_hotspot_residue_log_count` = log1p(2) = 1.099. `cancer_hotspot_max_vaf` = max(0.21, 0.47) = 0.47.",
@@ -949,7 +949,7 @@ def _bio_maf_v4_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
         {
             "Feature block": "Optional burden and event-composition controls",
             "Features": optional_count,
-            "Strict Bio MAF v4 core": "No",
+            "Strict Bio MAF core": "No",
             "Where the count comes from": "5 named mutation-count controls: single-base mutation count, double-base mutation count, insertion/deletion count, double-base mutation fraction, and insertion/deletion fraction.",
             "Plain-English meaning": "Measures broad mutation load and the basic mix of mutation types directly from the MAF.",
             "How to read one feature": "`log10_id_burden` means the tumor has more insertion/deletion events after compressing very large counts.",
@@ -965,7 +965,7 @@ def _bio_maf_v4_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
         },
     ]
     guide = pd.DataFrame(rows)
-    guide["Share of full Bio MAF v4 universe"] = guide["Features"].map(
+    guide["Share of full Bio MAF universe"] = guide["Features"].map(
         lambda value: f"{float(value) / float(full_count) * 100:.1f}%" if full_count else ""
     )
     guide["Core feature total"] = strict_core_count
@@ -976,8 +976,8 @@ def _bio_maf_v4_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
         exact = guide.copy()
     else:
         exact = exact.copy()
-        exact["Strict Bio MAF v4 core"] = np.where(
-            exact["Bio MAF v4 block"].eq("optional_burden_and_event_composition_controls"),
+        exact["Strict Bio MAF core"] = np.where(
+            exact["Bio MAF block"].eq("optional_burden_and_event_composition_controls"),
             "No",
             "Yes",
         )
@@ -988,7 +988,7 @@ def _bio_maf_v4_feature_guide() -> tuple[pd.DataFrame, pd.DataFrame]:
     return guide, exact
 
 
-def _bio_maf_v4_feature_set_details(feature_set: object, selected_feature_count: object = None) -> dict[str, object]:
+def _bio_maf_feature_set_details(feature_set: object, selected_feature_count: object = None) -> dict[str, object]:
     feature_set_id = str(feature_set or "").strip()
     total_count = pd.to_numeric(pd.Series([selected_feature_count]), errors="coerce").iloc[0]
     has_signatures = feature_set_id == "signatures_only" or feature_set_id.startswith("signatures_plus_")
@@ -1004,7 +1004,7 @@ def _bio_maf_v4_feature_set_details(feature_set: object, selected_feature_count:
             "hotspots": "No",
             "optional": "No",
         },
-        "v4_compact_biology_only": {
+        "compact_biology_only": {
             "label": "Compact biology only",
             "bio_features": 121,
             "blocks": "Compact biological annotation core",
@@ -1014,7 +1014,7 @@ def _bio_maf_v4_feature_set_details(feature_set: object, selected_feature_count:
             "hotspots": "No",
             "optional": "No",
         },
-        "v4_compact_plus_driver_evidence_tiers": {
+        "compact_plus_driver_evidence_tiers": {
             "label": "Compact biology + evidence-confidence controls",
             "bio_features": 137,
             "blocks": "Compact biological annotation core; external evidence-confidence controls",
@@ -1024,7 +1024,7 @@ def _bio_maf_v4_feature_set_details(feature_set: object, selected_feature_count:
             "hotspots": "No",
             "optional": "No",
         },
-        "v4_compact_plus_exact_driver_genes": {
+        "compact_plus_exact_driver_genes": {
             "label": "Compact biology + exact driver genes",
             "bio_features": 923,
             "blocks": "Compact biological annotation core; exact consensus driver-gene identity",
@@ -1034,7 +1034,7 @@ def _bio_maf_v4_feature_set_details(feature_set: object, selected_feature_count:
             "hotspots": "No",
             "optional": "No",
         },
-        "v4_compact_plus_hotspot_summary": {
+        "compact_plus_hotspot_summary": {
             "label": "Compact biology + hotspot summaries",
             "bio_features": 125,
             "blocks": "Compact biological annotation core; cancer hotspot summaries",
@@ -1044,7 +1044,7 @@ def _bio_maf_v4_feature_set_details(feature_set: object, selected_feature_count:
             "hotspots": "Yes",
             "optional": "No",
         },
-        "v4_full_core": {
+        "full_core": {
             "label": "Full strict Bio MAF core",
             "bio_features": 943,
             "blocks": "Compact biological annotation core; external evidence-confidence controls; exact consensus driver-gene identity; cancer hotspot summaries",
@@ -1054,7 +1054,7 @@ def _bio_maf_v4_feature_set_details(feature_set: object, selected_feature_count:
             "hotspots": "Yes",
             "optional": "No",
         },
-        "v4_full_core_plus_optional_controls": {
+        "full_core_plus_optional_controls": {
             "label": "Full core + optional burden/composition controls",
             "bio_features": 948,
             "blocks": "Compact biological annotation core; external evidence-confidence controls; exact consensus driver-gene identity; cancer hotspot summaries; optional burden and event-composition controls",
@@ -1096,7 +1096,7 @@ def _bio_maf_v4_feature_set_details(feature_set: object, selected_feature_count:
     }
 
 
-def _bio_maf_v4_nested_selection_tables() -> tuple[pd.DataFrame, pd.DataFrame]:
+def _bio_maf_nested_selection_tables() -> tuple[pd.DataFrame, pd.DataFrame]:
     fold_path = BUNDLE_ROOT / "results" / "tables" / "main_manuscript_complete_panel_fold_metrics.csv"
     if not fold_path.exists():
         return pd.DataFrame(), pd.DataFrame()
@@ -1116,7 +1116,7 @@ def _bio_maf_v4_nested_selection_tables() -> tuple[pd.DataFrame, pd.DataFrame]:
     )
     detail_rows = []
     for _, row in selected.iterrows():
-        details = _bio_maf_v4_feature_set_details(row.get("selected_feature_set"), row.get("selected_feature_count"))
+        details = _bio_maf_feature_set_details(row.get("selected_feature_set"), row.get("selected_feature_count"))
         model_label = {"linear": "Elastic net", "xgboost": "XGBoost", "cox_ph": "CoxNet"}.get(
             str(row.get("learner")),
             _display_label("model_family", row.get("learner")),
@@ -1221,8 +1221,8 @@ def _bio_maf_v4_nested_selection_tables() -> tuple[pd.DataFrame, pd.DataFrame]:
     return summary, by_fold
 
 
-def _figure_bio_maf_v4_feature_map_classic_workflow(stem: Path) -> None:
-    guide, _exact = _bio_maf_v4_feature_guide()
+def _figure_bio_maf_feature_map_classic_workflow(stem: Path) -> None:
+    guide, _exact = _bio_maf_feature_guide()
     if guide.empty:
         return
     counts = {
@@ -1356,7 +1356,7 @@ def _figure_bio_maf_v4_feature_map_classic_workflow(stem: Path) -> None:
         )
 
     fig.suptitle(
-        "Bio MAF v4: fixed biological annotations selected inside nested CV",
+        "Bio MAF: fixed biological annotations selected inside nested CV",
         x=0.035,
         y=0.985,
         ha="left",
@@ -1378,7 +1378,7 @@ def _figure_bio_maf_v4_feature_map_classic_workflow(stem: Path) -> None:
     panels = [
         (0.035, 0.145, "1", "Patient MAF"),
         (0.205, 0.165, "2", "External resources"),
-        (0.395, 0.265, "3", "Bio MAF v4 feature blocks"),
+        (0.395, 0.265, "3", "Bio MAF feature blocks"),
         (0.690, 0.140, "4", "Nested-CV candidate sets"),
         (0.855, 0.120, "5", "Model inputs"),
     ]
@@ -1700,8 +1700,8 @@ def _figure_bio_maf_v4_feature_map_classic_workflow(stem: Path) -> None:
     _save_figure(fig, stem)
 
 
-def _figure_bio_maf_v4_feature_map_plain_v1(stem: Path) -> None:
-    guide, _exact = _bio_maf_v4_feature_guide()
+def _figure_bio_maf_feature_map_plain_v1(stem: Path) -> None:
+    guide, _exact = _bio_maf_feature_guide()
     if guide.empty:
         return
 
@@ -1871,7 +1871,7 @@ def _figure_bio_maf_v4_feature_map_plain_v1(stem: Path) -> None:
         )
 
     fig.suptitle(
-        "Supplementary Figure S4A. What Bio MAF v4 features mean",
+        "Supplementary Figure S4A. What Bio MAF features mean",
         x=0.040,
         y=0.975,
         ha="left",
@@ -2136,8 +2136,8 @@ def _figure_bio_maf_v4_feature_map_plain_v1(stem: Path) -> None:
     _save_figure(fig, stem)
 
 
-def _figure_bio_maf_v4_feature_map_detailed_table_v1(stem: Path) -> None:
-    guide, _exact = _bio_maf_v4_feature_guide()
+def _figure_bio_maf_feature_map_detailed_table_v1(stem: Path) -> None:
+    guide, _exact = _bio_maf_feature_guide()
     if guide.empty:
         return
 
@@ -2241,7 +2241,7 @@ def _figure_bio_maf_v4_feature_map_detailed_table_v1(stem: Path) -> None:
         text(x + 0.020, 0.780, body, size=8.2, color=muted, width=46)
 
     fig.suptitle(
-        "Supplementary Figure S4A. What Goes Into Bio MAF v4",
+        "Supplementary Figure S4A. What Goes Into Bio MAF",
         x=0.045,
         y=0.965,
         ha="left",
@@ -2442,8 +2442,8 @@ def _figure_bio_maf_v4_feature_map_detailed_table_v1(stem: Path) -> None:
     _save_figure(fig, stem)
 
 
-def _figure_bio_maf_v4_feature_map(stem: Path) -> None:
-    guide, _exact = _bio_maf_v4_feature_guide()
+def _figure_bio_maf_feature_map(stem: Path) -> None:
+    guide, _exact = _bio_maf_feature_guide()
     if guide.empty:
         return
 
@@ -2525,7 +2525,7 @@ def _figure_bio_maf_v4_feature_map(stem: Path) -> None:
         label(x + 0.020, 0.795, body, size=7.8, color=muted, width=48)
 
     fig.suptitle(
-        "Supplementary Figure S4A. Bio MAF v4 Feature Groups, Without the Jargon",
+        "Supplementary Figure S4A. Bio MAF Feature Groups, Without the Jargon",
         x=0.045,
         y=0.965,
         ha="left",
@@ -2536,7 +2536,7 @@ def _figure_bio_maf_v4_feature_map(stem: Path) -> None:
     label(
         0.045,
         0.920,
-        "Bio MAF v4 converts an annotated tumor mutation file into fixed, predeclared feature groups. Table S5 gives worked examples, formulas, and definitions.",
+        "Bio MAF converts an annotated tumor mutation file into fixed, predeclared feature groups. Table S5 gives worked examples, formulas, and definitions.",
         size=10.0,
         color=muted,
     )
@@ -2766,7 +2766,7 @@ def _bio_maf_top20_labels() -> pd.DataFrame:
     return labels.reset_index(drop=True)
 
 
-def _load_bio_maf_v4_top20_distribution_frame() -> tuple[pd.DataFrame, Path | None]:
+def _load_bio_maf_top20_distribution_frame() -> tuple[pd.DataFrame, Path | None]:
     manifest_path = BUNDLE_ROOT / "results" / "tables" / "main_manuscript_complete_panel_feature_manifest.csv"
     labels = _bio_maf_top20_labels()
     if labels.empty or not manifest_path.exists():
@@ -2790,7 +2790,7 @@ def _load_bio_maf_v4_top20_distribution_frame() -> tuple[pd.DataFrame, Path | No
     return merged, feature_path
 
 
-def _write_bio_maf_v4_distribution_summary(frame: pd.DataFrame, technical_dir: Path, source_path: Path | None) -> None:
+def _write_bio_maf_distribution_summary(frame: pd.DataFrame, technical_dir: Path, source_path: Path | None) -> None:
     rows: list[dict[str, object]] = []
     for item in BIO_MAF_DISTRIBUTION_FEATURES:
         feature = item["feature"]
@@ -2836,14 +2836,14 @@ def _write_bio_maf_v4_distribution_summary(frame: pd.DataFrame, technical_dir: P
     summary = pd.DataFrame(rows, columns=fields)
     _write_table_csv_html(
         summary,
-        technical_dir / "table_s4b_bio_maf_v4_feature_distribution_summary.csv",
+        technical_dir / "table_s4b_bio_maf_feature_distribution_summary.csv",
         title="Supplementary Figure S4B technical feature-distribution summary",
     )
 
 
-def _figure_bio_maf_v4_feature_distributions(stem: Path, technical_dir: Path) -> None:
-    frame, source_path = _load_bio_maf_v4_top20_distribution_frame()
-    _write_bio_maf_v4_distribution_summary(frame, technical_dir, source_path)
+def _figure_bio_maf_feature_distributions(stem: Path, technical_dir: Path) -> None:
+    frame, source_path = _load_bio_maf_top20_distribution_frame()
+    _write_bio_maf_distribution_summary(frame, technical_dir, source_path)
     if frame.empty:
         return
 
@@ -2885,7 +2885,7 @@ def _figure_bio_maf_v4_feature_distributions(stem: Path, technical_dir: Path) ->
     for ax in axes[len(available) :]:
         ax.axis("off")
     fig.suptitle(
-        "Supplementary Figure S4B. Distribution of Representative Bio MAF v4 Features in TCGA Top-20 Samples",
+        "Supplementary Figure S4B. Distribution of Representative Bio MAF Features in TCGA Top-20 Samples",
         x=0.02,
         y=0.985,
         ha="left",
@@ -2896,7 +2896,7 @@ def _figure_bio_maf_v4_feature_distributions(stem: Path, technical_dir: Path) ->
     fig.text(
         0.02,
         0.945,
-        f"Each panel shows one real Bio MAF v4 feature across {len(frame):,} fixed top-20 TCGA cancer-type samples. "
+        f"Each panel shows one real Bio MAF feature across {len(frame):,} fixed top-20 TCGA cancer-type samples. "
         "Many biological event features are intentionally zero-inflated because most tumors do not hit a given gene or hotspot.",
         ha="left",
         va="top",
@@ -2907,8 +2907,8 @@ def _figure_bio_maf_v4_feature_distributions(stem: Path, technical_dir: Path) ->
     _save_figure(fig, stem)
 
 
-def _figure_bio_maf_v4_feature_distributions_by_cancer_type(stem: Path) -> None:
-    frame, _source_path = _load_bio_maf_v4_top20_distribution_frame()
+def _figure_bio_maf_feature_distributions_by_cancer_type(stem: Path) -> None:
+    frame, _source_path = _load_bio_maf_top20_distribution_frame()
     if frame.empty:
         return
     heatmap_features = [
@@ -2944,7 +2944,7 @@ def _figure_bio_maf_v4_feature_distributions_by_cancer_type(stem: Path) -> None:
     ax.set_yticks(np.arange(len(matrix.index)))
     ax.set_yticklabels([f"{idx} (n={int(counts.loc[idx])})" for idx in matrix.index], fontsize=8.5)
     fig.suptitle(
-        "Supplementary Figure S4C. Nonzero Rates for Representative Bio MAF v4 Features by Cancer Type",
+        "Supplementary Figure S4C. Nonzero Rates for Representative Bio MAF Features by Cancer Type",
         x=0.02,
         y=0.985,
         ha="left",
@@ -2977,8 +2977,8 @@ def _figure_bio_maf_v4_feature_distributions_by_cancer_type(stem: Path) -> None:
     _save_figure(fig, stem)
 
 
-def _figure_bio_maf_v4_nested_selection(stem: Path) -> None:
-    _summary, by_fold = _bio_maf_v4_nested_selection_tables()
+def _figure_bio_maf_nested_selection(stem: Path) -> None:
+    _summary, by_fold = _bio_maf_nested_selection_tables()
     if by_fold.empty:
         return
     plot = by_fold[by_fold["Endpoint tier"].eq("Main")].copy()
@@ -2986,23 +2986,23 @@ def _figure_bio_maf_v4_nested_selection(stem: Path) -> None:
         plot = by_fold.copy()
     base_labels = {
         "": "No Bio MAF\n(signatures only)",
-        "v4_compact_biology_only": "Compact\nbiology only",
-        "v4_compact_plus_driver_evidence_tiers": "Compact +\nevidence controls",
-        "v4_compact_plus_hotspot_summary": "Compact +\nhotspots",
-        "v4_compact_plus_exact_driver_genes": "Compact +\nexact driver genes",
-        "v4_full_core": "Full strict\ncore",
-        "v4_full_core_plus_optional_controls": "Full core +\noptional controls",
+        "compact_biology_only": "Compact\nbiology only",
+        "compact_plus_driver_evidence_tiers": "Compact +\nevidence controls",
+        "compact_plus_hotspot_summary": "Compact +\nhotspots",
+        "compact_plus_exact_driver_genes": "Compact +\nexact driver genes",
+        "full_core": "Full strict\ncore",
+        "full_core_plus_optional_controls": "Full core +\noptional controls",
     }
     plot["Selected block"] = plot["Selected Bio MAF block ID"].map(base_labels).fillna(plot["Selected feature-set label"])
     plot["Model group"] = plot["Representation"].astype(str) + "\n" + plot["Model"].astype(str)
     row_order = [label for label in base_labels.values() if label in set(plot["Selected block"])]
     column_order = [
-        "Bio MAF v4\nElastic net",
-        "Bio MAF v4\nXGBoost",
-        "Signatures + Bio MAF v4\nElastic net",
-        "Signatures + Bio MAF v4\nXGBoost",
-        "Bio MAF v4\nCoxNet",
-        "Signatures + Bio MAF v4\nCoxNet",
+        "Bio MAF\nElastic net",
+        "Bio MAF\nXGBoost",
+        "Signatures + Bio MAF\nElastic net",
+        "Signatures + Bio MAF\nXGBoost",
+        "Bio MAF\nCoxNet",
+        "Signatures + Bio MAF\nCoxNet",
     ]
     column_order = [value for value in column_order if value in set(plot["Model group"])] + [
         value for value in _ordered_unique(plot["Model group"].tolist()) if value not in column_order
@@ -3027,7 +3027,7 @@ def _figure_bio_maf_v4_nested_selection(stem: Path) -> None:
     ax.set_xlabel("Representation and model")
     ax.set_ylabel("Feature block selected by inner-loop validation")
     fig.suptitle(
-        "Supplementary Figure S5. Nested-CV Bio MAF v4 Feature-Block Selections",
+        "Supplementary Figure S5. Nested-CV Bio MAF Feature-Block Selections",
         x=0.02,
         y=0.985,
         ha="left",
@@ -3038,7 +3038,7 @@ def _figure_bio_maf_v4_nested_selection(stem: Path) -> None:
     fig.text(
         0.02,
         0.925,
-        "Cell values are outer-fold counts for manuscript endpoints with Bio MAF v4 feature-block tuning; selection used training data only.",
+        "Cell values are outer-fold counts for manuscript endpoints with Bio MAF feature-block tuning; selection used training data only.",
         ha="left",
         va="bottom",
         fontsize=9.5,
@@ -3305,7 +3305,7 @@ def _is_current_source_inventory_table(name: str, settings: dict[str, Any]) -> b
         return experiment_enabled(settings, "main_manuscript_complete_panel")
     if name.startswith("muat_style_tcga_comparator"):
         return any(_source_matches_prefix(name, prefix) for prefix in _accepted_muat_output_prefixes(settings))
-    return name.startswith(("proposed_clinical_bio_v4", "quick_bio_v4"))
+    return name.startswith(("proposed_clinical_bio_v4", "quick_bio_maf"))
 
 
 def _num(row: pd.Series, names: list[str]) -> float:
@@ -3813,13 +3813,13 @@ def _write_tables(df: pd.DataFrame, side_tables: dict[str, pd.DataFrame], manusc
     )
     _write_supplement_public_table(cancer_metric_table, cancer_type_metrics_path, tables_dir, public_dir)
 
-    bio_maf_guide, bio_maf_exact = _bio_maf_v4_feature_guide()
-    bio_maf_guide_path = supp_dir / "table_s5_bio_maf_v4_feature_guide.csv"
+    bio_maf_guide, bio_maf_exact = _bio_maf_feature_guide()
+    bio_maf_guide_path = supp_dir / "table_s5_bio_maf_feature_guide.csv"
     _write_supplement_public_table(bio_maf_guide, bio_maf_guide_path, tables_dir, public_dir)
     _write_table_csv_html(bio_maf_exact, _technical_path(technical_dir, bio_maf_guide_path))
 
-    bio_maf_selection, bio_maf_selection_by_fold = _bio_maf_v4_nested_selection_tables()
-    selection_path = supp_dir / "table_s6_bio_maf_v4_nested_feature_selection.csv"
+    bio_maf_selection, bio_maf_selection_by_fold = _bio_maf_nested_selection_tables()
+    selection_path = supp_dir / "table_s6_bio_maf_nested_feature_selection.csv"
     selection_public_columns = [
         "Endpoint tier",
         "Endpoint",
@@ -3849,7 +3849,7 @@ def _write_tables(df: pd.DataFrame, side_tables: dict[str, pd.DataFrame], manusc
     _write_supplement_public_table(bio_maf_selection_public, selection_path, tables_dir, public_dir)
     _write_table_csv_html(
         bio_maf_selection_by_fold,
-        technical_dir / "table_s6_bio_maf_v4_nested_feature_selection_by_fold.csv",
+        technical_dir / "table_s6_bio_maf_nested_feature_selection_by_fold.csv",
         title="Supplementary Table S6 technical by-fold feature-block selections",
     )
 
@@ -3945,8 +3945,8 @@ def _write_tables(df: pd.DataFrame, side_tables: dict[str, pd.DataFrame], manusc
     group_labels = {
         "main_manuscript_complete_panel": "Main complete panel",
         "muat_style_tcga_comparator": "MuAt-compatible comparator",
-        "proposed_clinical_bio_v4": "Bio MAF v4 source artifacts",
-        "quick_bio_v4": "Bio MAF v4 source artifacts",
+        "proposed_clinical_bio_v4": "Bio MAF source artifacts",
+        "quick_bio_maf": "Bio MAF source artifacts",
     }
     source_inventory["source_group"] = source_inventory["source_table"].map(
         lambda name: next((label for key, label in group_labels.items() if str(name).startswith(key)), "Other regenerated source artifacts")
@@ -5064,8 +5064,8 @@ def _write_manuscript_text(
         "supplement/table_s1_class_distribution_baselines.csv",
         "supplement/table_s2_sensitivity_analyses.csv",
         "supplement/table_s3_completeness_and_na_reasons.csv",
-        "supplement/table_s5_bio_maf_v4_feature_guide.csv",
-        "supplement/table_s6_bio_maf_v4_nested_feature_selection.csv",
+        "supplement/table_s5_bio_maf_feature_guide.csv",
+        "supplement/table_s6_bio_maf_nested_feature_selection.csv",
     ]:
         path = manuscript_dir / name
         if path.exists():
@@ -5079,8 +5079,8 @@ def _write_manuscript_text(
     sig_maf_over_sig_xgb = _sig_endpoints(figure_tests, "sig_maf_vs_signatures", model_family="XGBoost", positive=True)
     table2_rows = table_shapes.get("tables/table_2_full_performance_metrics.csv", (len(canonical), 0))[0]
     table_s2_rows = table_shapes.get("supplement/table_s2_sensitivity_analyses.csv", (0, 0))[0]
-    table_s5_rows = table_shapes.get("supplement/table_s5_bio_maf_v4_feature_guide.csv", (0, 0))[0]
-    table_s6_rows = table_shapes.get("supplement/table_s6_bio_maf_v4_nested_feature_selection.csv", (0, 0))[0]
+    table_s5_rows = table_shapes.get("supplement/table_s5_bio_maf_feature_guide.csv", (0, 0))[0]
+    table_s6_rows = table_shapes.get("supplement/table_s6_bio_maf_nested_feature_selection.csv", (0, 0))[0]
     burden = _display_label("representation_family", "burden_only")
     signatures = _display_label("representation_family", "signatures_only")
     muat_label = _display_label("representation_family", "MuAt_style_attention_MIL")
@@ -5183,7 +5183,7 @@ def _write_manuscript_text(
         "",
         "This table summarizes the main representations, their input signal, feature dimensionality range, context or atlas status, evaluated models, and manuscript role. "
         f"{burden} features are compact with a median of 3 features; {signatures} have a median of 182 features; "
-        f"{maf_stack} dimensionality varies because predeclared Bio MAF v4 feature blocks are selected inside each outer fold's inner-validation split, and {sig_maf} adds the same nested-selected biology blocks to mutational spectra. "
+        f"{maf_stack} dimensionality varies because predeclared Bio MAF feature blocks are selected inside each outer fold's inner-validation split, and {sig_maf} adds the same nested-selected biology blocks to mutational spectra. "
         f"The {muat_label} comparator is reported separately as an event-bag neural model with learned tumour-level features. These values make the performance/complexity tradeoff explicit.",
         "",
         "### Table 4. Key terminology and abbreviations.",
@@ -5206,29 +5206,29 @@ def _write_manuscript_text(
         "Measured supplementary results are shown for alternative geometry encodings and COSMIC/NNLS exposure checks. Visible marks are measured only and specify the model family or analysis family used. "
         "Unsupported or intentionally omitted combinations are excluded from the figure and documented separately in Supplementary Table S3.",
         "",
-        "### Supplementary Figure S4A. Bio MAF v4 feature groups, without the jargon.",
+        "### Supplementary Figure S4A. Bio MAF feature groups, without the jargon.",
         "",
-        "This plain-language overview explains how Bio MAF v4 turns a patient's mutation file and fixed cancer reference resources into five groups of biological features. "
+        "This plain-language overview explains how Bio MAF turns a patient's mutation file and fixed cancer reference resources into five groups of biological features. "
         "The figure separates the readable overview from the technical audit trail: VEP annotation features come from a fixed VEP label vocabulary, external evidence-confidence controls summarize reference support without treating source count as a tumor biology mechanism, exact-gene features come from a fixed 401-gene external rule, and hotspot features come from Cancer Hotspots. "
         "Feature values are per-sample aggregates: count-like features use log1p(count), fraction features divide by total annotated mutations, and allele-fraction features use summary statistics or maxima. "
         "The bottom jargon decoder defines VEP labels, allele fraction, log-counts, protein-affecting mutation counts, cancer-role-fit mutation counts, and fixed-before-training language; Supplementary Table S5 gives worked feature examples, exact feature definitions, and candidate-size derivations, and Supplementary Table S6 reports nested-CV-selected feature groups.",
         "",
-        "### Supplementary Figure S4B. Distribution of representative Bio MAF v4 features.",
+        "### Supplementary Figure S4B. Distribution of representative Bio MAF features.",
         "",
-        "This figure shows empirical distributions for representative Bio MAF v4 features in the fixed 8,800-sample TCGA top-20 cancer-type cohort. "
+        "This figure shows empirical distributions for representative Bio MAF features in the fixed 8,800-sample TCGA top-20 cancer-type cohort. "
         "Panels include compact VEP annotation features, allele-fraction summaries, evidence-confidence controls, exact TP53 gene features, Cancer Hotspots summaries, and optional mutation-burden controls. "
         "The annotations report nonzero percentage, median, and 95th percentile so readers can see which features are continuous, sparse, or strongly zero-inflated.",
         "",
-        "### Supplementary Figure S4C. Representative Bio MAF v4 feature nonzero rates by cancer type.",
+        "### Supplementary Figure S4C. Representative Bio MAF feature nonzero rates by cancer type.",
         "",
         "This heatmap summarizes the same feature-family logic by cancer type. "
         "Each cell is the percent of tumors in a TCGA top-20 cancer type with a nonzero value for the representative feature, highlighting that exact-gene and hotspot features are intentionally sparse while broad VEP and burden features are present in most tumors. "
         "The figure is descriptive only and is not used for feature selection.",
         "",
-        "### Supplementary Figure S5. Nested-CV Bio MAF v4 feature-block selections.",
+        "### Supplementary Figure S5. Nested-CV Bio MAF feature-block selections.",
         "",
-        "This heatmap reports which predeclared Bio MAF v4 feature block was selected by the inner-loop validation search within each outer fold. "
-        "Cell values count outer folds across manuscript endpoints with Bio MAF v4 feature-block tuning. "
+        "This heatmap reports which predeclared Bio MAF feature block was selected by the inner-loop validation search within each outer fold. "
+        "Cell values count outer folds across manuscript endpoints with Bio MAF feature-block tuning. "
         "The figure separates Bio MAF-only models from signatures-plus-biology models so readers can see when the inner loop selected compact biology, exact driver-gene features, the full strict core, optional controls, or signatures alone.",
         "",
         "### Supplementary Table S1. Supplementary endpoint inventory.",
@@ -5248,16 +5248,16 @@ def _write_manuscript_text(
         "",
         f"This table reports complementary classification metrics for {cancer_type}, including balanced accuracy, macro-AUROC, micro-AUROC, accuracy, macro-F1, Cohen's kappa, and top-k accuracy where available. Balanced accuracy is the primary ranking metric.",
         "",
-        "### Supplementary Table S5. Bio MAF v4 feature guide.",
+        "### Supplementary Table S5. Bio MAF feature guide.",
         "",
-        f"This {table_s5_rows}-row guide explains what the Bio MAF v4 feature blocks contain, how each block should be interpreted, where the feature counts came from, how feature values are calculated, and why each block is scientifically grounded. "
+        f"This {table_s5_rows}-row guide explains what the Bio MAF feature blocks contain, how each block should be interpreted, where the feature counts came from, how feature values are calculated, and why each block is scientifically grounded. "
         "For each feature block, it includes a representative real feature name, a toy MAF input, the exact arithmetic used to turn that toy input into a feature value, and a plain-English interpretation of the resulting number. "
         "It explicitly defines VEP labels, SIFT, PolyPhen, transcript biotype, canonical transcript, OncoKB roles, Vogelstein genes, fixed-before-modeling rules, and the external evidence-confidence control block. "
         "It also defines protein-affecting mutation counts and cancer-role-fit mutation counts, then lists every nested-CV Bio MAF candidate feature-set size derivation: compact only, compact plus evidence-confidence controls, compact plus hotspots, compact plus exact cancer-gene identity, full strict core, and full plus optional controls. "
-        "The accompanying technical table gives the exact feature-level glossary for all 948 Bio MAF v4 features, including the 943 strict-core features and 5 optional controls. "
+        "The accompanying technical table gives the exact feature-level glossary for all 948 Bio MAF features, including the 943 strict-core features and 5 optional controls. "
         "Exact consensus driver-gene features come from a fixed external rule before cross-validation; nested CV selects among predeclared blocks inside the inner loop rather than using held-out endpoint performance.",
         "",
-        "### Supplementary Table S6. Nested-CV Bio MAF v4 feature-block selections.",
+        "### Supplementary Table S6. Nested-CV Bio MAF feature-block selections.",
         "",
         f"This {table_s6_rows}-row table summarizes the feature-block candidate selected inside the inner loop for each endpoint, representation, and model. "
         "The corresponding technical table reports the exact by-fold selection decisions. "
@@ -5546,15 +5546,15 @@ def make_all_figures(*, settings: dict[str, Any] | None = None, paths: dict[str,
         _run_d3_renderer(manuscript_dir, strict=strict)
     else:
         _write_figures(table_df, manuscript_dir)
-    _figure_bio_maf_v4_feature_map(manuscript_dir / "supplement" / "figure_s4_bio_maf_v4_feature_map")
-    _figure_bio_maf_v4_feature_distributions(
-        manuscript_dir / "supplement" / "figure_s4b_bio_maf_v4_feature_distributions",
+    _figure_bio_maf_feature_map(manuscript_dir / "supplement" / "figure_s4_bio_maf_feature_map")
+    _figure_bio_maf_feature_distributions(
+        manuscript_dir / "supplement" / "figure_s4b_bio_maf_feature_distributions",
         manuscript_dir / "tables" / "technical",
     )
-    _figure_bio_maf_v4_feature_distributions_by_cancer_type(
-        manuscript_dir / "supplement" / "figure_s4c_bio_maf_v4_feature_distributions_by_cancer_type"
+    _figure_bio_maf_feature_distributions_by_cancer_type(
+        manuscript_dir / "supplement" / "figure_s4c_bio_maf_feature_distributions_by_cancer_type"
     )
-    _figure_bio_maf_v4_nested_selection(manuscript_dir / "supplement" / "figure_s5_bio_maf_v4_nested_feature_selection")
+    _figure_bio_maf_nested_selection(manuscript_dir / "supplement" / "figure_s5_bio_maf_nested_feature_selection")
     _validate(manuscript_dir, table_df, strict=strict)
     manifest = {
         "created_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),

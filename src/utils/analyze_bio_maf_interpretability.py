@@ -1,8 +1,8 @@
-"""Bio MAF v4 feature-selection and SHAP-style interpretation report.
+"""Bio MAF feature-selection and SHAP-style interpretation report.
 
 This script is intentionally post hoc. It does not estimate predictive
 performance; performance remains the nested out-of-fold benchmark output.
-Here we summarize which predeclared Bio MAF v4 blocks were selected inside
+Here we summarize which predeclared Bio MAF blocks were selected inside
 the nested-CV tuning loop, then fit a bounded interpretation model to explain
 which biological annotation features drive the top-20 cancer-type signal.
 """
@@ -47,7 +47,7 @@ if str(Path(__file__).resolve().parents[1]) not in sys.path:
 
 from utils.config import BUNDLE_ROOT, load_yaml, resolve_paths_map
 from utils.endpoint_registry import TCGA_CANCER_TYPE_TOP20, build_cdr_cancer_type_labels
-from utils.quick_bio_v4_nested_feature_selection import v4_feature_columns
+from utils.quick_bio_maf_nested_feature_selection import bio_maf_feature_columns
 
 
 TOKENS = {
@@ -108,12 +108,12 @@ def _write_table(frame: pd.DataFrame, path: Path, title: str) -> None:
 def _display_feature_set(name: object) -> str:
     text = "" if pd.isna(name) else str(name)
     mapping = {
-        "v4_compact_biology_only": "Compact biology only",
-        "v4_compact_plus_driver_evidence_tiers": "Compact + evidence-confidence controls",
-        "v4_compact_plus_exact_driver_genes": "Compact + exact driver genes",
-        "v4_compact_plus_hotspot_summary": "Compact + hotspot summaries",
-        "v4_full_core": "Full core biology",
-        "v4_full_core_plus_optional_controls": "Full core + optional controls",
+        "compact_biology_only": "Compact biology only",
+        "compact_plus_driver_evidence_tiers": "Compact + evidence-confidence controls",
+        "compact_plus_exact_driver_genes": "Compact + exact driver genes",
+        "compact_plus_hotspot_summary": "Compact + hotspot summaries",
+        "full_core": "Full core biology",
+        "full_core_plus_optional_controls": "Full core + optional controls",
         "signatures_only": "Signatures only",
         "signatures_plus_v4_compact_biology_only": "Signatures + compact biology",
         "signatures_plus_v4_compact_plus_driver_evidence_tiers": "Signatures + evidence-confidence controls",
@@ -181,7 +181,7 @@ def _plain_feature_meaning(feature: str) -> str:
         return "Transcript-level annotation composition from VEP."
     if feature.startswith("vaf_"):
         return "A sample-level summary of allele fractions, meaning the share of tumor DNA reads carrying each mutation; useful but should be checked as a purity/proxy sensitivity."
-    return "A fixed Bio MAF v4 annotation aggregate."
+    return "A fixed Bio MAF annotation aggregate."
 
 
 def summarize_feature_selection(tables_dir: Path, out_dir: Path) -> pd.DataFrame:
@@ -203,7 +203,7 @@ def summarize_feature_selection(tables_dir: Path, out_dir: Path) -> pd.DataFrame
         .reset_index()
         .sort_values(["endpoint", "representation", "learner", "outer_folds_selected", "mean_outer_score"], ascending=[True, True, True, False, False])
     )
-    _write_table(grouped, out_dir / "bio_maf_v4_nested_feature_selection_by_block.csv", "Bio MAF v4 nested feature-selection by block")
+    _write_table(grouped, out_dir / "bio_maf_nested_feature_selection_by_block.csv", "Bio MAF nested feature-selection by block")
 
     endpoint_summary = (
         rows.groupby(["endpoint", "representation", "learner"], dropna=False)
@@ -216,7 +216,7 @@ def summarize_feature_selection(tables_dir: Path, out_dir: Path) -> pd.DataFrame
         )
         .reset_index()
     )
-    _write_table(endpoint_summary, out_dir / "bio_maf_v4_nested_feature_selection_summary.csv", "Bio MAF v4 nested feature-selection summary")
+    _write_table(endpoint_summary, out_dir / "bio_maf_nested_feature_selection_summary.csv", "Bio MAF nested feature-selection summary")
 
     top20 = grouped[grouped["endpoint"].eq("cancer_type_top20")].copy()
     if not top20.empty:
@@ -236,7 +236,7 @@ def summarize_feature_selection(tables_dir: Path, out_dir: Path) -> pd.DataFrame
         ax.set_ylabel("")
         ax.set_xlim(0, 5)
         ax.legend(title="", loc="lower right", frameon=False)
-        _save_plot(fig, out_dir / "figure_bio_maf_v4_top20_feature_block_selection")
+        _save_plot(fig, out_dir / "figure_bio_maf_top20_feature_block_selection")
     return grouped
 
 
@@ -263,26 +263,26 @@ def summarize_top20_performance(tables_dir: Path, out_dir: Path) -> pd.DataFrame
     ]
     keep = [col for col in keep if col in top20.columns]
     top20 = top20.loc[:, keep].sort_values(["balanced_accuracy", "score"], ascending=False)
-    _write_table(top20, out_dir / "bio_maf_v4_top20_performance_metrics.csv", "TCGA top-20 performance metrics")
+    _write_table(top20, out_dir / "bio_maf_top20_performance_metrics.csv", "TCGA top-20 performance metrics")
 
     fig, ax = plt.subplots(figsize=(8.5, 4.8))
     plot = top20.copy()
     plot["model"] = plot["representation"] + " / " + plot["learner"]
     sns.barplot(data=plot, y="model", x="balanced_accuracy", color=TOKENS["blue"], ax=ax)
-    ax.set_title("Bio MAF v4 top-20 cancer-type performance with balanced accuracy")
+    ax.set_title("Bio MAF top-20 cancer-type performance with balanced accuracy")
     ax.set_xlabel("Balanced accuracy")
     ax.set_ylabel("")
     ax.set_xlim(0, max(0.72, float(plot["balanced_accuracy"].max()) + 0.04))
     for container in ax.containers:
         ax.bar_label(container, fmt="%.3f", padding=4, fontsize=9)
-    _save_plot(fig, out_dir / "figure_bio_maf_v4_top20_balanced_accuracy")
+    _save_plot(fig, out_dir / "figure_bio_maf_top20_balanced_accuracy")
     return top20
 
 
 def _load_top20_features(paths: dict[str, Any], representation: str, feature_set: str, tables_dir: Path) -> tuple[pd.DataFrame, pd.Series]:
-    bio = pd.read_csv(tables_dir / "quick_bio_v4_maf_features.csv.gz", index_col=0).fillna(0.0).astype(np.float32)
+    bio = pd.read_csv(tables_dir / "quick_bio_maf_features.csv.gz", index_col=0).fillna(0.0).astype(np.float32)
     bio.index = bio.index.astype(str)
-    _core, _all, blocks = v4_feature_columns()
+    _core, _all, blocks = bio_maf_feature_columns()
     if representation == "MAF_stack_only":
         if feature_set not in blocks:
             raise ValueError(f"{feature_set!r} is not a Bio MAF-only candidate block")
@@ -397,7 +397,7 @@ def run_shap_analysis(paths: dict[str, Any], tables_dir: Path, out_dir: Path, re
         }
     ).sort_values("mean_abs_shap", ascending=False)
     top.insert(0, "rank", np.arange(1, len(top) + 1))
-    _write_table(top.head(100), out_dir / f"bio_maf_v4_top20_{representation}_{learner}_top100_shap_features.csv", "Top Bio MAF v4 SHAP features for TCGA top-20")
+    _write_table(top.head(100), out_dir / f"bio_maf_top20_{representation}_{learner}_top100_shap_features.csv", "Top Bio MAF SHAP features for TCGA top-20")
 
     family = (
         top.groupby("feature_family", as_index=False)
@@ -405,7 +405,7 @@ def run_shap_analysis(paths: dict[str, Any], tables_dir: Path, out_dir: Path, re
         .sort_values("total_mean_abs_shap", ascending=False)
     )
     family["share_of_total"] = family["total_mean_abs_shap"] / family["total_mean_abs_shap"].sum()
-    _write_table(family, out_dir / f"bio_maf_v4_top20_{representation}_{learner}_shap_feature_families.csv", "Bio MAF v4 SHAP attribution by feature family")
+    _write_table(family, out_dir / f"bio_maf_top20_{representation}_{learner}_shap_feature_families.csv", "Bio MAF SHAP attribution by feature family")
 
     class_rows = []
     class_mean_abs = np.nanmean(np.abs(arr), axis=0)
@@ -425,16 +425,16 @@ def run_shap_analysis(paths: dict[str, Any], tables_dir: Path, out_dir: Path, re
                 }
             )
     class_top = pd.DataFrame(class_rows)
-    _write_table(class_top, out_dir / f"bio_maf_v4_top20_{representation}_{learner}_class_specific_shap.csv", "Class-specific Bio MAF v4 SHAP features")
+    _write_table(class_top, out_dir / f"bio_maf_top20_{representation}_{learner}_class_specific_shap.csv", "Class-specific Bio MAF SHAP features")
 
     fig, ax = plt.subplots(figsize=(9.5, 6.2))
     plot = top.head(20).iloc[::-1]
     sns.barplot(data=plot, y="feature", x="mean_abs_shap", hue="feature_family", dodge=False, ax=ax)
-    ax.set_title("Top Bio MAF v4 features driving 20-class cancer-type prediction")
+    ax.set_title("Top Bio MAF features driving 20-class cancer-type prediction")
     ax.set_xlabel("Mean absolute SHAP value")
     ax.set_ylabel("")
     ax.legend(title="", loc="lower right", frameon=False, fontsize=8)
-    _save_plot(fig, out_dir / f"figure_bio_maf_v4_top20_{representation}_{learner}_top_shap_features")
+    _save_plot(fig, out_dir / f"figure_bio_maf_top20_{representation}_{learner}_top_shap_features")
 
     fig, ax = plt.subplots(figsize=(8.5, 5.2))
     plot = family.head(12).iloc[::-1]
@@ -444,7 +444,7 @@ def run_shap_analysis(paths: dict[str, Any], tables_dir: Path, out_dir: Path, re
     ax.set_ylabel("")
     for container in ax.containers:
         ax.bar_label(container, fmt="%.2f", padding=4, fontsize=9)
-    _save_plot(fig, out_dir / f"figure_bio_maf_v4_top20_{representation}_{learner}_shap_families")
+    _save_plot(fig, out_dir / f"figure_bio_maf_top20_{representation}_{learner}_shap_families")
 
     manifest = {
         "generated_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
@@ -460,7 +460,7 @@ def run_shap_analysis(paths: dict[str, Any], tables_dir: Path, out_dir: Path, re
         "interpretation_fit_note": "Full-data fit used only for attribution; predictive performance is reported from nested out-of-fold benchmark rows.",
         **train_metrics,
     }
-    (out_dir / f"bio_maf_v4_top20_{representation}_{learner}_shap_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    (out_dir / f"bio_maf_top20_{representation}_{learner}_shap_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     return manifest
 
 
@@ -502,7 +502,7 @@ def main() -> None:
             shap_n=int(args.shap_sample),
             seed=int(args.seed),
         )
-    (out_dir / "bio_maf_v4_interpretability_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    (out_dir / "bio_maf_interpretability_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     print(json.dumps(manifest, indent=2), flush=True)
 
 

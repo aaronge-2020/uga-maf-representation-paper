@@ -6,7 +6,7 @@ KIRP): train the headline 20-class cancer-typing model on all centres EXCEPT
 the held-out centre, test on the held-out centre's tumours of that type.
 Compares signatures_plus_MAF_stack vs standard_sbs96_id83, XGBoost, headline
 nested-validation settings (inner stratified 75/25 split, inner-loop
-feature-block selection over the same predeclared Bio MAF v4 blocks, 5
+feature-block selection over the same predeclared Bio MAF blocks, 5
 XGBoost hyperparameter candidates scored by balanced accuracy on the inner
 validation split).
 
@@ -34,7 +34,7 @@ Deviations from the headline pipeline (documented in the notes):
     own fallback does gpu_hist->hist anyway.
   - xgb_n_jobs=2 (config: 32; 2-core VM).
   - Precomputed feature matrices instead of rebuilding from the MAF:
-      * 948-col MAF stack (results/tables/quick_bio_v4_maf_features.csv.gz)
+      * 948-col MAF stack (results/tables/quick_bio_maf_features.csv.gz)
       * 182-col SBS96+ID83 signatures (downloaded from the companion HF
         dataset bundle; column set verified identical to the frozen model's
         feature_order.txt)
@@ -77,7 +77,7 @@ ASSETS = DEFAULT_ASSETS  # overridden by --data-dir in main()
 SIG_BUNDLE = ASSETS / "feats_std.csv.gz"   # 182-col SBS96+ID83, from HF dataset bundle
 CDR_XLSX = ASSETS / "cdr.xlsx"
 BURDEN = ASSETS / "burden.csv"  # defines the pipeline's matched-feature patient set
-MAF_MATRIX = REPO / "results/tables/quick_bio_v4_maf_features.csv.gz"  # 948-col MAF stack
+MAF_MATRIX = REPO / "results/tables/quick_bio_maf_features.csv.gz"  # 948-col MAF stack
 MAPPING = REPO / "results/tables/batch_center_sample_mapping.csv"
 DEFAULT_TABLES = REPO / "results/tables"
 TABLES = DEFAULT_TABLES  # overridden by --output-dir in main()
@@ -156,26 +156,26 @@ def load_features(patients, frozen_block=False):
     # matrix (genes whose OncoKB role became INSUFFICIENT_EVIDENCE after
     # the headline run) belong to the exact-driver-genes family, so they
     # are added to the three exact-driver-containing blocks.
-    from utils.quick_bio_v4_nested_feature_selection import v4_feature_columns
-    _core, _all, code_blocks = v4_feature_columns()
+    from utils.quick_bio_maf_nested_feature_selection import bio_maf_feature_columns
+    _core, _all, code_blocks = bio_maf_feature_columns()
     maf_cols = set(maf.columns)
     for _name, _cols in code_blocks.items():
         assert set(_cols) <= maf_cols, _name
     extra = [c for c in maf.columns
              if c.startswith("driver_gene_role_matched_event_log_count__")
-             and c not in set(code_blocks["v4_compact_plus_exact_driver_genes"])]
+             and c not in set(code_blocks["compact_plus_exact_driver_genes"])]
     assert len(extra) == 38, len(extra)
     blocks = {
-        "v4_compact_biology_only": code_blocks["v4_compact_biology_only"],
-        "v4_compact_plus_driver_evidence_tiers":
-            code_blocks["v4_compact_plus_driver_evidence_tiers"],
-        "v4_compact_plus_hotspot_summary":
-            code_blocks["v4_compact_plus_hotspot_summary"],
-        "v4_compact_plus_exact_driver_genes":
-            code_blocks["v4_compact_plus_exact_driver_genes"] + extra,
-        "v4_full_core": code_blocks["v4_full_core"] + extra,
-        "v4_full_core_plus_optional_controls":
-            code_blocks["v4_full_core_plus_optional_controls"] + extra,
+        "compact_biology_only": code_blocks["compact_biology_only"],
+        "compact_plus_driver_evidence_tiers":
+            code_blocks["compact_plus_driver_evidence_tiers"],
+        "compact_plus_hotspot_summary":
+            code_blocks["compact_plus_hotspot_summary"],
+        "compact_plus_exact_driver_genes":
+            code_blocks["compact_plus_exact_driver_genes"] + extra,
+        "full_core": code_blocks["full_core"] + extra,
+        "full_core_plus_optional_controls":
+            code_blocks["full_core_plus_optional_controls"] + extra,
     }
     sig_pref = sig.add_prefix("signature_matrix__")
     combined = pd.concat([sig_pref, maf], axis=1)
@@ -183,7 +183,7 @@ def load_features(patients, frozen_block=False):
     # frozen-block design (see notes): only the 1130-col block, the superset
     # of every block the headline run selected for this endpoint and the
     # winner of the one faithful Task 4 job completed.
-    block_names = (["v4_full_core_plus_optional_controls"] if frozen_block
+    block_names = (["full_core_plus_optional_controls"] if frozen_block
                    else list(blocks))
     for name in block_names:
         cand[f"signatures_plus_{name}"] = (list(sig_pref.columns)

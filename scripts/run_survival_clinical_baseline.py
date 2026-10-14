@@ -11,7 +11,7 @@ Arms
 ----
     clinical                              age + gender + AJCC stage (one-hot w/ missing indicator)
     clinical_plus_cancer_type             clinical + one-hot cancer type
-    clinical_plus_cancer_type_plus_bio_maf  clinical + cancer type + Bio MAF v4
+    clinical_plus_cancer_type_plus_bio_maf  clinical + cancer type + Bio MAF
 
 Missing clinical values are median/mode-imputed with a missing indicator, so the
 cohort is exactly the committed n=9,986 (no sample is dropped for missing stage).

@@ -8,9 +8,9 @@
 
 Stages
 ------
-    survival   Cancer-type-only survival baseline (Jeya). Does Bio MAF v4 predict survival
+    survival   Cancer-type-only survival baseline (Jeya). Does Bio MAF predict survival
                beyond cancer type alone? Cheap, and the highest scientific stakes.
-    featsel    Individual-feature selection inside Bio MAF v4 (Jeya), plus SHAP attribution
+    featsel    Individual-feature selection inside Bio MAF (Jeya), plus SHAP attribution
                (Vijay). Replaces the current block-level selection.
     muat_d     MuAt-faithful token representation on the HRD endpoints. The calibration
                baseline for any claim about the architecture.
@@ -106,10 +106,10 @@ def preflight(stages: list[str]) -> list[str]:
         if not path.exists():
             problems.append(f"{label} not found at {path}")
 
-    bio = REPO_ROOT / "results/tables/quick_bio_v4_maf_features.csv.gz"
-    print(f"  {'ok' if bio.exists() else 'MISSING':8s} Bio MAF v4 feature table (survival, featsel)")
+    bio = REPO_ROOT / "results/tables/quick_bio_maf_features.csv.gz"
+    print(f"  {'ok' if bio.exists() else 'MISSING':8s} Bio MAF feature table (survival, featsel)")
     if not bio.exists():
-        problems.append(f"Bio MAF v4 feature cache not found at {bio}")
+        problems.append(f"Bio MAF feature cache not found at {bio}")
 
     for module, needed_by, fatal in (
         ("xgboost", "featsel", True),
@@ -189,7 +189,7 @@ def report(stages: list[str]) -> int:
     comp = REPO_ROOT / "results/tables/survival_cancer_type_baseline_comparisons.csv"
     if surv.exists():
         frame = pd.read_csv(surv)
-        print("\nSurvival: does Bio MAF v4 beat cancer type alone?")
+        print("\nSurvival: does Bio MAF beat cancer type alone?")
         print("-" * 70)
         for _, row in frame.iterrows():
             print(f"  {row['arm']:26s} C-index {float(row['score']):.4f}")

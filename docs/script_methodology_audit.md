@@ -18,7 +18,7 @@ This audit covers the active scripts in `github_exports` after cleanup. Source s
 - Removed active retired hash-derived MAF and stale feature-ranking paths from the release workflow.
 - Removed obsolete provenance-only scripts and scratch reports from the GitHub-ready export.
 - Ensured large/downloaded assets are validated and read from `../github_exports_datasets` instead of hidden local paths.
-- Restricted Bio MAF v4 resource loading to bundled/local resources; no network download is attempted by active code.
+- Restricted Bio MAF resource loading to bundled/local resources; no network download is attempted by active code.
 - Strengthened nested OOF split handling, grouped fallback behavior, and OOF assignment checks.
 - Strengthened checkpoint provenance with label, feature, sample, encoded-event, dictionary, mask, and configuration fingerprints.
 - Removed implicit compatible-checkpoint reuse from active configs.
@@ -26,7 +26,7 @@ This audit covers the active scripts in `github_exports` after cleanup. Source s
 
 ## Methodology Guards
 
-- Bio MAF v4 feature selection occurs only inside inner-loop tuning.
+- Bio MAF feature selection occurs only inside inner-loop tuning.
 - No endpoint labels or held-out fold performance are used to define Bio MAF features.
 - COSMIC/signature features remain separate from Bio MAF resources.
 - Nested cross-validation remains intact for active model comparison workflows.

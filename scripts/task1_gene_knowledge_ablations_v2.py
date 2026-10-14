@@ -59,18 +59,18 @@ SEEDS = {'maf': 615371, 'sigmaf': 750978}
 REPS = {'maf': 'MAF_stack_only', 'sigmaf': 'signatures_plus_MAF_stack'}
 
 SET_BLOCKS = {
-    'v4_compact_biology_only': ['v3_core_compact_biology'],
+    'compact_biology_only': ['v3_core_compact_biology'],
     'v4_compact_plus_driver_evidence_tiers':
         ['v3_core_compact_biology', 'external_driver_evidence_tier_aggregates'],
     'v4_compact_plus_exact_driver_genes':
         ['v3_core_compact_biology', 'exact_consensus_driver_gene_identity'],
     'v4_compact_plus_hotspot_summary':
         ['v3_core_compact_biology', 'cancer_hotspot_summary'],
-    'v4_full_core': ['v3_core_compact_biology',
+    'full_core': ['v3_core_compact_biology',
                      'external_driver_evidence_tier_aggregates',
                      'cancer_hotspot_summary',
                      'exact_consensus_driver_gene_identity'],
-    'v4_full_core_plus_optional_controls':
+    'full_core_plus_optional_controls':
         ['v3_core_compact_biology', 'external_driver_evidence_tier_aggregates',
          'cancer_hotspot_summary', 'exact_consensus_driver_gene_identity',
          'optional_burden_and_event_composition_controls'],
@@ -101,7 +101,7 @@ def log(msg):
 def load_everything():
     t0 = time.time()
     m = pd.read_csv(TABLES / 'batch_center_sample_mapping.csv')
-    with gzip.open(TABLES / 'quick_bio_v4_maf_features.csv.gz', 'rt') as f:
+    with gzip.open(TABLES / 'quick_bio_maf_features.csv.gz', 'rt') as f:
         cols = f.readline().strip().split(',')
         rows = {}
         for line in f:
@@ -143,24 +143,24 @@ def load_everything():
         nan=0.0, posinf=0.0, neginf=0.0)
 
     # digest verification against archived production manifests
-    t = pd.read_csv(TABLES / 'proposed_clinical_bio_v4_feature_table_exact.csv')
-    blocks = t.set_index('Feature').loc[maf_cols, 'Bio MAF v4 block'].values
+    t = pd.read_csv(TABLES / 'proposed_clinical_bio_feature_table_exact.csv')
+    blocks = t.set_index('Feature').loc[maf_cols, 'Bio MAF block'].values
     for rep, seed in SEEDS.items():
         fj = glob.glob(str(CKPT / f'cancer_type_top20__{REPS[rep]}__xgboost__*.json'))[0]
         man = json.load(open(fj))['manifest']
         assert man['seed'] == seed and man['n_samples'] == 8800
         if rep == 'maf':
             assert matrix_digest(X_maf) == \
-                man['feature_digests']['v4_full_core_plus_optional_controls']
+                man['feature_digests']['full_core_plus_optional_controls']
             assert matrix_digest(X_maf[:, np.isin(
-                blocks, SET_BLOCKS['v4_full_core'])]) == \
-                man['feature_digests']['v4_full_core']
+                blocks, SET_BLOCKS['full_core'])]) == \
+                man['feature_digests']['full_core']
         else:
             assert matrix_digest(X_sig) == man['feature_digests']['signatures_only']
             full1130 = np.concatenate([X_sig, X_maf], axis=1)
             assert matrix_digest(full1130) == \
                 man['feature_digests']['signatures_plus_v4_full_core_plus_optional_controls']
-            core943 = np.isin(blocks, SET_BLOCKS['v4_full_core'])
+            core943 = np.isin(blocks, SET_BLOCKS['full_core'])
             assert matrix_digest(np.concatenate([X_sig, X_maf[:, core943]], axis=1)) == \
                 man['feature_digests']['signatures_plus_v4_full_core']
     log(f'digest verification PASSED (maf 948 + sig 182), load {time.time()-t0:.0f}s')

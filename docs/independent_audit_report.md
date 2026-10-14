@@ -143,9 +143,9 @@ Pulled directly from `results/tables/main_manuscript_complete_panel_endpoint_res
 
 **Files:** `scripts/reproduce_manuscript.py`, `src/utils/make_all_figures.py`, `src/utils/build_submission_docx.py`.
 
-- 🔴 **Table 2 columns ≠ manuscript columns.** Code emits **Burden / Signatures / Bio MAF v4 / Signatures+bio MAF / MuAt-compatible** (`make_all_figures.py:71-77,403-409`). The manuscript's 3rd column "One-hot KME" has **no code path**, and the manuscript has **no MuAt column** — so the two Table 2 designs are structurally different.
+- 🔴 **Table 2 columns ≠ manuscript columns.** Code emits **Burden / Signatures / Bio MAF / Signatures+bio MAF / MuAt-compatible** (`make_all_figures.py:71-77,403-409`). The manuscript's 3rd column "One-hot KME" has **no code path**, and the manuscript has **no MuAt column** — so the two Table 2 designs are structurally different.
 - 🟠 **Cancer-type main-table metric is balanced-accuracy, not macro-AUROC** (`make_all_figures.py:3340-3341,4057-4063`), while the committed results store macro-AUROC as the row metric — an internal inconsistency to verify (strict figure validation may reject the committed table). Macro-AUROC for cancer type only appears in Suppl Table S4.
-- 🟠 **`build_submission_docx.py` is stale and would break**: it hard-codes prose numbers decoupled from the regenerated tables (`:650-651,663-664`) and reads Table-2 columns by **keys that no longer match the generated headers** (`row["MAF stack"]`, `row["Signatures + MAF"]` vs generated `"Bio MAF v4"`, `"Signatures + bio MAF"`) → `KeyError`/mis-key (`:379-396`).
+- 🟠 **`build_submission_docx.py` is stale and would break**: it hard-codes prose numbers decoupled from the regenerated tables (`:650-651,663-664`) and reads Table-2 columns by **keys that no longer match the generated headers** (`row["MAF stack"]`, `row["Signatures + MAF"]` vs generated `"Bio MAF"`, `"Signatures + bio MAF"`) → `KeyError`/mis-key (`:379-396`).
 - 🟡 `figure_s2_calibration_thresholds.png` is actually an **OOF-coverage heatmap**, not reliability curves, despite the S2 caption (`make_all_figures.py:4744`). Real reliability data is only written to `plot_data/`.
 
 ---

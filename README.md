@@ -9,7 +9,7 @@ python -m pip install -r requirements.txt
 python scripts/reproduce_manuscript.py --datasets-dir ../github_exports_datasets --strict
 ```
 
-The strict command validates repository files, source result tables, dataset-bundle checksums, endpoint guards, Bio MAF v4 resources, and source scans. It also verifies that generated manuscript outputs are not tracked for GitHub. It writes the latest report to `results/logs/strict_validation_latest.json`.
+The strict command validates repository files, source result tables, dataset-bundle checksums, endpoint guards, Bio MAF resources, and source scans. It also verifies that generated manuscript outputs are not tracked for GitHub. It writes the latest report to `results/logs/strict_validation_latest.json`.
 
 ## Production Pipeline
 
@@ -21,7 +21,7 @@ python src/run_all_experiments.py --config config/experiment_settings.strict_no_
 
 The active experiment graph is intentionally small:
 
-- `main_manuscript_complete_panel`: nested out-of-fold evaluation for burden, mutational signatures, Bio MAF v4, and signatures + Bio MAF v4 across the manuscript endpoints.
+- `main_manuscript_complete_panel`: nested out-of-fold evaluation for burden, mutational signatures, Bio MAF, and signatures + Bio MAF across the manuscript endpoints.
 - `muat_style_tcga_comparator`: MuAt-compatible event-bag comparator for raw HRD score and HRD-33 high/low.
 - `src/utils/make_all_figures.py`: canonical manuscript tables, figures, supplements, plot data, and text.
 
@@ -64,7 +64,7 @@ python scripts/reviewer_workflow.py reproduce --datasets-dir ../github_exports_d
 ## Layout
 
 - `src/`: production runners and utilities.
-- `config/`: active path/config profiles and Bio MAF v4 resources.
+- `config/`: active path/config profiles and Bio MAF resources.
 - `data/`: small bundled references.
 - `results/tables/`: source tables consumed by manuscript generation.
 - `results/manuscript/`: ignored local output directory for regenerated manuscript tables, figures, text, supplements, and interpretability outputs.
@@ -81,7 +81,7 @@ Required sibling bundle paths:
 - `../github_exports_datasets/datasets/kucab_mendeley/raw_mutation_tables/`
 - `../github_exports_datasets/datasets/pcawg_pancan/`
 - `../github_exports_datasets/references/grch37/`
-- `../github_exports_datasets/resources/bio_maf_v4/`
+- `../github_exports_datasets/resources/bio_maf/`
 - `../github_exports_datasets/resources/signatures_cosmic/`
 
 Before publishing the code checkout, optional upload prep removes accidental large duplicates after validating the dataset bundle:

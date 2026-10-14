@@ -51,7 +51,7 @@ the 20 August clean rebuild (96 of 96 slots).
 
 ### 2.1 Summary, best learner per representation
 
-| Endpoint | Metric | n | Burden | Signatures | Bio MAF v4 | Sigs + Bio MAF | Best |
+| Endpoint | Metric | n | Burden | Signatures | Bio MAF | Sigs + Bio MAF | Best |
 |---|---|---|---|---|---|---|---|
 | Kucab damage class | balanced acc | 259 | 0.178 | **0.331** | 0.293 | 0.204 | Signatures |
 | HRD score | Spearman r | 772 | 0.600 | 0.693 | 0.741 | **0.767** | Combined |
@@ -72,35 +72,35 @@ the 20 August clean rebuild (96 of 96 slots).
 |---|---|---|---|
 | **damage_class** (bal. acc) | burden | 0.1783 | 0.1446 |
 | | signatures | **0.3309** | 0.2500 |
-| | Bio MAF v4 | 0.2934 | 0.1744 |
+| | Bio MAF | 0.2934 | 0.1744 |
 | | sigs + Bio MAF | 0.2042 | 0.1982 |
 | **HRD_Score** (Spearman) | burden | 0.4973 | 0.5997 |
 | | signatures | 0.4306 | 0.6927 |
-| | Bio MAF v4 | 0.7144 | 0.7413 |
+| | Bio MAF | 0.7144 | 0.7413 |
 | | sigs + Bio MAF | 0.7325 | **0.7666** |
 | **hrd_binary_24** (AUROC) | burden | 0.7504 | 0.7749 |
 | | signatures | 0.7577 | 0.8292 |
-| | Bio MAF v4 | 0.7805 | 0.8315 |
+| | Bio MAF | 0.7805 | 0.8315 |
 | | sigs + Bio MAF | 0.8112 | **0.8478** |
 | **hrd_binary_33** (AUROC) | burden | 0.7884 | 0.7989 |
 | | signatures | 0.7736 | 0.8496 |
-| | Bio MAF v4 | 0.7691 | 0.8555 |
+| | Bio MAF | 0.7691 | 0.8555 |
 | | sigs + Bio MAF | 0.7965 | **0.9008** |
 | **hrd_binary_42** (AUROC) | burden | 0.8245 | 0.8383 |
 | | signatures | 0.8585 | **0.9024** |
-| | Bio MAF v4 | 0.7911 | 0.8746 |
+| | Bio MAF | 0.7911 | 0.8746 |
 | | sigs + Bio MAF | 0.8245 | 0.8970 |
 | **cancer_type_top20** (bal. acc) | burden | 0.2473 | 0.2549 |
 | | signatures | 0.5263 | 0.5381 |
-| | Bio MAF v4 | 0.5712 | 0.6618 |
+| | Bio MAF | 0.5712 | 0.6618 |
 | | sigs + Bio MAF | 0.6723 | **0.7378** |
 | **OS** (Harrell C, CoxNet) | burden | 0.5838 | n/a |
 | | signatures | 0.6069 | n/a |
-| | Bio MAF v4 | 0.6335 | n/a |
+| | Bio MAF | 0.6335 | n/a |
 | | sigs + Bio MAF | **0.6505** | n/a |
 | **PFI** (Harrell C, CoxNet) | burden | 0.5552 | n/a |
 | | signatures | 0.5697 | n/a |
-| | Bio MAF v4 | 0.6220 | n/a |
+| | Bio MAF | 0.6220 | n/a |
 | | sigs + Bio MAF | **0.6305** | n/a |
 
 ---
@@ -127,7 +127,7 @@ Every line of the faithful config carries a source tag (PAPER, CODE, LEDGER, OUR
 
 | Model | Accuracy | Balanced acc | Top-5 | Macro F1 |
 |---|---|---|---|---|
-| **Signatures + Bio MAF v4 / XGBoost** | **0.744** | **0.738** | **0.955** | |
+| **Signatures + Bio MAF / XGBoost** | **0.744** | **0.738** | **0.955** | |
 | MuAt, published (Sanjaya et al. 2023, PCAWG-pretrained, n = 7,352) | 0.641 | not reported | 0.906 | not reported |
 | MuAt-compatible, search protocol, fold 3 diverged (20 Aug) | 0.570 | 0.550 | 0.871 | 0.553 |
 | **MuAt-compatible, search protocol, fold 3 rerun v2 (4 Oct)** | **0.602** | **0.590** | **0.886** | **0.586** |
@@ -214,7 +214,7 @@ accuracy. Pooled: **0.602 accuracy / 0.590 balanced / 0.886 top-5**. Folds 1, 2,
 
 ![Representation comparison](../results/figures/figure_S_representation_comparison.png)
 
-| Input | MuAt | Signatures + Bio MAF v4 |
+| Input | MuAt | Signatures + Bio MAF |
 |---|---|---|
 | Unit of input | one row per mutation (variable-length bag) | one fixed vector per tumour |
 | Sequence context | trinucleotide motif token | SBS96 / ID83 channels (182) |
@@ -227,7 +227,7 @@ accuracy. Pooled: **0.602 accuracy / 0.590 balanced / 0.886 top-5**. Folds 1, 2,
 | Aggregation | learned, via attention | pre-computed |
 
 > **Meaning.** MuAt's finest spatial resolution is one megabase, spanning 5 to 15 genes, so it
-> cannot distinguish "TP53 mutated" from "a neighbouring gene mutated". 84% of the Bio MAF v4
+> cannot distinguish "TP53 mutated" from "a neighbouring gene mutated". 84% of the Bio MAF
 > feature space is per-gene, and SHAP confirms the model uses it. The claim is not "our model
 > family is better" but "this representation encodes gene-level and curated biology that the
 > attention model's inputs cannot express".
@@ -265,19 +265,19 @@ protocol, including arm D. The faithful protocol removes all four.
 ## 4. New analysis: survival vs cancer type
 
 Requested by Jeya. Three CoxNet arms on TCGA CDR overall survival, identical outer folds,
-cohort = survival and cancer type and Bio MAF v4, n = 9,986, 3,061 events.
+cohort = survival and cancer type and Bio MAF, n = 9,986, 3,061 events.
 
 | Arm | Features | C-index |
 |---|---|---|
 | Cancer type only (one-hot, 33 types) | 33 | **0.7416** |
-| Bio MAF v4 only | 948 | 0.6377 |
-| Cancer type + Bio MAF v4 | 981 | **0.7429** |
+| Bio MAF only | 948 | 0.6377 |
+| Cancer type + Bio MAF | 981 | **0.7429** |
 
 Paired bootstrap, 2,000 resamples:
 
 | Comparison | Delta C-index | 95% CI | p |
 |---|---|---|---|
-| Bio MAF v4 vs cancer type | -0.1039 | [-0.1153, -0.0923] | 0.000 |
+| Bio MAF vs cancer type | -0.1039 | [-0.1153, -0.0923] | 0.000 |
 | **Cancer type + Bio MAF vs cancer type** | **+0.0013** | **[-0.0028, +0.0054]** | **0.512** |
 | Cancer type + Bio MAF vs Bio MAF | +0.1052 | [+0.0952, +0.1150] | 0.000 |
 
@@ -365,7 +365,7 @@ Fitted on the full TCGA cohort and serialised. Five models.
 
 The two `HRD_Score` rows are the paired comparison for external cohorts: the 182-feature
 signature-only model loses about 0.08 Spearman relative to the 1,130-feature stack, the cost of
-dropping the Bio MAF v4 annotation block.
+dropping the Bio MAF annotation block.
 
 **Canonical OOF prediction table.** `results/tables/main_manuscript_complete_panel_oof_predictions.csv`
 is now in the repository through Git LFS: 57,960,349 bytes, SHA-256 `84d7472c...`, rebuilt 20

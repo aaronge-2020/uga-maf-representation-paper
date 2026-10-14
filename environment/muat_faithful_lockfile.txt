@@ -20,3 +20,7 @@
 
 # python version unrecorded
 # torch==2.5.1 (from manuscript Methods; unverified against training env)
+# Import analysis (2026-10-14): src/runners/run_muat_style_tcga_comparator.py
+# imports numpy, pandas, scipy, sklearn (metrics only). The MuAt-compatible
+# model itself uses torch (manuscript Methods: torch 2.5.1).
+# Minimum required: numpy, pandas, scipy, scikit-learn, torch.

@@ -49,8 +49,8 @@ GREEN = "#2E7D32"
 
 ARM_LABELS = {
     "cancer_type": "Cancer type only",
-    "bio_maf": "Bio MAF v4 only",
-    "cancer_type_plus_bio_maf": "Cancer type + Bio MAF v4",
+    "bio_maf": "Bio MAF only",
+    "cancer_type_plus_bio_maf": "Cancer type + Bio MAF",
 }
 
 # Mutually exclusive annotation blocks, tested in order: the first pattern that matches a column
@@ -312,7 +312,7 @@ INFORMATION_TYPES = [
     ("Allele fraction",                          False, True,  "5 columns"),
 ]
 
-# Composition of the 1,130-feature signatures + Bio MAF v4 representation, split by whether
+# Composition of the 1,130-feature signatures + Bio MAF representation, split by whether
 # MuAt's three input modalities could express the same information at all.
 FEATURE_BLOCKS = [
     ("Per-gene driver counts",              794, False),
@@ -352,7 +352,7 @@ def figure_feature_comparison(plt) -> Path | None:
     ax.set_yticks(range(n))
     ax.set_yticklabels([t[0] for t in reversed(INFORMATION_TYPES)], fontsize=9)
     ax.set_xticks(list(col_x))
-    ax.set_xticklabels(["MuAt\n(3 modalities)", "Signatures +\nBio MAF v4"], fontsize=10, fontweight="bold")
+    ax.set_xticklabels(["MuAt\n(3 modalities)", "Signatures +\nBio MAF"], fontsize=10, fontweight="bold")
     ax.set_xlim(-0.8, 5.6)
     ax.set_ylim(-0.7, n - 0.3)
     ax.set_title("A. What each representation can encode", fontsize=11, loc="left", fontweight="bold")

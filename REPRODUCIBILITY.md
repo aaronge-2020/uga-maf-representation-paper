@@ -25,7 +25,7 @@ The command prints a short human-readable checklist and writes the full report t
 python scripts/reproduce_manuscript.py --datasets-dir ../github_exports_datasets --strict
 ```
 
-The strict command validates active source/result tables, uses large active artifacts directly from the readable sibling bundle when they are intentionally absent from Git, checks Bio MAF v4 resources, confirms top-20 and HRD binary endpoints, verifies that generated manuscript outputs are not tracked for GitHub, scans active configs/source/docs/manifests for disallowed external path dependencies, and writes repo plus dataset read audits under `results/logs/`.
+The strict command validates active source/result tables, uses large active artifacts directly from the readable sibling bundle when they are intentionally absent from Git, checks Bio MAF resources, confirms top-20 and HRD binary endpoints, verifies that generated manuscript outputs are not tracked for GitHub, scans active configs/source/docs/manifests for disallowed external path dependencies, and writes repo plus dataset read audits under `results/logs/`.
 
 To check the sibling dataset folder without copying files back into the checkout:
 
@@ -193,3 +193,9 @@ The OncoKB cancer-gene table is fetched live from `https://public.api.oncokb.org
 
 ### Zenodo bundle
 The v2 bundle contains the superseded `hrd_muat_paired_tests.json` (ab_c_full numbers). A v3 bundle or version note is needed to publish the corrected faithful-run paired test.
+
+### Seven secondary contrasts: unrecoverable (documented 2026-10-14)
+The manuscript Methods states "We corrected seven secondary comparisons for multiple testing" with the example "HRD33 gain over mutation patterns alone: +0.037 (raw p=0.058, BH q=0.068)". An exhaustive search of the repository (all CSV, JSON, Python, and Markdown files, excluding .git/) found no file containing these seven contrasts with the cited values (+0.037/p=0.058/q=0.068). The closest artifact (`results/manuscript/plot_data/figure_4_maf_stack_vs_signatures.csv`) contains per-cell DeLong p-values with different values (HRD33 XGBoost: p=0.0706, q=0.1093). The seven-contrast BH family was computed during manuscript preparation but the contrast definitions and raw p-values were never committed. This is a documentation gap that cannot be reconstructed from available artifacts.
+
+### Zenodo bundle version note (2026-10-14)
+The manuscript references a Zenodo data bundle (v2). The v2 bundle contains the superseded `hrd_muat_paired_tests.json` with ab_c_full numbers (HRD Spearman diff 0.249) rather than the faithful-run numbers (diff 0.270 [0.220, 0.319]; HRD33 diff 0.165 [0.094, 0.236]). The correct values are in this repository at `results/tables/hrd_muat_paired_tests.json` (recomputed 2026-10-14). A v3 Zenodo upload was not performed (no deposition ID available in repo). Users of the v2 bundle should use the repo's JSON for the MuAt paired tests.

@@ -61,7 +61,7 @@ KEY_DATASET_LOCATIONS = [
     ("KUCAB raw mutation tables used by active runners", "datasets/kucab_mendeley/raw_mutation_tables/"),
     ("PCAWG/PanCancer signature data", "datasets/pcawg_pancan/"),
     ("GRCh37 reference genome", "references/grch37/"),
-    ("Bio MAF v4 feature resources", "resources/bio_maf_v4/"),
+    ("Bio MAF feature resources", "resources/bio_maf/"),
     ("COSMIC and other signature resources", "resources/signatures_cosmic/"),
     ("Dataset-backed MuAt/cache artifacts", "caches/"),
     ("Large manuscript/result artifacts", "results/"),

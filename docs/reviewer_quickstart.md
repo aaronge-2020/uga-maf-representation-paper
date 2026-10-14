@@ -64,7 +64,7 @@ Expected dataset locations in the companion bundle:
 - `datasets/kucab_mendeley/raw_mutation_tables/`: KUCAB raw mutation tables used by active runners.
 - `datasets/pcawg_pancan/`: PCAWG/PanCancer signature data.
 - `references/grch37/`: GRCh37 reference genome.
-- `resources/bio_maf_v4/`: Bio MAF v4 feature resources.
+- `resources/bio_maf_v4/`: Bio MAF feature resources.
 - `resources/signatures_cosmic/`: COSMIC and other signature resources.
 
 ## 3. Fast Reviewer Validation

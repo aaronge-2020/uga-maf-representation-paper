@@ -389,7 +389,7 @@ def build_muat_event_table(
 
 
 # MuAt's three modalities. The architecture was hardcoded to exactly these, which is why an
-# extended event representation had nowhere to go: Bio MAF v4's driver, hotspot and pathway
+# extended event representation had nowhere to go: Bio MAF's driver, hotspot and pathway
 # annotations could only ever enter the benchmark as tabular features, never as event tokens.
 # Note that gene identity is not among them -- MuAt does not use it.
 CORE_MODALITIES = ("motif", "position", "annotation")

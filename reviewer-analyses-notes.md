@@ -45,7 +45,7 @@ Nothing here edits the manuscript.
 
 ### Deviations
 - Task premise said "948-feature model scored a table with 1,130 columns."
-  The frozen Sig+MAF model itself has 1,130 features (948 Bio MAF v4 + 182
+  The frozen Sig+MAF model itself has 1,130 features (948 Bio MAF + 182
   signature features); 948 is the Bio MAF block alone. Outputs needed no
   correction — only the premise.
 - Pre-existing metrics used 2,000 bootstrap replicates (Sig+MAF seed 42,
@@ -219,7 +219,7 @@ New script `scripts/task1_gene_knowledge_ablations_v2.py` (the superseded
 `task1_gene_knowledge_ablations.py` / `task1_part2_ef_and_summary.py` used
 xgboost 3.4.1 and a non-native harness; left untouched, not used).
 
-1. Rebuilt the 8,800-tumour cohort, labels, the 948-col Bio MAF v4 matrix and
+1. Rebuilt the 8,800-tumour cohort, labels, the 948-col Bio MAF matrix and
    the 182-col signature matrix from `results/tables/` (+ the Task 0 rerun's
    `features_standard_sbs96_id83.csv.gz` for signatures). All three matrices
    digest-verified byte-for-byte against the archived checkpoint manifests
@@ -247,7 +247,7 @@ xgboost 3.4.1 and a non-native harness; left untouched, not used).
   `driver_gene_functional_event_log_count__` or
   `driver_gene_role_matched_event_log_count__` → 802 columns. Verified
   byte-identical to the feature table's `exact_consensus_driver_gene_identity`
-  block, and the 401 gene names verified identical to the 401-gene Bio MAF v4
+  block, and the 401 gene names verified identical to the 401-gene Bio MAF
   panel (`proposed_clinical_bio_v4_driver_gene_panel.csv`, all 401 selected).
 - **Knowledge**: column name starts with `oncokb_role_` (12), `cancer_hotspot_`
   (4), or `driver_evidence_` (16) → 32 columns, zero overlap with gene identity.

@@ -19,3 +19,9 @@ python==3.13.5
 scikit-learn==1.9.0
 xgboost==3.4.1
 # pandas, numpy versions unrecorded - see frozen_model_lockfile.txt for closest pinned versions
+#
+# Import analysis (2026-10-14): scripts/task5_pcawg_audit.py imports only
+# numpy, pandas (plus stdlib csv, pathlib). No sklearn/xgboost imports in the
+# audit script itself; xgboost is used via the frozen model files.
+# Minimum required: numpy, pandas (versions from frozen_model_lockfile.txt
+# are the closest pinned: numpy 1.26.4, pandas 2.1.4).

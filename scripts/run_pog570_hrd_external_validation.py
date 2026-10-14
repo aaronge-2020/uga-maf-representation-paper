@@ -2,7 +2,7 @@
 """Run frozen-model HRD validation on the independent POG570 cohort.
 
 POG570 MAF coordinates are standard one-based MAF coordinates. The script builds
-the same SBS96/ID83 and Bio-MAF v4 feature blocks used to fit the frozen TCGA
+the same SBS96/ID83 and Bio-MAF feature blocks used to fit the frozen TCGA
 model, predicts once, and evaluates the prespecified HRD cutoffs 24, 33, and 42.
 """
 
@@ -46,7 +46,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from utils.bio_maf_base_features import first_12  # noqa: E402
-from utils.quick_bio_v4_nested_feature_selection import build_bio_v4_features  # noqa: E402
+from utils.quick_bio_maf_nested_feature_selection import build_bio_maf_features  # noqa: E402
 
 
 DEFAULT_RAW = Path(
@@ -228,7 +228,7 @@ def generate_model_features(
     stage = stage_bio_inputs(raw_dir, output_dir, signatures)
     bio_dir = output_dir / "bio_maf_features"
     paths = {"raw_data": {"mc3_source_dir": stage}}
-    bio = build_bio_v4_features(paths, bio_dir, chunksize=chunksize, force=force)
+    bio = build_bio_maf_features(paths, bio_dir, chunksize=chunksize, force=force)
     signature_block = signatures.rename(columns={column: f"sig__{column}" for column in signatures if column in set(bio.columns)})
     common = signature_block.index.intersection(bio.index)
     combined = pd.concat([signature_block.loc[common], bio.loc[common]], axis=1)
@@ -426,7 +426,7 @@ def save_reproducibility(raw_dir: Path, model_dir: Path, clinical: pd.DataFrame,
         "preprocessing": [
             "POG standard one-based MAF coordinates passed unchanged to SigProfilerMatrixGenerator GRCh37",
             "SBS96 and ID83 channels normalized within sample; burdens transformed as log10(1+n)",
-            "Bio-MAF v4 generated with the fixed repo resources and feature schema",
+            "Bio-MAF generated with the fixed repo resources and feature schema",
             "signature columns colliding with Bio-MAF controls prefixed with sig__",
             "columns reordered exactly as feature_order.txt; NaN filled with zero; no scaling",
             "frozen model applied once without fitting or tuning on POG570",

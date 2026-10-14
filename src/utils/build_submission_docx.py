@@ -58,7 +58,7 @@ ABSTRACT = {
         "damage class (n = 259), TCGA-BRCA HRD score (n = 772), HRD-high status at threshold 33 "
         "(n = 772), TCGA cancer type among the fixed twenty-class registry (n = 8,800), and TCGA CDR "
         "overall survival (n = 9,986). Representations included mutational burden, SBS/DBS/ID "
-        "mutational spectra, Bio MAF v4 features, and combined Signatures + Bio MAF v4 "
+        "mutational spectra, Bio MAF features, and combined Signatures + Bio MAF "
         "features. Tabular learners used five outer folds, an inner train/validation split for "
         "hyperparameter selection, final refitting on the full outer-training fold, and pooled "
         "out-of-fold metrics. Survival was modeled with scikit-survival CoxNet and Harrell's "
@@ -71,8 +71,8 @@ ABSTRACT = {
         "performance generally came from Signatures + MAF stack with XGBoost: HRD score reached "
         "0.781 Spearman r, HRD33 high/low reached 0.867 AUROC, and the fixed top-20 cancer-type "
         "endpoint was evaluated by balanced accuracy. Overall survival was best predicted by the "
-        "combined signatures + Bio MAF v4 representation under CoxNet (C-index 0.647), with "
-        "Bio MAF v4 alone reaching 0.632 and signatures alone reaching 0.607. The active MuAt-compatible comparator was evaluated on HRD score and "
+        "combined signatures + Bio MAF representation under CoxNet (C-index 0.647), with "
+        "Bio MAF alone reaching 0.632 and signatures alone reaching 0.607. The active MuAt-compatible comparator was evaluated on HRD score and "
         "HRD33 high/low status and compared with the tuned Signatures + MAF stack XGBoost "
         "baselines on the same endpoint-specific folds."
     ),
@@ -125,7 +125,7 @@ FIGURE_CAPTIONS = [
     (
         "figure_5_overall_survival_cox.png",
         "Figure 5. Overall survival CoxNet benchmark.",
-        "Overall-survival C-index is shown for the scikit-survival CoxNet benchmark across burden, signatures, Bio MAF v4, and combined signature-plus-Bio MAF v4 representations.",
+        "Overall-survival C-index is shown for the scikit-survival CoxNet benchmark across burden, signatures, Bio MAF, and combined signature-plus-Bio MAF representations.",
     ),
 ]
 
@@ -379,8 +379,8 @@ def add_performance_table(doc: Document, table_dir: Path) -> None:
     reps = [
         ("Burden", "Mutational burden"),
         ("Signatures", "Mutational signatures"),
-        ("Bio MAF v4", "Bio MAF v4"),
-        ("Signatures + bio MAF", "Signatures + Bio MAF v4"),
+        ("Bio MAF", "Bio MAF"),
+        ("Signatures + bio MAF", "Signatures + Bio MAF"),
     ]
     rows: list[list[str]] = []
     group_rows: set[int] = set()
@@ -422,7 +422,7 @@ def add_representation_table(doc: Document, table_dir: Path) -> None:
     add_booktabs_table(
         doc,
         "Table 3. Representation summary and dimensionality.",
-        "Feature-dimensionality ranges are observed across endpoint/model rows because spectrum channels vary by endpoint data source and Bio MAF v4 blocks are selected within each outer fold's inner-validation split; MuAt-compatible uses padded mutation bags and learned embeddings rather than fixed tabular columns.",
+        "Feature-dimensionality ranges are observed across endpoint/model rows because spectrum channels vary by endpoint data source and Bio MAF blocks are selected within each outer fold's inner-validation split; MuAt-compatible uses padded mutation bags and learned embeddings rather than fixed tabular columns.",
         ["Representation", "Input signal", "Dimensionality", "Evaluated models"],
         rows,
         widths=[1.65, 4.1, 1.2, 1.75],
@@ -611,10 +611,10 @@ def build_docx(repo_root: Path, output: Path) -> None:
     add_paragraphs(
         doc,
         [
-            "Mutational burden features provide the minimal count-based baseline, and mutational signatures summarize SBS, DBS, and indel spectra. Bio MAF v4 converts each tumour's variable-length MC3 Mutation Annotation Format table into fixed, named biological feature blocks grounded in MAF/VEP annotations and vendored external cancer-gene, driver-evidence, and hotspot resources.",
-            "The strict Bio MAF v4 stack uses predeclared candidate blocks: compact biological annotations, external evidence-confidence controls, hotspot summaries, exact consensus driver-gene features, a full strict core, and optional mutation-load controls. Signatures are not counted as Bio MAF features; signatures + Bio MAF models concatenate the signature matrix with the Bio MAF block chosen inside the inner loop for that outer fold.",
-            "Bio MAF v4 is therefore not one feature per mutation. It is one fixed-length vector per tumour. The feature builder normalizes gene symbols and standard MAF/VEP fields, then computes named counts, fractions, unique-gene summaries, hotspot summaries, driver-evidence summaries, and allele-fraction summaries. Count features are log1p-transformed after all mutations for that tumour are counted.",
-            "Feature-block selection is nested: candidate Bio MAF v4 blocks are defined before cross-validation, selected only using each outer fold's inner-validation data, and then evaluated once on that outer fold. Held-out fold labels and held-out performance do not define the Bio MAF v4 feature schema.",
+            "Mutational burden features provide the minimal count-based baseline, and mutational signatures summarize SBS, DBS, and indel spectra. Bio MAF converts each tumour's variable-length MC3 Mutation Annotation Format table into fixed, named biological feature blocks grounded in MAF/VEP annotations and vendored external cancer-gene, driver-evidence, and hotspot resources.",
+            "The strict Bio MAF stack uses predeclared candidate blocks: compact biological annotations, external evidence-confidence controls, hotspot summaries, exact consensus driver-gene features, a full strict core, and optional mutation-load controls. Signatures are not counted as Bio MAF features; signatures + Bio MAF models concatenate the signature matrix with the Bio MAF block chosen inside the inner loop for that outer fold.",
+            "Bio MAF is therefore not one feature per mutation. It is one fixed-length vector per tumour. The feature builder normalizes gene symbols and standard MAF/VEP fields, then computes named counts, fractions, unique-gene summaries, hotspot summaries, driver-evidence summaries, and allele-fraction summaries. Count features are log1p-transformed after all mutations for that tumour are counted.",
+            "Feature-block selection is nested: candidate Bio MAF blocks are defined before cross-validation, selected only using each outer fold's inner-validation data, and then evaluated once on that outer fold. Held-out fold labels and held-out performance do not define the Bio MAF feature schema.",
             "For the neural comparator, a MuAt-compatible preprocessing layer turns each mutation into three token streams: a mutation motif token, a 1-Mb chromosome-position-bin token, and an annotation token derived from available MAF fields. The active comparator uses fixed-size deterministic token dictionaries, preventing held-out test samples from changing the available token set.",
         ],
     )
@@ -638,7 +638,7 @@ def build_docx(repo_root: Path, output: Path) -> None:
         doc,
         [
             "The MuAt-compatible comparator follows the central structure reported for MuAt: separate motif, position, and annotation embeddings; concatenation of modality embeddings; stacked Q/K/V self-attention; residual/normalization layers; attention-weighted set pooling; and a 24-dimensional tumour feature layer before prediction. The limited architecture search evaluates embedding sizes 128, 256, and 512; self-attention layer counts 1, 2, and 4; and attention-head counts 1 and 2 on the inner split before outer-fold refitting. We label this model MuAt-compatible rather than MuAt because official MuAt package checkpoints were not used for the manuscript comparison.",
-            "The MuAt paper clearly specifies sequence-context style mutation encodings, but the exact auxiliary biological annotation vocabulary is not fully reproducible from the bundled manuscript sources. The local event bag therefore uses deterministic MAF/VEP-derived motif, 1-Mb position-bin, and genic/exonic/strand annotation tokens. Broader external-resource annotations are confined to Bio MAF v4 tabular features and are treated as part of the representation difference tested by the benchmark.",
+            "The MuAt paper clearly specifies sequence-context style mutation encodings, but the exact auxiliary biological annotation vocabulary is not fully reproducible from the bundled manuscript sources. The local event bag therefore uses deterministic MAF/VEP-derived motif, 1-Mb position-bin, and genic/exonic/strand annotation tokens. Broader external-resource annotations are confined to Bio MAF tabular features and are treated as part of the representation difference tested by the benchmark.",
             "The active manuscript comparison evaluates this neural event-bag model only on raw HRD score and HRD33 high/low status. The event tensor allows up to 5,000 mutation events per tumour; samples above this ceiling are deterministically truncated after sorting events by chromosome, position, and motif. In practice, most TCGA-WES tumours were far below this ceiling.",
             "The HRD endpoints are active because measured MuAt-compatible OOF rows are present for them. Cancer-type, Kucab, survival, HRD24, and HRD42 MuAt rows are not active manuscript comparator claims.",
         ],
@@ -650,7 +650,7 @@ def build_docx(repo_root: Path, output: Path) -> None:
         doc,
         [
             "In the strict main panel, XGBoost models using mutational signatures outperformed burden on Kucab damage class (0.277 vs 0.114 balanced accuracy), HRD score (0.704 vs 0.596 Spearman r), HRD33 high/low status (0.845 vs 0.811 AUROC), and cancer-type prediction by balanced accuracy. Elastic-net models showed the same qualitative gain for Kucab damage class and cancer type but not for every clinical endpoint, underscoring that signatures are strong but not universally dominant.",
-            "The survival result should be interpreted separately from the older binary-OS draft: overall survival is now a time-to-event CoxNet endpoint evaluated by Harrell C-index. Under this survival analysis, the combined signatures + Bio MAF v4 representation achieved the strongest overall-survival C-index among the main tabular representations (0.647).",
+            "The survival result should be interpreted separately from the older binary-OS draft: overall survival is now a time-to-event CoxNet endpoint evaluated by Harrell C-index. Under this survival analysis, the combined signatures + Bio MAF representation achieved the strongest overall-survival C-index among the main tabular representations (0.647).",
         ],
     )
 

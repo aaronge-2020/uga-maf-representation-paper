@@ -58,7 +58,7 @@ from utils.config import load_yaml, resolve_paths_map  # noqa: E402
 SEED = 20260821
 OUT_ROOT = REPO_ROOT / "results/frozen_models"
 
-BIO_MAF_CACHE = REPO_ROOT / "results/tables/quick_bio_v4_maf_features.csv.gz"
+BIO_MAF_CACHE = REPO_ROOT / "results/tables/quick_bio_maf_features.csv.gz"
 SIGNATURE_REL = "datasets/tcga_mc3/features/features_standard_sbs96_id83.csv.gz"
 COHORT_REL = "datasets/tcga_brca_hrd/cohort/final_analysis_cohort.tsv"
 
@@ -385,7 +385,7 @@ def write_readme(dirs: list[Path]) -> None:
         "",
         "- **`standard_sbs96_id83`** — SBS96 and ID83 counts are computable from any MAF plus a",
         "  reference genome. Realistic for POG570 and PCAWG.",
-        "- **`signatures_plus_MAF_stack`** — additionally requires all 948 Bio MAF v4 columns, which",
+        "- **`signatures_plus_MAF_stack`** — additionally requires all 948 Bio MAF columns, which",
         "  depend on VEP consequence and impact, SIFT, PolyPhen, OncoKB role, hotspot annotation and",
         "  VAF. If the external cohort is not annotated identically these cannot be reconstructed,",
         "  and no amount of model export will help.",

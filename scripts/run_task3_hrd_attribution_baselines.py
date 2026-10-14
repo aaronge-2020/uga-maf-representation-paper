@@ -61,9 +61,9 @@ SEEDS = {
 TASKS = {"HRD_Score": "regression", "hrd_binary_33": "binary", "hrd_binary_42": "binary"}
 METRICS = {"HRD_Score": "spearman", "hrd_binary_33": "auroc", "hrd_binary_42": "auroc"}
 CHECKPOINT_PREFIX = {
-    "HRD_Score": "HRD_Score__signatures_plus_MAF_stack__xgboost__main_complete_panel_mc3_signatures_plus_maf_stack_bio_v4_nested_fs_ac11587791bbbd40db3991bb",
-    "hrd_binary_33": "hrd_binary_33__signatures_plus_MAF_stack__xgboost__main_complete_panel_mc3_signatures_plus_maf_stack_bio_v4_nested_fs_ac11587791bbbd40db3991bb",
-    "hrd_binary_42": "hrd_binary_42__signatures_plus_MAF_stack__xgboost__main_complete_panel_mc3_signatures_plus_maf_stack_bio_v4_nested_fs_ac11587791bbbd40db3991bb",
+    "HRD_Score": "HRD_Score__signatures_plus_MAF_stack__xgboost__main_complete_panel_mc3_signatures_plus_maf_stack_bio_nested_fs_ac11587791bbbd40db3991bb",
+    "hrd_binary_33": "hrd_binary_33__signatures_plus_MAF_stack__xgboost__main_complete_panel_mc3_signatures_plus_maf_stack_bio_nested_fs_ac11587791bbbd40db3991bb",
+    "hrd_binary_42": "hrd_binary_42__signatures_plus_MAF_stack__xgboost__main_complete_panel_mc3_signatures_plus_maf_stack_bio_nested_fs_ac11587791bbbd40db3991bb",
 }
 BASELINES = ("sig3_only", "brca12_only", "sig3_brca12")
 BASELINE_FEATURES = {
@@ -122,7 +122,7 @@ def load_baseline_features() -> pd.DataFrame:
     sbs3 = pd.read_csv(INPUTS / "sbs3_activity_772.csv")
     sbs3 = sbs3.rename(columns={"sample": "patient"}).set_index("patient")["SBS3"]
     bio = pd.read_csv(
-        REPO_ROOT / "results/tables/quick_bio_v4_maf_features.csv.gz",
+        REPO_ROOT / "results/tables/quick_bio_maf_features.csv.gz",
         usecols=["sample", "driver_gene_role_matched_event_log_count__BRCA1",
                  "driver_gene_role_matched_event_log_count__BRCA2"],
     )

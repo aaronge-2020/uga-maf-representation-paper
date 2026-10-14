@@ -24,7 +24,7 @@ if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
 from runners.run_main_manuscript_complete_panel import (  # noqa: E402
-    BIO_MAF_V4_MODEL_IDS,
+    BIO_MAF_MODEL_IDS,
     EXPERIMENT_ID,
     MAF_REPRESENTATION,
     _load_mc3_endpoints,
@@ -146,12 +146,12 @@ def main() -> None:
         ("burden_only", burden, standard_cache_key, "MC3 cached burden-only matrix"),
         ("standard_sbs96_id83", standard, standard_cache_key, "MC3 cached SBS96+ID83 signature matrix"),
     ]
-    for model_id in BIO_MAF_V4_MODEL_IDS:
+    for model_id in BIO_MAF_MODEL_IDS:
         frame, cache_key = _load_mc3_maf_features(ctx, model_id, runner_settings)
         representation = MAF_REPRESENTATION[model_id]
         counts = frame.attrs.get("candidate_feature_set_counts") or {}
         construction = (
-            f"MC3/HRD {model_id}; Bio MAF v4 with fixed external resources and nested inner-loop "
+            f"MC3/HRD {model_id}; Bio MAF with fixed external resources and nested inner-loop "
             f"feature-block selection ({json.dumps(counts, sort_keys=True)})"
         )
         feature_specs.append((representation, frame, cache_key, construction))

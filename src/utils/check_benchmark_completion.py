@@ -197,8 +197,8 @@ def _leakage_safe_maf_rows(frame: pd.DataFrame, *, strict: bool, settings: dict[
     forbidden_metadata_pattern = "leg" + "acy|transductive|full-cohort unsupervised|svd|idf|top-variance"
     bad_tokens = text.str.contains(forbidden_metadata_pattern, regex=True, na=False)
     safe_note_pattern = (
-        "bio maf v4|"
-        "frozen_biological_v4_nested_fs|"
+        "bio maf|"
+        "frozen_biological_nested_fs|"
         "nested inner-loop|"
         "feature-block selection|"
         "fixed capped categorical event-token|"

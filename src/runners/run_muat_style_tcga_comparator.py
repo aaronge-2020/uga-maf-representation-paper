@@ -345,7 +345,7 @@ def _write_fidelity_report(path: Path, *, official_available: bool, smoke_run: b
         "## Partial",
         "- Motif recovery uses MC3 `CONTEXT` where available; rows without reference context fall back to `N` flanks.",
         "- `cancer_type_top20` uses the fixed manuscript class list and canonical matched-feature folds; `tcga_20_type` uses the MuAt-style top-20-by-count label loader.",
-        "- The source paper clearly describes sequence-context encodings, but the exact auxiliary biological annotation vocabulary is not fully specified in the bundled manuscript sources. This implementation uses deterministic MAF/VEP-derived genic, exonic, and strand tokens; broader Bio MAF v4 external-resource features are part of the tabular benchmark rather than this MuAt-compatible event bag.",
+        "- The source paper clearly describes sequence-context encodings, but the exact auxiliary biological annotation vocabulary is not fully specified in the bundled manuscript sources. This implementation uses deterministic MAF/VEP-derived genic, exonic, and strand tokens; broader Bio MAF external-resource features are part of the tabular benchmark rather than this MuAt-compatible event bag.",
         "",
         "## Unsupported In Bundled TCGA WES",
         "- PCAWG WGS training, GEL/ICGC/CRC external validation, SV/MEI modalities, and official pretrained checkpoint claims unless the official MuAt CLI/checkpoints are configured and executed.",

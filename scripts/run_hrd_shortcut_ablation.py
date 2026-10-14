@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Does Bio MAF v4 predict HRD, or is it exploiting obvious shortcuts?
+"""Does Bio MAF predict HRD, or is it exploiting obvious shortcuts?
 
 A reviewer can reasonably ask whether the HRD result reflects learned mutation biology or two
 much simpler signals:
@@ -14,7 +14,7 @@ much simpler signals:
 This runs the same nested out-of-fold HRD benchmark three ways and reports the cost of removing
 each shortcut:
 
-    full          signatures + all Bio MAF v4 features
+    full          signatures + all Bio MAF features
     no_hrd_genes  minus every per-gene column for the 16 HRD/HRR genes  (32 columns)
     no_vaf        minus every VAF-derived column                        (14 columns)
 
@@ -49,7 +49,7 @@ from utils.nested_oof import evaluate_nested_oof  # noqa: E402
 
 PAIRED_SEED = 20260820
 
-BIO_MAF_CACHE = REPO_ROOT / "results/tables/quick_bio_v4_maf_features.csv.gz"
+BIO_MAF_CACHE = REPO_ROOT / "results/tables/quick_bio_maf_features.csv.gz"
 SIGNATURE_REL = "datasets/tcga_mc3/features/features_standard_sbs96_id83.csv.gz"
 COHORT_REL = "datasets/tcga_brca_hrd/cohort/final_analysis_cohort.tsv"
 
@@ -68,7 +68,7 @@ ARMS = ("full", "no_hrd_genes", "no_vaf")
 
 
 def load_features(datasets_dir: Path) -> pd.DataFrame:
-    """Signatures + Bio MAF v4, indexed by 12-character patient barcode."""
+    """Signatures + Bio MAF, indexed by 12-character patient barcode."""
     bio = pd.read_csv(BIO_MAF_CACHE)
     index_col = "sample" if "sample" in bio.columns else bio.columns[0]
     bio[index_col] = bio[index_col].astype(str).str[:12]

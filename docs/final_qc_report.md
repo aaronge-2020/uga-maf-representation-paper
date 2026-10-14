@@ -46,12 +46,12 @@ Asset paths, sizes, purposes, source locations or URLs, checksums, destinations,
 - No retired hash-derived MAF workflow is active.
 - COSMIC/signature resources are kept separate from Bio MAF resources.
 - Nested cross-validation remains active.
-- Bio MAF v4 feature selection is restricted to inner-loop tuning.
+- Bio MAF feature selection is restricted to inner-loop tuning.
 - Endpoint labels and held-out fold performance are not used to define Bio MAF features.
 - Checkpoint reuse is guarded by data, label, feature, sample, and configuration fingerprints.
 - `cancer_type_top20` is active.
 - HRD binary endpoints are included.
-- Bio MAF v4 source tables/resources are present for regenerating S4/S5/S6 outputs.
+- Bio MAF source tables/resources are present for regenerating S4/S5/S6 outputs.
 - Stale feature-ranking claims and old Bio MAF/hash-derived MAF wording are not part of the active public narrative.
 
 ## Latest Validation Evidence
@@ -62,7 +62,7 @@ Asset paths, sizes, purposes, source locations or URLs, checksums, destinations,
 - Strict read audit: repo and dataset-bundle reads were reported with zero reads outside the allowed roots.
 - Manuscript output policy: generated files under `results/manuscript/` are not tracked for GitHub.
 - Active endpoints confirmed: `HRD_Score`, `OS`, `cancer_type_top20`, `damage_class`, `hrd_binary_24`, `hrd_binary_33`, and `hrd_binary_42`.
-- Bio MAF v4 source outputs confirmed: source tables and resources required to regenerate S4/S5/S6/interpretability outputs are present.
+- Bio MAF source outputs confirmed: source tables and resources required to regenerate S4/S5/S6/interpretability outputs are present.
 - Reviewer dry run: `.venv\Scripts\python.exe scripts\reviewer_workflow.py reproduce --datasets-dir ../github_exports_datasets --dry-run` completed with `Status: reviewer_dry_run_complete`.
 - GitHub upload prep: active large assets are kept in `../github_exports_datasets` and read directly during validation; the Git checkout does not need duplicate large files.
 - Reviewer setup check on the pruned checkout: `python scripts\reviewer_workflow.py start --datasets-dir ../github_exports_datasets` returned `Status: READY` and verified 1,257 of 1,257 dataset-bundle files.
