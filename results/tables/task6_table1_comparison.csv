@@ -1,0 +1,9 @@
+endpoint,representation,learner,metric,status,manuscript_balanced_accuracy,regenerated_balanced_accuracy,delta,abs_delta,within_tolerance,manuscript_runtime_seconds,regenerated_runtime_seconds
+cancer_type_top20,burden_only,linear,balanced_accuracy,measured,0.2473204505990421,0.2473204505990421,0.0,0.0,True,13.339,302.225
+cancer_type_top20,burden_only,xgboost,balanced_accuracy,measured,0.254945016639541,0.2587351827150739,0.003790166075532897,0.003790166075532897,False,65.263,783.579
+cancer_type_top20,standard_sbs96_id83,linear,balanced_accuracy,skipped_blocked_slot,0.5263482583725251,,,,,2122.713,
+cancer_type_top20,standard_sbs96_id83,xgboost,balanced_accuracy,measured,0.5381477651217608,0.5449880517214332,0.006840286599672396,0.006840286599672396,False,1214.115,6984.102
+cancer_type_top20,MAF_stack_only,linear,balanced_accuracy,pending_not_regenerated,0.5712277179766847,,,,,8403.414,
+cancer_type_top20,MAF_stack_only,xgboost,balanced_accuracy,pending_not_regenerated,0.6618295959768071,,,,,5780.303,
+cancer_type_top20,signatures_plus_MAF_stack,linear,balanced_accuracy,pending_not_regenerated,0.6723468531222593,,,,,13176.322,
+cancer_type_top20,signatures_plus_MAF_stack,xgboost,balanced_accuracy,pending_not_regenerated,0.7377837111543271,,,,,11829.337,

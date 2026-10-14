@@ -1,0 +1,6 @@
+# mutation_count.txt
+# provenance: Table 1 representation 'burden_only' (mutation count). Source: /home/hatch/workspace/github_exports_datasets/datasets/tcga_mc3/features/features_burden_only.csv (header row of the deposited bundle file).
+# n = 3
+log10_sbs_burden
+log10_id_burden
+id_fraction

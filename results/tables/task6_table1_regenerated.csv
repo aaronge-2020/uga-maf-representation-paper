@@ -1,0 +1,9 @@
+endpoint,representation,learner,status,balanced_accuracy,accuracy,runtime_seconds
+cancer_type_top20,burden_only,linear,measured,0.2473204505990421,0.2425,302.225
+cancer_type_top20,burden_only,xgboost,measured,0.2587351827150739,0.2910227272727272,783.579
+cancer_type_top20,standard_sbs96_id83,linear,measured,,,0.001
+cancer_type_top20,standard_sbs96_id83,xgboost,measured,0.5449880517214332,0.56875,6984.102
+cancer_type_top20,MAF_stack_only,linear,pending_not_regenerated,,,
+cancer_type_top20,MAF_stack_only,xgboost,pending_not_regenerated,,,
+cancer_type_top20,signatures_plus_MAF_stack,linear,pending_not_regenerated,,,
+cancer_type_top20,signatures_plus_MAF_stack,xgboost,pending_not_regenerated,,,

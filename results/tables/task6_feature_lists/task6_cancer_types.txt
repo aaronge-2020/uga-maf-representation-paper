@@ -1,0 +1,23 @@
+# task6_cancer_types.txt
+# provenance: The 20 cancer types of the cancer_type_top20 endpoint (src/utils/endpoint_registry.py::TCGA_CANCER_TYPE_TOP20).
+# n = 20
+BRCA
+UCEC
+LUAD
+LGG
+HNSC
+PRAD
+THCA
+LUSC
+SKCM
+STAD
+BLCA
+OV
+COAD
+GBM
+KIRC
+LIHC
+CESC
+KIRP
+SARC
+ESCA

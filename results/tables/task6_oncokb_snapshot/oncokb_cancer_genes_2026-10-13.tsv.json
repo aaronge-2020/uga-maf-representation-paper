@@ -1,0 +1,9 @@
+{
+  "url": "https://public.api.oncokb.org/api/v1/utils/cancerGeneList",
+  "target": "config/feature_resources/oncokb_cancer_genes.tsv",
+  "fetched_this_run": false,
+  "sha256": "9f80168c8fc9206f707488a5ba06b779cade26aa5c0900c93fa2a168e8fcadb5",
+  "bytes": 101497,
+  "n_genes": 1247,
+  "download_date_utc": "2026-10-13"
+}

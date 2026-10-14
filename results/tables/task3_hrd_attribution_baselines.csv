@@ -1,0 +1,99 @@
+baseline,endpoint,metric,scope,fold,score,n_test,n_features,n_samples,n_defined_folds,source
+sig3_only,HRD_Score,spearman,fold,1.0,,155.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,HRD_Score,spearman,fold,2.0,0.1387219965436499,155.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,HRD_Score,spearman,fold,3.0,0.1173412736152545,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,HRD_Score,spearman,fold,4.0,0.2069668069662061,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,HRD_Score,spearman,fold,5.0,0.1587200938426954,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,HRD_Score,spearman,pooled,,-0.0678046414975228,772.0,1.0,772,4.0,task3: fixed-config XGBoost in archived original folds
+brca12_only,HRD_Score,spearman,fold,1.0,0.1904909334357059,155.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,HRD_Score,spearman,fold,2.0,0.0581521330342424,155.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,HRD_Score,spearman,fold,3.0,,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,HRD_Score,spearman,fold,4.0,0.2795644340523023,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,HRD_Score,spearman,fold,5.0,0.1426224808563155,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,HRD_Score,spearman,pooled,,-0.0646353401763108,772.0,1.0,772,4.0,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,HRD_Score,spearman,fold,1.0,0.1904909334357059,155.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,HRD_Score,spearman,fold,2.0,0.127515036680765,155.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,HRD_Score,spearman,fold,3.0,0.1173412736152545,154.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,HRD_Score,spearman,fold,4.0,0.2794804270947585,154.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,HRD_Score,spearman,fold,5.0,0.2142095365829903,154.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,HRD_Score,spearman,pooled,,-0.0403442787256256,772.0,2.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_33,auroc,fold,1.0,0.5106382978723404,155.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_33,auroc,fold,2.0,0.5,155.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_33,auroc,fold,3.0,0.5,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_33,auroc,fold,4.0,0.5106382978723404,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_33,auroc,fold,5.0,0.4953271028037383,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_33,auroc,pooled,,0.5006592952689607,772.0,1.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_33,auroc,fold,1.0,0.5060086682427107,155.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_33,auroc,fold,2.0,0.5212765957446809,155.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_33,auroc,fold,3.0,0.5652173913043478,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_33,auroc,fold,4.0,0.5059654006760788,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_33,auroc,fold,5.0,0.5059654006760788,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_33,auroc,pooled,,0.5074150859466844,772.0,1.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_33,auroc,fold,1.0,0.5167454688731284,155.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_33,auroc,fold,2.0,0.5212765957446809,155.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_33,auroc,fold,3.0,0.5652173913043478,154.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_33,auroc,fold,4.0,0.5167031218930205,154.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_33,auroc,fold,5.0,0.5011930801352157,154.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_33,auroc,pooled,,0.5109141168620723,772.0,2.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_42,auroc,fold,1.0,0.5,155.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_42,auroc,fold,2.0,0.5,155.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_42,auroc,fold,3.0,0.5,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_42,auroc,fold,4.0,0.5333333333333333,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_42,auroc,fold,5.0,0.5166666666666667,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_42,auroc,pooled,,0.5103965702036442,772.0,1.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_42,auroc,fold,1.0,0.546,155.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_42,auroc,fold,2.0,0.5586666666666666,155.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_42,auroc,fold,3.0,0.5333333333333333,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_42,auroc,fold,4.0,0.5166666666666667,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_42,auroc,fold,5.0,0.5166666666666667,154.0,1.0,772,,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_42,auroc,pooled,,0.5241532690246516,772.0,1.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_42,auroc,fold,1.0,0.5425333333333333,155.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_42,auroc,fold,2.0,0.5917333333333332,155.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_42,auroc,fold,3.0,0.5333333333333333,154.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_42,auroc,fold,4.0,0.55,154.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_42,auroc,fold,5.0,0.5166666666666667,154.0,2.0,772,,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_42,auroc,pooled,,0.5330171489817792,772.0,2.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+brca12_only,HRD_Score,spearman,fold_mean,,0.1677074953446415,,1.0,772,4.0,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_33,auroc,fold_mean,,0.5208866913287793,,1.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+brca12_only,hrd_binary_42,auroc,fold_mean,,0.5342666666666667,,1.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,HRD_Score,spearman,fold_mean,,0.1858074414818948,,2.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_33,auroc,fold_mean,,0.5242271315900787,,2.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+sig3_brca12,hrd_binary_42,auroc,fold_mean,,0.5468533333333333,,2.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+sig3_only,HRD_Score,spearman,fold_mean,,0.1554375427419514,,1.0,772,4.0,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_33,auroc,fold_mean,,0.5033207397096838,,1.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+sig3_only,hrd_binary_42,auroc,fold_mean,,0.51,,1.0,772,5.0,task3: fixed-config XGBoost in archived original folds
+sigmaf_signatures_plus_MAF_stack,HRD_Score,spearman,fold,1.0,0.7679176219158758,155.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,HRD_Score,spearman,fold,2.0,0.7574765508639203,155.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,HRD_Score,spearman,fold,3.0,0.7540857474969455,154.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,HRD_Score,spearman,fold,4.0,0.7862932384847322,154.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,HRD_Score,spearman,fold,5.0,0.8167431971537583,154.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,HRD_Score,spearman,fold_mean,,0.7765032711830464,,1130.0,772,5.0,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,HRD_Score,spearman,pooled,,0.7666447319392569,772.0,1130.0,772,5.0,"main_manuscript_complete_panel_endpoint_results.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_33,auroc,fold,1.0,0.9133175728920412,155.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_33,auroc,fold,2.0,0.909377462568952,155.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_33,auroc,fold,3.0,0.9404186795491144,154.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_33,auroc,fold,4.0,0.8842712268840723,154.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_33,auroc,fold,5.0,0.9079339828991848,154.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_33,auroc,fold_mean,,0.911063784958673,,1130.0,772,5.0,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_33,auroc,pooled,,0.900811806945636,772.0,1130.0,772,5.0,"main_manuscript_complete_panel_endpoint_results.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_42,auroc,fold,1.0,0.9024,155.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_42,auroc,fold,2.0,0.8977333333333334,155.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_42,auroc,fold,3.0,0.953763440860215,154.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_42,auroc,fold,4.0,0.9344086021505376,154.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_42,auroc,fold,5.0,0.9376344086021504,154.0,1130.0,772,,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_42,auroc,fold_mean,,0.9251879569892474,,1130.0,772,5.0,"main_manuscript_complete_panel_fold_metrics.csv (signatures_plus_MAF_stack, xgboost)"
+sigmaf_signatures_plus_MAF_stack,hrd_binary_42,auroc,pooled,,0.8969614147909968,772.0,1130.0,772,5.0,"main_manuscript_complete_panel_endpoint_results.csv (signatures_plus_MAF_stack, xgboost)"
+patterns_alone_muat,HRD_Score,spearman,fold,1.0,0.5527364388010135,155.0,,772,,muat_style_tcga_comparator_ab_c_full_fold_metrics.csv (stage C exact dicts)
+patterns_alone_muat,HRD_Score,spearman,fold,2.0,0.4483345330419603,155.0,,772,,muat_style_tcga_comparator_ab_c_full_fold_metrics.csv (stage C exact dicts)
+patterns_alone_muat,HRD_Score,spearman,fold,3.0,0.513346401331266,154.0,,772,,muat_style_tcga_comparator_ab_c_full_fold_metrics.csv (stage C exact dicts)
+patterns_alone_muat,HRD_Score,spearman,fold,4.0,0.5224081609333963,154.0,,772,,muat_style_tcga_comparator_ab_c_full_fold_metrics.csv (stage C exact dicts)
+patterns_alone_muat,HRD_Score,spearman,fold,5.0,0.5993493717984953,154.0,,772,,muat_style_tcga_comparator_ab_c_full_fold_metrics.csv (stage C exact dicts)
+patterns_alone_muat,HRD_Score,spearman,fold_mean,,0.5272349811812262,,,772,5.0,"hrd_muat_paired_tests.json notes (fold-mean estimator, matches Table 1)"
+patterns_alone_muat,HRD_Score,spearman,pooled,,0.5041218292489439,772.0,,772,5.0,muat_ablation_summary.csv stage C (pooled OOF)
+patterns_alone_muat,hrd_binary_33,auroc,fold,1.0,0.7619188337273444,155.0,,772,,muat_style_tcga_comparator_ab_c_full_fold_metrics.csv (stage C exact dicts)
+patterns_alone_muat,hrd_binary_33,auroc,fold,2.0,0.7466509062253743,155.0,,772,,muat_style_tcga_comparator_ab_c_full_fold_metrics.csv (stage C exact dicts)
+patterns_alone_muat,hrd_binary_33,auroc,fold,3.0,0.7148752012882448,154.0,,772,,muat_style_tcga_comparator_ab_c_full_fold_metrics.csv (stage C exact dicts)
+patterns_alone_muat,hrd_binary_33,auroc,fold,4.0,0.7422946907933983,154.0,,772,,muat_style_tcga_comparator_ab_c_full_fold_metrics.csv (stage C exact dicts)
+patterns_alone_muat,hrd_binary_33,auroc,fold,5.0,0.79091270630344,154.0,,772,,muat_style_tcga_comparator_ab_c_full_fold_metrics.csv (stage C exact dicts)
+patterns_alone_muat,hrd_binary_33,auroc,fold_mean,,0.7513304676675604,,,772,5.0,"hrd_muat_paired_tests.json notes (fold-mean estimator, matches Table 1)"
+patterns_alone_muat,hrd_binary_33,auroc,pooled,,0.7028246433450894,772.0,,772,5.0,muat_ablation_summary.csv stage C (pooled OOF)
