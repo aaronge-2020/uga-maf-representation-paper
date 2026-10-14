@@ -1,0 +1,143 @@
+# MuAt-compatible cancer_type_top20: FAITHFUL fixed-architecture protocol (full 5-fold run).
+#
+# Purpose
+#   Answer "train MuAt properly" with a protocol that matches the official MuAt trainer as closely
+#   as our data permits, instead of the search-based protocol used for the 20 Aug 2026 run. Every
+#   setting below is tagged with its source so the fidelity claim is checkable line by line.
+#
+# Source key
+#   [PAPER]  Sanjaya et al. 2023, Genome Medicine, Methods text.
+#   [CODE]   primasanjaya/muat (muat/trainer.py, muat/core.py, muat/pkg_reproduce/experiments.json),
+#            read 2 Oct 2026. This is the maintained 2026 software, not the 2023 training scripts.
+#   [LEDGER] experiments.json reproduction recipes (tags a1, d1-d4): epoch 100, batch 4,
+#            lr 0.001, n_layer 1, n_head 1, n_emb 128, mutation_sampling_size 5000.
+#   [OURS]   Our choice, no MuAt counterpart; stated so it is not mistaken for fidelity.
+#
+# Notes on what is NOT knowable
+#   The published checkpoints' trainer_config.json is empty (experiments.json, a1_d1_hfmatch
+#   _hyperparam_note), so the exact 2023 optimiser hyperparameters cannot be read off the
+#   artefacts. We use the paper's stated values where the paper states them and the current
+#   official defaults otherwise, and say which is which.
+#
+# What this run changes relative to the 20 Aug protocol
+#   - fixed architecture 128 / 1 layer / 1 head, no per-fold search      [LEDGER, README example]
+#   - constant learning rate, no scheduler                               [CODE: scheduler only with patience>0]
+#   - weight_decay 0.001                                                 [CODE: TrainerConfig default, never overridden]
+#   - all 150 epochs, best checkpoint by validation accuracy             [CODE: trainer.py best_ckpt rule, no early stop by default]
+#   - no divergence guard (nothing to guard: no search)                  [CODE]
+#   - no gradient clipping                                               [CODE: grad_norm_clip=None]
+#   - MuAt symbolic motif grammar + transcriptional strand (arm D tokens) [PAPER]
+#
+# What stays the same as every prior run
+#   SGD momentum 0.9 [PAPER, CODE], lr 6e-4 [PAPER], batch size 1 [PAPER], 150 epochs [PAPER],
+#   5000-event cap [LEDGER], exact token dictionaries, MuAt motif/position/annotation modalities,
+#   canonical outer folds shared with the tabular panel [OURS, required for a fair comparison],
+#   attention-weighted pooling and the 24-dim tumour feature layer [PAPER].
+#
+# Residual deviations that remain even here (cannot be removed on TCGA WES)
+#   - Trained from scratch on TCGA exome; official MuAt was trained on PCAWG whole genome.
+#   - No SV/MEI modalities (not callable from WES MAF).
+#   - Nested inner split for epoch selection [OURS]. Official MuAt selects the best epoch on the
+#     held-out split itself (experiments.json d1 _split_note calls this out). We do not, because
+#     that would leak test information into the comparator and the tabular panel does not do it.
+#
+# Launch
+#   python src/run_all_experiments.py --config config/experiment_settings.muat_top20_faithful_fixed_arch.yaml \
+#       --paths config/paths.yaml --datasets-dir <bundle>
+#   Expected wall time on an RTX 3080: 150 inner epochs + up to 150 refit epochs per fold at the
+#   smallest architecture; roughly 3 to 5 h per fold, 15 to 25 h for all five. No cached
+#   checkpoint matches this protocol, so all five folds train.
+
+runtime_profile: muat-compatible-top20-faithful-fixed-arch
+tree_method: hist
+cv_folds: 5
+endpoint_registry: config/endpoint_registry.yaml
+
+feature_cache:
+  enabled: true
+  dir: results/cache/features
+  validate_fasta: true
+
+experiments:
+  main_manuscript_complete_panel:
+    enabled: false
+  muat_style_tcga_comparator:
+    enabled: true
+    output_tag: cancer_type_top20_faithful_fixed_arch
+    endpoints:
+      - cancer_type_top20
+    primary_task: cancer_type_top20
+    primary_metric: balanced_accuracy          # [OURS] reporting metric shared with the tabular panel
+    nested_validation: true                    # [OURS] see residual deviations
+    selection_metric: accuracy                 # [CODE] best_ckpt chosen by validation accuracy
+    split_manifest_source: results/tables/main_manuscript_complete_panel_oof_predictions.csv
+    split_manifest_endpoint: cancer_type_top20
+    split_manifest_representation: signatures_plus_MAF_stack
+    split_manifest_learner: xgboost
+    require_canonical_split: true
+    paper_reference_accuracy: 0.641
+    paper_reference_top5_accuracy: 0.906
+    run_manuscript_endpoints: false
+    secondary_endpoints: []
+    smoke_run: false
+    folds: 5
+
+    # ---- Training recipe ---------------------------------------------------------------------
+    epochs: 150                                # [PAPER]
+    batch_size: 1                              # [PAPER]
+    eval_batch_size: 1
+    lr: 0.0006                                 # [PAPER]
+    momentum: 0.9                              # [PAPER, CODE]
+    weight_decay: 0.001                        # [CODE] TrainerConfig default; 2023 value unverifiable
+    scheduler: none                            # [CODE] constant LR
+    early_stopping_patience: 0                 # [CODE] run all epochs, keep best validation epoch
+    dropout: 0.1
+    max_events_per_sample: 5000                # [LEDGER]
+
+    # ---- Architecture: fixed, no search ------------------------------------------------------
+    embed_dim: 128                             # [LEDGER]
+    num_layers: 1                              # [LEDGER]
+    attention_heads: 1                         # [LEDGER]
+    feature_dim: 24                            # [PAPER]
+    pooling_mode: attention_weighted
+    architecture_search_enabled: false
+    # With a single candidate, architecture_search_epochs defaults to `epochs`, so the one inner
+    # pass IS the full 150-epoch epoch-selection pass and no separate final pass is needed.
+    final_epoch_selection: true
+
+    # ---- Harness guard: off. Nothing to guard with no search; keeps the recipe untouched. ------
+    divergence_loss_factor: 0.0
+
+    # ---- Tokens -------------------------------------------------------------------------------
+    dictionary_mode: exact
+    # Arm D token grammar [PAPER]: bounded three-symbol motif windows (A[C>T]G) and the four-class
+    # transcriptional strand attribute. The 20 Aug cancer typing run used the legacy grammar
+    # (one token per allele string, 11,329 motifs), which is less faithful; see
+    # config/experiment_settings.muat_ab_d_faithful.yaml for the full rationale.
+    motif_grammar: muat_symbolic
+    annotation_strand: transcriptional
+    motif_hash_buckets: 1024
+    position_hash_buckets: 2048
+    annotation_hash_buckets: 256
+    maf_chunksize: 500000
+    official_mutation_type: snv+mnv+indel
+
+    # ---- Runtime ------------------------------------------------------------------------------
+    # Own checkpoint directory. Fold checkpoints are keyed by endpoint+fold, so without this the
+    # run would overwrite the 20 Aug search-protocol checkpoints that the fold-3 rerun reuses.
+    checkpoint_subdir: full_faithful_fixed_arch
+    device: auto
+    amp: true
+    torch_num_threads: 8
+    dataloader_workers: 0
+    preload_tensors_to_device: true
+    trim_to_observed_events: true
+    resume_checkpoints: true
+    epoch_checkpoints: true
+    progress_interval_epochs: 10
+
+outputs:
+  make_figures_after_run: false
+  cleanup_work_dir_after_run: false
+  strict_manuscript: true
+  strict_no_leakage: true

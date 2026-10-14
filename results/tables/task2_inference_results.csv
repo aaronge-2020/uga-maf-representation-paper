@@ -1,6 +1,6 @@
 contrast_id,endpoint,metric,estimator,model_A,model_B,n_tumours,point_estimate,ci_low_95,ci_high_95,raw_p,q_bh,status
-C1a,cancer_type_top20,balanced_accuracy,pooled OOF,signatures_plus_MAF_stack (XGBoost),MAF_stack_only (XGBoost) Task-1 control (a) refit,8800,0.072041,0.063315,0.080799,0.0,0.0,computable
-C1b,cancer_type_top20,balanced_accuracy,pooled OOF,signatures_plus_MAF_stack (XGBoost),MAF_stack_only (XGBoost) archived OOF,8800,0.075954,0.066996,0.084998,0.0,0.0,computable
+C1a,cancer_type_top20,balanced_accuracy,pooled OOF,signatures_plus_MAF_stack (XGBoost),MAF_stack_only (XGBoost) Task-1 control (a) re-run,8800,0.075954,0.066996,0.084998,0.0,0.0,computable (re-run 2026-10-14 from task1_oof_sigmaf_a_full.csv vs task1_oof_maf_a_full.csv; original 0.072041 used superseded exploratory refit not in repo)
+C1b,cancer_type_top20,balanced_accuracy,pooled OOF,signatures_plus_MAF_stack (XGBoost),MAF_stack_only (XGBoost) archived OOF,8800,0.075954,0.066996,0.084998,0.0,0.0,computable (same files as C1a; sensitivity label retained for traceability)
 C2,cancer_type_top20,balanced_accuracy,pooled OOF,signatures_plus_MAF_stack (XGBoost),standard_sbs96_id83 (XGBoost) patterns alone,8800,,,,,,blocked: archived patterns-alone OOF unavailable
 C3,HRD_Score,spearman,pooled OOF,signatures_plus_MAF_stack (XGBoost),standard_sbs96_id83 (XGBoost) patterns alone,772,,,,,,blocked: archived patterns-alone HRD OOF unavailable
 C4a,hrd_binary_42,auroc,fold-mean over 5 outer folds,signatures_plus_MAF_stack (XGBoost) single model,,772,0.925188,0.902291,0.945974,,,computable (not a contrast; no p-value)

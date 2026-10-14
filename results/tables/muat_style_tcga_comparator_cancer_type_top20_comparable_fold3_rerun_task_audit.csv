@@ -1,0 +1,21 @@
+endpoint,tumour_type,n_patients,included,reason,n_run_patients,n_run_events
+cancer_type_top20,BLCA,411,True,primary MuAt-compatible task,411,155232
+cancer_type_top20,BRCA,1020,True,primary MuAt-compatible task,1020,135030
+cancer_type_top20,CESC,289,True,primary MuAt-compatible task,289,104076
+cancer_type_top20,COAD,404,True,primary MuAt-compatible task,404,277114
+cancer_type_top20,ESCA,184,True,primary MuAt-compatible task,184,48360
+cancer_type_top20,GBM,390,True,primary MuAt-compatible task,390,69853
+cancer_type_top20,HNSC,507,True,primary MuAt-compatible task,507,125764
+cancer_type_top20,KIRC,369,True,primary MuAt-compatible task,369,32002
+cancer_type_top20,KIRP,281,True,primary MuAt-compatible task,281,35447
+cancer_type_top20,LGG,511,True,primary MuAt-compatible task,511,42727
+cancer_type_top20,LIHC,363,True,primary MuAt-compatible task,363,61063
+cancer_type_top20,LUAD,515,True,primary MuAt-compatible task,515,224883
+cancer_type_top20,LUSC,485,True,primary MuAt-compatible task,485,209373
+cancer_type_top20,OV,411,True,primary MuAt-compatible task,411,53384
+cancer_type_top20,PRAD,497,True,primary MuAt-compatible task,497,34438
+cancer_type_top20,SARC,236,True,primary MuAt-compatible task,236,31857
+cancer_type_top20,SKCM,466,True,primary MuAt-compatible task,466,572902
+cancer_type_top20,STAD,439,True,primary MuAt-compatible task,439,245354
+cancer_type_top20,THCA,492,True,primary MuAt-compatible task,492,12185
+cancer_type_top20,UCEC,530,True,primary MuAt-compatible task,530,945103

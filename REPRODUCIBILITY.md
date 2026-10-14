@@ -96,7 +96,7 @@ committed outputs, plus the minimal commands to reproduce on a fresh clone.
 | 4 (centre held-out) | 3.12.3 | 1.6.2 | 1.7.2 | 2.3.1 | 1.26.4 | 1.15.3 | `environment/reviewer_analyses_lockfile.txt` |
 | 5 (PCAWG audit) | 3.12.3 | 1.6.2 | 1.7.2 | 2.3.1 | 1.26.4 | 1.15.3 | `environment/reviewer_analyses_lockfile.txt` |
 | 6 (repro deposit) | — (docs only) | — | — | — | — | — | — |
-| MuAt faithful | VIJAY's env | — | — | — | — | — | not in repo (see note) |
+| MuAt faithful | VIJAY's env | — | — | — | — | — | merged from codex/coxnet-muat-manuscript-updates (see note) |
 
 GPU note (Task 0): production Table 1 XGBoost cells used `gpu_hist` on a GPU
 machine; CPU reruns use `hist` and differ by ~0.001 on XGBoost cells. Linear
@@ -106,11 +106,20 @@ cells reproduce bit-for-bit on CPU.
 
 The manuscript's MuAt headline comparisons (cancer typing 0.528, HRD score
 0.507, HRD33 0.746; paired differences vs Sig+MAF) come from VIJAY Vankadaru's
-faithful-protocol rerun (committed as results summary in `4da1160`). VIJAY's
-training code and checkpoints are **not in this repository**. This repo contains
-a MuAt-compatible reimplementation (`src/runners/run_muat_style_tcga_comparator.py`)
-which is explicitly not official MuAt; see `docs/muat_replication_rigor.md`.
-To obtain VIJAY's code: contact Aaron Ge for VIJAY Vankadaru's repository location.
+faithful-protocol rerun. VIJAY's configs, fidelity audit, run logs, and
+divergence guard are now in this repository (merged from branch
+`codex/coxnet-muat-manuscript-updates`):
+- Fidelity audit: `docs/muat_fidelity_audit_2026-10.md`
+- Faithful-protocol configs: `config/experiment_settings.muat_hrd_faithful_fixed_arch.yaml`,
+  `config/experiment_settings.muat_top20_faithful_fixed_arch.yaml`,
+  `config/experiment_settings.muat_top20_fold3_rerun.yaml`
+- Divergence guard: `scripts/test_muat_divergence_guard.py`
+- Run logs and manifests: `results/logs/muat_*.log`, `results/logs/*manifest*.json`
+- Results summary: `docs/results_summary_2026-10.md` (also committed as `4da1160`)
+
+This repo also contains a MuAt-compatible reimplementation
+(`src/runners/run_muat_style_tcga_comparator.py`) which is explicitly not
+official MuAt; see `docs/muat_replication_rigor.md`.
 
 ### Reproduce commands (fresh clone)
 

@@ -10,6 +10,7 @@ import hashlib
 import warnings
 from contextlib import nullcontext
 from dataclasses import asdict, dataclass
+from datetime import datetime, timezone
 from itertools import product
 from pathlib import Path
 from typing import Any
@@ -503,6 +504,42 @@ def _classification_score(metric: str, y_true: np.ndarray, proba: np.ndarray, n_
     return safe_macro_auroc(y_true, proba, n_classes)
 
 
+def _loss_diverged(train_loss: float, min_loss_so_far: float, epoch: int, *, margin: float, warmup_epochs: int) -> bool:
+    """Harness divergence rule for one epoch of an inner pass.
+
+    Diverged when the epoch loss is non-finite, or (after ``warmup_epochs``) exceeds the best
+    finite epoch loss seen so far in the same pass by more than ``margin`` (additive, in loss
+    units: nats for cross-entropy). ``margin <= 0`` disables the rule. Not part of the MuAt
+    training recipe; see the comment at the call site.
+
+    Why additive and not a ratio. The first version used ``loss > 3 x min_loss`` and failed both
+    ways on cancer_type_top20 fold 3 (run 20261002T202415Z): a healthy candidate at loss 0.0006
+    was killed when one epoch read 0.0019 (ratio 3.2, absolute change 0.001), while a candidate
+    that genuinely diverged from 1.55 back to 2.67 (validation at chance) never tripped because
+    20-class cross-entropy saturates near ln 20 = 3.0 < 3 x 1.55. An additive margin of 0.5
+    nats separates the two cleanly: 0.001 vs 1.1.
+    """
+    if margin <= 0:
+        return False
+    if not np.isfinite(train_loss):
+        return True
+    if epoch <= warmup_epochs or not np.isfinite(min_loss_so_far):
+        return False
+    return bool(train_loss > min_loss_so_far + margin)
+
+
+def _ranked_finite_candidates(candidate_results: list[dict[str, object]]) -> list[tuple[float, int]]:
+    """Architecture-search candidates with a finite short-budget score, best first; ties broken
+    by lower candidate id (the same rule the search loop uses). Diverged candidates carry -inf
+    and are excluded."""
+    ranked = [
+        (float(r["selected_inner_score"]), int(r["candidate_id"]))
+        for r in candidate_results
+        if r.get("stage") == "architecture_search" and np.isfinite(float(r["selected_inner_score"]))
+    ]
+    return sorted(ranked, key=lambda t: (-t[0], t[1]))
+
+
 def _endpoint_validation_score(metric: str, task: str, y_true: Any, prediction: np.ndarray, n_classes: int) -> float:
     if task in {"binary", "multiclass"}:
         return _classification_score(metric, np.asarray(y_true), prediction, n_classes)
@@ -839,7 +876,14 @@ def _fit_predict_local(
     else:
         splits = outer_splits(split_task, y_split, groups=group_arr, seed=int(settings.get("seed", 20260524)), n_splits=n_splits)
 
-    checkpoint_dir = ctx.feature_cache_dir / EXPERIMENT_ID / "fold_checkpoints" / ("smoke" if smoke_run else "full")
+    # Fold checkpoints are keyed by endpoint and fold only, so two configs for the same endpoint
+    # share files unless one of them names its own subdirectory. Set ``checkpoint_subdir`` on any
+    # config that must not touch another protocol's checkpoints (e.g. a fixed-architecture run
+    # alongside the search-based run).
+    checkpoint_dir = (
+        ctx.feature_cache_dir / EXPERIMENT_ID / "fold_checkpoints"
+        / str(settings.get("checkpoint_subdir") or ("smoke" if smoke_run else "full"))
+    )
     checkpoint_dir.mkdir(parents=True, exist_ok=True)
     default_selection_metric = _default_selection_metric(endpoint, task)
     fingerprint_payload = {
@@ -885,6 +929,16 @@ def _fit_predict_local(
             "motif_grammar": str(settings.get("motif_grammar", "legacy")),
             "annotation_strand": str(settings.get("annotation_strand", "legacy")),
         }
+    # Search-harness guard settings. A guarded run must not reuse a checkpoint from an unguarded
+    # one (or vice versa): the guard can change which architecture is selected. Added ONLY when
+    # the guard is enabled so every existing unguarded fingerprint (and its cached checkpoints)
+    # is unchanged.
+    _guard_margin = float(settings.get("divergence_loss_margin", 0.0) or 0.0)
+    if _guard_margin > 0:
+        fingerprint_payload["divergence_loss_margin"] = _guard_margin
+        fingerprint_payload["divergence_rule"] = "additive_margin_v2"
+        fingerprint_payload["divergence_warmup_epochs"] = int(settings.get("divergence_warmup_epochs", 3))
+        fingerprint_payload["architecture_fallback_attempts"] = int(settings.get("architecture_fallback_attempts", 1))
     if task == "regression":
         fingerprint_payload["regression_target_standardization"] = "fold_local_zscore_v1"
         fingerprint_payload["regression_prediction_scale"] = "outer_train_inverse_transform_v1"
@@ -1012,6 +1066,11 @@ def _fit_predict_local(
                     loss = loss_fn(logits.reshape(-1), target)
                 else:
                     raise ValueError(f"Unsupported MuAt-compatible task for endpoint={endpoint}: {task}")
+            # No gradient clipping, deliberately. The official MuAt trainer
+            # (primasanjaya/muat, muat/trainer.py) exposes ``TrainerConfig.grad_norm_clip`` but
+            # defaults it to ``None`` and ``core.py`` never sets it, so published MuAt training
+            # does not clip. Adding clipping here would stabilise training at the cost of no
+            # longer matching the published optimisation recipe.
             if scaler is not None:
                 scaler.scale(loss).backward()
                 scaler.step(optimizer)
@@ -1061,6 +1120,21 @@ def _fit_predict_local(
                 features[start : start + len(batch_positions)] = batch_features.float().cpu().numpy()
         return outputs_np, features, attentions
 
+    # Architecture-search harness guard, NOT part of the MuAt training recipe. Official MuAt
+    # trains one fixed architecture and has nothing to guard against. Our comparator ranks 18
+    # candidates on a short budget, and a candidate whose loss explodes late in training can
+    # still win that short ranking (cancer_type_top20 fold 3: 256-dim, 4-layer, loss 1.66 vs
+    # 0.003-0.02 on the other folds). With the guard on, an inner pass is declared diverged when
+    # its epoch training loss is non-finite or exceeds the best loss seen so far in that pass by
+    # more than ``divergence_loss_margin`` (additive, nats), and the candidate is excluded from
+    # selection. 0 disables (default; preserves every prior run and its fingerprint).
+    divergence_margin = float(settings.get("divergence_loss_margin", 0.0) or 0.0)
+    divergence_warmup = max(1, int(settings.get("divergence_warmup_epochs", 3)))
+
+    # Folds listed here ignore any cached checkpoint and retrain. Used to redo one fold under
+    # the same protocol while the others are reused from a compatible earlier run.
+    force_retrain_folds = {int(v) for v in (settings.get("force_retrain_folds") or [])}
+
     sample_folds = np.full(len(common), -1, dtype=int)
     for fold, train_idx, test_idx in splits:
         paths = _checkpoint_paths(checkpoint_dir, endpoint, int(fold))
@@ -1075,19 +1149,37 @@ def _fit_predict_local(
                 )
             )
         expected_test_samples = set(map(str, common[np.asarray(test_idx, dtype=int)]))
-        cached = (
-            _read_fold_checkpoint(
-                paths,
-                fingerprint=fingerprint,
-                endpoint=endpoint,
-                fold=int(fold),
-                expected_model_settings=asdict(local),
-                expected_test_samples=expected_test_samples,
-                compatible_fingerprints=compatible_fingerprints,
+        if int(fold) in force_retrain_folds:
+            print(f"[{EXPERIMENT_ID}] force_retrain endpoint={endpoint} fold={fold}/{n_splits}: ignoring any cached checkpoint", flush=True)
+            cached = None
+            # Preserve the superseded fold artefacts instead of overwriting them, so the original
+            # (e.g. diverged) fold remains auditable next to its replacement.
+            _stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+            for _key, _p in paths.items():
+                if _p.exists():
+                    _dst = _p.with_name(f"{_p.name}.superseded_{_stamp}")
+                    try:
+                        os.replace(_p, _dst)
+                    except OSError as exc:
+                        print(f"[{EXPERIMENT_ID}] WARNING could not archive {_p.name}: {exc}", flush=True)
+        else:
+            cached = (
+                _read_fold_checkpoint(
+                    paths,
+                    fingerprint=fingerprint,
+                    endpoint=endpoint,
+                    fold=int(fold),
+                    # When the architecture is searched per fold, the checkpoint's model settings
+                    # are the fold's selected candidate, not the base settings, so an equality
+                    # check against ``local`` would reject every valid compatible checkpoint.
+                    # The split, endpoint and fold checks still apply.
+                    expected_model_settings=None if architecture_search_enabled else asdict(local),
+                    expected_test_samples=expected_test_samples,
+                    compatible_fingerprints=compatible_fingerprints,
+                )
+                if bool(settings.get("resume_checkpoints", True))
+                else None
             )
-            if bool(settings.get("resume_checkpoints", True))
-            else None
-        )
         if cached is not None:
             print(f"[{EXPERIMENT_ID}] reused checkpoint endpoint={endpoint} fold={fold}/{n_splits}", flush=True)
             assign_oof_fold(sample_folds, test_idx, int(fold))
@@ -1144,6 +1236,10 @@ def _fit_predict_local(
                 purposes with two distinct budgets: ranking architecture candidates against each
                 other (a short budget is acceptable), and choosing the stopping epoch for the
                 architecture we actually refit (which must use the full training budget).
+
+                If the divergence guard is enabled and trips, ``best_score`` is returned as -inf
+                so the caller treats the candidate as invalid, and the last history entry carries
+                ``diverged: True``.
                 """
 
                 pass_seed = int(settings.get("seed", 20260524)) + int(fold) * 1000 + int(seed_tag)
@@ -1181,6 +1277,8 @@ def _fit_predict_local(
                 total_epochs = max(1, int(n_epochs))
                 pass_best_epoch = 1
                 pass_best_score = -np.inf
+                pass_min_loss = np.inf
+                pass_diverged = False
                 history: list[dict[str, object]] = []
                 for epoch in range(1, total_epochs + 1):
                     train_loss = train_one_epoch(
@@ -1196,6 +1294,24 @@ def _fit_predict_local(
                     )
                     if pass_scheduler is not None:
                         pass_scheduler.step()
+                    if divergence_margin > 0:
+                        exploded = _loss_diverged(
+                            float(train_loss), float(pass_min_loss), int(epoch),
+                            margin=divergence_margin, warmup_epochs=divergence_warmup,
+                        )
+                        if exploded:
+                            pass_diverged = True
+                            history.append({"epoch": int(epoch), "train_loss": float(train_loss), "validation_score": float("nan"), "diverged": True})
+                            print(
+                                f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
+                                f"{label} DIVERGED epoch={epoch} train_loss={train_loss:.6g} "
+                                f"min_loss={pass_min_loss:.6g} margin={divergence_margin} "
+                                f"embed={model_settings.embed_dim} layers={model_settings.num_layers} heads={model_settings.attention_heads}",
+                                flush=True,
+                            )
+                            break
+                        if np.isfinite(train_loss):
+                            pass_min_loss = min(pass_min_loss, float(train_loss))
                     val_prediction, _val_features, _val_attention = predict_arrays(
                         pass_model,
                         inner_val_idx,
@@ -1231,6 +1347,8 @@ def _fit_predict_local(
                 gc.collect()
                 if device.type == "cuda":
                     torch.cuda.empty_cache()
+                if pass_diverged:
+                    return int(pass_best_epoch), float("-inf"), history
                 return int(pass_best_epoch), float(pass_best_score), history
 
             print(
@@ -1273,30 +1391,58 @@ def _fit_predict_local(
             # of the configured 150 (MuAt: "training for 150 epochs"). Re-run the selected
             # architecture at full length on the same inner split to recover the true stopping epoch.
             if bool(settings.get("final_epoch_selection", True)) and int(architecture_search_epochs) < int(local.epochs):
-                print(
-                    f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
-                    f"final_epoch_selection candidate={selected_architecture_candidate_id} "
-                    f"budget={int(local.epochs)} (architecture ranked over {architecture_search_epochs} epochs)",
-                    flush=True,
-                )
-                final_epoch, final_score, final_history = run_inner_pass(
-                    selected_local,
-                    int(local.epochs),
-                    seed_tag=1000 + int(selected_architecture_candidate_id),
-                    label="final_epoch_selection",
-                )
-                selected_epoch = int(final_epoch)
-                selected_inner_score = float(final_score)
-                candidate_results.append(
-                    {
-                        "candidate_id": int(selected_architecture_candidate_id),
-                        "params": asdict(selected_local),
-                        "selected_m_star": int(final_epoch),
-                        "selected_inner_score": float(final_score),
-                        "selection_history": final_history,
-                        "stage": "final_epoch_selection",
-                    }
-                )
+                # Candidates in descending short-budget score. If the winner diverges in its
+                # full-length pass (only possible with the divergence guard on), fall back to the
+                # next-ranked finite candidate rather than refitting a model whose loss exploded.
+                ranked = _ranked_finite_candidates(candidate_results)
+                max_attempts = max(1, int(settings.get("architecture_fallback_attempts", 1)))
+                attempts = 0
+                # The short-budget score must not survive as the "selected" score if every
+                # full-length attempt diverges; the check after the loop relies on this.
+                selected_inner_score = float("-inf")
+                for _rank_score, cand_id in ranked:
+                    if attempts >= max_attempts:
+                        break
+                    attempts += 1
+                    cand_local = architecture_candidates[cand_id - 1]
+                    print(
+                        f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
+                        f"final_epoch_selection candidate={cand_id} attempt={attempts}/{max_attempts} "
+                        f"budget={int(local.epochs)} (architecture ranked over {architecture_search_epochs} epochs)",
+                        flush=True,
+                    )
+                    final_epoch, final_score, final_history = run_inner_pass(
+                        cand_local,
+                        int(local.epochs),
+                        seed_tag=1000 + int(cand_id),
+                        label="final_epoch_selection",
+                    )
+                    candidate_results.append(
+                        {
+                            "candidate_id": int(cand_id),
+                            "params": asdict(cand_local),
+                            "selected_m_star": int(final_epoch),
+                            "selected_inner_score": float(final_score),
+                            "selection_history": final_history,
+                            "stage": "final_epoch_selection",
+                        }
+                    )
+                    if np.isfinite(final_score):
+                        selected_local = cand_local
+                        selected_architecture_candidate_id = int(cand_id)
+                        selected_epoch = int(final_epoch)
+                        selected_inner_score = float(final_score)
+                        break
+                    print(
+                        f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
+                        f"final_epoch_selection candidate={cand_id} diverged at full budget; trying next-ranked candidate",
+                        flush=True,
+                    )
+                if not np.isfinite(selected_inner_score):
+                    raise RuntimeError(
+                        f"All {attempts} attempted MuAt architecture candidate(s) diverged at full budget "
+                        f"for endpoint={endpoint} fold={fold}; raise architecture_fallback_attempts or inspect the grid"
+                    )
             print(
                 f"[{EXPERIMENT_ID}] endpoint={endpoint} fold={fold}/{n_splits} "
                 f"selected_candidate={selected_architecture_candidate_id} embed={selected_local.embed_dim} "
@@ -1394,6 +1540,25 @@ def _fit_predict_local(
                     tmp_path,
                 )
                 os.replace(tmp_path, paths["training"])
+        # Audit flag only; the refit recipe itself is left exactly as MuAt trains (no clipping,
+        # no restart). A refit is flagged diverged when its final epoch loss is non-finite or
+        # exceeds its own minimum epoch loss by more than divergence_loss_margin (nats). With the
+        # guard off the flag is still computed at margin 0.5 purely for reporting.
+        _audit_margin = divergence_margin if divergence_margin > 0 else 0.5
+        _finite_losses = [v for v in epoch_losses if np.isfinite(v)]
+        refit_diverged = bool(
+            not epoch_losses
+            or not np.isfinite(epoch_losses[-1])
+            or (_finite_losses and epoch_losses[-1] > min(_finite_losses) + _audit_margin)
+        )
+        if refit_diverged:
+            print(
+                f"[{EXPERIMENT_ID}] WARNING endpoint={endpoint} fold={fold}/{n_splits} refit_diverged=True "
+                f"final_loss={epoch_losses[-1] if epoch_losses else float('nan'):.6g} "
+                f"min_loss={min(_finite_losses) if _finite_losses else float('nan'):.6g} "
+                f"embed={selected_local.embed_dim} layers={selected_local.num_layers} heads={selected_local.attention_heads}",
+                flush=True,
+            )
         model.eval()
         fold_output = np.zeros((len(test_idx), len(classes) if task in {"binary", "multiclass"} else 1), dtype=float)
         fold_features = np.zeros((len(test_idx), selected_local.feature_dim), dtype=float)
@@ -1535,6 +1700,14 @@ def _fit_predict_local(
                     "configured_batch_size": int(selected_local.batch_size),
                     "eval_batch_size": int(eval_batch_size),
                     "train_loss_last": epoch_losses[-1] if epoch_losses else float("nan"),
+                    "train_loss_min": float(min(_finite_losses)) if _finite_losses else float("nan"),
+                    "refit_diverged": bool(refit_diverged),
+                    "divergence_loss_margin": float(divergence_margin),
+                    "diverged_candidate_ids": json.dumps(
+                        sorted({int(r["candidate_id"]) for r in candidate_results if not np.isfinite(float(r["selected_inner_score"]))})
+                    ),
+                    "fingerprint": fingerprint,
+                    "fold_trained_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                     "fold_score": fold_score,
                     "accuracy": fold_score if task in {"binary", "multiclass"} and selection_metric == "accuracy" else float("nan"),
                     "balanced_accuracy": fold_score if task in {"binary", "multiclass"} and selection_metric == "balanced_accuracy" else float("nan"),

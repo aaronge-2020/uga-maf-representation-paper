@@ -37,15 +37,19 @@ contrasts are listed with status and do not enter the correction.
 
 ## OOF files used per contrast
 
-- C1a: `results/tables/task1_oof_a_sigmaf_full_archived.csv` (Sig+MAF,
-  reproduces pooled BA 0.737784) vs
-  `results/tables/task1_oof_a_maf_full.csv` (Bio MAF Task-1 control (a) refit,
-  pooled BA 0.665743). Same 8,800 tumours, true labels agree; pairing by
-  tumour (sample barcode). The two archived outer-split seeds differ (615371 vs
-  750978) but pairing is by tumour, so the paired bootstrap is valid.
-- C1b: same Sig+MAF file vs
-  `results/tables/task1_oof_a_maf_full_archived.csv` (archived Bio MAF OOF,
-  pooled BA 0.661830). Sensitivity line.
+- C1a (re-run 2026-10-14): `results/tables/task1_oof_sigmaf_a_full.csv`
+  (Sig+MAF, pooled BA 0.737784) vs `results/tables/task1_oof_maf_a_full.csv`
+  (Bio MAF Task-1 control (a) re-run, pooled BA 0.661830). Same 8,800 tumours,
+  true labels agree; pairing by tumour (sample barcode). This is the
+  authoritative comparison: both files are from the Task 1 re-run (correct
+  Task 0 folds, headline XGBoost settings). NOTE: the original C1a
+  (0.072041) used a Bio MAF refit with pooled BA 0.665743 from a superseded
+  exploratory run (XGBoost 3.4.1, non-headline harness); that file was never
+  saved to the repo and is not reproducible. The re-run C1a uses the
+  authoritative files.
+- C1b: same files as C1a. Sensitivity label retained for traceability;
+  the "archived" vs "refit" distinction no longer applies since both refer
+  to the Task 1 re-run outputs.
 - C4a: HRD42 Sig+MAF OOF from the nested-fold checkpoint npz
   `results/tables/main_manuscript_complete_panel_nested_fold_checkpoints/hrd_binary_42__signatures_plus_MAF_stack__xgboost__main_complete_panel_mc3_signatures_plus_maf_stack_bio_v4_nested_fs_ac11587791bbbd40db3991bb.npz`
   (`pred` = (772,2) class probabilities; score = P(class 1); `sample_folds` =
@@ -58,10 +62,12 @@ contrasts are listed with status and do not enter the correction.
 
 ## Results (match task2_inference_results.csv exactly)
 
+Re-run 2026-10-14 via `scripts/task2_paired_bootstrap.py` (--n-replicates 10000 --seed 42).
+
 | contrast | point | 95% CI | raw p | q (BH) |
 |---|---|---|---|---|
-| C1a cancer BA, Sig+MAF vs Bio MAF (refit) | +0.072041 | [0.063315, 0.080799] | 0.0 (0/10,000 ≤ 0; p < 0.0001) | 0.0 |
-| C1b cancer BA, Sig+MAF vs Bio MAF (archived) | +0.075954 | [0.066996, 0.084998] | 0.0 (0/10,000 ≤ 0; p < 0.0001) | 0.0 |
+| C1a cancer BA, Sig+MAF vs Bio MAF (re-run) | +0.075954 | [0.066996, 0.084998] | 0.0 (0/10,000 ≤ 0; p < 0.0001) | 0.0 |
+| C1b cancer BA, Sig+MAF vs Bio MAF (archived label) | +0.075954 | [0.066996, 0.084998] | 0.0 (0/10,000 ≤ 0; p < 0.0001) | 0.0 |
 | C4a HRD42 Sig+MAF fold-mean AUROC | 0.925188 | [0.902291, 0.945974] | — (not a contrast) | — |
 | C2 cancer BA vs patterns alone | blocked | — | — | — |
 | C3 HRD Spearman vs patterns alone | blocked | — | — | — |
@@ -71,6 +77,12 @@ contrasts are listed with status and do not enter the correction.
 
 BH over the two computable raw p-values (both 0.0) gives q = 0.0 for C1a and
 C1b.
+
+NOTE (2026-10-14 re-run): the original C1a (0.072041, CI [0.063315, 0.080799])
+used a Bio MAF refit OOF with pooled BA 0.665743 from a superseded exploratory
+run that was never saved to the repo. The re-run C1a (0.075954) uses the
+authoritative Task 1 re-run files. The manuscript's Task 2 numbers should be
+updated from 0.072 to 0.076 to reflect the reproducible analysis.
 
 ## The HRD42 line (as required)
 
@@ -154,10 +166,18 @@ this procedure.
 
 ## Reproducibility
 
-- Scripts: `~/workspace/task2_scratch/run_task2_bootstrap.py` (C1a/C1b),
-  `~/workspace/task2_scratch/run_task2_c4a.py` (C4a).
-- Raw replicate draws: `~/workspace/task2_scratch/bootdiff_C1a.npy`,
-  `bootdiff_C1b.npy`, `bootfm_C4a.npy` (10,000 floats each).
-- No git operations were performed; no files outside `results/tables/`
-  (the three deliverables) and `~/workspace/task2_scratch/` were written;
-  the manuscript/Google Doc were not touched.
+- Script: `scripts/task2_paired_bootstrap.py` (in-repo; re-run 2026-10-14
+  with `--n-replicates 10000 --seed 42` reproduces C1a/C1b/C4a exactly).
+  Earlier scratch scripts lived at `~/workspace/task2_scratch/` (outside repo;
+  superseded).
+- Raw replicate draws from the re-run: `/tmp/task2_rerun_bootdiff_C1a.npy`,
+  `/tmp/task2_rerun_bootdiff_C1b.npy`, `/tmp/task2_rerun_bootfm_C4a.npy`
+  (10,000 floats each; ephemeral, regenerable via the script).
+- Inputs: `results/tables/task1_oof_sigmaf_a_full.csv`,
+  `results/tables/task1_oof_maf_a_full.csv` (Task 1 re-run outputs, in repo);
+  C4a checkpoint npz under
+  `results/tables/main_manuscript_complete_panel_nested_fold_checkpoints/`;
+  sample order from `data/task2/order_hrd_binary_42.csv` (in repo).
+- No git operations were performed during the original analysis; no files
+  outside `results/tables/` and the scratch dir were written; the
+  manuscript/Google Doc were not touched.

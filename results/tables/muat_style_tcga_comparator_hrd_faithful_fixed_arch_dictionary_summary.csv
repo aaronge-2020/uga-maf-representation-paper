@@ -1,0 +1,4 @@
+modality,n_tokens,pad_index,unk_index,example_tokens,benchmark
+motif,310,0,1,<PAD>;<UNK>;A[C>A]A;A[C>A]C;A[C>A]G;A[C>A]T;A[C>G]A;A[C>G]C,tcga_mc3_wes
+position,3116,0,1,<PAD>;<UNK>;chr10_0;chr10_1;chr10_10;chr10_100;chr10_101;chr10_102,tcga_mc3_wes
+annotation,18,0,1,<PAD>;<UNK>;no_no_intergenic;no_no_opposite;no_no_same;no_no_unknown;no_yes_intergenic;no_yes_opposite,tcga_mc3_wes
