@@ -1,4 +1,4 @@
-"""Smoke test: build a tiny synthetic MAF, run the full Bio MAF v4 pipeline,
+"""Smoke test: build a tiny synthetic MAF, run the full Bio MAF pipeline,
 and verify the output schema against the manuscript feature manifest."""
 
 import gzip
@@ -9,8 +9,8 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from biomaf_v4 import feature_names, featurize_maf  # noqa: E402
-from biomaf_v4.cli import main as cli_main  # noqa: E402
+from biomaf import feature_names, featurize_maf  # noqa: E402
+from biomaf.cli import main as cli_main  # noqa: E402
 
 REPO_TABLES = Path(__file__).resolve().parents[1].parent / "results" / "tables"
 
@@ -86,6 +86,53 @@ def test_end_to_end(tmp_path=None):
     print("smoke test passed: 3 samples x 948 features, schema matches manifest")
 
 
+def make_minimal_maf(path: Path) -> None:
+    """Minimal MAF: barcode + gene symbol only, no VEP annotation columns."""
+    cols = ["Tumor_Sample_Barcode", "Hugo_Symbol"]
+    rows = [
+        ["TCGA-AA-0001-01", "TP53"],
+        ["TCGA-AA-0001-01", "APC"],
+        ["TCGA-BB-0002-01", "KRAS"],
+    ]
+    frame = pd.DataFrame(rows, columns=cols)
+    with gzip.open(path, "wt") as handle:
+        frame.to_csv(handle, sep="\t", index=False)
+
+
+def test_no_vep_graceful_degradation(tmp_path=None):
+    """No-VEP mode: pipeline completes on barcode+symbol only without crashing.
+    VEP-dependent columns fall back to "unknown"; per-gene functional columns
+    are zero because functionality cannot be determined without IMPACT."""
+    import tempfile
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        maf = tmp / "minimal.maf.gz"
+        make_minimal_maf(maf)
+        matrix = featurize_maf(maf, sample_ids=["TCGA-AA-0001", "TCGA-BB-0002"])
+        assert matrix.shape == (2, 948), f"unexpected shape {matrix.shape}"
+        # VEP-dependent columns fall back to "unknown" without annotation columns.
+        vep_cols = [c for c in matrix.columns if c.startswith("vep_")]
+        assert len(vep_cols) > 0, "expected VEP columns in schema"
+        specific_impact = [c for c in vep_cols if "unknown" not in c and c.startswith("vep_impact_count__")]
+        assert (matrix[specific_impact] == 0).all().all(), "specific VEP impact categories should be zero without VEP input"
+        assert (matrix["vep_impact_count__unknown"] > 0).all(), "unknown impact should absorb events without VEP input"
+        # VAF summaries are zeros without t_alt_count/t_depth.
+        vaf_cols = ["vaf_mean", "vaf_std", "vaf_median", "vaf_q90", "vaf_max"]
+        assert (matrix[vaf_cols] == 0).all().all(), "VAF columns should be zero-filled without depth columns"
+        # Per-gene functional columns are zero without VEP: functionality
+        # requires IMPACT high/moderate or protein-affecting consequence.
+        # This documents the limitation; VEP is required for meaningful output.
+        assert matrix.loc["TCGA-AA-0001", "driver_gene_functional_event_log_count__TP53"] == 0
+        # No NaNs or infs.
+        assert not matrix.isna().any().any(), "NaNs in output"
+        assert (matrix.abs() != float("inf")).all().all(), "infs in output"
+        # --check-input runs without error on the minimal MAF.
+        rc = cli_main(["--maf", str(maf), "--check-input"])
+        assert rc == 0, "--check-input should exit 0"
+    print("no-VEP test passed: pipeline completes; VEP-dependent columns degrade gracefully")
+
+
 if __name__ == "__main__":
     test_schema_matches_manifest()
     test_end_to_end()
+    test_no_vep_graceful_degradation()

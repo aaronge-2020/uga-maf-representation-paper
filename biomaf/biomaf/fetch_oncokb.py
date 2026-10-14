@@ -5,7 +5,7 @@ of Use (https://www.oncokb.org/terms) limit use to academic/research settings
 and restrict redistribution, so this module downloads the current public
 cancer-gene list from the OncoKB public API (no key required) and converts it
 to the TSV layout the feature builder reads. The file is cached under
-``biomaf_v4/resources/oncokb_cancer_genes.tsv`` after the first download.
+``biomaf/resources/oncokb_cancer_genes.tsv`` after the first download.
 
 Source: https://public.api.oncokb.org/api/v1/utils/cancerGeneList
 geneType mapping:
@@ -36,7 +36,7 @@ COLUMNS = ["hugo_symbol", "entrez_gene_id", "oncogene", "tsg", "source_url"]
 def fetch_oncokb_tsv(path: str | Path, url: str = ONCOKB_API_URL) -> Path:
     """Download the OncoKB cancer-gene list and write it as a TSV to *path*."""
     path = Path(path)
-    req = urllib.request.Request(url, headers={"User-Agent": "biomaf-v4/4.0.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "biomaf/1.0.0"})
     with urllib.request.urlopen(req, timeout=120) as resp:
         genes = json.load(resp)
     rows = []

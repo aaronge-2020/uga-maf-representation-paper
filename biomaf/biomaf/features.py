@@ -1,9 +1,9 @@
-"""Bio MAF v4 featurization: fixed, interpretable per-tumor summaries of somatic mutations.
+"""Bio MAF featurization: fixed, interpretable per-tumor summaries of somatic mutations.
 
 This module is a self-contained port of the featurization logic used in the
-manuscript pipeline (``src/utils/bio_maf_base_features.py`` and the v4 builder in
-``src/utils/quick_bio_v4_nested_feature_selection.py``). It computes exactly the
-948 Bio MAF v4 features (943 core + 5 optional burden controls) from an annotated
+manuscript pipeline (``src/utils/bio_maf_base_features.py`` and the builder in
+``src/utils/quick_bio_maf_nested_feature_selection.py``). It computes exactly the
+948 Bio MAF features (943 core + 5 optional burden controls) from an annotated
 MAF, using only fixed external references and no endpoint labels.
 
 Input MAF columns used (all optional except Tumor_Sample_Barcode; missing
@@ -215,14 +215,14 @@ def base_feature_columns() -> tuple[list[str], list[str], dict[str, list[str]]]:
     return core, all_cols, blocks
 
 
-def v4_feature_columns(panel_genes: list[str]) -> tuple[list[str], list[str], dict[str, list[str]]]:
+def feature_columns(panel_genes: list[str]) -> tuple[list[str], list[str], dict[str, list[str]]]:
     base_core, _base_all, _base_blocks = base_feature_columns()
     tier_cols = [
         f"driver_evidence_{metric}__source_count_{tier}"
         for tier in range(1, 5)
         for metric in DRIVER_TIER_METRICS
     ]
-    # Bio MAF v4 (948 features, as used in the manuscript) emits both the
+    # Bio MAF (948 features, as used in the manuscript) emits both the
     # functional-event and the role-matched-event column for every one of the
     # 401 panel genes.
     exact_cols: list[str] = []
@@ -233,12 +233,12 @@ def v4_feature_columns(panel_genes: list[str]) -> tuple[list[str], list[str], di
     core = [*base_core, *tier_cols, *exact_cols, *hotspot_cols]
     all_cols = [*core, *OPTIONAL_CONTROLS]
     blocks = {
-        "v4_compact_biology_only": base_core,
-        "v4_compact_plus_driver_evidence_tiers": [*base_core, *tier_cols],
-        "v4_compact_plus_hotspot_summary": [*base_core, *hotspot_cols],
-        "v4_compact_plus_exact_driver_genes": [*base_core, *exact_cols],
-        "v4_full_core": core,
-        "v4_full_core_plus_optional_controls": all_cols,
+        "compact_biology_only": base_core,
+        "compact_plus_driver_evidence_tiers": [*base_core, *tier_cols],
+        "compact_plus_hotspot_summary": [*base_core, *hotspot_cols],
+        "compact_plus_exact_driver_genes": [*base_core, *exact_cols],
+        "full_core": core,
+        "full_core_plus_optional_controls": all_cols,
     }
     return core, all_cols, blocks
 
@@ -273,7 +273,7 @@ def load_oncokb_roles(path: Path) -> dict[str, str]:
     return roles
 
 
-def load_v4_panel(res_dir: Path) -> tuple[pd.DataFrame, dict[str, int], dict[str, str], set, set]:
+def load_panel(res_dir: Path) -> tuple[pd.DataFrame, dict[str, int], dict[str, str], set, set]:
     """Load the 401-gene driver panel, evidence tiers, and hotspot sets."""
     tables = res_dir
     evidence = pd.read_csv(tables / "driver_gene_evidence.csv")
@@ -338,7 +338,7 @@ def featurize_maf(
     chunksize: int = 350_000,
     include_optional_controls: bool = True,
 ) -> pd.DataFrame:
-    """Build the Bio MAF v4 feature matrix from an annotated MAF.
+    """Build the Bio MAF feature matrix from an annotated MAF.
 
     Parameters
     ----------
@@ -355,10 +355,10 @@ def featurize_maf(
     """
     res_dir = resources_dir()
     role_lookup_oncokb = load_oncokb_roles(ensure_oncokb_tsv(res_dir / "oncokb_cancer_genes.tsv"))
-    panel, tier_lookup, role_lookup, residue_set, variant_set = load_v4_panel(res_dir)
+    panel, tier_lookup, role_lookup, residue_set, variant_set = load_panel(res_dir)
 
     panel_genes = panel["gene"].astype(str).tolist()
-    core_cols, all_cols, _blocks = v4_feature_columns(panel_genes)
+    core_cols, all_cols, _blocks = feature_columns(panel_genes)
     out_cols = all_cols if include_optional_controls else core_cols
 
     # Discover samples from the MAF unless given explicitly.
@@ -507,7 +507,7 @@ def featurize_maf(
         broad_counts["id"].to_numpy(dtype=np.float64), broad_total_arr,
         out=np.zeros(len(broad_total_arr), dtype=np.float64), where=broad_total_arr > 0)
 
-    # ---- Pass 2: v4 driver-gene / hotspot columns ----
+    # ---- Pass 2: driver-gene / hotspot columns ----
     matrix = pd.DataFrame(0.0, index=pd.Index(samples, name="sample"), columns=all_cols, dtype=np.float64)
     matrix.loc[:, features.columns] = features.reindex(matrix.index).astype(np.float64)
 
@@ -515,11 +515,11 @@ def featurize_maf(
     tier_unique_genes: dict[int, dict[str, set[str]]] = {tier: defaultdict(set) for tier in range(1, 5)}
     hotspot_unique_genes: dict[str, set[str]] = defaultdict(set)
 
-    usecols_v4 = [
+    usecols = [
         "Tumor_Sample_Barcode", "Hugo_Symbol", "SYMBOL", "IMPACT", "Consequence",
         "Protein_position", "Amino_acids", "HGVSp_Short", "t_alt_count", "t_depth",
     ]
-    for chunk in pd.read_csv(maf_path, sep="\t", usecols=lambda c: c in usecols_v4,
+    for chunk in pd.read_csv(maf_path, sep="\t", usecols=lambda c: c in usecols,
                              dtype=str, chunksize=chunksize):
         chunk["sample"] = chunk["Tumor_Sample_Barcode"].map(first_12)
         chunk = chunk[chunk["sample"].isin(sample_set)].copy()
@@ -601,9 +601,9 @@ def featurize_maf(
 
 
 def feature_names(include_optional_controls: bool = True) -> list[str]:
-    """Return the Bio MAF v4 column names without reading a MAF."""
+    """Return the Bio MAF column names without reading a MAF."""
     res_dir = resources_dir()
     panel = pd.read_csv(res_dir / "driver_gene_panel.csv")
     panel["gene"] = panel["gene"].map(normalize_gene)
-    core_cols, all_cols, _blocks = v4_feature_columns(panel["gene"].astype(str).tolist())
+    core_cols, all_cols, _blocks = feature_columns(panel["gene"].astype(str).tolist())
     return all_cols if include_optional_controls else core_cols

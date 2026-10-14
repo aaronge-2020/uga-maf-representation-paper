@@ -199,3 +199,23 @@ The manuscript Methods states "We corrected seven secondary comparisons for mult
 
 ### Zenodo bundle version note (2026-10-14)
 The manuscript references a Zenodo data bundle (v2). The v2 bundle contains the superseded `hrd_muat_paired_tests.json` with ab_c_full numbers (HRD Spearman diff 0.249) rather than the faithful-run numbers (diff 0.270 [0.220, 0.319]; HRD33 diff 0.165 [0.094, 0.236]). The correct values are in this repository at `results/tables/hrd_muat_paired_tests.json` (recomputed 2026-10-14). A v3 Zenodo upload was not performed (no deposition ID available in repo). Users of the v2 bundle should use the repo's JSON for the MuAt paired tests.
+
+### Bio MAF standalone package (2026-10-14)
+
+The `biomaf/` directory at the repo root is the standalone Bio MAF package
+(version 1.0.0). It builds the 948 Bio MAF features from any annotated MAF
+file and is the supported path for external users who want Bio MAF features
+without running the full manuscript pipeline.
+
+```bash
+cd biomaf && pip install .
+biomaf --maf tumor_mutations.maf.gz --out features.csv.gz
+```
+
+VEP-annotated MAFs (e.g. TCGA MC3) work directly. The package runs without
+VEP annotation but most features degrade: without `IMPACT`/`Consequence` the
+pipeline cannot identify functional events, so the 802 per-gene columns (the
+0.122-point contributor in the manuscript ablation) are zero-filled. Only 12
+of 948 columns are non-zero without VEP (all "unknown" categories). See
+`biomaf/README.md` ("Without VEP annotation") for the full breakdown, and use
+`biomaf --maf file.maf.gz --check-input` to inspect a MAF before running.

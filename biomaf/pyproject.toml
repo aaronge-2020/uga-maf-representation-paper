@@ -3,9 +3,9 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "biomaf-v4"
-version = "4.0.0"
-description = "Bio MAF v4: fixed, interpretable per-tumor summaries of somatic mutations (948 features from an annotated MAF)"
+name = "biomaf"
+version = "1.0.0"
+description = "Bio MAF: fixed, interpretable per-tumor summaries of somatic mutations (948 features from an annotated MAF)"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -15,11 +15,11 @@ dependencies = [
 license = { text = "CC-BY-4.0, see parent repository LICENSE" }
 
 [project.scripts]
-biomaf-v4 = "biomaf_v4.cli:main"
+biomaf = "biomaf.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["biomaf_v4*"]
+include = ["biomaf*"]
 
 [tool.setuptools.package-data]
-biomaf_v4 = ["resources/*"]
+biomaf = ["resources/*"]

@@ -66,10 +66,28 @@ python scripts/reviewer_workflow.py reproduce --datasets-dir ../github_exports_d
 - `src/`: production runners and utilities.
 - `config/`: active path/config profiles and Bio MAF resources.
 - `data/`: small bundled references.
+- `biomaf/`: standalone Bio MAF package — build the 948 Bio MAF features from any MAF file (see below).
 - `results/tables/`: source tables consumed by manuscript generation.
 - `results/manuscript/`: ignored local output directory for regenerated manuscript tables, figures, text, supplements, and interpretability outputs.
 - `docs/`: reviewer notes, upload checklist, and QC reports.
 - `manifests/`: reproducibility, data, large-asset, and dataset manifests.
+
+## Bio MAF standalone package
+
+The `biomaf/` directory contains the standalone Bio MAF package: build the 948
+Bio MAF features from any annotated MAF file with one command. This is the
+supported way for external users to construct Bio MAF features without running
+the full manuscript pipeline.
+
+```bash
+cd biomaf && pip install .
+biomaf --maf tumor_mutations.maf.gz --out features.csv.gz
+```
+
+VEP-annotated MAFs (e.g. TCGA MC3) work directly. Without VEP annotation the
+pipeline still runs but most features degrade — see `biomaf/README.md` for the
+"Without VEP annotation" section. Use `biomaf --maf file.maf.gz --check-input`
+to see which feature groups will be active for your MAF before running.
 
 ## Dataset Bundle
 
