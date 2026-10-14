@@ -70,13 +70,13 @@ This is computationally expensive. The GitHub-ready validation path above is int
 
 ## MuAt-compatible HRD comparator: frozen run identification
 
-The manuscript's MuAt-compatible HRD headline numbers (HRD-score Spearman 0.527, HRD33 AUROC 0.751, fold means with t-based 95% CIs) come from a single frozen run: `ab_c_full` (epoch fix + exact token dictionaries).
+The manuscript's MuAt-compatible HRD headline numbers (HRD-score Spearman 0.507, HRD33 AUROC 0.746, fold means with t-based 95% CIs) come from the faithful fixed-architecture run (VIJAY, 2026-10-04; fixed architecture, constant LR, weight decay 0.001, all epochs, arm D token grammar).
 
-- Fold-level metrics: `results/tables/muat_style_tcga_comparator_ab_c_full_fold_metrics.csv` (`dictionary_mode=exact` throughout). Selected epochs: HRD score 12/14/18/2/20; HRD33 34/2/1/21/9. No fold diverged.
-- Paired Sig+MAF vs MuAt-compatible tests: `results/tables/hrd_muat_paired_tests.json`.
-- Ablation ledger: `results/tables/muat_ablation_summary.csv` (stage C = "epoch fix + exact dicts").
+- Fold-level metrics: `results/tables/muat_style_tcga_comparator_hrd_faithful_fixed_arch_fold_metrics.csv`. HRD-score Spearman per fold: 0.486, 0.459, 0.494, 0.484, 0.612 (mean 0.507). HRD33 per-fold AUROC recomputed from `muat_style_tcga_comparator_hrd_faithful_fixed_arch_oof_predictions.csv`: 0.718, 0.713, 0.714, 0.776, 0.807 (mean 0.746).
+- Paired Sig+MAF vs MuAt-compatible tests: `results/tables/hrd_muat_paired_tests.json` (recomputed 2026-10-14; diff 0.270 [0.220, 0.319] for HRD score, 0.165 [0.094, 0.236] for HRD33).
+- Ablation ledger: `results/tables/muat_ablation_summary.csv`.
 
-Correction note (2026-10-03): an earlier draft of this file tied the HRD headlines to the `ab_a_before` run (bug + hashed dictionaries), which the ledger labels "before (bug + hashed dicts)". That attribution was wrong; the manuscript, its supplement, and this file now cite only the frozen `ab_c_full` run.
+Correction note (2026-10-14): an earlier version of this file tied the HRD headlines to the `ab_c_full` run (0.527/0.751), which used a non-faithful configuration (epoch fix + exact token dictionaries but not the MuAt-faithful motif grammar). The manuscript now reports the faithful-run numbers. The ab_c_full-based paired test is superseded; its values are preserved in git history.
 
 ---
 
@@ -96,7 +96,9 @@ committed outputs, plus the minimal commands to reproduce on a fresh clone.
 | 4 (centre held-out) | 3.12.3 | 1.6.2 | 1.7.2 | 2.3.1 | 1.26.4 | 1.15.3 | `environment/reviewer_analyses_lockfile.txt` |
 | 5 (PCAWG audit) | 3.12.3 | 1.6.2 | 1.7.2 | 2.3.1 | 1.26.4 | 1.15.3 | `environment/reviewer_analyses_lockfile.txt` |
 | 6 (repro deposit) | — (docs only) | — | — | — | — | — | — |
-| MuAt faithful | VIJAY's env | — | — | — | — | — | merged from codex/coxnet-muat-manuscript-updates (see note) |
+| MuAt faithful | VIJAY's env (reconstructed) | — | — | — | — | — | `environment/muat_faithful_lockfile.txt` (reconstructed) |
+| Frozen model (CPU regen) | 3.12.3 | 3.4.1 | 1.9.1 | 2.1.4 | 1.26.4 | 1.11.4 | `environment/frozen_model_lockfile.txt` |
+| PCAWG transfer | 3.13.5 (reconstructed) | 3.4.1 | 1.9.0 | — | — | — | `environment/pcawg_transfer_lockfile.txt` (reconstructed) |
 
 GPU note (Task 0): production Table 1 XGBoost cells used `gpu_hist` on a GPU
 machine; CPU reruns use `hist` and differ by ~0.001 on XGBoost cells. Linear
@@ -168,3 +170,26 @@ venv/bin/python scripts/task5_column_alignment_check.py
 venv/bin/python scripts/reproduce_table1_task0.py
 # → results/tables/task0_rerun_outputs/
 ```
+
+---
+
+## Known gaps (documented 2026-10-14; not fabricated)
+
+### Seven secondary contrasts not enumerated
+The manuscript Methods states "We corrected seven secondary comparisons for multiple testing" and Results reports one example (HRD33 gain over mutation patterns alone: +0.037, raw p=0.058, BH q=0.068). The full list of seven contrasts and their raw p-values / q-values are not committed in a repo artifact. The Task 2 CSV (`results/tables/task2_inference_results.csv`) covers the primary paired-bootstrap contrasts (C1a/C1b/C4a) with q_bh values. The seven secondary contrasts need a committed source file; until then, treat the enumeration as a documentation gap.
+
+### OncoKB version pin
+The OncoKB cancer-gene table is fetched live from `https://public.api.oncokb.org/api/v1/utils/cancerGeneList` (unversioned API). OncoKB Terms of Use prohibit redistribution, so the table is not committed. Provenance:
+- Table 1 production: downloaded 2026-09-23 (see `config/feature_resources/oncokb_cancer_genes.PROVENANCE.md`)
+- Snapshot archived: `results/tables/task6_oncokb_snapshot/oncokb_cancer_genes_2026-10-13.tsv` (sha256 9f80168c8fc9206f707488a5ba06b779cade26aa5c0900c93fa2a168e8fcadb5, 1,247 genes)
+- The 2026-09-23 production table is not archived; a fresh download drifts from it. The feature builder documents the mapping in the PROVENANCE file.
+
+### Environment lockfiles
+- `environment/table1_lockfile.txt`: production Table 1 (Python 3.12.3, xgboost 1.6.2, gpu_hist) — authoritative, captured from actual venv
+- `environment/reviewer_analyses_lockfile.txt`: Tasks 1-6 (Python 3.12.3, xgboost 1.6.2)
+- `environment/frozen_model_lockfile.txt`: CPU Table 1 regeneration (Python 3.12.3, xgboost 3.4.1, hist/CPU) — captured 2026-10-14 from ~/workspace/task6_venv
+- `environment/pcawg_transfer_lockfile.txt`: RECONSTRUCTED (Python 3.13.5, sklearn 1.9.0 known; pandas/numpy unrecorded)
+- `environment/muat_faithful_lockfile.txt`: RECONSTRUCTED (architecture and config known; Python/torch versions unrecorded)
+
+### Zenodo bundle
+The v2 bundle contains the superseded `hrd_muat_paired_tests.json` (ab_c_full numbers). A v3 bundle or version note is needed to publish the corrected faithful-run paired test.

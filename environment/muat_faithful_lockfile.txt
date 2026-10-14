@@ -1,0 +1,22 @@
+# MuAt faithful-run training environment (RECONSTRUCTED)
+# Date: 2026-10-14. Status: reconstructed from VIJAY's branch materials;
+# the original training venv is not archived. Do not treat as pip-freeze-verbatim.
+#
+# Known from docs/muat_fidelity_audit_2026-10.md and
+# docs/results_summary_2026-10.md (VIJAY, 2026-10-04):
+# - Hardware: RTX 3080 (fidelity audit); manuscript states A100 for the
+#   18.5h cancer-typing / 3.0h HRD compute budget (unverified which GPU
+#   ran the faithful HRD run specifically)
+# - Architecture: fixed config, embed_dim 128, 1 layer, 1 attention head,
+#   feature_dim 24, dropout 0.1, lr 0.0006, momentum 0.9, weight_decay 0.001,
+#   150 epochs, batch_size 1, pooling attention_weighted
+# - Dictionary: exact token dictionaries (annotation 18, motif 310, position 3116)
+# - Config: config/experiment_settings.muat_hrd_faithful_fixed_arch.yaml
+# - Runner: src/runners/run_muat_style_tcga_comparator.py
+# - Fidelity: audited line-by-line against primasanjaya/muat (official trainer)
+#
+# Python and torch versions were not recorded in the branch materials.
+# The manuscript Methods lists torch 2.5.1 for the MuAt-compatible runs.
+
+# python version unrecorded
+# torch==2.5.1 (from manuscript Methods; unverified against training env)

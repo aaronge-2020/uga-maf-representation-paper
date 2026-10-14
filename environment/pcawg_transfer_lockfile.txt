@@ -1,0 +1,21 @@
+# PCAWG transfer scoring environment (RECONSTRUCTED)
+# Date: 2026-10-14. Status: reconstructed from analyst notes; the original
+# venv no longer exists. Do not treat as a pip-freeze-verbatim lockfile.
+#
+# Known versions (from Task 5 audit, 2026-10-12):
+# - Python 3.13.5
+# - scikit-learn 1.9.0
+# - xgboost 3.4.1 (frozen model; same as frozen_model_lockfile.txt)
+# - pandas, numpy: versions not recorded at audit time
+#
+# The PCAWG transfer (Task 5) scored frozen models on 913 PCAWG tumours.
+# No model was retrained. The scoring script is scripts/task5_pcawg_audit.py.
+# For exact reproduction, use environment/frozen_model_lockfile.txt
+# (Python 3.12.3, xgboost 3.4.1) which is the closest pinned environment;
+# the Python 3.13.5 vs 3.12.3 difference does not affect scoring outputs
+# (deterministic XGBoost inference).
+
+python==3.13.5
+scikit-learn==1.9.0
+xgboost==3.4.1
+# pandas, numpy versions unrecorded - see frozen_model_lockfile.txt for closest pinned versions
