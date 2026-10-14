@@ -43,7 +43,9 @@ from scipy.stats import spearmanr
 from sklearn.metrics import roc_auc_score
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-INPUTS = Path.home() / "workspace" / "task3_inputs"
+DEFAULT_INPUTS = REPO_ROOT / "data" / "task3"  # in-repo copy of task3 inputs (2026-10-14)
+DEFAULT_OUTPUTS = REPO_ROOT / "results" / "tables"
+INPUTS = DEFAULT_INPUTS  # overridden by --data-dir in main()
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from utils.nested_oof import outer_splits  # noqa: E402
@@ -83,6 +85,17 @@ XGB_PARAMS = {
     "tree_method": "hist",
     "n_jobs": 8,
 }
+
+
+def parse_args(argv=None):
+    import argparse
+    p = argparse.ArgumentParser(description="Task 3: HRD attribution baselines")
+    p.add_argument("--data-dir", type=Path, default=DEFAULT_INPUTS,
+                   help="directory with final_analysis_cohort.tsv, sbs3_activity_772.csv and "
+                        f"order_<endpoint>.csv (default: {DEFAULT_INPUTS})")
+    p.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUTS,
+                   help=f"directory for the summary and OOF CSVs (default: {DEFAULT_OUTPUTS})")
+    return p.parse_args(argv)
 
 
 def load_labels(endpoint: str) -> pd.Series:
@@ -138,13 +151,17 @@ def fit_predict_xgb(task: str, x_train: np.ndarray, y_train: np.ndarray,
 
 
 def main() -> int:
+    global INPUTS
+    args = parse_args()
+    INPUTS = args.data_dir
+    tables = args.output_dir
+    tables.mkdir(parents=True, exist_ok=True)
+
     features = load_baseline_features()
     print("baseline features:", features.shape)
     print("  SBS3>0 samples:", int((features["sbs3_activity"] > 0).sum()))
     print("  BRCA1/2-positive samples:", int(features["brca12_status"].sum()))
 
-    tables = REPO_ROOT / "results/tables"
-    tables.mkdir(parents=True, exist_ok=True)
     ckpt_dir = tables / "main_manuscript_complete_panel_nested_fold_checkpoints"
 
     summary_rows: list[dict] = []

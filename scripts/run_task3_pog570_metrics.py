@@ -25,6 +25,21 @@ sys.path.insert(0, str(REPO_ROOT / "src"))
 N_BOOT = 2000
 SEED = 20261013
 
+DEFAULT_INPUT = (REPO_ROOT / "results/external_validation/aaron_email/pog570"
+                 / "pog570_frozen_model_predictions.csv")
+DEFAULT_OUTPUT = REPO_ROOT / "results/tables/task3_pog570_external_metrics.csv"
+
+
+def parse_args(argv=None):
+    import argparse
+    p = argparse.ArgumentParser(
+        description="Task 3: POG570 external-validation metrics from saved predictions")
+    p.add_argument("--input", dest="input", type=Path, default=DEFAULT_INPUT,
+                   help=f"POG570 frozen-model predictions CSV (default: {DEFAULT_INPUT})")
+    p.add_argument("--output", dest="output", type=Path, default=DEFAULT_OUTPUT,
+                   help=f"metrics CSV to write (default: {DEFAULT_OUTPUT})")
+    return p.parse_args(argv)
+
 
 def bootstrap_ci(stat_fn, y, p, n_boot=N_BOOT, seed=SEED):
     rng = np.random.default_rng(seed)
@@ -38,7 +53,9 @@ def bootstrap_ci(stat_fn, y, p, n_boot=N_BOOT, seed=SEED):
 
 
 def main() -> int:
-    frame = pd.read_csv(REPO_ROOT / "results/external_validation/aaron_email/pog570/pog570_frozen_model_predictions.csv")
+    args = parse_args()
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    frame = pd.read_csv(args.input)
     frame = frame.dropna(subset=["HRD_SCORE", "predicted_HRD_SCORE"]).copy()
     y_true = frame["HRD_SCORE"].to_numpy(dtype=float)
     y_pred = frame["predicted_HRD_SCORE"].to_numpy(dtype=float)
@@ -82,8 +99,8 @@ def main() -> int:
     out = pd.DataFrame(rows)
     out["analysis"] = "pog570_external"
     out["model"] = "frozen HRD_Score__signatures_plus_MAF_stack XGBoost regression (1,130 features)"
-    out.to_csv(REPO_ROOT / "results/tables/task3_pog570_external_metrics.csv", index=False)
-    print("wrote results/tables/task3_pog570_external_metrics.csv")
+    out.to_csv(args.output, index=False)
+    print(f"wrote {args.output}")
     return 0
 
 

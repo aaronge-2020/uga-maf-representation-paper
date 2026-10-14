@@ -48,10 +48,10 @@ import pandas as pd
 from sklearn.metrics import balanced_accuracy_score, accuracy_score
 from xgboost import XGBClassifier
 
-REPO = Path('/home/hatch/workspace/somatic-mutation-repo')
+REPO = Path(__file__).resolve().parent.parent
 TABLES = REPO / 'results' / 'tables'
 CKPT = TABLES / 'main_manuscript_complete_panel_nested_fold_checkpoints'
-SIGCSV = Path('/home/hatch/workspace/task0_rerun/features/features_standard_sbs96_id83.csv.gz')
+SIGCSV = REPO / 'data' / 'task0_features' / 'features_standard_sbs96_id83.csv.gz'
 CLASSES = ['BLCA', 'BRCA', 'CESC', 'COAD', 'ESCA', 'GBM', 'HNSC', 'KIRC',
            'KIRP', 'LGG', 'LIHC', 'LUAD', 'LUSC', 'OV', 'PRAD', 'SARC',
            'SKCM', 'STAD', 'THCA', 'UCEC']

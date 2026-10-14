@@ -1,8 +1,12 @@
+# Reconciled 2026-10-14: python=3.12 to match table1_lockfile.txt, which was
+# captured from the actual Task 0 venv (venv312, Python 3.12.3) and is
+# authoritative. The previous python=3.10 pin was aspirational and did not
+# match the measured environment.
 name: uga-maf
 channels:
   - conda-forge
 dependencies:
-  - python=3.10
+  - python=3.12
   - numpy=1.26.4
   - pandas=2.3.1
   - scipy=1.15.3

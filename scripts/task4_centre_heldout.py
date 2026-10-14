@@ -50,6 +50,7 @@ Deviations from the headline pipeline (documented in the notes):
     held out).
 """
 
+import argparse
 import hashlib
 import json
 import os
@@ -70,13 +71,16 @@ TOP20 = ["BRCA", "UCEC", "LUAD", "LGG", "HNSC", "PRAD", "THCA", "LUSC",
          "CESC", "KIRP", "SARC", "ESCA"]
 TASK_TYPES = ["CESC", "OV", "COAD", "KIRC", "KIRP"]
 SMALL_CENTRE_MIN = 20
-ASSETS = Path(os.environ.get("TASK4_ASSETS", str(Path.home() / "workspace/task4_assets")))
+DEFAULT_ASSETS = Path(os.environ.get("TASK4_ASSETS",
+                                      str(REPO / "data" / "task4")))  # in-repo copy of task4 assets (2026-10-14)
+ASSETS = DEFAULT_ASSETS  # overridden by --data-dir in main()
 SIG_BUNDLE = ASSETS / "feats_std.csv.gz"   # 182-col SBS96+ID83, from HF dataset bundle
 CDR_XLSX = ASSETS / "cdr.xlsx"
 BURDEN = ASSETS / "burden.csv"  # defines the pipeline's matched-feature patient set
 MAF_MATRIX = REPO / "results/tables/quick_bio_v4_maf_features.csv.gz"  # 948-col MAF stack
 MAPPING = REPO / "results/tables/batch_center_sample_mapping.csv"
-TABLES = REPO / "results/tables"
+DEFAULT_TABLES = REPO / "results/tables"
+TABLES = DEFAULT_TABLES  # overridden by --output-dir in main()
 OUT_SUMMARY = TABLES / "task4_centre_heldout.csv"
 OUT_COMPOSITION = TABLES / "task4_centre_composition.csv"
 OUT_PREDS = TABLES / "task4_centre_heldout_predictions.csv"
@@ -98,6 +102,31 @@ SETTINGS = {
 }
 JOB_RESULTS_DIR = CKPT_DIR / "job_results"
 JOB_PREDS_DIR = CKPT_DIR / "job_predictions"
+
+
+def parse_args(argv=None):
+    p = argparse.ArgumentParser(description="Task 4: centre-held-out evaluation for cancer typing")
+    p.add_argument("--data-dir", type=Path, default=DEFAULT_ASSETS,
+                   help="directory with feats_std.csv.gz, cdr.xlsx and burden.csv "
+                        "(overrides TASK4_ASSETS; default: %(default)s)")
+    p.add_argument("--output-dir", type=Path, default=DEFAULT_TABLES,
+                   help="directory for the task4 CSV outputs (default: %(default)s)")
+    return p.parse_args(argv)
+
+
+def configure_paths(args):
+    """Point the module-level input/output paths at the CLI-chosen dirs."""
+    global ASSETS, SIG_BUNDLE, CDR_XLSX, BURDEN, TABLES
+    global OUT_SUMMARY, OUT_COMPOSITION, OUT_PREDS
+    ASSETS = args.data_dir
+    SIG_BUNDLE = ASSETS / "feats_std.csv.gz"
+    CDR_XLSX = ASSETS / "cdr.xlsx"
+    BURDEN = ASSETS / "burden.csv"
+    TABLES = args.output_dir
+    TABLES.mkdir(parents=True, exist_ok=True)
+    OUT_SUMMARY = TABLES / "task4_centre_heldout.csv"
+    OUT_COMPOSITION = TABLES / "task4_centre_composition.csv"
+    OUT_PREDS = TABLES / "task4_centre_heldout_predictions.csv"
 
 
 def load_cohort():
@@ -413,6 +442,7 @@ def finalize():
 
 
 def main():
+    configure_paths(parse_args())
     if os.environ.get("TASK4_FINALIZE") == "1":
         finalize()
     else:

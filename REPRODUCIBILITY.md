@@ -77,3 +77,85 @@ The manuscript's MuAt-compatible HRD headline numbers (HRD-score Spearman 0.527,
 - Ablation ledger: `results/tables/muat_ablation_summary.csv` (stage C = "epoch fix + exact dicts").
 
 Correction note (2026-10-03): an earlier draft of this file tied the HRD headlines to the `ab_a_before` run (bug + hashed dictionaries), which the ledger labels "before (bug + hashed dicts)". That attribution was wrong; the manuscript, its supplement, and this file now cite only the frozen `ab_c_full` run.
+
+---
+
+## Reviewer-analyses tasks (Tasks 0–6): version table and reproduce commands
+
+Added 2026-10-14. Each task below lists the exact environment that produced its
+committed outputs, plus the minimal commands to reproduce on a fresh clone.
+
+### Version table
+
+| Task | Python | xgboost | sklearn | pandas | numpy | scipy | Lockfile |
+|---|---|---|---|---|---|---|---|
+| 0 (Table 1) | 3.12.3 | 1.6.2 | 1.7.2 | 2.3.1 | 1.26.4 | 1.15.3 | `environment/table1_lockfile.txt` |
+| 1 (gene ablations) | 3.12.3 | 1.6.2 | 1.7.2 | 2.3.1 | 1.26.4 | 1.15.3 | `environment/reviewer_analyses_lockfile.txt` |
+| 2 (paired bootstrap) | 3.12.3 | — (not used) | — | 2.3.1 | 1.26.4 | 1.15.3 | `environment/reviewer_analyses_lockfile.txt` |
+| 3 (HRD attribution) | 3.12.3 | 1.6.2 | 1.7.2 | 2.3.1 | 1.26.4 | 1.15.3 | `environment/reviewer_analyses_lockfile.txt` |
+| 4 (centre held-out) | 3.12.3 | 1.6.2 | 1.7.2 | 2.3.1 | 1.26.4 | 1.15.3 | `environment/reviewer_analyses_lockfile.txt` |
+| 5 (PCAWG audit) | 3.12.3 | 1.6.2 | 1.7.2 | 2.3.1 | 1.26.4 | 1.15.3 | `environment/reviewer_analyses_lockfile.txt` |
+| 6 (repro deposit) | — (docs only) | — | — | — | — | — | — |
+| MuAt faithful | VIJAY's env | — | — | — | — | — | not in repo (see note) |
+
+GPU note (Task 0): production Table 1 XGBoost cells used `gpu_hist` on a GPU
+machine; CPU reruns use `hist` and differ by ~0.001 on XGBoost cells. Linear
+cells reproduce bit-for-bit on CPU.
+
+### MuAt faithful-protocol numbers
+
+The manuscript's MuAt headline comparisons (cancer typing 0.528, HRD score
+0.507, HRD33 0.746; paired differences vs Sig+MAF) come from VIJAY Vankadaru's
+faithful-protocol rerun (committed as results summary in `4da1160`). VIJAY's
+training code and checkpoints are **not in this repository**. This repo contains
+a MuAt-compatible reimplementation (`src/runners/run_muat_style_tcga_comparator.py`)
+which is explicitly not official MuAt; see `docs/muat_replication_rigor.md`.
+To obtain VIJAY's code: contact Aaron Ge for VIJAY Vankadaru's repository location.
+
+### Reproduce commands (fresh clone)
+
+```bash
+# 0. One-time setup (all tasks)
+git clone https://github.com/aaronge-2020/uga-maf-representation-paper.git
+cd uga-maf-representation-paper
+python3.12 -m venv venv && venv/bin/pip install -r environment/reviewer_analyses_lockfile.txt
+python scripts/fetch_datasets.py   # downloads the HF data bundle
+```
+
+```bash
+# Task 1: gene-identity / knowledge ablations
+venv/bin/python scripts/task1_gene_knowledge_ablations_v2.py
+# → results/tables/task1_oof_*.csv + task1_gene_knowledge_ablations.csv
+```
+
+```bash
+# Task 2: paired bootstrap inference
+venv/bin/python scripts/task2_paired_bootstrap.py
+# → results/tables/task2_inference_results.csv
+```
+
+```bash
+# Task 3: HRD attribution baselines + POG570 metrics
+venv/bin/python scripts/run_task3_hrd_attribution_baselines.py
+venv/bin/python scripts/run_task3_pog570_metrics.py
+# → results/tables/task3_*.csv
+```
+
+```bash
+# Task 4: centre-held-out evaluation
+venv/bin/python scripts/task4_centre_heldout.py
+# → results/tables/task4_*.csv
+```
+
+```bash
+# Task 5: PCAWG audit
+venv/bin/python scripts/task5_pcawg_audit.py
+venv/bin/python scripts/task5_column_alignment_check.py
+# → results/tables/task5_*.csv
+```
+
+```bash
+# Task 0: Table 1 reproduction (slow: 60+ CPU hours; GPU recommended)
+venv/bin/python scripts/reproduce_table1_task0.py
+# → results/tables/task0_rerun_outputs/
+```

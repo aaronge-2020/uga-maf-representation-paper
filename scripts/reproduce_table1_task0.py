@@ -25,7 +25,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-REPO = Path("/home/hatch/workspace/somatic-mutation-repo")
+REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "src"))
 
 from utils.nested_oof import (  # noqa: E402
@@ -45,9 +45,9 @@ from utils.nested_oof import (  # noqa: E402
 # seeds for the four single-matrix slots. Feature-set slots are unaffected.
 from utils.feature_evaluation import stable_seed as fe_stable_seed  # noqa: E402
 
-OUT = Path("/home/hatch/workspace/task0_rerun/outputs")
+OUT = REPO / "results" / "tables" / "task0_rerun_outputs"
 OUT.mkdir(parents=True, exist_ok=True)
-FEAT = Path("/home/hatch/workspace/task0_rerun/features")  # FIX 2026-10-13: /tmp wiped between sessions; canonical copies live in the workspace
+FEAT = REPO / "data" / "task0_features"  # canonical in-repo input copies
 
 FIXED_CLASSES = ["BRCA","UCEC","LUAD","LGG","HNSC","PRAD","THCA","LUSC","SKCM","STAD",
                  "BLCA","OV","COAD","GBM","KIRC","LIHC","CESC","KIRP","SARC","ESCA"]

@@ -5,7 +5,8 @@ Verifies that the PCAWG scoring tables line up with the frozen models'
 training schemas:
   1. Sig+MAF model: results/frozen_models/cancer_type_top20__signatures_plus_MAF_stack
      (feature_order.txt, 1,130 names) vs the scored table
-     pcawg_sigmaf_1130_features.csv.gz (default: the pipeline work dir copy).
+     pcawg_sigmaf_1130_features.csv.gz (default: data/pcawg/pcawg_sigmaf_1130_features.csv.gz;
+     not deposited in the repo, copy it from the PCAWG transfer work dir first).
   2. patterns-only model: results/frozen_models/cancer_type_top20__standard_sbs96_id83
      (feature_order.txt, 182 names) vs
      results/external_validation/aaron_email/pcawg/pcawg_standard_sbs96_id83_features.csv.gz.
@@ -23,11 +24,14 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-REPO = Path("/home/hatch/workspace/somatic-mutation-repo")
+REPO = Path(__file__).resolve().parent.parent
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--sigmaf-features",
-                    default="/home/hatch/workspace/pcawg_sigmaf_transfer/features/pcawg_sigmaf_1130_features.csv.gz")
+                    default=str(REPO / "data" / "pcawg" / "pcawg_sigmaf_1130_features.csv.gz"),
+                    help="Sig+MAF scored PCAWG features table. Not deposited in the repo: "
+                         "copy data/pcawg/pcawg_sigmaf_1130_features.csv.gz from the PCAWG "
+                         "transfer work dir (~/workspace/pcawg_sigmaf_transfer/features/) or pass its path here.")
 args = parser.parse_args()
 
 

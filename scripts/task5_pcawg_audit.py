@@ -22,7 +22,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-REPO = Path("/home/hatch/workspace/somatic-mutation-repo")
+REPO = Path(__file__).resolve().parent.parent
 SIGMAF_PRED = REPO / "external_validation/pcawg_transfer/predictions/pcawg_sigmaf_predictions.csv"
 SPECTRA_PRED = REPO / "results/external_validation/aaron_email/pcawg/pcawg_frozen_model_predictions.csv"
 OUT = REPO / "results/tables/task5_pcawg_audit_per_type.csv"
