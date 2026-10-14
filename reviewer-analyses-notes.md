@@ -212,7 +212,85 @@ n=570 all POG570).
 
 ---
 
-## Tasks 1, 2, 4, 6 — pending Task 0
+## Task 1 — Gene identity and knowledge controls (2026-10-14)
+
+### Method as run
+New script `scripts/task1_gene_knowledge_ablations_v2.py` (the superseded
+`task1_gene_knowledge_ablations.py` / `task1_part2_ef_and_summary.py` used
+xgboost 3.4.1 and a non-native harness; left untouched, not used).
+
+1. Rebuilt the 8,800-tumour cohort, labels, the 948-col Bio MAF v4 matrix and
+   the 182-col signature matrix from `results/tables/` (+ the Task 0 rerun's
+   `features_standard_sbs96_id83.csv.gz` for signatures). All three matrices
+   digest-verified byte-for-byte against the archived checkpoint manifests
+   (`_matrix_digest`: sha256 of shape + float32 bytes), including the
+   `signatures_only` and `signatures_plus_v4_full_core*` sets — so the
+   Sig+MAF ablations CAN run on this machine (the old note claiming the
+   signature matrix was unavailable was wrong).
+2. Used the archived outer folds per representation (MAF seed 615371,
+   Sig+MAF seed 750978) and the archived per-fold nested-search winners
+   (feature set, hyperparameters, m_star) with NO re-tuning. (a) controls are
+   the archived OOF predictions verbatim — they match Task 0 by construction
+   (MAF 0.661830 vs manuscript 0.6618; Sig+MAF 0.737784 vs 0.7378).
+3. (b)-(f) refit per fold with the production final-refit seed schedule
+   (split seed + fold*1009 + 99991), pinned Table 1 env
+   (~/workspace/task0_rerun/venv312/: xgboost 1.6.2, sklearn 1.7.2,
+   numpy 1.26.4, pandas 2.3.1, scipy 1.15.3), tree_method='hist' (production's
+   own CPU fallback for gpu_hist), NaN->0 float32, proba row-renormalized as
+   in `_coerce_proba`. 50 refits, 1914 s total.
+4. (e)/(f) use the same per-fold winner params/m_star as (a) ("no tuning");
+   for Sig+MAF they keep the 182-signature block (otherwise they would be
+   identical to the MAF-alone runs).
+
+### MECHANICAL feature-classification rules (no case-by-case calls)
+- **Gene identity**: column name starts with
+  `driver_gene_functional_event_log_count__` or
+  `driver_gene_role_matched_event_log_count__` → 802 columns. Verified
+  byte-identical to the feature table's `exact_consensus_driver_gene_identity`
+  block, and the 401 gene names verified identical to the 401-gene Bio MAF v4
+  panel (`proposed_clinical_bio_v4_driver_gene_panel.csv`, all 401 selected).
+- **Knowledge**: column name starts with `oncokb_role_` (12), `cancer_hotspot_`
+  (4), or `driver_evidence_` (16) → 32 columns, zero overlap with gene identity.
+
+Full column lists: `results/tables/task1_feature_lists.md`
+(32 knowledge columns enumerated; 802 gene-identity columns enumerated,
+401 genes x 2 prefixes).
+
+### Per-fold feature counts (winner set minus ablated columns)
+MAF: f1 full=923 b=911 c=121 d=109 | f2 full=948 b=916 c=146 d=114 |
+f3 full=943 b=911 c=141 d=109 | f4 full=948 b=916 c=146 d=114 |
+f5 full=948 b=916 c=146 d=114. (e)/(f): 401 each.
+Sig+MAF (182 sig cols never removed): f1 full=1130 b=1098 c=328 d=296 |
+f2 full=1125 b=1093 c=323 d=291 | f3 1130/1098/328/296 | f4 1125/1093/323/291 |
+f5 1125/1093/323/291. (e)/(f): 583 each (182 sig + 401).
+
+### Headline numbers (pooled balanced accuracy; accuracy in CSV)
+MAF alone: (a) full 0.6618 | (b) no knowledge 0.6586 (−0.003) |
+(c) no gene identity 0.5398 (−0.122) | (d) neither 0.4821 (−0.180) |
+(e) binary gene indicators 0.4556 | (f) per-gene driver counts 0.3068.
+Sig+MAF: (a) full 0.7378 | (b) no knowledge 0.7409 (+0.003) |
+(c) no gene identity 0.6775 (−0.060) | (d) neither 0.6505 (−0.087) |
+(e) sig + binary genes 0.6540 | (f) sig + driver counts 0.6140.
+Reference: mutation patterns alone 0.5381 (manuscript Table 1).
+Per-fold + pooled, balanced accuracy and accuracy:
+`results/tables/task1_gene_knowledge_ablations.csv`. OOF predictions
+(sample, true_label, pred_label, fold + 20 proba cols):
+`results/tables/task1_oof_<maf|sigmaf>_<variant>.csv` (12 files, 8,800 rows each).
+
+### Deviations / corrections
+- Fold assignments: used each representation's own archived Task 0 folds,
+  not the burden_only fold file named in the task brief — the burden_only
+  folds are a different split (seed 20284067), and the (a) control can only
+  match Task 0 on the MAF/Sig+MAF folds.
+- "397 Bio MAF genes" in the task brief and in
+  `scripts/make_new_analysis_figures.py` ("794 columns, 397 genes") is stale:
+  the manuscript text and the feature table both have the 401-gene panel /
+  802 per-gene columns. Used the mechanical rule on the actual columns
+  (401 genes); the manuscript's "397" figure label needs correcting.
+- The manuscript's current ablation numbers (0.514 vs 0.538) came from
+  different configurations and are superseded by the same-config reruns above.
+
+## Tasks 2, 4, 6 — pending Task 0
 
 Task 1 (gene identity/knowledge controls), Task 2 (inferential procedure),
 Task 4 (centre-held-out), and Task 6 (reproducibility deposit) will run after
