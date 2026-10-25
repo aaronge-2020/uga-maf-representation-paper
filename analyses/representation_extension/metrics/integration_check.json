@@ -1,0 +1,16 @@
+{
+ "cancer_fold1_smoke": {
+  "balanced_accuracy": 0.6480281587395875,
+  "n_train": 7040,
+  "n_test": 1760,
+  "zero_gene_rows_total": 444,
+  "seconds": 14.7
+ },
+ "tfidf_vocab_genes": 391,
+ "hrd_fold1_smoke": {
+  "spearman": 0.7616056173799401,
+  "n_train": 617,
+  "n_test": 155
+ },
+ "status": "PASS"
+}

@@ -1,0 +1,26 @@
+{
+ "cancer": {
+  "n": 8800,
+  "fold_sizes": {
+   "1": 1760,
+   "2": 1760,
+   "3": 1760,
+   "4": 1760,
+   "5": 1760
+  },
+  "sha256": "29d79f8fd5e48eaeeee6b44c81cbe725922ac7bcdae8951a00b3b0aacac97395",
+  "source": "main_manuscript_complete_panel_oof_predictions.csv @ signatures_plus_MAF_stack/xgboost"
+ },
+ "hrd": {
+  "n": 772,
+  "fold_sizes": {
+   "1": 155,
+   "2": 155,
+   "3": 154,
+   "4": 154,
+   "5": 154
+  },
+  "sha256": "c4175794b0177ebbd609c21561b6edf26de97eb17521af2c638f97200af49e6d",
+  "source": "main_manuscript_complete_panel_oof_predictions.csv @ signatures_plus_MAF_stack/xgboost"
+ }
+}
