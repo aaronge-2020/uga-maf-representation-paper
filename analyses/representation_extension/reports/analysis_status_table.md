@@ -23,7 +23,7 @@ Project: mutation representation extension benchmark (brief dated 2026-10-25). B
 | D1 | Priority D SBS3 and BRCA sparsity audit | completed | SBS3 nonzero 9 of 772 (data/task3/sbs3_activity_772.csv); BRCA indicator positive 14 of 772 (task3 rule on the Bio MAF matrix) |
 | D2 | Priority D covariate analyses (burden, purity, ploidy, subtype) on matched subsets | planned | cohort table carries the covariates (771 of 772 complete) |
 | D3 | SigMA or other exome-valid HRD comparator | planned | subject to input and training-overlap checks; no WGS-only method |
-| E1 | Complementary endpoint screen (LUAD smoking first) | running | CDR supplement is local; smoking field and class counts being verified from the file |
+| E1 | Complementary endpoint screen (LUAD smoking first) | blocked | CDR supplement verified locally: 34 columns, no smoking or tobacco field. Missing prerequisite: a documented smoking history label source (for example the TCGA LUAD clinical record via GDC or cBioPortal) plus a download decision. PAM50 subtype calls also lack a documented local source. No complementary endpoint is adopted until labels exist locally and pass the circularity screen |
 | E2 | Complementary endpoint full core comparison (if adopted) | planned | only if E1 supports it, decided on label quality and counts, never on test performance |
 | F1 | Survival incremental analysis (clinical baseline vs plus gene features vs plus spectra and Bio MAF) | planned | conditional, after A to D per brief priority |
 | F2 | MuAt reruns (3 seeds, architecture searched primary) | blocked | missing prerequisite: GPU hardware. Archived runs audited instead (audit report section 5) |
