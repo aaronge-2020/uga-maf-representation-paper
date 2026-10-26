@@ -90,7 +90,7 @@ def sample_config(rng, learner, task):
             "colsample_bytree": float(rng.choice([0.4, 0.6, 0.8, 1.0])),
             "min_child_weight": float(rng.choice([1, 3, 5])),
             "reg_lambda": float(rng.choice([0.5, 1.0, 2.0, 5.0])),
-            "n_estimators": 1200,
+            "n_estimators": 400,
         }
     if task == "cancer":
         return {"C": float(10 ** rng.uniform(-3, 0.5)), "l1_ratio": float(rng.choice([0.1, 0.3, 0.5, 0.7, 0.9]))}
@@ -103,11 +103,11 @@ def fit_predict(learner, task, cfg, Xtr, ytr, Xva, yva, Xte, seed):
             classes, counts = np.unique(ytr, return_counts=True)
             wmap = {c: len(ytr) / (len(classes) * n) for c, n in zip(classes, counts)}
             sw = np.array([wmap[v] for v in ytr])
-            m = XGBClassifier(**cfg, early_stopping_rounds=50, n_jobs=2,
+            m = XGBClassifier(**cfg, early_stopping_rounds=40, n_jobs=2,
                               random_state=seed, tree_method="hist")
             m.fit(Xtr, ytr, sample_weight=sw, eval_set=[(Xva, yva)], verbose=False)
             return m.predict(Xte), m.predict_proba(Xte), m.best_iteration
-        m = XGBRegressor(**cfg, early_stopping_rounds=50, n_jobs=2,
+        m = XGBRegressor(**cfg, early_stopping_rounds=40, n_jobs=2,
                          random_state=seed, tree_method="hist")
         m.fit(Xtr, ytr, eval_set=[(Xva, yva)], verbose=False)
         return m.predict(Xte), None, m.best_iteration
@@ -136,6 +136,7 @@ def main():
     ap.add_argument("--representation", required=True)
     ap.add_argument("--learner", required=True, choices=["xgboost", "elasticnet"])
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--trials", type=int, default=10)
     args = ap.parse_args()
     task, rep, learner = args.task, args.representation, args.learner
     cell = f"{task}__{rep}__{learner}"
@@ -182,7 +183,7 @@ def main():
         itr, iva = tr_idx[inner_tr_pos], tr_idx[inner_va_pos]
         rng = np.random.default_rng(SEED + fold * 1000 + abs(hash(cell)) % 10000)
         best = None
-        for t in range(N_TRIALS):
+        for t in range(args.trials):
             cfg = sample_config(rng, learner, task)
             t0 = time.time()
             rec = {"cell": cell, "fold": fold, "trial": t, "config": json.dumps(cfg),

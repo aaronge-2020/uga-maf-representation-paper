@@ -77,3 +77,7 @@ Feasibility review only, in the brief's priority order (LUAD smoking, PAM50, MSI
 ## 8. Reproducibility
 
 Every run writes: config hash, input file checksums (sha256), library versions, seed, wall time, exit status, and failures, into `analyses/representation_extension/metrics/run_log.csv`. Predictions are saved as CSV with dataset, task, patient key, true outcome, fold, seed, representation, learner, prediction, and class probabilities where applicable. A fresh-process metric rebuild check is run on one representative completed contrast before results are reported.
+
+## Amendment v1.2 (2026-10-25, before primary outcomes)
+
+Measured compute on this machine (one full-train XGBoost fit on the cancer Sig+MAF matrix: 147 s) showed the original tree cap made the grid non-executable. XGBoost n_estimators cap is 400 with early stopping at 40 rounds. Trials per outer fold: 10 for all primary combined and reference cells and all HRD cells; 6 for cancer alone arms and extension cells. Full reasoning and the disclosure of the one interrupted run are in the deviations log, entry 8. No primary outcome had been computed under the earlier settings.
