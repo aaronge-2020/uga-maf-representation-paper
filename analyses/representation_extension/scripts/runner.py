@@ -2,6 +2,12 @@
 
 One invocation = one (task, representation, learner) cell. Resumable: a cell whose
 predictions file and trial table already exist is skipped unless --force is given.
+Per-fold checkpointing: each completed outer fold's predictions and trial records
+are persisted atomically under predictions_partial/<cell>/, together with the
+trial configurations sampled for every fold (drawn at cell start from the same
+per-fold seeded generators the fold loop has always used). A restarted invocation
+validates and replays those partials instead of recomputing finished folds, so a
+killed cell resumes at its first unfinished fold with identical configurations.
 
 Design points fixed by the protocol:
 - canonical outer split from config/canonical_split_<task>.csv, shared by all cells;
@@ -15,6 +21,8 @@ Design points fixed by the protocol:
 import argparse
 import hashlib
 import json
+import os
+import shutil
 import sys
 import time
 import traceback
@@ -130,6 +138,102 @@ def score(task, ytrue, pred):
     return float(spearmanr(ytrue, pred).statistic)
 
 
+def atomic_write_csv(df, path, float_format=None):
+    """Write a CSV via a temp file in the same directory, then rename over the target."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_name(path.name + ".tmp")
+    df.to_csv(tmp, index=False, float_format=float_format)
+    os.replace(tmp, path)
+
+
+def atomic_write_text(text, path):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(text)
+    os.replace(tmp, path)
+
+
+def fold_rng(cell, fold):
+    """The per-fold tuning generator, seeded exactly as the fold loop seeds it."""
+    return np.random.default_rng(SEED + fold * 1000 + abs(hash(cell)) % 10000)
+
+
+def load_or_make_configs(partial_dir, cell, learner, task, n_trials):
+    """Trial configurations for all five folds, persisted at cell start.
+
+    Each fold's seed uses Python's salted string hash, so a fresh process would
+    sample different configurations for folds it has not run yet. Each fold keeps
+    its own seeded generator and the generator feeds only sample_config, so
+    drawing every fold's configurations up front yields lists identical to
+    drawing them inside the loop; persisting them makes a restarted invocation
+    replay the identical tuning.
+    """
+    path = partial_dir / "trial_configs.json"
+    if path.exists():
+        try:
+            raw = json.loads(path.read_text())
+            configs = {int(k): v for k, v in raw.items()}
+            ok = set(configs) == set(range(1, 6)) and all(
+                len(configs[f]) == n_trials
+                and all(isinstance(c, dict) for c in configs[f])
+                for f in configs)
+            if ok:
+                print(f"{cell} checkpoint: trial configs loaded from partial", flush=True)
+                return configs
+            print(f"{cell} checkpoint: trial configs partial invalid, redrawing", flush=True)
+        except Exception as e:
+            print(f"{cell} checkpoint: trial configs partial unreadable ({e}), redrawing",
+                  flush=True)
+    configs = {fold: [sample_config(fold_rng(cell, fold), learner, task)
+                      for _ in range(n_trials)]
+               for fold in range(1, 6)}
+    atomic_write_text(json.dumps(configs), path)
+    print(f"{cell} checkpoint: trial configs written", flush=True)
+    return configs
+
+
+def load_valid_partial(partial_dir, cell, fold, split, patients, y_all, task):
+    """Return (fold predictions, fold trial records) from a validated partial, else None.
+
+    A partial is valid only if the predictions file is readable, carries exactly
+    the columns the fold block would have, holds one row per canonical test
+    patient of this fold with no duplicates, and the trial file is readable,
+    belongs to this fold, and contains its FINAL record.
+    """
+    pred_file = partial_dir / f"fold{fold}.csv"
+    trial_file = partial_dir / f"fold{fold}_trials.csv"
+    if not (pred_file.exists() and trial_file.exists()):
+        return None
+    try:
+        # float_precision="round_trip": the default CSV parser can land one ulp off
+        # on 17-digit floats; the round-trip parser recovers partial values exactly.
+        df = pd.read_csv(pred_file, dtype={"patient": str}, float_precision="round_trip")
+        tri = pd.read_csv(trial_file, float_precision="round_trip")
+    except Exception:
+        return None
+    te_patients = list(np.array(patients)[split["fold"].values == fold])
+    base_cols = {"patient", "fold", "true_value", "prediction"}
+    proba_cols = ({f"proba_{k}" for k in range(len(np.unique(y_all)))}
+                  if task == "cancer" else set())
+    valid = (
+        set(df.columns) == base_cols | proba_cols
+        and len(df) == len(te_patients)
+        and df["patient"].is_unique
+        and set(df["patient"]) == set(te_patients)
+        and (df["fold"] == fold).all()
+        and df["prediction"].notna().all()
+        and df["true_value"].notna().all()
+        and len(tri) >= 2
+        and (tri["fold"] == fold).all()
+        and (tri["trial"] == "FINAL").sum() == 1
+    )
+    if not valid:
+        print(f"{cell} checkpoint: fold {fold} partial failed validation, recomputing",
+              flush=True)
+        return None
+    return df, tri.to_dict("records")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--task", required=True, choices=["cancer", "hrd"])
@@ -164,11 +268,26 @@ def main():
         X_all, _ = assemble(task, rep, patients)
         X_all = X_all.values.astype(np.float64)
 
+    partial_dir = NS / "predictions_partial" / cell
+    if args.force and partial_dir.exists():
+        shutil.rmtree(partial_dir)
+        print(f"{cell} checkpoint: --force given, partials cleared", flush=True)
+    fold_configs = load_or_make_configs(partial_dir, cell, learner, task, args.trials)
+
     trials, preds = [], []
+    n_loaded = 0
     for fold in range(1, 6):
         te_mask = split["fold"].values == fold
         tr_mask = ~te_mask
         tr_idx = np.where(tr_mask)[0]
+        loaded = load_valid_partial(partial_dir, cell, fold, split, patients, y_all, task)
+        if loaded is not None:
+            block_df, fold_trials = loaded
+            preds.append(block_df)
+            trials.extend(fold_trials)
+            n_loaded += 1
+            print(f"{cell} checkpoint: fold {fold} loaded from partial", flush=True)
+            continue
         if is_tfidf:
             tfidf_mat, _ = tfidf(counts_for_tfidf, tr_idx)
             if spec is not None:
@@ -181,10 +300,10 @@ def main():
         strat = y_all[tr_idx] if task == "cancer" else pd.qcut(y_all[tr_idx], 5, labels=False)
         inner_tr_pos, inner_va_pos = next(sss.split(np.zeros(len(tr_idx)), strat))
         itr, iva = tr_idx[inner_tr_pos], tr_idx[inner_va_pos]
-        rng = np.random.default_rng(SEED + fold * 1000 + abs(hash(cell)) % 10000)
+        fold_trials = []
         best = None
         for t in range(args.trials):
-            cfg = sample_config(rng, learner, task)
+            cfg = fold_configs[fold][t]
             t0 = time.time()
             rec = {"cell": cell, "fold": fold, "trial": t, "config": json.dumps(cfg),
                    "status": "ok", "inner_score": np.nan, "seconds": np.nan}
@@ -196,7 +315,7 @@ def main():
                 rec["status"] = f"FAILED: {type(e).__name__}: {e}"
                 traceback.print_exc()
             rec["seconds"] = round(time.time() - t0, 1)
-            trials.append(rec)
+            fold_trials.append(rec)
             if rec["status"] == "ok" and (best is None or rec["inner_score"] > best[0]):
                 best = (rec["inner_score"], cfg)
         if best is None:
@@ -206,25 +325,34 @@ def main():
         p_te, proba, best_iter = fit_predict(learner, task, cfg, X_all[tr_idx], y_all[tr_idx],
                                              X_all[iva], y_all[iva], X_all[te_mask], SEED)
         fit_seconds = round(time.time() - t0, 1)
-        trials.append({"cell": cell, "fold": fold, "trial": "FINAL", "config": json.dumps(cfg),
-                       "status": "ok", "inner_score": best[0], "seconds": fit_seconds,
-                       "best_iteration": best_iter})
+        fold_trials.append({"cell": cell, "fold": fold, "trial": "FINAL", "config": json.dumps(cfg),
+                            "status": "ok", "inner_score": best[0], "seconds": fit_seconds,
+                            "best_iteration": best_iter})
         block = {"patient": np.array(patients)[te_mask], "fold": fold,
                  "true_value": y_all[te_mask], "prediction": p_te}
         if proba is not None:
             for k in range(proba.shape[1]):
                 block[f"proba_{k}"] = proba[:, k]
-        preds.append(pd.DataFrame(block))
+        block_df = pd.DataFrame(block)
+        preds.append(block_df)
+        trials.extend(fold_trials)
+        # %.17g so a reloaded partial reproduces the in-memory floats bit-exactly
+        atomic_write_csv(block_df, partial_dir / f"fold{fold}.csv", float_format="%.17g")
+        atomic_write_csv(pd.DataFrame(fold_trials), partial_dir / f"fold{fold}_trials.csv",
+                         float_format="%.17g")
         print(f"{cell} fold {fold}: inner best {best[0]:.4f}, final fit {fit_seconds}s", flush=True)
+        print(f"{cell} checkpoint: fold {fold} written", flush=True)
 
     out = pd.concat(preds).sort_values(["fold", "patient"])
     out.insert(0, "task", task); out.insert(1, "representation", rep); out.insert(2, "learner", learner)
     out.insert(3, "seed", SEED)
-    pred_path.parent.mkdir(parents=True, exist_ok=True)
-    trial_path.parent.mkdir(parents=True, exist_ok=True)
-    out.to_csv(pred_path, index=False)
-    pd.DataFrame(trials).to_csv(trial_path, index=False)
+    atomic_write_csv(out, pred_path)
+    atomic_write_csv(pd.DataFrame(trials), trial_path)
     print(f"WROTE {pred_path} rows={len(out)} pooled score={score(task, out['true_value'].values, out['prediction'].values):.4f}")
+    if partial_dir.exists():
+        shutil.rmtree(partial_dir)
+        print(f"{cell} checkpoint: assembled final outputs "
+              f"({n_loaded} of 5 folds loaded from partials), partials removed", flush=True)
 
 
 if __name__ == "__main__":
