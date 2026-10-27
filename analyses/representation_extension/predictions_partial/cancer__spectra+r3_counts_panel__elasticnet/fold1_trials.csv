@@ -1,0 +1,12 @@
+cell,fold,trial,config,status,inner_score,seconds,best_iteration
+cancer__spectra+r3_counts_panel__elasticnet,1,0,"{""C"": 1.6879897218427347, ""l1_ratio"": 0.9}",ok,0.63406472644762657,150.5,
+cancer__spectra+r3_counts_panel__elasticnet,1,1,"{""C"": 1.6879897218427347, ""l1_ratio"": 0.9}",ok,0.63406472644762657,150.40000000000001,
+cancer__spectra+r3_counts_panel__elasticnet,1,2,"{""C"": 1.6879897218427347, ""l1_ratio"": 0.9}",ok,0.63406472644762657,150.59999999999999,
+cancer__spectra+r3_counts_panel__elasticnet,1,3,"{""C"": 1.6879897218427347, ""l1_ratio"": 0.9}",ok,0.6348223022052023,156.30000000000001,
+cancer__spectra+r3_counts_panel__elasticnet,1,4,"{""C"": 1.6879897218427347, ""l1_ratio"": 0.9}",ok,0.63406472644762657,153.59999999999999,
+cancer__spectra+r3_counts_panel__elasticnet,1,5,"{""C"": 1.6879897218427347, ""l1_ratio"": 0.9}",ok,0.63406472644762657,148.80000000000001,
+cancer__spectra+r3_counts_panel__elasticnet,1,6,"{""C"": 1.6879897218427347, ""l1_ratio"": 0.9}",ok,0.63406472644762657,151.90000000000001,
+cancer__spectra+r3_counts_panel__elasticnet,1,7,"{""C"": 1.6879897218427347, ""l1_ratio"": 0.9}",ok,0.63406472644762657,154,
+cancer__spectra+r3_counts_panel__elasticnet,1,8,"{""C"": 1.6879897218427347, ""l1_ratio"": 0.9}",ok,0.63406472644762657,149.30000000000001,
+cancer__spectra+r3_counts_panel__elasticnet,1,9,"{""C"": 1.6879897218427347, ""l1_ratio"": 0.9}",ok,0.63406472644762657,149,
+cancer__spectra+r3_counts_panel__elasticnet,1,FINAL,"{""C"": 1.6879897218427347, ""l1_ratio"": 0.9}",ok,0.6348223022052023,186.30000000000001,
