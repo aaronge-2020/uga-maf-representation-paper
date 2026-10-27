@@ -1,0 +1,2 @@
+cell,fold,trial,config,status,inner_score,seconds
+cancer__spectra+r3_counts_panel__elasticnet,3,4,"{""C"": 0.3704508003628251, ""l1_ratio"": 0.9}",ok,0.61356226951848847,145.69999999999999
