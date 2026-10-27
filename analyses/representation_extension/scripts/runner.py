@@ -8,6 +8,13 @@ trial configurations sampled for every fold (drawn at cell start from the same
 per-fold seeded generators the fold loop has always used). A restarted invocation
 validates and replays those partials instead of recomputing finished folds, so a
 killed cell resumes at its first unfinished fold with identical configurations.
+Per-trial checkpointing: within an unfinished fold, every tuning trial's record
+is persisted atomically to predictions_partial/<cell>/fold<k>_trial<t>.csv as soon
+as that trial completes. One fold's tuning can outlast this machine's process
+lifetime (cancer elastic net on the wide matrix), so a killed fold resumes at its
+first unfinished trial: persisted trial records are validated against the fold's
+persisted configurations and replayed, and the fold's best-configuration
+selection, final fit, and partial write proceed exactly as before.
 
 Design points fixed by the protocol:
 - canonical outer split from config/canonical_split_<task>.csv, shared by all cells;
@@ -192,13 +199,92 @@ def load_or_make_configs(partial_dir, cell, learner, task, n_trials):
     return configs
 
 
-def load_valid_partial(partial_dir, cell, fold, split, patients, y_all, task):
+def _same_config(stored, cfg):
+    """A stored config string parses back to exactly this configuration dict."""
+    try:
+        return json.loads(stored) == cfg
+    except Exception:
+        return False
+
+
+def trial_record_matches(rec, cell, fold, trial, cfg):
+    """One stored trial record belongs to this cell/fold/trial and carries the
+    persisted configuration sampled for that trial. The inner score is NaN
+    exactly for failed trials, matching how the trial loop writes them."""
+    return (
+        rec["cell"] == cell
+        and int(rec["fold"]) == fold
+        and str(rec["trial"]) == str(trial)
+        and _same_config(rec["config"], cfg)
+        and isinstance(rec["status"], str)
+        and (pd.isna(rec["inner_score"]) if rec["status"].startswith("FAILED")
+             else not pd.isna(rec["inner_score"]))
+    )
+
+
+def trial_file_matches(trials, cell, fold, n_trials, configs):
+    """A fold's stored trial records replay the fold only if they are exactly
+    the fold's per-trial records for the persisted configurations, in order,
+    ending in a FINAL record whose score and configuration match the best
+    trial under the trial loop's own selection rule."""
+    if len(trials) != n_trials + 1:
+        return False
+    best = None
+    for t in range(n_trials):
+        if not trial_record_matches(trials[t], cell, fold, t, configs[t]):
+            return False
+        if trials[t]["status"] == "ok" and (best is None or trials[t]["inner_score"] > best[0]):
+            best = (trials[t]["inner_score"], configs[t])
+    if best is None:
+        return False
+    fin = trials[-1]
+    return (
+        fin["cell"] == cell
+        and int(fin["fold"]) == fold
+        and str(fin["trial"]) == "FINAL"
+        and fin["status"] == "ok"
+        and not pd.isna(fin["inner_score"])
+        and fin["inner_score"] == best[0]
+        and _same_config(fin["config"], best[1])
+    )
+
+
+def load_trial_checkpoint(partial_dir, cell, fold, t, cfg):
+    """Return trial t's persisted record for this fold, else None.
+
+    A per-trial checkpoint is valid only if its file is readable with the
+    round-trip parser, holds exactly one row with exactly the trial record
+    columns, and that row matches this cell, fold, and trial index and carries
+    exactly the configuration persisted for the trial. Anything else is logged
+    and the trial is recomputed.
+    """
+    path = partial_dir / f"fold{fold}_trial{t}.csv"
+    if not path.exists():
+        return None
+    try:
+        tri = pd.read_csv(path, float_precision="round_trip")
+    except Exception:
+        print(f"{cell} checkpoint: fold {fold} trial {t} checkpoint unreadable, recomputing",
+              flush=True)
+        return None
+    cols = {"cell", "fold", "trial", "config", "status", "inner_score", "seconds"}
+    if (set(tri.columns) != cols or len(tri) != 1
+            or not trial_record_matches(tri.iloc[0], cell, fold, t, cfg)):
+        print(f"{cell} checkpoint: fold {fold} trial {t} checkpoint failed validation, "
+              f"recomputing", flush=True)
+        return None
+    return tri.to_dict("records")[0]
+
+
+def load_valid_partial(partial_dir, cell, fold, split, patients, y_all, task,
+                       n_trials, configs):
     """Return (fold predictions, fold trial records) from a validated partial, else None.
 
     A partial is valid only if the predictions file is readable, carries exactly
     the columns the fold block would have, holds one row per canonical test
-    patient of this fold with no duplicates, and the trial file is readable,
-    belongs to this fold, and contains its FINAL record.
+    patient of this fold with no duplicates, and the trial file is readable and
+    holds exactly this fold's trial records for the persisted configurations,
+    ending in a FINAL record that matches the fold's best trial.
     """
     pred_file = partial_dir / f"fold{fold}.csv"
     trial_file = partial_dir / f"fold{fold}_trials.csv"
@@ -223,15 +309,13 @@ def load_valid_partial(partial_dir, cell, fold, split, patients, y_all, task):
         and (df["fold"] == fold).all()
         and df["prediction"].notna().all()
         and df["true_value"].notna().all()
-        and len(tri) >= 2
-        and (tri["fold"] == fold).all()
-        and (tri["trial"] == "FINAL").sum() == 1
     )
-    if not valid:
+    records = tri.to_dict("records")
+    if not valid or not trial_file_matches(records, cell, fold, n_trials, configs):
         print(f"{cell} checkpoint: fold {fold} partial failed validation, recomputing",
               flush=True)
         return None
-    return df, tri.to_dict("records")
+    return df, records
 
 
 def main():
@@ -280,7 +364,8 @@ def main():
         te_mask = split["fold"].values == fold
         tr_mask = ~te_mask
         tr_idx = np.where(tr_mask)[0]
-        loaded = load_valid_partial(partial_dir, cell, fold, split, patients, y_all, task)
+        loaded = load_valid_partial(partial_dir, cell, fold, split, patients, y_all, task,
+                                    args.trials, fold_configs[fold])
         if loaded is not None:
             block_df, fold_trials = loaded
             preds.append(block_df)
@@ -302,22 +387,35 @@ def main():
         itr, iva = tr_idx[inner_tr_pos], tr_idx[inner_va_pos]
         fold_trials = []
         best = None
+        n_trials_loaded = 0
         for t in range(args.trials):
             cfg = fold_configs[fold][t]
-            t0 = time.time()
-            rec = {"cell": cell, "fold": fold, "trial": t, "config": json.dumps(cfg),
-                   "status": "ok", "inner_score": np.nan, "seconds": np.nan}
-            try:
-                p_va, _, _ = fit_predict(learner, task, cfg, X_all[itr], y_all[itr],
-                                         X_all[iva], y_all[iva], X_all[iva], SEED + t)
-                rec["inner_score"] = score(task, y_all[iva], p_va)
-            except Exception as e:  # keep the failure on record
-                rec["status"] = f"FAILED: {type(e).__name__}: {e}"
-                traceback.print_exc()
-            rec["seconds"] = round(time.time() - t0, 1)
+            rec = load_trial_checkpoint(partial_dir, cell, fold, t, cfg)
+            if rec is not None:
+                n_trials_loaded += 1
+            else:
+                t0 = time.time()
+                rec = {"cell": cell, "fold": fold, "trial": t, "config": json.dumps(cfg),
+                       "status": "ok", "inner_score": np.nan, "seconds": np.nan}
+                try:
+                    p_va, _, _ = fit_predict(learner, task, cfg, X_all[itr], y_all[itr],
+                                             X_all[iva], y_all[iva], X_all[iva], SEED + t)
+                    rec["inner_score"] = score(task, y_all[iva], p_va)
+                except Exception as e:  # keep the failure on record
+                    rec["status"] = f"FAILED: {type(e).__name__}: {e}"
+                    traceback.print_exc()
+                rec["seconds"] = round(time.time() - t0, 1)
+                # persist the trial as soon as it finishes, so a killed process
+                # loses at most the trial in flight, never the whole fold
+                atomic_write_csv(pd.DataFrame([rec]),
+                                 partial_dir / f"fold{fold}_trial{t}.csv",
+                                 float_format="%.17g")
             fold_trials.append(rec)
             if rec["status"] == "ok" and (best is None or rec["inner_score"] > best[0]):
                 best = (rec["inner_score"], cfg)
+        if n_trials_loaded:
+            print(f"{cell} checkpoint: fold {fold}: {n_trials_loaded} of {args.trials} "
+                  f"trials loaded from per-trial checkpoints", flush=True)
         if best is None:
             raise RuntimeError(f"{cell} fold {fold}: all trials failed")
         cfg = best[1]
