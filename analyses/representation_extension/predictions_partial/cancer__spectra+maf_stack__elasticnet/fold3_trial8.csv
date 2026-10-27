@@ -1,0 +1,2 @@
+cell,fold,trial,config,status,inner_score,seconds
+cancer__spectra+maf_stack__elasticnet,3,8,"{""C"": 0.0885957433368232, ""l1_ratio"": 0.3}",ok,0.69995144877586513,321
