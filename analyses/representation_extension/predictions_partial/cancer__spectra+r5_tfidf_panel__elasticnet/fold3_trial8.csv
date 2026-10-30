@@ -1,0 +1,2 @@
+cell,fold,trial,config,status,inner_score,seconds
+cancer__spectra+r5_tfidf_panel__elasticnet,3,8,"{""C"": 0.00874807216589703, ""l1_ratio"": 0.1}",ok,0.61832263727634218,134.59999999999999
