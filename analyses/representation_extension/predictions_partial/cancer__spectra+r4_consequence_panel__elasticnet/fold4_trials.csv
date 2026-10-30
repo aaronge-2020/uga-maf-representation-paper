@@ -1,0 +1,12 @@
+cell,fold,trial,config,status,inner_score,seconds,best_iteration
+cancer__spectra+r4_consequence_panel__elasticnet,4,0,"{""C"": 0.6974142594505115, ""l1_ratio"": 0.3}",ok,0.63461009187780537,595.60000000000002,
+cancer__spectra+r4_consequence_panel__elasticnet,4,1,"{""C"": 0.6974142594505115, ""l1_ratio"": 0.3}",ok,0.63633807404057008,477,
+cancer__spectra+r4_consequence_panel__elasticnet,4,2,"{""C"": 0.6974142594505115, ""l1_ratio"": 0.3}",ok,0.63603132557431241,461.5,
+cancer__spectra+r4_consequence_panel__elasticnet,4,3,"{""C"": 0.6974142594505115, ""l1_ratio"": 0.3}",ok,0.63494436905257323,510.60000000000002,
+cancer__spectra+r4_consequence_panel__elasticnet,4,4,"{""C"": 0.6974142594505115, ""l1_ratio"": 0.3}",ok,0.63539029993328677,864,
+cancer__spectra+r4_consequence_panel__elasticnet,4,5,"{""C"": 0.6974142594505115, ""l1_ratio"": 0.3}",ok,0.63494436905257323,775.39999999999998,
+cancer__spectra+r4_consequence_panel__elasticnet,4,6,"{""C"": 0.6974142594505115, ""l1_ratio"": 0.3}",ok,0.63633807404057008,386.10000000000002,
+cancer__spectra+r4_consequence_panel__elasticnet,4,7,"{""C"": 0.6974142594505115, ""l1_ratio"": 0.3}",ok,0.63569704839954444,457.19999999999999,
+cancer__spectra+r4_consequence_panel__elasticnet,4,8,"{""C"": 0.6974142594505115, ""l1_ratio"": 0.3}",ok,0.63633807404057008,469.80000000000001,
+cancer__spectra+r4_consequence_panel__elasticnet,4,9,"{""C"": 0.6974142594505115, ""l1_ratio"": 0.3}",ok,0.63633807404057008,637,
+cancer__spectra+r4_consequence_panel__elasticnet,4,FINAL,"{""C"": 0.6974142594505115, ""l1_ratio"": 0.3}",ok,0.63633807404057008,655.70000000000005,
