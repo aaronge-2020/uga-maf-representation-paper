@@ -1,2 +1,0 @@
-cell,fold,trial,config,status,inner_score,seconds
-cancer__r3_counts_panel__elasticnet,2,7,"{""C"": 0.2541437115711024, ""l1_ratio"": 0.5}",ok,0.45129921611047352,101.40000000000001
