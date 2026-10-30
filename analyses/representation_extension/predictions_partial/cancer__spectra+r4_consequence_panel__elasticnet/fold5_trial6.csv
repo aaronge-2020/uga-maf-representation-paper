@@ -1,2 +1,0 @@
-cell,fold,trial,config,status,inner_score,seconds
-cancer__spectra+r4_consequence_panel__elasticnet,5,6,"{""C"": 0.8243648926283048, ""l1_ratio"": 0.5}",ok,0.60686527034422422,470.39999999999998
