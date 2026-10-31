@@ -1,2 +1,0 @@
-cell,fold,trial,config,status,inner_score,seconds
-cancer__spectra+r3_counts_panel_log1p__xgboost,3,5,"{""max_depth"": 5, ""learning_rate"": 0.2, ""subsample"": 1.0, ""colsample_bytree"": 0.6, ""min_child_weight"": 3.0, ""reg_lambda"": 2.0, ""n_estimators"": 400}",ok,0.64338476034518965,56.899999999999999
