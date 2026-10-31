@@ -118,11 +118,11 @@ def fit_predict(learner, task, cfg, Xtr, ytr, Xva, yva, Xte, seed):
             classes, counts = np.unique(ytr, return_counts=True)
             wmap = {c: len(ytr) / (len(classes) * n) for c, n in zip(classes, counts)}
             sw = np.array([wmap[v] for v in ytr])
-            m = XGBClassifier(**cfg, early_stopping_rounds=40, n_jobs=2,
+            m = XGBClassifier(**cfg, early_stopping_rounds=40, n_jobs=int(os.environ.get('RUNNER_N_JOBS', 2)),
                               random_state=seed, tree_method="hist")
             m.fit(Xtr, ytr, sample_weight=sw, eval_set=[(Xva, yva)], verbose=False)
             return m.predict(Xte), m.predict_proba(Xte), m.best_iteration
-        m = XGBRegressor(**cfg, early_stopping_rounds=40, n_jobs=2,
+        m = XGBRegressor(**cfg, early_stopping_rounds=40, n_jobs=int(os.environ.get('RUNNER_N_JOBS', 2)),
                          random_state=seed, tree_method="hist")
         m.fit(Xtr, ytr, eval_set=[(Xva, yva)], verbose=False)
         return m.predict(Xte), None, m.best_iteration
