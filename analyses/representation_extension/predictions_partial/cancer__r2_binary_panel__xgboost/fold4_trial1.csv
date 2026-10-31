@@ -1,0 +1,2 @@
+cell,fold,trial,config,status,inner_score,seconds
+cancer__r2_binary_panel__xgboost,4,1,"{""max_depth"": 3, ""learning_rate"": 0.03, ""subsample"": 1.0, ""colsample_bytree"": 1.0, ""min_child_weight"": 3.0, ""reg_lambda"": 0.5, ""n_estimators"": 400}",ok,0.4784091031318235,17.199999999999999
