@@ -9,12 +9,19 @@ set -euo pipefail
 EXT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$EXT_DIR"
 MODE="${1:-verify}"
+# pip unpacks wheels into TMPDIR; on hosts with a small /tmp (this
+# project's VM mounts a 512 MB tmpfs there) the install runs out of
+# space, so default TMPDIR to a directory beside the venv.
+if [ -z "${TMPDIR:-}" ]; then
+  mkdir -p "$EXT_DIR/.tmp-reproduce"
+  export TMPDIR="$EXT_DIR/.tmp-reproduce"
+fi
 VENV=".venv-reproduce"
 if [ ! -x "$VENV/bin/python" ]; then
   python3 -m venv "$VENV"
   "$VENV/bin/pip" install --quiet --upgrade pip
-  "$VENV/bin/pip" install --quiet -r requirements-reproduce.txt
 fi
+"$VENV/bin/pip" install --quiet -r requirements-reproduce.txt
 case "$MODE" in
   verify|--verify)
     exec "$VENV/bin/python" scripts/verify_reproduce.py ;;
