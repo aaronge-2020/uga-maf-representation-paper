@@ -1,0 +1,3321 @@
+[
+  {
+    "file": "results/tables/main_manuscript_complete_panel_oof_predictions.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "benchmark": "kucab_damage_class",
+          "endpoint": "damage_class",
+          "representation": "MAF_stack_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 259,
+        "n_unique_sample": 259,
+        "n_unique_patient12_or_id": 259,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 10,
+        "sample_examples": [
+          "MSM0.100_s1",
+          "MSM0.100_s2",
+          "MSM0.101_s1"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "kucab_damage_class",
+          "endpoint": "damage_class",
+          "representation": "MAF_stack_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 259,
+        "n_unique_sample": 259,
+        "n_unique_patient12_or_id": 259,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 10,
+        "sample_examples": [
+          "MSM0.100_s1",
+          "MSM0.100_s2",
+          "MSM0.101_s1"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "kucab_damage_class",
+          "endpoint": "damage_class",
+          "representation": "burden_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 259,
+        "n_unique_sample": 259,
+        "n_unique_patient12_or_id": 259,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 10,
+        "sample_examples": [
+          "MSM0.100_s1",
+          "MSM0.100_s2",
+          "MSM0.101_s1"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "kucab_damage_class",
+          "endpoint": "damage_class",
+          "representation": "burden_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 259,
+        "n_unique_sample": 259,
+        "n_unique_patient12_or_id": 259,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 10,
+        "sample_examples": [
+          "MSM0.100_s1",
+          "MSM0.100_s2",
+          "MSM0.101_s1"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "kucab_damage_class",
+          "endpoint": "damage_class",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 259,
+        "n_unique_sample": 259,
+        "n_unique_patient12_or_id": 259,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 10,
+        "sample_examples": [
+          "MSM0.100_s1",
+          "MSM0.100_s2",
+          "MSM0.101_s1"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "kucab_damage_class",
+          "endpoint": "damage_class",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 259,
+        "n_unique_sample": 259,
+        "n_unique_patient12_or_id": 259,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 10,
+        "sample_examples": [
+          "MSM0.100_s1",
+          "MSM0.100_s2",
+          "MSM0.101_s1"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "kucab_damage_class",
+          "endpoint": "damage_class",
+          "representation": "standard_sbs96_dbs78_id83",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 259,
+        "n_unique_sample": 259,
+        "n_unique_patient12_or_id": 259,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 10,
+        "sample_examples": [
+          "MSM0.100_s1",
+          "MSM0.100_s2",
+          "MSM0.101_s1"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "kucab_damage_class",
+          "endpoint": "damage_class",
+          "representation": "standard_sbs96_dbs78_id83",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 259,
+        "n_unique_sample": 259,
+        "n_unique_patient12_or_id": 259,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 10,
+        "sample_examples": [
+          "MSM0.100_s1",
+          "MSM0.100_s2",
+          "MSM0.101_s1"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LOH",
+          "representation": "MAF_stack_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LOH",
+          "representation": "MAF_stack_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LOH",
+          "representation": "burden_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LOH",
+          "representation": "burden_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LOH",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LOH",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LOH",
+          "representation": "standard_sbs96_id83",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LOH",
+          "representation": "standard_sbs96_id83",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LST",
+          "representation": "MAF_stack_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LST",
+          "representation": "MAF_stack_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LST",
+          "representation": "burden_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LST",
+          "representation": "burden_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LST",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LST",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LST",
+          "representation": "standard_sbs96_id83",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_LST",
+          "representation": "standard_sbs96_id83",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_Score",
+          "representation": "MAF_stack_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_Score",
+          "representation": "MAF_stack_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_Score",
+          "representation": "burden_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_Score",
+          "representation": "burden_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_Score",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_Score",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_Score",
+          "representation": "standard_sbs96_id83",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_Score",
+          "representation": "standard_sbs96_id83",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_TAI",
+          "representation": "MAF_stack_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_TAI",
+          "representation": "MAF_stack_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_TAI",
+          "representation": "burden_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_TAI",
+          "representation": "burden_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_TAI",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_TAI",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_TAI",
+          "representation": "standard_sbs96_id83",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "HRD_TAI",
+          "representation": "standard_sbs96_id83",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "PARPi7",
+          "representation": "MAF_stack_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "PARPi7",
+          "representation": "MAF_stack_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "PARPi7",
+          "representation": "burden_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "PARPi7",
+          "representation": "burden_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "PARPi7",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "PARPi7",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "PARPi7",
+          "representation": "standard_sbs96_id83",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "PARPi7",
+          "representation": "standard_sbs96_id83",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "cancer_type_top20",
+          "representation": "MAF_stack_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "cancer_type_top20",
+          "representation": "MAF_stack_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "cancer_type_top20",
+          "representation": "burden_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "cancer_type_top20",
+          "representation": "burden_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "cancer_type_top20",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "cancer_type_top20",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "cancer_type_top20",
+          "representation": "standard_sbs96_id83",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "cancer_type_top20",
+          "representation": "standard_sbs96_id83",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "eCARD",
+          "representation": "MAF_stack_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "eCARD",
+          "representation": "MAF_stack_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "eCARD",
+          "representation": "burden_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "eCARD",
+          "representation": "burden_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "eCARD",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "eCARD",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "eCARD",
+          "representation": "standard_sbs96_id83",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "eCARD",
+          "representation": "standard_sbs96_id83",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_24",
+          "representation": "MAF_stack_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_24",
+          "representation": "MAF_stack_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_24",
+          "representation": "burden_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_24",
+          "representation": "burden_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_24",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_24",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_24",
+          "representation": "standard_sbs96_id83",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_24",
+          "representation": "standard_sbs96_id83",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_33",
+          "representation": "MAF_stack_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_33",
+          "representation": "MAF_stack_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_33",
+          "representation": "burden_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_33",
+          "representation": "burden_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_33",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_33",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_33",
+          "representation": "standard_sbs96_id83",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_33",
+          "representation": "standard_sbs96_id83",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_42",
+          "representation": "MAF_stack_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_42",
+          "representation": "MAF_stack_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_42",
+          "representation": "burden_only",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_42",
+          "representation": "burden_only",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_42",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_42",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_42",
+          "representation": "standard_sbs96_id83",
+          "learner": "linear",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "mc3_main",
+          "endpoint": "hrd_binary_42",
+          "representation": "standard_sbs96_id83",
+          "learner": "xgboost",
+          "repeat": "1"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_cdr_survival",
+          "endpoint": "OS",
+          "representation": "MAF_stack_only",
+          "learner": "cox_ph",
+          "repeat": "1"
+        },
+        "n_rows": 9986,
+        "n_unique_sample": 9986,
+        "n_unique_patient12_or_id": 9986,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-OR-A5J1",
+          "TCGA-OR-A5J2",
+          "TCGA-OR-A5J3"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_cdr_survival",
+          "endpoint": "OS",
+          "representation": "burden_only",
+          "learner": "cox_ph",
+          "repeat": "1"
+        },
+        "n_rows": 9986,
+        "n_unique_sample": 9986,
+        "n_unique_patient12_or_id": 9986,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-OR-A5J1",
+          "TCGA-OR-A5J2",
+          "TCGA-OR-A5J3"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_cdr_survival",
+          "endpoint": "OS",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "cox_ph",
+          "repeat": "1"
+        },
+        "n_rows": 9986,
+        "n_unique_sample": 9986,
+        "n_unique_patient12_or_id": 9986,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-OR-A5J1",
+          "TCGA-OR-A5J2",
+          "TCGA-OR-A5J3"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_cdr_survival",
+          "endpoint": "OS",
+          "representation": "standard_sbs96_id83",
+          "learner": "cox_ph",
+          "repeat": "1"
+        },
+        "n_rows": 9986,
+        "n_unique_sample": 9986,
+        "n_unique_patient12_or_id": 9986,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-OR-A5J1",
+          "TCGA-OR-A5J2",
+          "TCGA-OR-A5J3"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_cdr_survival",
+          "endpoint": "PFI",
+          "representation": "MAF_stack_only",
+          "learner": "cox_ph",
+          "repeat": "1"
+        },
+        "n_rows": 9857,
+        "n_unique_sample": 9857,
+        "n_unique_patient12_or_id": 9857,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-OR-A5J1",
+          "TCGA-OR-A5J2",
+          "TCGA-OR-A5J3"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_cdr_survival",
+          "endpoint": "PFI",
+          "representation": "burden_only",
+          "learner": "cox_ph",
+          "repeat": "1"
+        },
+        "n_rows": 9857,
+        "n_unique_sample": 9857,
+        "n_unique_patient12_or_id": 9857,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-OR-A5J1",
+          "TCGA-OR-A5J2",
+          "TCGA-OR-A5J3"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_cdr_survival",
+          "endpoint": "PFI",
+          "representation": "signatures_plus_MAF_stack",
+          "learner": "cox_ph",
+          "repeat": "1"
+        },
+        "n_rows": 9857,
+        "n_unique_sample": 9857,
+        "n_unique_patient12_or_id": 9857,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-OR-A5J1",
+          "TCGA-OR-A5J2",
+          "TCGA-OR-A5J3"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_cdr_survival",
+          "endpoint": "PFI",
+          "representation": "standard_sbs96_id83",
+          "learner": "cox_ph",
+          "repeat": "1"
+        },
+        "n_rows": 9857,
+        "n_unique_sample": 9857,
+        "n_unique_patient12_or_id": 9857,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-OR-A5J1",
+          "TCGA-OR-A5J2",
+          "TCGA-OR-A5J3"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/muat_style_tcga_comparator_ab_a_before_oof_predictions.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "HRD_Score",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "hrd_binary_33",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/muat_style_tcga_comparator_ab_b_epochfix_oof_predictions.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "HRD_Score",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "hrd_binary_33",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/muat_style_tcga_comparator_ab_c_full_oof_predictions.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "HRD_Score",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "hrd_binary_33",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/muat_style_tcga_comparator_ab_d_faithful_oof_predictions.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "HRD_Score",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "hrd_binary_33",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/muat_style_tcga_comparator_architecture_search_smoke_oof_predictions.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "cancer_type_top20",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 60,
+        "n_unique_sample": 60,
+        "n_unique_patient12_or_id": 60,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-05-4396",
+          "TCGA-06-0644",
+          "TCGA-14-0787"
+        ],
+        "n_folds": 2
+      }
+    ]
+  },
+  {
+    "file": "results/tables/muat_style_tcga_comparator_cancer_type_top20_comparable_fold3_rerun_oof_predictions.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "cancer_type_top20",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/muat_style_tcga_comparator_cancer_type_top20_comparable_fold3_rerun_v2_oof_predictions.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "cancer_type_top20",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/muat_style_tcga_comparator_cancer_type_top20_comparable_oof_predictions.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "cancer_type_top20",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/muat_style_tcga_comparator_cancer_type_top20_faithful_fixed_arch_oof_predictions.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "cancer_type_top20",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/muat_style_tcga_comparator_hrd_faithful_fixed_arch_oof_predictions.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "HRD_Score",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "hrd_binary_33",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/muat_style_tcga_comparator_main_endpoints_comparable_oof_predictions.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "HRD_Score",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "benchmark": "tcga_mc3_wes",
+          "endpoint": "hrd_binary_33",
+          "representation": "MuAt-compatible reimplementation",
+          "learner": "muat_compatible_qkv_attention"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/patterns_alone_oof_HRD_Score.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/patterns_alone_oof_cancer_type.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/patterns_alone_oof_hrd_binary_33.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/patterns_alone_oof_hrd_binary_42.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task1_oof_maf_a_full.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task1_oof_maf_b_no_knowledge.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task1_oof_maf_c_no_gene_identity.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task1_oof_maf_d_no_knowledge_no_gene.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task1_oof_maf_e_binary_genes.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task1_oof_maf_f_driver_gene_counts.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task1_oof_sigmaf_a_full.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task1_oof_sigmaf_b_no_knowledge.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task1_oof_sigmaf_c_no_gene_identity.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task1_oof_sigmaf_d_no_knowledge_no_gene.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task1_oof_sigmaf_e_binary_genes.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task1_oof_sigmaf_f_driver_gene_counts.csv",
+    "sample_col": "sample",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "_all": "all"
+        },
+        "n_rows": 8800,
+        "n_unique_sample": 8800,
+        "n_unique_patient12_or_id": 8800,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-02-0003",
+          "TCGA-02-0033",
+          "TCGA-02-0047"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task3_hrd_attribution_oof_brca12_only.csv",
+    "sample_col": "tumour_barcode",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "endpoint": "HRD_Score"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "endpoint": "hrd_binary_33"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "endpoint": "hrd_binary_42"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task3_hrd_attribution_oof_sig3_brca12.csv",
+    "sample_col": "tumour_barcode",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "endpoint": "HRD_Score"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "endpoint": "hrd_binary_33"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "endpoint": "hrd_binary_42"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task3_hrd_attribution_oof_sig3_only.csv",
+    "sample_col": "tumour_barcode",
+    "fold_col": "fold",
+    "groups": [
+      {
+        "group": {
+          "endpoint": "HRD_Score"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "endpoint": "hrd_binary_33"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      },
+      {
+        "group": {
+          "endpoint": "hrd_binary_42"
+        },
+        "n_rows": 772,
+        "n_unique_sample": 772,
+        "n_unique_patient12_or_id": 772,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 0,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 12,
+        "sample_examples": [
+          "TCGA-3C-AALI",
+          "TCGA-3C-AALJ",
+          "TCGA-5L-AAT0"
+        ],
+        "n_folds": 5
+      }
+    ]
+  },
+  {
+    "file": "results/tables/task4_centre_heldout_predictions.csv",
+    "sample_col": "tumour_barcode",
+    "fold_col": null,
+    "groups": [
+      {
+        "group": {
+          "representation": "signatures_plus_MAF_stack"
+        },
+        "n_rows": 1756,
+        "n_unique_sample": 1756,
+        "n_unique_patient12_or_id": 1754,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 2,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 28,
+        "sample_examples": [
+          "TCGA-BI-A0VR-01A-11D-A10S-08",
+          "TCGA-BI-A0VS-01A-11D-A10S-08",
+          "TCGA-BI-A20A-01A-11D-A14W-08"
+        ],
+        "n_folds": null
+      },
+      {
+        "group": {
+          "representation": "standard_sbs96_id83"
+        },
+        "n_rows": 1756,
+        "n_unique_sample": 1756,
+        "n_unique_patient12_or_id": 1754,
+        "dup_sample_ids": 0,
+        "dup_patient_ids": 2,
+        "patients_in_multiple_folds": 0,
+        "samples_in_multiple_folds": 0,
+        "sample_len_mode": 28,
+        "sample_examples": [
+          "TCGA-BI-A0VR-01A-11D-A10S-08",
+          "TCGA-BI-A0VS-01A-11D-A10S-08",
+          "TCGA-BI-A20A-01A-11D-A14W-08"
+        ],
+        "n_folds": null
+      }
+    ]
+  }
+]
