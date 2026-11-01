@@ -28,9 +28,9 @@ Project: mutation representation extension benchmark (brief dated 2026-10-25). B
 | F1 | Survival incremental analysis (clinical baseline vs plus gene features vs plus spectra and Bio MAF) | planned | conditional, after A to D per brief priority |
 | F2 | MuAt reruns (3 seeds, architecture searched primary) | blocked | missing prerequisite: GPU hardware. Archived runs audited instead (audit report section 5) |
 | F3 | Learning curves (25/50/75/100 percent) | planned | conditional on a sample-efficiency claim being retained |
-| G1 | Results ledger (every manuscript number to source file, cohort, model, estimator) | planned | seeded by the same-day verification report; unsourced numbers listed in audit report section 9 |
-| G2 | Claim audit table and collaborator report answering brief section 15 | planned | final package item |
-| G3 | FAIR package: README, feature dictionary, environment spec, citation metadata | planned | no publication or DOI without Aaron's authorization |
+| G1 | Results ledger (every manuscript number to source file, cohort, model, estimator) | complete | `analyses/representation_extension/results_ledger.csv`: 999 rows (594 reproduced, 389 sourced_not_rerun, 16 unsourced, all enumerated in the claim audit); SHA-256 pins in `metrics/artifact_hashes.csv` |
+| G2 | Claim audit table and collaborator report answering brief section 15 | complete | `analyses/representation_extension/claim_audit.md`: verdicts per claim, unsourced numbers at the top, naming rules enforced, known discrepancies listed |
+| G3 | FAIR package: README, feature dictionary, environment spec, citation metadata | complete | `README_REPRODUCE.md`, `feature_dictionary.md`, `requirements-reproduce.txt`, entrypoint `reproduce.sh`; fresh-clone verify passed 669/669 checks and the 4-fold spot check passed (2026-11-01); nothing published or uploaded |
 
 ## Resource note
 

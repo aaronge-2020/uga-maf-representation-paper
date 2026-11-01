@@ -14,8 +14,10 @@ bash analyses/representation_extension/reproduce.sh --full        # rerun all 49
 ```
 
 Requirements: Python 3.12, git, and git-lfs. The main panel's
-out-of-fold predictions file is stored in git-lfs; clone with git-lfs
-installed (or run `git lfs pull` afterwards). The script creates its own
+out-of-fold predictions file is stored in git-lfs; if it arrives as a
+small pointer file, run `git lfs install` once in the clone and then
+`git lfs pull`. The verifier detects the pointer and fails with that
+instruction rather than checking the wrong file. The script creates its own
 pinned virtual environment in `.venv-reproduce/` from
 `requirements-reproduce.txt` (numpy 1.26.4, pandas 2.3.1, scipy 1.15.3,
 scikit-learn 1.7.2, xgboost 3.0.5, the versions the grid ran on). The
