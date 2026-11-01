@@ -1,0 +1,9 @@
+# Pinned environment for the reproducibility package.
+# These are the versions the extension grid actually ran on (Python 3.12.3).
+# The repo-level requirements.txt pins xgboost==1.6.2 for the older main-panel
+# code; do not use it for this package.
+numpy==1.26.4
+pandas==2.3.1
+scipy==1.15.3
+scikit-learn==1.7.2
+xgboost==3.0.5
