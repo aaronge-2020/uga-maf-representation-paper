@@ -1,0 +1,8 @@
+cell,fold,trial,config,status,inner_score,seconds,best_iteration
+cancer__r4_consequence_panel__xgboost,2,0,"{""max_depth"": 4, ""learning_rate"": 0.03, ""subsample"": 1.0, ""colsample_bytree"": 1.0, ""min_child_weight"": 3.0, ""reg_lambda"": 2.0, ""n_estimators"": 400}",ok,0.46681477288054429,81.599999999999994,
+cancer__r4_consequence_panel__xgboost,2,1,"{""max_depth"": 4, ""learning_rate"": 0.03, ""subsample"": 1.0, ""colsample_bytree"": 1.0, ""min_child_weight"": 3.0, ""reg_lambda"": 2.0, ""n_estimators"": 400}",ok,0.46681477288054429,79.5,
+cancer__r4_consequence_panel__xgboost,2,2,"{""max_depth"": 4, ""learning_rate"": 0.03, ""subsample"": 1.0, ""colsample_bytree"": 1.0, ""min_child_weight"": 3.0, ""reg_lambda"": 2.0, ""n_estimators"": 400}",ok,0.46681477288054429,114.3,
+cancer__r4_consequence_panel__xgboost,2,3,"{""max_depth"": 4, ""learning_rate"": 0.03, ""subsample"": 1.0, ""colsample_bytree"": 1.0, ""min_child_weight"": 3.0, ""reg_lambda"": 2.0, ""n_estimators"": 400}",ok,0.46681477288054429,55.399999999999999,
+cancer__r4_consequence_panel__xgboost,2,4,"{""max_depth"": 4, ""learning_rate"": 0.03, ""subsample"": 1.0, ""colsample_bytree"": 1.0, ""min_child_weight"": 3.0, ""reg_lambda"": 2.0, ""n_estimators"": 400}",ok,0.46681477288054429,57.5,
+cancer__r4_consequence_panel__xgboost,2,5,"{""max_depth"": 4, ""learning_rate"": 0.03, ""subsample"": 1.0, ""colsample_bytree"": 1.0, ""min_child_weight"": 3.0, ""reg_lambda"": 2.0, ""n_estimators"": 400}",ok,0.46681477288054429,59.799999999999997,
+cancer__r4_consequence_panel__xgboost,2,FINAL,"{""max_depth"": 4, ""learning_rate"": 0.03, ""subsample"": 1.0, ""colsample_bytree"": 1.0, ""min_child_weight"": 3.0, ""reg_lambda"": 2.0, ""n_estimators"": 400}",ok,0.46681477288054429,71.299999999999997,399
